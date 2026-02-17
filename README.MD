@@ -1,0 +1,1 @@
+© Éric Mugnier, all rights reserved — this repository is for version tracking purposes only
