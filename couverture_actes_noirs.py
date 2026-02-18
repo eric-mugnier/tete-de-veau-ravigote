@@ -109,7 +109,7 @@ img  = Image.new('RGB', (W, H), BLACK)
 draw = ImageDraw.Draw(img)
 
 BORDER = px(4)
-PHOTO  = '/Users/christophe.thiebaud/_Mugnier/tranche_tete_de_veau.jpg'
+PHOTO  = '/Users/christophe.thiebaud/_Mugnier/images/tranche_tete_de_veau.jpg'
 
 # ══════════════════════════════════════════════════════════════════════════════
 # 1ÈRE DE COUVERTURE

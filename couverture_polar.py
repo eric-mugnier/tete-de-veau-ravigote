@@ -99,7 +99,7 @@ front_w = FRONT_X2 - FRONT_X1
 front_h = H
 
 photo = Image.open(
-    '/Users/christophe.thiebaud/_Mugnier/tranche_tete_de_veau.jpg'
+    '/Users/christophe.thiebaud/_Mugnier/images/tranche_tete_de_veau.jpg'
 ).convert('RGB')
 
 # Redimensionner pour couvrir la zone (cover-fill)
