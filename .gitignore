@@ -16,6 +16,8 @@
 
 # ─── PDFs (recompilables depuis les .tex ou re-téléchargeables) ───────────────
 *.pdf
+# Exception : documents de référence externes (non recompilables)
+!aide_creation_couverture_mode_expert_TheBookEdition.pdf
 
 # ─── Fichiers temporaires ──────────────────────────────────────────────────────
 temp.tex
