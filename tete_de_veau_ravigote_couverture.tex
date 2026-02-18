@@ -1,0 +1,148 @@
+\documentclass[tikz, border=0pt]{standalone}
+
+% ─── PACKAGES ─────────────────────────────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ebgaramond}
+\usepackage[french]{babel}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{microtype}
+\usepackage{ragged2e}
+
+% ─── COULEURS ─────────────────────────────────────────────────────────────────
+\definecolor{gallimardred}{RGB}{185,10,10}
+\definecolor{creme}{RGB}{255,252,240}
+\definecolor{dosgris}{RGB}{245,242,232}
+
+% ─── PAS DE NUMÉRO DE PAGE (inutile avec standalone) ─────────────────────────
+
+
+% ─── RÉSUMÉ & BIO (modifier ici) ──────────────────────────────────────────────
+\newcommand{\resumequatriemecouv}{%
+  Quand le père Vidal disparaît dans des circonstances troubles et que le
+  Brain Catcher sème la terreur, le commandant Beauvais se lance dans une
+  enquête labyrinthique qui le mènera des caves de l'Église aux secrets les
+  plus enfouis de la République. Entouré de Titus Beaugendre, son fidèle
+  équipier, et d'une galerie de personnages hauts en couleur, Beauvais arpente
+  une France contemporaine où l'absurde dispute à l'horreur.
+
+  \medskip
+  Roman-fleuve d'une ambition rare, \textit{Tête de veau ravigote} mêle polar
+  halluciné, satire sociale et méditation sur la violence. Éric Mugnier y
+  déploie une prose incandescente, truculente et érudite, qui rappelle les
+  grandes heures du roman noir français.%
+}
+
+\newcommand{\bioauteur}{%
+  Éric Mugnier vit en France.
+  \textit{Tête de veau ravigote} est son premier roman.%
+}
+
+% ─── DOCUMENT ─────────────────────────────────────────────────────────────────
+\begin{document}
+
+% ─── CANVAS TIKZ (unité = 1mm, origine bas-gauche) ───────────────────────────
+% Zones :
+%   Fond perdu gauche   :  0 –   3 mm
+%   4e de couverture    :  3 – 143 mm  (140 mm)
+%   Dos                 : 143 – 161 mm ( 18 mm)
+%   1ère de couverture  : 161 – 301 mm (140 mm)
+%   Fond perdu droit    : 301 – 304 mm
+%   Fond perdu bas/haut :  0 –   3 mm / 208 – 211 mm
+
+\begin{tikzpicture}[x=1mm, y=1mm, font=\normalfont]
+
+  % ── FOND GLOBAL ────────────────────────────────────────────────────────────
+  \fill[creme] (0,0) rectangle (304,211);
+
+  % ── DOS (fond légèrement plus sombre) ──────────────────────────────────────
+  \fill[dosgris] (143,0) rectangle (161,211);
+  % Filets de séparation dos
+  \draw[black!30, line width=0.2pt] (143,0) -- (143,211);
+  \draw[black!30, line width=0.2pt] (161,0) -- (161,211);
+
+  % ─────────────────────────────────────────────────────────────────────────
+  % ══ 1ÈRE DE COUVERTURE (161 – 301 mm) ═══════════════════════════════════
+  % ─────────────────────────────────────────────────────────────────────────
+
+  % Double rectangle rouge (style NRF/Gallimard)
+  \draw[gallimardred, line width=0.5pt]
+    (166,  9) rectangle (298, 202);
+  \draw[gallimardred, line width=0.3pt]
+    (167, 10) rectangle (297, 201);
+
+  % ── Auteur ─────────────────────────────────────────────────────────────
+  \node[anchor=north] at (231, 191)
+    {\fontsize{10.5}{12}\selectfont\textsc{éric mugnier}};
+
+  % Filet fin rouge sous l'auteur
+  \draw[gallimardred, line width=0.4pt] (176,182) -- (286,182);
+
+  % ── Titre (petit caps, grand, centré) ──────────────────────────────────
+  \node[anchor=north, text width=115mm, align=center] at (231, 177)
+    {\fontsize{16}{20}\selectfont\textsc{tête de veau ravigote}};
+
+  % Filet fin rouge sous le titre
+  \draw[gallimardred, line width=0.4pt] (176,138) -- (286,138);
+
+  % ── Mention "roman" ────────────────────────────────────────────────────
+  \node[anchor=north] at (231, 134)
+    {\fontsize{10}{12}\selectfont\textit{roman}};
+
+  % ── Ornement typographique centré ──────────────────────────────────────
+  \draw[gallimardred!60, line width=0.3pt]
+    (228, 75) -- (234, 75);
+  \draw[gallimardred!60, line width=0.3pt]
+    (231, 72) -- (231, 78);
+  \fill[gallimardred!60] (231,75) circle (0.8mm);
+
+
+  % ─────────────────────────────────────────────────────────────────────────
+  % ══ DOS (143 – 161 mm) ═══════════════════════════════════════════════════
+  % ─────────────────────────────────────────────────────────────────────────
+
+  % Auteur en haut (horizontal, police réduite)
+  \node[anchor=north, rotate=0] at (152, 199)
+    {\fontsize{6.5}{8}\selectfont\textsc{é. mugnier}};
+
+  % Titre vertical (texte de bas en haut)
+  \node[rotate=90, anchor=center] at (152, 112)
+    {\fontsize{8}{10}\selectfont\textsc{tête de veau ravigote}};
+
+
+  % ─────────────────────────────────────────────────────────────────────────
+  % ══ 4ÈME DE COUVERTURE (3 – 143 mm) ═════════════════════════════════════
+  % ─────────────────────────────────────────────────────────────────────────
+
+  % ── Résumé
+  \node[
+    anchor=north west,
+    text width=113mm,
+    align=justify,
+    inner sep=0pt
+  ] at (15, 191)
+  {%
+    \fontsize{9}{13.5}\selectfont
+    \resumequatriemecouv
+  };
+
+  % Filet séparateur au-dessus de la bio
+  \draw[black!40, line width=0.3pt] (15, 41) -- (131, 41);
+
+  % ── Bio auteur ─────────────────────────────────────────────────────────
+  \node[
+    anchor=north west,
+    text width=113mm,
+    align=justify,
+    inner sep=0pt
+  ] at (15, 38)
+  {%
+    \fontsize{8}{11}\selectfont
+    \bioauteur
+  };
+
+\end{tikzpicture}
+
+\end{document}

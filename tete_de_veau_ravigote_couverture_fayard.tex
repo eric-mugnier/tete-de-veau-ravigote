@@ -1,0 +1,119 @@
+\documentclass[tikz, border=0pt]{standalone}
+
+% ─── PACKAGES ─────────────────────────────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ebgaramond}
+\usepackage[french]{babel}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{graphicx}
+\usepackage{microtype}
+
+% ─── COULEURS (relevées sur la couverture Fayard originale) ───────────────────
+\definecolor{creme}{RGB}{246,237,210}      % fond crème chaud
+\definecolor{brun}{RGB}{106,60,22}         % brun titre/auteur
+
+% ─── DOCUMENT ─────────────────────────────────────────────────────────────────
+\begin{document}
+
+% ─── CANVAS TIKZ (unité = 1mm, origine bas-gauche) ───────────────────────────
+% Zones :
+%   Fond perdu gauche   :  0 –   3 mm
+%   4e de couverture    :  3 – 143 mm  (140 mm)
+%   Dos                 : 143 – 161 mm ( 18 mm)
+%   1ère de couverture  : 161 – 301 mm (140 mm)
+%   Fond perdu droit    : 301 – 304 mm
+%   Fond perdu bas/haut :  0 –   3 mm / 208 – 211 mm
+%
+% Photo (1ère de couv) : bas de la couv, y = 3 mm → 92 mm (89 mm de haut)
+% Crème (1ère de couv) : y = 92 mm → 208 mm (116 mm de haut)
+
+\begin{tikzpicture}[x=1mm, y=1mm, font=\normalfont]
+
+  % ── FOND CRÈME GLOBAL ──────────────────────────────────────────────────────
+  \fill[creme] (0,0) rectangle (304,211);
+
+  % ─────────────────────────────────────────────────────────────────────────
+  % ══ 1ÈRE DE COUVERTURE (161 – 301 mm) ═══════════════════════════════════
+  % ─────────────────────────────────────────────────────────────────────────
+
+  % ── Photo (partie basse, 89 mm de hauteur) ─────────────────────────────
+  \begin{scope}
+    \clip (161,3) rectangle (301,92);
+    \node[anchor=south west, inner sep=0] at (161,3)
+      {\includegraphics[width=140mm, height=89mm]
+        {tc3aate-de-veau-roulc3a9e-via-produits-tripiers.jpg}};
+  \end{scope}
+
+  % ── Titre (grand, brun, centré) ────────────────────────────────────────
+  \node[anchor=north, text=brun] at (231, 175)
+    {\fontsize{24}{29}\selectfont Tête de veau ravigote};
+
+  % ── Auteur (brun, plus petit, centré sous le titre) ───────────────────
+  \node[anchor=north, text=brun] at (231, 154)
+    {\fontsize{15}{18}\selectfont Éric Mugnier};
+
+
+  % ─────────────────────────────────────────────────────────────────────────
+  % ══ DOS (143 – 161 mm) ═══════════════════════════════════════════════════
+  % ─────────────────────────────────────────────────────────────────────────
+
+  % Titre vertical (bas → haut)
+  \node[rotate=90, anchor=center, text=brun] at (152, 112)
+    {\fontsize{8}{10}\selectfont\itshape Tête de veau ravigote};
+
+  % Auteur en haut
+  \node[anchor=north, text=brun] at (152, 194)
+    {\fontsize{6.5}{8}\selectfont Éric Mugnier};
+
+
+  % ─────────────────────────────────────────────────────────────────────────
+  % ══ 4ÈME DE COUVERTURE (3 – 143 mm) ═════════════════════════════════════
+  % ─────────────────────────────────────────────────────────────────────────
+
+  % ── Résumé
+  \node[
+    anchor=north west,
+    text width=113mm,
+    align=justify,
+    text=brun,
+    inner sep=0pt
+  ] at (15, 191)
+  {%
+    \fontsize{9}{13.5}\selectfont
+    Quand le père Vidal disparaît dans des circonstances troubles et que le
+    Brain Catcher sème la terreur, le commandant Beauvais se lance dans une
+    enquête labyrinthique qui le mènera des caves de l'Église aux secrets les
+    plus enfouis de la République. Entouré de Titus Beaugendre, son fidèle
+    équipier, et d'une galerie de personnages hauts en couleur, Beauvais arpente
+    une France contemporaine où l'absurde dispute à l'horreur.
+
+    \medskip
+    Roman-fleuve d'une ambition rare, \textit{Tête de veau ravigote} mêle polar
+    halluciné, satire sociale et méditation sur la violence. Éric Mugnier y
+    déploie une prose incandescente, truculente et érudite, qui rappelle les
+    grandes heures du roman noir français.%
+  };
+
+  % Filet séparateur
+  \draw[brun!40, line width=0.3pt] (15, 41) -- (131, 41);
+
+  % ── Bio
+  \node[
+    anchor=north west,
+    text width=113mm,
+    align=justify,
+    text=brun,
+    inner sep=0pt
+  ] at (15, 38)
+  {%
+    \fontsize{8}{11}\selectfont
+    Éric Mugnier vit en France.
+    \textit{Tête de veau ravigote} est son premier roman.%
+  };
+
+\end{tikzpicture}
+
+\end{document}

@@ -1,0 +1,114 @@
+\documentclass[10pt,a5paper,twoside,openright]{memoir}
+
+% ─── PACKAGES ─────────────────────────────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ebgaramond}
+\usepackage[french]{babel}
+
+% ─── PAGE GEOMETRY (140×205 mm – Gallimard Blanche) ──────────────────────────
+\setstocksize{210mm}{148mm}
+\settrimmedsize{210mm}{148mm}{*}
+\settrims{0mm}{0mm}
+\setlrmarginsandblock{22mm}{17mm}{*} % inner/outer
+\setulmarginsandblock{22mm}{25mm}{*} % top/bottom
+\setheadfoot{10mm}{12mm}
+\setheaderspaces{*}{6mm}{*}
+\checkandfixthelayout
+
+% ─── TYPOGRAPHY ───────────────────────────────────────────────────────────────
+\renewcommand{\baselinestretch}{1.1} % Interligne
+\setlength{\parindent}{4mm}          % Alinéa
+\setlength{\parskip}{0pt}            % Pas d'espace entre paragraphes
+
+% Pas d'alinéa après titres de chapitre
+\setlength{\afterchapskip}{2\onelineskip}
+
+% ─── CHAPTER STYLE ────────────────────────────────────────────────────────────
+\makeatletter
+\makechapterstyle{gallimard}{%
+  \renewcommand{\chapnamefont}{\normalfont\scshape\centering}
+  \renewcommand{\chapnumfont}{\normalfont\scshape\centering}
+  \renewcommand{\chaptitlefont}{\normalfont\scshape\centering}
+  \renewcommand{\printchaptername}{}
+  \renewcommand{\chapternamenum}{}
+  \renewcommand{\printchapternum}{%
+    \chapnumfont\thechapter}          % plus sobre : juste le numéro
+  \renewcommand{\afterchapternum}{\par\vskip 2\onelineskip}
+  \renewcommand{\printchaptertitle}[1]{}
+}
+\makeatother
+\chapterstyle{gallimard}
+
+% ─── RUNNING HEADERS : folio seul, sans auteur ni titre ───────────────────────
+\makepagestyle{gallimard}
+\makeevenhead{gallimard}{}{}{}        % en-tête paire : vide
+\makeoddhead{gallimard}{}{}{}         % en-tête impaire : vide
+\makeevenfoot{gallimard}{}{\thepage}{}
+\makeoddfoot{gallimard}{}{\thepage}{}
+\makepsmarks{gallimard}{%
+  \nouppercaseheads
+  \createmark{chapter}{both}{nonumber}{}{}
+}
+\pagestyle{gallimard}
+
+% Pages de début de chapitre : sans en-tête ni folio
+\aliaspagestyle{chapter}{empty}
+
+% Pages blanches intercalées par \cleardoublepage : toujours vides
+\makeatletter
+\renewcommand{\cleardoublepage}{%
+  \clearpage
+  \if@twoside
+    \ifodd\c@page\else
+      \hbox{}\thispagestyle{empty}\newpage
+    \fi
+  \fi
+}
+\makeatother
+
+% ─── DOCUMENT ─────────────────────────────────────────────────────────────────
+\begin{document}
+\pagestyle{empty}
+
+% ═══ PAGE BLANCHE (précède le titre) ══════════════════════════════════════════
+\hbox{}\thispagestyle{empty}\newpage   % page 1 (impaire) → blanche
+
+% ═══ PAGE DE TITRE (impaire) ══════════════════════════════════════════════════
+\cleardoublepage                        % page 2 blanche, atterrit page 3 (impaire)
+\begin{center}
+\vspace*{6\onelineskip}
+{\scshape\large éric mugnier}
+
+\vspace{8\onelineskip}
+{\scshape\huge tête de veau ravigote}
+
+\vspace{12\onelineskip}
+{\itshape roman}
+\end{center}
+\cleardoublepage                        % p. 4 blanche (gauche), → p. 5 (impaire/droite)
+
+% ═══ DÉDICACE (impaire) ═══════════════════════════════════════════════════════
+\vspace*{10\onelineskip}
+\begin{flushright}
+\itshape\small
+A ma grand-mère maternelle Alexandrine Chéron, née Lemaître, \\
+décédée en 2022 alors qu'elle survolait la cordillère des Andes \\
+à bord du Cessna Skylane 182 jaune canari qu'elle s'était, \\
+contre l'avis général et tout particulièrement celui des compagnies \\
+d'assurances (qui, bien qu'elle soit en pleine forme, la jugeait \\
+tout de même peut-être un peu âgée pour piloter), offert en grande \\
+pompe pour son quatre-vingt-septième anniversaire. Le crash aérien, \\
+d'une extrême violence, n'a pas permis de retrouver l'intégralité \\
+des morceaux de la chère vieille dame, en partie calcinée et dévorée \\
+par les condors qui, on ne le sait pas assez, adorent la viande bien \\
+cuite. Sa mort laisse un grand vide dans mon cœur.
+\end{flushright}
+\cleardoublepage                        % p. 6 blanche, → p. 7 (impaire) chapitre 1
+
+% ═══ MAIN TEXT ════════════════════════════════════════════════════════════════
+\pagestyle{gallimard}
+
+\input{tete_de_veau_ravigote_content.tex}
+
+\end{document}

@@ -1,0 +1,135 @@
+\documentclass[tikz, border=0pt]{standalone}
+
+% ─── PACKAGES ─────────────────────────────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ebgaramond}
+\usepackage[french]{babel}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{calc, shapes.geometric}
+\usepackage{microtype}
+
+% ─── COULEURS MINUIT ──────────────────────────────────────────────────────────
+\definecolor{minuitblue}{RGB}{28,72,172}   % bleu Minuit
+\definecolor{blanc}{RGB}{255,255,255}
+
+% ─── DOCUMENT ─────────────────────────────────────────────────────────────────
+\begin{document}
+
+% ─── CANVAS TIKZ (unité = 1mm, origine bas-gauche) ───────────────────────────
+% Zones :
+%   Fond perdu gauche   :  0 –   3 mm
+%   4e de couverture    :  3 – 143 mm  (140 mm)
+%   Dos                 : 143 – 161 mm ( 18 mm)
+%   1ère de couverture  : 161 – 301 mm (140 mm)
+%   Fond perdu droit    : 301 – 304 mm
+%   Fond perdu bas/haut :  0 –   3 mm / 208 – 211 mm
+
+\begin{tikzpicture}[x=1mm, y=1mm, font=\normalfont]
+
+  % ── FOND BLANC GLOBAL ──────────────────────────────────────────────────────
+  \fill[blanc] (0,0) rectangle (304,211);
+
+  % ─────────────────────────────────────────────────────────────────────────
+  % ══ 1ÈRE DE COUVERTURE (161 – 301 mm) ═══════════════════════════════════
+  % ─────────────────────────────────────────────────────────────────────────
+
+  % ── Cadre rectangle unique (style Minuit) ──────────────────────────────
+  \draw[black, line width=0.6pt]
+    (166, 8) rectangle (298, 203);
+
+  % ── Auteur (noir, petite police, centré, haut) ─────────────────────────
+  \node[anchor=north] at (231, 196)
+    {\fontsize{9.5}{11}\selectfont ÉRIC MUGNIER};
+
+  % ── Titre (bleu, gras, allcaps, grand) ─────────────────────────────────
+  \node[
+    anchor=north,
+    text width=118mm,
+    align=center,
+    text=minuitblue
+  ] at (231, 181)
+  {\fontsize{22}{26}\selectfont\bfseries
+    TÊTE DE VEAU RAVIGOTE};
+
+  % ── Mention "roman" ────────────────────────────────────────────────────
+  \node[anchor=north] at (231, 152)
+    {\fontsize{9}{11}\selectfont\itshape roman};
+
+  % ── Bandeau photo (pleine largeur, jusqu'en bas) ──────────────────────
+  \begin{scope}
+    \clip (161, 0) rectangle (304, 105);
+    \node[anchor=north west, inner sep=0] at (161, 105)
+      {\includegraphics[width=143mm]{Mugnier2.jpg}};
+  \end{scope}
+
+
+
+  % ─────────────────────────────────────────────────────────────────────────
+  % ══ DOS (143 – 161 mm) ═══════════════════════════════════════════════════
+  % ─────────────────────────────────────────────────────────────────────────
+
+  % Filets latéraux du dos
+  \draw[black!25, line width=0.2pt] (143,0) -- (143,211);
+  \draw[black!25, line width=0.2pt] (161,0) -- (161,211);
+
+  % Titre vertical (bleu, de bas en haut)
+  \node[rotate=90, anchor=center, text=minuitblue] at (152, 112)
+    {\fontsize{8.5}{10}\selectfont\bfseries TÊTE DE VEAU RAVIGOTE};
+
+  % Auteur en haut
+  \node[anchor=north] at (152, 199)
+    {\fontsize{6.5}{8}\selectfont ÉRIC MUGNIER};
+
+
+  % ─────────────────────────────────────────────────────────────────────────
+  % ══ 4ÈME DE COUVERTURE (3 – 143 mm) ═════════════════════════════════════
+  % ─────────────────────────────────────────────────────────────────────────
+
+  % Cadre rectangle (comme la 1ère de couverture)
+  \draw[black, line width=0.6pt]
+    (8, 8) rectangle (138, 203);
+
+  % ── Résumé
+  \node[
+    anchor=north west,
+    text width=112mm,
+    align=justify,
+    inner sep=0pt
+  ] at (14, 194)
+  {%
+    \fontsize{9}{13.5}\selectfont
+    Quand le père Vidal disparaît dans des circonstances troubles et que le
+    Brain Catcher sème la terreur, le commandant Beauvais se lance dans une
+    enquête labyrinthique qui le mènera des caves de l'Église aux secrets les
+    plus enfouis de la République. Entouré de Titus Beaugendre, son fidèle
+    équipier, et d'une galerie de personnages hauts en couleur, Beauvais arpente
+    une France contemporaine où l'absurde dispute à l'horreur.
+
+    \medskip
+    Roman-fleuve d'une ambition rare, \textit{Tête de veau ravigote} mêle polar
+    halluciné, satire sociale et méditation sur la violence. Éric Mugnier y
+    déploie une prose incandescente, truculente et érudite, qui rappelle les
+    grandes heures du roman noir français.%
+  };
+
+  % Filet séparateur
+  \draw[black!35, line width=0.3pt] (14, 41) -- (132, 41);
+
+  % ── Bio
+  \node[
+    anchor=north west,
+    text width=112mm,
+    align=justify,
+    inner sep=0pt
+  ] at (14, 38)
+  {%
+    \fontsize{8}{11}\selectfont
+    Éric Mugnier vit en France.
+    \textit{Tête de veau ravigote} est son premier roman.%
+  };
+
+\end{tikzpicture}
+
+\end{document}

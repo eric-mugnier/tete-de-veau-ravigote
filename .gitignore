@@ -1,0 +1,32 @@
+# ─── LaTeX build artifacts ────────────────────────────────────────────────────
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+
+# ─── PDFs (recompilables depuis les .tex ou re-téléchargeables) ───────────────
+*.pdf
+
+# ─── Fichiers temporaires ──────────────────────────────────────────────────────
+temp.tex
+gabarit_converted.txt
+
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+
+# ─── macOS ────────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride

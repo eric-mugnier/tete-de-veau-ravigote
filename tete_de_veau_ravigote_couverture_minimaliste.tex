@@ -1,0 +1,137 @@
+\documentclass[tikz, border=0pt]{standalone}
+
+% ─── PACKAGES ─────────────────────────────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ebgaramond}
+\usepackage[french]{babel}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{microtype}
+
+% ─── COULEUR ──────────────────────────────────────────────────────────────────
+\definecolor{encre}{RGB}{18,18,18}
+\definecolor{gristexte}{RGB}{90,90,90}
+
+% ─── DOCUMENT ─────────────────────────────────────────────────────────────────
+\begin{document}
+
+% ─── CANVAS TIKZ (unité = 1mm, origine bas-gauche) ───────────────────────────
+%
+% Gabarit TheBookEdition — format A5 (148×210 mm) — 465 pages
+%
+%   Fond perdu          : 5 mm de chaque côté
+%   Marge de sécurité   : 5 mm en retrait des traits de coupe (texte/image)
+%
+%   Zones (x) :
+%     Fond perdu gauche   :   0 –   5 mm
+%     4e de couverture    :   5 – 153 mm  (148 mm)
+%     Dos                 : 153 – 182 mm  ( 29 mm)
+%     1ère de couverture  : 182 – 330 mm  (148 mm)
+%     Fond perdu droit    : 330 – 335 mm
+%
+%   Zones (y) :
+%     Fond perdu bas      :   0 –   5 mm
+%     Contenu             :   5 – 215 mm  (210 mm)
+%     Fond perdu haut     : 215 – 220 mm
+%
+%   Centres :
+%     4e de couverture    :  79 mm
+%     Dos                 : 167,5 mm
+%     1ère de couverture  : 256 mm
+
+\begin{tikzpicture}[x=1mm, y=1mm, font=\normalfont]
+
+  % ── FOND BLANC ABSOLU ───────────────────────────────────────────────────────
+  \fill[white] (0,0) rectangle (335,220);
+
+  % ═══════════════════════════════════════════════════════════════════════════
+  % ══ 1ÈRE DE COUVERTURE (182 – 330 mm) — centre : 256 mm ═════════════════
+  % ═══════════════════════════════════════════════════════════════════════════
+
+  % ── Auteur : petites caps, très espacées, discret ─────────────────────────
+  \node[anchor=north, text=encre] at (256, 205)
+    {\fontsize{12}{14}\selectfont\textls[250]{\textsc{éric mugnier}}};
+
+  % ── Filet unique : l'unique élément graphique ─────────────────────────────
+  \draw[encre, line width=0.25pt] (193, 160) -- (319, 160);
+
+  % ── Titre : garamond regular, grand, aéré, une seule ligne ────────────────
+  \node[
+    anchor=north,
+    text width=120mm,
+    align=center,
+    text=encre
+  ] at (256, 156)
+  {\fontsize{24}{30}\selectfont
+    Tête de veau ravigote};
+
+  % ── Mention "roman" ────────────────────────────────────────────────────────
+  \node[anchor=north, text=gristexte] at (256, 123)
+    {\fontsize{11}{13}\selectfont\itshape roman};
+
+  % ═══════════════════════════════════════════════════════════════════════════
+  % ══ DOS (153 – 182 mm) — centre : 167,5 mm ══════════════════════════════
+  % ═══════════════════════════════════════════════════════════════════════════
+
+  % Filets de séparation, très effacés
+  \draw[encre!12, line width=0.2pt] (153,0) -- (153,220);
+  \draw[encre!12, line width=0.2pt] (182,0) -- (182,220);
+
+  % Auteur horizontal en haut du dos
+  \node[anchor=north, text=encre] at (167.5, 207)
+    {\fontsize{6}{7.5}\selectfont\textls[120]{\textsc{éric mugnier}}};
+
+  % Titre vertical (de bas en haut)
+  \node[rotate=90, anchor=center, text=encre] at (167.5, 110)
+    {\fontsize{7.5}{9}\selectfont\textls[80]{\textsc{tête de veau ravigote}}};
+
+  % ═══════════════════════════════════════════════════════════════════════════
+  % ══ 4ÈME DE COUVERTURE (5 – 153 mm) — centre : 79 mm ═══════════════════
+  % ═══════════════════════════════════════════════════════════════════════════
+
+  % ── Résumé ─────────────────────────────────────────────────────────────────
+  \node[
+    anchor=north west,
+    text width=118mm,
+    align=justify,
+    inner sep=0pt,
+    text=encre
+  ] at (17, 175)
+  {%
+    \fontsize{9}{14}\selectfont
+    Quand le père Vidal disparaît dans des circonstances troubles et que le
+    Brain Catcher sème la terreur, le commandant Beauvais se lance dans une
+    enquête labyrinthique qui le mènera des caves de l'Église aux secrets les
+    plus enfouis de la République. Entouré de Titus Beaugendre, son fidèle
+    équipier, et d'une galerie de personnages hauts en couleur, Beauvais arpente
+    une France contemporaine où l'absurde dispute à l'horreur.
+
+    \medskip
+    Roman-fleuve d'une ambition rare, \textit{Tête de veau ravigote} mêle polar
+    halluciné, satire sociale et méditation sur la violence. Éric Mugnier y
+    déploie une prose incandescente, truculente et érudite, qui rappelle les
+    grandes heures du roman noir français.%
+  };
+
+  % Filet séparateur fin
+  \draw[encre!30, line width=0.25pt] (17, 40) -- (140, 40);
+
+  % ── Bio ─────────────────────────────────────────────────────────────────────
+  \node[
+    anchor=north west,
+    text width=118mm,
+    align=justify,
+    inner sep=0pt,
+    text=gristexte
+  ] at (17, 37)
+  {%
+    \fontsize{8}{11.5}\selectfont
+    Éric Mugnier vit en France.
+    \textit{Tête de veau ravigote} est son premier roman.%
+  };
+
+\end{tikzpicture}
+
+\end{document}
