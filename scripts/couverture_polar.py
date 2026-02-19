@@ -212,16 +212,16 @@ f_bio     = font(FONT_REG, 4.0)
 f_sep     = font(FONT_REG, 4.0)
 
 resume = (
-    "Quand le père Vidal disparaît dans des circonstances troubles "
-    "et que le Brain Catcher sème la terreur, le commandant Beauvais "
-    "se lance dans une enquête labyrinthique qui le mènera des caves "
-    "de l'Église aux secrets les plus enfouis de la République. "
-    "Entouré de Titus Beaugendre, son fidèle équipier, et d'une "
-    "galerie de personnages hauts en couleur, Beauvais arpente une "
-    "France contemporaine où l'absurde dispute à l'horreur."
+    "Quand le père Vidal disparaît dans des circonstances troubles et que des "
+    "colis macabres commencent à circuler dans la ville, le commandant Beauvais "
+    "se lance dans une enquête labyrinthique. Mais le polar n'est ici qu'un fil "
+    "rouge dérisoire : ce qui compte, ce sont les digressions – sur les chats, "
+    "les dinosaures, l'Église, les pavillons de banlieue, la décadence de "
+    "l'humanité."
 )
 bio = (
-    "Éric Mugnier vit en France. "
+    "Éric Mugnier est né en 1960. Il vit à Chaumont-en-Bassigny. "
+    "Peintre, compositeur et parolier, il se consacre depuis quarante ans à la création. "
     "Tête de veau ravigote est son premier roman."
 )
 
@@ -230,10 +230,12 @@ y = draw_wrapped(draw, resume, TEXT_X, y, BACK_TEXT_W, f_resume, WHITE, line_spa
 
 y += px(5)
 draw_wrapped(draw, (
-    "Roman-fleuve d'une ambition rare, Tête de veau ravigote mêle polar "
-    "halluciné, satire sociale et méditation sur la violence. Éric Mugnier "
-    "y déploie une prose incandescente, truculente et érudite, qui rappelle "
-    "les grandes heures du roman noir français."
+    "Roman-fleuve picaresque dans la lignée de Cervantes et Rabelais, "
+    "Tête de veau ravigote mêle la rage sadienne au pessimisme schopenhauerien. "
+    "Éric Mugnier y déploie une prose incandescente, truculente et désespérée, "
+    "qui rappelle autant Là-bas de Huysmans que les pamphlets du XVIIIe siècle. "
+    "Inachevable, et délibérément inachevé, ce premier roman ignore la résolution "
+    "et préfère la dérive : une logorrhée vengeresse et jubilatoire."
 ), TEXT_X, y, BACK_TEXT_W, f_resume, WHITE, line_spacing_mm=1.8)
 
 # Filet séparateur
