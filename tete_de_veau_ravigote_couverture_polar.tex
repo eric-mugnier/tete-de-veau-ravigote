@@ -1,0 +1,135 @@
+\documentclass[tikz, border=0pt]{standalone}
+
+% ─── PACKAGES ─────────────────────────────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ebgaramond}
+\usepackage[french]{babel}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{calc, fadings}
+\usepackage{graphicx}
+\usepackage{microtype}
+
+% ─── COULEURS ─────────────────────────────────────────────────────────────────
+\definecolor{bloodred}{RGB}{160,20,20}
+\definecolor{greylight}{RGB}{210,210,210}
+
+% ─── DOCUMENT ─────────────────────────────────────────────────────────────────
+\begin{document}
+
+% ─── CANVAS TIKZ (unité = 1mm, origine bas-gauche) ───────────────────────────
+% Zones :
+%   Fond perdu gauche   :  0 –   3 mm
+%   4e de couverture    :  3 – 143 mm  (140 mm)
+%   Dos                 : 143 – 161 mm ( 18 mm)
+%   1ère de couverture  : 161 – 301 mm (140 mm)
+%   Fond perdu droit    : 301 – 304 mm
+%   Fond perdu bas/haut :  0 –   3 mm / 208 – 211 mm
+
+\begin{tikzpicture}[x=1mm, y=1mm, font=\normalfont]
+
+  % ── FOND GLOBAL NOIR ───────────────────────────────────────────────────────
+  \fill[black] (0,0) rectangle (304,211);
+
+  % ─────────────────────────────────────────────────────────────────────────
+  % ══ 1ÈRE DE COUVERTURE (161 – 301 mm) ═══════════════════════════════════
+  % ─────────────────────────────────────────────────────────────────────────
+
+  % ── Photo pleine hauteur ────────────────────────────────────────────────
+  \node[anchor=south west, inner sep=0] at (161, 0)
+    {\includegraphics[width=140mm, height=211mm]{images/tranche_tete_de_veau.jpg}};
+
+  % ── Dégradé noir sur la moitié supérieure ───────────────────────────────
+  \fill[black, path fading=south, opacity=0.88] (161, 91) rectangle (301, 211);
+
+  % ── Boîte auteur (blanc sur noir) ───────────────────────────────────────
+  \node[
+    anchor=north west,
+    fill=white,
+    text=black,
+    inner xsep=2.5mm, inner ysep=1.5mm
+  ] at (167, 204)
+    {\sffamily\bfseries\fontsize{7.5}{9}\selectfont ÉRIC MUGNIER};
+
+  % ── Titre (blanc, gras, très grand) ─────────────────────────────────────
+  \node[
+    anchor=north west,
+    text=white,
+    align=left
+  ] at (167, 191)
+  {\sffamily\bfseries\fontsize{27}{31}\selectfont
+    TÊTE DE VEAU\\[2pt]RAVIGOTE};
+
+  % ── Mention "roman" ──────────────────────────────────────────────────────
+  \node[anchor=north west, text=white] at (167, 148)
+    {\sffamily\fontsize{6}{8}\selectfont roman};
+
+  % ─────────────────────────────────────────────────────────────────────────
+  % ══ DOS (143 – 161 mm) ═══════════════════════════════════════════════════
+  % ─────────────────────────────────────────────────────────────────────────
+
+  % Filets rouges sur les bords du dos
+  \draw[bloodred, line width=1.2pt] (143, 0) -- (143, 211);
+  \draw[bloodred, line width=1.2pt] (161, 0) -- (161, 211);
+
+  % Auteur en haut
+  \node[anchor=north, text=white] at (152, 199)
+    {\sffamily\bfseries\fontsize{5.5}{7}\selectfont MUGNIER};
+
+  % Titre vertical (de bas en haut)
+  \node[rotate=90, anchor=center, text=white] at (152, 106)
+    {\sffamily\bfseries\fontsize{5.5}{7}\selectfont TÊTE DE VEAU RAVIGOTE};
+
+  % ─────────────────────────────────────────────────────────────────────────
+  % ══ 4ÈME DE COUVERTURE (3 – 143 mm) ═════════════════════════════════════
+  % ─────────────────────────────────────────────────────────────────────────
+
+  % ── Résumé
+  \node[
+    anchor=north west,
+    text width=113mm,
+    align=justify,
+    text=white,
+    inner sep=0pt
+  ] at (15, 191)
+  {%
+    \sffamily\fontsize{8.5}{13}\selectfont
+    Quand le père Vidal disparaît dans des circonstances troubles et que des
+    colis macabres commencent à circuler dans la ville, le commandant Beauvais
+    se lance dans une enquête labyrinthique. Mais le polar n'est ici qu'un fil
+    rouge dérisoire : ce qui compte, ce sont les digressions – sur les chats,
+    les dinosaures, l'Église, les pavillons de banlieue, la décadence de
+    l'humanité.
+
+    \medskip
+    Roman-fleuve picaresque dans la lignée de Cervantes et Rabelais,
+    \textit{Tête de veau ravigote} mêle la rage sadienne au pessimisme
+    schopenhauerien. Éric Mugnier y déploie une prose incandescente, truculente
+    et désespérée, qui rappelle autant \textit{Là-bas} de Huysmans que les
+    pamphlets du XVIIIe~siècle. Inachevable, et délibérément inachevé, ce
+    premier roman ignore la résolution et préfère la dérive : une logorrhée
+    vengeresse et jubilatoire.%
+  };
+
+  % Filet séparateur
+  \draw[white!25!black, line width=0.3pt] (15, 41) -- (131, 41);
+
+  % ── Bio
+  \node[
+    anchor=north west,
+    text width=113mm,
+    align=justify,
+    text=greylight,
+    inner sep=0pt
+  ] at (15, 38)
+  {%
+    \sffamily\fontsize{7.5}{11}\selectfont
+    Éric Mugnier est né en 1960. Il vit à Chaumont-en-Bassigny. Peintre,
+    compositeur et parolier, il se consacre depuis quarante ans à la
+    création. \textit{Tête de veau ravigote} est son premier roman.%
+  };
+
+\end{tikzpicture}
+
+\end{document}
