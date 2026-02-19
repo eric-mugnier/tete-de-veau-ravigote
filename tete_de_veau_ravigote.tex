@@ -71,11 +71,7 @@
 \begin{document}
 \pagestyle{empty}
 
-% ═══ PAGE BLANCHE (précède le titre) ══════════════════════════════════════════
-\hbox{}\thispagestyle{empty}\newpage   % page 1 (impaire) → blanche
-
-% ═══ PAGE DE TITRE (impaire) ══════════════════════════════════════════════════
-\cleardoublepage                        % page 2 blanche, atterrit page 3 (impaire)
+% ═══ PAGE DE TITRE (p. 1, impaire) ═══════════════════════════════════════════
 \begin{center}
 \vspace*{6\onelineskip}
 {\scshape\large éric mugnier}
@@ -86,7 +82,17 @@
 \vspace{12\onelineskip}
 {\itshape roman}
 \end{center}
-\cleardoublepage                        % p. 4 blanche (gauche), → p. 5 (impaire/droite)
+% ═══ PAGE DE COPYRIGHT (verso du titre, p. 2) ════════════════════════════════
+\newpage
+\thispagestyle{empty}
+\vspace*{\fill}
+{\footnotesize\noindent
+\textcopyright{} Éric Mugnier, 2026\\
+Tous droits réservés pour tous pays\\
+Reproduction interdite\\[1.5\onelineskip]
+{\scriptsize\itshape Édition préparée par Christophe Thiebaud}
+}
+\cleardoublepage                        % p. 5 (impaire) → dédicace
 
 % ═══ DÉDICACE (impaire) ═══════════════════════════════════════════════════════
 \vspace*{10\onelineskip}
@@ -110,5 +116,9 @@ cuite. Sa mort laisse un grand vide dans mon cœur.
 \pagestyle{gallimard}
 
 \input{tete_de_veau_ravigote_content.tex}
+
+% ═══ PAGE BLANCHE FINALE (p. 466, verso) ══════════════════════════════════════
+\clearpage
+\hbox{}\thispagestyle{empty}
 
 \end{document}

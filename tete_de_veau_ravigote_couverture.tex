@@ -10,6 +10,7 @@
 \usetikzlibrary{calc}
 \usepackage{microtype}
 \usepackage{ragged2e}
+\usepackage{graphicx}
 
 % ─── COULEURS ─────────────────────────────────────────────────────────────────
 \definecolor{gallimardred}{RGB}{185,10,10}
@@ -102,6 +103,10 @@
     (231, 72) -- (231, 78);
   \fill[gallimardred!60] (231,75) circle (0.8mm);
 
+  % ── Logo CT (1ère, centré dans l'espace libre) ────────────────────────────
+  \node[anchor=center] at (231, 104)
+    {\includegraphics[width=14mm]{ct_watermark.png}};
+
 
   % ─────────────────────────────────────────────────────────────────────────
   % ══ DOS (143 – 161 mm) ═══════════════════════════════════════════════════
@@ -114,6 +119,10 @@
   % Titre vertical (texte de bas en haut)
   \node[rotate=90, anchor=center] at (152, 112)
     {\fontsize{8}{10}\selectfont\textsc{tête de veau ravigote}};
+
+  % ── Logo CT (dos, bas, discret) ───────────────────────────────────────────
+  \node[anchor=south] at (152, 6)
+    {\includegraphics[width=6mm]{ct_watermark.png}};
 
 
   % ─────────────────────────────────────────────────────────────────────────

@@ -9,6 +9,7 @@
 \usepackage{tikz}
 \usetikzlibrary{calc}
 \usepackage{microtype}
+\usepackage{graphicx}
 
 % ─── COULEURS SÉRIE NOIRE ─────────────────────────────────────────────────────
 \definecolor{snjaune}{RGB}{255,210,0}     % jaune Série Noire
@@ -60,6 +61,10 @@
   \node[anchor=north, text=snblanc] at (231, 118)
     {\fontsize{9}{11}\selectfont\sffamily\itshape roman};
 
+  % ── Logo CT (entre "roman" et l'ornement) ────────────────────────────────
+  \node[anchor=center] at (231, 88)
+    {\includegraphics[width=14mm]{ct_watermark.png}};
+
   % ── Ornement central : trois tirets horizontaux jaunes ─────────────────
   \foreach \y in {70, 65, 60} {
     \draw[snjaune!70, line width=0.6pt] (215, \y) -- (247, \y);
@@ -80,6 +85,10 @@
   % Titre vertical (noir sur jaune)
   \node[rotate=90, anchor=center, text=snnoir] at (152, 106)
     {\fontsize{8.5}{10}\selectfont\sffamily\bfseries TÊTE DE VEAU RAVIGOTE};
+
+  % ── Logo CT (dos, bas, discret) ───────────────────────────────────────────
+  \node[anchor=south] at (152, 8)
+    {\includegraphics[width=6mm]{ct_watermark.png}};
 
 
   % ─────────────────────────────────────────────────────────────────────────

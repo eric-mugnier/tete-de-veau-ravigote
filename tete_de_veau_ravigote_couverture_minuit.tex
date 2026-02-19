@@ -9,6 +9,7 @@
 \usepackage{tikz}
 \usetikzlibrary{calc, shapes.geometric}
 \usepackage{microtype}
+\usepackage{graphicx}
 
 % ─── COULEURS MINUIT ──────────────────────────────────────────────────────────
 \definecolor{minuitblue}{RGB}{28,72,172}   % bleu Minuit
@@ -57,6 +58,10 @@
   \node[anchor=north] at (231, 152)
     {\fontsize{9}{11}\selectfont\itshape roman};
 
+  % ── Logo CT (entre "roman" et la photo) ────────────────────────────────
+  \node[anchor=center] at (231, 122)
+    {\includegraphics[width=16mm]{ct_watermark.png}};
+
   % ── Bandeau photo (pleine largeur, jusqu'en bas) ──────────────────────
   \begin{scope}
     \clip (161, 0) rectangle (304, 105);
@@ -81,6 +86,10 @@
   % Auteur en haut
   \node[anchor=north] at (152, 199)
     {\fontsize{6.5}{8}\selectfont ÉRIC MUGNIER};
+
+  % ── Logo CT (dos, bas, discret) ───────────────────────────────────────────
+  \node[anchor=south] at (152, 6)
+    {\includegraphics[width=6mm]{ct_watermark.png}};
 
 
   % ─────────────────────────────────────────────────────────────────────────

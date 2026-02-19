@@ -9,10 +9,12 @@
 \usepackage{tikz}
 \usetikzlibrary{calc}
 \usepackage{microtype}
+\usepackage{graphicx}
 
 % ─── COULEUR ──────────────────────────────────────────────────────────────────
 \definecolor{encre}{RGB}{18,18,18}
 \definecolor{gristexte}{RGB}{90,90,90}
+\definecolor{bleutnuit}{RGB}{28,40,64}
 
 % ─── DOCUMENT ─────────────────────────────────────────────────────────────────
 \begin{document}
@@ -50,26 +52,30 @@
   % ══ 1ÈRE DE COUVERTURE (182 – 330 mm) — centre : 256 mm ═════════════════
   % ═══════════════════════════════════════════════════════════════════════════
 
-  % ── Auteur : petites caps, très espacées, discret ─────────────────────────
-  \node[anchor=north, text=encre] at (256, 205)
-    {\fontsize{12}{14}\selectfont\textls[250]{\textsc{éric mugnier}}};
+  % ── Auteur : petites caps, très espacées, centré entre haut et filet ────────
+  \node[anchor=center, text=bleutnuit] at (256, 185)
+    {\fontsize{14}{17}\selectfont\textls[250]{\textsc{éric mugnier}}};
 
   % ── Filet unique : l'unique élément graphique ─────────────────────────────
-  \draw[encre, line width=0.25pt] (193, 160) -- (319, 160);
+  \draw[bleutnuit, line width=0.25pt] (193, 160) -- (319, 160);
 
   % ── Titre : garamond regular, grand, aéré, une seule ligne ────────────────
   \node[
     anchor=north,
     text width=120mm,
     align=center,
-    text=encre
+    text=bleutnuit
   ] at (256, 156)
-  {\fontsize{24}{30}\selectfont
+  {\fontsize{26}{32}\selectfont
     Tête de veau ravigote};
 
   % ── Mention "roman" ────────────────────────────────────────────────────────
-  \node[anchor=north, text=gristexte] at (256, 123)
+  \node[anchor=north, text=bleutnuit] at (256, 123)
     {\fontsize{11}{13}\selectfont\itshape roman};
+
+  % ── Logo CT (1ère, bas droite, discret) ──────────────────────────────────
+  \node[anchor=south, opacity=0.4] at (256, 10)
+    {\includegraphics[width=6mm]{ct_watermark.png}};
 
   % ═══════════════════════════════════════════════════════════════════════════
   % ══ DOS (153 – 182 mm) — centre : 167,5 mm ══════════════════════════════
@@ -85,7 +91,11 @@
 
   % Titre vertical (de bas en haut)
   \node[rotate=90, anchor=center, text=encre] at (167.5, 110)
-    {\fontsize{7.5}{9}\selectfont\textls[80]{\textsc{tête de veau ravigote}}};
+    {\fontsize{8.5}{10}\selectfont\textls[80]{\textsc{tête de veau ravigote}}};
+
+  % ── Logo CT (dos, bas, discret) ───────────────────────────────────────────
+  \node[anchor=south, opacity=0.4] at (167.5, 8)
+    {\includegraphics[width=6mm]{ct_watermark.png}};
 
   % ═══════════════════════════════════════════════════════════════════════════
   % ══ 4ÈME DE COUVERTURE (5 – 153 mm) — centre : 79 mm ═══════════════════
@@ -98,17 +108,15 @@
     align=justify,
     inner sep=0pt,
     text=encre
-  ] at (17, 175)
+  ] at (17, 200)
   {%
-    \fontsize{9}{14}\selectfont
+    \fontsize{9}{16}\selectfont
     Quand le père Vidal disparaît dans des circonstances troubles et que des
     colis macabres commencent à circuler dans la ville, le commandant Beauvais
     se lance dans une enquête labyrinthique. Mais le polar n'est ici qu'un fil
     rouge dérisoire : ce qui compte, ce sont les digressions – sur les chats,
     les dinosaures, l'Église, les pavillons de banlieue, la décadence de
-    l'humanité.
-
-    \medskip
+    l'humanité.\\[16pt]
     Roman-fleuve picaresque dans la lignée de Cervantes et Rabelais,
     \textit{Tête de veau ravigote} mêle la rage sadienne au pessimisme
     schopenhauerien. Éric Mugnier y déploie une prose incandescente, truculente
@@ -119,7 +127,7 @@
   };
 
   % Filet séparateur fin
-  \draw[encre!30, line width=0.25pt] (17, 40) -- (140, 40);
+  \draw[encre!30, line width=0.25pt] (17, 36) -- (140, 36);
 
   % ── Bio ─────────────────────────────────────────────────────────────────────
   \node[
@@ -128,7 +136,7 @@
     align=justify,
     inner sep=0pt,
     text=gristexte
-  ] at (17, 37)
+  ] at (17, 33)
   {%
     \fontsize{8}{11.5}\selectfont
     Éric Mugnier est né en 1960. Il vit à Chaumont-en-Bassigny. Peintre,
