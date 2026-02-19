@@ -1,4 +1,4 @@
-| Éditeur | Contact | 📚/💾 | Envoi | Réponse |
+| Éditeur | Contact | 📚 💾 | Envoi | Réponse |
 |---------|---------|-------|-------|---------|
 | Gallimard (Blanche) | https://depot-manuscrits.gallimard.fr/ | 💾 | 19/02/2026 | |
 | Actes Noirs (Actes Sud) | manuscrits@actes-sud.fr | | | |
