@@ -4,26 +4,57 @@
 
 # ─── Noms de personnages ───────────────────────────────────────────────────
 Alexandrine
+Beaubois
+Beaugendre
 Behram
+Brochard
 Chéron
 Cuvillier
+Dardariel
+Djeferson
+Fuente
 Gulav
+Hemings
 Lemaître
 Lortie
+Lussier
+Merrin
 Pancho
+Pazuzu
+Renou
+Robineau
+Riqueti
+Shirani
+von Humboldt
+Zaahid
 
 # ─── Auteur & éditeur ─────────────────────────────────────────────────────
 Mugnier
 Thiebaud
 
 # ─── Lieux ────────────────────────────────────────────────────────────────
+Albemarle
+Charlottesville
+Coltibuono
+Gaiole
 Palavas-les-Flots
 Ruthénie
+Vallombrosa
+Whitechapel
 
 # ─── Marques & modèles ────────────────────────────────────────────────────
+Badia
 Cessna
+Chambertin
+Cuvillier
+Feni
+Gevrey
+Kangoo
+Perfecto
 Skylane
 Waterflox
+Anada
+Sintawichai
 
 # ─── Registre argotique & familier (style de l'auteur) ───────────────────
 rappliqué
@@ -75,3 +106,9 @@ Humboldt
 lockiste
 Hemings
 Fuente
+polyalphabétique
+lockiste
+farcissage
+vino
+santo
+hoisin
