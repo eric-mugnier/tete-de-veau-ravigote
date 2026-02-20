@@ -3,22 +3,27 @@
 # Ajoutez ici vos propres mots : noms propres, argot littéraire, néologismes.
 
 # ─── Noms de personnages ───────────────────────────────────────────────────
-Gulav
+Alexandrine
 Behram
+Chéron
+Cuvillier
+Gulav
+Lemaître
+Lortie
+Pancho
 
 # ─── Auteur & éditeur ─────────────────────────────────────────────────────
 Mugnier
 Thiebaud
-Alexandrine
-Chéron
-Lemaître
 
 # ─── Lieux ────────────────────────────────────────────────────────────────
 Palavas-les-Flots
+Ruthénie
 
 # ─── Marques & modèles ────────────────────────────────────────────────────
 Cessna
 Skylane
+Waterflox
 
 # ─── Registre argotique & familier (style de l'auteur) ───────────────────
 rappliqué
