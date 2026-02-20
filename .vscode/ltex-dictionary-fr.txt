@@ -7,20 +7,27 @@ Alexandrine
 Beaubois
 Beaugendre
 Behram
+Bolsonaro
 Brochard
+Cangelosi
 Chéron
 Cuvillier
 Dardariel
 Djeferson
+Fangio
 Fuente
 Gulav
 Hemings
+Jacquinot
+Korax
 Lemaître
 Lortie
 Lussier
 Merrin
+Ouvrard
 Pancho
 Pazuzu
+Prospero
 Renou
 Robineau
 Riqueti
@@ -35,7 +42,9 @@ Thiebaud
 # ─── Lieux ────────────────────────────────────────────────────────────────
 Albemarle
 Charlottesville
+Chicxulub
 Coltibuono
+Ddarr
 Gaiole
 Palavas-les-Flots
 Ruthénie
@@ -43,18 +52,20 @@ Vallombrosa
 Whitechapel
 
 # ─── Marques & modèles ────────────────────────────────────────────────────
+Anada
 Badia
 Cessna
-Chambertin
 Cuvillier
 Feni
 Gevrey
+Giulietta
 Kangoo
 Perfecto
-Skylane
-Waterflox
-Anada
+PQ
 Sintawichai
+Skylane
+SW
+Waterflox
 
 # ─── Registre argotique & familier (style de l'auteur) ───────────────────
 rappliqué
@@ -112,3 +123,16 @@ farcissage
 vino
 santo
 hoisin
+nazifiantes
+Ovis
+shantungensis
+Asteriornis
+maastrichtensis
+Vegavis
+iaai
+Morotopithecus
+bishopi
+Nyanzapithecus
+alesi
+Archicebus
+achilles
