@@ -1,0 +1,192 @@
+{
+  // ═══════════════════════════════════════════════════════════════════════════
+  // LTeX+ — Correction orthographique et grammaticale (French LaTeX)
+  // Extension : ltex-plus.vscode-ltex-plus v15+
+  // ═══════════════════════════════════════════════════════════════════════════
+
+  // Association explicite : les fichiers .tex sont du LaTeX
+  "files.associations": {
+    "*.tex": "latex"
+  },
+
+  // Chemin explicite vers le serveur de langage
+  "ltex.ltex-ls.path": "/Users/christophe.thiebaud/.vscode/extensions/ltex-plus.vscode-ltex-plus-15.6.1/lib/ltex-ls-plus-18.6.1",
+
+  // Active LTeX+ sur tous les types de fichiers supportés
+  "ltex.enabled": true,
+  "ltex.language": "fr",
+
+  // ─── Règles LanguageTool avancées (style, registre) ──────────────────────
+  "ltex.additionalRules.enablePickyRules": false,
+  "ltex.additionalRules.motherTongue": "fr",
+
+  // ─── Dictionnaire personnel ───────────────────────────────────────────────
+  // Pour ajouter un mot : utilisez le clic droit / quick-fix "Ajouter au
+  // dictionnaire", ou éditez directement .vscode/ltex-dictionary-fr.txt
+  "ltex.dictionary": {
+    "fr": [
+      ":/Users/christophe.thiebaud/_Mugnier/.vscode/ltex-dictionary-fr.txt"
+    ]
+  },
+
+  // ─── Règles désactivées ───────────────────────────────────────────────────
+  // FRENCH_WHITESPACE : géré par babel/csquotes dans LaTeX
+  // UPPERCASE_SENTENCE_START : style littéraire (fragments, dialogues)
+  // MULTIPLICATION_SIGN : expressions comme "50×40"
+  "ltex.disabledRules": {
+    "fr": [
+      "FRENCH_WHITESPACE",
+      "UPPERCASE_SENTENCE_START",
+      "MULTIPLICATION_SIGN"
+    ]
+  },
+
+  // ─── Commandes LaTeX ignorées ─────────────────────────────────────────────
+  // "ignore"  → la commande et ses arguments sont sautés entièrement
+  // "dummy"   → les arguments sont remplacés par un mot fictif (phrase vérifiée)
+  // "remove"  → la commande est supprimée, ses arguments traités normalement
+  "ltex.latex.commands": {
+
+    // Classe memoir — mise en page
+    "\\setstocksize{}{}": "ignore",
+    "\\settrimmedsize{}{}{}": "ignore",
+    "\\settrims{}{}": "ignore",
+    "\\setlrmarginsandblock{}{}{}": "ignore",
+    "\\setulmarginsandblock{}{}{}": "ignore",
+    "\\setheadfoot{}{}": "ignore",
+    "\\setheaderspaces{}{}{}": "ignore",
+    "\\checkandfixthelayout": "ignore",
+    "\\setlength{}{}": "ignore",
+    "\\addtolength{}{}": "ignore",
+
+    // Classe memoir — chapitres & styles
+    "\\makechapterstyle{}{}": "ignore",
+    "\\chapterstyle{}": "ignore",
+    "\\chapnamefont": "ignore",
+    "\\chapnumfont": "ignore",
+    "\\chaptitlefont": "ignore",
+    "\\afterchapternum": "ignore",
+    "\\afterchapskip": "ignore",
+    "\\printchaptername": "ignore",
+    "\\chapternamenum": "ignore",
+    "\\printchapternum": "ignore",
+    "\\printchaptertitle{}": "ignore",
+
+    // Classe memoir — en-têtes / pieds de page
+    "\\makepagestyle{}": "ignore",
+    "\\makeevenhead{}{}{}{}": "ignore",
+    "\\makeoddhead{}{}{}{}": "ignore",
+    "\\makeevenfoot{}{}{}{}": "ignore",
+    "\\makeoddfoot{}{}{}{}": "ignore",
+    "\\makepsmarks{}{}": "ignore",
+    "\\createmark{}{}{}{}{}{}": "ignore",
+    "\\aliaspagestyle{}{}": "ignore",
+    "\\pagestyle{}": "ignore",
+    "\\thispagestyle{}": "ignore",
+    "\\nouppercaseheads": "ignore",
+
+    // Macros LaTeX standard
+    "\\makeatletter": "ignore",
+    "\\makeatother": "ignore",
+    "\\renewcommand{}{}": "ignore",
+    "\\renewcommand{}[]{}": "ignore",
+    "\\newcommand{}{}": "ignore",
+    "\\newcommand{}[]{}": "ignore",
+    "\\documentclass[]{}": "ignore",
+    "\\usepackage[]{}": "ignore",
+    "\\usepackage{}": "ignore",
+    "\\input{}": "ignore",
+    "\\include{}": "ignore",
+    "\\label{}": "ignore",
+    "\\ref{}": "ignore",
+    "\\cite{}": "ignore",
+    "\\bibliographystyle{}": "ignore",
+    "\\bibliography{}": "ignore",
+
+    // Longueurs & espacements
+    "\\vspace{}": "ignore",
+    "\\vspace*{}": "ignore",
+    "\\hspace{}": "ignore",
+    "\\hspace*{}": "ignore",
+    "\\hbox{}": "ignore",
+    "\\hbox": "ignore",
+    "\\baselinestretch": "ignore",
+    "\\parindent": "ignore",
+    "\\parskip": "ignore",
+    "\\onelineskip": "ignore",
+    "\\thepage": "ignore",
+    "\\thechapter": "ignore",
+
+    // Sauts de page
+    "\\newpage": "ignore",
+    "\\clearpage": "ignore",
+    "\\cleardoublepage": "ignore",
+    "\\pagebreak": "ignore",
+
+    // Commandes de fonte (le contenu reste vérifié grâce à "dummy")
+    "\\textit{}": "dummy",
+    "\\textbf{}": "dummy",
+    "\\textsc{}": "dummy",
+    "\\emph{}": "dummy",
+    "\\textrm{}": "dummy",
+    "\\texttt{}": "dummy",
+    "\\underline{}": "dummy",
+
+    // Déclarations de fonte (ignorées : pas d'argument)
+    "\\scshape": "ignore",
+    "\\itshape": "ignore",
+    "\\normalfont": "ignore",
+    "\\centering": "ignore",
+    "\\raggedright": "ignore",
+    "\\raggedleft": "ignore",
+    "\\large": "ignore",
+    "\\Large": "ignore",
+    "\\LARGE": "ignore",
+    "\\huge": "ignore",
+    "\\Huge": "ignore",
+    "\\small": "ignore",
+    "\\footnotesize": "ignore",
+    "\\scriptsize": "ignore",
+    "\\normalsize": "ignore",
+    "\\noindent": "ignore",
+
+    // Symboles
+    "\\textcopyright": "ignore",
+    "\\texttrademark": "ignore",
+    "\\textregistered": "ignore"
+  },
+
+  // ─── Environnements LaTeX ignorés ─────────────────────────────────────────
+  "ltex.latex.environments": {
+    "verbatim": "ignore",
+    "verbatim*": "ignore",
+    "Verbatim": "ignore",
+    "lstlisting": "ignore",
+    "minted": "ignore",
+    "alltt": "ignore",
+    "filecontents": "ignore",
+    "filecontents*": "ignore",
+    "comment": "ignore",
+    "tikzpicture": "ignore",
+    "pgfpicture": "ignore",
+    "equation": "ignore",
+    "equation*": "ignore",
+    "align": "ignore",
+    "align*": "ignore",
+    "gather": "ignore",
+    "gather*": "ignore",
+    "multline": "ignore",
+    "multline*": "ignore",
+    "math": "ignore",
+    "displaymath": "ignore",
+    "array": "ignore",
+    "tabular": "ignore",
+    "tabular*": "ignore",
+    "tabularx": "ignore"
+  },
+
+  // ─── Faux positifs masqués (à remplir via quick-fix "Masquer") ───────────
+  "ltex.hiddenFalsePositives": {
+    "fr": []
+  }
+}

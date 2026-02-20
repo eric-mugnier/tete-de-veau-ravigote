@@ -1,0 +1,72 @@
+# Dictionnaire personnel LTeX+ — Français
+# Une entrée par ligne. Les lignes commençant par # sont ignorées.
+# Ajoutez ici vos propres mots : noms propres, argot littéraire, néologismes.
+
+# ─── Noms de personnages ───────────────────────────────────────────────────
+Gulav
+Behram
+
+# ─── Auteur & éditeur ─────────────────────────────────────────────────────
+Mugnier
+Thiebaud
+Alexandrine
+Chéron
+Lemaître
+
+# ─── Lieux ────────────────────────────────────────────────────────────────
+Palavas-les-Flots
+
+# ─── Marques & modèles ────────────────────────────────────────────────────
+Cessna
+Skylane
+
+# ─── Registre argotique & familier (style de l'auteur) ───────────────────
+rappliqué
+caïd
+levrette
+chiennes
+flinguer
+flingue
+cabane
+taulards
+balader
+baladers
+dégueuler
+dégueulasse
+postillonner
+saccager
+bouffe
+bouffé
+défoncer
+défoncées
+calcinée
+arsouille
+connerie
+conneries
+enculeurs
+louveteaux
+foutu
+foutue
+foutus
+foutues
+crève
+crèvent
+crever
+pognon
+clébard
+Med
+plastoc
+Smaug
+Godzilla
+zguègue
+Manufrance
+Télétubbies
+Djeferson
+Charlottesville
+Albemarle
+polyalphabétique
+von
+Humboldt
+lockiste
+Hemings
+Fuente
