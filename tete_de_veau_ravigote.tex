@@ -7,6 +7,13 @@
 \usepackage[french]{babel}
 \usepackage{microtype}
 \usepackage{fmtcount}
+\usepackage{catchfile}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\input{version.tex}
+\immediate\write18{git log -1 --format=\%h > \jobname.gitinfo}
+\CatchFileDef{\gitcommit}{\jobname.gitinfo}{\endlinechar=-1}
 
 % ─── PAGE GEOMETRY (140×205 mm – Gallimard Blanche) ──────────────────────────
 \setstocksize{210mm}{148mm}
@@ -93,7 +100,9 @@
 \textcopyright{} Éric Mugnier, 2026\\
 Tous droits réservés pour tous pays\\
 Reproduction interdite\\[1.5\onelineskip]
-{\scriptsize\itshape Édition préparée par Christophe Thiebaud}
+\hbox to \linewidth{\hfil\tikz\node[inner sep=0pt]{\includegraphics[height=1.6\onelineskip]{images/ct_watermark.png}};}\par\vspace{-3pt}
+\noindent\rule{\linewidth}{0.4pt}\par\vspace{0pt}
+\noindentÉdition préparée par Christophe Thiebaud\hfill version \docversion\ · \today\ · \gitcommit
 }
 \cleardoublepage                        % p. 5 (impaire) → dédicace
 
