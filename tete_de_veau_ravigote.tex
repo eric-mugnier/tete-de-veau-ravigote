@@ -6,6 +6,7 @@
 \usepackage{ebgaramond}
 \usepackage[french]{babel}
 \usepackage{microtype}
+\usepackage{fmtcount}
 
 % ─── PAGE GEOMETRY (140×205 mm – Gallimard Blanche) ──────────────────────────
 \setstocksize{210mm}{148mm}
@@ -35,7 +36,7 @@
   \renewcommand{\printchaptername}{}
   \renewcommand{\chapternamenum}{}
   \renewcommand{\printchapternum}{%
-    \chapnumfont\thechapter}          % plus sobre : juste le numéro
+    \chapnumfont\numberstring{chapter}} % numéro en petites capitales (un, deux…)
   \renewcommand{\afterchapternum}{\par\vskip 2\onelineskip}
   \renewcommand{\printchaptertitle}[1]{}
 }
@@ -100,7 +101,7 @@ Reproduction interdite\\[1.5\onelineskip]
 \vspace*{10\onelineskip}
 \begin{flushright}
 \itshape\small
-A ma grand-mère maternelle Alexandrine Chéron, née Lemaître, \\
+À ma grand-mère maternelle Alexandrine Chéron, née Lemaître, \\
 décédée en 2022 alors qu'elle survolait la cordillère des Andes \\
 à bord du Cessna Skylane 182 jaune canari qu'elle s'était, \\
 contre l'avis général et tout particulièrement celui des compagnies \\
@@ -119,8 +120,10 @@ cuite. Sa mort laisse un grand vide dans mon cœur.
 
 \input{tete_de_veau_ravigote_content.tex}
 
-% ═══ PAGE BLANCHE FINALE (p. 466, verso) ══════════════════════════════════════
+% ═══ PAGES BLANCHES FINALES ═══════════════════════════════════════════════════
 \clearpage
+\hbox{}\thispagestyle{empty}
+\newpage
 \hbox{}\thispagestyle{empty}
 
 \end{document}
