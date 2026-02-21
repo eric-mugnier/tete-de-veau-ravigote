@@ -126,16 +126,25 @@ cuite. Sa mort laisse un grand vide dans mon cœur.
 
 \input{tete_de_veau_ravigote_content.tex}
 
-% ═══ PAGE BLANCHE + COLOPHON FINAL ═══════════════════════════════════════════
+% ═══ COLOPHON FINAL (page impaire) + PAGE BLANCHE FINALE (page paire) ════════
 \clearpage
-\hbox{}\thispagestyle{empty}
-\newpage
+\hbox{}\thispagestyle{empty}\newpage   % page blanche intercalée après le texte
+% \makeatletter requis : @ a catcode 12 dans le corps du document.
+% Si la prochaine page est paire, on insère une page blanche pour
+% que le colophon tombe sur une page impaire (recto).
+\makeatletter
+\ifodd\c@page\else
+  \hbox{}\thispagestyle{empty}\newpage
+\fi
+\makeatother
 \thispagestyle{empty}
-\vspace*{\fill}
+\null\vfill
 {\footnotesize
-\hbox to \linewidth{\hfil\tikz\node[opacity=0.33,inner sep=0pt]{\includegraphics[height=1.6\onelineskip]{images/ct_watermark.png}};}\par\vspace{2pt}
+\hbox to \linewidth{\hfil\tikz\node[opacity=0.33,inner sep=0pt]{\includegraphics[height=1.6\onelineskip]{images/ct_watermark.png}};}\par\vspace{-6pt}
 \noindent{\color{black!33}\rule{\linewidth}{0.4pt}}\par\vspace{0pt}
 \noindent \textit{\docversionordinal\ édition, composée avec \textup{\LaTeX}\ par Christophe Thiebaud à San Lazzaro di Savena, le \today\ (révision \gitcommit).}
 }
+\newpage
+\hbox{}\thispagestyle{empty}
 
 \end{document}
