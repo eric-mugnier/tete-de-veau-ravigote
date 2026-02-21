@@ -39,7 +39,7 @@
 \newcommand{\chaptersummary}[1]{%
   \edef\chapnum{\ifcase\value{chapter}\or I\or II\or III\or IV\or V\or VI\or VII\or VIII\or IX\fi}%
   \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}%
-  \addcontentsline{toc}{chapter}{\chapnum~#1}%
+  \addcontentsline{toc}{chapter}{\protect\numberline{\chapnum}#1}%
   \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}%
   \begingroup
     \setlength{\leftskip}{1.5cm}%
@@ -76,14 +76,16 @@
 \renewcommand{\aftertoctitle}{\vskip 2\onelineskip}
 % Entrées de chapitre (ajoutées manuellement via \chaptersummary)
 \renewcommand{\cftchapterfont}{\small\scshape}
+\renewcommand{\cftchapternumfont}{\small\scshape}
 \renewcommand{\cftchapterpagefont}{\small\scshape}
 \setlength{\cftchapterindent}{0pt}
+\setlength{\cftchapternumwidth}{2.5em}% colonne gauche : numéro romain
 \setlength{\cftbeforechapterskip}{0.5\onelineskip}
-% Entrées de section (ajoutées manuellement via \partsummary)
+% Entrées de section (ajoutées manuellement via \partsummary) — colonne droite seule
 \renewcommand{\cftsectionfont}{\small\scshape}
 \renewcommand{\cftsectionpagefont}{\small\scshape}
-\setlength{\cftsectionindent}{0pt}
-\setlength{\cftsectionnumwidth}{\cftchapternumwidth}% même retrait de continuation que les chapitres
+\setlength{\cftsectionindent}{2.5em}% aligne le texte sur la colonne droite des chapitres
+\setlength{\cftsectionnumwidth}{0pt}
 \setlength{\cftbeforesectionskip}{0.2\onelineskip}
 
 % ─── CHAPTER STYLE ────────────────────────────────────────────────────────────
