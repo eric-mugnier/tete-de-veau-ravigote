@@ -39,7 +39,7 @@
 \newcommand{\chaptersummary}[1]{%
   \edef\chapnum{\ifcase\value{chapter}\or I\or II\or III\or IV\or V\or VI\or VII\or VIII\or IX\fi}%
   \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}%
-  \addcontentsline{toc}{chapter}{\protect\numberline{\chapnum}#1}%
+  \addcontentsline{toc}{chapter}{\protect\tocchapnum{\chapnum}#1}%
   \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}%
   \begingroup
     \setlength{\leftskip}{1.5cm}%
@@ -52,7 +52,7 @@
 % Résumé de partie intercalé dans le corps du texte (acte 9 parties 2–4)
 \newcommand{\partsummary}[1]{%
   \addtocontents{toc}{\protect\setcounter{tocdepth}{1}}%
-  \addcontentsline{toc}{section}{#1}%
+  \addcontentsline{toc}{section}{\protect\tocchapsep#1}%
   \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}%
   \par% ferme le paragraphe précédent avant de modifier leftskip/rightskip
   \vspace{1.5\onelineskip}%
@@ -74,18 +74,20 @@
   {\centering\normalfont\scshape\large #1\par}%
 }
 \renewcommand{\aftertoctitle}{\vskip 2\onelineskip}
+% Colonnes du sommaire : numéro romain (gauche) + texte (droite)
+\newcommand{\tocchapnum}[1]{\hbox to 2.5em{#1\hfil}}% boîte fixe pour le numéro
+\newcommand{\tocchapsep}{\hbox to 2.5em{\hfil}}% boîte vide pour les sous-chapitres
 % Entrées de chapitre (ajoutées manuellement via \chaptersummary)
 \renewcommand{\cftchapterfont}{\small\scshape}
-\renewcommand{\cftchapternumfont}{\small\scshape}
 \renewcommand{\cftchapterpagefont}{\small\scshape}
 \setlength{\cftchapterindent}{0pt}
-\setlength{\cftchapternumwidth}{2.5em}% colonne gauche : numéro romain
+\setlength{\cftchapternumwidth}{2.5em}% retrait de continuation = largeur de la colonne gauche
 \setlength{\cftbeforechapterskip}{0.5\onelineskip}
-% Entrées de section (ajoutées manuellement via \partsummary) — colonne droite seule
+% Entrées de section (ajoutées manuellement via \partsummary)
 \renewcommand{\cftsectionfont}{\small\scshape}
 \renewcommand{\cftsectionpagefont}{\small\scshape}
-\setlength{\cftsectionindent}{2.5em}% aligne le texte sur la colonne droite des chapitres
-\setlength{\cftsectionnumwidth}{0pt}
+\setlength{\cftsectionindent}{0pt}
+\setlength{\cftsectionnumwidth}{2.5em}% même retrait de continuation
 \setlength{\cftbeforesectionskip}{0.2\onelineskip}
 
 % ─── CHAPTER STYLE ────────────────────────────────────────────────────────────
@@ -180,7 +182,8 @@ cuite. Sa mort laisse un grand vide dans mon cœur.
 
 \input{tete_de_veau_ravigote_content.tex}
 
-% ═══ SOMMAIRE ═════════════════════════════════════════════════════════════════
+% ═══ SOMMAIRE (page impaire, précédé d'une page blanche) ══════════════════════
+\cleardoublepage               % termine le dernier acte, insère une page blanche si nécessaire
 \tableofcontents*
 
 % ═══ COLOPHON FINAL (page impaire) + PAGE BLANCHE FINALE (page paire) ════════
