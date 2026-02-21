@@ -47,6 +47,7 @@
 }
 % Résumé de partie intercalé dans le corps du texte (acte 9 parties 2–4)
 \newcommand{\partsummary}[1]{%
+  \par% ferme le paragraphe précédent avant de modifier leftskip/rightskip
   \vspace{1.5\onelineskip}%
   \begingroup
     \setlength{\leftskip}{1.5cm}%
@@ -66,7 +67,7 @@
   \renewcommand{\printchaptername}{}
   \renewcommand{\chapternamenum}{}
   \renewcommand{\printchapternum}{%
-    \chapnumfont\numberstring{chapter}} % numéro en petites capitales (un, deux…)
+    \chapnumfont\Roman{chapter}} % numéro en chiffres romains
   \renewcommand{\afterchapternum}{\par\vskip 0.4\onelineskip}
   \renewcommand{\printchaptertitle}[1]{}
 }
