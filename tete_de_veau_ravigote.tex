@@ -39,7 +39,7 @@
 \newcommand{\chaptersummary}[1]{%
   \edef\chapnum{\ifcase\value{chapter}\or I\or II\or III\or IV\or V\or VI\or VII\or VIII\or IX\fi}%
   \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}%
-  \addcontentsline{toc}{chapter}{\chapnum~---~#1}%
+  \addcontentsline{toc}{chapter}{\chapnum~#1}%
   \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}%
   \begingroup
     \setlength{\leftskip}{1.5cm}%
@@ -82,7 +82,8 @@
 % Entrées de section (ajoutées manuellement via \partsummary)
 \renewcommand{\cftsectionfont}{\small\scshape}
 \renewcommand{\cftsectionpagefont}{\small\scshape}
-\setlength{\cftsectionindent}{1.5cm}
+\setlength{\cftsectionindent}{0pt}
+\setlength{\cftsectionnumwidth}{\cftchapternumwidth}% même retrait de continuation que les chapitres
 \setlength{\cftbeforesectionskip}{0.2\onelineskip}
 
 % ─── CHAPTER STYLE ────────────────────────────────────────────────────────────
