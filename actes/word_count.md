@@ -11,7 +11,7 @@
 | Acte 6/2 | acte_06_2.tex | 10 520 | 5,3 % | ☐ | Le brigadier-chef Lisnic et l'agent Achaari ; Sam revenu mais méconnaissable ; débâcle avec Sally Robinson ; plan de vengeance contre les Disciples de la Colère ; direction le Caribbean Hôtel. |
 | Acte 7 | acte_07.tex | 2 948 | 1,5 % | ☐ | Retour au Caribbean Hôtel ; le portier refuse l'accès en invoquant l'embargo contre les Blancs et les pouvoirs surnaturels d'Atiena. |
 | Acte 8 | acte_08.tex | 17 228 | 8,7 % | ☐ | De retour chez lui, Beauvais enquête sur le vol des livres rares de Jacquinot — des éditions originales des XVIIIe et XIXe siècles. |
-| Acte 9/1 | acte_09_1.tex | 11 253 | 5,7 % | ☐ | Réveil, appel avec Bérénice, trajet vers le Caribbean Hôtel. |
+| Acte 9/1 | acte_09_1.tex | 11 253 | 5,7 % | ☑ | Réveil, appel avec Bérénice, trajet vers le Caribbean Hôtel. |
 | Acte 9/2 | acte_09_2.tex | 23 461 | 11,9 % | ☐ | Investigation à l'hôtel ; réceptionniste mystérieux Repentance Whittingham ; recherche de Titus. |
 | Acte 9/3 | acte_09_3.tex | 19 858 | 10,0 % | ☐ | Affaire Charrier : filature, confrontation, fusillade, mort. |
 | Acte 9/4 | acte_09_4.tex | 6 067 | 3,1 % | ☐ | Réflexions finales avec Greg ; mystères sans réponse sur Titus et Bérénice. |
@@ -23,6 +23,6 @@
 
 ```mermaid
 pie title Correction LTeX+ (par nombre de mots)
-    "Corrigé — Actes 1–5 (83 903 mots)" : 83903
-    "À corriger — Actes 6–9 (113 695 mots)" : 113695
+    "Corrigé — Actes 1–5 (95 156 mots)" : 95156
+    "À corriger — Actes 6–9 (102 442 mots)" : 102442
 ```
