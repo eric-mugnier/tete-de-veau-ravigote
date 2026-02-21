@@ -32,21 +32,29 @@
 \setlength{\parskip}{0pt}            % Pas d'espace entre paragraphes
 
 % Pas d'alinéa après titres de chapitre
-\setlength{\afterchapskip}{2\onelineskip}
+\setlength{\afterchapskip}{0.4\onelineskip} % réduit : la headline gère l'espace vers le texte
 
 % ─── HEADLINES DE CHAPITRES ───────────────────────────────────────────────────
-% Résumé en italique centré sous le numéro de chapitre
+% Petites capitales, corps réduit, dans un bloc aux marges intérieures élargies
 \newcommand{\chaptersummary}[1]{%
-  \vspace{-0.5\onelineskip}%
-  {\centering\footnotesize\itshape #1\par}%
-  \vspace{1.5\onelineskip}%
+  \begingroup
+    \setlength{\leftskip}{1.5cm}%
+    \setlength{\rightskip}{1.5cm}%
+    \small\scshape\noindent #1\par
+  \endgroup
+  \vspace{2.5\onelineskip}%
+  \noindent
 }
 % Résumé de partie intercalé dans le corps du texte (acte 9 parties 2–4)
 \newcommand{\partsummary}[1]{%
-  \vspace{2\onelineskip}%
-  {\centering\footnotesize\itshape #1\par}%
+  \vspace{1.5\onelineskip}%
+  \begingroup
+    \setlength{\leftskip}{1.5cm}%
+    \setlength{\rightskip}{1.5cm}%
+    \small\scshape\noindent #1\par
+  \endgroup
   \vspace{\onelineskip}%
-  \noindent%
+  \noindent
 }
 
 % ─── CHAPTER STYLE ────────────────────────────────────────────────────────────
@@ -59,7 +67,7 @@
   \renewcommand{\chapternamenum}{}
   \renewcommand{\printchapternum}{%
     \chapnumfont\numberstring{chapter}} % numéro en petites capitales (un, deux…)
-  \renewcommand{\afterchapternum}{\par\vskip 2\onelineskip}
+  \renewcommand{\afterchapternum}{\par\vskip 0.4\onelineskip}
   \renewcommand{\printchaptertitle}[1]{}
 }
 \makeatother
