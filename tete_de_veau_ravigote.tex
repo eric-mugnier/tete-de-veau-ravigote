@@ -99,10 +99,7 @@
 {\footnotesize\noindent
 \textcopyright{} Éric Mugnier, 2026\\
 Tous droits réservés pour tous pays\\
-Reproduction interdite\\[1.5\onelineskip]
-\hbox to \linewidth{\hfil\tikz\node[opacity=0.33,inner sep=0pt]{\includegraphics[height=1.6\onelineskip]{images/ct_watermark.png}};}\par\vspace{-3pt}
-\noindent\rule{\linewidth}{0.4pt}\par\vspace{0pt}
-\noindentÉdition préparée par Christophe Thiebaud\hfill version \docversion\ · \today\ · \gitcommit
+Reproduction interdite
 }
 \cleardoublepage                        % p. 5 (impaire) → dédicace
 
@@ -129,10 +126,16 @@ cuite. Sa mort laisse un grand vide dans mon cœur.
 
 \input{tete_de_veau_ravigote_content.tex}
 
-% ═══ PAGES BLANCHES FINALES ═══════════════════════════════════════════════════
+% ═══ PAGE BLANCHE + COLOPHON FINAL ═══════════════════════════════════════════
 \clearpage
 \hbox{}\thispagestyle{empty}
 \newpage
-\hbox{}\thispagestyle{empty}
+\thispagestyle{empty}
+\vspace*{\fill}
+{\footnotesize\noindent
+\hbox to \linewidth{\hfil\tikz\node[opacity=0.33,inner sep=0pt]{\includegraphics[height=1.6\onelineskip]{images/ct_watermark.png}};}\par\vspace{-3pt}
+\noindent\rule{\linewidth}{0.4pt}\par\vspace{2pt}
+\textcolor{gray}{\noindentÉdition préparée par Christophe Thiebaud\hfill version \docversion\ · \today\ · \gitcommit\ · composé avec pdf\LaTeX}
+}
 
 \end{document}
