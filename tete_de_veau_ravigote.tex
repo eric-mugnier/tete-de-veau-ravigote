@@ -37,6 +37,10 @@
 % ─── HEADLINES DE CHAPITRES ───────────────────────────────────────────────────
 % Petites capitales, corps réduit, dans un bloc aux marges intérieures élargies
 \newcommand{\chaptersummary}[1]{%
+  \edef\chapnum{\ifcase\value{chapter}\or I\or II\or III\or IV\or V\or VI\or VII\or VIII\or IX\fi}%
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}%
+  \addcontentsline{toc}{chapter}{\chapnum~---~#1}%
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}%
   \begingroup
     \setlength{\leftskip}{1.5cm}%
     \setlength{\rightskip}{1.5cm}%
@@ -47,6 +51,9 @@
 }
 % Résumé de partie intercalé dans le corps du texte (acte 9 parties 2–4)
 \newcommand{\partsummary}[1]{%
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{1}}%
+  \addcontentsline{toc}{section}{#1}%
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}%
   \par% ferme le paragraphe précédent avant de modifier leftskip/rightskip
   \vspace{1.5\onelineskip}%
   \begingroup
@@ -57,6 +64,26 @@
   \vspace{\onelineskip}%
   \noindent
 }
+
+% ─── TABLE DES MATIÈRES ───────────────────────────────────────────────────────
+\setcounter{tocdepth}{-1}% supprime toutes les entrées automatiques des \chapter{}
+\AtBeginDocument{\addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}}
+\addto\captionsfrench{\renewcommand{\contentsname}{Sommaire}}
+\renewcommand{\printtoctitle}[1]{%
+  \null\vskip 2\onelineskip%
+  {\centering\normalfont\scshape\large #1\par}%
+}
+\renewcommand{\aftertoctitle}{\vskip 2\onelineskip}
+% Entrées de chapitre (ajoutées manuellement via \chaptersummary)
+\renewcommand{\cftchapterfont}{\small\scshape}
+\renewcommand{\cftchapterpagefont}{\small\scshape}
+\setlength{\cftchapterindent}{0pt}
+\setlength{\cftbeforechapterskip}{0.5\onelineskip}
+% Entrées de section (ajoutées manuellement via \partsummary)
+\renewcommand{\cftsectionfont}{\small\itshape}
+\renewcommand{\cftsectionpagefont}{\small}
+\setlength{\cftsectionindent}{1.5cm}
+\setlength{\cftbeforesectionskip}{0.2\onelineskip}
 
 % ─── CHAPTER STYLE ────────────────────────────────────────────────────────────
 \makeatletter
@@ -149,6 +176,9 @@ cuite. Sa mort laisse un grand vide dans mon cœur.
 \pagestyle{gallimard}
 
 \input{tete_de_veau_ravigote_content.tex}
+
+% ═══ SOMMAIRE ═════════════════════════════════════════════════════════════════
+\tableofcontents*
 
 % ═══ COLOPHON FINAL (page impaire) + PAGE BLANCHE FINALE (page paire) ════════
 \clearpage
