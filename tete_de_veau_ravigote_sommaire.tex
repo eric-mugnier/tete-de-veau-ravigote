@@ -1,0 +1,102 @@
+%
+% tete_de_veau_ravigote_sommaire.tex
+% Sommaire tenant sur une page — lit directement le .toc du document principal.
+% Compilation : latexmk -pdf tete_de_veau_ravigote_sommaire.tex
+%
+\documentclass[9pt,a5paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ebgaramond}
+\usepackage[french]{babel}
+\usepackage{microtype}
+\usepackage{tabularx}
+\usepackage[left=14mm,right=11mm,top=10mm,bottom=8mm,noheadfoot]{geometry}
+
+\renewcommand{\baselinestretch}{1.0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% ─── Macros du .toc ────────────────────────────────────────────────────────────
+
+% Définitions de référence pour l'identification par \ifx dans \tocPeek.
+\newcommand{\tocchapnum}[1]{#1}
+\newcommand{\tocchapsep}{}
+\def\chapternumberline#1{}   % entrées auto (Acte N) : no-op
+
+% Hook babel
+\def\babel@toc#1#2{}
+
+% ─── Rendu en table 3 colonnes ────────────────────────────────────────────────
+%
+% Architecture sans groupe autour de & ni \\ (évite "misplaced alignment tab").
+%
+% Sentinelles internes (tokens rares, absents du .toc)
+\def\TOCNIL{}    % délimite la capture du 1er token dans \tocPeek
+\def\TOCSTOP{}   % délimite la description dans \tocChapRow / \tocSectRow
+
+% \contentsline{type}{contenu}{page}{}
+\renewcommand{\contentsline}[4]{%
+  \tocProcess{#2}{#3}%
+}
+
+% Passe le contenu "nu" (avant \TOCNIL) pour l'isolation du 1er token,
+% et la page en braces {#2} pour que \tocPeek capture le numéro entier.
+\newcommand{\tocProcess}[2]{%
+  \tocPeek#1\TOCNIL{#2}%
+}
+
+% Drapeau : premier chapitre → pas de strut extra avant lui.
+\newif\iffirstchap \firstchaptrue
+
+% Inspecte le 1er token du contenu (#1) :
+%   #2 = reste du contenu jusqu'à \TOCNIL
+%   #3 = numéro de page (en braces, donc multi-chiffres capturé entièrement)
+\long\def\tocPeek#1#2\TOCNIL#3{%
+  \ifx#1\chapternumberline
+    % entrée auto "Acte N" → ignorer
+  \else\ifx#1\tocchapnum
+    \tocChapRow#2\TOCSTOP{#3}%
+  \else
+    % #1=\tocchapsep ; #2 = " description"
+    \tocSectRow#2\TOCSTOP{#3}%
+  \fi\fi
+}
+
+% Ligne de chapitre :
+%   appel : \tocChapRow{romain}description\TOCSTOP{page}
+%   #1 = romain, #2 = description (jusqu'à \TOCSTOP), #3 = page
+%   & et \\ au niveau externe du tableau (pas de groupe autour).
+%   Un strut invisible \rule{0pt}{13pt} crée de l'espace visuel au-dessus
+%   des lignes de chapitre (sauf la première).
+\long\def\tocChapRow#1#2\TOCSTOP#3{%
+  \iffirstchap\global\firstchapfalse\else\rule{0pt}{13pt}\fi
+  #1 & #2 & #3 \\[2pt]%
+}
+
+% Ligne de section :
+%   appel : \tocSectRow " description"\TOCSTOP{page}
+%   #1 = " description" (espace initial absorbé par \ignorespaces), #2 = page
+\long\def\tocSectRow#1\TOCSTOP#2{%
+  & \ignorespaces#1 & #2 \\[1pt]%
+}
+
+% ─── Document ──────────────────────────────────────────────────────────────────
+\begin{document}
+\pagestyle{empty}
+
+\vspace*{3mm}
+{\centering\normalfont\scshape\large sommaire\par}
+\vspace{5mm}
+
+{\small\scshape
+% \setcounter{tocdepth}{...} parsème le .toc entre les entrées et démarre
+% des lignes parasites dans le tableau ; on le neutralise ici localement.
+\def\setcounter#1#2{}%
+\setlength{\tabcolsep}{4pt}%
+\begin{tabularx}{\linewidth}{@{}lXr@{}}
+\input{tete_de_veau_ravigote.toc}
+\end{tabularx}
+}
+
+\end{document}
