@@ -14,7 +14,7 @@
 | Acte 9/1 | acte_09_1.tex | 11 253 | 5,7 % | ☑ | 103 * |
 | Acte 9/2 | acte_09_2.tex | 23 461 | 11,9 % | ☐ |  |
 | Acte 9/3 | acte_09_3.tex | 19 858 | 10,0 % | ☐ |  |
-| Acte 9/4 | acte_09_4.tex | 6 067 | 3,1 % | ☐ |  |
+| Acte 9/4 | acte_09_4.tex | 6 067 | 3,1 % | ☑ |  |
 | **Total** | | **197 598** | **100 %** | | **497** |
 
 > Décompte hors commandes LaTeX et commentaires.
@@ -25,6 +25,6 @@
 
 ```mermaid
 pie title Correction LTeX+ (par nombre de mots)
-    "Corrigé — Actes 1–7, 9/1 (130 984 mots)" : 130984
-    "À corriger — Actes 8, 9/2–9/4 (66 614 mots)" : 66614
+    "Corrigé — Actes 1–7, 9/1, 9/4 (137 051 mots)" : 137051
+    "À corriger — Actes 8, 9/2–9/3 (60 547 mots)" : 60547
 ```
