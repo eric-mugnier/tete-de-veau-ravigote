@@ -14,8 +14,8 @@
 | Acte 9/1 | acte_09_1.tex | 11 253 | 5,7 % | ☑ | 87 * |
 | Acte 9/2 | acte_09_2.tex | 21 851 | 11,1 % | ☑ |  |
 | Acte 9/2b | acte_09_2b.tex | 1 610 | 0,8 % | ☑ |  |
-| Acte 9/3 | acte_09_3.tex | 15 134 | 7,7 % | ☐ |  |
-| Acte 9/3b | acte_09_3b.tex | 4 724 | 2,4 % | ☐ |  |
+| Acte 9/3 | acte_09_3.tex | 15 134 | 7,7 % | ☑ |  |
+| Acte 9/3b | acte_09_3b.tex | 4 724 | 2,4 % | ☑ |  |
 | Acte 9/4 | acte_09_4.tex | 6 067 | 3,1 % | ☑ |  |
 | **Total** | | **197 598** | **100 %** | | **449** |
 
@@ -28,6 +28,5 @@
 
 ```mermaid
 pie title Correction LTeX+ (par nombre de mots)
-    "Corrigé — Actes 1–8, 9/1, 9/2, 9/2b, 9/4 (177 740 mots)" : 177740
-    "À corriger — Actes 9/3, 9/3b (19 858 mots)" : 19858
+    "Corrigé — tous les actes (197 598 mots)" : 197598
 ```
