@@ -83,55 +83,65 @@ with tempfile.NamedTemporaryFile(mode='w', suffix='.json',
     json.dump(client_cfg, f, ensure_ascii=False, indent=2)
     cfg_path = f.name
 
-try:
-    result = subprocess.run(
-        [str(LTEX), f'--client-configuration={cfg_path}'] + targets,
-        capture_output=True, text=True, encoding='utf-8', errors='replace',
-        cwd=str(BASE),
-    )
-finally:
-    os.unlink(cfg_path)
-
-# ── Parsing et affichage des diagnostics ──────────────────────────────────────
+print(f'Lancement de ltex-cli-plus sur : {", ".join(targets)}', flush=True)
 
 errors_found = False
+stderr_lines = []
+returncode   = None
 
-for line in result.stdout.splitlines():
-    line = line.strip()
-    if not line:
-        continue
-    try:
-        data = json.loads(line)
-    except json.JSONDecodeError:
-        continue
+try:
+    proc = subprocess.Popen(
+        [str(LTEX), f'--client-configuration={cfg_path}'] + targets,
+        stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+        text=True, encoding='utf-8', errors='replace',
+        cwd=str(BASE),
+    )
 
-    # ltex-cli émet des objets {"uri":..., "diagnostics":[...]}
-    if 'diagnostics' not in data:
-        continue
+    # ── Parsing et affichage des diagnostics au fil de l'eau ─────────────────
+    for raw in proc.stdout:
+        line = raw.strip()
+        if not line:
+            continue
+        try:
+            data = json.loads(line)
+        except json.JSONDecodeError:
+            # Ligne de progression non-JSON émise par ltex-cli (ex. "Checking …")
+            print(f'  {line}', flush=True)
+            continue
 
-    uri  = data.get('uri', '')
-    diags = data['diagnostics']
-    if not diags:
-        continue
+        # ltex-cli émet des objets {"uri":..., "diagnostics":[...]}
+        if 'diagnostics' not in data:
+            continue
 
-    # Chemin relatif pour l'affichage
-    try:
-        rel = Path(uri.replace('file://', '')).relative_to(BASE)
-    except ValueError:
-        rel = uri
+        uri   = data.get('uri', '')
+        diags = data['diagnostics']
 
-    print(f'\n{rel}  ({len(diags)} erreur(s))')
-    print('─' * 70)
-    for d in diags:
-        r    = d.get('range', {})
-        line_no = r.get('start', {}).get('line', '?')
-        msg  = d.get('message', '')
-        rule = d.get('code', '')
-        print(f'  l.{line_no+1 if isinstance(line_no, int) else line_no}  [{rule}]  {msg}')
-    errors_found = True
+        # Chemin relatif pour l'affichage
+        try:
+            rel = Path(uri.replace('file://', '')).relative_to(BASE)
+        except ValueError:
+            rel = uri
+
+        if diags:
+            print(f'\n{rel}  ({len(diags)} erreur(s))', flush=True)
+            print('─' * 70)
+            for d in diags:
+                r       = d.get('range', {})
+                line_no = r.get('start', {}).get('line', '?')
+                msg     = d.get('message', '')
+                rule    = d.get('code', '')
+                print(f'  l.{line_no+1 if isinstance(line_no, int) else line_no}  [{rule}]  {msg}')
+            errors_found = True
+        else:
+            print(f'  ✓  {rel}', flush=True)
+
+    stderr_lines = proc.stderr.read()
+    returncode   = proc.wait()
+finally:
+    os.unlink(cfg_path)
 
 if not errors_found:
     print('✓  Aucune erreur LTeX+ détectée.')
 
-if result.returncode not in (0, 1):
-    print('\n[stderr]', result.stderr[-500:] if result.stderr else '(vide)')
+if returncode not in (0, 1):
+    print('\n[stderr]', stderr_lines[-500:] if stderr_lines else '(vide)')

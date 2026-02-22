@@ -41,28 +41,12 @@
   \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}%
   \addcontentsline{toc}{chapter}{\protect\tocchapnum{\chapnum}#1}%
   \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}%
-  \begingroup
-    \setlength{\leftskip}{1.5cm}%
-    \setlength{\rightskip}{1.5cm}%
-    \small\scshape\noindent #1\par
-  \endgroup
-  \vspace{2.5\onelineskip}%
-  \noindent
 }
 % Résumé de partie intercalé dans le corps du texte (acte 9 parties 2–4)
 \newcommand{\partsummary}[1]{%
   \addtocontents{toc}{\protect\setcounter{tocdepth}{1}}%
   \addcontentsline{toc}{section}{\protect\tocchapsep#1}%
   \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}%
-  \par% ferme le paragraphe précédent avant de modifier leftskip/rightskip
-  \vspace{1.5\onelineskip}%
-  \begingroup
-    \setlength{\leftskip}{1.5cm}%
-    \setlength{\rightskip}{1.5cm}%
-    \small\scshape\noindent #1\par
-  \endgroup
-  \vspace{\onelineskip}%
-  \noindent
 }
 
 % ─── TABLE DES MATIÈRES ───────────────────────────────────────────────────────
@@ -181,10 +165,6 @@ cuite. Sa mort laisse un grand vide dans mon cœur.
 \pagestyle{gallimard}
 
 \input{tete_de_veau_ravigote_content.tex}
-
-% ═══ SOMMAIRE (page impaire, précédé d'une page blanche) ══════════════════════
-\cleardoublepage               % termine le dernier acte, insère une page blanche si nécessaire
-\tableofcontents*
 
 % ═══ COLOPHON FINAL (page impaire) + PAGE BLANCHE FINALE (page paire) ════════
 \clearpage
