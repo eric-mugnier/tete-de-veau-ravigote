@@ -10,7 +10,7 @@
 | Acte 6/1 | acte_06_1.tex | 22 360 | 11,3 % | ☑ | 83 * |
 | Acte 6/2 | acte_06_2.tex | 10 520 | 5,3 % | ☑ |  |
 | Acte 7 | acte_07.tex | 2 948 | 1,5 % | ☑ | 11 |
-| Acte 8 | acte_08.tex | 17 228 | 8,7 % | ☐ | 20 |
+| Acte 8 | acte_08.tex | 17 228 | 8,7 % | ☑ | 20 |
 | Acte 9/1 | acte_09_1.tex | 11 253 | 5,7 % | ☑ | 87 * |
 | Acte 9/2 | acte_09_2.tex | 23 461 | 11,9 % | ☐ |  |
 | Acte 9/3 | acte_09_3.tex | 19 858 | 10,0 % | ☐ |  |
@@ -25,6 +25,6 @@
 
 ```mermaid
 pie title Correction LTeX+ (par nombre de mots)
-    "Corrigé — Actes 1–7, 9/1, 9/4 (137 051 mots)" : 137051
-    "À corriger — Actes 8, 9/2–9/3 (60 547 mots)" : 60547
+    "Corrigé — Actes 1–8, 9/1, 9/4 (154 279 mots)" : 154279
+    "À corriger — Actes 9/2–9/3 (43 319 mots)" : 43319
 ```
