@@ -8,17 +8,10 @@
 pdflatex tete_de_veau_ravigote.tex
 ```
 
-### Couvertures
+### Couverture
 
 ```bash
 pdflatex tete_de_veau_ravigote_couverture_minimaliste.tex
-pdflatex tete_de_veau_ravigote_couverture.tex
-pdflatex tete_de_veau_ravigote_couverture_minuit.tex
-pdflatex tete_de_veau_ravigote_couverture_minuit_sans_bandeau.tex
-pdflatex tete_de_veau_ravigote_couverture_fayard.tex
-pdflatex tete_de_veau_ravigote_couverture_sn.tex
-pdflatex tete_de_veau_ravigote_couverture_polar.tex
-pdflatex tete_de_veau_ravigote_couverture_actes_noirs.tex
 ```
 
 ### PDF complet (couverture + livre)
