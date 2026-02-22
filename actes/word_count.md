@@ -12,19 +12,22 @@
 | Acte 7 | acte_07.tex | 2 948 | 1,5 % | ☑ | 11 |
 | Acte 8 | acte_08.tex | 17 228 | 8,7 % | ☑ | 20 |
 | Acte 9/1 | acte_09_1.tex | 11 253 | 5,7 % | ☑ | 87 * |
-| Acte 9/2 | acte_09_2.tex | 23 461 | 11,9 % | ☐ |  |
-| Acte 9/3 | acte_09_3.tex | 19 858 | 10,0 % | ☐ |  |
+| Acte 9/2 | acte_09_2.tex | 21 851 | 11,1 % | ☐ |  |
+| Acte 9/2b | acte_09_2b.tex | 1 610 | 0,8 % | ☐ |  |
+| Acte 9/3 | acte_09_3.tex | 15 134 | 7,7 % | ☐ |  |
+| Acte 9/3b | acte_09_3b.tex | 4 724 | 2,4 % | ☐ |  |
 | Acte 9/4 | acte_09_4.tex | 6 067 | 3,1 % | ☑ |  |
 | **Total** | | **197 598** | **100 %** | | **449** |
 
 > Décompte hors commandes LaTeX et commentaires.
 > **Diffs** = nombre de blocs supprimés/remplacés (via `latexdiff`), hors bruit typographique (apostrophes, guillemets, tirets, etc.).
-> `*` = diff calculé sur le groupe complet (6/1+6/2 ou 9/1+9/2+9/3+9/4) ; décompte par partie non disponible. Le total est affiché uniquement sur la première sous-partie du groupe.
+> `*` = diff calculé sur le groupe complet (6/1+6/2 ou 9/1+9/2+9/2b+9/3+9/3b+9/4) ; décompte par partie non disponible. Le total est affiché uniquement sur la première sous-partie du groupe.
+> Les mots de 9/2 et 9/2b (resp. 9/3 et 9/3b) sont estimés proportionnellement à partir du total de l'acte original via `texcount`.
 
 ## Avancement des corrections LTeX+
 
 ```mermaid
 pie title Correction LTeX+ (par nombre de mots)
     "Corrigé — Actes 1–8, 9/1, 9/4 (154 279 mots)" : 154279
-    "À corriger — Actes 9/2–9/3 (43 319 mots)" : 43319
+    "À corriger — Actes 9/2, 9/2b, 9/3, 9/3b (43 319 mots)" : 43319
 ```
