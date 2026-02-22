@@ -1,2 +1,3 @@
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qbollito misto\\E$"}
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qcotechino di puledro della provincia di Belluno\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qla mozzarella di bufala\\E$"}
