@@ -10,13 +10,25 @@ Directories:
   Output    = WORK/tete_de_veau_ravigote_diff.tex  (and .pdf)
 """
 
-import os, subprocess, sys, re
+import os, subprocess, sys, re, glob
 
 BASE   = '/Users/christophe.thiebaud/_Mugnier'
 ACTES  = os.path.join(BASE, 'actes')
 WORK   = os.path.join(BASE, 'diff_work')
 TMPDIR = os.path.join(WORK, 'tmp')
 os.makedirs(TMPDIR, exist_ok=True)
+
+# ── Step 0: clean all intermediate files ────────────────────────────────────
+print('Cleaning intermediate files...')
+for f in glob.glob(os.path.join(TMPDIR, '*.tex')):
+    os.remove(f)
+for ext in ('aux', 'toc', 'log', 'out', 'fls', 'fdb_latexmk'):
+    for f in glob.glob(os.path.join(WORK, f'*.{ext}')):
+        os.remove(f)
+diff_tex = os.path.join(WORK, 'tete_de_veau_ravigote_diff.tex')
+if os.path.exists(diff_tex):
+    os.remove(diff_tex)
+print('  Done.\n')
 
 # ── Step 1: parse original ──────────────────────────────────────────────────
 with open(os.path.join(BASE, 'tete_de_veau_ravigote_original.tex'), encoding='utf-8') as f:
