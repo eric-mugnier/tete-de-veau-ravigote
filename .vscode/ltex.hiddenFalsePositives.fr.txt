@@ -390,3 +390,5 @@
 {"rule":"JE_VERBE","sentence":"^\\QJe ti raconte pas le méchoui, sidi.\\E$"}
 {"rule":"FR_MULTITOKEN_SPELLING_TWO","sentence":"^\\QSupertechno à Goddam City, jeu de mots foireux pour un monde foireux.\\E$"}
 {"rule":"CONFUSION_MEMES_MEME","sentence":"^\\QCe à quoi il a rétorqué que si tout le monde connaissait Jean Bouise, Romy Schneider et Philippe Noiret, tous d'excellents acteurs au demeurant, ces mêmes soi-disant cinéphiles se fichaient comme d'une guigne de savoir qui était Christian Teyras, second rôle à la notoriété confidentielle, certes, mais au talent bien réel.\\E$"}
+{"rule":"AGREEMENT_POSTPONED_ADJ","sentence":"^\\QRien, pas même le Chianti ou les somptueux spaghetti bolognaise dont elle venait de nous régaler, ne serait de nature à nous délier la langue.\\E$"}
+{"rule":"AGREEMENT_POSTPONED_ADJ","sentence":"^\\QJ'ai ajouté : Je crois que si je devais n'emporter qu'une seule chose sur une île déserte pour y passer le restant de mes jours, ce serait les spaghetti bolognaise de Bérénice.\\E$"}
