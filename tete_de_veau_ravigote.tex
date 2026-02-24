@@ -15,6 +15,19 @@
 \immediate\write18{git log -1 --format=\%h > \jobname.gitinfo}
 \CatchFileDef{\gitcommit}{\jobname.gitinfo}{\endlinechar=-1}
 
+% ─── NOTES FINALES ─────────────────────────────────────────────────────────────
+% Compiler avec : pdflatex "\def\AVECNOTES{}\input{tete_de_veau_ravigote}"
+\usepackage{endnotes}
+\ifdefined\AVECNOTES
+  \newcommand{\nf}[1]{\endnote{#1}}
+\else
+  \newcommand{\nf}[1]{}
+\fi
+% Supprimer le titre automatique du package (on gère le nôtre)
+\renewcommand{\notesname}{}
+% Style des notes : même fonte, corps légèrement réduit
+\renewcommand{\enotesize}{\small}
+
 % ─── PAGE GEOMETRY (140×205 mm – Gallimard Blanche) ──────────────────────────
 \setstocksize{210mm}{148mm}
 \settrimmedsize{210mm}{148mm}{*}
@@ -165,6 +178,17 @@ cuite. Sa mort laisse un grand vide dans mon cœur.
 \pagestyle{gallimard}
 
 \input{tete_de_veau_ravigote_content.tex}
+
+% ═══ NOTES FINALES (incluses ssi \AVECNOTES défini) ═══════════════════════════
+\ifdefined\AVECNOTES
+  \clearpage
+  \thispagestyle{empty}
+  \vspace*{3\onelineskip}
+  {\centering\normalfont\scshape\large Notes\par}
+  \vskip 1.5\onelineskip
+  \pagestyle{gallimard}
+  \theendnotes
+\fi
 
 % ═══ COLOPHON FINAL (page impaire) + PAGE BLANCHE FINALE (page paire) ════════
 \clearpage
