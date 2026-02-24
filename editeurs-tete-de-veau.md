@@ -97,3 +97,20 @@
 - **Gallimard** déjà envoyé le 19/02/2026 en numérique
 - **Losfeld** : contacter dès avril 2026, lettre très personnalisée (héritage Éric Losfeld / Éric Mugnier, deux outsiders)
 - **Tristram** : manuscrit imprimé uniquement, soigner la présentation
+
+---
+
+## Top 10 — Éditeurs polar & roman noir en France
+
+| Rang | Éditeur | Collection(s) | Repères | Dans le fichier |
+|------|---------|---------------|---------|-----------------|
+| 1 | **Gallimard** | Série Noire (1945, Marcel Duhamel) · NRF Policier | Simenon, Manchette, classiques américains traduits | Vague 3 (Blanche) |
+| 2 | **Le Masque** (Librairie des Champs-Élysées) | Le Masque | Fondé 1927 · Agatha Christie en France | — |
+| 3 | **Fleuve Noir** | Fleuve Noir | San-Antonio (Frédéric Dard) · couvertures iconiques | — |
+| 4 | **Rivages/Noir** | Rivages/Noir | James Ellroy, Massimo Carlotto · polar américain & méditerranéen | Vague 3 |
+| 5 | **Actes Sud** | Actes Noirs | Polars littéraires · souvent scandinaves ou internationaux | Vague 2 (Actes Sud) · Vague 3 (Actes Noirs) |
+| 6 | **Albin Michel** | — | Thriller & policier grand public · best-sellers français et étrangers | Vague 3 |
+| 7 | **Seuil** | Seuil Policiers · Points Policiers | Large spectre : roman noir littéraire au thriller international | Vague 3 (Fiction & Cie) · Vague 2 (L'Olivier) |
+| 8 | **Calmann-Lévy** | Calmann-Lévy Noir | Très actif dans le thriller contemporain, notamment nordique | — |
+| 9 | **Denoël** | Sueurs Froides | Tradition dans le suspense et le roman noir | Vague 2 |
+| 10 | **Syros** / **Jigal** | Souris Noire (jeunesse) · Jigal Polar | Syros : polar jeunesse · Jigal : indépendant nordiste, référence du polar francophone | — |
