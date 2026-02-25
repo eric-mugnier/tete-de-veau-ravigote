@@ -236,8 +236,18 @@ cuite. Sa mort laisse un grand vide dans mon cœur.
 \null\vfill
 {\footnotesize
 \hbox to \linewidth{\hfil\tikz\node[opacity=0.33,inner sep=0pt]{\includegraphics[height=1.6\onelineskip]{images/ct_watermark.png}};}\par\vspace{-6pt}
-\noindent{\color{black!33}\rule{\linewidth}{0.4pt}}\par\vspace{0pt}
-\noindent \textit{\docversionordinal\ édition, composée avec \textup{\LaTeX}\ par Christophe Thiebaud à San Lazzaro di Savena, le \today\ (révision \gitcommit).}
+\noindent{\color{black!33}\rule{\linewidth}{0.4pt}}\par\vspace{6pt}
+
+% Ligne 1 — justifiée naturellement
+\noindent\textit{Troisième édition, préparée par Christophe Thiebaud à San Lazzaro di Savena, le 25 février 2026}\linebreak
+
+% Ligne 2 — logos justifiés gauche / droite
+\noindent\hbox to \linewidth{%
+\raisebox{-0.8ex}{\includegraphics[height=3ex]{images/github-repo-git-octocat-svgrepo-com.svg.pdf}} \texttt{\gitcommit}%
+\hfill
+\textup{\LaTeX}%
+}
+
 }
 \newpage
 \hbox{}\thispagestyle{empty}
