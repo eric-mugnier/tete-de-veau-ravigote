@@ -31,4 +31,4 @@ formule finale
 
 Christophe Thiebaud
 
-PS. Je suis la tête de gondole (pas ravigote pour le coup) d'un groupe d'amis de Éric Mugnier, amis convaincus du potentiel de ses écrits. Je l'aide en toute amitié et absolu désintéressement dans les fastidieuses démarches pour trouver un éditeur qui saura voir au travers des défauts du texte, partager notre conviction et entreprendre un travail éditorial pour trouver un public.
+PS. Je suis la tête de gondole (pas ravigote pour le coup) d'un groupe d'amis de Éric Mugnier, amis convaincus du potentiel de ses écrits. Je l'aide en toute amitié et absolu désintéressement dans les fastidieuses démarches pour trouver un éditeur qui saura déceler ce potentiel au filtre des défauts du texte, partager notre conviction et entreprendre un travail éditorial pour trouver un public.
