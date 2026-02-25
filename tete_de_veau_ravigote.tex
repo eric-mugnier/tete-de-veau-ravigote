@@ -27,6 +27,28 @@
 \renewcommand{\notesname}{}
 % Style des notes : même fonte, corps légèrement réduit
 \renewcommand{\enotesize}{\small}
+% Format des notes en fin de livre :
+%   – sans retrait (parindent=0, pas de \llap)
+%   – numéro en corps normal, non exposant (\theenmark sans \@textsuperscript)
+\makeatletter
+\renewcommand\enoteformat{%
+  \rightskip\z@ \leftskip\z@ \parindent=0pt
+  \leavevmode\theenmark.\enspace}
+\makeatother
+% Source dans les notes : saut de ligne avant le lien Wikipedia
+\newcommand{\source}[1]{\newline\textit{Source~:} \textup{#1}}
+% Titre de chapitre dans le bloc de notes (commande nommée pour éviter que
+% \scshape soit fusionné avec le texte suivant lors du \write dans .ent)
+\newcommand{\chapnoteheader}[1]{{\normalfont\scshape #1}}
+% Notes par chapitre regroupées en fin de livre :
+%   – injecte un titre de chapitre dans le flux .ent
+%   – remet le compteur à 0 pour que chaque acte reparte de 1
+\newcommand{\beginchapternotes}[1]{%
+  \ifdefined\AVECNOTES
+    \setcounter{endnote}{0}%
+    \addtoendnotes{\protect\par\protect\medskip\protect\noindent\protect\chapnoteheader{#1}\protect\par}%
+  \fi
+}
 
 % ─── PAGE GEOMETRY (140×205 mm – Gallimard Blanche) ──────────────────────────
 \setstocksize{210mm}{148mm}
@@ -177,15 +199,24 @@ cuite. Sa mort laisse un grand vide dans mon cœur.
 % ═══ MAIN TEXT ════════════════════════════════════════════════════════════════
 \pagestyle{gallimard}
 
+% Ouvre le .toc en écriture pour le sommaire séparé.
+% Le document principal n'affiche pas de table des matières, mais \@starttoc
+% doit être appelé pour que \addcontentsline écrive dans le fichier .toc.
+% \contentsline est temporairement neutralisé pour ne rien imprimer lors de
+% la lecture de l'ancien .toc.
+{\makeatletter\def\contentsline#1#2#3#4{}\@starttoc{toc}\makeatother}
+
 \input{tete_de_veau_ravigote_content.tex}
 
 % ═══ NOTES FINALES (incluses ssi \AVECNOTES défini) ═══════════════════════════
 \ifdefined\AVECNOTES
-  \clearpage
+  \cleardoublepage                              % p. impaire : page-titre « Notes »
   \thispagestyle{empty}
-  \vspace*{3\onelineskip}
+  \vspace*{10\onelineskip}
   {\centering\normalfont\scshape\large Notes\par}
-  \vskip 1.5\onelineskip
+  \newpage                                      % p. paire : blanche
+  \hbox{}\thispagestyle{empty}
+  \newpage                                      % p. impaire : début des notes
   \pagestyle{gallimard}
   \theendnotes
 \fi
