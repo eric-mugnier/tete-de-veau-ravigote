@@ -26,9 +26,12 @@ Ma bio n'a pas d'intérêt, mais celle d'Éric sûrement :
 
 Il a 65 ans (génération nourrie à Pilote, Métal Hurlant, Actuel, Libé 80s, Bukowsky, l'underground américain, etc. - plus trop à la mode),
 Habite depuis son adoption à l'assistance publique dans la préfecture de l'un des départements les plus boisés de France, la Haute-Marne,
-A une fille de 18 ans qui entame des études de médecine,
 N'a jamais eu d'activité professionnelle 'classique' : emploi, métier, profession, poste, travail, fonction, rien de tout cela,
-A donc pu consacrer sa vie à la création dans différents média : peinture, musique, chansons, et donc écriture.
+A donc pu consacrer sa vie à la création dans différents arts : peinture, musique, chansons, et là, écriture.
+A pu aussi consacrer sa vie à l'érudition, à la culture générale.
+
+formule finale
+Christophe Thiebaud
 
 
 
