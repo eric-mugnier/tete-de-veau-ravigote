@@ -14,9 +14,7 @@ Quoiqu'écrit dans le style d'un polar, ce n'en est pas vraiment un : peu de mys
  
 Le thème central du roman est : l'Horreur (prononcé à la Marlon Brando dans Apocalypse Now).
 
-Le ton n'est jamais didactique, les digressions jamais exagérées ou minimisées, toujours factuelles, genre Alain Decaux raconte, et elles brossent en filigrane une image de l'humanité sans Dieu, désespérée, tragique, d'un pessimisme schopenhauérien. 
-
-Bien plus prégnant qu'un bouquin qui dirait benoîtement : "regardez-ça : c'est mal ! Ouh comme c'est vilain !". À la façon de la présence de la Camorra dans l'Amica Geniale de Elena Ferrante, jamais trop explicite, mais dont la lente progression dans Naples imprègne toute l'œuvre.
+Le ton n'est jamais didactique, les digressions jamais exagérées ou minimisées, toujours factuelles, genre Alain Decaux raconte, et elles brossent en filigrane une image de l'humanité sans Dieu, désespérée, tragique, d'un pessimisme schopenhauérien. Bien plus prégnant qu'un bouquin qui dirait benoîtement : "regardez-ça : c'est mal ! Ouh comme c'est vilain !". À la façon de la présence de la Camorra dans l'Amica Geniale de Elena Ferrante, jamais trop explicite, mais dont la lente progression dans Naples imprègne toute l'œuvre.
 
 Bref, c’est une littérature qui ose tout — c’est même à ça qu’on la reconnaît.
 
