@@ -23,16 +23,15 @@ C’est une littérature qui ose tout — c’est même à ça qu’on la reconn
 BIO
 
 Éric Mugnier a 65 ans (génération nourrie à Pilote, Métal Hurlant, Actuel, Libé 80s, Bukowsky, l'underground américain, etc. - plus trop à la mode) ;
-Habite depuis son adoption à l'assistance publique dans la préfecture de l'un des départements les plus boisés de France, la Haute-Marne ;
+Habite depuis son adoption via l'Assistance Publique dans la préfecture de l'un des départements les plus boisés de France, la Haute-Marne ;
 N'a jamais eu d'activité professionnelle 'classique' : emploi, métier, profession, poste, travail, fonction, rien de tout cela ;
 A donc pu consacrer sa vie à la création, dans moult ARTS(2) : peinture, musique, chansons, et ici, LITTÉRATURE(3) ;
 A pu aussi consacrer sa vie à l'érudition, à la culture générale ;
 Son auteur favori est Joris-Karl Huysmans.
 
-formule finale
+Je suis la tête de gondole (pas ravigote pour le coup) d'un groupe d'amis de Éric Mugnier, convaincus du potentiel de ses écrits. Nous sommes convenus de l'aider en toute amitié et absolu désintéressement dans les démarches fastidieuses inhérentes à la recherche d'un éditeur. Éditeur qui saura, au travers des défauts du texte, déceler ce potentiel, partager notre conviction, "ouvrir un lieu d’asile à l'esprit singulier" d'Éric Mugnier, et entreprendre avec lui le travail éditorial qui lui fera trouver son public.
 
+Respectueusement,
 Christophe Thiebaud
-
-PS. Je suis la tête de gondole (pas ravigote pour le coup) d'un groupe d'amis de Éric Mugnier, convaincus du potentiel de ses écrits. Nous sommes convenus de l'aider en toute amitié et absolu désintéressement dans les démarches fastidieuses inhérentes à la recherche d'un éditeur. Éditeur qui saura, au travers des défauts du texte, déceler ce potentiel, partager notre conviction, "ouvrir un lieu d’asile à l'esprit singulier" d'Éric Mugnier, et entreprendre avec lui le travail éditorial qui lui fera trouver son public.
 
 (1)(2)(3) : réf. https://le-tripode.net/maison
