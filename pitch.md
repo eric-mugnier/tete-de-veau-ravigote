@@ -29,16 +29,15 @@ Je suis la tête de gondole (pas ravigote pour le coup) d'un groupe d'amis de É
 Respectueusement,  
 Christophe Thiebaud
 
----
-
-*1., 2. et 3. : ovni, littérature et arts, les trois piliers du Tripode, dans le désordre, cf. https://le-tripode.net/maison*
-
 | BIO|
 |------|
 | Éric Mugnier a 65 ans (génération nourrie à Libé 80s, Bukowsky, l'underground américain, Gainsbarre, etc. - plus trop à la mode) |
-| Habite depuis son adoption via l'Assistance Publique dans la préfecture de l'un des départements les plus boisés de France, la Haute-Marne |
-| N'a jamais eu d'activité professionnelle 'classique' : emploi, métier, profession, poste, travail, fonction, rien de tout cela |
-| A donc pu consacrer sa vie à la création, dans moult arts³ : peinture, musique, chansons, et ici, écriture |
-| D'où l'érudition, corollairement |
-| Son auteur favori est Joris-Karl Huysmans. |
+| habite depuis son adoption via l'Assistance Publique dans la préfecture de l'un des départements les plus boisés de France, la Haute-Marne |
+| n'a jamais eu d'activité professionnelle 'classique' : emploi, métier, profession, poste, travail, fonction, rien de tout cela |
+| a donc pu consacrer sa vie à la création, dans moult arts³ : peinture, musique, chansons, et ici, écriture |
+| d'où l'érudition, corollairement |
+| son auteur favori est Joris-Karl Huysmans. |
 
+---
+
+*1., 2. et 3. : ovni, littérature et arts, les trois piliers du Tripode, dans le désordre, cf. https://le-tripode.net/maison*
