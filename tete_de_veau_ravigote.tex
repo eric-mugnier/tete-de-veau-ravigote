@@ -1,4 +1,6 @@
-\documentclass[10pt,a5paper,twoside,openright]{memoir}
+%%% \documentclass[12pt,a4paper,twoside,openright]{memoir}
+
+\documentclass[11pt,a5paper,twoside,openright]{memoir}
 
 % ─── PACKAGES ─────────────────────────────────────────────────────────────────
 \usepackage[utf8]{inputenc}
@@ -50,6 +52,17 @@
   \fi
 }
 
+
+% ─── PAGE GEOMETRY (A4) ──────────────────────────────────────────────────────
+%%% \setstocksize{297mm}{210mm}
+%%% \settrimmedsize{297mm}{210mm}{*}
+%%% \settrims{0mm}{0mm}
+%%% \setlrmarginsandblock{30mm}{25mm}{*} % inner / outer
+%%% \setulmarginsandblock{30mm}{30mm}{*} % top / bottom
+%%% \setheadfoot{12mm}{15mm}
+%%% \setheaderspaces{*}{8mm}{*}
+%%% \checkandfixthelayout
+
 % ─── PAGE GEOMETRY (140×205 mm – Gallimard Blanche) ──────────────────────────
 \setstocksize{210mm}{148mm}
 \settrimmedsize{210mm}{148mm}{*}
@@ -62,7 +75,7 @@
 
 % ─── TYPOGRAPHY ───────────────────────────────────────────────────────────────
 \raggedbottom                        % Pages courtes autorisées (fins de chapitre)
-\renewcommand{\baselinestretch}{1.1} % Interligne
+\renewcommand{\baselinestretch}{1.2} % Interligne
 \setlength{\parindent}{4mm}          % Alinéa
 \setlength{\parskip}{0pt}            % Pas d'espace entre paragraphes
 
