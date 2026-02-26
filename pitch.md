@@ -10,7 +10,7 @@ Mon nom est Christophe Thiebaud, et je viens vous proposer le manuscrit du premi
 
 Écrit dans le style d'un polar, ce n'en est pas un : où sont les énigmes à résoudre, les fausses pistes, les coups de théâtre spectaculaires ? 
 
-Un OVNI(1), oui, plutôt qu'un polar. Une logorrhée écrite en 'free writing'/'spontaneous prose', où l'humour potache le dispute aux scènes 'gore' à la limite du soutenable, entrelacée de nombreuses et amples digressions érudites : sur les chats, les dinosaures, l'Église, les pavillons de banlieue, l’Unité 731, Pannonica de Koenigswarter, la 'Ndrangheta'.
+Un OVNI(1), oui, plutôt qu'un polar. Une logorrhée écrite en 'free writing'/'spontaneous prose', où l'humour potache le dispute aux scènes 'gore' à la limite du soutenable, entrelacée de nombreuses et amples digressions érudites : sur les chats, les dinosaures, l'Église, les pavillons de banlieue, l’Unité 731, Pannonica de Koenigswarter, la 'Ndrangheta.
 
 Ça donne envie, n'est-ce-pas ? 
  
@@ -18,7 +18,7 @@ L'Horreur (prononcé à la Marlon Brando dans Apocalypse Now), voilà le thème 
 
 Toute forme de morale est étrangère aux protagonistes, le héros/narrateur en premier. Les digressions, d'un pessimisme schopenhauérien, révèlent une humanité sans Dieu, désespérée, tragique. Le ton n'est jamais didactique, jamais emphatique, toujours factuel, genre "Alain Decaux raconte". Bien plus efficace qu'un bouquin qui dirait benoîtement : "Regardez ça, c'est mal ! Ouh comme c'est vilain !". Un bruit de fond, un acouphène, un filtre optique polarisé, un voile de gaze à fleur de peau. La tentaculaire progression de La Camorra dans le Naples de l'Amica Geniale d'Elena Ferrante, jamais explicite, trop prégnante.
 
-C’est une LITTÉRATURE(2) qui ose tout — c’est même à ça qu’on la reconnaît. [humour]
+Bref, c’est une LITTÉRATURE(2) qui ose tout — c’est même à ça qu’on la reconnaît. [humour]
 
 BIO
 
