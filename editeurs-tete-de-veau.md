@@ -52,7 +52,7 @@
 
 | Éditeur | Ville | Site | Contact | Mode | D | C | Envoi | Réponse |
 |---------|-------|------|---------|------|---|---|-------|---------|
-| Gallimard (Blanche) | Paris | https://www.gallimard.fr | https://depot-manuscrits.gallimard.fr/ | 💾 | 5 | 2 | 19/02/2026 | |
+| Gallimard (Blanche) | Paris | https://www.gallimard.fr | https://depot-manuscrits.gallimard.fr/ | 💾 | 5 | 2 | [2026-02-19](envois/2026-02-19%20-%20Editions%20Gallimard%20_%20accusé%20de%20réception%20de%20votre%20manuscrit.eml) | |
 | Minuit | Paris | https://www.leseditionsdeminuit.fr | https://www.leseditionsdeminuit.fr/unepage-manuscrits-manuscrits-1-1-0-1.html | 📚 | 3 | 3 | | |
 | Grasset | Paris | https://www.grasset.fr | https://www.grasset.fr/questions-frequentes/comment-soumettre-un-manuscrit/ | 📚 | 4 | 2 | | |
 | Seuil (Fiction & Cie) | Paris | https://www.seuil.com | https://www.seuil.com/faq/jaimerais-vous-soumettre-mon-manuscrit | 📚 | 4 | 2 | | |

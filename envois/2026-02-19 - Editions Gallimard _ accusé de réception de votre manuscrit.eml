@@ -1,0 +1,166 @@
+Delivered-To: christophe.t60@gmail.com
+Received: by 2002:a05:7010:f283:b0:507:2717:c0d6 with SMTP id qb3csp751480mdb;
+        Thu, 19 Feb 2026 01:47:16 -0800 (PST)
+X-Received: by 2002:a05:690c:d90:b0:797:d0f6:98e1 with SMTP id 00721157ae682-797d0f6aa86mr88249337b3.0.1771494436116;
+        Thu, 19 Feb 2026 01:47:16 -0800 (PST)
+ARC-Seal: i=2; a=rsa-sha256; t=1771494436; cv=pass;
+        d=google.com; s=arc-20240605;
+        b=MMNZD+iP2SKqB0hLGGZGQ7HqeuUw/XbZFfOAWkNjFCedUgDC0VIvNkT4iiBHsvJdac
+         KC6lFoH4N4hFnc/qq9KEalcfC/X2A16cX65yOPBwdIVZWJ9+psHZGZ2vvfmSYT/rbKA6
+         CB6SIAhZFTt+vRGO8WnwWVy6829LQoNea3Yq0cjMaEYSlgqiVLglx3WMJGgfCHWXDJRN
+         xqC9wq9wCIBa5HCyiMJUhQn7z0hI6SbuTqnQXON7lxHjgjc3fI4PhIuFeLHXgUaGPLuV
+         ZbhviRvOK++0Kf1WrHH7mTyXX1PcHc0qReltcdWeTHlmgHp4oN9BX6PiZVTL3LL7tokk
+         RkBg==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=message-id:content-transfer-encoding:subject:date:to:from
+         :mime-version:dkim-signature;
+        bh=Z8iNYzW7IgnnpNTt+0JSyt/ud5IMQRQj5eonnJUDRpg=;
+        fh=xIX24W9BIxZo5uQBcgLtoDFwMWl8A+OrDWvmEjkGvd4=;
+        b=D/1IRYsXVakH3T1gEEli8Q5fKJlfeCVGVjRBLnznB2YXdYRZ4Cl55p9CrYhUSUjswL
+         6G95/hmu8esQ5+uqTPIgBey10mg/x8nzoJVnr6iGAE/tOUZ8k1gGtiTX5WZozG++dp98
+         qljQPPZidPWUm5GnEcLBq6qtuRRi+PuDyBJbQ1d+0uHSkxdTcGC6cXOYZHy+9dxOFper
+         MXW9xg5/umr9lnp1cVk7ZhYPwwSlsYlju8Jl/DBVZe7FO6sBkQDsc+lc6OY9eRPy2yDM
+         WZ69hRkl+Y5Dx+GxA5lASnkdAiTuCTQaqjxBuXmmOAF8dR1lvfmb1A2frSBIwbEjOwJz
+         7PbA==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@gallimard.fr header.s=selector1 header.b=q5LMcOaR;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of noreply@gallimard.fr designates 2a01:111:f403:c20a::2 as permitted sender) smtp.mailfrom=noreply@gallimard.fr;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=gallimard.fr
+Return-Path: <noreply@gallimard.fr>
+Received: from PAUP264CU001.outbound.protection.outlook.com (mail-francecentralazlp170110002.outbound.protection.outlook.com. [2a01:111:f403:c20a::2])
+        by mx.google.com with ESMTPS id 956f58d0204a3-64c22e40032si10880622d50.74.2026.02.19.01.47.15
+        for <christophe.t60@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Thu, 19 Feb 2026 01:47:16 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@gallimard.fr designates 2a01:111:f403:c20a::2 as permitted sender) client-ip=2a01:111:f403:c20a::2;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gallimard.fr header.s=selector1 header.b=q5LMcOaR;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of noreply@gallimard.fr designates 2a01:111:f403:c20a::2 as permitted sender) smtp.mailfrom=noreply@gallimard.fr;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=gallimard.fr
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=Sy8VbHbm98SLflhyiOUW+J8tJBEMbLEb3QjdlNdwDpcoJpaDJnInBaK5HZKl13ycCc5UyghDIrwt2PhcpxG8QgaNHsmjnZGxWlWvohrSQjVPcs+X1YpHFyPh2OFyFfb3FD2Vhw3KmVFsYSvfGpEoKWFXc5ax6+/De4scHlm7rE9PBQoivmWBGiLJgm8uCg9NBnz0Q2PDvXwbXXSKTtAj0ontC/+I3m8sa4INMu6IhbGXNKVuTmZxT19TO90ocdbmLVL+DEO6i08jTa6/9LBv1OrDSKLLFBqRz81WSG3sdsp+8NaV2LpB49UZ0NcuoGvgF6l+BY2wUwyJYkyZ9o/Anw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=Z8iNYzW7IgnnpNTt+0JSyt/ud5IMQRQj5eonnJUDRpg=;
+ b=IbqVnRH0otN9h4d9E1ERD2mWJvEDRTUYoXl50M0pu1j6BtjQnFOy8Qw5sGtJzB+xZDixGMxZ8O59xqdRvXWnYQtznvWGKOjBRbVS3c6mH/3v1SlurKOjgmbFF0wT8hhvGj3Ndm+0v2HDaHqvhUUQTWP5nsgN7QVQG6deX0+aWY+EpdB2y31qFx6LHRY56Ghbt0tfqahW3rUR4JP9R2Kx+dgQdrH4kb9Jz30jqIA0z51eW7VCkilP21v98mn9ozgly9TJB7eAGb00kOxRJn7EKVSOEZD7sLlyz00ePBvlKI3yDv9PC4armcXFG3qzmlMgZR3QLlMSNHE8GED4fVzr4A==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=fail (sender ip is
+ 185.157.192.252) smtp.rcpttodomain=gmail.com smtp.mailfrom=gallimard.fr;
+ dmarc=fail (p=reject sp=reject pct=100) action=oreject
+ header.from=gallimard.fr; dkim=none (message not signed); arc=none (0)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gallimard.fr;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=Z8iNYzW7IgnnpNTt+0JSyt/ud5IMQRQj5eonnJUDRpg=;
+ b=q5LMcOaRXSHfUB/LvDDAirMBuxRsjr892t9s/tEdOZOAe/tLLZnKwFcwy2hmYEU547BgbOGT/e5SgDG/IgcoNKet8X9IzVlfDp5XfCMv4OdA6H42GdQJVuPrq7R3T4+/KSyNW50JkXl0o2I4V1by4cc5SrR+whEgW1+fjc2PTzc=
+Received: from PA7P264CA0429.FRAP264.PROD.OUTLOOK.COM (2603:10a6:102:37d::9)
+ by PATP264MB4820.FRAP264.PROD.OUTLOOK.COM (2603:10a6:102:429::22) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9632.15; Thu, 19 Feb
+ 2026 09:47:10 +0000
+Received: from PA3PEPF000089BA.FRAP264.PROD.OUTLOOK.COM
+ (2603:10a6:102:37d:cafe::71) by PA7P264CA0429.outlook.office365.com
+ (2603:10a6:102:37d::9) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.9632.16 via Frontend Transport; Thu,
+ 19 Feb 2026 09:47:10 +0000
+X-MS-Exchange-Authentication-Results: spf=fail (sender IP is 185.157.192.252)
+ smtp.mailfrom=gallimard.fr; dkim=none (message not signed)
+ header.d=none;dmarc=fail action=oreject header.from=gallimard.fr;
+Received-SPF: Fail (protection.outlook.com: domain of gallimard.fr does not
+ designate 185.157.192.252 as permitted sender)
+ receiver=protection.outlook.com; client-ip=185.157.192.252; helo=PWWEB022;
+Received: from PWWEB022 (185.157.192.252) by
+ PA3PEPF000089BA.mail.protection.outlook.com (10.167.242.22) with Microsoft
+ SMTP Server id 15.20.9632.12 via Frontend Transport; Thu, 19 Feb 2026
+ 09:47:08 +0000
+MIME-Version: 1.0
+From: "Gallimard" <noreply@gallimard.fr>
+To: christophe.t60@gmail.com
+Date: 19 Feb 2026 10:47:07 +0100
+Subject: =?utf-8?B?RWRpdGlvbnMgR2FsbGltYXJkIDogYWNjdXPDqSBkZSByw6lj?=
+ =?utf-8?B?ZXB0aW9uIGRlIHZvdHJlIG1hbnVzY3JpdA==?=
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+Message-ID:
+ <f4bad3b9-c73f-4a7f-b782-4a38f271d5dc@PA3PEPF000089BA.FRAP264.PROD.OUTLOOK.COM>
+Return-Path: noreply@gallimard.fr
+X-EOPAttributedMessage: 0
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: PA3PEPF000089BA:EE_|PATP264MB4820:EE_
+X-MS-Office365-Filtering-Correlation-Id: 41d72c2d-3fbf-4a39-8b45-08de6f9bd931
+X-MS-Exchange-SenderADCheck: 1
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam:
+	BCL:0;ARA:13230040|69100299015|1800799024|376014|36860700013|82310400026|3109299003|7149299003|4076899003|8096899003;
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?eWEzMmFWa2JKeldEbE9ZQUJhZXBqVHB6U3VwTisrZklXM1JRRmF5LzJjOEND?=
+ =?utf-8?B?NGt6ZUFNN0RFS3g3UXdGYm1nejdMNk56VFdKenlGSXRWYmlxRjBKTkgwQVk2?=
+ =?utf-8?B?cm5rYTNia0E4VDVrVUE2K1N4T0EvSXNhK2dyQnRhUUJqWjlPM0tSelgvMlFn?=
+ =?utf-8?B?N1FOUmJKd2VDaE5sUktvbVp0d1BaeFJzdVJaRDF2VTdmQm1JVlBjZjlBQWpF?=
+ =?utf-8?B?M0xXUk0rWFlMV2NTWTdVWDBkVWJ4SURUN0RHM2pSeFpCRVpCeUVrdFcraEls?=
+ =?utf-8?B?akVnM2J3SUpzQ0E5bkFpdmpPRGNLT09FT2lDeldBaVZXN21VVlRxMkMyZmc2?=
+ =?utf-8?B?RU5URGJ4RmJ4MnlqSVk0Y0tITnlRR1l4cUZWTDloUFlYRjIwcDUzeEpPckJ4?=
+ =?utf-8?B?eVRKYVQrSzU3V3NJM0hUUTB1OWFqYXVlZGNLMnpFODhMdDVnRVpFbFBUbzlQ?=
+ =?utf-8?B?RnpSTWIwNG1TRE4wM1Foc1QweTdmUUI1Z3Z3SCtlemdWV1BMRjkwcmZJMFdS?=
+ =?utf-8?B?SW1sMXRSTjIyNHdhQnFlQzhNT2dkSU1yeG5VVS83bmZyVjlObHRJQmp0T0pK?=
+ =?utf-8?B?eGJBb3V2UVFiaHV5UlpaWC8wcis2S0x0Mk53ZjBSNGhOUjZoaDRxWXNQazBy?=
+ =?utf-8?B?OW9tSjdwUGxoa0Zocy9DdnEzemdTTGliMDVWVFRpSEo3UXIxMzl5ekJnUkpa?=
+ =?utf-8?B?NVplMGpMdGxFWmJpSkZFM05TT3J5NGwzaWZ2Q3BZcDRhQnBOU2VPUzFKN3hU?=
+ =?utf-8?B?dm1CK05kaTNsay9KOFlnT296ZkMwQXVhOUhITkR5cnMxSW8yQ1d5NlFhZnJx?=
+ =?utf-8?B?K1hTVldjR0cvZ3hwTzRldWRqTGV2clFVYWxhWnVmWVdNMzE2eHBvQ3pQSm1G?=
+ =?utf-8?B?UXFwNTVSWTRLaW5EUm0xa1M0dWkvR2pWNkk0TUNPdmlaTlFBRzdHa29iWkQv?=
+ =?utf-8?B?SXI3RVh0OGVSNEpXZXNWNGJJTWYrS0FSMHBqVytYbzFNeGxwcVlBU1Nnd1NV?=
+ =?utf-8?B?TnBKOC9BamxUQ3lSekJTS1pYSk8yR1JtVldKbFBPa3k1SkloTGxLbXdDdTVH?=
+ =?utf-8?B?Ni9xRi9GWFE3bFBMblZsZEdWSCtaNGhrL1hNOXJkbUdZV3kyRTByZncvdU40?=
+ =?utf-8?B?Z2lCeCt3ckt0YmRObTZMSWlmQ3IxdHc1V2tZTlpHSUdlS2dhKzlqa0duOTJL?=
+ =?utf-8?B?VUxHb2VRV3Q3cjA4ZWxXVkJRQWlIayt0UnRmZm9tVjVWUDBCYURKa1dENGZP?=
+ =?utf-8?B?emdyWGQ3SWh0QWxVOTg2NWcveEEvU3A3L3dFaW4vYTR1MVNoNlllbUREZGpn?=
+ =?utf-8?B?QTlCa28wQisrdjZiTDlRQXFFSGRWUDdEWFNDcjUzZWcrT0hEeStvakt6c1JR?=
+ =?utf-8?B?L29SaEZCNDFkWFZHaFo4ZzdIQmVaZDNtVmpTWkJ2UlFZdkdDVGRSdm96Q0h2?=
+ =?utf-8?B?eE1OOW5lYXZuTU1HaWgwd0lGcHBOQ0xSSW5TTVg5RDNYbzZGNVZ4VGxONU1v?=
+ =?utf-8?B?VXJuQ1h0M0dWRVRoYjlVa3JIL1A0M1BLTkM2QXNRakkyQ2hON3VueUx4a1lU?=
+ =?utf-8?B?bjhHUTVTc3JqcGFmUkJZRUlOdE5RdkhJRG1UNXVsTmJJQmlUcllxbjA5VTFE?=
+ =?utf-8?B?YjAvbFVEQ0FDanJxS3h4aUZhSS9WMWJrRCs2WENiblhseEtpQndVaTQ1ZFBL?=
+ =?utf-8?B?Rmp4Y0pPSW43L3RMMk11SHJmS3g1M2hHUTB0dXFkNHA0ZktSOUpJZG5oSVFw?=
+ =?utf-8?B?NGsrU3Z3Sk1ZUTg1NkZMekkrNVJiS1ExK3lndFJTMGgyZFhCSGlVdTBXRWsw?=
+ =?utf-8?B?bG1MTXdNRW91dWdRTmUwbzJBZnJsd0htNjVqSjBVY1lVTXduK3VBMCtYMkNN?=
+ =?utf-8?B?YWR4UTloS3JiZzFWdWdPaGR1SElnZWtmUVJMTzV5NGMwd1c4MlBKU1NObng0?=
+ =?utf-8?B?MmpXb3BmV3VmRHVqUWdiSi94bzhFbk9ic3FndWtxb1R0SVNqUkpmRUh2cEd1?=
+ =?utf-8?B?aXJWNVloVmlLVjVBTXZlU05ZM0xWMEJ2STRPeHBrbXYxRGd0N2lHQlFVVUpt?=
+ =?utf-8?B?Q1JNZ3cydGhlRHdWeDM3ejFacDBXYVQ1Q0szM3VwYTB0OUpzZXRycXMzRVRG?=
+ =?utf-8?B?M1djMTF3Nm9oWUg0Q3VuRjZNZWkvVnIzYnFadU96dlZ5M1QwSG5nYjZONFZR?=
+ =?utf-8?B?RzJuS0ZySU9RY0drdDh1SjJJZHVDemJqMXkyc3YwNTJHamEzODFnc284WmdQ?=
+ =?utf-8?B?eHJKVFBVd0RPaWJjL3o5SWFNYkZRPT0=?=
+X-Forefront-Antispam-Report:
+	CIP:185.157.192.252;CTRY:FR;LANG:fr;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:PWWEB022;PTR:ErrorRetry;CAT:NONE;SFS:(13230040)(69100299015)(1800799024)(376014)(36860700013)(82310400026)(3109299003)(7149299003)(4076899003)(8096899003);DIR:OUT;SFP:1102;
+X-MS-Exchange-AntiSpam-MessageData-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-0:
+	PIl2n+a5Nb1LFrpO2D4IIi1P36Bf0HGHdL8t31QaUUzP4Cf7kM8QGMLw1+SjEL/X9Wyj16qoayzKtre9oTtme9VCWUp01Irs0kyvT6FxaSiBIFhxvcSezPf5Eg/GCDRweu1ajiRkuJO+a+3T8vg4WKANxi6gS3jpsvq+6IWKz4sRHG/wGm7HRtFrMoNP2FimEmWW3cpgAH3CVztVwZ2NBm7ytoUaf6wxBATLIv2t6esB6OjU3FEGlgepRQ1S0vsSOkmwZ8JzUFiXH3TUewaOdA6LSBIHT29tqEcwsTb+itSzAgqVsIykr3cpqApSHyzstjbnMi5OM2dnf2WwHW/d20HrqOYzCwebSF6ZKFZEoJndnTv7c/xuDs0zKHoCCCtaPu9lkS2WodvCHUeUz7gLBzWS999icxE1gXdfULHIAEDzCZjo/OgC/NfEpHi4LDaE
+X-OriginatorOrg: gallimard.fr
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 19 Feb 2026 09:47:08.7568
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 41d72c2d-3fbf-4a39-8b45-08de6f9bd931
+X-MS-Exchange-CrossTenant-Id: b7e753bf-395c-4f4a-b2d4-17dcb8c464c0
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=b7e753bf-395c-4f4a-b2d4-17dcb8c464c0;Ip=[185.157.192.252];Helo=[PWWEB022]
+X-MS-Exchange-CrossTenant-AuthSource: PA3PEPF000089BA.FRAP264.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PATP264MB4820
+
+PHA+TW9uc2lldXIgQ2hyaXN0b3BoZSBUSElFQkFVRDwvcD4NCjxwPk5vdXMgdm91cyBy
+ZW1lcmNpb25zIGRlIG5vdXMgYXZvaXIgY29uZmnDqSB2b3RyZSB0ZXh0ZSwgZG9udCBu
+b3VzIGFsbG9ucyBwcmVuZHJlIGNvbm5haXNzYW5jZSBhdmVjIGF0dGVudGlvbi4gDQpO
+b3VzIHLDqXBvbmRvbnMgaGFiaXR1ZWxsZW1lbnQgZGFucyB1biBkw6lsYWkgZGUgaHVp
+dCBzZW1haW5lcy48L3A+DQo8cCBzdHlsZT0iY29sb3I6IHJlZCI+VmV1aWxsZXogPHNw
+YW4gc3R5bGU9InRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO2ZvbnQtd2VpZ2h0OmJv
+bGQiPm5lIHBhcyBkb3VibGVyPC9zcGFuPiB2b3RyZSBlbnZvaSBkJ3VuZSB2ZXJzaW9u
+IHBhcGllci48L3A+DQo8cD5CaWVuIGNvcmRpYWxlbWVudC48L3A+DQo8cD5MZSBzZXJ2
+aWNlIGRlcyBtYW51c2NyaXRzPC9wPg0KPGRpdiBzdHlsZT0ibWFyZ2luLWJvdHRvbTog
+NTBweDsiPjxpbWcgc3JjPSJodHRwczovL2RlcG90LW1hbnVzY3JpdHMuZ2FsbGltYXJk
+LmZyL2ltYWdlcy9HYWxsaW1hcmQtcm91Z2UtdzIwMC5QTkciIEFsdD0iR0FMTElNQVJE
+Ij48L2Rpdj4NCjxwPlAuUy4gOiBDZWNpIGVzdCB1biBtZXNzYWdlIGF1dG9tYXRpcXVl
+LCBtZXJjaSBkZSBuZSBwYXMgeSByw6lwb25kcmUuPC9wPg0K
+
