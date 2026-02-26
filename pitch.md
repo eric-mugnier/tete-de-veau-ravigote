@@ -14,7 +14,7 @@ Un OVNI(1), oui, plutôt qu'un polar. Une logorrhée écrite en 'free writing'/'
 
 Ça donne envie, n'est-ce-pas ? 
  
-L'Horreur - prononcé à la Marlon Brando dans Apocalypse Now - c'est le thème du livre.
+L'Horreur (prononcé à la Marlon Brando dans Apocalypse Now), voilà le thème du livre.
 
 Toute forme de morale est étrangère aux protagonistes, le héros/narrateur en premier. Les digressions, d'un pessimisme schopenhauérien, révèlent une humanité sans Dieu, désespérée, tragique. Le ton n'est jamais didactique, jamais emphatique, toujours factuel, genre "Alain Decaux raconte". Bien plus efficace qu'un bouquin qui dirait benoîtement : "Regardez ça, c'est mal ! Ouh comme c'est vilain !". Un bruit de fond, un acouphène, un filtre optique polarisé, un voile de gaze à fleur de peau. La tentaculaire progression de La Camorra dans le Naples de l'Amica Geniale d'Elena Ferrante, jamais explicite, trop prégnante.
 
@@ -33,6 +33,6 @@ formule finale
 
 Christophe Thiebaud
 
-PS. Je suis la tête de gondole (pas ravigote pour le coup) d'un groupe d'amis de Éric Mugnier, convaincus du potentiel de ses écrits. Nous avons convenu de l'aider en toute amitié et absolu désintéressement dans les démarches fastidieuses pour trouver un éditeur. Éditeur qui saura, au travers des défauts du texte, déceler ce potentiel, partager notre conviction, "ouvrir un lieu d’asile à l'esprit singulier" d'Éric Mugnier, et entreprendre avec lui le travail éditorial qui lui fera trouver son public.
+PS. Je suis la tête de gondole (pas ravigote pour le coup) d'un groupe d'amis de Éric Mugnier, convaincus du potentiel de ses écrits. Nous sommes convenus de l'aider en toute amitié et absolu désintéressement dans les démarches fastidieuses inhérentes à la recherche d'un éditeur. Éditeur qui saura, au travers des défauts du texte, déceler ce potentiel, partager notre conviction, "ouvrir un lieu d’asile à l'esprit singulier" d'Éric Mugnier, et entreprendre avec lui le travail éditorial qui lui fera trouver son public.
 
 (1)(2)(3) : réf. https://le-tripode.net/maison
