@@ -29,7 +29,9 @@ Je suis la tête de gondole (pas ravigote pour le coup) d'un groupe d'amis de É
 Respectueusement,  
 Christophe Thiebaud
 
-PS.
+---
+
+*1., 2. et 3. : ovni, littérature et arts, les trois piliers du Tripode, dans le désordre, cf. https://le-tripode.net/maison*
 
 | BIO|
 |------|
@@ -40,6 +42,3 @@ PS.
 | D'où l'érudition, corollairement |
 | Son auteur favori est Joris-Karl Huysmans. |
 
----
-
-*1., 2. et 3. : ovni, littérature et arts, les trois piliers du Tripode, dans le désordre, cf. https://le-tripode.net/maison*
