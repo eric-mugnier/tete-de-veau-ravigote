@@ -5,7 +5,7 @@ Mon nom est Christophe Thiebaud, je viens vous proposer le manuscrit du premier 
     Quand le père Vidal disparaît dans des circonstances troubles 
     et que des colis macabres commencent à circuler dans la ville, 
     le commandant Beauvais se lance dans une enquête labyrinthique 
-    qui le mènera des caves de l'Église à la Namibie. 
+    qui le mènera des caves de l'Église à l’ambassade de Namibie. 
     
     Entouré de Titus Beaugendre, son fidèle équipier, 
     et d'une galerie de personnages hauts en couleur, 
