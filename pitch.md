@@ -16,7 +16,7 @@ Mon nom est Christophe Thiebaud, je viens vous proposer le manuscrit du premier 
 
 Un ovni¹, oui, plutôt qu'un polar. Une logorrhée vengeresse et jubilatoire, écrite en *free writing* / *spontaneous prose*, où l'humour potache concurrence les scènes *gore* à la limite du soutenable, entrelacée d'amples digressions érudites : sur les chats, les dinosaures, l'Église, les pavillons de banlieue, l’Unité 731, Pannonica de Koenigswarter, la 'Ndrangheta.
 
-Ça donne envie, n'est-ce-pas ? 
+Ça donne envie, n'est-ce pas ? 
  
 L'**Horreur** (prononcé à la Marlon Brando dans Apocalypse Now), voilà le thème du livre.
 
