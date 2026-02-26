@@ -2,9 +2,11 @@ Bonjour,
 
 Mon nom est Christophe Thiebaud, et je viens vous proposer le manuscrit du premier roman de mon ami cher Éric Mugnier, "Tête de veau ravigote" :
 
-    Quand le père Vidal disparaît dans des circonstances troubles et que des colis macabres commencent à circuler dans la ville, le commandant Beauvais se lance dans une enquête labyrinthique. 
-    
-    Le polar n’est qu’un prétexte : à travers un maillage dense de digressions érudites, 'tête de veau ravigote' dessine en filigrane le visage d'une humanité sans Dieu.
+|      |
+|------|
+| Quand le père Vidal disparaît dans des circonstances troubles et que des colis macabres commencent à circuler dans la ville, le commandant Beauvais se lance dans une enquête labyrinthique. |
+| Le polar n’est qu’un prétexte : à travers un maillage dense de digressions érudites, 'tête de veau ravigote' dessine en filigrane le visage d'une humanité sans Dieu.|
+
 
 Écrit dans le style d'un polar, ce n'en est pas un : où sont les énigmes à résoudre, les fausses pistes, les coups de théâtre spectaculaires ? 
 
