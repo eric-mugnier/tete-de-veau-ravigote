@@ -15,6 +15,8 @@
 | Inculte ★ | Paris | https://www.inculte.fr | https://www.instagram.com/p/Cv-JjnatfOd/ | 💾 | 2 | 4 | | |
 | Robert Laffont ★ | Paris | https://www.laffont.fr | manuscrits@laffont.fr | 💾 | 4 | 4 | | |
 | Le Terrain Vague-Losfeld ★ | Paris | — | — | — | 3 | 5 | *stand-by* | |
+| Viviane Hamy ★ | Paris | https://fr.wikipedia.org/wiki/%C3%89ditions_Viviane_Hamy | http://www.viviane-hamy.fr/fonctionnalites-et-mise-en-avant/article/manuscrits | 📚 | 3 | 5 |  | |
+
 
 > ⚠️ Losfeld : maison lancée en janvier 2026, attendre que la structure soit opérationnelle (avril 2026 ?)
 > ⚠️ Robert Laffont : dirigé depuis janvier 2025 par Frédéric Martin, ex-fondateur du Tripode. Il ouvre la collection *Pavillons* aux auteurs français. Grand groupe (Editis) mais sensibilité éditoriale rare.
