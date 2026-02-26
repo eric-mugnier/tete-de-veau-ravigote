@@ -38,6 +38,15 @@ Christophe Thiebaud
 | d'où l'érudition, corollairement ; |
 | son auteur favori est Joris-Karl Huysmans. |
 
+| Coordonnées |
+|---|
+| Éric Mugnier |
+| 33-11 rue Bouchardon |
+| 52000 Chaumont |
+| ericmugnier730@gmail.com |
+| 06 82 03 69 48 |
+
+
 ---
 
 *1., 2. et 3. : ovni, littérature et arts, les trois piliers du Tripode, dans le désordre, cf. https://le-tripode.net/maison*
