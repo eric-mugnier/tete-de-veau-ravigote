@@ -10,7 +10,7 @@ Mon nom est Christophe Thiebaud, je viens vous proposer le manuscrit du premier 
     Entouré de Titus Beaugendre, son fidèle équipier, 
     et d'une galerie de personnages hauts en couleur, 
     Beauvais arpente un monde contemporain 
-    où l'absurde dispute à l'horreur.
+    où l'absurde le dispute à l'horreur.
 
 Écrit dans le style d'un polar, ce n'en est pas un : où sont les énigmes à résoudre, les fausses pistes, les coups de théâtre spectaculaires ? 
 
