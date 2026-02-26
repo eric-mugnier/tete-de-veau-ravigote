@@ -10,7 +10,7 @@ Mon nom est Christophe Thiebaud, et je viens vous proposer le manuscrit du premi
 
 Écrit dans le style d'un polar, ce n'en est pas un : où sont les énigmes à résoudre, les fausses pistes, les coups de théâtre spectaculaires ? 
 
-Plutôt qu'un polar, un OVNI(1). Une logorrhée écrite en 'free writing'/'spontaneous prose', où l'humour potache le dispute aux scènes 'gore' à la limite du soutenable, entrelacée de nombreuses et amples digressions érudites sur une variété de thèmes : les chats, les dinosaures, l'Église, les pavillons de banlieue, l’Unité 731, Pannonica de Koenigswarter, la 'Ndrangheta'.
+Un OVNI(1), oui, plutôt qu'un polar. Une logorrhée écrite en 'free writing'/'spontaneous prose', où l'humour potache le dispute aux scènes 'gore' à la limite du soutenable, entrelacée de nombreuses et amples digressions érudites sur une variété de thèmes : les chats, les dinosaures, l'Église, les pavillons de banlieue, l’Unité 731, Pannonica de Koenigswarter, la 'Ndrangheta'.
 
 Ça donne envie, n'est-ce-pas ? 
  
