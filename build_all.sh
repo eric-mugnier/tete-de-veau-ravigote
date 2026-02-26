@@ -26,10 +26,10 @@ else
 fi
 
 echo "=== 4/4  COMPLET PDF ==="
-pdftk tete_de_veau_ravigote_couverture_minimaliste.pdf tete_de_veau_ravigote.pdf \
-      cat output tete_de_veau_ravigote_COMPLET.pdf
-
-echo ""
+### pdftk tete_de_veau_ravigote_couverture_minimaliste.pdf tete_de_veau_ravigote.pdf \
+###       cat output tete_de_veau_ravigote_COMPLET.pdf
+### 
+### echo ""
 echo "Done."
 
 # ─── Cible annotée (optionnelle) ──────────────────────────────────────────────
