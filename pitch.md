@@ -38,4 +38,4 @@ PS. BIO
 
 
 
-(1)(2)(3) : réf. https://le-tripode.net/maison
+(1)(2)(3) : les trois piliers du Tripode, cf. https://le-tripode.net/maison
