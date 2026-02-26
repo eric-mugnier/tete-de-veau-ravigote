@@ -9,7 +9,7 @@
 | Éditeur | Ville | Site | Contact | Mode | D | C | Envoi | Réponse |
 |---------|-------|------|---------|------|---|---|-------|---------|
 | Verticales (Gallimard) ★ | Paris | https://www.gallimard.fr/collections/verticales | http://www.editions-verticales.com/contact.php?rubrique=8 | 📚 | 4 | 5 | | |
-| Tristram ★ | Auch | https://www.tristram.fr | courrier papier uniquement | 📚 | 2 | 5 | [link text](envois/2026-02-26%20-%20Tripode%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml)| |
+| Tristram ★ | Auch | https://www.tristram.fr | courrier papier uniquement | 📚 | 2 | 5 | [2026-02-26](envois/2026-02-26%20-%20Tripode%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml)| |
 | Le Tripode ★ | Paris | https://le-tripode.net | https://le-tripode.net/maison | 💾 | 2 | 4 | | |
 | Verdier ★ | Lagrasse | https://editions-verdier.fr | https://editions-verdier.fr/manuscrits/ | 📚 | 2 | 4 | | |
 | Inculte ★ | Paris | https://www.inculte.fr | https://www.instagram.com/p/Cv-JjnatfOd/ | 💾 | 2 | 4 | | |
