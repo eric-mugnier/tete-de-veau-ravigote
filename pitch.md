@@ -3,7 +3,7 @@ Bonjour,
 Mon nom est Christophe Thiebaud, et je viens vous proposer le manuscrit du premier roman de mon ami cher Éric Mugnier, "Tête de veau ravigote". Le pitch :
 
     Quand le père Vidal disparaît dans des circonstances troubles et que des colis macabres commencent à circuler dans la ville, le commandant Beauvais se lance dans une enquête labyrinthique.
-    
+
     Le polar n’est qu’un prétexte : à travers un maillage dense de digressions érudites, 'tête de veau ravigote' dessine en filigrane le visage d'une humanité sans Dieu.
 
 
@@ -24,9 +24,9 @@ Je suis la tête de gondole (pas ravigote pour le coup) d'un groupe d'amis de É
 Respectueusement,
 Christophe Thiebaud et Éric Mugnier
 
-PS. BIO
+PS.
 
-|      |
+| BIO|
 |------|
 | Éric Mugnier a 65 ans (génération nourrie à Pilote, Métal Hurlant, Actuel, Libé 80s, Bukowsky, l'underground américain, etc. - plus trop à la mode) |
 | Habite depuis son adoption via l'Assistance Publique dans la préfecture de l'un des départements les plus boisés de France, la Haute-Marne |
