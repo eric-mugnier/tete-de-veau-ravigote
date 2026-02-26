@@ -18,14 +18,14 @@ L'Horreur (prononcé à la Marlon Brando dans Apocalypse Now), voilà le thème 
 
 Toute forme de morale est étrangère aux protagonistes, le héros/narrateur en premier. Les digressions, d'un pessimisme schopenhauérien, révèlent une humanité sans Dieu, désespérée, tragique. Le ton n'est jamais didactique, jamais emphatique, toujours factuel, genre "Alain Decaux raconte". Bien plus efficace qu'un bouquin qui dirait benoîtement : "Regardez ça, c'est mal ! Ouh comme c'est vilain !". Un bruit de fond, un acouphène, un filtre optique polarisé, un voile de gaze à fleur de peau. La tentaculaire progression de La Camorra dans le Naples de l'Amica Geniale d'Elena Ferrante, jamais explicite, trop prégnante.
 
-C’est une littérature qui ose tout — c’est même à ça qu’on la reconnaît. [humour]
+C’est une LITTÉRATURE(2) qui ose tout — c’est même à ça qu’on la reconnaît. [humour]
 
 BIO
 
 Éric Mugnier a 65 ans (génération nourrie à Pilote, Métal Hurlant, Actuel, Libé 80s, Bukowsky, l'underground américain, etc. - plus trop à la mode) ;
 Habite depuis son adoption via l'Assistance Publique dans la préfecture de l'un des départements les plus boisés de France, la Haute-Marne ;
 N'a jamais eu d'activité professionnelle 'classique' : emploi, métier, profession, poste, travail, fonction, rien de tout cela ;
-A donc pu consacrer sa vie à la création, dans moult ARTS(2) : peinture, musique, chansons, et ici, LITTÉRATURE(3) ;
+A donc pu consacrer sa vie à la création, dans moult ARTS(3) : peinture, musique, chansons, et ici, écriture ;
 A pu aussi consacrer sa vie à l'érudition, à la culture générale ;
 Son auteur favori est Joris-Karl Huysmans.
 
