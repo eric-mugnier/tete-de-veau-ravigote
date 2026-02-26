@@ -10,13 +10,13 @@ Mon nom est Christophe Thiebaud, et je viens vous proposer le manuscrit du premi
 
 Écrit dans le style d'un polar, ce n'en est pas un : où sont les énigmes à résoudre, les fausses pistes, les coups de théâtre spectaculaires ? 
 
-Plutôt qu'un polar, un OVNI(1). Une logorrhée écrite en 'free writing', en 'spontaneous prose', où l'humour potache le dispute aux scènes 'gore' à la limite du soutenable, entrelacée de nombreuses et amples digressions érudites sur une variété de thèmes : les chats, les dinosaures, l'Église, les pavillons de banlieue, l’Unité 731, Pannonica de Koenigswarter, la 'Ndrangheta'.
+Plutôt qu'un polar, un OVNI(1). Une logorrhée écrite en 'free writing'/'spontaneous prose', où l'humour potache le dispute aux scènes 'gore' à la limite du soutenable, entrelacée de nombreuses et amples digressions érudites sur une variété de thèmes : les chats, les dinosaures, l'Église, les pavillons de banlieue, l’Unité 731, Pannonica de Koenigswarter, la 'Ndrangheta'.
 
 Ça donne envie, n'est-ce-pas ? 
  
-L'Horreur - prononcé à la Marlon Brando dans Apocalypse Now - voilà le thème central du livre.
+L'Horreur - prononcé à la Marlon Brando dans Apocalypse Now - c'est le thème du livre.
 
-Le ton n'est jamais didactique, les digressions jamais exagérées ou minimisées, toujours factuelles, genre "Alain Decaux raconte". Les digressions, d'un pessimisme schopenhauérien, révèlent une humanité sans Dieu, désespérée, tragique. Bien plus prégnant qu'un bouquin qui dirait benoîtement : "regardez-ça : c'est mal ! Ouh comme c'est vilain !". Comme la Camorra dans l'Amica Geniale de Elena Ferrante, dont la tentaculaire progression dans Naples imprègne le récit sans jamais être explicite.
+Toute forme de morale est étrangère aux protagonistes, le héros/narrateur en premier. Les digressions, d'un pessimisme schopenhauérien, révèlent une humanité sans Dieu, désespérée, tragique. Le ton n'est jamais didactique, jamais emphatique, toujours factuel, genre "Alain Decaux raconte". Bien plus efficace qu'un bouquin qui dirait benoîtement : "Regardez ça, c'est mal ! Ouh comme c'est vilain !". Un bruit de fond, un acouphène, un filtre optique polarisé, un voile de gaze à fleur de peau. La tentaculaire progression de La Camorra dans le Naples de l'Amica Geniale d'Elena Ferrante, jamais explicite, trop prégnante.
 
 C’est une littérature qui ose tout — c’est même à ça qu’on la reconnaît. [humour]
 
