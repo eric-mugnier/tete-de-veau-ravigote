@@ -33,7 +33,7 @@ PS. BIO
 | Habite depuis son adoption via l'Assistance Publique dans la préfecture de l'un des départements les plus boisés de France, la Haute-Marne |
 | N'a jamais eu d'activité professionnelle 'classique' : emploi, métier, profession, poste, travail, fonction, rien de tout cela |
 | A donc pu consacrer sa vie à la création, dans moult ARTS(3) : peinture, musique, chansons, et ici, écriture |
-| A pu aussi consacrer sa vie à l'érudition, à la culture générale |
+| D'où l'érudition, dit en passant |
 | Son auteur favori est Joris-Karl Huysmans. |
 
 
