@@ -24,7 +24,7 @@ Toute forme de morale est étrangère aux protagonistes, le héros/narrateur en 
 
 Bref, c’est une littérature² qui ose tout — c’est même à ça qu’on la reconnaît. 😉
 
-Je suis la tête de gondole (pas ravigote pour le coup) d'un groupe d'amis de Éric Mugnier, convaincus du potentiel de ses écrits. Nous sommes convenus de l'aider en toute amitié et absolu désintéressement dans les démarches fastidieuses inhérentes à la recherche d'un éditeur. Éditeur qui saura, au travers des défauts du texte, déceler ce potentiel, partager notre conviction, *ouvrir un lieu d’asile à l'esprit singulier" d'Éric Mugnier, et entreprendre avec lui le travail éditorial qui lui fera trouver son public.
+Je suis la tête de gondole (pas ravigote pour le coup) d'un groupe d'amis de Éric Mugnier, convaincus du potentiel de ses écrits. Nous sommes convenus de l'aider en toute amitié et absolu désintéressement dans les démarches fastidieuses inhérentes à la recherche d'un éditeur. Éditeur qui saura, au travers des défauts du texte, déceler ce potentiel, partager notre conviction, *ouvrir un lieu d’asile à l'esprit singulier* d'Éric Mugnier, et entreprendre avec lui le travail éditorial qui lui fera trouver son public.
 
 Respectueusement,
 Christophe Thiebaud
