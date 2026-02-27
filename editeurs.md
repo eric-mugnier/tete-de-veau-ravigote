@@ -6,19 +6,19 @@
 
 ## VAGUE 1 — Cœur de cible
 
-| Éditeur | Ville | Mode | D | C | Envoi | Délai | Réponse |
+| Éditeur | Ville | Mode | D | C | Envoi | Délai (mois) | Réponse |
 |---------|-------|------|---|---|-------|-------|---------|
-| [Verticales (Gallimard)](http://www.editions-verticales.com/contact.php?rubrique=8) | Paris | 📚 | 4 | 5 | | quatre mois | |
+| [Verticales (Gallimard)](http://www.editions-verticales.com/contact.php?rubrique=8) | Paris | 📚 | 4 | 5 | | 4 | |
 | [Tristram](https://www.tristram.fr) | Auch | 📚 | 2 | 5 | | | |
 | [Le Tripode](https://le-tripode.net/maison) | Paris | 💾 | 2 | 4 | [2026-02-26](envois/2026-02-26%20-%20Tripode%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 1 mois | |
-| [Verdier](https://editions-verdier.fr/manuscrits/) | Lagrasse | 📚 | 2 | 4 | | trois mois | |
-| [Robert Laffont](mailto:Frederic.Martin@robert-laffont.com) | Paris | 💾 | 4 | 4 | [2026-02-27](envois/2026-02-27%20-%20Robert%20Laffont%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 4 mois | |
+| [Verdier](https://editions-verdier.fr/manuscrits/) | Lagrasse | 📚 | 2 | 4 | | 3 | |
+| [Robert Laffont](mailto:Frederic.Martin@robert-laffont.com) | Paris | 💾 | 4 | 4 | [2026-02-27](envois/2026-02-27%20-%20Robert%20Laffont%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 4 | |
 | Le Terrain Vague-Losfeld | Paris | — | 3 | 5 | *stand-by* | | |
 | [Viviane Hamy](http://www.viviane-hamy.fr/fonctionnalites-et-mise-en-avant/article/manuscrits) | Paris | 📚 | 3 | 5 | | | |
 | [Actes Sud](https://actes-sud.fr/contactez-nous#s2) *(coll. Actes Noirs, Inculte)* | Arles | 📚 | 4 | 4 | | | |
-| [Christian Bourgois](https://bourgoisediteur.fr/contact/) | Paris | 💾 | 3 | 3 | | quatre mois | |
-| [P.O.L](https://www.pol-editeur.com/contacter-editions-pol.html) | Paris | 📚 | 3 | 3 | | trois mois | |
-| [Denoël](https://www.denoel.fr/contacts-manuscrits) | Paris | 💾 | 3 | 3 | | trois mois | |
+| [Christian Bourgois](https://bourgoisediteur.fr/contact/) | Paris | 💾 | 3 | 3 | | 4 | |
+| [P.O.L](https://www.pol-editeur.com/contacter-editions-pol.html) | Paris | 📚 | 3 | 3 | | 3 | |
+| [Denoël](https://www.denoel.fr/contacts-manuscrits) | Paris | 💾 | 3 | 3 | | 3 | |
 
 
 > ⚠️ Losfeld : maison lancée en janvier 2026, attendre que la structure soit opérationnelle (avril 2026 ?)
