@@ -16,6 +16,7 @@
 | Le Terrain Vague-Losfeld | Paris | — | 3 | 5 | *stand-by* | | |
 | [Viviane Hamy](http://www.viviane-hamy.fr/fonctionnalites-et-mise-en-avant/article/manuscrits) | Paris | 📚 | 3 | 5 | | | |
 | [Actes Sud](https://actes-sud.fr) *(coll. Actes Noirs, Inculte)* | Arles | 📚 | 4 | 4 | | | |
+| [Christian Bourgois](https://bourgoisediteur.fr/contact/) | Paris | 💾 | 3 | 3 | | | |
 
 
 > ⚠️ Losfeld : maison lancée en janvier 2026, attendre que la structure soit opérationnelle (avril 2026 ?)
@@ -33,7 +34,6 @@
 | Quidam Éditeur | Metz | https://www.quidamediteur.com | https://www.quidamediteur.com/contact | 💾 | 2 | 4 | | | |
 | Aux Forges de Vulcain | Paris | https://auxforgesdevulcain.fr | — | 💾 | 2 | 4 | | | |
 | Pauvert (Fayard) | Paris | https://www.fayard.fr/pauvert | MANUSCRITS-PAUVERT@editions-fayard.fr | 💾 | 3 | 4 | | | |
-| Christian Bourgois (Madrigall) | Paris | https://bourgoisediteur.fr | https://bourgoisediteur.fr/contact/ | 💾 | 3 | 3 | | | |
 | Anacharsis | Toulouse | https://www.editions-anacharsis.com | https://www.editions-anacharsis.com/Contacter-Anacharsis | 💾 | 2 | 3 | | | |
 | La Contre Allée | Lille | https://lacontreallee.com | https://lacontreallee.com/nous-contacter/ | 💾 | 2 | 3 | | | |
 | Zulma | Paris | https://www.zulma.fr | https://www.zulma.fr/contact/ | 💾 | 3 | 3 | | | |
