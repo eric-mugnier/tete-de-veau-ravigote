@@ -10,7 +10,7 @@
 |---------|-------|------|---|---|-------|-------|---------|
 | [Verticales (Gallimard)](http://www.editions-verticales.com/contact.php?rubrique=8) | Paris | 📚 | 4 | 5 | | 4 | |
 | [Tristram](https://www.tristram.fr) | Auch | 📚 | 2 | 5 | | | |
-| [Le Tripode](https://le-tripode.net/maison) | Paris | 💾 | 2 | 4 | [2026-02-26](envois/2026-02-26%20-%20Tripode%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 1 mois | |
+| [Le Tripode](https://le-tripode.net/maison) | Paris | 💾 | 2 | 4 | [2026-02-26](envois/2026-02-26%20-%20Tripode%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 1 | |
 | [Verdier](https://editions-verdier.fr/manuscrits/) | Lagrasse | 📚 | 2 | 4 | | 3 | |
 | [Robert Laffont](mailto:Frederic.Martin@robert-laffont.com) | Paris | 💾 | 4 | 4 | [2026-02-27](envois/2026-02-27%20-%20Robert%20Laffont%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 4 | |
 | Le Terrain Vague-Losfeld | Paris | — | 3 | 5 | *stand-by* | | |
