@@ -236,36 +236,52 @@ Reproduction interdite
 
 % ═══ COLOPHON FINAL (page impaire) + PAGE BLANCHE FINALE (page paire) ════════
 \clearpage
-\hbox{}\thispagestyle{empty}\newpage   % page blanche intercalée après le texte
-% \makeatletter requis : @ a catcode 12 dans le corps du document.
-% Si la prochaine page est paire, on insère une page blanche pour
-% que le colophon tombe sur une page impaire (recto).
+\hbox{}\thispagestyle{empty}\newpage
+
 \makeatletter
 \ifodd\c@page\else
   \hbox{}\thispagestyle{empty}\newpage
 \fi
 \makeatother
+
 \thispagestyle{empty}
-\null\vfill
+
+
 {\footnotesize
-\hbox to \linewidth{\hfil\tikz\node[opacity=0.25,inner sep=0pt]{\includegraphics[height=1.6\onelineskip]{images/ct_watermark.png}};}\par\vspace{-6pt}
-\noindent{\color{black!25}\rule{\linewidth}{0.4pt}}\par\vspace{6pt}
 
-% Ligne 1 — justifiée naturellement
-\noindent\textit{\docversionordinal\ édition, préparée par Christophe Thiebaud à San Lazzaro di Savena, le \today}\linebreak
+\null\vfill
 
-% Ligne 2 — logos justifiés gauche / droite
-\noindent\colorbox{gray!12.5}{\strut\makebox[\dimexpr \linewidth-2\fboxsep][c]{
-\hbox to \linewidth{%
-\textup{\LaTeX}
-\hfill
-\texttt{\docversion\
-\hfill
-\raisebox{-0.8ex}{\includegraphics[height=3ex]{images/github-repo-git-octocat-svgrepo-com.svg.pdf}}\gitcommit}
+% Ligne 1
+\noindent\textit{\docversionordinal\ édition, préparée par Christophe Thiebaud à San Lazzaro di Savena, le \today}\par
 
-}}
+% Ligne 2 — bandeau gris avec justification gauche/droite
+\noindent
+\colorbox{gray!5}{
+  \makebox[\dimexpr\linewidth-2\fboxsep][c]{
+    \hbox to \linewidth{
+      {\large \LaTeX}
+      \hfill
+      \texttt{v\docversion}
+      \hfill
+      \texttt{\gitcommit}
+      \raisebox{-0.8ex}{
+        \includegraphics[height=3ex]{images/github-repo-git-octocat-svgrepo-com.svg.pdf}
+      }
+    }
+  }
+}
+
+\vfill
+
+\noindent
+\makebox[\linewidth][r]{%
+  \tikz\node[opacity=0.33,inner sep=0pt]{%
+    \includegraphics[height=1.6\onelineskip]{images/ct_watermark.png}%
+  };
+}
 
 }
+
 \newpage
 \hbox{}\thispagestyle{empty}
 
