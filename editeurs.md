@@ -12,11 +12,10 @@
 | Tristram ★ | Auch | https://www.tristram.fr | courrier papier uniquement | 📚 | 2 | 5 | | | |
 | Le Tripode ★ | Paris | https://le-tripode.net | https://le-tripode.net/maison | 💾 | 2 | 4 |[2026-02-26](envois/2026-02-26%20-%20Tripode%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 1 mois | |
 | Verdier ★ | Lagrasse | https://editions-verdier.fr | https://editions-verdier.fr/manuscrits/ | 📚 | 2 | 4 | | | |
-| Inculte ★ | Paris | https://www.inculte.fr | https://www.instagram.com/p/Cv-JjnatfOd/ | 💾 | 2 | 4 | | | |
 | Robert Laffont ★ | Paris | https://www.laffont.fr | manuscrits@laffont.fr | 💾 | 4 | 4 | [2026-02-27](envois/2026-02-27%20-%20Robert%20Laffont%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 4 mois | |
 | Le Terrain Vague-Losfeld ★ | Paris | — | — | — | 3 | 5 | *stand-by* | | |
 | Viviane Hamy ★ | Paris | https://fr.wikipedia.org/wiki/%C3%89ditions_Viviane_Hamy | http://www.viviane-hamy.fr/fonctionnalites-et-mise-en-avant/article/manuscrits | 📚 | 3 | 5 | | | |
-| Actes Noirs (Actes Sud) ★ | Arles | https://actes-sud.fr/collections/actes-noirs | https://actes-sud.fr/contactez-nous#s2 | 📚 | 4 | 3 | | | |
+| Actes Sud *(coll. Actes Noirs, Inculte)* ★ | Arles | https://actes-sud.fr | https://actes-sud.fr/contactez-nous#s2 | 📚 | 4 | 4 | | | |
 
 
 > ⚠️ Losfeld : maison lancée en janvier 2026, attendre que la structure soit opérationnelle (avril 2026 ?)
@@ -42,7 +41,6 @@
 | Alma Éditeur | Paris | https://www.alma-editeur.fr | https://www.alma-editeur.fr/contacts/ | 📚 | 2 | 3 | | | |
 | Denoël | Paris | https://www.denoel.fr | https://www.denoel.fr/contacts-manuscrits | 💾 | 3 | 3 | | | |
 | Le Cherche Midi | Paris | https://www.cherche-midi.com | — | — | 3 | 3 | | | |
-| Actes Sud | Arles | https://actes-sud.fr | https://actes-sud.fr/contactez-nous#s2 | 📚 | 4 | 3 | | | |
 | L'Olivier (Seuil) | Paris | https://www.seuil.com | https://www.seuil.com/faq/jaimerais-vous-soumettre-mon-manuscrit | 📚 | 3 | 3 | | | |
 | P.O.L | Paris | https://www.pol-editeur.com | https://www.pol-editeur.com/contacter-editions-pol.html | 📚 | 3 | 3 | | | |
 | La Table Ronde | Paris | https://www.editionslatableronde.fr | https://www.editionslatableronde.fr/Contacts | 💾 | 3 | 3 | | | |
@@ -111,7 +109,7 @@
 | 2 | **Le Masque** (Librairie des Champs-Élysées) | Le Masque | Fondé 1927 · Agatha Christie en France | — |
 | 3 | **Fleuve Noir** | Fleuve Noir | San-Antonio (Frédéric Dard) · couvertures iconiques | — |
 | 4 | **Rivages/Noir** | Rivages/Noir | James Ellroy, Massimo Carlotto · polar américain & méditerranéen | Vague 3 |
-| 5 | **Actes Sud** | Actes Noirs | Polars littéraires · souvent scandinaves ou internationaux | Vague 2 (Actes Sud) · Vague 3 (Actes Noirs) |
+| 5 | **Actes Sud** | Actes Noirs · Inculte | Polars littéraires · souvent scandinaves ou internationaux | Vague 1 |
 | 6 | **Albin Michel** | — | Thriller & policier grand public · best-sellers français et étrangers | Vague 3 |
 | 7 | **Seuil** | Seuil Policiers · Points Policiers | Large spectre : roman noir littéraire au thriller international | Vague 3 (Fiction & Cie) · Vague 2 (L'Olivier) |
 | 8 | **Calmann-Lévy** | Calmann-Lévy Noir | Très actif dans le thriller contemporain, notamment nordique | — |
