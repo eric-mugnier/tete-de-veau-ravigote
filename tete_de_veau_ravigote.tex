@@ -254,6 +254,15 @@ Reproduction interdite
 % Ligne 1
 \noindent\textit{\docversionordinal\ édition, préparée par Christophe Thiebaud à San Lazzaro di Savena, le \today}\par
 
+\vfill
+
+\noindent
+\makebox[\linewidth][r]{%
+  \tikz\node[opacity=0.125,inner sep=0pt]{%
+    \includegraphics[height=1.6\onelineskip]{images/ct_watermark.png}%
+  };
+}
+
 % Ligne 2 — bandeau gris avec justification gauche/droite
 \noindent
 \colorbox{gray!5}{
@@ -269,15 +278,6 @@ Reproduction interdite
       }
     }
   }
-}
-
-\vfill
-
-\noindent
-\makebox[\linewidth][r]{%
-  \tikz\node[opacity=0.33,inner sep=0pt]{%
-    \includegraphics[height=1.6\onelineskip]{images/ct_watermark.png}%
-  };
 }
 
 }
