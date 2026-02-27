@@ -17,7 +17,7 @@
 | [Viviane Hamy](http://www.viviane-hamy.fr/fonctionnalites-et-mise-en-avant/article/manuscrits) | Paris | 📚 | 3 | 5 | | | |
 | [Actes Sud](https://actes-sud.fr) *(coll. Actes Noirs, Inculte)* | Arles | 📚 | 4 | 4 | | | |
 | [Christian Bourgois](https://bourgoisediteur.fr/contact/) | Paris | 💾 | 3 | 3 | | | |
-| [P.O.L](https://www.pol-editeur.com/contacter-editions-pol.html) | Paris | | 📚 | 3 | 3 | | | |
+| [P.O.L](https://www.pol-editeur.com/contacter-editions-pol.html) | Paris | 📚 | 3 | 3 | | | |
 
 
 > ⚠️ Losfeld : maison lancée en janvier 2026, attendre que la structure soit opérationnelle (avril 2026 ?)
