@@ -12,17 +12,17 @@ Mon nom est Christophe Thiebaud, je viens vous proposer le manuscrit du premier 
     Beauvais arpente un monde contemporain 
     où l'absurde le dispute à l'horreur.
 
-Vous êtes connu pour vous intéresser aux textes qui sortent des sentiers battus. J'espère vous convaincre de l'idonéité du texte d'Éric Mugnier en trois paragraphes :
+Vous êtes connu pour vous intéresser aux textes qui sortent des sentiers battus. Celui d’Éric Mugnier en sort à grandes enjambées :
 
-Écrit dans le style d'un polar, ce n'en est pas un : où sont les énigmes à résoudre, les fausses pistes, les coups de théâtre ? Un ovni¹, oui, plutôt qu'un polar. Une logorrhée vengeresse et jubilatoire, écrite en *free writing* / *spontaneous prose*, où l'humour potache s'achoppe à des scènes *gore* à la limite du soutenable, entrelacée d'amples digressions érudites : sur les chats, les dinosaures, l'Église, les pavillons de banlieue, l'unité 731, Pannonica de Koenigswarter, la 'Ndrangheta.
+Écrit dans le style d'un polar, ce n'en est pas un : où sont les énigmes à résoudre, les fausses pistes, les coups de théâtre ? Un ovni, oui, plutôt qu'un polar. Une logorrhée vengeresse et jubilatoire, écrite en *free writing* / *spontaneous prose*, où l'humour potache s'achoppe à des scènes *gore* à la limite du soutenable, entrelacée d'amples digressions érudites : sur les chats, les dinosaures, l'Église, les pavillons de banlieue, l'unité 731, Pannonica de Koenigswarter, la 'Ndrangheta.
 
 L'**Horreur** (prononcé à la Marlon Brando dans Apocalypse Now), voilà le thème du livre.
 
-Toute forme de morale est étrangère aux protagonistes, au héros-narrateur en premier. Les digressions, d'un pessimisme schopenhauérien, révèlent une humanité sans Dieu, désespérée, tragique. Le ton de celles-ci n'est jamais didactique, jamais emphatique, toujours factuel, genre "Alain Decaux raconte". Narrer L'**Horreur** sur ce ton d'entomologiste provoque l'apparition spontanée et involontaire de la sensation d'ironie dans l'esprit du lecteur, un mécanisme inné de défense de son intégrité mentale. Bien plus efficace qu'un bouquin qui dirait benoîtement : « Regardez ça, c'est mal ! Ouh comme c'est vilain ! ». Un bruit de fond, un acouphène, un filtre optique polarisé, un voile de gaze à fleur de peau. La tentaculaire progression de la Camorra dans le Naples de l'Amica Geniale d'Elena Ferrante, jamais explicite, trop prégnante.
+Toute forme de morale est étrangère aux protagonistes — au héros-narrateur en premier. Les digressions, d'un pessimisme schopenhauérien, révèlent une humanité sans Dieu, désespérée, tragique. Le ton de celles-ci n'est jamais didactique, jamais emphatique, toujours factuel, genre "Alain Decaux raconte". Narrer L'**Horreur** sur ce ton d'entomologiste provoque l'apparition spontanée et involontaire de la sensation d'ironie dans l'esprit du lecteur, un mécanisme inné de défense de son intégrité mentale. Bien plus efficace qu'un bouquin qui dirait benoîtement : « Regardez ça, c'est mal ! Ouh comme c'est vilain ! ». Un bruit de fond, un acouphène, un filtre optique polarisé, un voile de gaze sur la peau. La tentaculaire progression de la Camorra dans le Naples de l'Amica Geniale d'Elena Ferrante, jamais explicite, trop prégnante.
 
-Étonner ✓, informer ✓, é̶m̶o̶u̶v̶o̶i̶r̶, amuser ✓, provoquer ✓ : **Tête de veau ravigote** coche quasiment toutes les cases !
+Étonner ✓, informer ✓, é̶m̶o̶u̶v̶o̶i̶r̶, amuser ✓, provoquer ✓ : **Tête de veau ravigote** coche presque toutes les cases.
 
-Je suis la tête de gondole (pas ravigote pour le coup) d'un groupe d'amis de Éric Mugnier, convaincus du potentiel de ses écrits. Nous sommes convenus de l'aider en toute amitié et absolu désintéressement dans les démarches fastidieuses inhérentes à la recherche d'un éditeur. Éditeur qui saura, au travers des défauts du texte, déceler ce potentiel, partager notre conviction, accueillir l'esprit singulier d'Éric Mugnier, et entreprendre avec lui le travail éditorial qui lui fera trouver son public.
+Je suis la tête de gondole d'un groupe d'amis de Éric Mugnier, convaincus du potentiel de ses écrits. Nous sommes convenus de l'aider en toute amitié et absolu désintéressement dans les démarches fastidieuses inhérentes à la recherche d'un éditeur. Éditeur qui saura, au travers des défauts du texte, déceler ce potentiel, partager notre conviction, accueillir l'esprit singulier d'Éric Mugnier, et entreprendre avec lui le travail éditorial qui lui fera trouver son public.
 
 Respectueusement,  
 Christophe Thiebaud
@@ -47,7 +47,3 @@ Christophe Thiebaud
 | ![1984](https://raw.githubusercontent.com/eric-mugnier/tete-de-veau-ravigote/refs/heads/main/images/Mugnier0.jpg) | ![2020](https://raw.githubusercontent.com/eric-mugnier/tete-de-veau-ravigote/refs/heads/main/images/Mugnier4.jpg) |
 |:--:|:--:|
 | 1984 | 2020 |
-
----
-
-*1. Allusion explicite au Éditions Le Tripode, bien sûr.
