@@ -45,9 +45,24 @@ Christophe Thiebaud
 | ericmugnier730@gmail.com |
 | 06 82 03 69 48 |
 
-![auto portrait](https://raw.githubusercontent.com/eric-mugnier/tete-de-veau-ravigote/refs/heads/main/images/Mugnier0.jpg)
-
-![auto portrait](https://raw.githubusercontent.com/eric-mugnier/tete-de-veau-ravigote/refs/heads/main/images/Mugnier4.jpg)
+<table style:"border: none;">
+    <tr>
+        <td>
+            <img src="https://raw.githubusercontent.com/eric-mugnier/tete-de-veau-ravigote/refs/heads/main/images/Mugnier0.jpg" alt="1984" width="150">
+        </td>
+        <td>
+            <img src="https://raw.githubusercontent.com/eric-mugnier/tete-de-veau-ravigote/refs/heads/main/images/Mugnier4.jpg" alt="2020" width="150">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            1984
+        </td>
+        <td>
+            2020
+        </td>
+    </tr>
+</table>
 
 ---
 
