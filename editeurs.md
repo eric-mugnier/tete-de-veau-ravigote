@@ -6,19 +6,19 @@
 
 ## VAGUE 1 — Cœur de cible
 
-| Éditeur | Ville | Mode | D | C | Envoi | Délai (mois) | Réponse |
-|---------|-------|------|---|---|-------|-------|---------|
-| [Verticales (Gallimard)](http://www.editions-verticales.com/contact.php?rubrique=8) | Paris | 📚 | 4 | 5 | | 4 | |
-| [Tristram](https://www.tristram.fr) | Auch | 📚 | 2 | 5 | | | |
-| [Le Tripode](https://le-tripode.net/maison) | Paris | 💾 | 2 | 4 | [2026-02-26](envois/2026-02-26%20-%20Tripode%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 1 | |
-| [Verdier](https://editions-verdier.fr/manuscrits/) | Lagrasse | 📚 | 2 | 4 | | 3 | |
-| [Robert Laffont](mailto:Frederic.Martin@robert-laffont.com) | Paris | 💾 | 4 | 4 | [2026-02-27](envois/2026-02-27%20-%20Robert%20Laffont%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 4 | |
-| Le Terrain Vague-Losfeld | Paris | — | 3 | 5 | *stand-by* | | |
-| [Viviane Hamy](http://www.viviane-hamy.fr/fonctionnalites-et-mise-en-avant/article/manuscrits) | Paris | 📚 | 3 | 5 | | | |
-| [Actes Sud](https://actes-sud.fr/contactez-nous#s2) *(coll. Actes Noirs, Inculte)* | Arles | 📚 | 4 | 4 | | | |
-| [Christian Bourgois](https://bourgoisediteur.fr/contact/) | Paris | 💾 | 3 | 3 | | 4 | |
-| [P.O.L](https://www.pol-editeur.com/contacter-editions-pol.html) | Paris | 📚 | 3 | 3 | | 3 | |
-| [Denoël](https://www.denoel.fr/contacts-manuscrits) | Paris | 💾 | 3 | 3 | | 3 | |
+| Éditeur | Ville | Mode | D | C | Envoi | Délai (mois) |
+|---------|-------|------|---|---|-------|-------|
+| [Verticales (Gallimard)](http://www.editions-verticales.com/contact.php?rubrique=8) | Paris | 📚 | 4 | 5 | | 4 |
+| [Tristram](https://www.tristram.fr) | Auch | 📚 | 2 | 5 | | |
+| [Le Tripode](https://le-tripode.net/maison) | Paris | 💾 | 2 | 4 | [2026-02-26](envois/2026-02-26%20-%20Tripode%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 1 |
+| [Verdier](https://editions-verdier.fr/manuscrits/) | Lagrasse | 📚 | 2 | 4 | | 3 |
+| [Robert Laffont](mailto:Frederic.Martin@robert-laffont.com) | Paris | 💾 | 4 | 4 | [2026-02-27](envois/2026-02-27%20-%20Robert%20Laffont%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 4 |
+| Le Terrain Vague-Losfeld | Paris | — | 3 | 5 | *stand-by* | |
+| [Viviane Hamy](http://www.viviane-hamy.fr/fonctionnalites-et-mise-en-avant/article/manuscrits) | Paris | 📚 | 3 | 5 | | |
+| [Actes Sud](https://actes-sud.fr/contactez-nous#s2) *(coll. Actes Noirs, Inculte)* | Arles | 📚 | 4 | 4 | | |
+| [Christian Bourgois](https://bourgoisediteur.fr/contact/) | Paris | 💾 | 3 | 3 | | 4 |
+| [P.O.L](https://www.pol-editeur.com/contacter-editions-pol.html) | Paris | 📚 | 3 | 3 | | 3 |
+| [Denoël](https://www.denoel.fr/contacts-manuscrits) | Paris | 💾 | 3 | 3 | | 3 |
 
 
 > ⚠️ Losfeld : maison lancée en janvier 2026, attendre que la structure soit opérationnelle (avril 2026 ?)
@@ -28,50 +28,50 @@
 
 ## VAGUE 2 — Élargissement sérieux
 
-| Éditeur | Ville | Site | Contact | Mode | D | C | Envoi | Délai | Réponse |
-|---------|-------|------|---------|------|---|---|-------|-------|---------|
-| Finitude | Bordeaux | https://www.finitude.fr | https://www.finitude.fr/contact/ | 💾 | 2 | 4 | | | |
-| Le Dilettante | Paris | https://www.ledilettante.com | https://www.ledilettante.com/proposer-un-manuscrit/ | 📚 | 2 | 4 | | | |
-| Le Nouvel Attila | Paris | https://lenouvelattila.fr | https://lenouvelattila.fr/manuscrits-et-contacts/ | 💾 | 2 | 3 | | | |
-| Quidam Éditeur | Metz | https://www.quidamediteur.com | https://www.quidamediteur.com/contact | 💾 | 2 | 4 | | | |
-| Aux Forges de Vulcain | Paris | https://auxforgesdevulcain.fr | — | 💾 | 2 | 4 | | | |
-| Pauvert (Fayard) | Paris | https://www.fayard.fr/pauvert | MANUSCRITS-PAUVERT@editions-fayard.fr | 💾 | 3 | 4 | | | |
-| Anacharsis | Toulouse | https://www.editions-anacharsis.com | https://www.editions-anacharsis.com/Contacter-Anacharsis | 💾 | 2 | 3 | | | |
-| La Contre Allée | Lille | https://lacontreallee.com | https://lacontreallee.com/nous-contacter/ | 💾 | 2 | 3 | | | |
-| Zulma | Paris | https://www.zulma.fr | https://www.zulma.fr/contact/ | 💾 | 3 | 3 | | | |
-| Mercure de France | Paris | https://www.mercuredefrance.fr | https://www.mercuredefrance.fr/Contacts | 💾 | 3 | 3 | | | |
-| Alma Éditeur | Paris | https://www.alma-editeur.fr | https://www.alma-editeur.fr/contacts/ | 📚 | 2 | 3 | | | |
-| Le Cherche Midi | Paris | https://www.cherche-midi.com | — | — | 3 | 3 | | | |
-| L'Olivier (Seuil) | Paris | https://www.seuil.com | https://www.seuil.com/faq/jaimerais-vous-soumettre-mon-manuscrit | 📚 | 3 | 3 | | | |
-| La Table Ronde | Paris | https://www.editionslatableronde.fr | https://www.editionslatableronde.fr/Contacts | 💾 | 3 | 3 | | | |
+| Éditeur | Ville | Site | Contact | Mode | D | C | Envoi | Délai |
+|---------|-------|------|---------|------|---|---|-------|-------|
+| Finitude | Bordeaux | https://www.finitude.fr | https://www.finitude.fr/contact/ | 💾 | 2 | 4 | | |
+| Le Dilettante | Paris | https://www.ledilettante.com | https://www.ledilettante.com/proposer-un-manuscrit/ | 📚 | 2 | 4 | | |
+| Le Nouvel Attila | Paris | https://lenouvelattila.fr | https://lenouvelattila.fr/manuscrits-et-contacts/ | 💾 | 2 | 3 | | |
+| Quidam Éditeur | Metz | https://www.quidamediteur.com | https://www.quidamediteur.com/contact | 💾 | 2 | 4 | | |
+| Aux Forges de Vulcain | Paris | https://auxforgesdevulcain.fr | — | 💾 | 2 | 4 | | |
+| Pauvert (Fayard) | Paris | https://www.fayard.fr/pauvert | MANUSCRITS-PAUVERT@editions-fayard.fr | 💾 | 3 | 4 | | |
+| Anacharsis | Toulouse | https://www.editions-anacharsis.com | https://www.editions-anacharsis.com/Contacter-Anacharsis | 💾 | 2 | 3 | | |
+| La Contre Allée | Lille | https://lacontreallee.com | https://lacontreallee.com/nous-contacter/ | 💾 | 2 | 3 | | |
+| Zulma | Paris | https://www.zulma.fr | https://www.zulma.fr/contact/ | 💾 | 3 | 3 | | |
+| Mercure de France | Paris | https://www.mercuredefrance.fr | https://www.mercuredefrance.fr/Contacts | 💾 | 3 | 3 | | |
+| Alma Éditeur | Paris | https://www.alma-editeur.fr | https://www.alma-editeur.fr/contacts/ | 📚 | 2 | 3 | | |
+| Le Cherche Midi | Paris | https://www.cherche-midi.com | — | — | 3 | 3 | | |
+| L'Olivier (Seuil) | Paris | https://www.seuil.com | https://www.seuil.com/faq/jaimerais-vous-soumettre-mon-manuscrit | 📚 | 3 | 3 | | |
+| La Table Ronde | Paris | https://www.editionslatableronde.fr | https://www.editionslatableronde.fr/Contacts | 💾 | 3 | 3 | | |
 
 ---
 
 ## VAGUE 3 — Longshots & francophones étrangers
 
-| Éditeur | Ville | Site | Contact | Mode | D | C | Envoi | Délai | Réponse |
-|---------|-------|------|---------|------|---|---|-------|-------|---------|
-| Gallimard (Blanche) | Paris | https://www.gallimard.fr | https://depot-manuscrits.gallimard.fr/ | 💾 | 5 | 2 | [2026-02-19](envois/2026-02-19%20-%20Editions%20Gallimard%20_%20accusé%20de%20réception%20de%20votre%20manuscrit.eml) | 6 mois | |
-| Minuit | Paris | https://www.leseditionsdeminuit.fr | https://www.leseditionsdeminuit.fr/unepage-manuscrits-manuscrits-1-1-0-1.html | 📚 | 3 | 3 | | | |
-| Grasset | Paris | https://www.grasset.fr | https://www.grasset.fr/questions-frequentes/comment-soumettre-un-manuscrit/ | 📚 | 4 | 2 | | | |
-| Seuil (Fiction & Cie) | Paris | https://www.seuil.com | https://www.seuil.com/faq/jaimerais-vous-soumettre-mon-manuscrit | 📚 | 4 | 2 | | | |
-| Albin Michel | Paris | https://www.albin-michel.fr | https://www.albin-michel.fr/deposer-un-manuscrit | 📚 | 4 | 2 | | | |
-| Flammarion | Paris | https://editions.flammarion.com | https://editions.flammarion.com/envoyer-un-manuscrit/ | 💾 | 4 | 2 | | | |
-| Fayard | Paris | https://www.fayard.fr | https://www.fayard.fr/soumettre-un-manuscrit/ | 📚 | 4 | 2 | | | |
-| Stock | Paris | https://www.editions-stock.fr | https://www.editions-stock.fr/faq/comment-soumettre-un-manuscrit/ | 💾 | 4 | 2 | | | |
+| Éditeur | Ville | Site | Contact | Mode | D | C | Envoi | Délai |
+|---------|-------|------|---------|------|---|---|-------|-------|
+| Gallimard (Blanche) | Paris | https://www.gallimard.fr | https://depot-manuscrits.gallimard.fr/ | 💾 | 5 | 2 | [2026-02-19](envois/2026-02-19%20-%20Editions%20Gallimard%20_%20accusé%20de%20réception%20de%20votre%20manuscrit.eml) | 6 mois |
+| Minuit | Paris | https://www.leseditionsdeminuit.fr | https://www.leseditionsdeminuit.fr/unepage-manuscrits-manuscrits-1-1-0-1.html | 📚 | 3 | 3 | | |
+| Grasset | Paris | https://www.grasset.fr | https://www.grasset.fr/questions-frequentes/comment-soumettre-un-manuscrit/ | 📚 | 4 | 2 | | |
+| Seuil (Fiction & Cie) | Paris | https://www.seuil.com | https://www.seuil.com/faq/jaimerais-vous-soumettre-mon-manuscrit | 📚 | 4 | 2 | | |
+| Albin Michel | Paris | https://www.albin-michel.fr | https://www.albin-michel.fr/deposer-un-manuscrit | 📚 | 4 | 2 | | |
+| Flammarion | Paris | https://editions.flammarion.com | https://editions.flammarion.com/envoyer-un-manuscrit/ | 💾 | 4 | 2 | | |
+| Fayard | Paris | https://www.fayard.fr | https://www.fayard.fr/soumettre-un-manuscrit/ | 📚 | 4 | 2 | | |
+| Stock | Paris | https://www.editions-stock.fr | https://www.editions-stock.fr/faq/comment-soumettre-un-manuscrit/ | 💾 | 4 | 2 | | |
 
-| Rivages/Noir | Paris | https://editions-rivages.fr | https://editions-rivages.fr/contactez-nous#s3 | 💾 | 4 | 3 | | | |
-| Cambourakis | Paris | https://www.cambourakis.com | https://www.cambourakis.com/la-maison/ | 📚 💾 | 2 | 3 | | | |
-| Les Impressions Nouvelles | Bruxelles | https://www.lesimpressionsnouvelles.com | — | 💾 | 2 | 4 | | | |
-| Le Quartanier | Montréal | https://www.lequartanier.com | — | 💾 | 1 | 4 | | | |
-| Zoé | Genève | https://www.editionszoe.ch | — | 💾 | 2 | 3 | | | |
+| Rivages/Noir | Paris | https://editions-rivages.fr | https://editions-rivages.fr/contactez-nous#s3 | 💾 | 4 | 3 | | |
+| Cambourakis | Paris | https://www.cambourakis.com | https://www.cambourakis.com/la-maison/ | 📚 💾 | 2 | 3 | | |
+| Les Impressions Nouvelles | Bruxelles | https://www.lesimpressionsnouvelles.com | — | 💾 | 2 | 4 | | |
+| Le Quartanier | Montréal | https://www.lequartanier.com | — | 💾 | 1 | 4 | | |
+| Zoé | Genève | https://www.editionszoe.ch | — | 💾 | 2 | 3 | | |
 
 ---
 
 ## Adresses postales (📚)
 
 | Éditeur | Adresse |
-|---------|---------|
+|---------|
 | Actes Sud / Actes Noirs | Le Méjan, Place Nina-Berberova, BP 90038 — 13633 Arles Cedex |
 | Albin Michel | 22, rue Huyghens — 75014 Paris |
 | Alma Éditeur | 1, rue Victor-Cousin — 75005 Paris |
@@ -104,7 +104,7 @@
 ## Top 10 — Éditeurs polar & roman noir en France
 
 | Rang | Éditeur | Collection(s) | Repères | Dans le fichier |
-|------|---------|---------------|---------|-----------------|
+|------|---------|---------------|---------|
 | 1 | **Gallimard** | Série Noire (1945, Marcel Duhamel) · NRF Policier | Simenon, Manchette, classiques américains traduits | Vague 3 (Blanche) |
 | 2 | **Le Masque** (Librairie des Champs-Élysées) | Le Masque | Fondé 1927 · Agatha Christie en France | — |
 | 3 | **Fleuve Noir** | Fleuve Noir | San-Antonio (Frédéric Dard) · couvertures iconiques | — |
