@@ -12,9 +12,9 @@ Mon nom est Christophe Thiebaud, je viens vous proposer le manuscrit du premier 
     Beauvais arpente un monde contemporain 
     où l'absurde le dispute à l'horreur.
 
-Vous êtes connu pour vous intéresser aux textes qui sortent des sentiers battus. Celui d’Éric Mugnier en sort à grandes enjambées :
+Vous êtes connu pour vous intéresser aux textes qui sortent des sentiers battus. Celui d’Éric Mugnier en sort à grandes enjambées.
 
-Écrit dans le style d'un polar, ce n'en est pas un : où sont les énigmes à résoudre, les fausses pistes, les coups de théâtre ? Un ovni, oui, plutôt qu'un polar. Une logorrhée vengeresse et jubilatoire, écrite en *free writing* / *spontaneous prose*, où l'humour potache s'achoppe à des scènes *gore* à la limite du soutenable, entrelacée d'amples digressions érudites : sur les chats, les dinosaures, l'Église, les pavillons de banlieue, l'unité 731, Pannonica de Koenigswarter, la 'Ndrangheta.
+Écrit dans le style d'un polar, ce n'en est pas un : où sont les énigmes à résoudre, les fausses pistes, les coups de théâtre ? Plutôt qu'un polar, un ovni. Une logorrhée vengeresse et jubilatoire, écrite en *free writing* / *spontaneous prose*, où l'humour potache s'achoppe à des scènes *gore* à la limite du soutenable, entrelacée d'amples digressions érudites : sur les chats, les dinosaures, l'Église, les pavillons de banlieue, l'unité 731, Pannonica de Koenigswarter, la 'Ndrangheta.
 
 L'**Horreur** (prononcé à la Marlon Brando dans Apocalypse Now), voilà le thème du livre.
 
