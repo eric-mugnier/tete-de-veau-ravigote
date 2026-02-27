@@ -17,6 +17,7 @@
 | [Viviane Hamy](http://www.viviane-hamy.fr/fonctionnalites-et-mise-en-avant/article/manuscrits) | Paris | 📚 | 3 | 5 | | | |
 | [Actes Sud](https://actes-sud.fr) *(coll. Actes Noirs, Inculte)* | Arles | 📚 | 4 | 4 | | | |
 | [Christian Bourgois](https://bourgoisediteur.fr/contact/) | Paris | 💾 | 3 | 3 | | | |
+| [P.O.L](https://www.pol-editeur.com/contacter-editions-pol.html) | Paris | | 📚 | 3 | 3 | | | |
 
 
 > ⚠️ Losfeld : maison lancée en janvier 2026, attendre que la structure soit opérationnelle (avril 2026 ?)
@@ -42,7 +43,6 @@
 | Denoël | Paris | https://www.denoel.fr | https://www.denoel.fr/contacts-manuscrits | 💾 | 3 | 3 | | | |
 | Le Cherche Midi | Paris | https://www.cherche-midi.com | — | — | 3 | 3 | | | |
 | L'Olivier (Seuil) | Paris | https://www.seuil.com | https://www.seuil.com/faq/jaimerais-vous-soumettre-mon-manuscrit | 📚 | 3 | 3 | | | |
-| P.O.L | Paris | https://www.pol-editeur.com | https://www.pol-editeur.com/contacter-editions-pol.html | 📚 | 3 | 3 | | | |
 | La Table Ronde | Paris | https://www.editionslatableronde.fr | https://www.editionslatableronde.fr/Contacts | 💾 | 3 | 3 | | | |
 
 ---
