@@ -6,16 +6,16 @@
 
 ## VAGUE 1 — Cœur de cible
 
-| Éditeur | Ville | Site | Contact | Mode | D | C | Envoi | Délai | Réponse |
-|---------|-------|------|---------|------|---|---|-------|-------|---------|
-| Verticales (Gallimard) | Paris | http://www.editions-verticales.com/contact.php?rubrique=8 |  | 📚 | 4 | 5 | | | |
-| Tristram | Auch | https://www.tristram.fr | courrier papier uniquement | 📚 | 2 | 5 | | | |
-| Le Tripode | Paris | https://le-tripode.net | https://le-tripode.net/maison | 💾 | 2 | 4 |[2026-02-26](envois/2026-02-26%20-%20Tripode%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 1 mois | |
-| Verdier | Lagrasse | https://editions-verdier.fr | https://editions-verdier.fr/manuscrits/ | 📚 | 2 | 4 | | | |
-| Robert Laffont | Paris | https://www.laffont.fr | manuscrits@laffont.fr | 💾 | 4 | 4 | [2026-02-27](envois/2026-02-27%20-%20Robert%20Laffont%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 4 mois | |
-| Le Terrain Vague-Losfeld | Paris | — | — | — | 3 | 5 | *stand-by* | | |
-| Viviane Hamy | Paris | https://fr.wikipedia.org/wiki/%C3%89ditions_Viviane_Hamy | http://www.viviane-hamy.fr/fonctionnalites-et-mise-en-avant/article/manuscrits | 📚 | 3 | 5 | | | |
-| Actes Sud *(coll. Actes Noirs, Inculte)* | Arles | https://actes-sud.fr | https://actes-sud.fr/contactez-nous#s2 | 📚 | 4 | 4 | | | |
+| Éditeur | Ville | Mode | D | C | Envoi | Délai | Réponse |
+|---------|-------|------|---|---|-------|-------|---------|
+| [Verticales (Gallimard)](http://www.editions-verticales.com/contact.php?rubrique=8) | Paris | 📚 | 4 | 5 | | | |
+| [Tristram](https://www.tristram.fr) | Auch | 📚 | 2 | 5 | | | |
+| [Le Tripode](https://le-tripode.net/maison) | Paris | 💾 | 2 | 4 | [2026-02-26](envois/2026-02-26%20-%20Tripode%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 1 mois | |
+| [Verdier](https://editions-verdier.fr/manuscrits/) | Lagrasse | 📚 | 2 | 4 | | | |
+| [Robert Laffont](mailto:Frederic.Martin@robert-laffont.com) | Paris | 💾 | 4 | 4 | [2026-02-27](envois/2026-02-27%20-%20Robert%20Laffont%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 4 mois | |
+| Le Terrain Vague-Losfeld | Paris | — | 3 | 5 | *stand-by* | | |
+| [Viviane Hamy](http://www.viviane-hamy.fr/fonctionnalites-et-mise-en-avant/article/manuscrits) | Paris | 📚 | 3 | 5 | | | |
+| [Actes Sud](https://actes-sud.fr) *(coll. Actes Noirs, Inculte)* | Arles | 📚 | 4 | 4 | | | |
 
 
 > ⚠️ Losfeld : maison lancée en janvier 2026, attendre que la structure soit opérationnelle (avril 2026 ?)
