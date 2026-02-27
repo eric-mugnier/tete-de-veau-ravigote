@@ -51,22 +51,3 @@ Christophe Thiebaud
 ---
 
 *1. Allusion explicite au Éditions Le Tripode, bien sûr.
-
-## Éléments spécifiques à l'envoi aux Éditions Robert Laffont — à l'attention de Frédéric Martin
-
-**Accroche d'ouverture suggérée** (à insérer ou adapter en début de lettre d'accompagnement) :
-
-> Monsieur Martin,
->
-> Robert Laffont a su, au fil des décennies, accueillir des voix singulières et dérangeantes — des auteurs qui ne rentrent pas dans les cases, et dont le talent s'impose précisément par là. C'est dans cet esprit que je me permets de vous soumettre *Tête de veau ravigote* d'Éric Mugnier.
-
-**Argument éditorial pour Laffont** :
-
-Robert Laffont a une longue tradition de romans populaires ambitieux, capables de toucher un large public sans renoncer à l'exigence littéraire. *Tête de veau ravigote* s'inscrit dans cette veine : accessible par sa forme narrative (enquête, personnages mémorables, rythme soutenu), mais profondément littéraire dans son projet — la mise en scène de l'Horreur contemporaine par un narrateur sans morale, sur le mode de l'entomologiste. Le potentiel commercial est réel : l'humour noir, le gore dosé, les digressions érudites et décalées sont précisément ce qui fait le succès des auteurs "culte" que Laffont sait parfois révéler.
-
-**Références d'auteurs à mentionner si pertinent** (en lien avec le catalogue ou la sensibilité Laffont) :
-
-- Tonalité : quelque part entre Michel Audiard scénariste, Frédéric Dard (San-Antonio) et un Huysmans contemporain — soit une filiation française assumée, avec une veine grotesque et noire.
-- L'aspect digression érudite et sardonique peut évoquer des auteurs comme Pierre Desproges ou Renaud Camus dans leurs excès les plus jouissifs.
-
-**Point d'attention** : Frédéric Martin est directeur littéraire chez Laffont, connu pour s'intéresser aux textes qui sortent des sentiers battus. Il peut être sensible à l'argument de la *voix* — insister sur le fait que c'est d'abord un style, une langue, une présence, avant d'être une intrigue.
