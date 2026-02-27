@@ -1,4 +1,4 @@
-# Éditeurs — *Tête de veau ravigote*
+# Éditeurs
 
 📚 = envoi papier · 💾 = envoi numérique · D = désirabilité · C = compatibilité
 
