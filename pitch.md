@@ -14,7 +14,7 @@ Mon nom est Christophe Thiebaud, je viens vous proposer le manuscrit du premier 
 
 Écrit dans le style d'un polar, ce n'en est pas un : où sont les énigmes à résoudre, les fausses pistes, les coups de théâtre ? 
 
-Un ovni¹, oui, plutôt qu'un polar. Une logorrhée vengeresse et jubilatoire, écrite en *free writing* / *spontaneous prose*, où l'humour potache concurrence les scènes *gore* à la limite du soutenable, entrelacée d'amples digressions érudites : sur les chats, les dinosaures, l'Église, les pavillons de banlieue, l’unité 731, Pannonica de Koenigswarter, la 'Ndrangheta.
+Un ovni¹, oui, plutôt qu'un polar. Une logorrhée vengeresse et jubilatoire, écrite en *free writing* / *spontaneous prose*, où l'humour potache s'achoppe à des scènes *gore* à la limite du soutenable, entrelacée d'amples digressions érudites : sur les chats, les dinosaures, l'Église, les pavillons de banlieue, l’unité 731, Pannonica de Koenigswarter, la 'Ndrangheta.
 
 Ça donne envie, n'est-ce pas ? 
  
