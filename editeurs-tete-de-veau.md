@@ -16,6 +16,7 @@
 | Robert Laffont ★ | Paris | https://www.laffont.fr | manuscrits@laffont.fr | 💾 | 4 | 4 | [2026-02-27](envois/2026-02-27%20-%20Robert%20Laffont%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 4 mois | |
 | Le Terrain Vague-Losfeld ★ | Paris | — | — | — | 3 | 5 | *stand-by* | | |
 | Viviane Hamy ★ | Paris | https://fr.wikipedia.org/wiki/%C3%89ditions_Viviane_Hamy | http://www.viviane-hamy.fr/fonctionnalites-et-mise-en-avant/article/manuscrits | 📚 | 3 | 5 | | | |
+| Actes Noirs (Actes Sud) ★ | Arles | https://actes-sud.fr/collections/actes-noirs | https://actes-sud.fr/contactez-nous#s2 | 📚 | 4 | 3 | | | |
 
 
 > ⚠️ Losfeld : maison lancée en janvier 2026, attendre que la structure soit opérationnelle (avril 2026 ?)
@@ -60,7 +61,7 @@
 | Flammarion | Paris | https://editions.flammarion.com | https://editions.flammarion.com/envoyer-un-manuscrit/ | 💾 | 4 | 2 | | | |
 | Fayard | Paris | https://www.fayard.fr | https://www.fayard.fr/soumettre-un-manuscrit/ | 📚 | 4 | 2 | | | |
 | Stock | Paris | https://www.editions-stock.fr | https://www.editions-stock.fr/faq/comment-soumettre-un-manuscrit/ | 💾 | 4 | 2 | | | |
-| Actes Noirs (Actes Sud) | Arles | https://actes-sud.fr/collections/actes-noirs | https://actes-sud.fr/contactez-nous#s2 | 📚 | 4 | 3 | | | |
+
 | Rivages/Noir | Paris | https://editions-rivages.fr | https://editions-rivages.fr/contactez-nous#s3 | 💾 | 4 | 3 | | | |
 | Cambourakis | Paris | https://www.cambourakis.com | https://www.cambourakis.com/la-maison/ | 📚 💾 | 2 | 3 | | | |
 | Les Impressions Nouvelles | Bruxelles | https://www.lesimpressionsnouvelles.com | — | 💾 | 2 | 4 | | | |
