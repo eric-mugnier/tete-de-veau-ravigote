@@ -27,12 +27,13 @@ Je suis la tête de gondole d'un groupe d'amis de Éric Mugnier, convaincus du p
 Respectueusement,  
 Christophe Thiebaud
 
-| BIO|
+| Biographie|
 |------|
 | Éric Mugnier a 65 ans ; |
-| habite - depuis son adoption via l'Assistance Publique par une mère seule de la moyenne bourgeoisie catholique locale - la préfecture de l'un des départements les plus boisés de France, la Haute-Marne ; |
+| habite la préfecture de l'un des départements les plus boisés de France, la Haute-Marne ; |
+| a été adopté tout petit via l’Assistance Publique par une mère seule de la moyenne bourgeoisie catholique locale ; |
 | n'a jamais eu d'activité professionnelle 'classique' : emploi, métier, profession, poste, travail, fonction, rien de tout cela ; |
-| a donc pu consacrer sa vie à la création, dans moult arts : peinture, musique, chansons, et ici, écriture ; |
+| a pu consacrer sa vie à la création, dans de nombreux arts : peinture, musique, chansons, et ici, écriture ; |
 | son auteur favori est Joris-Karl Huysmans. |
 
 | Coordonnées |
