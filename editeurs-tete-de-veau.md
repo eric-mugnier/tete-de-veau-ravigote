@@ -13,7 +13,7 @@
 | Le Tripode ★ | Paris | https://le-tripode.net | https://le-tripode.net/maison | 💾 | 2 | 4 |[2026-02-26](envois/2026-02-26%20-%20Tripode%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | |
 | Verdier ★ | Lagrasse | https://editions-verdier.fr | https://editions-verdier.fr/manuscrits/ | 📚 | 2 | 4 | | |
 | Inculte ★ | Paris | https://www.inculte.fr | https://www.instagram.com/p/Cv-JjnatfOd/ | 💾 | 2 | 4 | | |
-| Robert Laffont ★ | Paris | https://www.laffont.fr | manuscrits@laffont.fr | 💾 | 4 | 4 | | |
+| Robert Laffont ★ | Paris | https://www.laffont.fr | manuscrits@laffont.fr | 💾 | 4 | 4 | [2026-02-27](envois/2026-02-27%20-%20Robert%20Laffont%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | |
 | Le Terrain Vague-Losfeld ★ | Paris | — | — | — | 3 | 5 | *stand-by* | |
 | Viviane Hamy ★ | Paris | https://fr.wikipedia.org/wiki/%C3%89ditions_Viviane_Hamy | http://www.viviane-hamy.fr/fonctionnalites-et-mise-en-avant/article/manuscrits | 📚 | 3 | 5 |  | |
 
