@@ -24,6 +24,9 @@ Je suis la tête de gondole d'un groupe d'amis de Éric Mugnier, convaincus du p
 
 Respectueusement,  
 Christophe Thiebaud
+Pièces jointes :
+- `lettre-de-presentation-denoël.pdf` — ce courrier
+- `tete_de_veau_ravigote.pdf` — le manuscrit
 
 | Biographie |
 |------|
