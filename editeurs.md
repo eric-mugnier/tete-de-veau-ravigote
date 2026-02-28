@@ -1,5 +1,7 @@
 # Éditeurs
 
+**5 envoyés · 33 restants (dont 15 📚 uniquement)**
+
 📚 = envoi papier · 💾 = envoi numérique · D = désirabilité · C = compatibilité
 
 ---
