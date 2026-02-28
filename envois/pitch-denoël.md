@@ -1,6 +1,6 @@
 Madame, Monsieur,
 
-Je viens vous proposer le manuscrit du premier roman de mon ami cher Éric Mugnier, **Tête de veau ravigote**, dont voici le pitch :
+Je viens vous proposer le manuscrit du premier roman de mon ami cher Éric Mugnier, *Tête de veau ravigote*, dont voici le pitch :
 
     Quand le père Vidal disparaît dans des circonstances troubles
     et que des colis macabres commencent à circuler dans la ville,
@@ -18,7 +18,7 @@ L'**Horreur** (prononcé à la Marlon Brando dans Apocalypse Now), voilà le th�
 
 Toute forme de morale est étrangère aux protagonistes — au héros-narrateur en premier. Les digressions, d'un pessimisme schopenhauérien, révèlent une humanité sans Dieu, désespérée, tragique. Le ton de celles-ci n'est jamais didactique, jamais emphatique, toujours factuel, genre "Alain Decaux raconte". Narrer L'Horreur sur ce ton d'entomologiste provoque l'apparition spontanée et involontaire de la sensation d'ironie dans l'esprit du lecteur, un mécanisme inné de défense de son intégrité mentale. Bien plus efficace qu'un bouquin qui dirait benoîtement : « Regardez ça, c'est mal ! Ouh comme c'est vilain ! ». Un bruit de fond, un acouphène, un filtre optique polarisé, un voile de gaze sur la peau. La tentaculaire progression de la Camorra dans le Naples de l'Amica Geniale d'Elena Ferrante, jamais explicite, trop prégnante.
 
-Il n'échappera pas à l'éditeur avisé qu'un texte de cette nature recèle un potentiel de controverse — ce côté « comment peut-on écrire de pareilles choses ?! » qui, de Huysmans à Houellebecq, a toujours su nourrir le débat public et, accessoirement, faire vendre.
+*Tête de veau ravigote* me semble trouver naturellement sa place chez Denoël, maison qui a su, depuis Céline, accueillir les textes qui bousculent — ceux qui mêlent la noirceur absolue à une ambition littéraire sans compromis. La collection qui a publié Palahniuk en France n'est sans doute pas étrangère à cet esprit. En outre, il n'échappera pas à l'éditeur qu'un texte de cette nature recèle un potentiel de controverse, un côté « comment peut-on écrire de pareilles choses ?! » qui, de Huysmans à Houellebecq, a toujours su nourrir le débat public et, accessoirement, faire vendre.
 
 Je suis la tête de gondole d'un groupe d'amis de Éric Mugnier, convaincus du potentiel de ses écrits. Nous sommes convenus de l'aider en toute amitié et absolu désintéressement dans les démarches fastidieuses inhérentes à la recherche d'un éditeur. Éditeur qui saura, au travers des défauts du texte, déceler ce potentiel, partager notre conviction et entreprendre avec Éric Mugnier le travail éditorial qui lui fera trouver son public.
 
