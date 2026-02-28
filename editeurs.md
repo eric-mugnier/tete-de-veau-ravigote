@@ -71,7 +71,7 @@
 ## Adresses postales (📚)
 
 | Éditeur | Adresse |
-|---------|
+|---------|---------|
 | Actes Sud / Actes Noirs | Le Méjan, Place Nina-Berberova, BP 90038 — 13633 Arles Cedex |
 | Albin Michel | 22, rue Huyghens — 75014 Paris |
 | Alma Éditeur | 1, rue Victor-Cousin — 75005 Paris |
@@ -104,7 +104,7 @@
 ## Top 10 — Éditeurs polar & roman noir en France
 
 | Rang | Éditeur | Collection(s) | Repères | Dans le fichier |
-|------|---------|---------------|---------|
+|------|---------|---------------|---------|-----------------|
 | 1 | **Gallimard** | Série Noire (1945, Marcel Duhamel) · NRF Policier | Simenon, Manchette, classiques américains traduits | Vague 3 (Blanche) |
 | 2 | **Le Masque** (Librairie des Champs-Élysées) | Le Masque | Fondé 1927 · Agatha Christie en France | — |
 | 3 | **Fleuve Noir** | Fleuve Noir | San-Antonio (Frédéric Dard) · couvertures iconiques | — |
