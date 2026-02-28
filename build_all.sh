@@ -35,10 +35,13 @@ echo "Done."
 # ─── Cible annotée (optionnelle) ──────────────────────────────────────────────
 if [ "$ANNOTE" = "1" ]; then
   echo ""
-  echo "=== ANNOTE : compilation avec notes finales ==="
+  echo "=== ANNOTE : génération du .ent ==="
   pdflatex -interaction=nonstopmode "\def\AVECNOTES{}\input{tete_de_veau_ravigote}"
   pdflatex -interaction=nonstopmode "\def\AVECNOTES{}\input{tete_de_veau_ravigote}"
-  mv tete_de_veau_ravigote.pdf tete_de_veau_ravigote_annote.pdf
+  # Restaurer le PDF principal (écrasé par la compilation avec AVECNOTES)
+  latexmk -g -pdf -interaction=nonstopmode tete_de_veau_ravigote.tex
+  echo "=== ANNOTE : compilation annotations seules ==="
+  latexmk -g -pdf -interaction=nonstopmode tete_de_veau_ravigote_annote.tex
   echo "→ tete_de_veau_ravigote_annote.pdf"
 fi
 ls -lh tete_de_veau_ravigote.pdf \

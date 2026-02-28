@@ -1,0 +1,77 @@
+%
+% tete_de_veau_ravigote_annote.tex
+% Annotations seules (notes finales), sans le contenu du roman.
+%
+% Prérequis : tete_de_veau_ravigote_annote.ent doit exister.
+% Ce fichier est généré par build_all.sh annote :
+%   1. pdflatex "\def\AVECNOTES{}\input{tete_de_veau_ravigote}"  (×2 → .ent)
+%   2. cp tete_de_veau_ravigote.ent tete_de_veau_ravigote_annote.ent
+%   3. latexmk -pdf tete_de_veau_ravigote_annote.tex
+%
+\documentclass[11pt,a5paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ebgaramond}
+\usepackage[french]{babel}
+\usepackage{microtype}
+\usepackage{endnotes}
+\usepackage[left=22mm,right=17mm,top=22mm,bottom=25mm]{geometry}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+% ─── Macros présentes dans le .ent ────────────────────────────────────────────
+
+% Titre de section de notes (acte N)
+\newcommand{\chapnoteheader}[1]{{\normalfont\scshape #1}}
+
+% Source Wikipedia en fin de note
+\newcommand{\source}[1]{\newline\textit{Source~:} \textup{#1}}
+
+% ─── Format des notes : identique au roman ────────────────────────────────────
+\renewcommand{\notesname}{}
+\renewcommand{\enotesize}{\small}
+\makeatletter
+\renewcommand\enoteformat{%
+  \rightskip\z@ \leftskip\z@ \parindent=0pt
+  \leavevmode\theenmark.\enspace}
+\makeatother
+
+% ─── Document ─────────────────────────────────────────────────────────────────
+\begin{document}
+\pagestyle{plain}
+
+% ═══ PAGE DE TITRE ════════════════════════════════════════════════════════════
+\thispagestyle{empty}
+\begin{center}
+\vspace*{48pt}
+{\scshape\large éric mugnier}
+
+\vspace{64pt}
+{\scshape\huge tête de veau ravigote}
+
+\vspace{96pt}
+{\itshape notes}
+\end{center}
+
+\newpage
+
+% ═══ NOTES ════════════════════════════════════════════════════════════════════
+% \theendnotes lit \jobname.ent — on masque \jobname pour pointer vers le .ent du roman
+\begingroup
+  \def\jobname{tete_de_veau_ravigote}%
+  \theendnotes
+\endgroup
+
+% ═══ COLOPHON (page impaire) ══════════════════════════════════════════════════
+\cleardoublepage
+\thispagestyle{empty}
+\vspace*{\fill}
+{\footnotesize\noindent
+\textcopyright{} Éric Mugnier, 2026\\
+Tous droits réservés pour tous pays\\
+Reproduction interdite
+}
+
+\end{document}
