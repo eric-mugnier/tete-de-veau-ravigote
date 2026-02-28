@@ -14,7 +14,6 @@
 \usepackage{xcolor}
 \usepackage{tikz}
 \input{version.tex}
-\immediate\write18{git log -1 --format=\%h > \jobname.gitinfo}
 \CatchFileDef{\gitcommit}{\jobname.gitinfo}{\endlinechar=-1}
 
 % ─── NOTES FINALES ─────────────────────────────────────────────────────────────
@@ -234,55 +233,7 @@ Reproduction interdite
   \theendnotes
 \fi
 
-% ═══ COLOPHON FINAL (page impaire) + PAGE BLANCHE FINALE (page paire) ════════
-\clearpage
-\hbox{}\thispagestyle{empty}\newpage
-
-\makeatletter
-\ifodd\c@page\else
-  \hbox{}\thispagestyle{empty}\newpage
-\fi
-\makeatother
-
-\thispagestyle{empty}
-
-
-{\footnotesize
-
-\null\vfill
-
-% Ligne 1
-\noindent\textit{\docversionordinal\ édition, préparée par Christophe Thiebaud à San Lazzaro di Savena, le \today}\par
-
-\vfill
-
-\noindent
-\makebox[\linewidth][r]{%
-  \tikz\node[opacity=0.125,inner sep=0pt]{%
-    \includegraphics[height=1.6\onelineskip]{images/ct_watermark.png}%
-  };
-}
-
-% Ligne 2 — bandeau gris avec justification gauche/droite
-\noindent
-\colorbox{gray!5}{
-  \makebox[\dimexpr\linewidth-2\fboxsep][c]{
-    \hbox to \linewidth{
-      {\large \LaTeX}
-      \hfill
-      \texttt{v\docversion}
-      \hfill
-      \texttt{\gitcommit}
-      \raisebox{-0.8ex}{
-        \includegraphics[height=3ex]{images/github-repo-git-octocat-svgrepo-com.svg.pdf}
-      }
-    }
-  }
-}
-
-}
-
-\newpage
-\hbox{}\thispagestyle{empty}
+% ═══ COLOPHON FINAL ══════════════════════════════════════════════════════════
+\input{colophon}
 
 \end{document}

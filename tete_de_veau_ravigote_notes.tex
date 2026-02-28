@@ -1,12 +1,10 @@
 %
-% tete_de_veau_ravigote_annote.tex
-% Annotations seules (notes finales), sans le contenu du roman.
+% tete_de_veau_ravigote_notes.tex
+% Notes seules (notes finales), sans le contenu du roman.
 %
-% Prérequis : tete_de_veau_ravigote_annote.ent doit exister.
-% Ce fichier est généré par build_all.sh annote :
+% Généré par : build_all.sh notes
 %   1. pdflatex "\def\AVECNOTES{}\input{tete_de_veau_ravigote}"  (×2 → .ent)
-%   2. cp tete_de_veau_ravigote.ent tete_de_veau_ravigote_annote.ent
-%   3. latexmk -pdf tete_de_veau_ravigote_annote.tex
+%   2. latexmk -pdf tete_de_veau_ravigote-notes.tex  → tete_de_veau_ravigote-notes.pdf
 %
 \documentclass[11pt,a5paper]{article}
 
@@ -16,7 +14,13 @@
 \usepackage[french]{babel}
 \usepackage{microtype}
 \usepackage{endnotes}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{catchfile}
 \usepackage[left=22mm,right=17mm,top=22mm,bottom=25mm]{geometry}
+\input{version.tex}
+\CatchFileDef{\gitcommit}{tete_de_veau_ravigote.gitinfo}{\endlinechar=-1}
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{4pt}
@@ -55,7 +59,13 @@
 {\itshape notes}
 \end{center}
 
+% Avancer à la première page impaire après le titre
 \newpage
+\makeatletter
+\ifodd\c@page\else
+  \hbox{}\thispagestyle{empty}\newpage
+\fi
+\makeatother
 
 % ═══ NOTES ════════════════════════════════════════════════════════════════════
 % \theendnotes lit \jobname.ent — on masque \jobname pour pointer vers le .ent du roman
@@ -64,14 +74,7 @@
   \theendnotes
 \endgroup
 
-% ═══ COLOPHON (page impaire) ══════════════════════════════════════════════════
-\cleardoublepage
-\thispagestyle{empty}
-\vspace*{\fill}
-{\footnotesize\noindent
-\textcopyright{} Éric Mugnier, 2026\\
-Tous droits réservés pour tous pays\\
-Reproduction interdite
-}
+% ═══ COLOPHON ═════════════════════════════════════════════════════════════════
+\input{colophon}
 
 \end{document}
