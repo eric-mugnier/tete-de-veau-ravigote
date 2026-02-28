@@ -30,7 +30,7 @@
 
 | Éditeur | Ville | Site | Contact | Mode | D | C | Envoi | Délai |
 |---------|-------|------|---------|------|---|---|-------|-------|
-| Finitude | Bordeaux | https://www.finitude.fr | https://www.finitude.fr/contact/ | 💾 | 2 | 4 | | |
+| Finitude | Bordeaux | https://www.finitude.fr | https://www.finitude.fr/contact/ | 📚 | 2 | 4 | | |
 | Le Dilettante | Paris | https://www.ledilettante.com | https://www.ledilettante.com/proposer-un-manuscrit/ | 📚 | 2 | 4 | | |
 | Le Nouvel Attila | Paris | https://lenouvelattila.fr | https://lenouvelattila.fr/manuscrits-et-contacts/ | 💾 | 2 | 3 | | |
 | Quidam Éditeur | Metz | https://www.quidamediteur.com | https://www.quidamediteur.com/contact | 💾 | 2 | 4 | | |
