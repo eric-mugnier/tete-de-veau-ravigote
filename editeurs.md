@@ -59,7 +59,6 @@
 | Flammarion | Paris | https://editions.flammarion.com | https://editions.flammarion.com/envoyer-un-manuscrit/ | 💾 | 4 | 2 | | |
 | Fayard | Paris | https://www.fayard.fr | https://www.fayard.fr/soumettre-un-manuscrit/ | 📚 | 4 | 2 | | |
 | Stock | Paris | https://www.editions-stock.fr | https://www.editions-stock.fr/faq/comment-soumettre-un-manuscrit/ | 💾 | 4 | 2 | | |
-
 | Rivages/Noir | Paris | https://editions-rivages.fr | https://editions-rivages.fr/contactez-nous#s3 | 💾 | 4 | 3 | | |
 | Cambourakis | Paris | https://www.cambourakis.com | https://www.cambourakis.com/la-maison/ | 📚 💾 | 2 | 3 | | |
 | Les Impressions Nouvelles | Bruxelles | https://www.lesimpressionsnouvelles.com | — | 💾 | 2 | 4 | | |
