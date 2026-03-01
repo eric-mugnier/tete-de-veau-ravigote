@@ -28,6 +28,7 @@ Christophe Thiebaud
 Pièces jointes :
 - `tete_de_veau_ravigote_annote.pdf` — Le roman
 - `tete_de_veau_ravigote_notes.pdf` — Des notes établies par le signataire de cette lettre, à l'insu de l'auteur et à titre d'exemple, pour donner à voir le caractère érudit, encyclopédique, en un mot : intéressant, des digressions.
+- `lettre-de-presentation-fayard-noir.pdf` — Ce courrier
 
 | Biographie |
 |------|
