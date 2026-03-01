@@ -43,6 +43,6 @@ Christophe Thiebaud
 | 06 82 03 69 48 |
 
 
-| ![1984](https://raw.githubusercontent.com/eric-mugnier/tete-de-veau-ravigote/refs/heads/main/images/Mugnier0.jpg) | ![2020](https://raw.githubusercontent.com/eric-mugnier/tete-de-veau-ravigote/refs/heads/main/images/Mugnier4.jpg) |
+| ![1984](https://raw.githubusercontent.com/eric-mugnier/tete-de-veau-ravigote/refs/heads/main/images/Mugnier0.jpg) | ![Auto-portrait, 2020](https://raw.githubusercontent.com/eric-mugnier/tete-de-veau-ravigote/refs/heads/main/images/Mugnier4.jpg) |
 |:--:|:--:|
 | 1984 | 2020 |

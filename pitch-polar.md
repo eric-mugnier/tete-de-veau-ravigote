@@ -41,3 +41,7 @@ Christophe Thiebaud
 | 52000 Chaumont |
 | ericmugnier730@gmail.com |
 | 06 82 03 69 48 |
+
+| Autoportrait, 2020 |
+|---|
+| ![Autoportrait, 2020](https://raw.githubusercontent.com/eric-mugnier/tete-de-veau-ravigote/refs/heads/main/images/Mugnier4.jpg) |
