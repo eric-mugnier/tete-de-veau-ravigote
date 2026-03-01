@@ -6,8 +6,6 @@
 
 ---
 
-## VAGUE 1 — Cœur de cible
-
 | Éditeur | Ville | Mode | D | C | Envoi | Délai (mois) |
 |---------|-------|------|---|---|-------|-------|
 | [Le Tripode](https://le-tripode.net/maison) | Paris | 💾 | 2 | 4 | [2026-02-26](envois/2026-02-26%20-%20Tripode%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 1 |
