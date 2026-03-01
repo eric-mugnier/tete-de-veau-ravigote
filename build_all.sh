@@ -48,10 +48,14 @@ if [ "$NOTES" = "1" ]; then
   # 2. Notes seules (compiler AVANT de restaurer le roman, .ent encore peuplé)
   latexmk -g -pdf -interaction=nonstopmode tete_de_veau_ravigote_notes.tex
   echo "→ tete_de_veau_ravigote_notes.pdf"
+  # 3. Illustrations
+  latexmk -g -pdf -interaction=nonstopmode tete_de_veau_ravigote_illustrations.tex
+  echo "→ tete_de_veau_ravigote_illustrations.pdf"
   # Restaurer le PDF principal propre (sans numéros de notes)
   latexmk -g -pdf -interaction=nonstopmode tete_de_veau_ravigote.tex
 fi
 ls -lh tete_de_veau_ravigote.pdf \
         tete_de_veau_ravigote_sommaire.pdf \
         tete_de_veau_ravigote_diff.pdf \
-        tete_de_veau_ravigote_COMPLET.pdf
+        tete_de_veau_ravigote_COMPLET.pdf \
+        tete_de_veau_ravigote_illustrations.pdf 2>/dev/null || true
