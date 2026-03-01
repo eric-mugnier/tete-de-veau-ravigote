@@ -1,6 +1,6 @@
 # Éditeurs
 
-**5 envoyés · 33 restants (dont 15 📚 uniquement)**
+**6 envoyés · 32 restants (dont 15 📚 uniquement)**
 
 📚 = envoi papier · 💾 = envoi numérique · D = désirabilité · C = compatibilité
 
@@ -14,6 +14,7 @@
 | [Robert Laffont](mailto:Frederic.Martin@robert-laffont.com) | Paris | 💾 | 4 | 4 | [2026-02-27](envois/2026-02-27%20-%20Robert%20Laffont%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 4 |
 | [Christian Bourgois](https://bourgoisediteur.fr/contact/) | Paris | 💾 | 3 | 3 | [2026-02-27](envois/2026-02-28%20-%20Bourgois%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 4 |
 | [Denoël](https://www.denoel.fr/contacts-manuscrits) | Paris | 💾 | 3 | 3 | [2026-02-28](envois/2026-02-28%20-%20Denoël%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 3 |
+| [Aux Forges de Vulcain](https://auxforgesdevulcain.fr) | Paris | 💾 | 2 | 4 | [2026-03-01](envois/2026-03-01%20-%20Forges%20de%20Vulcain%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | – |
 | [Actes Sud](https://actes-sud.fr/contactez-nous#s2) *(coll. Actes Noirs, Inculte)* | Arles | 📚 | 4 | 4 | | – |
 | [P.O.L](https://www.pol-editeur.com/contacter-editions-pol.html) | Paris | 📚 | 3 | 3 | | 3 |
 | [Tristram](https://www.tristram.fr) | Auch | 📚 | 2 | 5 | | – |
@@ -36,7 +37,6 @@
 | Le Dilettante | Paris | https://www.ledilettante.com | https://www.ledilettante.com/proposer-un-manuscrit/ | 📚 | 2 | 4 | | |
 | Le Nouvel Attila | Paris | https://lenouvelattila.fr | https://lenouvelattila.fr/manuscrits-et-contacts/ | 💾 | 2 | 3 | | |
 | Quidam Éditeur | Metz | https://www.quidamediteur.com | https://www.quidamediteur.com/contact | 💾 | 2 | 4 | | |
-| Aux Forges de Vulcain | Paris | https://auxforgesdevulcain.fr | — | 💾 | 2 | 4 | | |
 | Pauvert (Fayard) | Paris | https://www.fayard.fr/pauvert | MANUSCRITS-PAUVERT@editions-fayard.fr | 💾 | 3 | 4 | | |
 | Anacharsis | Toulouse | https://www.editions-anacharsis.com | https://www.editions-anacharsis.com/Contacter-Anacharsis | 💾 | 2 | 3 | | |
 | La Contre Allée | Lille | https://lacontreallee.com | https://lacontreallee.com/nous-contacter/ | 💾 | 2 | 3 | | |
