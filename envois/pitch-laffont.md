@@ -1,6 +1,6 @@
 M. Frédéric Martin,
 
-Mon nom est Christophe Thiebaud, je viens vous proposer le manuscrit du premier roman de mon ami cher Éric Mugnier, **Tête de veau ravigote**, dont voici le pitch :
+Mon nom est Christophe Thiebaud, je viens vous proposer le manuscrit du premier roman de mon ami cher Éric Mugnier, *Tête de veau ravigote*, dont voici le pitch :
 
     Quand le père Vidal disparaît dans des circonstances troubles 
     et que des colis macabres commencent à circuler dans la ville, 
@@ -20,7 +20,7 @@ L'**Horreur** (prononcé à la Marlon Brando dans Apocalypse Now), voilà le th�
 
 Toute forme de morale est étrangère aux protagonistes — au héros-narrateur en premier. Les digressions, d'un pessimisme schopenhauérien, révèlent une humanité sans Dieu, désespérée, tragique. Le ton de celles-ci n'est jamais didactique, jamais emphatique, toujours factuel, genre « Alain Decaux raconte ». Narrer L'**Horreur** sur ce ton d'entomologiste provoque l'apparition spontanée et involontaire de la sensation d'ironie dans l'esprit du lecteur, un mécanisme inné de défense de son intégrité mentale. Bien plus efficace qu'un bouquin qui dirait benoîtement : « Regardez ça, c'est mal ! Ouh comme c'est vilain ! ». Un bruit de fond, un acouphène, un filtre optique polarisé, un voile de gaze sur la peau. La tentaculaire progression de la Camorra dans le Naples de l'Amica Geniale d'Elena Ferrante, jamais explicite, trop prégnante.
 
-Étonner ✓, informer ✓, é̶m̶o̶u̶v̶o̶i̶r̶, amuser ✓, provoquer ✓ : **Tête de veau ravigote** coche presque toutes les cases.
+Étonner ✓, informer ✓, é̶m̶o̶u̶v̶o̶i̶r̶, amuser ✓, provoquer ✓ : *Tête de veau ravigote* coche presque toutes les cases.
 
 Je suis la tête de gondole d'un groupe d'amis de Éric Mugnier, convaincus du potentiel de ses écrits. Nous sommes convenus de l'aider en toute amitié et absolu désintéressement dans les démarches fastidieuses inhérentes à la recherche d'un éditeur. Éditeur qui saura, au travers des défauts du texte, déceler ce potentiel, partager notre conviction et entreprendre avec Éric Mugnier le travail éditorial qui lui fera trouver son public.
 

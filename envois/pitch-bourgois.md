@@ -1,6 +1,6 @@
 À l'équipe éditoriale des éditions Christian Bourgois,
 
-Je viens vous proposer le manuscrit du premier roman de mon ami cher Éric Mugnier, **Tête de veau ravigote**, dont voici le pitch :
+Je viens vous proposer le manuscrit du premier roman de mon ami cher Éric Mugnier, *Tête de veau ravigote*, dont voici le pitch :
 
     Quand le père Vidal disparaît dans des circonstances troubles
     et que des colis macabres commencent à circuler dans la ville,

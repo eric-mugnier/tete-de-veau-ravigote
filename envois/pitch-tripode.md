@@ -1,6 +1,6 @@
 Bonjour, 
 
-Mon nom est Christophe Thiebaud, je viens vous proposer le manuscrit du premier roman de mon ami cher Éric Mugnier, **Tête de veau ravigote**, dont voici le pitch :
+Mon nom est Christophe Thiebaud, je viens vous proposer le manuscrit du premier roman de mon ami cher Éric Mugnier, *Tête de veau ravigote*, dont voici le pitch :
 
     Quand le père Vidal disparaît dans des circonstances troubles 
     et que des colis macabres commencent à circuler dans la ville, 
