@@ -220,17 +220,19 @@ Reproduction interdite
 
 \input{tete_de_veau_ravigote_content.tex}
 
-% ═══ NOTES FINALES (incluses ssi \AVECNOTES défini) ═══════════════════════════
+% ═══ NOTES FINALES (incluses ssi \AVECNOTES défini et \SANSNOTESFINALES absent) ═
 \ifdefined\AVECNOTES
-  \cleardoublepage                              % p. impaire : page-titre « Notes »
-  \thispagestyle{empty}
-  \vspace*{10\onelineskip}
-  {\centering\normalfont\scshape\large Notes\par}
-  \newpage                                      % p. paire : blanche
-  \hbox{}\thispagestyle{empty}
-  \newpage                                      % p. impaire : début des notes
-  \pagestyle{gallimard}
-  \theendnotes
+  \ifdefined\SANSNOTESFINALES\else
+    \cleardoublepage                            % p. impaire : page-titre « Notes »
+    \thispagestyle{empty}
+    \vspace*{10\onelineskip}
+    {\centering\normalfont\scshape\large Notes\par}
+    \newpage                                    % p. paire : blanche
+    \hbox{}\thispagestyle{empty}
+    \newpage                                    % p. impaire : début des notes
+    \pagestyle{gallimard}
+    \theendnotes
+  \fi
 \fi
 
 % ═══ COLOPHON FINAL ══════════════════════════════════════════════════════════

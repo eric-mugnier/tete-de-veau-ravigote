@@ -40,9 +40,9 @@ echo "Done."
 if [ "$NOTES" = "1" ]; then
   echo ""
   echo "=== NOTES : génération du .ent ==="
-  pdflatex -interaction=nonstopmode "\def\AVECNOTES{}\input{tete_de_veau_ravigote}"
-  pdflatex -interaction=nonstopmode "\def\AVECNOTES{}\input{tete_de_veau_ravigote}"
-  # 1. Roman annoté (numéros de notes inline)
+  pdflatex -interaction=nonstopmode "\def\AVECNOTES{}\def\SANSNOTESFINALES{}\input{tete_de_veau_ravigote}"
+  pdflatex -interaction=nonstopmode "\def\AVECNOTES{}\def\SANSNOTESFINALES{}\input{tete_de_veau_ravigote}"
+  # 1. Roman annoté : numéros de notes inline, sans les notes finales
   cp tete_de_veau_ravigote.pdf tete_de_veau_ravigote_annote.pdf
   echo "→ tete_de_veau_ravigote_annote.pdf"
   # 2. Notes seules (compiler AVANT de restaurer le roman, .ent encore peuplé)
