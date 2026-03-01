@@ -1,0 +1,40 @@
+%
+% tete_de_veau_ravigote_illustrations.tex
+% Compilation : latexmk -pdf tete_de_veau_ravigote_illustrations.tex
+%
+\documentclass[11pt,a5paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ebgaramond}
+\usepackage[french]{babel}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage[left=22mm,right=17mm,top=22mm,bottom=25mm]{geometry}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\newcommand{\illustration}[2]{%
+  \begin{center}
+    \includegraphics[width=\linewidth,height=0.75\textheight,keepaspectratio]{#1}\\[10pt]
+    {\small\itshape #2}
+  \end{center}
+  \newpage}
+
+\begin{document}
+\pagestyle{empty}
+
+\illustration{iconographie/dr-livingstone-i-presume.jpg}{David Livingstone}
+
+\illustration{iconographie/Badia_a_Coltibuono.jpg}{Badia a Coltibuono}
+
+\illustration{iconographie/jack-the-ripper.jpg}{Jack l'Éventreur}
+
+\illustration{iconographie/pannonica.jpeg}{Pannonica de Koenigswarter}
+
+\illustration{iconographie/Xenopsylla_cheopis.jpg}{Xenopsylla cheopis}
+
+\illustration{iconographie/La_Voisin.jpg}{Catherine Deshayes, dite La Voisin}
+
+\end{document}

@@ -38,6 +38,15 @@
 \makeatother
 % Source dans les notes : saut de ligne avant le lien Wikipedia
 \newcommand{\source}[1]{\newline\textit{Source~:} \textup{#1}}
+% Image seule dans une note (centrée sous le texte)
+\newcommand{\nfimg}[2]{\newline\includegraphics[width=#1\linewidth]{#2}}
+% Image côte à côte avec le texte : #1=texte, #2=frac image, #3=path, #4=url source
+% Texte fixé à 0.45\linewidth ; image à #2\linewidth ; \hfill comble le reste
+\newcommand{\nfimgblock}[4]{%
+  \begin{minipage}[t]{0.45\linewidth}\small#1\end{minipage}%
+  \hfill%
+  \begin{minipage}[t]{#2\linewidth}\includegraphics[width=\linewidth]{#3}\end{minipage}%
+  \source{#4}}
 % Titre de chapitre dans le bloc de notes (commande nommée pour éviter que
 % \scshape soit fusionné avec le texte suivant lors du \write dans .ent)
 \newcommand{\chapnoteheader}[1]{{\normalfont\scshape #1}}

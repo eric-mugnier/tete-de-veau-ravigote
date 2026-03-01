@@ -28,6 +28,7 @@ Christophe Thiebaud
 Pièces jointes :
 - `tete_de_veau_ravigote_annote.pdf` — Le roman
 - `tete_de_veau_ravigote_notes.pdf` — Les notes jointes ont été établies par le signataire de cette lettre, à l'insu de l'auteur et à titre d'exemple, pour donner à voir le caractère érudit, encyclopédique, en un mot : intéressant, des digressions.
+- `tete_de_veau_ravigote_illustrations.pdf` — Un premier aperçu du potentiel iconographique évoqué ci-dessus : quelques-unes des figures convoquées par les digressions du roman, à titre d'illustration de ce que pourrait être un travail graphique sur le texte.
 
 | Biographie |
 |------|

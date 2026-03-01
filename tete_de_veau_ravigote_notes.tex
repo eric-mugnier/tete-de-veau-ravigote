@@ -32,6 +32,14 @@
 
 % Source Wikipedia en fin de note
 \newcommand{\source}[1]{\newline\textit{Source~:} \textup{#1}}
+% Image seule dans une note
+\newcommand{\nfimg}[2]{\newline\includegraphics[width=#1\linewidth]{#2}}
+% Image côte à côte avec le texte
+\newcommand{\nfimgblock}[4]{%
+  \begin{minipage}[t]{0.45\linewidth}\small#1\end{minipage}%
+  \hfill%
+  \begin{minipage}[t]{#2\linewidth}\includegraphics[width=\linewidth]{#3}\end{minipage}%
+  \source{#4}}
 
 % ─── Format des notes : identique au roman ────────────────────────────────────
 \renewcommand{\notesname}{}
