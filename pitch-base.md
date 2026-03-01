@@ -12,18 +12,22 @@ Je viens vous proposer le manuscrit du premier roman de mon ami cher Éric Mugni
     Beauvais arpente un monde contemporain
     où l'absurde le dispute à l'horreur.
 
-Écrit dans le style d'un polar, ce n'en est pas un : où sont les énigmes à résoudre, les fausses pistes, les coups de théâtre ? Plutôt qu'un polar, un ovni. Une logorrhée vengeresse et jubilatoire, écrite en *free writing* / *spontaneous prose*, où l'humour potache s'achoppe à des scènes *gore* à la limite du soutenable, entrelacée d'amples digressions érudites : sur les chats, les dinosaures, l'Église, les pavillons de banlieue, l'unité 731, Pannonica de Koenigswarter, la 'Ndrangheta.
+Un ovni, plutôt qu'un polar ; une logorrhée vengeresse et jubilatoire, écrite en *free writing* / *spontaneous prose*, où l'humour potache s'achoppe à des scènes *gore* à la limite du soutenable ; un roman-fleuve traversé d'amples digressions en forme de cabinet de curiosités : sur les chats, les dinosaures, l'Église, les pavillons de banlieue, l'unité 731, Pannonica de Koenigswarter, la 'Ndrangheta.
 
-L'**Horreur** (prononcé à la Marlon Brando dans Apocalypse Now), voilà le thème du livre.
+L'**Horreur** (prononcé à la Marlon Brando dans Apocalypse Now) se détache au fil des pages comme le thème central du livre.
 
-Toute forme de morale est étrangère aux protagonistes — au héros-narrateur en premier. Les digressions, d'un pessimisme schopenhauérien, révèlent une humanité sans Dieu, désespérée, tragique. Le ton de celles-ci n'est jamais didactique, jamais emphatique, toujours factuel, genre "Alain Decaux raconte". Narrer L'Horreur sur ce ton d'entomologiste provoque l'apparition spontanée et involontaire de la sensation d'ironie dans l'esprit du lecteur, un mécanisme inné de défense de son intégrité mentale. Bien plus efficace qu'un bouquin qui dirait benoîtement : « Regardez ça, c'est mal ! Ouh comme c'est vilain ! ». Un bruit de fond, un acouphène, un filtre optique polarisé, un voile de gaze sur la peau. La tentaculaire progression de la Camorra dans le Naples de l'Amica Geniale d'Elena Ferrante, jamais explicite, trop prégnante.
+Toute forme de morale est étrangère aux protagonistes — au héros-narrateur en premier —, dans la grande tradition des écrivains libertins du XVIIIe. Entre grotesque et tragique, les digressions dessinent par intermittence l'image d'une humanité sans Dieu, désespérée. Le ton n'est jamais didactique, jamais emphatique, toujours factuel, genre "Alain Decaux raconte". Narrer L'Horreur sur ce ton d'entomologiste provoque spontanément une sensation d'ironie dans l'esprit du lecteur, un mécanisme inné de défense de son intégrité mentale. Bien plus efficace qu'un bouquin qui dirait benoîtement : « Regardez ça, c'est mal ! Ouh comme c'est vilain ! ». Un bruit de fond, un acouphène, un filtre optique polarisé, un voile de gaze sur la peau. La tentaculaire progression de la Camorra dans le Naples de l'Amica Geniale d'Elena Ferrante, jamais explicite, trop prégnante.
 
-Ce texte recèle un potentiel de controverse certain — ce côté « comment peut-on écrire de pareilles choses ?! » qui, de Huysmans à Houellebecq, a toujours su nourrir le débat public et, accessoirement, faire vendre.
+Le texte recèle un potentiel de controverse certain — ce côté « comment peut-on écrire de pareilles choses ?! » qui, de Huysmans à Houellebecq, n'a jamais manqué d'agiter les esprits et, accessoirement, faire vendre.
 
 Je suis la tête de gondole d'un groupe d'amis de Éric Mugnier, convaincus du potentiel de ses écrits. Nous sommes convenus de l'aider en toute amitié et absolu désintéressement dans les démarches fastidieuses inhérentes à la recherche d'un éditeur. Éditeur qui saura, au travers des défauts du texte, déceler ce potentiel, partager notre conviction et entreprendre avec Éric Mugnier le travail éditorial qui lui fera trouver son public.
 
-Respectueusement,
+Respectueusement,  
 Christophe Thiebaud
+
+Pièces jointes :
+- `tete_de_veau_ravigote_annote.pdf` — Le roman
+- `tete_de_veau_ravigote_notes.pdf` — Les notes jointes ont été établies par le signataire de cette lettre, à l'insu de l'auteur et à titre d'exemple, pour donner à voir le caractère érudit, encyclopédique, en un mot : intéressant, des digressions.
 
 | Biographie |
 |------|
@@ -42,7 +46,6 @@ Christophe Thiebaud
 | ericmugnier730@gmail.com |
 | 06 82 03 69 48 |
 
-
-| ![1984](https://raw.githubusercontent.com/eric-mugnier/tete-de-veau-ravigote/refs/heads/main/images/Mugnier0.jpg) | ![Auto-portrait, 2020](https://raw.githubusercontent.com/eric-mugnier/tete-de-veau-ravigote/refs/heads/main/images/Mugnier4.jpg) |
-|:--:|:--:|
-| 1984 | 2020 |
+| Autoportrait, 2020 |
+|---|
+| ![Autoportrait, 2020](https://raw.githubusercontent.com/eric-mugnier/tete-de-veau-ravigote/refs/heads/main/images/Mugnier4.jpg) |
