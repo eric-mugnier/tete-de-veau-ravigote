@@ -1,6 +1,6 @@
 # Éditeurs
 
-**13 envoyés · 50 restants (dont 18 📚 uniquement)**
+**13 envoyés · 46 restants (dont 18 📚 uniquement)**
 
 📚 = envoi papier · 💾 = envoi numérique · D = désirabilité · C = compatibilité
 
@@ -45,17 +45,13 @@
 | Anacharsis | Toulouse | https://www.editions-anacharsis.com | https://www.editions-anacharsis.com/Contacter-Anacharsis | 💾 | 2 | 3 | | |
 | La Contre Allée | Lille | https://lacontreallee.com | https://lacontreallee.com/nous-contacter/ | 💾 | 2 | 3 | | |
 | Zulma | Paris | https://www.zulma.fr | https://www.zulma.fr/contact/ | 💾 | 3 | 3 | | |
-| Mercure de France | Paris | https://www.mercuredefrance.fr | https://www.mercuredefrance.fr/Contacts | 💾 | 3 | 3 | | |
-| Alma Éditeur | Paris | https://www.alma-editeur.fr | https://www.alma-editeur.fr/contacts/ | 📚 | 2 | 3 | | |
+| Alma Éditeur | Paris | https://www.alma-editeur.fr | https://www.alma-editeur.fr/contacts/ | 💾 | 2 | 3 | | |
 | Le Cherche Midi | Paris | https://www.cherche-midi.com | — | — | 3 | 3 | | |
-| L'Olivier (Seuil) | Paris | https://www.seuil.com | https://www.seuil.com/faq/jaimerais-vous-soumettre-mon-manuscrit | 📚 | 3 | 3 | | |
 | La Table Ronde | Paris | https://www.editionslatableronde.fr | https://www.editionslatableronde.fr/Contacts | 💾 | 3 | 3 | | |
 | Minuit | Paris | https://www.leseditionsdeminuit.fr | https://www.leseditionsdeminuit.fr/unepage-manuscrits-manuscrits-1-1-0-1.html | 📚 | 3 | 3 | | |
 | Grasset | Paris | https://www.grasset.fr | https://www.grasset.fr/questions-frequentes/comment-soumettre-un-manuscrit/ | 📚 | 4 | 2 | | |
-| Seuil (Fiction & Cie) | Paris | https://www.seuil.com | https://www.seuil.com/faq/jaimerais-vous-soumettre-mon-manuscrit | 📚 | 4 | 2 | | |
 | Albin Michel | Paris | https://www.albin-michel.fr | https://www.albin-michel.fr/deposer-un-manuscrit | 📚 | 4 | 2 | | |
 | Flammarion | Paris | https://editions.flammarion.com | https://editions.flammarion.com/envoyer-un-manuscrit/ | 💾 | 4 | 2 | | |
-| Fayard | Paris | https://www.fayard.fr | https://www.fayard.fr/soumettre-un-manuscrit/ | 📚 | 4 | 2 | | |
 | Stock | Paris | https://www.editions-stock.fr | https://www.editions-stock.fr/faq/comment-soumettre-un-manuscrit/ | 💾 | 4 | 2 | | |
 | Rivages/Noir | Paris | https://editions-rivages.fr | https://editions-rivages.fr/contactez-nous#s3 | 💾 | 4 | 3 | | |
 | Cambourakis | Paris | https://www.cambourakis.com | https://www.cambourakis.com/la-maison/ | 📚 💾 | 2 | 3 | | |
