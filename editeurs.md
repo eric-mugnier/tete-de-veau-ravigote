@@ -1,6 +1,6 @@
 # Éditeurs
 
-**13 envoyés · 31 restants (dont 15 📚 uniquement)**
+**13 envoyés · 50 restants (dont 18 📚 uniquement)**
 
 📚 = envoi papier · 💾 = envoi numérique · D = désirabilité · C = compatibilité
 
@@ -62,6 +62,32 @@
 | Les Impressions Nouvelles | Bruxelles | https://www.lesimpressionsnouvelles.com | — | 💾 | 2 | 4 | | |
 | Le Quartanier | Montréal | https://www.lequartanier.com | — | 💾 | 1 | 4 | | |
 | Zoé | Genève | https://www.editionszoe.ch | — | 💾 | 2 | 3 | | |
+
+---
+
+## VAGUE 3
+
+| Éditeur | Ville | Site | Contact | Mode | D | C | Envoi | Délai |
+|---------|-------|------|---------|------|---|---|-------|-------|
+| Sonatine | Paris | https://www.sonatine-editions.fr | — | 💾 | | | | |
+| Belfond (Belfond Noir) | Paris | https://www.lisez.com/belfond | https://editions-belfond.comitedelecture.com/manuscrit-iframe | 💾 | | | | |
+| La Martinière Noir | Paris | https://www.editionsdelamartiniere.fr | https://www.editionsdelamartiniere.fr/contact/ | 💾 | | | | |
+| Calmann-Lévy Noir | Paris | https://www.calmann-levy.fr | https://www.calmann-levy.fr/faq/comment-soumettre-un-manuscrit/ | 💾 | | | | |
+| Le Masque (JC Lattès) | Paris | https://www.lemasque.com | https://www.editions-jclattes.fr/deposer-un-manuscrit/ | 💾 | | | | |
+| Seuil Policier | Paris | https://www.seuil.com | https://www.seuil.com/contacts | 📚 | | | | |
+| Verso (Seuil) | Paris | https://www.seuil.com | https://www.seuil.com/contacts | 💾 | | | | |
+| Jigal Polar *(fermé 2022)* | Lille | https://www.jigal.com | — | 💾 | | | | |
+| Éditions de l'Aube | La Tour-d'Aigues | https://www.editionsdelaube.fr | https://editionsdelaube.fr/auteurs-manuscrits/ | 💾 | | | | |
+| Cairn (Du Noir au Sud) | Pau | https://www.editions-cairn.fr | https://www.editions-cairn.fr/en/content/8-soumettre-votre-manuscrit | 💾 | | | | |
+| Taurnada Éditions | Paris | https://www.taurnada.fr | https://www.taurnada.fr/soumettre-un-manuscrit/ | 💾 | | | | |
+| Mera | Paris | https://www.editions-mera.fr | http://mera-editions.com/contact | 💾 | | | | |
+| Chambre Noire | Paris | https://www.chambre-noire-editions.com | — | 💾 | | | | |
+| Éditions du Palémon | Quimper | https://www.lespressesbretonnes.com/editions-palemon | https://palemon.fr/pages/contact | 📚 | | | | |
+| Éditions du Gros Caillou | Paris | https://www.editionsdugroscaillou.fr | https://www.editionsdugroscaillou.fr/store/page/125/soumettre-un-manuscrit | 💾 | | | | |
+| XO Éditions | Paris | https://www.xoeditions.com | https://manuscrits.xoeditions.com/ | 💾 | | | | |
+| Presses de la Cité (Sang Neuf) | Paris | https://www.pressesdelacite.com | https://pressesdelacite.comitedelecture.com/manuscrit-iframe | 📚 | | | | |
+| Michel Lafon | Neuilly | https://www.michel-lafon.fr | http://www.michel-lafon.fr/editions/contact | 💾 | | | | |
+| Le Passage | Paris | https://www.lepassage.fr | https://www.lepassage-editions.fr/contact/ | 💾 | | | | |
 
 ---
 
