@@ -1,6 +1,6 @@
 # Éditeurs
 
-**11 envoyés · 31 restants (dont 15 📚 uniquement)**
+**12 envoyés · 31 restants (dont 15 📚 uniquement)**
 
 📚 = envoi papier · 💾 = envoi numérique · D = désirabilité · C = compatibilité
 
@@ -18,6 +18,7 @@
 | [La Volte](https://lavolte.net/pages/contact) | Paris | 💾 | 2 | 2 |  [2026-03-02](envois/2026-03-02%20-%20La%20Volte%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml )| 12 |
 | [Agullo](https://agullo-editions.com/contact/) | Paris | 💾 | 2 | 2 | [2026-03-02](envois/2026-03-02%20-%20Agullo%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
 | [Cadre Noir (Seuil)](https://www.seuil.com/contacts) | Paris | 💾 | 4 | 2 | [2026-03-02](envois/2026-03-02%20-%20Cadre%20Noir%20(Seuil)%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 6 |
+| [Fleuve Editions](https://www.manuscrits.fleuve-editions.com/) (anciennement Fleuve Noir)| Paris | 💾 | ? | ? | 2026-03-02 | _ |
 | [Actes Sud](https://actes-sud.fr/contactez-nous#s2) *(coll. Actes Noirs, Inculte)* | Arles | 📚 | 4 | 4 | | – |
 | [P.O.L](https://www.pol-editeur.com/contacter-editions-pol.html) | Paris | 📚 | 3 | 3 | | 3 |
 | [Tristram](https://www.tristram.fr) | Auch | 📚 | 2 | 5 | | – |
@@ -110,7 +111,6 @@
 |------|---------|---------------|---------|-----------------|
 | 1 | **Gallimard** | Série Noire (1945, Marcel Duhamel) · NRF Policier | Simenon, Manchette, classiques américains traduits | Vague 3 (Blanche) |
 | 2 | **Le Masque** (Librairie des Champs-Élysées) | Le Masque | Fondé 1927 · Agatha Christie en France | — |
-| 3 | **Fleuve Noir** | Fleuve Noir | San-Antonio (Frédéric Dard) · couvertures iconiques | — |
 | 4 | **Rivages/Noir** | Rivages/Noir | James Ellroy, Massimo Carlotto · polar américain & méditerranéen | Vague 3 |
 | 5 | **Actes Sud** | Actes Noirs · Inculte | Polars littéraires · souvent scandinaves ou internationaux | Vague 1 |
 | 6 | **Albin Michel** | — | Thriller & policier grand public · best-sellers français et étrangers | Vague 3 |
