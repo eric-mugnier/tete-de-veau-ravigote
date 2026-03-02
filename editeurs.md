@@ -15,6 +15,7 @@
 | [Aux Forges de Vulcain](https://auxforgesdevulcain.fr) | Paris | 💾 | 2 | 4 | [2026-03-01](envois/2026-03-01%20-%20Forges%20de%20Vulcain%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | – |
 | [Fayard Noir](https://www.fayard.fr/soumettre-un-manuscrit/) | Paris | 💾 | 4 | 2 | [2026-03-01](envois/2026-03-01%20-%20Fayard%20Noir%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
 | [Le Nouvel Attila](https://lenouvelattila.fr/manuscrits-et-contacts/) | Paris | 💾 | 2 | 3 | [2026-03-01](envois/2026-03-01%20-%20Nouvel%20Attila%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml ) | 4 |
+| [La Volte](https://lavolte.net/pages/contact) | Paris | 💾 | 2 | 2 |  [2026-03-02](envois/2026-03-02%20-%20La%20Volte%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml )| 12 |
 | [Actes Sud](https://actes-sud.fr/contactez-nous#s2) *(coll. Actes Noirs, Inculte)* | Arles | 📚 | 4 | 4 | | – |
 | [P.O.L](https://www.pol-editeur.com/contacter-editions-pol.html) | Paris | 📚 | 3 | 3 | | 3 |
 | [Tristram](https://www.tristram.fr) | Auch | 📚 | 2 | 5 | | – |
@@ -22,7 +23,6 @@
 | [Verticales (Gallimard)](http://www.editions-verticales.com/contact.php?rubrique=8) | Paris | 📚 | 4 | 5 | | 4 |
 | [Viviane Hamy](http://www.viviane-hamy.fr/fonctionnalites-et-mise-en-avant/article/manuscrits) | Paris | 📚 | 3 | 5 | | – |
 | Le Terrain Vague - Losfeld | Paris | — | 3 | 5 | *stand-by* | – |
-| [La Volte](https://lavolte.net/pages/contact) | Paris | 💾 | 2 | 2 | | 12 |
 | [Agullo](https://agullo-editions.com/contact/) | Paris | 💾 | | | | |
 | [Cadre Noir (Seuil)](https://www.seuil.com/contacts) | Paris | 📚 | | | | |
 
