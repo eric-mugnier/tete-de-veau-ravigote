@@ -8,6 +8,7 @@
 
 | Éditeur | Ville | Mode | D | C | Envoi | Délai (mois) |
 |---------|-------|------|---|---|-------|-------|
+| [Gallimard (Blanche)](https://depot-manuscrits.gallimard.fr/) | Paris | 💾 | 5 | 2 | [2026-02-19](envois/2026-02-19%20-%20Editions%20Gallimard%20_%20accusé%20de%20réception%20de%20votre%20manuscrit.eml) | 6 mois |
 | [Le Tripode](https://le-tripode.net/maison) | Paris | 💾 | 2 | 4 | [2026-02-26](envois/2026-02-26%20-%20Tripode%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 1 |
 | [Robert Laffont](mailto:Frederic.Martin@robert-laffont.com) | Paris | 💾 | 4 | 4 | [2026-02-27](envois/2026-02-27%20-%20Robert%20Laffont%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 4 |
 | [Christian Bourgois](https://bourgoisediteur.fr/contact/) | Paris | 💾 | 3 | 3 | [2026-02-27](envois/2026-02-28%20-%20Bourgois%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 4 |
@@ -37,7 +38,6 @@
 
 | Éditeur | Ville | Site | Contact | Mode | D | C | Envoi | Délai |
 |---------|-------|------|---------|------|---|---|-------|-------|
-| Gallimard (Blanche) | Paris | https://www.gallimard.fr | https://depot-manuscrits.gallimard.fr/ | 💾 | 5 | 2 | [2026-02-19](envois/2026-02-19%20-%20Editions%20Gallimard%20_%20accusé%20de%20réception%20de%20votre%20manuscrit.eml) | 6 mois |
 | Finitude | Bordeaux | https://www.finitude.fr | https://www.finitude.fr/contact/ | 📚 | 2 | 4 | | |
 | Le Dilettante | Paris | https://www.ledilettante.com | https://www.ledilettante.com/proposer-un-manuscrit/ | 📚 | 2 | 4 | | |
 | Quidam Éditeur | Metz | https://www.quidamediteur.com | https://www.quidamediteur.com/contact | 💾 | 2 | 4 | | |
