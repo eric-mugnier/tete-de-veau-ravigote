@@ -29,7 +29,6 @@
 
 
 > ⚠️ Losfeld : maison lancée en janvier 2026, attendre que la structure soit opérationnelle (avril 2026 ?)
-> ⚠️ Robert Laffont : dirigé depuis janvier 2025 par Frédéric Martin, ex-fondateur du Tripode. Il ouvre la collection *Pavillons* aux auteurs français. Grand groupe (Editis) mais sensibilité éditoriale rare.
 
 ---
 
@@ -95,7 +94,6 @@
 
 ## Notes stratégiques
 
-- **Robert Laffont** : envoi numérique à manuscrits@laffont.fr — lettre à personnaliser en mentionnant l'ouverture de *Pavillons* aux auteurs français
 - **Pauvert (Fayard)** : grand groupe mais label à identité forte — ligne audacieuse, Sade, Vian, Bégaudeau. Contact : MANUSCRITS-PAUVERT@editions-fayard.fr
 - **Envois simultanés** recommandés au sein de chaque vague
 - **Lettre d'accompagnement** : version sobre (vague 2 & 3) / version radicale (vague 1)
