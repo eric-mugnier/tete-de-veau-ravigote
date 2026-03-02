@@ -62,13 +62,6 @@
 | Les Impressions Nouvelles | Bruxelles | https://www.lesimpressionsnouvelles.com | — | 💾 | 2 | 4 | | |
 | Le Quartanier | Montréal | https://www.lequartanier.com | — | 💾 | 1 | 4 | | |
 | Zoé | Genève | https://www.editionszoe.ch | — | 💾 | 2 | 3 | | |
-
----
-
-## VAGUE 3
-
-| Éditeur | Ville | Site | Contact | Mode | D | C | Envoi | Délai |
-|---------|-------|------|---------|------|---|---|-------|-------|
 | Sonatine | Paris | https://www.sonatine-editions.fr | — | 💾 | | | | |
 | Belfond (Belfond Noir) | Paris | https://www.lisez.com/belfond | https://editions-belfond.comitedelecture.com/manuscrit-iframe | 💾 | | | | |
 | La Martinière Noir | Paris | https://www.editionsdelamartiniere.fr | https://www.editionsdelamartiniere.fr/contact/ | 💾 | | | | |
