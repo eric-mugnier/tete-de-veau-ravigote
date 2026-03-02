@@ -33,10 +33,11 @@
 
 ---
 
-## VAGUE 2 — Élargissement sérieux
+## VAGUE 2
 
 | Éditeur | Ville | Site | Contact | Mode | D | C | Envoi | Délai |
 |---------|-------|------|---------|------|---|---|-------|-------|
+| Gallimard (Blanche) | Paris | https://www.gallimard.fr | https://depot-manuscrits.gallimard.fr/ | 💾 | 5 | 2 | [2026-02-19](envois/2026-02-19%20-%20Editions%20Gallimard%20_%20accusé%20de%20réception%20de%20votre%20manuscrit.eml) | 6 mois |
 | Finitude | Bordeaux | https://www.finitude.fr | https://www.finitude.fr/contact/ | 📚 | 2 | 4 | | |
 | Le Dilettante | Paris | https://www.ledilettante.com | https://www.ledilettante.com/proposer-un-manuscrit/ | 📚 | 2 | 4 | | |
 | Quidam Éditeur | Metz | https://www.quidamediteur.com | https://www.quidamediteur.com/contact | 💾 | 2 | 4 | | |
@@ -49,14 +50,6 @@
 | Le Cherche Midi | Paris | https://www.cherche-midi.com | — | — | 3 | 3 | | |
 | L'Olivier (Seuil) | Paris | https://www.seuil.com | https://www.seuil.com/faq/jaimerais-vous-soumettre-mon-manuscrit | 📚 | 3 | 3 | | |
 | La Table Ronde | Paris | https://www.editionslatableronde.fr | https://www.editionslatableronde.fr/Contacts | 💾 | 3 | 3 | | |
-
----
-
-## VAGUE 3 — Longshots & francophones étrangers
-
-| Éditeur | Ville | Site | Contact | Mode | D | C | Envoi | Délai |
-|---------|-------|------|---------|------|---|---|-------|-------|
-| Gallimard (Blanche) | Paris | https://www.gallimard.fr | https://depot-manuscrits.gallimard.fr/ | 💾 | 5 | 2 | [2026-02-19](envois/2026-02-19%20-%20Editions%20Gallimard%20_%20accusé%20de%20réception%20de%20votre%20manuscrit.eml) | 6 mois |
 | Minuit | Paris | https://www.leseditionsdeminuit.fr | https://www.leseditionsdeminuit.fr/unepage-manuscrits-manuscrits-1-1-0-1.html | 📚 | 3 | 3 | | |
 | Grasset | Paris | https://www.grasset.fr | https://www.grasset.fr/questions-frequentes/comment-soumettre-un-manuscrit/ | 📚 | 4 | 2 | | |
 | Seuil (Fiction & Cie) | Paris | https://www.seuil.com | https://www.seuil.com/faq/jaimerais-vous-soumettre-mon-manuscrit | 📚 | 4 | 2 | | |
@@ -97,7 +90,7 @@
 
 - **Pauvert (Fayard)** : grand groupe mais label à identité forte — ligne audacieuse, Sade, Vian, Bégaudeau. Contact : MANUSCRITS-PAUVERT@editions-fayard.fr
 - **Envois simultanés** recommandés au sein de chaque vague
-- **Lettre d'accompagnement** : version sobre (vague 2 & 3) / version radicale (vague 1)
+- **Lettre d'accompagnement** : version sobre (vague 2) / version radicale (vague 1)
 - **Gallimard** déjà envoyé le 19/02/2026 en numérique
 - **Losfeld** : contacter dès avril 2026, lettre très personnalisée (héritage Éric Losfeld / Éric Mugnier, deux outsiders)
 - **Tristram** : manuscrit imprimé uniquement, soigner la présentation
