@@ -21,6 +21,12 @@ latexmk -g -pdf -interaction=nonstopmode tete_de_veau_ravigote.tex
 echo "=== 2/4  sommaire PDF ==="
 latexmk -g -pdf -interaction=nonstopmode tete_de_veau_ravigote_sommaire.tex
 
+echo "=== epub ==="
+pandoc tete_de_veau_ravigote.tex -o tete_de_veau_ravigote.epub \
+  --metadata title="Tête de veau ravigote" \
+  --metadata author="Éric Mugnier" \
+  --metadata lang="fr"
+
 if [ "$DIFFS" = "1" ]; then
   echo "=== 3/4  diff PDF ==="
   python3 diff_work/make_diff.py
@@ -55,6 +61,7 @@ if [ "$NOTES" = "1" ]; then
   latexmk -g -pdf -interaction=nonstopmode tete_de_veau_ravigote.tex
 fi
 ls -lh tete_de_veau_ravigote.pdf \
+        tete_de_veau_ravigote.epub \
         tete_de_veau_ravigote_sommaire.pdf \
         tete_de_veau_ravigote_diff.pdf \
         tete_de_veau_ravigote_COMPLET.pdf \

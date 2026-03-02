@@ -22,6 +22,9 @@
 | [Verticales (Gallimard)](http://www.editions-verticales.com/contact.php?rubrique=8) | Paris | 📚 | 4 | 5 | | 4 |
 | [Viviane Hamy](http://www.viviane-hamy.fr/fonctionnalites-et-mise-en-avant/article/manuscrits) | Paris | 📚 | 3 | 5 | | – |
 | Le Terrain Vague - Losfeld | Paris | — | 3 | 5 | *stand-by* | – |
+| [La Volte](https://lavolte.net/pages/contact) | Paris | 💾 | 2 | 2 | | 12 |
+| [Agullo](https://agullo-editions.com/contact/) | Paris | 💾 | | | | |
+| [Cadre Noir (Seuil)](https://www.seuil.com/contacts) | Paris | 📚 | | | | |
 
 
 > ⚠️ Losfeld : maison lancée en janvier 2026, attendre que la structure soit opérationnelle (avril 2026 ?)
