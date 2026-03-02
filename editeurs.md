@@ -1,6 +1,6 @@
 # Éditeurs
 
-**13 envoyés · 46 restants (dont 18 📚 uniquement)**
+**14 envoyés · 45 restants (dont 14 📚 uniquement)**
 
 📚 = envoi papier · 💾 = envoi numérique · D = désirabilité · C = compatibilité
 
@@ -21,6 +21,7 @@
 | [Cadre Noir (Seuil)](https://www.seuil.com/contacts) | Paris | 💾 | 4 | 2 | [2026-03-02](envois/2026-03-02%20-%20Cadre%20Noir%20(Seuil)%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 6 |
 | [Fleuve Editions](https://www.manuscrits.fleuve-editions.com/) (anciennement Fleuve Noir)| Paris | 💾 | ? | ? | 2026-03-02 | _ |
 | [Gallimard (Série Noire)](https://www.gallimard.fr/questions-frequentes-et-contact) | Paris | 💾 | 5 | 3 | [2026-03-02](envois/2026-03-02%20-%20Galllimard%20(Série%20Noire)%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | _ |
+| [Rivages/Noir](https://editions-rivages.fr/contactez-nous#s3) | Paris | 💾 | 5 | 3 | [2026-03-02](envois/2026-03-02%20-%20Rivages:noir%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | _ |
 | [Actes Sud](https://actes-sud.fr/contactez-nous#s2) *(coll. Actes Noirs, Inculte)* | Arles | 📚 | 4 | 4 | | – |
 | [P.O.L](https://www.pol-editeur.com/contacter-editions-pol.html) | Paris | 📚 | 3 | 3 | | 3 |
 | [Tristram](https://www.tristram.fr) | Auch | 📚 | 2 | 5 | | – |
@@ -53,7 +54,6 @@
 | Albin Michel | Paris | https://www.albin-michel.fr | https://www.albin-michel.fr/deposer-un-manuscrit | 📚 | 4 | 2 | | |
 | Flammarion | Paris | https://editions.flammarion.com | https://editions.flammarion.com/envoyer-un-manuscrit/ | 💾 | 4 | 2 | | |
 | Stock | Paris | https://www.editions-stock.fr | https://www.editions-stock.fr/faq/comment-soumettre-un-manuscrit/ | 💾 | 4 | 2 | | |
-| Rivages/Noir | Paris | https://editions-rivages.fr | https://editions-rivages.fr/contactez-nous#s3 | 💾 | 4 | 3 | | |
 | Cambourakis | Paris | https://www.cambourakis.com | https://www.cambourakis.com/la-maison/ | 📚 💾 | 2 | 3 | | |
 | Les Impressions Nouvelles | Bruxelles | https://www.lesimpressionsnouvelles.com | — | 💾 | 2 | 4 | | |
 | Le Quartanier | Montréal | https://www.lequartanier.com | — | 💾 | 1 | 4 | | |
