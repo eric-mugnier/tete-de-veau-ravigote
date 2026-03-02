@@ -103,15 +103,3 @@
 | Verdier | 13, rue du Château — 11220 Lagrasse |
 | Verticales (Gallimard) | 5, rue Sébastien-Bottin — 75007 Paris |
 
----
-
-## Top 10 — Éditeurs polar & roman noir en France
-
-| Éditeur | Collection(s) | Repères | Dans le fichier |
-|---------|---------------|---------|-----------------|
-| **Le Masque** (Librairie des Champs-Élysées) | Le Masque | Fondé 1927 · Agatha Christie en France | — |
-| **Rivages/Noir** | Rivages/Noir | James Ellroy, Massimo Carlotto · polar américain & méditerranéen | Vague 3 |
-| **Actes Sud** | Actes Noirs · Inculte | Polars littéraires · souvent scandinaves ou internationaux | Vague 1 |
-| **Albin Michel** | — | Thriller & policier grand public · best-sellers français et étrangers | Vague 3 |
-| **Calmann-Lévy** | Calmann-Lévy Noir | Très actif dans le thriller contemporain, notamment nordique | — |
-| **Syros** / **Jigal** | Souris Noire (jeunesse) · Jigal Polar | Syros : polar jeunesse · Jigal : indépendant nordiste, référence du polar francophone | — |
