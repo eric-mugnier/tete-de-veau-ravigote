@@ -22,7 +22,7 @@
 | [Fleuve Editions](https://www.manuscrits.fleuve-editions.com/) (anciennement Fleuve Noir)| Paris | 💾 | [2026-03-02](envois/2026-03-02%20-%20Fleuve%20Editions%20_%20Confirmation%20de%20votre%20envoi%20de%20manuscrit.eml) | _ |
 | [Gallimard (Série Noire)](https://www.gallimard.fr/questions-frequentes-et-contact) | Paris | 💾 | [2026-03-02](envois/2026-03-02%20-%20Galllimard%20(Série%20Noire)%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 3 |
 | [Rivages/Noir](https://editions-rivages.fr/contactez-nous#s3) | Paris | 💾 | [2026-03-02](envois/2026-03-02%20-%20Rivages:noir%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | _ |
-| [Stock](https://www.editions-stock.fr/faq/comment-soumettre-un-manuscrit/) | Paris | 💾 | 2026-03-03 envoyé via formualire|
+| [Stock](https://www.editions-stock.fr/faq/comment-soumettre-un-manuscrit/) | Paris | 💾 | 2026-03-03 envoyé via formulaire|
 | [Pauvert (Fayard)](mailto:manuscrits-pauvert@editions-fayard.fr) | Paris | 💾 | [2026-03-03](envois/2026-03-03%20-%20Pauvert%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 4 |
 | [La Contre Allée](https://lacontreallee.com/nous-contacter/) | Lille | 💾 | [2026-03-03](envois/2026-03-03%20-%20La%20Contre%20Allée%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
 | [Le Cherche Midi](https://www.lisez.com/editeurs/cherche-midi/nous-contacter) | Paris | 💾 | [2026-03-03](envois/2026-03-03%20-%20Cherche%20Midi%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
