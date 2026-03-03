@@ -62,6 +62,13 @@
 | XO Éditions | Paris | https://www.xoeditions.com | https://manuscrits.xoeditions.com/ | 💾 | | | | |
 | Michel Lafon | Neuilly | http://www.michel-lafon.fr/ | http://www.michel-lafon.fr/editions/contact | 💾 | | | | |
 | Le Passage | Paris | https://www.lepassage-editions.fr/ | https://www.lepassage-editions.fr/contact/ | 💾 | | | | |
+
+---
+
+## ON HOLD
+
+| Éditeur | Ville | Site | Contact | Mode | D | C | Envoi | Délai |
+|---------|-------|------|---------|------|---|---|-------|-------|
 | ~~Cambourakis~~ | Paris | https://www.cambourakis.com | https://www.cambourakis.com/la-maison/ | 📚 💾 | 2 | 3 | | |
 | ~~Les Impressions Nouvelles~~ | Bruxelles | https://www.lesimpressionsnouvelles.com | — | 💾 | 2 | 4 | | |
 | ~~Le Quartanier~~ | Montréal | https://www.lequartanier.com | — | 💾 | 1 | 4 | | |
