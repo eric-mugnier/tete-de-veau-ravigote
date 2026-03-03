@@ -1,4 +1,4 @@
-Au comité de lecture de La Table Ronde,
+Au comité de lecture des Éditions de La Table Ronde,
 
 Je viens vous proposer le manuscrit du premier roman de mon ami cher Éric Mugnier, *Tête de veau ravigote*, dont voici le pitch :
 
