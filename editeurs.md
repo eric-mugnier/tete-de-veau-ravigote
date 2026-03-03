@@ -1,39 +1,39 @@
 # Éditeurs
 
-**14 envoyés · 45 restants (dont 14 📚 uniquement)**
+**14 envoyés · 33 restants (dont 12 📚 uniquement)**
 
-📚 = envoi papier · 💾 = envoi numérique · D = désirabilité · C = compatibilité
+📚 = envoi papier · 💾 = envoi numérique
 
 ---
 
-| Éditeur | Ville | Mode | D | C | Envoi | Délai (mois) |
-|---------|-------|------|---|---|-------|-------|
-| [Gallimard (Blanche)](https://depot-manuscrits.gallimard.fr/) | Paris | 💾 | 5 | 2 | [2026-02-19](envois/2026-02-19%20-%20Editions%20Gallimard%20_%20accusé%20de%20réception%20de%20votre%20manuscrit.eml) | 6 |
-| [Le Tripode](https://le-tripode.net/maison) | Paris | 💾 | 2 | 4 | [2026-02-26](envois/2026-02-26%20-%20Tripode%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 1 |
-| [Robert Laffont](mailto:Frederic.Martin@robert-laffont.com) | Paris | 💾 | 4 | 4 | [2026-02-27](envois/2026-02-27%20-%20Robert%20Laffont%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 4 |
-| [Christian Bourgois](https://bourgoisediteur.fr/contact/) | Paris | 💾 | 3 | 3 | [2026-02-27](envois/2026-02-28%20-%20Bourgois%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 4 |
-| [Denoël](https://www.denoel.fr/contacts-manuscrits) | Paris | 💾 | 3 | 3 | [2026-02-28](envois/2026-02-28%20-%20Denoël%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 3 |
-| [Aux Forges de Vulcain](https://auxforgesdevulcain.fr) | Paris | 💾 | 2 | 4 | [2026-03-01](envois/2026-03-01%20-%20Forges%20de%20Vulcain%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | – |
-| [Fayard Noir](https://www.fayard.fr/soumettre-un-manuscrit/) | Paris | 💾 | 4 | 2 | [2026-03-01](envois/2026-03-01%20-%20Fayard%20Noir%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
-| [Le Nouvel Attila](https://lenouvelattila.fr/manuscrits-et-contacts/) | Paris | 💾 | 2 | 3 | [2026-03-01](envois/2026-03-01%20-%20Nouvel%20Attila%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml ) | 4 |
-| [La Volte](https://lavolte.net/pages/contact) | Paris | 💾 | 2 | 2 |  [2026-03-02](envois/2026-03-02%20-%20La%20Volte%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml )| 12 |
-| [Agullo](https://agullo-editions.com/contact/) | Paris | 💾 | 2 | 2 | [2026-03-02](envois/2026-03-02%20-%20Agullo%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
-| [Cadre Noir (Seuil)](https://www.seuil.com/contacts) | Paris | 💾 | 4 | 2 | [2026-03-02](envois/2026-03-02%20-%20Cadre%20Noir%20(Seuil)%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 6 |
-| [Fleuve Editions](https://www.manuscrits.fleuve-editions.com/) (anciennement Fleuve Noir)| Paris | 💾 | ? | ? | [2026-03-02](envois/2026-03-02%20-%20Fleuve%20Editions%20_%20Confirmation%20de%20votre%20envoi%20de%20manuscrit.eml) | _ |
-| [Gallimard (Série Noire)](https://www.gallimard.fr/questions-frequentes-et-contact) | Paris | 💾 | 5 | 3 | [2026-03-02](envois/2026-03-02%20-%20Galllimard%20(Série%20Noire)%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 3 |
-| [Rivages/Noir](https://editions-rivages.fr/contactez-nous#s3) | Paris | 💾 | 5 | 3 | [2026-03-02](envois/2026-03-02%20-%20Rivages:noir%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | _ |
-| [Actes Sud](https://actes-sud.fr/contactez-nous#s2) *(coll. Actes Noirs, Inculte)* | Arles | 📚 | 4 | 4 | | – |
-| [P.O.L](https://www.pol-editeur.com/contacter-editions-pol.html) | Paris | 📚 | 3 | 3 | | 3 |
-| [Tristram](https://www.tristram.fr) | Auch | 📚 | 2 | 5 | | – |
-| [Verdier](https://editions-verdier.fr/manuscrits/) | Lagrasse | 📚 | 2 | 4 | | 3 |
-| [Verticales (Gallimard)](http://www.editions-verticales.com/contact.php?rubrique=8) | Paris | 📚 | 4 | 5 | | 4 |
-| [Viviane Hamy](http://www.viviane-hamy.fr/fonctionnalites-et-mise-en-avant/article/manuscrits) | Paris | 📚 | 3 | 5 | | – |
-| [Finitude](https://www.finitude.fr/contact/) | Bordeaux | 📚 | 2 | 4 | | - |
-| [Le Dilettante](https://www.ledilettante.com/proposer-un-manuscrit/) | Paris | 📚 | 2 | 4 | | - |
-| [Minuit](https://www.leseditionsdeminuit.fr/unepage-manuscrits-manuscrits-1-1-0-1.html) | Paris | 📚 | 3 | 3 | | |
-| [Grasset](https://www.grasset.fr/questions-frequentes/comment-soumettre-un-manuscrit/) | Paris | 📚 | 4 | 2 | | |
-| [Albin Michel](https://www.albin-michel.fr/deposer-un-manuscrit) | Paris | 📚 | 4 | 2 | | - |
-| Le Terrain Vague - Losfeld | Paris | — | 3 | 5 | *stand-by* | – |
+| Éditeur | Ville | Mode | Envoi | Délai (mois) |
+|---------|-------|------|-------|-------|
+| [Gallimard (Blanche)](https://depot-manuscrits.gallimard.fr/) | Paris | 💾 | [2026-02-19](envois/2026-02-19%20-%20Editions%20Gallimard%20_%20accusé%20de%20réception%20de%20votre%20manuscrit.eml) | 6 |
+| [Le Tripode](https://le-tripode.net/maison) | Paris | 💾 | [2026-02-26](envois/2026-02-26%20-%20Tripode%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 1 |
+| [Robert Laffont](mailto:Frederic.Martin@robert-laffont.com) | Paris | 💾 | [2026-02-27](envois/2026-02-27%20-%20Robert%20Laffont%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 4 |
+| [Christian Bourgois](https://bourgoisediteur.fr/contact/) | Paris | 💾 | [2026-02-27](envois/2026-02-28%20-%20Bourgois%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 4 |
+| [Denoël](https://www.denoel.fr/contacts-manuscrits) | Paris | 💾 | [2026-02-28](envois/2026-02-28%20-%20Denoël%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 3 |
+| [Aux Forges de Vulcain](https://auxforgesdevulcain.fr) | Paris | 💾 | [2026-03-01](envois/2026-03-01%20-%20Forges%20de%20Vulcain%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | – |
+| [Fayard Noir](https://www.fayard.fr/soumettre-un-manuscrit/) | Paris | 💾 | [2026-03-01](envois/2026-03-01%20-%20Fayard%20Noir%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
+| [Le Nouvel Attila](https://lenouvelattila.fr/manuscrits-et-contacts/) | Paris | 💾 | [2026-03-01](envois/2026-03-01%20-%20Nouvel%20Attila%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml ) | 4 |
+| [La Volte](https://lavolte.net/pages/contact) | Paris | 💾 |  [2026-03-02](envois/2026-03-02%20-%20La%20Volte%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml )| 12 |
+| [Agullo](https://agullo-editions.com/contact/) | Paris | 💾 | [2026-03-02](envois/2026-03-02%20-%20Agullo%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
+| [Cadre Noir (Seuil)](https://www.seuil.com/contacts) | Paris | 💾 | [2026-03-02](envois/2026-03-02%20-%20Cadre%20Noir%20(Seuil)%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 6 |
+| [Fleuve Editions](https://www.manuscrits.fleuve-editions.com/) (anciennement Fleuve Noir)| Paris | 💾 | [2026-03-02](envois/2026-03-02%20-%20Fleuve%20Editions%20_%20Confirmation%20de%20votre%20envoi%20de%20manuscrit.eml) | _ |
+| [Gallimard (Série Noire)](https://www.gallimard.fr/questions-frequentes-et-contact) | Paris | 💾 | [2026-03-02](envois/2026-03-02%20-%20Galllimard%20(Série%20Noire)%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 3 |
+| [Rivages/Noir](https://editions-rivages.fr/contactez-nous#s3) | Paris | 💾 | [2026-03-02](envois/2026-03-02%20-%20Rivages:noir%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | _ |
+| [Actes Sud](https://actes-sud.fr/contactez-nous#s2) *(coll. Actes Noirs, Inculte)* | Arles | 📚 | | – |
+| [P.O.L](https://www.pol-editeur.com/contacter-editions-pol.html) | Paris | 📚 | | 3 |
+| [Tristram](https://www.tristram.fr) | Auch | 📚 | | – |
+| [Verdier](https://editions-verdier.fr/manuscrits/) | Lagrasse | 📚 | | 3 |
+| [Verticales (Gallimard)](http://www.editions-verticales.com/contact.php?rubrique=8) | Paris | 📚 | | 4 |
+| [Viviane Hamy](http://www.viviane-hamy.fr/fonctionnalites-et-mise-en-avant/article/manuscrits) | Paris | 📚 | | – |
+| [Finitude](https://www.finitude.fr/contact/) | Bordeaux | 📚 | | - |
+| [Le Dilettante](https://www.ledilettante.com/proposer-un-manuscrit/) | Paris | 📚 | | - |
+| [Minuit](https://www.leseditionsdeminuit.fr/unepage-manuscrits-manuscrits-1-1-0-1.html) | Paris | 📚 | | |
+| [Grasset](https://www.grasset.fr/questions-frequentes/comment-soumettre-un-manuscrit/) | Paris | 📚 | | |
+| [Albin Michel](https://www.albin-michel.fr/deposer-un-manuscrit) | Paris | 📚 | | - |
+| Le Terrain Vague - Losfeld | Paris | — | *stand-by* | – |
 
 
 > ⚠️ Losfeld : maison lancée en janvier 2026, attendre que la structure soit opérationnelle (avril 2026 ?)
@@ -42,45 +42,45 @@
 
 ## VAGUE 2
 
-| Éditeur | Ville | Site | Contact | Mode | D | C | Envoi | Délai |
-|---------|-------|------|---------|------|---|---|-------|-------|
-| Quidam Éditeur | Metz | https://www.quidamediteur.com | https://www.quidamediteur.com/contact | 💾 | 2 | 4 | | |
-| Pauvert (Fayard) | Paris | https://www.fayard.fr/pauvert | MANUSCRITS-PAUVERT@editions-fayard.fr | 💾 | 3 | 4 | | |
-| Anacharsis | Toulouse | https://www.editions-anacharsis.com | https://www.editions-anacharsis.com/Contacter-Anacharsis | 💾 | 2 | 3 | | |
-| La Contre Allée | Lille | https://lacontreallee.com | https://lacontreallee.com/nous-contacter/ | 💾 | 2 | 3 | | |
-| Zulma | Paris | https://www.zulma.fr | https://www.zulma.fr/contact/ | 💾 | 3 | 3 | | |
-| Alma Éditeur | Paris | https://www.alma-editeur.fr | https://www.alma-editeur.fr/contacts/ | 💾 | 2 | 3 | | |
-| Le Cherche Midi | Paris | https://www.cherche-midi.com | — | — | 3 | 3 | | |
-| La Table Ronde | Paris | https://www.editionslatableronde.fr | https://www.editionslatableronde.fr/Contacts | 💾 | 3 | 3 | | |
-| Flammarion | Paris | https://editions.flammarion.com | https://editions.flammarion.com/envoyer-un-manuscrit/ | 💾 | 4 | 2 | | |
-| Stock | Paris | https://www.editions-stock.fr | https://www.editions-stock.fr/faq/comment-soumettre-un-manuscrit/ | 💾 | 4 | 2 | | |
-| Sonatine | Paris | https://www.sonatine-editions.fr | — | 💾 | | | | |
-| Calmann-Lévy Noir | Paris | https://www.calmann-levy.fr | https://www.calmann-levy.fr/faq/comment-soumettre-un-manuscrit/ | 💾 | | | | |
-| Le Masque (JC Lattès) | Paris | https://www.lemasque.com | https://www.editions-jclattes.fr/deposer-un-manuscrit/ | 💾 | | | | |
-| Éditions de l'Aube | La Tour-d'Aigues | https://www.editionsdelaube.fr | https://editionsdelaube.fr/auteurs-manuscrits/ | 💾 | | | | |
-| Taurnada Éditions | Paris | https://www.taurnada.fr | https://www.taurnada.fr/soumettre-un-manuscrit/ | 💾 | | | | |
-| XO Éditions | Paris | https://www.xoeditions.com | https://manuscrits.xoeditions.com/ | 💾 | | | | |
-| Michel Lafon | Neuilly | http://www.michel-lafon.fr/ | http://www.michel-lafon.fr/editions/contact | 💾 | | | | |
-| Le Passage | Paris | https://www.lepassage-editions.fr/ | https://www.lepassage-editions.fr/contact/ | 💾 | | | | |
+| Éditeur | Ville | Mode |
+|---------|-------|------|
+| [Quidam Éditeur](https://www.quidamediteur.com/contact) | Metz | 💾 |
+| [Pauvert (Fayard)](mailto:MANUSCRITS-PAUVERT@editions-fayard.fr) | Paris | 💾 |
+| [Anacharsis](https://www.editions-anacharsis.com/Contacter-Anacharsis) | Toulouse | 💾 |
+| [La Contre Allée](https://lacontreallee.com/nous-contacter/) | Lille | 💾 |
+| [Zulma](https://www.zulma.fr/contact/) | Paris | 💾 |
+| [Alma Éditeur](https://www.alma-editeur.fr/contacts/) | Paris | 💾 |
+| [Le Cherche Midi](https://www.cherche-midi.com) | Paris | — |
+| [La Table Ronde](https://www.editionslatableronde.fr/Contacts) | Paris | 💾 |
+| [Flammarion](https://editions.flammarion.com/envoyer-un-manuscrit/) | Paris | 💾 |
+| [Stock](https://www.editions-stock.fr/faq/comment-soumettre-un-manuscrit/) | Paris | 💾 |
+| [Sonatine](https://www.sonatine-editions.fr) | Paris | 💾 |
+| [Calmann-Lévy Noir](https://www.calmann-levy.fr/faq/comment-soumettre-un-manuscrit/) | Paris | 💾 |
+| [Le Masque (JC Lattès)](https://www.editions-jclattes.fr/deposer-un-manuscrit/) | Paris | 💾 |
+| [Éditions de l'Aube](https://editionsdelaube.fr/auteurs-manuscrits/) | La Tour-d'Aigues | 💾 |
+| [Taurnada Éditions](https://www.taurnada.fr/soumettre-un-manuscrit/) | Paris | 💾 |
+| [XO Éditions](https://manuscrits.xoeditions.com/) | Paris | 💾 |
+| [Michel Lafon](http://www.michel-lafon.fr/editions/contact) | Neuilly | 💾 |
+| [Le Passage](https://www.lepassage-editions.fr/contact/) | Paris | 💾 |
 
 ---
 
 ## ON HOLD
 
-| Éditeur | Ville | Site | Contact | Mode | D | C | Envoi | Délai |
-|---------|-------|------|---------|------|---|---|-------|-------|
-| ~~Cambourakis~~ | Paris | https://www.cambourakis.com | https://www.cambourakis.com/la-maison/ | 📚 💾 | 2 | 3 | | |
-| ~~Les Impressions Nouvelles~~ | Bruxelles | https://www.lesimpressionsnouvelles.com | — | 💾 | 2 | 4 | | |
-| ~~Le Quartanier~~ | Montréal | https://www.lequartanier.com | — | 💾 | 1 | 4 | | |
-| ~~Zoé~~ | Genève | https://www.editionszoe.ch | — | 💾 | 2 | 3 | | |
-| ~~Belfond (Belfond Noir)~~ | Paris | https://www.lisez.com/belfond | https://editions-belfond.comitedelecture.com/manuscrit-iframe | 💾 | | | | |
-| ~~La Martinière Noir~~ | Paris | https://www.editionsdelamartiniere.fr | https://www.editionsdelamartiniere.fr/contact/ | 💾 | | | | |
-| ~~Cairn (Du Noir au Sud)~~ | Pau | https://www.editions-cairn.fr | https://www.editions-cairn.fr/en/content/8-soumettre-votre-manuscrit | 💾 | | | | |
-| ~~Mera~~ | Paris | https://mera-editions.com/ | http://mera-editions.com/contact | 💾 | | | | |
-| ~~Chambre Noire~~ | Switzerland | https://www.chambrenoire.net/ | — | 💾 | | | | |
-| ~~Éditions du Palémon~~ | Quimper | https://palemon.fr | https://palemon.fr/pages/contact | 📚 | | | | |
-| ~~Éditions du Gros Caillou~~ | Paris | https://www.editionsdugroscaillou.fr | https://www.editionsdugroscaillou.fr/store/page/125/soumettre-un-manuscrit | 💾 | | | | |
-| ~~Presses de la Cité (Sang Neuf)~~ | Paris | https://www.pressesdelacite.com | https://pressesdelacite.comitedelecture.com/manuscrit-iframe | 📚 | | | | |
+| Éditeur | Ville | Mode |
+|---------|-------|------|
+| [~~Cambourakis~~](https://www.cambourakis.com/la-maison/) | Paris | 📚 💾 |
+| [~~Les Impressions Nouvelles~~](https://www.lesimpressionsnouvelles.com) | Bruxelles | 💾 |
+| [~~Le Quartanier~~](https://www.lequartanier.com) | Montréal | 💾 |
+| [~~Zoé~~](https://www.editionszoe.ch) | Genève | 💾 |
+| [~~Belfond (Belfond Noir)~~](https://editions-belfond.comitedelecture.com/manuscrit-iframe) | Paris | 💾 |
+| [~~La Martinière Noir~~](https://www.editionsdelamartiniere.fr/contact/) | Paris | 💾 |
+| [~~Cairn (Du Noir au Sud)~~](https://www.editions-cairn.fr/en/content/8-soumettre-votre-manuscrit) | Pau | 💾 |
+| [~~Mera~~](http://mera-editions.com/contact) | Paris | 💾 |
+| [~~Chambre Noire~~](https://www.chambrenoire.net/) | Switzerland | 💾 |
+| [~~Éditions du Palémon~~](https://palemon.fr/pages/contact) | Quimper | 📚 |
+| [~~Éditions du Gros Caillou~~](https://www.editionsdugroscaillou.fr/store/page/125/soumettre-un-manuscrit) | Paris | 💾 |
+| [~~Presses de la Cité (Sang Neuf)~~](https://pressesdelacite.comitedelecture.com/manuscrit-iframe) | Paris | 📚 |
 
 ---
 
