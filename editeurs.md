@@ -48,17 +48,17 @@
 | Éditeur | Ville | Mode | Mail |
 |---------|-------|------|------|
 | [Quidam Éditeur](https://www.quidamediteur.com/contact) | Metz | 💾 | En premier lieu, merci de nous adresser une courte présentation et un extrait de 30-40 pages, en pdf exclusivement : contact@quidamediteur.com |
-| [Pauvert (Fayard)](mailto:MANUSCRITS-PAUVERT@editions-fayard.fr) | Paris | 💾 | MANUSCRITS-PAUVERT@editions-fayard.fr |
+| [Pauvert (Fayard)](mailto:manuscrits-pauvert@editions-fayard.fr) | Paris | 💾 | manuscrits-pauvert@editions-fayard.fr |
 | [La Contre Allée](https://lacontreallee.com/nous-contacter/) | Lille | 💾 | monmanuscritprendlacontreallee@gmail.com |
 | [Le Cherche Midi](https://www.lisez.com/editeurs/cherche-midi/nous-contacter) | Paris | 💾 | manuscrits@cherche-midi.com |
 | [La Table Ronde](https://www.editionslatableronde.fr/Contacts) | Paris | 💾 | manuscrits@editionslatableronde.fr - Indiquer vos nom, prénom, adresse e-mail et téléphone au début de votre manuscrit. - Choisir une mise en pages lisible (exemple : police 12, interligne 1,5). |
 | [Flammarion](https://editions.flammarion.com/envoyer-un-manuscrit/) | Paris | 💾 | Formulaire |
-| [Calmann-Lévy Noir](https://www.calmann-levy.fr/faq/comment-soumettre-un-manuscrit/) | Paris | 💾 | edito-CALMANN@calmann-levy.fr|
+| [Calmann-Lévy Noir](https://www.calmann-levy.fr/faq/comment-soumettre-un-manuscrit/) | Paris | 💾 | edito-calmann@calmann-levy.fr|
 | [Taurnada Éditions](https://www.taurnada.fr/soumettre-un-manuscrit/) | Paris | 💾 | manuscrit@edtmail.fr |
 | [XO Éditions](https://manuscrits.xoeditions.com/) | Paris | 💾 | Formulaire |
 | [Michel Lafon](http://www.michel-lafon.fr/editions/contact) | Neuilly | 💾 | manuscrits@michel-lafon.com |
 | [Le Passage](https://www.lepassage-editions.fr/contact/) | Paris | 💾 | manuscrits@lepassage-editions.fr |
-| [Belfond (Belfond Noir)](https://www.lisez.com/editeurs/belfond/contactez-nous) | Paris | 💾 | Manuscrits@belfondeditions.com |
+| [Belfond (Belfond Noir)](https://www.lisez.com/editeurs/belfond/contactez-nous) | Paris | 💾 | manuscrits@belfondeditions.com |
 
 ---
 
