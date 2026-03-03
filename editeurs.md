@@ -20,7 +20,7 @@
 | [Agullo](https://agullo-editions.com/contact/) | Paris | 💾 | 2 | 2 | [2026-03-02](envois/2026-03-02%20-%20Agullo%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
 | [Cadre Noir (Seuil)](https://www.seuil.com/contacts) | Paris | 💾 | 4 | 2 | [2026-03-02](envois/2026-03-02%20-%20Cadre%20Noir%20(Seuil)%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 6 |
 | [Fleuve Editions](https://www.manuscrits.fleuve-editions.com/) (anciennement Fleuve Noir)| Paris | 💾 | ? | ? | [2026-03-02](envois/2026-03-02%20-%20Fleuve%20Editions%20_%20Confirmation%20de%20votre%20envoi%20de%20manuscrit.eml) | _ |
-| [Gallimard (Série Noire)](https://www.gallimard.fr/questions-frequentes-et-contact) | Paris | 💾 | 5 | 3 | [2026-03-02](envois/2026-03-02%20-%20Galllimard%20(Série%20Noire)%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | _ |
+| [Gallimard (Série Noire)](https://www.gallimard.fr/questions-frequentes-et-contact) | Paris | 💾 | 5 | 3 | [2026-03-02](envois/2026-03-02%20-%20Galllimard%20(Série%20Noire)%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 3 |
 | [Rivages/Noir](https://editions-rivages.fr/contactez-nous#s3) | Paris | 💾 | 5 | 3 | [2026-03-02](envois/2026-03-02%20-%20Rivages:noir%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | _ |
 | [Actes Sud](https://actes-sud.fr/contactez-nous#s2) *(coll. Actes Noirs, Inculte)* | Arles | 📚 | 4 | 4 | | – |
 | [P.O.L](https://www.pol-editeur.com/contacter-editions-pol.html) | Paris | 📚 | 3 | 3 | | 3 |
