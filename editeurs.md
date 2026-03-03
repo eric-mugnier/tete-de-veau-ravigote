@@ -51,7 +51,6 @@
 | [Le Cherche Midi](https://www.lisez.com/editeurs/cherche-midi/nous-contacter) | Paris | 💾 | manuscrits@cherche-midi.com |
 | [La Table Ronde](https://www.editionslatableronde.fr/Contacts) | Paris | 💾 | manuscrits@editionslatableronde.fr - Indiquer vos nom, prénom, adresse e-mail et téléphone au début de votre manuscrit. - Choisir une mise en pages lisible (exemple : police 12, interligne 1,5). |
 | [Flammarion](https://editions.flammarion.com/envoyer-un-manuscrit/) | Paris | 💾 | formulaire |
-| [Sonatine](https://www.sonatine-editions.fr) | Paris | 💾 | |
 | [Calmann-Lévy Noir](https://www.calmann-levy.fr/faq/comment-soumettre-un-manuscrit/) | Paris | 💾 | |
 | [Le Masque (JC Lattès)](https://www.editions-jclattes.fr/deposer-un-manuscrit/) | Paris | 💾 | |
 | [Éditions de l'Aube](https://editionsdelaube.fr/auteurs-manuscrits/) | La Tour-d'Aigues | 💾 | |
@@ -67,6 +66,7 @@
 
 | Éditeur | Ville | Mode |
 |---------|-------|------|
+| [~~Sonatine~~](https://www.sonatine-editions.fr) | Paris | 💾 | |
 | [~~Alma Éditeur~~](https://www.alma-editeur.fr/contacts/) | Paris | 💾 | |
 | [~~Zulma~~](https://www.zulma.fr/contact/) | Paris | 💾 | manuscrit@zulma.fr |
 | [~~Anacharsis~~](https://www.editions-anacharsis.com/Contacter-Anacharsis) | Toulouse | 💾 | |
