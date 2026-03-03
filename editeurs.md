@@ -42,27 +42,29 @@
 
 ## VAGUE 2
 
-| Éditeur | Ville | Mode |
-|---------|-------|------|
-| [Quidam Éditeur](https://www.quidamediteur.com/contact) | Metz | 💾 |
-| [Pauvert (Fayard)](mailto:MANUSCRITS-PAUVERT@editions-fayard.fr) | Paris | 💾 |
-| [Anacharsis](https://www.editions-anacharsis.com/Contacter-Anacharsis) | Toulouse | 💾 |
-| [La Contre Allée](https://lacontreallee.com/nous-contacter/) | Lille | 💾 |
-| [Zulma](https://www.zulma.fr/contact/) | Paris | 💾 |
-| [Alma Éditeur](https://www.alma-editeur.fr/contacts/) | Paris | 💾 |
-| [Le Cherche Midi](https://www.lisez.com/editeurs/cherche-midi/nous-contacter) | Paris | 💾 |
-| [La Table Ronde](https://www.editionslatableronde.fr/Contacts) | Paris | 💾 |
-| [Flammarion](https://editions.flammarion.com/envoyer-un-manuscrit/) | Paris | 💾 |
-| [Stock](https://www.editions-stock.fr/faq/comment-soumettre-un-manuscrit/) | Paris | 💾 |
-| [Sonatine](https://www.sonatine-editions.fr) | Paris | 💾 |
-| [Calmann-Lévy Noir](https://www.calmann-levy.fr/faq/comment-soumettre-un-manuscrit/) | Paris | 💾 |
-| [Le Masque (JC Lattès)](https://www.editions-jclattes.fr/deposer-un-manuscrit/) | Paris | 💾 |
-| [Éditions de l'Aube](https://editionsdelaube.fr/auteurs-manuscrits/) | La Tour-d'Aigues | 💾 |
-| [Taurnada Éditions](https://www.taurnada.fr/soumettre-un-manuscrit/) | Paris | 💾 |
-| [XO Éditions](https://manuscrits.xoeditions.com/) | Paris | 💾 |
-| [Michel Lafon](http://www.michel-lafon.fr/editions/contact) | Neuilly | 💾 |
-| [Le Passage](https://www.lepassage-editions.fr/contact/) | Paris | 💾 |
-| [Belfond (Belfond Noir)](https://www.lisez.com/editeurs/belfond/contactez-nous) | Paris | 💾 |
+| Éditeur | Ville | Mode | Mail |
+|---------|-------|------|------|
+| [Quidam Éditeur](https://www.quidamediteur.com/contact) | Metz | 💾 | En premier lieu, merci de nous adresser une courte présentation et un extrait de 30-40 pages, en pdf exclusivement : 
+
+contact@quidamediteur.com |
+| [Pauvert (Fayard)](mailto:MANUSCRITS-PAUVERT@editions-fayard.fr) | Paris | 💾 | |
+| [Anacharsis](https://www.editions-anacharsis.com/Contacter-Anacharsis) | Toulouse | 💾 | |
+| [La Contre Allée](https://lacontreallee.com/nous-contacter/) | Lille | 💾 | |
+| [Zulma](https://www.zulma.fr/contact/) | Paris | 💾 | |
+| [Alma Éditeur](https://www.alma-editeur.fr/contacts/) | Paris | 💾 | |
+| [Le Cherche Midi](https://www.lisez.com/editeurs/cherche-midi/nous-contacter) | Paris | 💾 | |
+| [La Table Ronde](https://www.editionslatableronde.fr/Contacts) | Paris | 💾 | |
+| [Flammarion](https://editions.flammarion.com/envoyer-un-manuscrit/) | Paris | 💾 | |
+| [Stock](https://www.editions-stock.fr/faq/comment-soumettre-un-manuscrit/) | Paris | 💾 | |
+| [Sonatine](https://www.sonatine-editions.fr) | Paris | 💾 | |
+| [Calmann-Lévy Noir](https://www.calmann-levy.fr/faq/comment-soumettre-un-manuscrit/) | Paris | 💾 | |
+| [Le Masque (JC Lattès)](https://www.editions-jclattes.fr/deposer-un-manuscrit/) | Paris | 💾 | |
+| [Éditions de l'Aube](https://editionsdelaube.fr/auteurs-manuscrits/) | La Tour-d'Aigues | 💾 | |
+| [Taurnada Éditions](https://www.taurnada.fr/soumettre-un-manuscrit/) | Paris | 💾 | |
+| [XO Éditions](https://manuscrits.xoeditions.com/) | Paris | 💾 | |
+| [Michel Lafon](http://www.michel-lafon.fr/editions/contact) | Neuilly | 💾 | |
+| [Le Passage](https://www.lepassage-editions.fr/contact/) | Paris | 💾 | |
+| [Belfond (Belfond Noir)](https://www.lisez.com/editeurs/belfond/contactez-nous) | Paris | 💾 | |
 
 ---
 
