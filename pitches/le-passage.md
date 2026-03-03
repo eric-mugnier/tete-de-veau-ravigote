@@ -1,4 +1,4 @@
-Au comité de lecture du Passage,
+Au comité de lecture des éditions Le Passage,
 
 Je viens vous proposer le manuscrit du premier roman de mon ami cher Éric Mugnier, *Tête de veau ravigote*, dont voici le pitch :
 
