@@ -45,8 +45,7 @@
 | Éditeur | Ville | Mode | Mail |
 |---------|-------|------|------|
 | [Quidam Éditeur](https://www.quidamediteur.com/contact) | Metz | 💾 | En premier lieu, merci de nous adresser une courte présentation et un extrait de 30-40 pages, en pdf exclusivement : contact@quidamediteur.com |
-| [Pauvert (Fayard)](mailto:MANUSCRITS-PAUVERT@editions-fayard.fr) | Paris | 💾 | |
-| [Anacharsis](https://www.editions-anacharsis.com/Contacter-Anacharsis) | Toulouse | 💾 | |
+| [Pauvert (Fayard)](mailto:MANUSCRITS-PAUVERT@editions-fayard.fr) | Paris | 💾 | MANUSCRITS-PAUVERT@editions-fayard.fr |
 | [La Contre Allée](https://lacontreallee.com/nous-contacter/) | Lille | 💾 | |
 | [Zulma](https://www.zulma.fr/contact/) | Paris | 💾 | |
 | [Alma Éditeur](https://www.alma-editeur.fr/contacts/) | Paris | 💾 | |
@@ -70,6 +69,7 @@
 
 | Éditeur | Ville | Mode |
 |---------|-------|------|
+| [~~Anacharsis~~](https://www.editions-anacharsis.com/Contacter-Anacharsis) | Toulouse | 💾 | |
 | [~~Cambourakis~~](https://www.cambourakis.com/la-maison/) | Paris | 📚 💾 |
 | [~~Les Impressions Nouvelles~~](https://www.lesimpressionsnouvelles.com) | Bruxelles | 💾 |
 | [~~Le Quartanier~~](https://www.lequartanier.com) | Montréal | 💾 |
