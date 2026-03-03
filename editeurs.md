@@ -28,6 +28,11 @@
 | [Verdier](https://editions-verdier.fr/manuscrits/) | Lagrasse | 📚 | 2 | 4 | | 3 |
 | [Verticales (Gallimard)](http://www.editions-verticales.com/contact.php?rubrique=8) | Paris | 📚 | 4 | 5 | | 4 |
 | [Viviane Hamy](http://www.viviane-hamy.fr/fonctionnalites-et-mise-en-avant/article/manuscrits) | Paris | 📚 | 3 | 5 | | – |
+| [Finitude](https://www.finitude.fr/contact/) | Bordeaux | 📚 | 2 | 4 | | - |
+| [Le Dilettante](https://www.ledilettante.com/proposer-un-manuscrit/) | Paris | 📚 | 2 | 4 | | - |
+| [Minuit](https://www.leseditionsdeminuit.fr/unepage-manuscrits-manuscrits-1-1-0-1.html) | Paris | 📚 | 3 | 3 | | |
+| [Grasset](https://www.grasset.fr/questions-frequentes/comment-soumettre-un-manuscrit/) | Paris | 📚 | 4 | 2 | | |
+| [Albin Michel](https://www.albin-michel.fr/deposer-un-manuscrit) | Paris | 📚 | 4 | 2 | | - |
 | Le Terrain Vague - Losfeld | Paris | — | 3 | 5 | *stand-by* | – |
 
 
@@ -39,8 +44,6 @@
 
 | Éditeur | Ville | Site | Contact | Mode | D | C | Envoi | Délai |
 |---------|-------|------|---------|------|---|---|-------|-------|
-| Finitude | Bordeaux | https://www.finitude.fr | https://www.finitude.fr/contact/ | 📚 | 2 | 4 | | |
-| Le Dilettante | Paris | https://www.ledilettante.com | https://www.ledilettante.com/proposer-un-manuscrit/ | 📚 | 2 | 4 | | |
 | Quidam Éditeur | Metz | https://www.quidamediteur.com | https://www.quidamediteur.com/contact | 💾 | 2 | 4 | | |
 | Pauvert (Fayard) | Paris | https://www.fayard.fr/pauvert | MANUSCRITS-PAUVERT@editions-fayard.fr | 💾 | 3 | 4 | | |
 | Anacharsis | Toulouse | https://www.editions-anacharsis.com | https://www.editions-anacharsis.com/Contacter-Anacharsis | 💾 | 2 | 3 | | |
@@ -49,9 +52,6 @@
 | Alma Éditeur | Paris | https://www.alma-editeur.fr | https://www.alma-editeur.fr/contacts/ | 💾 | 2 | 3 | | |
 | Le Cherche Midi | Paris | https://www.cherche-midi.com | — | — | 3 | 3 | | |
 | La Table Ronde | Paris | https://www.editionslatableronde.fr | https://www.editionslatableronde.fr/Contacts | 💾 | 3 | 3 | | |
-| Minuit | Paris | https://www.leseditionsdeminuit.fr | https://www.leseditionsdeminuit.fr/unepage-manuscrits-manuscrits-1-1-0-1.html | 📚 | 3 | 3 | | |
-| Grasset | Paris | https://www.grasset.fr | https://www.grasset.fr/questions-frequentes/comment-soumettre-un-manuscrit/ | 📚 | 4 | 2 | | |
-| Albin Michel | Paris | https://www.albin-michel.fr | https://www.albin-michel.fr/deposer-un-manuscrit | 📚 | 4 | 2 | | |
 | Flammarion | Paris | https://editions.flammarion.com | https://editions.flammarion.com/envoyer-un-manuscrit/ | 💾 | 4 | 2 | | |
 | Stock | Paris | https://www.editions-stock.fr | https://www.editions-stock.fr/faq/comment-soumettre-un-manuscrit/ | 💾 | 4 | 2 | | |
 | Sonatine | Paris | https://www.sonatine-editions.fr | — | 💾 | | | | |
