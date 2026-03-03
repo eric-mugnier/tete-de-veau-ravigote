@@ -90,16 +90,15 @@
 |---------|---------|
 | Actes Sud / Actes Noirs | Le Méjan, Place Nina-Berberova, BP 90038 — 13633 Arles Cedex |
 | Albin Michel | 22, rue Huyghens — 75014 Paris |
-| Alma Éditeur | 1, rue Victor-Cousin — 75005 Paris |
-| Cambourakis | 62, rue du Faubourg Saint-Antoine — 75012 Paris |
-| Fayard | 13, rue du Montparnasse — 75006 Paris |
+| Éditions de l'Aube | 331, rue Amédée-Ginies — 84240 La Tour-d'Aigues |
+| Finitude | 21, rue Laharpe — 33110 Le Bouscat |
 | Grasset | 61, rue des Saints-Pères — 75006 Paris |
 | Le Dilettante | 8, rue Lovenjoul — 75006 Paris |
+| Le Masque (JC Lattès) | 17, rue Jacob — 75006 Paris |
 | Minuit | 7, rue Bernard-Palissy — 75006 Paris |
 | P.O.L | 33, rue Saint-André-des-Arts — 75006 Paris |
-| Robert Laffont | 24, avenue Marceau — 75008 Paris |
-| Seuil (Fiction & Cie) | 25, boulevard Romain-Rolland — 75014 Paris |
 | Tristram | 39, boulevard Roquelaure — 32000 Auch |
 | Verdier | 13, rue du Château — 11220 Lagrasse |
 | Verticales (Gallimard) | 5, rue Sébastien-Bottin — 75007 Paris |
+| Viviane Hamy | 26, rue de Condé — 75006 Paris |
 
