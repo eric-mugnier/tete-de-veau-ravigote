@@ -46,8 +46,7 @@
 |---------|-------|------|------|
 | [Quidam Éditeur](https://www.quidamediteur.com/contact) | Metz | 💾 | En premier lieu, merci de nous adresser une courte présentation et un extrait de 30-40 pages, en pdf exclusivement : contact@quidamediteur.com |
 | [Pauvert (Fayard)](mailto:MANUSCRITS-PAUVERT@editions-fayard.fr) | Paris | 💾 | MANUSCRITS-PAUVERT@editions-fayard.fr |
-| [La Contre Allée](https://lacontreallee.com/nous-contacter/) | Lille | 💾 | |
-| [Zulma](https://www.zulma.fr/contact/) | Paris | 💾 | |
+| [La Contre Allée](https://lacontreallee.com/nous-contacter/) | Lille | 💾 | monmanuscritprendlacontreallee@gmail.com |
 | [Alma Éditeur](https://www.alma-editeur.fr/contacts/) | Paris | 💾 | |
 | [Le Cherche Midi](https://www.lisez.com/editeurs/cherche-midi/nous-contacter) | Paris | 💾 | |
 | [La Table Ronde](https://www.editionslatableronde.fr/Contacts) | Paris | 💾 | |
@@ -69,6 +68,7 @@
 
 | Éditeur | Ville | Mode |
 |---------|-------|------|
+| [~~Zulma~~](https://www.zulma.fr/contact/) | Paris | 💾 | manuscrit@zulma.fr |
 | [~~Anacharsis~~](https://www.editions-anacharsis.com/Contacter-Anacharsis) | Toulouse | 💾 | |
 | [~~Cambourakis~~](https://www.cambourakis.com/la-maison/) | Paris | 📚 💾 |
 | [~~Les Impressions Nouvelles~~](https://www.lesimpressionsnouvelles.com) | Bruxelles | 💾 |
