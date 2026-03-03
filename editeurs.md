@@ -62,6 +62,7 @@
 | [XO Éditions](https://manuscrits.xoeditions.com/) | Paris | 💾 |
 | [Michel Lafon](http://www.michel-lafon.fr/editions/contact) | Neuilly | 💾 |
 | [Le Passage](https://www.lepassage-editions.fr/contact/) | Paris | 💾 |
+| [Belfond (Belfond Noir)](https://www.lisez.com/editeurs/belfond/contactez-nous) | Paris | 💾 |
 
 ---
 
@@ -73,7 +74,6 @@
 | [~~Les Impressions Nouvelles~~](https://www.lesimpressionsnouvelles.com) | Bruxelles | 💾 |
 | [~~Le Quartanier~~](https://www.lequartanier.com) | Montréal | 💾 |
 | [~~Zoé~~](https://www.editionszoe.ch) | Genève | 💾 |
-| [~~Belfond (Belfond Noir)~~](https://editions-belfond.comitedelecture.com/manuscrit-iframe) | Paris | 💾 |
 | [~~La Martinière Noir~~](https://www.editionsdelamartiniere.fr/contact/) | Paris | 💾 |
 | [~~Cairn (Du Noir au Sud)~~](https://www.editions-cairn.fr/en/content/8-soumettre-votre-manuscrit) | Pau | 💾 |
 | [~~Mera~~](http://mera-editions.com/contact) | Paris | 💾 |
