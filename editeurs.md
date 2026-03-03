@@ -22,6 +22,7 @@
 | [Fleuve Editions](https://www.manuscrits.fleuve-editions.com/) (anciennement Fleuve Noir)| Paris | 💾 | [2026-03-02](envois/2026-03-02%20-%20Fleuve%20Editions%20_%20Confirmation%20de%20votre%20envoi%20de%20manuscrit.eml) | _ |
 | [Gallimard (Série Noire)](https://www.gallimard.fr/questions-frequentes-et-contact) | Paris | 💾 | [2026-03-02](envois/2026-03-02%20-%20Galllimard%20(Série%20Noire)%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 3 |
 | [Rivages/Noir](https://editions-rivages.fr/contactez-nous#s3) | Paris | 💾 | [2026-03-02](envois/2026-03-02%20-%20Rivages:noir%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | _ |
+| [Stock](https://www.editions-stock.fr/faq/comment-soumettre-un-manuscrit/) | Paris | 💾 | 2026-03-03 envoyé via formualire|
 | [Actes Sud](https://actes-sud.fr/contactez-nous#s2) *(coll. Actes Noirs, Inculte)* | Arles | 📚 | | – |
 | [P.O.L](https://www.pol-editeur.com/contacter-editions-pol.html) | Paris | 📚 | | 3 |
 | [Tristram](https://www.tristram.fr) | Auch | 📚 | | – |
@@ -47,10 +48,9 @@
 | [Quidam Éditeur](https://www.quidamediteur.com/contact) | Metz | 💾 | En premier lieu, merci de nous adresser une courte présentation et un extrait de 30-40 pages, en pdf exclusivement : contact@quidamediteur.com |
 | [Pauvert (Fayard)](mailto:MANUSCRITS-PAUVERT@editions-fayard.fr) | Paris | 💾 | MANUSCRITS-PAUVERT@editions-fayard.fr |
 | [La Contre Allée](https://lacontreallee.com/nous-contacter/) | Lille | 💾 | monmanuscritprendlacontreallee@gmail.com |
-| [Le Cherche Midi](https://www.lisez.com/editeurs/cherche-midi/nous-contacter) | Paris | 💾 | |
-| [La Table Ronde](https://www.editionslatableronde.fr/Contacts) | Paris | 💾 | |
-| [Flammarion](https://editions.flammarion.com/envoyer-un-manuscrit/) | Paris | 💾 | |
-| [Stock](https://www.editions-stock.fr/faq/comment-soumettre-un-manuscrit/) | Paris | 💾 | |
+| [Le Cherche Midi](https://www.lisez.com/editeurs/cherche-midi/nous-contacter) | Paris | 💾 | manuscrits@cherche-midi.com |
+| [La Table Ronde](https://www.editionslatableronde.fr/Contacts) | Paris | 💾 | manuscrits@editionslatableronde.fr - Indiquer vos nom, prénom, adresse e-mail et téléphone au début de votre manuscrit. - Choisir une mise en pages lisible (exemple : police 12, interligne 1,5). |
+| [Flammarion](https://editions.flammarion.com/envoyer-un-manuscrit/) | Paris | 💾 | formulaire |
 | [Sonatine](https://www.sonatine-editions.fr) | Paris | 💾 | |
 | [Calmann-Lévy Noir](https://www.calmann-levy.fr/faq/comment-soumettre-un-manuscrit/) | Paris | 💾 | |
 | [Le Masque (JC Lattès)](https://www.editions-jclattes.fr/deposer-un-manuscrit/) | Paris | 💾 | |
