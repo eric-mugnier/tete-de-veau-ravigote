@@ -1,6 +1,6 @@
 # Éditeurs
 
-**15 envoyés · 12 💾 et 13 📚 restants (25 en tout)**
+**22 envoyés · 5 💾 et 13 📚 restants (18 en tout)**
 
 📚 = envoi papier · 💾 = envoi numérique
 
@@ -23,6 +23,13 @@
 | [Gallimard (Série Noire)](https://www.gallimard.fr/questions-frequentes-et-contact) | Paris | 💾 | [2026-03-02](envois/2026-03-02%20-%20Galllimard%20(Série%20Noire)%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 3 |
 | [Rivages/Noir](https://editions-rivages.fr/contactez-nous#s3) | Paris | 💾 | [2026-03-02](envois/2026-03-02%20-%20Rivages:noir%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | _ |
 | [Stock](https://www.editions-stock.fr/faq/comment-soumettre-un-manuscrit/) | Paris | 💾 | 2026-03-03 envoyé via formualire|
+| [Pauvert (Fayard)](mailto:manuscrits-pauvert@editions-fayard.fr) | Paris | 💾 | [2026-03-03](envois/2026-03-03%20-%20Pauvert%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
+| [La Contre Allée](https://lacontreallee.com/nous-contacter/) | Lille | 💾 | [2026-03-03](envois/2026-03-03%20-%20La%20Contre%20Allée%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
+| [Le Cherche Midi](https://www.lisez.com/editeurs/cherche-midi/nous-contacter) | Paris | 💾 | [2026-03-03](envois/2026-03-03%20-%20Cherche%20Midi%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
+| [Calmann-Lévy Noir](https://www.calmann-levy.fr/faq/comment-soumettre-un-manuscrit/) | Paris | 💾 | [2026-03-03](envois/2026-03-03%20-%20Calmann-Lévy%20Noir%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
+| [Michel Lafon](http://www.michel-lafon.fr/editions/contact) | Neuilly | 💾 | [2026-03-03](envois/2026-03-03%20-%20Michel%20Lafon%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
+| [Le Passage](https://www.lepassage-editions.fr/contact/) | Paris | 💾 | [2026-03-03](envois/2026-03-03%20-%20Le%20Passage%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
+| [Belfond (Belfond Noir)](https://www.lisez.com/editeurs/belfond/contactez-nous) | Paris | 💾 | [2026-03-03](envois/2026-03-03%20-%20Belfond%20Noir%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
 | [Actes Sud](https://actes-sud.fr/contactez-nous#s2) *(coll. Actes Noirs, Inculte)* | Arles | 📚 | | – |
 | [P.O.L](https://www.pol-editeur.com/contacter-editions-pol.html) | Paris | 📚 | | 3 |
 | [Tristram](https://www.tristram.fr) | Auch | 📚 | | – |
@@ -48,17 +55,10 @@
 | Éditeur | Ville | Mode | Mail |
 |---------|-------|------|------|
 | [Quidam Éditeur](https://www.quidamediteur.com/contact) | Metz | 💾 | En premier lieu, merci de nous adresser une courte présentation et un extrait de 30-40 pages, en pdf exclusivement : contact@quidamediteur.com |
-| [Pauvert (Fayard)](mailto:manuscrits-pauvert@editions-fayard.fr) | Paris | 💾 | manuscrits-pauvert@editions-fayard.fr |
-| [La Contre Allée](https://lacontreallee.com/nous-contacter/) | Lille | 💾 | monmanuscritprendlacontreallee@gmail.com |
-| [Le Cherche Midi](https://www.lisez.com/editeurs/cherche-midi/nous-contacter) | Paris | 💾 | manuscrits@cherche-midi.com |
 | [La Table Ronde](https://www.editionslatableronde.fr/Contacts) | Paris | 💾 | manuscrits@editionslatableronde.fr - Indiquer vos nom, prénom, adresse e-mail et téléphone au début de votre manuscrit. - Choisir une mise en pages lisible (exemple : police 12, interligne 1,5). |
 | [Flammarion](https://editions.flammarion.com/envoyer-un-manuscrit/) | Paris | 💾 | Formulaire |
-| [Calmann-Lévy Noir](https://www.calmann-levy.fr/faq/comment-soumettre-un-manuscrit/) | Paris | 💾 | edito-calmann@calmann-levy.fr|
 | [Taurnada Éditions](https://www.taurnada.fr/soumettre-un-manuscrit/) | Paris | 💾 | manuscrit@edtmail.fr |
 | [XO Éditions](https://manuscrits.xoeditions.com/) | Paris | 💾 | Formulaire |
-| [Michel Lafon](http://www.michel-lafon.fr/editions/contact) | Neuilly | 💾 | manuscrits@michel-lafon.com |
-| [Le Passage](https://www.lepassage-editions.fr/contact/) | Paris | 💾 | manuscrits@lepassage-editions.fr |
-| [Belfond (Belfond Noir)](https://www.lisez.com/editeurs/belfond/contactez-nous) | Paris | 💾 | manuscrits@belfondeditions.com |
 
 ---
 
