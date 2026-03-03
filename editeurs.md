@@ -1,6 +1,6 @@
 # Éditeurs
 
-**14 envoyés · 33 restants (dont 12 📚 uniquement)**
+**15 envoyés · 12 💾 et 13 📚 restants (25 en tout)**
 
 📚 = envoi papier · 💾 = envoi numérique
 
@@ -34,6 +34,8 @@
 | [Minuit](https://www.leseditionsdeminuit.fr/unepage-manuscrits-manuscrits-1-1-0-1.html) | Paris | 📚 | | |
 | [Grasset](https://www.grasset.fr/questions-frequentes/comment-soumettre-un-manuscrit/) | Paris | 📚 | | |
 | [Albin Michel](https://www.albin-michel.fr/deposer-un-manuscrit) | Paris | 📚 | | - |
+| [Le Masque (JC Lattès)](https://www.editions-jclattes.fr/deposer-un-manuscrit/) | Paris | 📚 | | - |
+| [Éditions de l'Aube](https://editionsdelaube.fr/auteurs-manuscrits/) | La Tour-d'Aigues | 📚 | | - |
 | Le Terrain Vague - Losfeld | Paris | — | *stand-by* | – |
 
 
@@ -50,15 +52,13 @@
 | [La Contre Allée](https://lacontreallee.com/nous-contacter/) | Lille | 💾 | monmanuscritprendlacontreallee@gmail.com |
 | [Le Cherche Midi](https://www.lisez.com/editeurs/cherche-midi/nous-contacter) | Paris | 💾 | manuscrits@cherche-midi.com |
 | [La Table Ronde](https://www.editionslatableronde.fr/Contacts) | Paris | 💾 | manuscrits@editionslatableronde.fr - Indiquer vos nom, prénom, adresse e-mail et téléphone au début de votre manuscrit. - Choisir une mise en pages lisible (exemple : police 12, interligne 1,5). |
-| [Flammarion](https://editions.flammarion.com/envoyer-un-manuscrit/) | Paris | 💾 | formulaire |
-| [Calmann-Lévy Noir](https://www.calmann-levy.fr/faq/comment-soumettre-un-manuscrit/) | Paris | 💾 | |
-| [Le Masque (JC Lattès)](https://www.editions-jclattes.fr/deposer-un-manuscrit/) | Paris | 💾 | |
-| [Éditions de l'Aube](https://editionsdelaube.fr/auteurs-manuscrits/) | La Tour-d'Aigues | 💾 | |
-| [Taurnada Éditions](https://www.taurnada.fr/soumettre-un-manuscrit/) | Paris | 💾 | |
-| [XO Éditions](https://manuscrits.xoeditions.com/) | Paris | 💾 | |
-| [Michel Lafon](http://www.michel-lafon.fr/editions/contact) | Neuilly | 💾 | |
-| [Le Passage](https://www.lepassage-editions.fr/contact/) | Paris | 💾 | |
-| [Belfond (Belfond Noir)](https://www.lisez.com/editeurs/belfond/contactez-nous) | Paris | 💾 | |
+| [Flammarion](https://editions.flammarion.com/envoyer-un-manuscrit/) | Paris | 💾 | Formulaire |
+| [Calmann-Lévy Noir](https://www.calmann-levy.fr/faq/comment-soumettre-un-manuscrit/) | Paris | 💾 | edito-CALMANN@calmann-levy.fr|
+| [Taurnada Éditions](https://www.taurnada.fr/soumettre-un-manuscrit/) | Paris | 💾 | manuscrit@edtmail.fr |
+| [XO Éditions](https://manuscrits.xoeditions.com/) | Paris | 💾 | Formulaire |
+| [Michel Lafon](http://www.michel-lafon.fr/editions/contact) | Neuilly | 💾 | manuscrits@michel-lafon.com |
+| [Le Passage](https://www.lepassage-editions.fr/contact/) | Paris | 💾 | manuscrits@lepassage-editions.fr |
+| [Belfond (Belfond Noir)](https://www.lisez.com/editeurs/belfond/contactez-nous) | Paris | 💾 | Manuscrits@belfondeditions.com |
 
 ---
 
