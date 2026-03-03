@@ -1,6 +1,6 @@
 # Éditeurs
 
-**22 envoyés · 5 💾 et 13 📚 restants (18 en tout)**
+**27 envoyés · 0 💾 et 13 📚 restants (13 en tout)**
 
 📚 = envoi papier · 💾 = envoi numérique
 
@@ -30,6 +30,11 @@
 | [Michel Lafon](http://www.michel-lafon.fr/editions/contact) | Neuilly | 💾 | [2026-03-03](envois/2026-03-03%20-%20Michel%20Lafon%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
 | [Le Passage](https://www.lepassage-editions.fr/contact/) | Paris | 💾 | [2026-03-03](envois/2026-03-03%20-%20Le%20Passage%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
 | [Belfond (Belfond Noir)](https://www.lisez.com/editeurs/belfond/contactez-nous) | Paris | 💾 | [2026-03-03](envois/2026-03-03%20-%20Belfond%20Noir%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
+| [Quidam Éditeur](https://www.quidamediteur.com/contact) | Metz | 💾 | [2026-03-04](envois/2026-03-04%20-%20Quidam%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier%20envois.eml) | - |
+| [La Table Ronde](https://www.editionslatableronde.fr/Contacts) | Paris | 💾 | [2026-03-04](envois/2026-03-04%20-%20Table%20Ronde%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
+| [Taurnada Éditions](https://www.taurnada.fr/soumettre-un-manuscrit/) | Paris | 💾 | [2026-03-04](envois/2026-03-04%20-%20Taurnada%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
+| [Flammarion](https://editions.flammarion.com/envoyer-un-manuscrit/) | Paris | 💾 | 2026-03-04 | - |
+| [XO Éditions](https://manuscrits.xoeditions.com/) | Paris | 💾 | 2026-03-04 | - |
 | [Actes Sud](https://actes-sud.fr/contactez-nous#s2) *(coll. Actes Noirs, Inculte)* | Arles | 📚 | | – |
 | [P.O.L](https://www.pol-editeur.com/contacter-editions-pol.html) | Paris | 📚 | | 3 |
 | [Tristram](https://www.tristram.fr) | Auch | 📚 | | – |
@@ -47,18 +52,6 @@
 
 
 > ⚠️ Losfeld : maison lancée en janvier 2026, attendre que la structure soit opérationnelle (avril 2026 ?)
-
----
-
-## VAGUE 2
-
-| Éditeur | Ville | Mode | Mail |
-|---------|-------|------|------|
-| [Quidam Éditeur](https://www.quidamediteur.com/contact) | Metz | 💾 | En premier lieu, merci de nous adresser une courte présentation et un extrait de 30-40 pages, en pdf exclusivement : contact@quidamediteur.com |
-| [La Table Ronde](https://www.editionslatableronde.fr/Contacts) | Paris | 💾 | manuscrits@editionslatableronde.fr - Indiquer vos nom, prénom, adresse e-mail et téléphone au début de votre manuscrit. - Choisir une mise en pages lisible (exemple : police 12, interligne 1,5). |
-| [Flammarion](https://editions.flammarion.com/envoyer-un-manuscrit/) | Paris | 💾 | Formulaire |
-| [Taurnada Éditions](https://www.taurnada.fr/soumettre-un-manuscrit/) | Paris | 💾 | manuscrit@edtmail.fr seulement format Word |
-| [XO Éditions](https://manuscrits.xoeditions.com/) | Paris | 💾 | Formulaire |
 
 ---
 

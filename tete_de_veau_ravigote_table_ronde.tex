@@ -1,0 +1,205 @@
+\documentclass[12pt,a4paper,twoside,openright]{memoir}
+
+% ─── PACKAGES ─────────────────────────────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ebgaramond}
+\usepackage[french]{babel}
+\usepackage{microtype}
+\usepackage{fmtcount}
+\usepackage{catchfile}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\input{version.tex}
+\CatchFileDef{\gitcommit}{tete_de_veau_ravigote.gitinfo}{\endlinechar=-1}
+
+% ─── NOTES FINALES ─────────────────────────────────────────────────────────────
+\usepackage{endnotes}
+\ifdefined\AVECNOTES
+  \newcommand{\nf}[1]{\endnote{#1}}
+\else
+  \newcommand{\nf}[1]{}
+\fi
+\renewcommand{\notesname}{}
+\renewcommand{\enotesize}{\small}
+\makeatletter
+\renewcommand\enoteformat{%
+  \rightskip\z@ \leftskip\z@ \parindent=0pt
+  \leavevmode\theenmark.\enspace}
+\makeatother
+\newcommand{\source}[1]{\newline\textit{Source~:} \textup{#1}}
+\newcommand{\nfimg}[2]{\newline\includegraphics[width=#1\linewidth]{#2}}
+\newcommand{\nfimgblock}[4]{%
+  \begin{minipage}[t]{0.45\linewidth}\small#1\end{minipage}%
+  \hfill%
+  \begin{minipage}[t]{#2\linewidth}\includegraphics[width=\linewidth]{#3}\end{minipage}%
+  \source{#4}}
+\newcommand{\chapnoteheader}[1]{{\normalfont\scshape #1}}
+\newcommand{\beginchapternotes}[1]{%
+  \ifdefined\AVECNOTES
+    \setcounter{endnote}{0}%
+    \addtoendnotes{\protect\par\protect\medskip\protect\noindent\protect\chapnoteheader{#1}\protect\par}%
+  \fi
+}
+
+% ─── PAGE GEOMETRY (A4) ───────────────────────────────────────────────────────
+\setstocksize{297mm}{210mm}
+\settrimmedsize{297mm}{210mm}{*}
+\settrims{0mm}{0mm}
+\setlrmarginsandblock{30mm}{25mm}{*}
+\setulmarginsandblock{30mm}{30mm}{*}
+\setheadfoot{12mm}{15mm}
+\setheaderspaces{*}{8mm}{*}
+\checkandfixthelayout
+
+% ─── TYPOGRAPHY ───────────────────────────────────────────────────────────────
+\raggedbottom
+\renewcommand{\baselinestretch}{1.5}
+\setlength{\parindent}{4mm}
+\setlength{\parskip}{0pt}
+\setlength{\afterchapskip}{0.4\onelineskip}
+
+% ─── HEADLINES DE CHAPITRES ───────────────────────────────────────────────────
+\newcommand{\chaptersummary}[1]{%
+  \edef\chapnum{\ifcase\value{chapter}\or I\or II\or III\or IV\or V\or VI\or VII\or VIII\or IX\fi}%
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}%
+  \addcontentsline{toc}{chapter}{\protect\tocchapnum{\chapnum}#1}%
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}%
+}
+\newcommand{\partsummary}[1]{%
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{1}}%
+  \addcontentsline{toc}{section}{\protect\tocchapsep#1}%
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}%
+}
+
+% ─── TABLE DES MATIÈRES ───────────────────────────────────────────────────────
+\setcounter{tocdepth}{-1}
+\AtBeginDocument{\addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}}
+\addto\captionsfrench{\renewcommand{\contentsname}{Sommaire}}
+\renewcommand{\printtoctitle}[1]{%
+  \null\vskip 2\onelineskip%
+  {\centering\normalfont\scshape\large #1\par}%
+}
+\renewcommand{\aftertoctitle}{\vskip 2\onelineskip}
+\newcommand{\tocchapnum}[1]{\hbox to 2.5em{#1\hfil}}
+\newcommand{\tocchapsep}{\hbox to 2.5em{\hfil}}
+\renewcommand{\cftchapterfont}{\small\scshape}
+\renewcommand{\cftchapterpagefont}{\small\scshape}
+\setlength{\cftchapterindent}{0pt}
+\setlength{\cftchapternumwidth}{2.5em}
+\setlength{\cftbeforechapterskip}{0.5\onelineskip}
+\renewcommand{\cftsectionfont}{\small\scshape}
+\renewcommand{\cftsectionpagefont}{\small\scshape}
+\setlength{\cftsectionindent}{0pt}
+\setlength{\cftsectionnumwidth}{2.5em}
+\setlength{\cftbeforesectionskip}{0.2\onelineskip}
+
+% ─── CHAPTER STYLE ────────────────────────────────────────────────────────────
+\makeatletter
+\makechapterstyle{gallimard}{%
+  \renewcommand{\chapnamefont}{\normalfont\scshape\centering}
+  \renewcommand{\chapnumfont}{\normalfont\scshape\centering}
+  \renewcommand{\chaptitlefont}{\normalfont\scshape\centering}
+  \renewcommand{\printchaptername}{}
+  \renewcommand{\chapternamenum}{}
+  \renewcommand{\printchapternum}{%
+    \chapnumfont\Roman{chapter}}
+  \renewcommand{\afterchapternum}{\par\vskip 0.4\onelineskip}
+  \renewcommand{\printchaptertitle}[1]{}
+}
+\makeatother
+\chapterstyle{gallimard}
+
+% ─── RUNNING HEADERS ──────────────────────────────────────────────────────────
+\makepagestyle{gallimard}
+\makeevenhead{gallimard}{}{}{}
+\makeoddhead{gallimard}{}{}{}
+\makeevenfoot{gallimard}{}{\thepage}{}
+\makeoddfoot{gallimard}{}{\thepage}{}
+\makepsmarks{gallimard}{%
+  \nouppercaseheads
+  \createmark{chapter}{both}{nonumber}{}{}
+}
+\pagestyle{gallimard}
+\aliaspagestyle{chapter}{empty}
+\makeatletter
+\renewcommand{\cleardoublepage}{%
+  \clearpage
+  \if@twoside
+    \ifodd\c@page\else
+      \hbox{}\thispagestyle{empty}\newpage
+    \fi
+  \fi
+}
+\makeatother
+
+% ─── DOCUMENT ─────────────────────────────────────────────────────────────────
+\begin{document}
+\pagestyle{empty}
+
+% ═══ INFOS AUTEUR (p. 1) ══════════════════════════════════════════════════════
+\noindent
+Éric Mugnier\\
+33-11 rue Bouchardon\\
+52000 Chaumont\\
+ericmugnier730@gmail.com\\
+06~82~03~69~48
+
+\cleardoublepage
+
+% ═══ PAGE DE TITRE ════════════════════════════════════════════════════════════
+\begin{center}
+\vspace*{6\onelineskip}
+{\scshape\large éric mugnier}
+
+\vspace{8\onelineskip}
+{\scshape\huge tête de veau ravigote}
+
+\vspace{12\onelineskip}
+{\itshape roman}
+\end{center}
+% ═══ PAGE DE COPYRIGHT ════════════════════════════════════════════════════════
+\newpage
+\thispagestyle{empty}
+\vspace*{\fill}
+{\footnotesize\noindent
+\textcopyright{} Éric Mugnier, 2026\\
+Tous droits réservés pour tous pays\\
+Reproduction interdite
+}
+\cleardoublepage
+
+% ═══ DÉDICACE ═════════════════════════════════════════════════════════════════
+\vspace*{10\onelineskip}
+\begin{flushright}
+\itshape\small
+\end{flushright}
+\cleardoublepage
+
+% ═══ MAIN TEXT ════════════════════════════════════════════════════════════════
+\pagestyle{gallimard}
+
+{\makeatletter\def\contentsline#1#2#3#4{}\@starttoc{toc}\makeatother}
+
+\input{tete_de_veau_ravigote_content.tex}
+
+% ═══ NOTES FINALES ════════════════════════════════════════════════════════════
+\ifdefined\AVECNOTES
+  \ifdefined\SANSNOTESFINALES\else
+    \cleardoublepage
+    \thispagestyle{empty}
+    \vspace*{10\onelineskip}
+    {\centering\normalfont\scshape\large Notes\par}
+    \newpage
+    \hbox{}\thispagestyle{empty}
+    \newpage
+    \pagestyle{gallimard}
+    \theendnotes
+  \fi
+\fi
+
+% ═══ COLOPHON FINAL ══════════════════════════════════════════════════════════
+\input{colophon}
+
+\end{document}
