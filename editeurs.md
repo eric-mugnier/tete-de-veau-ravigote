@@ -50,7 +50,7 @@
 | [La Contre Allée](https://lacontreallee.com/nous-contacter/) | Lille | 💾 |
 | [Zulma](https://www.zulma.fr/contact/) | Paris | 💾 |
 | [Alma Éditeur](https://www.alma-editeur.fr/contacts/) | Paris | 💾 |
-| [Le Cherche Midi](https://www.cherche-midi.com) | Paris | — |
+| [Le Cherche Midi](https://www.lisez.com/editeurs/cherche-midi/nous-contacter) | Paris | 💾 |
 | [La Table Ronde](https://www.editionslatableronde.fr/Contacts) | Paris | 💾 |
 | [Flammarion](https://editions.flammarion.com/envoyer-un-manuscrit/) | Paris | 💾 |
 | [Stock](https://www.editions-stock.fr/faq/comment-soumettre-un-manuscrit/) | Paris | 💾 |
