@@ -1,0 +1,205 @@
+Delivered-To: christophe.t60@gmail.com
+Received: by 2002:a05:7011:8a10:b0:508:1a8c:5d99 with SMTP id np16csp2588719mdc;
+        Tue, 3 Mar 2026 03:36:07 -0800 (PST)
+X-Received: by 2002:a05:7300:5b89:b0:2be:ca4:e136 with SMTP id 5a478bee46e88-2be0ca4f0c9mr1601611eec.2.1772537767203;
+        Tue, 03 Mar 2026 03:36:07 -0800 (PST)
+ARC-Seal: i=2; a=rsa-sha256; t=1772537767; cv=pass;
+        d=google.com; s=arc-20240605;
+        b=RK+e+6eJVW1hDqqDjCd/n8kDN88X6PDb69jC/l7dhHwe90cmOwXX7uSD0jGhQ/CQcJ
+         dQAemnPywayP0e0/6U7gc60ywf+UO3LUKHHg/w8a5Y7y5NnM6L7FRsi7vLqEx8Hemh/Z
+         5LDCRYFls9eqqr51h0olY9XkuN2zHjAcVb9Lb114K0o7KMYc7tz9hCmnq5V0CVWqtYbh
+         vtXyX4rqo9Y5jngbYRkMtD3MC1OsrOpNeVKh4fHQCwP1mRhUe8H2t10JXAZ1woBPI+ub
+         IUiCqSmnzadNcVPwSMBiOidDQu/CMu/p+w0NgG+B1oh1dixSmT4OcBJwHY9yEpCCG2XY
+         qWLQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=CvFBr/zCCojxYu0mT7ac8uGWEuZgce6DjS2f+GPHHlE=;
+        fh=P2cSt1SEVZDqPtnNtYM+uqV2NxJfj+snmydIwG0kN/k=;
+        b=DqqYuVeoskB+5cRhqnOkBqRcSxpH8alRiWEe5Lqbaz3WS0KCJsa0vSBnIapFyeRn/c
+         FRbwz3GVdOFlHVas+xFVZcC91ee3ocDMB5QaXJpYlbeAPyybM4gX4IoJAiTV4EkzUSm7
+         mOk0sf9V7WQFG+UL3bgRly9n8qgdzepXCf/7yb3wkM70q0SC2G6UFGl5K+Ectd7naBrJ
+         AQpVg64m+5bNkanBUZhxqE/dttvwjEzupo0WOykfYjuzhvNrAty/9il/5sJW/Wx7SRni
+         5Jt90LzjGvCLijZ+T3muzFuSkML58gDhYs2PoV5auxhlC47yBodbF7+O0qnDECGzR/YO
+         084g==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=H8adc3pf;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of ericmugnier730@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=ericmugnier730@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <ericmugnier730@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 5a478bee46e88-2be05a5bba3sor1953342eec.19.2026.03.03.03.36.06
+        for <christophe.t60@gmail.com>
+        (Google Transport Security);
+        Tue, 03 Mar 2026 03:36:07 -0800 (PST)
+Received-SPF: pass (google.com: domain of ericmugnier730@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=H8adc3pf;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of ericmugnier730@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=ericmugnier730@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+ARC-Seal: i=1; a=rsa-sha256; t=1772537766; cv=none;
+        d=google.com; s=arc-20240605;
+        b=k3FdFPwBvcr7Vyg+NPxBQsR+cL6JG876HYg/r60oMd7YSazqcIRxvYZgynpLA+bnVb
+         3dhgfP5OgdLt9kLnnR0KN4b0H0Uv+LUo2w/C7AXVX0bq1R7Iwmgf28CwPasW20zPlyxQ
+         Xd0sTTQIvXZMVa9h9ZfNSia9BgDqWw5lN4d1+DDZsyMLOF0bEpdFHVR0Qjlo5reR64Ed
+         GqagsKWF7XpIL6EV9G1FRW3nz/uE8GpS9TaQGOkTU1c/xOwZ9pSczhlVkDDga1iWFohJ
+         eyWWG+T19eliFV8tXShVkpq9nK9zkN+4xMG3/K5xtRnRAp8Iu23HSTY5sWDpKLFT3Oan
+         ao/A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=CvFBr/zCCojxYu0mT7ac8uGWEuZgce6DjS2f+GPHHlE=;
+        fh=P2cSt1SEVZDqPtnNtYM+uqV2NxJfj+snmydIwG0kN/k=;
+        b=BZ4q5T93tS7sqFslXo/AQVvThDl7En07Z8338sKj8BWThLymdr8OJUp+ld7aJqAYx+
+         whgXSYyFx2GZ1EBHNOg0hgtwc3w7mRXys2R952F92VaVMrRkyhbhTvzsbrrHhuQlaoF0
+         j1BNJUW6O1xKMAseDR08YRMCwQbCzWKS6xlRQf930M/WzH6tO1ISE9yb6uy2Zjj7HGXE
+         iUtu9/vwTngqsR4ubIpNSKBUkRpasST4hBm6Cw18eX8RrJ4bQ4yZbi8Ydm21i8+bj4gw
+         paQffFoBBbb5PcjhEI0N+XwtPiMftBU1u8jBYgClaIM5RN8fG3Y74lZhir2wfHbSi+tR
+         Gxvg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1772537766; x=1773142566; dara=google.com;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=CvFBr/zCCojxYu0mT7ac8uGWEuZgce6DjS2f+GPHHlE=;
+        b=H8adc3pfXuxqBIy/mq6V8OqXOQwr5F3T3kNlSeGCO3/mOZqXsSRThay77amvFUogMF
+         URmDz3rsGHwlIeiM4dYM1X6368jmGW0+5tX4g+JKsAJ0cMM4XyUhoTV/qxevfgS8GX6/
+         lHRf+W+865Cz0lNpbMVoX0a1UDxf9YTd5PhoydY/SxJnalD8ybOlQS2ikz+Ra1mtSllV
+         Ikee2/unj+imcKGdKK8UqUrSdMA6FyqhMziR4/rXDsOUMTbMpOC7ErOGfe09Ic6XrKht
+         L3RhZ0BlL03ZsFZooz+JyJ17dDNQqbvuOQThhcE2mt8AfG4x3kisqqghpTgm1o+vWnDJ
+         98qA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1772537766; x=1773142566;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-gg:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=CvFBr/zCCojxYu0mT7ac8uGWEuZgce6DjS2f+GPHHlE=;
+        b=OeNfdET1LdXhY2HlDCb/hoN77eXWUphZp1wpohFC1p+ddEzNgiXMdkSmb0Umg+uI1R
+         KVwkcaAjKAjJWmHK1xMnghxgvWk282auhSM8FSUFcW//OO1qK5Zrw6d4LCzm8Jwh92pX
+         A2LB/maKjhuxz1HzXjD0pgEEeD4oxtJ5tQuc7k1Jj+3RL2kHxkDb+/1Ve6b92m6XgaXY
+         kYsumI53in/vpx/I1bQ46VOmXGUVvPpiecRO/6MrhzXh7ED8tGBMYqPS3EuTO+t/yV1e
+         xkCgARSZCGV7nfFgAtyxfiMzrZlL6YIesw4QyMbx8JDC2w5I7SRFoCZ25hqW/6dPtork
+         IXVQ==
+X-Gm-Message-State: AOJu0Yy3llcWTTVNUva8N8qEqGQE99j7zMFzq7qWz4tepL+yzyJMQoTd
+	O0L+yTuCHJfmqkWRabP89aKewO7eGeX1mcLMLzkXnglWBmgXx9dbrVCd9ddTo+nsaSrOEoNaJt+
+	w0FRuLsB/gJzGFAYwxyg1WIU1mWK4heA8eQ==
+X-Gm-Gg: ATEYQzxox7cdCi8Z1JRJ1atN1h98jrSQuOEz0gSVj7dEHFSx7CFbZVAX3VmE2P9KlK2
+	tuOnD0tlJz8p27ar/UTsbUHlD0fygNgATx0CrD+KFYt8AiwlFsQIDXj0BpMQ7SZ8t+jmRY9v7Vz
+	H2rdWZVdj56R6kggrjMcqRNKQfEOm3Pf4TCkrEWd/8mqLgjaHMV7JK2/r4hzws3i0r4IugGJeuL
+	Ff7mc94Bkwxk7gcT9vq96TTUyHkdvWHmS6vY12jqevLC83+MSHEEJg3S2bVCBsEIG/JJdJC0CJP
+	2DmZd4k3T1WWYJOMUTDRLpCh7dJ4lf3hWu3RruA=
+X-Received: by 2002:a05:7301:408d:b0:2be:2798:177f with SMTP id
+ 5a478bee46e88-2be279828edmr301146eec.20.1772537766462; Tue, 03 Mar 2026
+ 03:36:06 -0800 (PST)
+MIME-Version: 1.0
+References: <f4a1daed.AW0AAJHoJ5sAAAAAAAAAA_Y0kPUAAAAANvAAAAAAABxKLQBppbx3@mailjet.com>
+In-Reply-To: <f4a1daed.AW0AAJHoJ5sAAAAAAAAAA_Y0kPUAAAAANvAAAAAAABxKLQBppbx3@mailjet.com>
+From: =?UTF-8?Q?=C3=89ric_Mugnier?= <ericmugnier730@gmail.com>
+Date: Tue, 3 Mar 2026 12:35:56 +0100
+X-Gm-Features: AaiRm51wjcshmlTtuOTMfeBFN5r-YdZMh5SUo_MUWGz71YcjS89C6G5UKqd-0KI
+Message-ID: <CAEvo8+GMFXc0SAueoYr4wvEDVMQjn6q-UnPXrCQciCmmitt8mA@mail.gmail.com>
+Subject: Fwd: Fleuve Editions : Confirmation de votre envoi de manuscrit
+To: =?UTF-8?Q?Christophe_Thi=C3=A9baud?= <christophe.t60@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000ebc9d0064c1d1bdd"
+
+--000000000000ebc9d0064c1d1bdd
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+---------- Forwarded message ---------
+De : Fleuve Editions <manuscrits@manuscrits.fleuve-editions.fr>
+Date: lun. 2 mars 2026 =C3=A0 17:36
+Subject: Fleuve Editions : Confirmation de votre envoi de manuscrit
+To: <ericmugnier730@gmail.com>
+
+
+Cher monsieur,
+
+Nous vous remercions de nous avoir soumis votre manuscrit *T=C3=AAte de vea=
+u
+ravigote*.
+Il sera examin=C3=A9 avec attention par nos =C3=A9quipes et nous ne manquer=
+ons pas de
+vous contacter par courriel pour vous informer de la suite donn=C3=A9e =C3=
+=A0 votre
+projet.
+
+Bien cordialement,
+
+*Merci de ne pas r=C3=A9pondre =C3=A0 cet email.*
+
+L'=C3=A9quipe =C3=A9ditoriale de Fleuve Editions
+
+[image: logo]
+<https://0ph98.mjt.lu/lnk/AW0AAJHoJ5sAAAAAAAAAA_Y0kPUAAAAANvAAAAAAABxKLQBpp=
+bx32ASxQ596QHiboA-EYOKd7AARv1g/1/ymmCuJsPY30iRoZKsM4fqQ/aHR0cDovL21hbnVzY3J=
+pdHMuZmxldXZlLWVkaXRpb25zLmZy>
+manuscrits.fleuve-editions.fr
+<https://0ph98.mjt.lu/lnk/AW0AAJHoJ5sAAAAAAAAAA_Y0kPUAAAAANvAAAAAAABxKLQBpp=
+bx32ASxQ596QHiboA-EYOKd7AARv1g/2/b3-41dBiCrM9HKe4nC4u1Q/aHR0cDovL21hbnVzY3J=
+pdHMuZmxldXZlLWVkaXRpb25zLmZy>
+
+<https://0ph98.mjt.lu/lnk/AW0AAJHoJ5sAAAAAAAAAA_Y0kPUAAAAANvAAAAAAABxKLQBpp=
+bx32ASxQ596QHiboA-EYOKd7AARv1g/0/iM9Xc4uCoYg-gNaq37tOCw/aHR0cDovL21hbnVzY3J=
+pdHMuZmxldXZlLWVkaXRpb25zLmZy?b=3D1>
+<https://0ph98.mjt.lu/lnk/AW0AAJHoJ5sAAAAAAAAAA_Y0kPUAAAAANvAAAAAAABxKLQBpp=
+bx32ASxQ596QHiboA-EYOKd7AARv1g/0/iM9Xc4uCoYg-gNaq37tOCw/aHR0cDovL21hbnVzY3J=
+pdHMuZmxldXZlLWVkaXRpb25zLmZy?b=3D3>
+
+--000000000000ebc9d0064c1d1bdd
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><br><br><div class=3D"gmail_quote gmail_quote_container"><=
+div dir=3D"ltr" class=3D"gmail_attr">---------- Forwarded message ---------=
+<br>De=C2=A0: <strong class=3D"gmail_sendername" dir=3D"auto">Fleuve Editio=
+ns</strong> <span dir=3D"auto">&lt;<a href=3D"mailto:manuscrits@manuscrits.=
+fleuve-editions.fr">manuscrits@manuscrits.fleuve-editions.fr</a>&gt;</span>=
+<br>Date: lun. 2 mars 2026 =C3=A0=C2=A017:36<br>Subject: Fleuve Editions : =
+Confirmation de votre envoi de manuscrit<br>To:  &lt;<a href=3D"mailto:eric=
+mugnier730@gmail.com">ericmugnier730@gmail.com</a>&gt;<br></div><br><br><u>=
+</u>
+
+=09
+=09
+	<div>
+		<div>
+			<p>Cher monsieur,</p>
+			<p>Nous vous remercions de nous avoir soumis votre manuscrit <em>T=C3=AA=
+te de veau ravigote</em>.<br>Il sera examin=C3=A9 avec attention par nos =
+=C3=A9quipes et nous ne manquerons pas de vous contacter par courriel pour =
+vous informer de la suite donn=C3=A9e =C3=A0 votre projet.</p><p>Bien cordi=
+alement,</p><p><em>Merci de ne pas r=C3=A9pondre =C3=A0 cet email.</em></p>
+			<p>L&#39;=C3=A9quipe =C3=A9ditoriale de Fleuve Editions</p><p><a href=3D=
+"https://0ph98.mjt.lu/lnk/AW0AAJHoJ5sAAAAAAAAAA_Y0kPUAAAAANvAAAAAAABxKLQBpp=
+bx32ASxQ596QHiboA-EYOKd7AARv1g/1/ymmCuJsPY30iRoZKsM4fqQ/aHR0cDovL21hbnVzY3J=
+pdHMuZmxldXZlLWVkaXRpb25zLmZy" target=3D"_blank"> <img style=3D"border:none=
+;outline:none;text-decoration:none" src=3D"https://www.manuscrits.fleuve-ed=
+itions.com/files/logos/3-logo.png" alt=3D"logo" width=3D"180" border=3D"0">=
+ </a> <br><a href=3D"https://0ph98.mjt.lu/lnk/AW0AAJHoJ5sAAAAAAAAAA_Y0kPUAA=
+AAANvAAAAAAABxKLQBppbx32ASxQ596QHiboA-EYOKd7AARv1g/2/b3-41dBiCrM9HKe4nC4u1Q=
+/aHR0cDovL21hbnVzY3JpdHMuZmxldXZlLWVkaXRpb25zLmZy" target=3D"_blank">manusc=
+rits.fleuve-editions.fr</a></p>
+		</div>
+	<br><a style=3D"font-family:Arial,sans-serif" href=3D"https://0ph98.mjt.lu=
+/lnk/AW0AAJHoJ5sAAAAAAAAAA_Y0kPUAAAAANvAAAAAAABxKLQBppbx32ASxQ596QHiboA-EYO=
+Kd7AARv1g/0/iM9Xc4uCoYg-gNaq37tOCw/aHR0cDovL21hbnVzY3JpdHMuZmxldXZlLWVkaXRp=
+b25zLmZy?b=3D1" target=3D"_blank"></a><a style=3D"text-decoration:none;disp=
+lay:inline-block" href=3D"https://0ph98.mjt.lu/lnk/AW0AAJHoJ5sAAAAAAAAAA_Y0=
+kPUAAAAANvAAAAAAABxKLQBppbx32ASxQ596QHiboA-EYOKd7AARv1g/0/iM9Xc4uCoYg-gNaq3=
+7tOCw/aHR0cDovL21hbnVzY3JpdHMuZmxldXZlLWVkaXRpb25zLmZy?b=3D3" target=3D"_bl=
+ank">
+<img src=3D"https://0ph98.mjt.lu/oo/AW0AAJHoJ5sAAAAAAAAAA_Y0kPUAAAAANvAAAAA=
+AABxKLQBppbx32ASxQ596QHiboA-EYOKd7AARv1g/44aa7b48/e.gif" height=3D"1" width=
+=3D"1" alt=3D"" border=3D"0" style=3D"height:1px;width:1px;border:0">
+</a></div>
+
+</div></div>
+
+--000000000000ebc9d0064c1d1bdd--
