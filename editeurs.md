@@ -54,27 +54,26 @@
 | Albin Michel | Paris | https://www.albin-michel.fr | https://www.albin-michel.fr/deposer-un-manuscrit | 📚 | 4 | 2 | | |
 | Flammarion | Paris | https://editions.flammarion.com | https://editions.flammarion.com/envoyer-un-manuscrit/ | 💾 | 4 | 2 | | |
 | Stock | Paris | https://www.editions-stock.fr | https://www.editions-stock.fr/faq/comment-soumettre-un-manuscrit/ | 💾 | 4 | 2 | | |
-| Cambourakis | Paris | https://www.cambourakis.com | https://www.cambourakis.com/la-maison/ | 📚 💾 | 2 | 3 | | |
-| Les Impressions Nouvelles | Bruxelles | https://www.lesimpressionsnouvelles.com | — | 💾 | 2 | 4 | | |
-| Le Quartanier | Montréal | https://www.lequartanier.com | — | 💾 | 1 | 4 | | |
-| Zoé | Genève | https://www.editionszoe.ch | — | 💾 | 2 | 3 | | |
 | Sonatine | Paris | https://www.sonatine-editions.fr | — | 💾 | | | | |
-| Belfond (Belfond Noir) | Paris | https://www.lisez.com/belfond | https://editions-belfond.comitedelecture.com/manuscrit-iframe | 💾 | | | | |
-| La Martinière Noir | Paris | https://www.editionsdelamartiniere.fr | https://www.editionsdelamartiniere.fr/contact/ | 💾 | | | | |
 | Calmann-Lévy Noir | Paris | https://www.calmann-levy.fr | https://www.calmann-levy.fr/faq/comment-soumettre-un-manuscrit/ | 💾 | | | | |
 | Le Masque (JC Lattès) | Paris | https://www.lemasque.com | https://www.editions-jclattes.fr/deposer-un-manuscrit/ | 💾 | | | | |
-| Verso (Seuil) | Paris | https://www.seuil.com | https://www.seuil.com/contacts | 💾 | | | | |
 | Éditions de l'Aube | La Tour-d'Aigues | https://www.editionsdelaube.fr | https://editionsdelaube.fr/auteurs-manuscrits/ | 💾 | | | | |
-| Cairn (Du Noir au Sud) | Pau | https://www.editions-cairn.fr | https://www.editions-cairn.fr/en/content/8-soumettre-votre-manuscrit | 💾 | | | | |
 | Taurnada Éditions | Paris | https://www.taurnada.fr | https://www.taurnada.fr/soumettre-un-manuscrit/ | 💾 | | | | |
-| Mera | Paris | https://mera-editions.com/ | http://mera-editions.com/contact | 💾 | | | | |
-| Chambre Noire | Switzerland | https://www.chambrenoire.net/ | — | 💾 | | | | |
-| Éditions du Palémon | Quimper | https://palemon.fr | https://palemon.fr/pages/contact | 📚 | | | | |
-| Éditions du Gros Caillou | Paris | https://www.editionsdugroscaillou.fr | https://www.editionsdugroscaillou.fr/store/page/125/soumettre-un-manuscrit | 💾 | | | | |
 | XO Éditions | Paris | https://www.xoeditions.com | https://manuscrits.xoeditions.com/ | 💾 | | | | |
-| Presses de la Cité (Sang Neuf) | Paris | https://www.pressesdelacite.com | https://pressesdelacite.comitedelecture.com/manuscrit-iframe | 📚 | | | | |
 | Michel Lafon | Neuilly | http://www.michel-lafon.fr/ | http://www.michel-lafon.fr/editions/contact | 💾 | | | | |
 | Le Passage | Paris | https://www.lepassage-editions.fr/ | https://www.lepassage-editions.fr/contact/ | 💾 | | | | |
+| ~~Cambourakis~~ | Paris | https://www.cambourakis.com | https://www.cambourakis.com/la-maison/ | 📚 💾 | 2 | 3 | | |
+| ~~Les Impressions Nouvelles~~ | Bruxelles | https://www.lesimpressionsnouvelles.com | — | 💾 | 2 | 4 | | |
+| ~~Le Quartanier~~ | Montréal | https://www.lequartanier.com | — | 💾 | 1 | 4 | | |
+| ~~Zoé~~ | Genève | https://www.editionszoe.ch | — | 💾 | 2 | 3 | | |
+| ~~Belfond (Belfond Noir)~~ | Paris | https://www.lisez.com/belfond | https://editions-belfond.comitedelecture.com/manuscrit-iframe | 💾 | | | | |
+| ~~La Martinière Noir~~ | Paris | https://www.editionsdelamartiniere.fr | https://www.editionsdelamartiniere.fr/contact/ | 💾 | | | | |
+| ~~Cairn (Du Noir au Sud)~~ | Pau | https://www.editions-cairn.fr | https://www.editions-cairn.fr/en/content/8-soumettre-votre-manuscrit | 💾 | | | | |
+| ~~Mera~~ | Paris | https://mera-editions.com/ | http://mera-editions.com/contact | 💾 | | | | |
+| ~~Chambre Noire~~ | Switzerland | https://www.chambrenoire.net/ | — | 💾 | | | | |
+| ~~Éditions du Palémon~~ | Quimper | https://palemon.fr | https://palemon.fr/pages/contact | 📚 | | | | |
+| ~~Éditions du Gros Caillou~~ | Paris | https://www.editionsdugroscaillou.fr | https://www.editionsdugroscaillou.fr/store/page/125/soumettre-un-manuscrit | 💾 | | | | |
+| ~~Presses de la Cité (Sang Neuf)~~ | Paris | https://www.pressesdelacite.com | https://pressesdelacite.comitedelecture.com/manuscrit-iframe | 📚 | | | | |
 
 ---
 
