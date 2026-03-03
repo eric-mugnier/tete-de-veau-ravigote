@@ -1,4 +1,4 @@
-Au comité de lecture de Pauvert,
+Au comité de lecture des Éditions Pauvert,
 
 Je viens vous proposer le manuscrit du premier roman de mon ami cher Éric Mugnier, *Tête de veau ravigote*, dont voici le pitch :
 

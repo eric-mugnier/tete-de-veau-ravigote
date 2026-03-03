@@ -1,4 +1,4 @@
-Au comité de lecture de Michel Lafon,
+Au comité de lecture des des Éditions Michel Lafon,
 
 Je viens vous proposer le manuscrit du premier roman de mon ami cher Éric Mugnier, *Tête de veau ravigote*, dont voici le pitch :
 
