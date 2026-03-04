@@ -48,7 +48,7 @@
 | [Albin Michel](https://www.albin-michel.fr/deposer-un-manuscrit) | Paris | 📚 | | - |
 | [Le Masque (JC Lattès)](https://www.editions-jclattes.fr/deposer-un-manuscrit/) | Paris | 📚 | | - |
 | [Éditions de l'Aube](https://editionsdelaube.fr/auteurs-manuscrits/) | La Tour-d'Aigues | 📚 | | - |
-| Le Terrain Vague - Losfeld | Paris | — | *stand-by* | – |
+| [Joëlle Losfeld](mailto:info@joellelosfeld.fr) | Paris | 💾 |  | – |
 
 
 > ⚠️ Losfeld : maison lancée en janvier 2026, attendre que la structure soit opérationnelle (avril 2026 ?)

@@ -1,4 +1,4 @@
-Chère Joëlle Losfeld,
+Mme Joëlle Losfeld,
 
 Je viens vous proposer le manuscrit du premier roman de mon ami cher Éric Mugnier, *Tête de veau ravigote*, dont voici le pitch :
 
@@ -18,7 +18,7 @@ L'**Horreur** (prononcé à la Marlon Brando dans Apocalypse Now) se détache au
 
 Toute forme de morale est étrangère aux protagonistes — au héros-narrateur en premier. Entre grotesque et tragique, les digressions dessinent par intermittence l'image d'une humanité sans Dieu, désespérée. Le ton n'est jamais didactique, jamais emphatique, toujours factuel, genre « Alain Decaux raconte ». Narrer L'Horreur sur ce ton d'entomologiste provoque spontanément une sensation d'ironie dans l'esprit du lecteur, un mécanisme inné de défense de son intégrité mentale. Bien plus efficace qu'un bouquin qui dirait benoîtement : « Regardez ça, c'est mal ! Ouh comme c'est vilain ! ». Un bruit de fond, un acouphène, un filtre optique polarisé, un voile de gaze sur la peau. La tentaculaire progression de la Camorra dans le Naples de l'Amica Geniale d'Elena Ferrante, jamais explicite, trop prégnante.
 
-Votre réputation de découvreuse d'œuvres singulières, et l'audace qui caractérise votre regard éditorial depuis des décennies, nous ont naturellement portés vers votre nouvelle maison. *Tête de veau ravigote* — par ses excès, son irrévérence, sa noirceur revendiquée — nous semble appartenir à la famille des textes que vous avez toujours su reconnaître et défendre.
+J'ai cru comprendre que vous êtes en train de (re)créer les éditions *Le Terrain Vague-Losfeld*. Je suppose que l'adresse à laquelle je vous écris est toujours valable. Pour être franc, je ne suis pas certain que ce texte corresponde à ce que vous souhaitez publier. J'espère néanmoins que votre intérêt revendiqué pour *les regards singuliers* vous amènera à jeter un œil bienveillant sur ce texte d'Éric Mugnier, *inquiétant et étrange*, potache, provocateur, polymathe, arc-bouté sur notre époque absurde et violente.
 
 Je suis la tête de gondole d'un groupe d'amis de Éric Mugnier, convaincus du potentiel de ses écrits. Nous sommes convenus de l'aider en toute amitié et absolu désintéressement dans les démarches fastidieuses inhérentes à la recherche d'un éditeur. Éditeur qui saura, au travers des défauts du texte, déceler ce potentiel, partager notre conviction et entreprendre avec Éric Mugnier le travail éditorial qui lui fera trouver son public.
 
@@ -26,7 +26,8 @@ Respectueusement,
 Christophe Thiebaud
 
 Pièces jointes :
-- `tete_de_veau_ravigote.pdf`
+- `tete_de_veau_ravigote_annote.pdf` — Le roman
+- `tete_de_veau_ravigote_notes.pdf` — Les notes jointes ont été établies par le signataire de cette lettre, à l'insu de l'auteur et à titre d'exemple, pour donner à voir le caractère érudit, encyclopédique, en un mot : intéressant, des digressions.
 
 | Biographie |
 |------|
