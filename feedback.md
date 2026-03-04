@@ -15,7 +15,7 @@ Mais je me suis vite demandé ce qu'on pourrait faire pour augmenter les chances
 
 Et donc, quels changements tu pourrais apporter au texte dans ce but.
 
-Et c'est en fait le travail de l'éditeur (l'éditeur aide l'auteur à trouver un public, moi je t'aiderais à trouver un éditeur), sauf que l'éditeur a une légitimité incontestable grâce à son expérience, alors que moi, rien du tout, jamais fait l'éditeur, jamais fait l'agent d'auteur.
+Et c'est en fait le travail de l'éditeur (l'éditeur aide l'auteur à trouver un public, moi je t'aiderais à trouver un éditeur), sauf que l'éditeur a une légitimité incontestable du fait de son expérience, alors que moi, rien du tout, jamais fait l'éditeur, jamais fait l'agent d'auteur.
 
 Donc, si je te demande des modifs (diminuer la taille du livre, enlever ceci, ajouter cela, ou pire encore, réécrire pour diminuer les trucs que pointe Jacques), tu as toute latitude de les refuser en vertu de mon incompétence.
 
