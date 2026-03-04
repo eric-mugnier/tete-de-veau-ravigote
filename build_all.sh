@@ -15,6 +15,11 @@ done
 echo "=== git hash ==="
 git log -1 --format=%h > tete_de_veau_ravigote.gitinfo
 
+echo "=== svg → pdf ==="
+for svg in images/*.svg; do
+  rsvg-convert -f pdf -o "${svg}.pdf" "$svg"
+done
+
 echo "=== 1/4  main PDF ==="
 latexmk -g -pdf -interaction=nonstopmode tete_de_veau_ravigote.tex
 
