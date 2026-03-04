@@ -5,11 +5,14 @@ cd "$(dirname "$0")"
 # Options : diffs  compiler le PDF de diffs
 #           notes  compiler tete_de_veau_ravigote_annote.pdf (roman annoté)
 #                  et tete_de_veau_ravigote-notes.pdf (notes seules)
+#           epub   compiler tete_de_veau_ravigote.epub
 DIFFS=0
 NOTES=0
+EPUB=0
 for arg in "$@"; do
   [ "$arg" = "diffs" ] && DIFFS=1
   [ "$arg" = "notes" ] && NOTES=1
+  [ "$arg" = "epub"  ] && EPUB=1
 done
 
 echo "=== git hash ==="
@@ -30,11 +33,15 @@ latexmk -g -pdf -interaction=nonstopmode bio.tex
 echo "=== 2/4  sommaire PDF ==="
 latexmk -g -pdf -interaction=nonstopmode tete_de_veau_ravigote_sommaire.tex
 
-echo "=== epub ==="
-pandoc tete_de_veau_ravigote.tex -o tete_de_veau_ravigote.epub \
-  --metadata title="Tête de veau ravigote" \
-  --metadata author="Éric Mugnier" \
-  --metadata lang="fr"
+if [ "$EPUB" = "1" ]; then
+  echo "=== epub ==="
+  pandoc tete_de_veau_ravigote.tex -o tete_de_veau_ravigote.epub \
+    --metadata title="Tête de veau ravigote" \
+    --metadata author="Éric Mugnier" \
+    --metadata lang="fr"
+else
+  echo "=== epub === (ignoré : passer 'epub' pour compiler)"
+fi
 
 if [ "$DIFFS" = "1" ]; then
   echo "=== 3/4  diff PDF ==="
