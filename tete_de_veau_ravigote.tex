@@ -1,6 +1,6 @@
 %%% \documentclass[12pt,a4paper,twoside,openright]{memoir}
 
-\documentclass[11pt,a5paper,twoside,openright]{memoir}
+\documentclass[12pt,twoside,openright]{memoir}
 
 % ─── PACKAGES ─────────────────────────────────────────────────────────────────
 \usepackage[utf8]{inputenc}
@@ -72,13 +72,23 @@
 %%% \checkandfixthelayout
 
 % ─── PAGE GEOMETRY (140×205 mm – Gallimard Blanche) ──────────────────────────
-\setstocksize{210mm}{148mm}
-\settrimmedsize{210mm}{148mm}{*}
+%%% \setstocksize{210mm}{148mm}
+%%% \settrimmedsize{210mm}{148mm}{*}
+%%% \settrims{0mm}{0mm}
+%%% \setlrmarginsandblock{22mm}{17mm}{*} % inner/outer
+%%% \setulmarginsandblock{22mm}{25mm}{*} % top/bottom
+%%% \setheadfoot{10mm}{12mm}
+%%% \setheaderspaces{*}{6mm}{*}
+%%% \checkandfixthelayout
+
+% ─── PAGE GEOMETRY (155×235 mm – Medium 1) ───────────────────────────────────
+\setstocksize{235mm}{155mm}
+\settrimmedsize{235mm}{155mm}{*}
 \settrims{0mm}{0mm}
-\setlrmarginsandblock{22mm}{17mm}{*} % inner/outer
-\setulmarginsandblock{22mm}{25mm}{*} % top/bottom
-\setheadfoot{10mm}{12mm}
-\setheaderspaces{*}{6mm}{*}
+\setlrmarginsandblock{23mm}{18mm}{*} % inner/outer
+\setulmarginsandblock{25mm}{28mm}{*} % top/bottom
+\setheadfoot{11mm}{13mm}
+\setheaderspaces{*}{7mm}{*}
 \checkandfixthelayout
 
 % ─── TYPOGRAPHY ───────────────────────────────────────────────────────────────
@@ -197,25 +207,7 @@
 Tous droits réservés pour tous pays\\
 Reproduction interdite
 }
-\cleardoublepage                        % p. 5 (impaire) → dédicace
-
-% ═══ DÉDICACE (impaire) ═══════════════════════════════════════════════════════
-\vspace*{10\onelineskip}
-\begin{flushright}
-\itshape\small
-%%% À ma grand-mère maternelle Alexandrine Chéron, née Lemaître, \\
-%%% décédée en 2022 alors qu'elle survolait la cordillère des Andes \\
-%%% à bord du Cessna Skylane 182 jaune canari qu'elle s'était, \\
-%%% contre l'avis général et tout particulièrement celui des compagnies \\
-%%% d'assurances (qui, bien qu'elle soit en pleine forme, la jugeait \\
-%%% tout de même peut-être un peu âgée pour piloter), offert en grande \\
-%%% pompe pour son quatre-vingt-septième anniversaire. Le crash aérien, \\
-%%% d'une extrême violence, n'a pas permis de retrouver l'intégralité \\
-%%% des morceaux de la chère vieille dame, en partie calcinée et dévorée \\
-%%% par les condors qui, on ne le sait pas assez, adorent la viande bien \\
-%%% cuite. Sa mort laisse un grand vide dans mon cœur.
-\end{flushright}
-\cleardoublepage                        % p. 6 blanche, → p. 7 (impaire) chapitre 1
+\cleardoublepage                        % → p. impaire chapitre 1
 
 % ═══ MAIN TEXT ════════════════════════════════════════════════════════════════
 \pagestyle{gallimard}
