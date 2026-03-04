@@ -17,7 +17,7 @@
 | [Fayard Noir](https://www.fayard.fr/soumettre-un-manuscrit/) | Paris | 💾 | [2026-03-01](envois/2026-03-01%20-%20Fayard%20Noir%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
 | [Le Nouvel Attila](https://lenouvelattila.fr/manuscrits-et-contacts/) | Paris | 💾 | [2026-03-01](envois/2026-03-01%20-%20Nouvel%20Attila%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml ) | 4 |
 | [La Volte](https://lavolte.net/pages/contact) | Paris | 💾 |  [2026-03-02](envois/2026-03-02%20-%20La%20Volte%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml )| 12 |
-| [Agullo](https://agullo-editions.com/contact/) | Paris | 💾 | [2026-03-02](envois/2026-03-02%20-%20Agullo%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
+| [Agullo](https://agullo-editions.com/contact/) | Paris | 💾 | [2026-03-02](envois/2026-03-02%20-%20Agullo%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 6 |
 | [Cadre Noir (Seuil)](https://www.seuil.com/contacts) | Paris | 💾 | [2026-03-02](envois/2026-03-02%20-%20Cadre%20Noir%20(Seuil)%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 6 |
 | [Fleuve Editions](https://www.manuscrits.fleuve-editions.com/) (anciennement Fleuve Noir)| Paris | 💾 | [2026-03-02](envois/2026-03-02%20-%20Fleuve%20Editions%20_%20Confirmation%20de%20votre%20envoi%20de%20manuscrit.eml) | _ |
 | [Gallimard (Série Noire)](https://www.gallimard.fr/questions-frequentes-et-contact) | Paris | 💾 | [2026-03-02](envois/2026-03-02%20-%20Galllimard%20(Série%20Noire)%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 3 |
@@ -26,12 +26,12 @@
 | [Pauvert (Fayard)](mailto:manuscrits-pauvert@editions-fayard.fr) | Paris | 💾 | [2026-03-03](envois/2026-03-03%20-%20Pauvert%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 4 |
 | [La Contre Allée](https://lacontreallee.com/nous-contacter/) | Lille | 💾 | [2026-03-03](envois/2026-03-03%20-%20La%20Contre%20Allée%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
 | [Le Cherche Midi](https://www.lisez.com/editeurs/cherche-midi/nous-contacter) | Paris | 💾 | [2026-03-03](envois/2026-03-03%20-%20Cherche%20Midi%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
-| [Calmann-Lévy Noir](https://www.calmann-levy.fr/faq/comment-soumettre-un-manuscrit/) | Paris | 💾 | [2026-03-03](envois/2026-03-03%20-%20Calmann-Lévy%20Noir%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
-| [Michel Lafon](http://www.michel-lafon.fr/editions/contact) | Neuilly | 💾 | [2026-03-03](envois/2026-03-03%20-%20Michel%20Lafon%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
+| [Calmann-Lévy Noir](https://www.calmann-levy.fr/faq/comment-soumettre-un-manuscrit/) | Paris | 💾 | [2026-03-03](envois/2026-03-03%20-%20Calmann-Lévy%20Noir%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 3 |
+| [Michel Lafon](http://www.michel-lafon.fr/editions/contact) | Neuilly | 💾 | [2026-03-03](envois/2026-03-03%20-%20Michel%20Lafon%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 3 |
 | [Le Passage](https://www.lepassage-editions.fr/contact/) | Paris | 💾 | [2026-03-03](envois/2026-03-03%20-%20Le%20Passage%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
 | [Belfond (Belfond Noir)](https://www.lisez.com/editeurs/belfond/contactez-nous) | Paris | 💾 | [2026-03-03](envois/2026-03-03%20-%20Belfond%20Noir%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
 | [Quidam Éditeur](https://www.quidamediteur.com/contact) | Metz | 💾 | [2026-03-04](envois/2026-03-04%20-%20Quidam%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier%20envois.eml) | - |
-| [La Table Ronde](https://www.editionslatableronde.fr/Contacts) | Paris | 💾 | [2026-03-04](envois/2026-03-04%20-%20Table%20Ronde%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
+| [La Table Ronde](https://www.editionslatableronde.fr/Contacts) | Paris | 💾 | [2026-03-04](envois/2026-03-04%20-%20Table%20Ronde%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 2 |
 | [Taurnada Éditions](https://www.taurnada.fr/soumettre-un-manuscrit/) | Paris | 💾 | [2026-03-04](envois/2026-03-04%20-%20Taurnada%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 3 |
 | [Flammarion](https://editions.flammarion.com/envoyer-un-manuscrit/) | Paris | 💾 | 2026-03-04 (formulaire) | - |
 | [XO Éditions](https://manuscrits.xoeditions.com/) | Paris | 💾 | 2026-03-04 (formulaire) | - |
