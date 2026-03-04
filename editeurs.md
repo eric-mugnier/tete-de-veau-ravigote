@@ -32,7 +32,7 @@
 | [Belfond (Belfond Noir)](https://www.lisez.com/editeurs/belfond/contactez-nous) | Paris | 💾 | [2026-03-03](envois/2026-03-03%20-%20Belfond%20Noir%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
 | [Quidam Éditeur](https://www.quidamediteur.com/contact) | Metz | 💾 | [2026-03-04](envois/2026-03-04%20-%20Quidam%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier%20envois.eml) | - |
 | [La Table Ronde](https://www.editionslatableronde.fr/Contacts) | Paris | 💾 | [2026-03-04](envois/2026-03-04%20-%20Table%20Ronde%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
-| [Taurnada Éditions](https://www.taurnada.fr/soumettre-un-manuscrit/) | Paris | 💾 | [2026-03-04](envois/2026-03-04%20-%20Taurnada%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | - |
+| [Taurnada Éditions](https://www.taurnada.fr/soumettre-un-manuscrit/) | Paris | 💾 | [2026-03-04](envois/2026-03-04%20-%20Taurnada%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 3 |
 | [Flammarion](https://editions.flammarion.com/envoyer-un-manuscrit/) | Paris | 💾 | 2026-03-04 (formulaire) | - |
 | [XO Éditions](https://manuscrits.xoeditions.com/) | Paris | 💾 | 2026-03-04 (formulaire) | - |
 | [Actes Sud](https://actes-sud.fr/contactez-nous#s2) *(coll. Actes Noirs, Inculte)* | Arles | 📚 | | – |
