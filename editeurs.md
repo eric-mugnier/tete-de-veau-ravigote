@@ -1,6 +1,6 @@
 # Éditeurs
 
-**27 envoyés · 0 💾 et 13 📚 restants (13 en tout)**
+**28 envoyés · 0 💾 et 13 📚 restants (13 en tout)**
 
 📚 = envoi papier · 💾 = envoi numérique
 
@@ -35,6 +35,7 @@
 | [Taurnada Éditions](https://www.taurnada.fr/soumettre-un-manuscrit/) | Paris | 💾 | [2026-03-04](envois/2026-03-04%20-%20Taurnada%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | 3 |
 | [Flammarion](https://editions.flammarion.com/envoyer-un-manuscrit/) | Paris | 💾 | 2026-03-04 (formulaire) | - |
 | [XO Éditions](https://manuscrits.xoeditions.com/) | Paris | 💾 | 2026-03-04 (formulaire) | - |
+| [Joëlle Losfeld](mailto:info@joellelosfeld.fr) | Paris | 💾 | [2026-03-04](envois/2026-03-04%20-%20Joëlle%20Losfeld%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | – |
 | [Actes Sud](https://actes-sud.fr/contactez-nous#s2) *(coll. Actes Noirs, Inculte)* | Arles | 📚 | | – |
 | [P.O.L](https://www.pol-editeur.com/contacter-editions-pol.html) | Paris | 📚 | | 3 |
 | [Tristram](https://www.tristram.fr) | Auch | 📚 | | – |
@@ -48,7 +49,6 @@
 | [Albin Michel](https://www.albin-michel.fr/deposer-un-manuscrit) | Paris | 📚 | | - |
 | [Le Masque (JC Lattès)](https://www.editions-jclattes.fr/deposer-un-manuscrit/) | Paris | 📚 | | - |
 | [Éditions de l'Aube](https://editionsdelaube.fr/auteurs-manuscrits/) | La Tour-d'Aigues | 📚 | | - |
-| [Joëlle Losfeld](mailto:info@joellelosfeld.fr) | Paris | 💾 |  | – |
 
 
 > ⚠️ Losfeld : maison lancée en janvier 2026, attendre que la structure soit opérationnelle (avril 2026 ?)
