@@ -74,4 +74,8 @@ ls -lh tete_de_veau_ravigote.pdf \
         tete_de_veau_ravigote_sommaire.pdf \
         tete_de_veau_ravigote_diff.pdf \
         tete_de_veau_ravigote_COMPLET.pdf \
-        tete_de_veau_ravigote_illustrations.pdf 2>/dev/null || true
+        tete_de_veau_ravigote_illustrations.pdf \
+        tete_de_veau_ravigote_annote.pdf \
+        tete_de_veau_ravigote_notes.pdf \
+        synopsis.pdf \
+        bio.pdf 2>/dev/null || true
