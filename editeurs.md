@@ -84,28 +84,27 @@
 |--------|-------|------|-------|--------------|
 | [#BAM Agency](https://bamlitagency.com) | Paris | bamlitagency.com | | |
 | [Agence Catherine Nabokov](https://agencenabokov.com) | Paris | agencenabokov.com | | |
-| [Agence des Livres Électriques](https://deslivreselectriques.com) | Paris | deslivreselectriques.com | | |
-| [Agence Fontaine](https://astier-pecher.com) | Le Vésinet | — | | |
-| [Agence Hyphen VMK](https://hyphenvmk.com) | Dijon | hyphenvmk.com | | |
-| [Agence Littéraire Alexandrine Duhin](https://instagram.com/alexandrineduhin) | Paris | instagram | | |
-| [Agence Littéraire Rubinstein](https://agencelitterairerubinstein.com) | Paris | agencelitterairerubinstein.com | | |
-| [Anna Jarota Agency](https://annajarota.fr) | Paris | annajarota.fr | | |
-| [Ariane Geffard Agence Littéraire](https://agencearianegeffard.fr) | Paris | agencearianegeffard.fr | | |
-| [Daniela Bonerba](https://bonerba.com) | — | bonerba.com | | |
-| [Editio Dialog](https://editio-dialog.com) | Lille | editio-dialog.com | | |
-| [Espaces](https://sfaal.fr) | Paris | — | | |
-| [Intertalent](https://intertalent.fr) | Paris | intertalent.fr | | |
-| [Julia Martiano](https://juliamartiano.com) | Paris | juliamartiano.com | | |
-| [Julie Finidori Agency](https://jf-agency.com) | — | jf-agency.com | | |
 | [Kalligram](https://agencelitterairekalligram.fr) | Paris | agencelitterairekalligram.fr | | |
-| [L'Agence Littéraire du Centenaire](https://monagentlitteraire.fr) | Puteaux | monagentlitteraire.fr | | |
-| [La Compagnie des Lettres](https://sfaal.fr) | Paris | — | | |
-| [Linwood Messina Literary Agency](https://linwoodmessina.com) | — | linwoodmessina.com | | |
-| [Marotte et Compagnie](https://marotteetcompagnie.ag) | — | marotteetcompagnie.ag | | |
-| [Raya Agency](https://rayaagency.org) | Paris | rayaagency.org | | |
 | [Stéphanie Honoré](https://stephanie-honore.fr) | — | stephanie-honore.fr | | |
 | [Susanna Lea Associates](https://susannalea.com) | Paris | susannalea.com | | |
-| [Trames](https://trames.xyz) | Paris | trames.xyz | | |
+| [~~Agence des Livres Électriques~~](https://deslivreselectriques.com) | Paris | deslivreselectriques.com | | |
+| ~~Agence Fontaine~~ | Le Vésinet | — | | |
+| [~~Agence Hyphen VMK~~](https://hyphenvmk.com) | Dijon | hyphenvmk.com | | |
+| [~~Agence Littéraire Alexandrine Duhin~~](https://instagram.com/alexandrineduhin) | Paris | instagram | | |
+| [~~Agence Littéraire Rubinstein~~](https://agencelitterairerubinstein.com) | Paris | agencelitterairerubinstein.com | | |
+| [~~Anna Jarota Agency~~](https://annajarota.fr) | Paris | annajarota.fr | | |
+| [~~Ariane Geffard Agence Littéraire~~](https://agencearianegeffard.fr) | Paris | agencearianegeffard.fr | | |
+| [~~Daniela Bonerba~~](https://bonerba.com) | — | bonerba.com | | |
+| [~~Editio Dialog~~](https://editio-dialog.com) | Lille | editio-dialog.com | | |
+| [~~Intertalent~~](https://intertalent.fr) | Paris | intertalent.fr | | |
+| [~~Julia Martiano~~](https://juliamartiano.com) | Paris | juliamartiano.com | | |
+| [~~Julie Finidori Agency~~](https://jf-agency.com) | — | jf-agency.com | | |
+| [~~L'Agence Littéraire du Centenaire~~](https://monagentlitteraire.fr) | Puteaux | monagentlitteraire.fr | | |
+| [~~La Compagnie des Lettres~~](https://sfaal.fr) | Paris | — | | |
+| [~~Linwood Messina Literary Agency~~](https://linwoodmessina.com) | — | linwoodmessina.com | | |
+| [~~Marotte et Compagnie~~](https://marotteetcompagnie.ag) | — | marotteetcompagnie.ag | | |
+| [~~Raya Agency~~](https://rayaagency.org) | Paris | rayaagency.org | | |
+| [~~Trames~~](https://trames.xyz) | Paris | trames.xyz | | |
 
 ---
 
