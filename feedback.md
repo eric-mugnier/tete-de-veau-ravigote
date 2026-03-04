@@ -24,4 +24,4 @@ C'est la tension entre l'individu (toi en train de t'éclater à écrire) et la 
 
 De toute manière, une question se pose : est-ce que tu es prêt à sortir du mode "c'est moi qui écris, arrêtez de m'emmerder" pour aller vers quelque chose de plus conciliant — prêt à écouter un feedback, prêt à changer des trucs, prêt à sortir de ta zone de plaisir pour te faire chier à faire des trucs dont tu ne serais qu'à moitié convaincu ? Probablement pas.
 
-Mais c'est exactement ce qui t'arrivera avec un vrai éditeur ! Il te demandera des modifications, probablement beaucoup. Si nos envois débouche sur un appel, prépare-toi !
+Mais c'est exactement ce qui t'arrivera avec un vrai éditeur ! Il te demandera des modifications, probablement beaucoup. Si nos envois débouchent sur un appel, prépare-toi !
