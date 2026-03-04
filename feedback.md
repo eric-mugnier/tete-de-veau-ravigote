@@ -16,7 +16,7 @@ Et donc, quels changements tu pourrais apporter au texte dans ce but.
 
 Et c'est en fait le travail de l'éditeur (l'éditeur aide l'auteur à trouver un public, moi je t'aiderais à trouver un éditeur), sauf que l'éditeur a une légitimité incontestable grâce à son expérience, alors que moi, rien du tout, jamais fait l'éditeur, jamais fait l'agent d'auteur.
 
-Donc, si je te demande des modifs (diminuer la taille du livre, enlever ceci, ajouter cela, ou pire encore, réécrire pour éliminer les trucs que pointe Jacques), tu as toute latitude de les refuser en vertu de mon incompétence.
+Donc, si je te demande des modifs (diminuer la taille du livre, enlever ceci, ajouter cela, ou pire encore, réécrire pour diminuer les trucs que pointe Jacques), tu as toute latitude de les refuser en vertu de mon incompétence.
 
 En outre, on passe d'une situation de plaisir-en-premier (plaisir que tu as à écrire, plaisir que j'ai à t'aider), au stress de dire et d'entendre des choses désagréables, en plus pour un résultat hypothétique, les changements qu'on aura réussis, au forceps, à apporter au texte ayant plausiblement un effet négligeable.
 
