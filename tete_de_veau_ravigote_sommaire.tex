@@ -3,7 +3,8 @@
 % Sommaire tenant sur une page — lit directement le .toc du document principal.
 % Compilation : latexmk -pdf tete_de_veau_ravigote_sommaire.tex
 %
-\documentclass[9pt,a5paper]{article}
+\pdfminorversion=7
+\documentclass[9pt]{article}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -11,7 +12,7 @@
 \usepackage[french]{babel}
 \usepackage{microtype}
 \usepackage{tabularx}
-\usepackage[left=14mm,right=11mm,top=10mm,bottom=8mm,noheadfoot]{geometry}
+\usepackage[paperwidth=155mm,paperheight=235mm,left=15mm,right=12mm,top=11mm,bottom=9mm,noheadfoot]{geometry}
 
 \renewcommand{\baselinestretch}{1.0}
 \setlength{\parindent}{0pt}

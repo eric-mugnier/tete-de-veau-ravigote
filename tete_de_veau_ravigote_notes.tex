@@ -6,7 +6,8 @@
 %   1. pdflatex "\def\AVECNOTES{}\input{tete_de_veau_ravigote}"  (×2 → .ent)
 %   2. latexmk -pdf tete_de_veau_ravigote-notes.tex  → tete_de_veau_ravigote-notes.pdf
 %
-\documentclass[11pt,a5paper]{article}
+\pdfminorversion=7
+\documentclass[11pt]{article}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -18,7 +19,7 @@
 \usepackage{xcolor}
 \usepackage{tikz}
 \usepackage{catchfile}
-\usepackage[left=22mm,right=17mm,top=22mm,bottom=25mm]{geometry}
+\usepackage[paperwidth=155mm,paperheight=235mm,left=23mm,right=18mm,top=25mm,bottom=28mm]{geometry}
 \input{version.tex}
 \CatchFileDef{\gitcommit}{tete_de_veau_ravigote.gitinfo}{\endlinechar=-1}
 

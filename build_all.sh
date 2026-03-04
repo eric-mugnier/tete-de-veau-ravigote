@@ -23,6 +23,10 @@ done
 echo "=== 1/4  main PDF ==="
 latexmk -g -pdf -interaction=nonstopmode tete_de_veau_ravigote.tex
 
+echo "=== synopsis + bio PDF ==="
+latexmk -g -pdf -interaction=nonstopmode synopsis.tex
+latexmk -g -pdf -interaction=nonstopmode bio.tex
+
 echo "=== 2/4  sommaire PDF ==="
 latexmk -g -pdf -interaction=nonstopmode tete_de_veau_ravigote_sommaire.tex
 
