@@ -12,6 +12,7 @@
 *.bbl
 *.blg
 *.bcf
+*.epub
 *.run.xml
 
 # ─── PDFs (recompilables depuis les .tex ou re-téléchargeables) ───────────────
