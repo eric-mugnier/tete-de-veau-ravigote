@@ -1,6 +1,6 @@
 Je me suis bien amusé et investi dans ce boulot. 
 
-J'ai des sentiments mixtes / contradictoires.
+J'ai des sentiments mixtes / contradictoires. Je ne suis pas convaincu qu'il faille les étaler, mais allons-y pareil.
 
 1. 👍 En écrivant mes petits speeches outrageusement (non, en fait subtilement) dithyrambiques pour essayer de motiver les types et typesses à te lire, je me retrouve arroseur arrosé : je suis convaincu de la génialité du truc !
 2. 👎 En même temps, je suis convaincu que les chances de succès pour trouver un éditeur sont infinitésimales : au pif, 1 pour mille, et on en a que 28 (bientôt 40, ce qui ne change fondamentalement rien) : ça fera 4%, c'est mieux que le loto, mais c'est quand même pas grand-chose. En plus, il va falloir attendre des mois, pour probablement se retrouver avec zéro retours, c'est atroce.
@@ -24,4 +24,4 @@ C'est la tension entre l'individu (toi en train de t'éclater à écrire) et la 
 
 De toute manière, une question se pose : est-ce que tu es prêt à sortir du mode "c'est moi qui écris, arrêtez de m'emmerder" pour aller vers quelque chose de plus conciliant — prêt à écouter un feedback, prêt à changer des trucs, prêt à sortir de ta zone de plaisir pour te faire chier à faire des trucs dont tu ne serais qu'à moitié convaincu ? Probablement pas.
 
-Mais c'est exactement ce qui t'arrivera avec un vrai éditeur ! Il te demandera des modifications, probablement beaucoup. Si nos envois débouchent sur un appel, prépare-toi !
+Mais c'est exactement ce qui t'arrivera avec un vrai éditeur ! Il te demandera des modifications, probablement beaucoup. Si nos envois débouchent sur un appel, tu es prévenu !
