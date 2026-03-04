@@ -1,6 +1,6 @@
 # Éditeurs
 
-**28 envoyés · 0 💾 et 13 📚 restants (13 en tout)**
+**29 envoyés · 0 💾 et 13 📚 restants (13 en tout)**
 
 📚 = envoi papier · 💾 = envoi numérique
 
@@ -36,6 +36,7 @@
 | [Flammarion](https://editions.flammarion.com/envoyer-un-manuscrit/) | Paris | 💾 | 2026-03-04 (formulaire) | - |
 | [XO Éditions](https://manuscrits.xoeditions.com/) | Paris | 💾 | 2026-03-04 (formulaire) | - |
 | [Joëlle Losfeld](mailto:info@joellelosfeld.fr) | Paris | 💾 | [2026-03-04](envois/2026-03-04%20-%20Joëlle%20Losfeld%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | – |
+| [Astier–Pécher](mailto:info@joellelosfeld.fr) (Agence littéraire)| Paris | 💾 | [2026-03-04](envois/2026-03-04%20-%20Astier-Pécher%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml )| – |
 | [Actes Sud](https://actes-sud.fr/contactez-nous#s2) *(coll. Actes Noirs, Inculte)* | Arles | 📚 | | – |
 | [P.O.L](https://www.pol-editeur.com/contacter-editions-pol.html) | Paris | 📚 | | 3 |
 | [Tristram](https://www.tristram.fr) | Auch | 📚 | | – |
