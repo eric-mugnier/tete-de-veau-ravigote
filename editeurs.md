@@ -1,6 +1,6 @@
 # Éditeurs
 
-**29 envoyés · 0 💾 et 13 📚 restants (13 en tout)**
+**29 💾 envoyés · 13 📚 restants · 24 agences littéraires **
 
 📚 = envoi papier · 💾 = envoi numérique
 
@@ -91,7 +91,6 @@
 | [Agence Littéraire Rubinstein](https://agencelitterairerubinstein.com) | Paris | agencelitterairerubinstein.com | | |
 | [Anna Jarota Agency](https://annajarota.fr) | Paris | annajarota.fr | | |
 | [Ariane Geffard Agence Littéraire](https://agencearianegeffard.fr) | Paris | agencearianegeffard.fr | | |
-| [Astier-Pécher](https://astier-pecher.com) *(déjà envoyé)* | Paris | astier-pecher.com | | |
 | [Daniela Bonerba](https://bonerba.com) | — | bonerba.com | | |
 | [Editio Dialog](https://editio-dialog.com) | Lille | editio-dialog.com | | |
 | [Espaces](https://sfaal.fr) | Paris | — | | |
