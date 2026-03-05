@@ -40,40 +40,18 @@
 | [Agence Catherine Nabokov](https://agencenabokov.com) (Agent littéraire)| | 💾 | [2026-03-05](envois/2026-03-05%20-%20Nabokov%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml)| 2 |
 | [Susanna Lea Associates](https://susannalea.com) (Agent littéraire) | | 💾 | [2026-03-05](envois/2026-03-05%20-%20susanna%20lea%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml )| 3 |
 | [Actes Sud](https://actes-sud.fr/contactez-nous#s2) *(coll. Actes Noirs, Inculte)* | Arles | 📚 | | – |
+| [Albin Michel](https://www.albin-michel.fr/deposer-un-manuscrit) | Paris | 📚 | | - |
+| [Éditions de l'Aube](https://editionsdelaube.fr/auteurs-manuscrits/) | La Tour-d'Aigues | 📚 | | - |
+| [Finitude](https://www.finitude.fr/contact/) | Le Bouscat | 📚 | | - |
+| [Grasset](https://www.grasset.fr/questions-frequentes/comment-soumettre-un-manuscrit/) | Paris | 📚 | | |
+| [Le Dilettante](https://www.ledilettante.com/proposer-un-manuscrit/) | Paris | 📚 | | - |
+| [Le Masque (JC Lattès)](https://www.editions-jclattes.fr/deposer-un-manuscrit/) | Paris | 📚 | | - |
+| [Minuit](https://www.leseditionsdeminuit.fr/unepage-manuscrits-manuscrits-1-1-0-1.html) | Paris | 📚 | | |
 | [P.O.L](https://www.pol-editeur.com/contacter-editions-pol.html) | Paris | 📚 | | 3 |
 | [Tristram](https://www.tristram.fr) | Auch | 📚 | | – |
 | [Verdier](https://editions-verdier.fr/manuscrits/) | Paris | 📚 | | 3 |
 | [Verticales (Gallimard)](http://www.editions-verticales.com/contact.php?rubrique=8) | Paris | 📚 | | 4 |
 | [Viviane Hamy](http://www.viviane-hamy.fr/fonctionnalites-et-mise-en-avant/article/manuscrits) | Paris | 📚 | | – |
-| [Finitude](https://www.finitude.fr/contact/) | Le Bouscat | 📚 | | - |
-| [Le Dilettante](https://www.ledilettante.com/proposer-un-manuscrit/) | Paris | 📚 | | - |
-| [Minuit](https://www.leseditionsdeminuit.fr/unepage-manuscrits-manuscrits-1-1-0-1.html) | Paris | 📚 | | |
-| [Grasset](https://www.grasset.fr/questions-frequentes/comment-soumettre-un-manuscrit/) | Paris | 📚 | | |
-| [Albin Michel](https://www.albin-michel.fr/deposer-un-manuscrit) | Paris | 📚 | | - |
-| [Le Masque (JC Lattès)](https://www.editions-jclattes.fr/deposer-un-manuscrit/) | Paris | 📚 | | - |
-| [Éditions de l'Aube](https://editionsdelaube.fr/auteurs-manuscrits/) | La Tour-d'Aigues | 📚 | | - |
-
----
-
-## ON HOLD
-
-| Éditeur | Ville | Mode |
-|---------|-------|------|
-| [~~Sonatine~~](https://www.sonatine-editions.fr) | Paris | 💾 | |
-| [~~Alma Éditeur~~](https://www.alma-editeur.fr/contacts/) | Paris | 💾 | |
-| [~~Zulma~~](https://www.zulma.fr/contact/) | Paris | 💾 | manuscrit@zulma.fr |
-| [~~Anacharsis~~](https://www.editions-anacharsis.com/Contacter-Anacharsis) | Toulouse | 💾 | |
-| [~~Cambourakis~~](https://www.cambourakis.com/la-maison/) | Paris | 📚 💾 |
-| [~~Les Impressions Nouvelles~~](https://www.lesimpressionsnouvelles.com) | Bruxelles | 💾 |
-| [~~Le Quartanier~~](https://www.lequartanier.com) | Montréal | 💾 |
-| [~~Zoé~~](https://www.editionszoe.ch) | Genève | 💾 |
-| [~~La Martinière Noir~~](https://www.editionsdelamartiniere.fr/contact/) | Paris | 💾 |
-| [~~Cairn (Du Noir au Sud)~~](https://www.editions-cairn.fr/en/content/8-soumettre-votre-manuscrit) | Pau | 💾 |
-| [~~Mera~~](http://mera-editions.com/contact) | Paris | 💾 |
-| [~~Chambre Noire~~](https://www.chambrenoire.net/) | Switzerland | 💾 |
-| [~~Éditions du Palémon~~](https://palemon.fr/pages/contact) | Quimper | 📚 |
-| [~~Éditions du Gros Caillou~~](https://www.editionsdugroscaillou.fr/store/page/125/soumettre-un-manuscrit) | Paris | 💾 |
-| [~~Presses de la Cité (Sang Neuf)~~](https://pressesdelacite.comitedelecture.com/manuscrit-iframe) | Paris | 📚 |
 
 ---
 
@@ -84,42 +62,9 @@
 | [#BAM Agency](https://bamlitagency.com) | Paris | bamlitagency.com | Demande d'information | |
 | [Intertalent](https://intertalent.fr) | Paris | intertalent.fr | Demande d'information | |
 | [Kalligram](https://agencelitterairekalligram.fr) | Paris | agencelitterairekalligram.fr | Demande d'information | |
-| [~~Stéphanie Honoré~~](https://stephanie-honore.fr) | — | stephanie-honore.fr | | |
-| [~~Agence des Livres Électriques~~](https://deslivreselectriques.com) | Paris | deslivreselectriques.com | | |
-| ~~Agence Fontaine~~ | Le Vésinet | — | | |
-| [~~Agence Hyphen VMK~~](https://hyphenvmk.com) | Dijon | hyphenvmk.com | | |
-| [~~Agence Littéraire Alexandrine Duhin~~](https://instagram.com/alexandrineduhin) | Paris | instagram | | |
-| [~~Agence Littéraire Rubinstein~~](https://agencelitterairerubinstein.com) | Paris | agencelitterairerubinstein.com | | |
-| [~~Anna Jarota Agency~~](https://annajarota.fr) | Paris | annajarota.fr | | |
-| [~~Ariane Geffard Agence Littéraire~~](https://agencearianegeffard.fr) | Paris | agencearianegeffard.fr | | |
-| [~~Daniela Bonerba~~](https://bonerba.com) | — | bonerba.com | | |
-| [~~Editio Dialog~~](https://editio-dialog.com) | Lille | editio-dialog.com | | |
-| [~~Julia Martiano~~](https://juliamartiano.com) | Paris | juliamartiano.com | | |
-| [~~Julie Finidori Agency~~](https://jf-agency.com) | — | jf-agency.com | | |
-| [~~L'Agence Littéraire du Centenaire~~](https://monagentlitteraire.fr) | Puteaux | monagentlitteraire.fr | | |
-| [~~La Compagnie des Lettres~~](https://sfaal.fr) | Paris | — | | |
-| [~~Linwood Messina Literary Agency~~](https://linwoodmessina.com) | — | linwoodmessina.com | | |
-| [~~Marotte et Compagnie~~](https://marotteetcompagnie.ag) | — | marotteetcompagnie.ag | | |
-| [~~Raya Agency~~](https://rayaagency.org) | Paris | rayaagency.org | | |
-| [~~Trames~~](https://trames.xyz) | Paris | trames.xyz | | |
 
 ---
 
-## Adresses postales (📚)
+## Éditeurs parisiens
 
-| Éditeur | Adresse |
-|---------|---------|
-| Actes Sud / Actes Noirs | Le Méjan, Place Nina-Berberova, BP 90038 — 13633 Arles Cedex |
-| Albin Michel | 22, rue Huyghens — 75014 Paris |
-| Éditions de l'Aube | 331, rue Amédée-Ginies — 84240 La Tour-d'Aigues |
-| Finitude | 21, rue Laharpe — 33110 Le Bouscat |
-| Grasset | 61, rue des Saints-Pères — 75006 Paris |
-| Le Dilettante | 8, rue Lovenjoul — 75006 Paris |
-| Le Masque (JC Lattès) | 17, rue Jacob — 75006 Paris |
-| Minuit | 7, rue Bernard-Palissy — 75006 Paris |
-| P.O.L | 33, rue Saint-André-des-Arts — 75006 Paris |
-| Tristram | 39, boulevard Roquelaure — 32000 Auch |
-| Verdier | 13, rue du Château — 11220 Lagrasse |
-| Verticales (Gallimard) | 5, rue Sébastien-Bottin — 75007 Paris |
-| Viviane Hamy | 26, rue de Condé — 75006 Paris |
-
+[![Voir la carte](https://img.shields.io/badge/Google%20Maps-Éditeurs%20Paris-blue?logo=googlemaps)](https://www.google.com/maps/d/edit?mid=1GBl3dVfN0PFuwEGrUTsm50M0c-r52cw&usp=sharing)
