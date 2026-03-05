@@ -57,11 +57,11 @@
 
 ## Agences Littéraires ([SFAAL](https://sfaal.fr/))
 
-| Agence | Ville | Site | Envoi | Délai (mois) |
-|--------|-------|------|-------|--------------|
-| [#BAM Agency](https://bamlitagency.com) | Paris | bamlitagency.com | Demande d'information | |
-| [Intertalent](https://intertalent.fr) | Paris | intertalent.fr | Demande d'information | |
-| [Kalligram](https://agencelitterairekalligram.fr) | Paris | agencelitterairekalligram.fr | Demande d'information | |
+| Agence | Ville | Site | Envoi |
+|--------|-------|------|-------|
+| [#BAM Agency](https://bamlitagency.com) | Paris | bamlitagency.com | Demande d'information |
+| [Intertalent](https://intertalent.fr) | Paris | intertalent.fr | Demande d'information |
+| [Kalligram](https://agencelitterairekalligram.fr) | Paris | agencelitterairekalligram.fr | Demande d'information |
 
 ---
 ## Cartes Éditeurs
