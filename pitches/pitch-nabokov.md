@@ -10,7 +10,8 @@ Je viens vous proposer le manuscrit du premier roman de mon ami cher Éric Mugni
     Entouré de Titus Beaugendre, son fidèle équipier,
     et d'une galerie de personnages hauts en couleur,
     Beauvais arpente un monde contemporain
-    où l'absurde le dispute à l'horreur.
+    où l'absurde le dispute à l'horreur,
+    le vulgaire à l'érudit.
 
 Un ovni, plutôt qu'un polar ; une logorrhée vengeresse et jubilatoire, écrite en *spontaneous prose*, où l'humour potache s'achoppe à des scènes *gore* à la limite du soutenable ; un roman-fleuve traversé de mentions et digressions en forme de cabinet de curiosités : sur les chats, les dinosaures, l'Église, les pavillons de banlieue, l'unité 731, Pannonica de Koenigswarter, la 'Ndrangheta.
 
@@ -18,16 +19,16 @@ L'**Horreur** (prononcé à la Marlon Brando dans Apocalypse Now) se détache au
 
 Toute forme de morale est étrangère aux protagonistes — au héros-narrateur en premier. Entre grotesque et tragique, mentions et digressions dessinent par intermittence l'image d'une humanité sans Dieu, abjecte. Le ton n'est jamais didactique, jamais emphatique, toujours factuel, genre « Alain Decaux raconte », style entomologiste. Bien plus efficace qu'un bouquin qui dirait benoîtement : « Regardez ça, c'est mal ! Ouh comme c'est vilain ! ». Un bruit de fond, un acouphène, un filtre optique polarisé, un voile de gaze sur la peau. La tentaculaire progression de la Camorra dans le Naples de l'Amica Geniale d'Elena Ferrante, jamais explicite, trop prégnante.
 
-Les amateurs de style littéraire seront rebutés par la *spontaneous prose*, les lecteurs boulimiques de polars par l'absence d'intrigue et les digressions, les âmes sensibles par la violence. Bref, aucun éditeur n'en voudra. Quel gâchis ! Et pourtant... Si un.e agent.e littéraire, quelqu'un.e qui aurait *l’art de débusquer les plumes indociles*, pouvait percevoir la musique de fond de ce que nous, amis d'Éric - complètement en dehors du monde de l'édition - ressentons confusément comme une œuvre géniale ?
+Les amateurs de style littéraire seront rebutés par la *spontaneous prose*, les lecteurs boulimiques de polars par l'absence d'intrigue et les digressions, les âmes sensibles par la violence. Bref, aucun éditeur n'en voudra. Quel gâchis ! Et pourtant... Si un.e agent.e littéraire, quelqu'un.e qui aurait *l’art de débusquer les plumes indociles*, pouvait *entendre la petite musique* de ce que nous, amis profanes, ressentons confusément comme une œuvre géniale ?
 
-Je me fais ici le porte-parole d'un groupe d'amis de Éric Mugnier, convaincus du potentiel de ses écrits. Nous sommes convenus de l'aider en toute amitié et absolu désintéressement dans les démarches fastidieuses inhérentes à la recherche d'un ~~éditeur~~ agent littéraire. Agent qui saura, au travers des défauts du texte, déceler ce potentiel, partager notre conviction et entreprendre avec Éric Mugnier le travail éditorial qui lui fera trouver son public.
+Je me fais ici le porte-parole d'un groupe d'amis d'Éric Mugnier, convaincus du potentiel de ses écrits. Nous sommes convenus de l'aider en toute amitié et absolu désintéressement dans les démarches fastidieuses inhérentes à la recherche d'un ~~éditeur~~ agent littéraire. Agent qui saura, au travers des défauts du texte, déceler ce potentiel, partager notre conviction et entreprendre avec Éric Mugnier le travail éditorial qui lui fera trouver son public.
 
 Respectueusement,  
 Christophe Thiebaud
 
 Pièces jointes :
 - `tete_de_veau_ravigote_annote.pdf` — Le roman
-- `tete_de_veau_ravigote_notes.pdf` — Les notes jointes ont été établies par le signataire de cette lettre, à l'insu de l'auteur, pour donner à voir le caractère érudit, encyclopédique, en un mot : intéressant, des digressions.
+- `tete_de_veau_ravigote_notes.pdf` — Les notes jointes ont été établies par le signataire de cette lettre, à l'insu de l'auteur et à titre d'exemple, pour donner à voir le caractère tout à tour potache, provocateur et polymathe des mentions et digressions — les parcourir donne le vertige.
 
 | Biographie |
 |------|
