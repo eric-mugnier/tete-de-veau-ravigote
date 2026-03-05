@@ -1,6 +1,6 @@
 # Éditeurs
 
-**31 💾 envoyés · 13 📚 restants · 3 agences littéraires **
+**31 💾 envoyés · 13 📚 restants (9 Paris, 4 reste du monde) · 3 agences littéraires **
 
 📚 = envoi papier · 💾 = envoi numérique
 
