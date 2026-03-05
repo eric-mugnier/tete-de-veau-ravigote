@@ -64,7 +64,7 @@
 | [Kalligram](https://agencelitterairekalligram.fr) | Paris | agencelitterairekalligram.fr | Demande d'information |
 
 ---
-## Cartes Éditeurs
+## Cartes Éditeurs 📚
 
 | parisiens | reste du monde |
 |-----------|----------------|
