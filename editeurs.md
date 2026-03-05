@@ -68,3 +68,7 @@
 ## Éditeurs parisiens
 
 [![Voir la carte](https://img.shields.io/badge/Google%20Maps-Éditeurs%20Paris-blue?logo=googlemaps)](https://www.google.com/maps/d/edit?mid=1GBl3dVfN0PFuwEGrUTsm50M0c-r52cw&usp=sharing)
+
+## Éditeurs reste du monde
+
+[![Voir la carte](https://img.shields.io/badge/Google%20Maps-Éditeurs%20reste%20du%20monde-34A853?logo=googlemaps&logoColor=white)](https://www.google.com/maps/d/edit?mid=122tgaN2raaH_ujLYCJA8PldV5gri_og&usp=sharing)
