@@ -37,6 +37,7 @@
 | [XO Éditions](https://manuscrits.xoeditions.com/) | Paris | 💾 | 2026-03-04 (formulaire) | - |
 | [Joëlle Losfeld](mailto:info@joellelosfeld.fr) | Paris | 💾 | [2026-03-04](envois/2026-03-04%20-%20Joëlle%20Losfeld%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml) | – |
 | [Astier–Pécher](mailto:info@joellelosfeld.fr) (Agence littéraire)| Paris | 💾 | [2026-03-04](envois/2026-03-04%20-%20Astier-Pécher%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml )| – |
+| [Agence Catherine Nabokov](https://agencenabokov.com) | | 💾 | [2026-03-04](envois/2026-03-05%20-%20Nabokov%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml)| 2 |
 | [Actes Sud](https://actes-sud.fr/contactez-nous#s2) *(coll. Actes Noirs, Inculte)* | Arles | 📚 | | – |
 | [P.O.L](https://www.pol-editeur.com/contacter-editions-pol.html) | Paris | 📚 | | 3 |
 | [Tristram](https://www.tristram.fr) | Auch | 📚 | | – |
@@ -50,9 +51,6 @@
 | [Albin Michel](https://www.albin-michel.fr/deposer-un-manuscrit) | Paris | 📚 | | - |
 | [Le Masque (JC Lattès)](https://www.editions-jclattes.fr/deposer-un-manuscrit/) | Paris | 📚 | | - |
 | [Éditions de l'Aube](https://editionsdelaube.fr/auteurs-manuscrits/) | La Tour-d'Aigues | 📚 | | - |
-
-
-> ⚠️ Losfeld : maison lancée en janvier 2026, attendre que la structure soit opérationnelle (avril 2026 ?)
 
 ---
 
@@ -82,11 +80,11 @@
 
 | Agence | Ville | Site | Envoi | Délai (mois) |
 |--------|-------|------|-------|--------------|
-| [#BAM Agency](https://bamlitagency.com) | Paris | bamlitagency.com | | |
-| [Agence Catherine Nabokov](https://agencenabokov.com) | Paris | agencenabokov.com | | |
-| [Kalligram](https://agencelitterairekalligram.fr) | Paris | agencelitterairekalligram.fr | | |
-| [Stéphanie Honoré](https://stephanie-honore.fr) | — | stephanie-honore.fr | | |
+| [#BAM Agency](https://bamlitagency.com) | Paris | bamlitagency.com | Demande d'information | |
+| [Intertalent](https://intertalent.fr) | Paris | intertalent.fr | Demande d'information | |
+| [Kalligram](https://agencelitterairekalligram.fr) | Paris | agencelitterairekalligram.fr | Demande d'information | |
 | [Susanna Lea Associates](https://susannalea.com) | Paris | susannalea.com | | |
+| [~~Stéphanie Honoré~~](https://stephanie-honore.fr) | — | stephanie-honore.fr | | |
 | [~~Agence des Livres Électriques~~](https://deslivreselectriques.com) | Paris | deslivreselectriques.com | | |
 | ~~Agence Fontaine~~ | Le Vésinet | — | | |
 | [~~Agence Hyphen VMK~~](https://hyphenvmk.com) | Dijon | hyphenvmk.com | | |
@@ -96,7 +94,6 @@
 | [~~Ariane Geffard Agence Littéraire~~](https://agencearianegeffard.fr) | Paris | agencearianegeffard.fr | | |
 | [~~Daniela Bonerba~~](https://bonerba.com) | — | bonerba.com | | |
 | [~~Editio Dialog~~](https://editio-dialog.com) | Lille | editio-dialog.com | | |
-| [~~Intertalent~~](https://intertalent.fr) | Paris | intertalent.fr | | |
 | [~~Julia Martiano~~](https://juliamartiano.com) | Paris | juliamartiano.com | | |
 | [~~Julie Finidori Agency~~](https://jf-agency.com) | — | jf-agency.com | | |
 | [~~L'Agence Littéraire du Centenaire~~](https://monagentlitteraire.fr) | Puteaux | monagentlitteraire.fr | | |
