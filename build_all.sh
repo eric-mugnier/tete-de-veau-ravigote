@@ -26,10 +26,6 @@ done
 echo "=== 1/4  main PDF ==="
 latexmk -g -pdf -interaction=nonstopmode tete_de_veau_ravigote.tex
 
-echo "=== synopsis + bio PDF ==="
-latexmk -g -pdf -interaction=nonstopmode synopsis.tex
-latexmk -g -pdf -interaction=nonstopmode bio.tex
-
 echo "=== 2/4  sommaire PDF ==="
 latexmk -g -pdf -interaction=nonstopmode tete_de_veau_ravigote_sommaire.tex
 
@@ -84,5 +80,4 @@ ls -lh tete_de_veau_ravigote.pdf \
         tete_de_veau_ravigote_illustrations.pdf \
         tete_de_veau_ravigote_annote.pdf \
         tete_de_veau_ravigote_notes.pdf \
-        synopsis.pdf \
-        bio.pdf 2>/dev/null || true
+        2>/dev/null || true
