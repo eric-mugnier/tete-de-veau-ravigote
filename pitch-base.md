@@ -12,7 +12,7 @@ Je viens vous proposer le manuscrit du premier roman de mon ami cher Éric Mugni
     Beauvais arpente un monde contemporain
     où l'absurde le dispute à l'horreur.
 
-Un ovni, plutôt qu'un polar ; une logorrhée vengeresse et jubilatoire, écrite en *spontaneous prose*, où l'humour potache s'achoppe à des scènes *gore* à la limite du soutenable ; un roman-fleuve traversé d'amples digressions en forme de cabinet de curiosités : sur les chats, les dinosaures, l'Église, les pavillons de banlieue, l'unité 731, Pannonica de Koenigswarter, la 'Ndrangheta.
+Un ovni, plutôt qu'un polar ; une logorrhée vengeresse et jubilatoire, écrite en *spontaneous prose*, où l'humour potache s'achoppe à des scènes *gore* à la limite du soutenable ; un roman-fleuve traversé de mentions et digressions en forme de cabinet de curiosités : sur les chats, les dinosaures, l'Église, les pavillons de banlieue, l'unité 731, Pannonica de Koenigswarter, la 'Ndrangheta.
 
 L'**Horreur** (prononcé à la Marlon Brando dans Apocalypse Now) se détache au fil des pages comme le thème central du livre.
 
