@@ -39,20 +39,19 @@
 | [Astier–Pécher](mailto:info@joellelosfeld.fr) (Agent littéraire)| Paris | 💾 | [2026-03-04](envois/2026-03-04%20-%20Astier-Pécher%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml ) | – |
 | [Agence Catherine Nabokov](https://agencenabokov.com) (Agent littéraire)| | 💾 | [2026-03-05](envois/2026-03-05%20-%20Nabokov%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml)| 2 |
 | [Susanna Lea Associates](https://susannalea.com) (Agent littéraire) | | 💾 | [2026-03-05](envois/2026-03-05%20-%20susanna%20lea%20-%20Manuscrit%20-%20Tête%20de%20veau%20ravigote%20-%20Éric%20Mugnier.eml )| 3 |
-| [Actes Sud](https://actes-sud.fr/contactez-nous#s2) *(coll. Actes Noirs, Inculte)* | Arles | 📚 | | – |
 | [Albin Michel](https://www.albin-michel.fr/deposer-un-manuscrit) | Paris | 📚 | | - |
-| [Éditions de l'Aube](https://editionsdelaube.fr/auteurs-manuscrits/) | La Tour-d'Aigues | 📚 | | - |
-| [Finitude](https://www.finitude.fr/contact/) | Le Bouscat | 📚 | | - |
 | [Grasset](https://www.grasset.fr/questions-frequentes/comment-soumettre-un-manuscrit/) | Paris | 📚 | | |
 | [Le Dilettante](https://www.ledilettante.com/proposer-un-manuscrit/) | Paris | 📚 | | - |
 | [Le Masque (JC Lattès)](https://www.editions-jclattes.fr/deposer-un-manuscrit/) | Paris | 📚 | | - |
 | [Minuit](https://www.leseditionsdeminuit.fr/unepage-manuscrits-manuscrits-1-1-0-1.html) | Paris | 📚 | | |
 | [P.O.L](https://www.pol-editeur.com/contacter-editions-pol.html) | Paris | 📚 | | 3 |
-| [Tristram](https://www.tristram.fr) | Auch | 📚 | | – |
 | [Verdier](https://editions-verdier.fr/manuscrits/) | Paris | 📚 | | 3 |
 | [Verticales (Gallimard)](http://www.editions-verticales.com/contact.php?rubrique=8) | Paris | 📚 | | 4 |
 | [Viviane Hamy](http://www.viviane-hamy.fr/fonctionnalites-et-mise-en-avant/article/manuscrits) | Paris | 📚 | | – |
-
+| [Actes Sud](https://actes-sud.fr/contactez-nous#s2) *(coll. Actes Noirs, Inculte)* | Arles | 📚 | | – |
+| [Éditions de l'Aube](https://editionsdelaube.fr/auteurs-manuscrits/) | La Tour-d'Aigues | 📚 | | - |
+| [Finitude](https://www.finitude.fr/contact/) | Le Bouscat | 📚 | | - |
+| [Tristram](https://www.tristram.fr) | Auch | 📚 | | – |
 ---
 
 ## Agences Littéraires ([SFAAL](https://sfaal.fr/))
