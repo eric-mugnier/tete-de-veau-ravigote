@@ -19,7 +19,7 @@ L'**Horreur** (prononcé à la Marlon Brando dans Apocalypse Now) se détache au
 
 Toute forme de morale est étrangère aux protagonistes — au héros-narrateur en premier. Entre grotesque et tragique, les digressions dessinent par intermittence l'image d'une humanité sans Dieu, abominable plus que désespérée. Le ton n'est jamais didactique, jamais emphatique, toujours factuel, genre « Alain Decaux raconte ». Bien plus efficace qu'un bouquin qui dirait benoîtement : « Regardez ça, c'est mal ! Ouh comme c'est vilain ! ». Un bruit de fond, un acouphène, un filtre optique polarisé, un voile de gaze sur la peau. La tentaculaire progression de la Camorra dans le Naples de l'Amica Geniale d'Elena Ferrante, jamais explicite, trop prégnante.
 
-Je me fais ici le porte-parole d'un groupe d'amis d'Éric Mugnier, convaincus du potentiel de ses écrits. Nous sommes convenus de l'aider en toute amitié et absolu désintéressement dans les démarches fastidieuses inhérentes à la recherche d'un [éditeur | agent littéraire]. [Éditeur | Agent] qui saura, au travers des défauts du texte, déceler ce potentiel, partager notre conviction et entreprendre avec Éric Mugnier le travail éditorial qui lui fera trouver son public.
+Je me fais ici le porte-parole d'un groupe d'amis d'Éric Mugnier, convaincus du potentiel de ses écrits. Nous sommes convenus de l'aider en toute amitié et absolu désintéressement dans les démarches fastidieuses inhérentes à la recherche d'un agent littéraire. Agent qui saura, au travers des défauts du texte, déceler ce potentiel, partager notre conviction et entreprendre avec Éric Mugnier le travail éditorial qui lui fera trouver son public.
 
 Respectueusement,  
 Christophe Thiebaud
