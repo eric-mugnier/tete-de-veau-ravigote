@@ -66,5 +66,13 @@
 ---
 ## Cartes Éditeurs 📚
 
-|-----------|----------------|
-| [![Voir la carte](https://img.shields.io/badge/Google%20Maps-Éditeurs%20Paris-f2e7c3?logo=googlemaps)](https://www.google.com/maps/d/edit?mid=1GBl3dVfN0PFuwEGrUTsm50M0c-r52cw&usp=sharing) | [![Voir la carte](https://img.shields.io/badge/Google%20Maps-Éditeurs%20reste%20du%20monde-D1FC8C?logo=googlemaps&logoColor=white)](https://www.google.com/maps/d/edit?mid=122tgaN2raaH_ujLYCJA8PldV5gri_og&usp=sharing) |
+<table>
+  <tr>
+    <td>
+[![Voir la carte](https://img.shields.io/badge/Google%20Maps-Éditeurs%20Paris-f2e7c3?logo=googlemaps)](https://www.google.com/maps/d/edit?mid=1GBl3dVfN0PFuwEGrUTsm50M0c-r52cw&usp=sharing)
+    </td>
+    <td>
+[![Voir la carte](https://img.shields.io/badge/Google%20Maps-Éditeurs%20reste%20du%20monde-D1FC8C?logo=googlemaps&logoColor=white)](https://www.google.com/maps/d/edit?mid=122tgaN2raaH_ujLYCJA8PldV5gri_og&usp=sharing)    
+    </td>
+  </tr>
+</table>
