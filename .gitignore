@@ -24,8 +24,7 @@
 # ─── Fichiers temporaires ──────────────────────────────────────────────────────
 build/
 temp.tex
-TheBookEdition/gabarit_converted.txt
-diff_work/
+diff_work/tmp
 
 # ─── Python ───────────────────────────────────────────────────────────────────
 __pycache__/
