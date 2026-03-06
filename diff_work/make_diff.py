@@ -252,7 +252,7 @@ compile_env['TEXINPUTS'] = BASE + '::'
 for pass_num in (1, 2):
     print(f'\nCompiling PDF (pass {pass_num})...')
     r = subprocess.run(
-        ['pdflatex', '-interaction=nonstopmode', '-halt-on-error',
+        ['lualatex', '-interaction=nonstopmode', '-halt-on-error',
          diff_tex_path],          # absolute path avoids TEXINPUTS confusion
         cwd=WORK, capture_output=True, env=compile_env
     )

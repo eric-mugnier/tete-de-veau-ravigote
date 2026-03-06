@@ -22,6 +22,7 @@
 !TheBookEdition/aide_creation_couverture_mode_expert_TheBookEdition.pdf
 
 # ─── Fichiers temporaires ──────────────────────────────────────────────────────
+build/
 temp.tex
 TheBookEdition/gabarit_converted.txt
 diff_work/

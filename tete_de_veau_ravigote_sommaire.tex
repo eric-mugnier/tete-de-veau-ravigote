@@ -3,12 +3,10 @@
 % Sommaire tenant sur une page — lit directement le .toc du document principal.
 % Compilation : latexmk -pdf tete_de_veau_ravigote_sommaire.tex
 %
-\pdfminorversion=7
 \documentclass[9pt]{article}
 
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{ebgaramond}
+\usepackage{fontspec}
+\setmainfont{EB Garamond}
 \usepackage[french]{babel}
 \usepackage{microtype}
 \usepackage{tabularx}
