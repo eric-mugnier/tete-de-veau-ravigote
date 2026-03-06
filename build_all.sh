@@ -81,3 +81,5 @@ ls -lh tete_de_veau_ravigote.pdf \
         tete_de_veau_ravigote_annote.pdf \
         tete_de_veau_ravigote_notes.pdf \
         2>/dev/null || true
+
+rm -f tete_de_veau_ravigote.gitinfo
