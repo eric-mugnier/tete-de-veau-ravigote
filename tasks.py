@@ -1,7 +1,7 @@
 """
 tasks.py  —  invoke build tasks for *Tête de veau ravigote*
 
-Usage : inv build | inv notes | inv diffs | inv epub | inv clean
+Usage : inv build | inv notes | inv diffs | inv epub | inv pers | inv clean
         inv diffs notes   → combine targets (main PDF built once, both extras run)
 """
 
@@ -144,6 +144,22 @@ def notes(c):
 
     # Restore the clean main PDF (without inline note numbers)
     _lmk(c, BASE)
+
+
+@task
+def pers(c):
+    """Build personnages.pdf from personnages.md via pandoc + lualatex."""
+    BUILD.mkdir(exist_ok=True)
+    c.run(
+        "pandoc personnages.md"
+        f" -o {BUILD}/personnages.pdf"
+        " --pdf-engine=lualatex"
+        " -V geometry:margin=2cm"
+        " -V lang=fr"
+        ' -V mainfont="EB Garamond"'
+        " -V fontsize=11pt"
+    )
+    print(f"  → {BUILD}/personnages.pdf")
 
 
 @task
