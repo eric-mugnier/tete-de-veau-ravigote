@@ -40,6 +40,9 @@ GOOGLE_QUOTA    = 100     # max Google API calls per run
 GOOGLE_DELAY    = 1.0     # seconds between Google requests
 WIKIMEDIA_DELAY = 0.5     # seconds between Wikimedia requests
 MIN_WIDTH       = 800     # minimum acceptable image width (px)
+MIN_RATIO       = 0.4     # min width/height (exclude extreme panoramas)
+MAX_RATIO       = 2.5     # max width/height (exclude extreme banners)
+BAD_FORMATS     = {".svg", ".gif", ".webp", ".bmp", ".ico"}  # skip these
 TIMEOUT         = 10      # HTTP timeout (seconds)
 
 LOG_FIELDS = [
@@ -278,9 +281,15 @@ def fetch_google(subject: str) -> tuple:
             info = item.get("image", {})
             w    = info.get("width", 0)
             h    = info.get("height", 0)
-            url  = item.get("link")
-            if url and w >= MIN_WIDTH:
-                return url, w, h, calls
+            url  = item.get("link", "")
+            ext  = "." + url.split("?")[0].rsplit(".", 1)[-1].lower() if "." in url else ""
+            if not url or w < MIN_WIDTH:
+                continue
+            if ext in BAD_FORMATS:
+                continue
+            if h and not (MIN_RATIO <= w / h <= MAX_RATIO):
+                continue
+            return url, w, h, calls
         time.sleep(GOOGLE_DELAY)
 
     return None, 0, 0, calls
