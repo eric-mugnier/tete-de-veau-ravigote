@@ -57,6 +57,8 @@ def _ls_outputs():
 @task
 def build(c):
     """Build main PDF and sommaire (always run first; pre-task for diffs/epub/notes)."""
+    BUILD.mkdir(exist_ok=True)
+
     print("=== git hash ===")
     result = c.run("git log -1 --format=%h", hide=True)
     (BUILD / f"{BASE}.gitinfo").write_text(result.stdout.strip())
@@ -149,10 +151,11 @@ def clean(c):
     """Remove root-level temp files and latexmk aux files from build/."""
     # Root-level stray PDF — would only appear if lualatex was called without -output-directory
     (ROOT / f"{BASE}.pdf").unlink(missing_ok=True)
-    # build/.gitinfo — not a standard latexmk aux file, remove explicitly
-    (BUILD / f"{BASE}.gitinfo").unlink(missing_ok=True)
-    # build/.ent — not a standard latexmk aux file, remove explicitly
-    (BUILD / f"{BASE}.ent").unlink(missing_ok=True)
+    if BUILD.exists():
+        # build/.gitinfo — not a standard latexmk aux file, remove explicitly
+        (BUILD / f"{BASE}.gitinfo").unlink(missing_ok=True)
+        # build/.ent — not a standard latexmk aux file, remove explicitly
+        (BUILD / f"{BASE}.ent").unlink(missing_ok=True)
 
     # latexmk aux files in root (produced by the two direct lualatex passes in notes)
     c.run(f"latexmk -c -outdir=. {BASE}.tex", warn=True)
