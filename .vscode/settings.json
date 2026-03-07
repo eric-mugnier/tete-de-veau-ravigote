@@ -188,5 +188,29 @@
   // ─── Faux positifs masqués (à remplir via quick-fix "Masquer") ───────────
   "ltex.hiddenFalsePositives": {
     "fr": []
-  }
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // LaTeX Workshop — compiler avec lualatex (fontspec l'exige)
+  // ═══════════════════════════════════════════════════════════════════════════
+  "latex-workshop.latex.recipe.default": "latexmk (lualatex)",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk (lualatex)",
+      "tools": ["latexmk-lualatex"]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk-lualatex",
+      "command": "latexmk",
+      "args": [
+        "-lualatex",
+        "-interaction=nonstopmode",
+        "-synctex=1",
+        "-outdir=build",
+        "%DOC%"
+      ]
+    }
+  ]
 }

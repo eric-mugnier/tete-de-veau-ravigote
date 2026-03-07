@@ -29,6 +29,14 @@ def _svg_to_pdf(c):
             c.run(f'rsvg-convert -f pdf -o "{pdf}" "{svg}"')
 
 
+def _trim_pdf(path: Path) -> None:
+    """Remove any bytes after the last %%EOF marker (lualatex may not truncate on overwrite)."""
+    data = path.read_bytes()
+    eof = data.rfind(b'%%EOF')
+    if eof != -1 and eof + 5 < len(data):
+        path.write_bytes(data[:eof + 5])
+
+
 def _lmk(c, *stems):
     """Run latexmk -g -lualatex on one or more .tex stems (output → build/ via .latexmkrc)."""
     for stem in stems:
@@ -125,12 +133,16 @@ def notes(c):
     )
 
     # Pass 1: first compilation (builds .ent, resolves refs for the first time)
+    (BUILD / f"{BASE}.pdf").unlink(missing_ok=True)
     c.run(lualatex)
     # Pass 2: second compilation (cross-references stabilise, .ent fully populated)
+    (BUILD / f"{BASE}.pdf").unlink(missing_ok=True)
     c.run(lualatex)
 
     # 1. Roman annoté : inline note numbers, no endnotes appended at the end
     # Both the PDF and the .ent now live in build/, so latexmk finds .ent naturally
+    # Trim any bytes past %%EOF (lualatex doesn't always truncate on overwrite)
+    _trim_pdf(BUILD / f"{BASE}.pdf")
     shutil.copy(BUILD / f"{BASE}.pdf", BUILD / f"{BASE}_annote.pdf")
     print(f"→ build/{BASE}_annote.pdf")
 
