@@ -243,23 +243,31 @@ def _image_dims(data: bytes) -> tuple:
 def fetch_google(subject: str) -> tuple:
     """
     Try up to 2 queries on Google Custom Search Images.
+    Pass 1 : imgType=lineart (drawings, engravings, line art)
+    Pass 2 : no imgType restriction (any image, fallback)
     Returns (url, width, height, calls_used) or (None, 0, 0, calls_used).
     """
     if not GOOGLE_API_KEY or not GOOGLE_CX:
         return None, 0, 0, 0
 
+    passes = [
+        {"imgType": "lineart"},   # prefer drawings / engravings
+        {},                        # fallback: no type restriction
+    ]
+
     calls = 0
-    for query in [subject, f"{subject} portrait"]:
+    for extra in passes:
         r = _get(
             "https://www.googleapis.com/customsearch/v1",
             params={
-                "key":        GOOGLE_API_KEY,
-                "cx":         GOOGLE_CX,
-                "searchType": "image",
+                "key":           GOOGLE_API_KEY,
+                "cx":            GOOGLE_CX,
+                "searchType":    "image",
                 "imgSize":       "LARGE",
                 "imgColorType":  "gray",
                 "num":           5,
-                "q":             query,
+                "q":             subject,
+                **extra,
             },
         )
         calls += 1
