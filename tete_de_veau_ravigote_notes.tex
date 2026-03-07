@@ -34,7 +34,7 @@
 \newcommand{\chapnoteheader}[1]{{\normalfont\scshape #1}}
 
 % Source Wikipedia en fin de note
-\newcommand{\source}[1]{\newline\textit{Source~:} \textup{#1}}
+\newcommand{\source}[1]{\newline\textit{Source~:}~{\upshape\def\_{\textunderscore\allowbreak}\def\%{\char"25\relax\allowbreak}#1}}
 % Image seule dans une note
 \newcommand{\nfimg}[2]{\newline\includegraphics[width=#1\linewidth]{#2}}
 % Image côte à côte avec le texte
