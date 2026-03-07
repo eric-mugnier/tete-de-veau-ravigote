@@ -235,16 +235,17 @@ def fetch_google(subject: str) -> tuple:
         return None, 0, 0, 0
 
     calls = 0
-    for query in [f"{subject} noir et blanc", subject]:
+    for query in [subject, f"{subject} portrait"]:
         r = _get(
             "https://www.googleapis.com/customsearch/v1",
             params={
                 "key":        GOOGLE_API_KEY,
                 "cx":         GOOGLE_CX,
                 "searchType": "image",
-                "imgSize":    "LARGE",
-                "num":        5,
-                "q":          query,
+                "imgSize":       "LARGE",
+                "imgColorType":  "gray",
+                "num":           5,
+                "q":             query,
             },
         )
         calls += 1
