@@ -36,6 +36,7 @@ __pycache__/
 config.py
 fetch_log.csv
 iconographie/
+TODO.md
 
 # ─── macOS ────────────────────────────────────────────────────────────────────
 .DS_Store
