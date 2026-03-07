@@ -55,3 +55,18 @@ Add it with `crontab -e` (create `~/tdvr/logs/` first).
 python fetch_images.py --dry-run          # list all 846 extracted subjects, no download
 python fetch_images.py --pdf path/to.pdf  # use a different notes PDF
 ```
+
+
+Peux-tu essayer d'écrire une dizaine de paragraphes pour une postface ? C'est moi qui la signe. J'aimerais imiter le style de Charles Kinbote dans Feu Pâle de Nabokov. Kinbote écrit dans un style académique, mais on comprend qu'il ne va pas bien :)
+
+
+
+résumé de Feu Pâle :
+
+
+
+Le poète américain John Shade est mort ; assassiné. Son dernier poème, « Feu pâle », a été publié dans un recueil, accompagné d'une préface, d'un long commentaire et de notes de son éditeur, Charles Kinbote. (...) Kinbote est hautain, curieux, intolérant, mais aussi fou, méchant et même dangereux.
+
+
+
+Si tu veux, on peut procéder par dialogue, tu me poses des questions, j'y réponds, et tu écris la postface basée sus mes réponses, CharlesKinbotisées.

@@ -1,0 +1,285 @@
+%%% \documentclass[12pt,a4paper,twoside,openright]{memoir}
+
+\documentclass[12pt,twoside,openright]{memoir}
+\ifdefined\pdfvariable\pdfvariable minorversion 7\fi
+
+% ─── PACKAGES ─────────────────────────────────────────────────────────────────
+\usepackage{fontspec}
+\setmainfont{EB Garamond}
+\newfontfamily{\arabicfont}{Geeza Pro}[Script=Arabic]
+\newcommand{\arab}[1]{{\arabicfont\textdir TRT #1}}
+\usepackage[french]{babel}
+\usepackage{microtype}
+\usepackage{fmtcount}
+\usepackage{catchfile}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\input{version.tex}
+\CatchFileDef{\gitcommit}{\jobname.gitinfo}{\endlinechar=-1}
+
+% ─── NOTES FINALES ─────────────────────────────────────────────────────────────
+% Compiler avec : pdflatex "\def\AVECNOTES{}\input{tete_de_veau_ravigote}"
+\usepackage{endnotes}
+\ifdefined\AVECNOTES
+  \newcommand{\nf}[1]{\endnote{#1}}
+\else
+  \newcommand{\nf}[1]{}
+\fi
+% Supprimer le titre automatique du package (on gère le nôtre)
+\renewcommand{\notesname}{}
+% Style des notes : même fonte, corps légèrement réduit
+\renewcommand{\enotesize}{\small}
+% Format des notes en fin de livre :
+%   – sans retrait (parindent=0, pas de \llap)
+%   – numéro en corps normal, non exposant (\theenmark sans \@textsuperscript)
+\makeatletter
+\renewcommand\enoteformat{%
+  \rightskip\z@ \leftskip\z@ \parindent=0pt
+  \leavevmode\theenmark.\enspace}
+\makeatother
+% Source dans les notes : saut de ligne avant le lien Wikipedia
+\newcommand{\source}[1]{\newline\textit{Source~:}~{\upshape\def\_{\textunderscore\allowbreak}\def\%{\char"25\relax\allowbreak}#1}}
+% Image seule dans une note (centrée sous le texte)
+\newcommand{\nfimg}[2]{\newline\includegraphics[width=#1\linewidth]{#2}}
+% Image côte à côte avec le texte : #1=texte, #2=frac image, #3=path, #4=url source
+% Texte fixé à 0.45\linewidth ; image à #2\linewidth ; \hfill comble le reste
+\newcommand{\nfimgblock}[4]{%
+  \begin{minipage}[t]{0.45\linewidth}\small#1\end{minipage}%
+  \hfill%
+  \begin{minipage}[t]{#2\linewidth}\includegraphics[width=\linewidth]{#3}\end{minipage}%
+  \source{#4}}
+% Titre de chapitre dans le bloc de notes (commande nommée pour éviter que
+% \scshape soit fusionné avec le texte suivant lors du \write dans .ent)
+\newcommand{\chapnoteheader}[1]{{\normalfont\scshape #1}}
+% Notes par chapitre regroupées en fin de livre :
+%   – injecte un titre de chapitre dans le flux .ent
+%   – remet le compteur à 0 pour que chaque acte reparte de 1
+\newcommand{\beginchapternotes}[1]{%
+  \ifdefined\AVECNOTES
+    \setcounter{endnote}{0}%
+    \addtoendnotes{\protect\par\protect\medskip\protect\noindent\protect\chapnoteheader{#1}\protect\par}%
+  \fi
+}
+
+
+% ─── PAGE GEOMETRY (A4) ──────────────────────────────────────────────────────
+%%% \setstocksize{297mm}{210mm}
+%%% \settrimmedsize{297mm}{210mm}{*}
+%%% \settrims{0mm}{0mm}
+%%% \setlrmarginsandblock{30mm}{25mm}{*} % inner / outer
+%%% \setulmarginsandblock{30mm}{30mm}{*} % top / bottom
+%%% \setheadfoot{12mm}{15mm}
+%%% \setheaderspaces{*}{8mm}{*}
+%%% \checkandfixthelayout
+
+% ─── PAGE GEOMETRY (140×205 mm – Gallimard Blanche) ──────────────────────────
+%%% \setstocksize{210mm}{148mm}
+%%% \settrimmedsize{210mm}{148mm}{*}
+%%% \settrims{0mm}{0mm}
+%%% \setlrmarginsandblock{22mm}{17mm}{*} % inner/outer
+%%% \setulmarginsandblock{22mm}{25mm}{*} % top/bottom
+%%% \setheadfoot{10mm}{12mm}
+%%% \setheaderspaces{*}{6mm}{*}
+%%% \checkandfixthelayout
+
+% ─── PAGE GEOMETRY (155×235 mm – Medium 1) ───────────────────────────────────
+\setstocksize{235mm}{155mm}
+\settrimmedsize{235mm}{155mm}{*}
+\settrims{0mm}{0mm}
+\setlrmarginsandblock{23mm}{18mm}{*} % inner/outer
+\setulmarginsandblock{25mm}{28mm}{*} % top/bottom
+\setheadfoot{11mm}{13mm}
+\setheaderspaces{*}{7mm}{*}
+\checkandfixthelayout
+
+% ─── TYPOGRAPHY ───────────────────────────────────────────────────────────────
+\raggedbottom                        % Pages courtes autorisées (fins de chapitre)
+\renewcommand{\baselinestretch}{1.2} % Interligne
+\setlength{\parindent}{4mm}          % Alinéa
+\setlength{\parskip}{0pt}            % Pas d'espace entre paragraphes
+
+% Pas d'alinéa après titres de chapitre
+\setlength{\afterchapskip}{0.4\onelineskip} % réduit : la headline gère l'espace vers le texte
+
+% ─── HEADLINES DE CHAPITRES ───────────────────────────────────────────────────
+% Petites capitales, corps réduit, dans un bloc aux marges intérieures élargies
+\newcommand{\chaptersummary}[1]{%
+  \edef\chapnum{\ifcase\value{chapter}\or I\or II\or III\or IV\or V\or VI\or VII\or VIII\or IX\fi}%
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}%
+  \addcontentsline{toc}{chapter}{\protect\tocchapnum{\chapnum}#1}%
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}%
+}
+% Résumé de partie intercalé dans le corps du texte (acte 9 parties 2–4)
+\newcommand{\partsummary}[1]{%
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{1}}%
+  \addcontentsline{toc}{section}{\protect\tocchapsep#1}%
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}%
+}
+
+% ─── TABLE DES MATIÈRES ───────────────────────────────────────────────────────
+\setcounter{tocdepth}{-1}% supprime toutes les entrées automatiques des \chapter{}
+\AtBeginDocument{\addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}}
+\addto\captionsfrench{\renewcommand{\contentsname}{Sommaire}}
+\renewcommand{\printtoctitle}[1]{%
+  \null\vskip 2\onelineskip%
+  {\centering\normalfont\scshape\large #1\par}%
+}
+\renewcommand{\aftertoctitle}{\vskip 2\onelineskip}
+% Colonnes du sommaire : numéro romain (gauche) + texte (droite)
+\newcommand{\tocchapnum}[1]{\hbox to 2.5em{#1\hfil}}% boîte fixe pour le numéro
+\newcommand{\tocchapsep}{\hbox to 2.5em{\hfil}}% boîte vide pour les sous-chapitres
+% Entrées de chapitre (ajoutées manuellement via \chaptersummary)
+\renewcommand{\cftchapterfont}{\small\scshape}
+\renewcommand{\cftchapterpagefont}{\small\scshape}
+\setlength{\cftchapterindent}{0pt}
+\setlength{\cftchapternumwidth}{2.5em}% retrait de continuation = largeur de la colonne gauche
+\setlength{\cftbeforechapterskip}{0.5\onelineskip}
+% Entrées de section (ajoutées manuellement via \partsummary)
+\renewcommand{\cftsectionfont}{\small\scshape}
+\renewcommand{\cftsectionpagefont}{\small\scshape}
+\setlength{\cftsectionindent}{0pt}
+\setlength{\cftsectionnumwidth}{2.5em}% même retrait de continuation
+\setlength{\cftbeforesectionskip}{0.2\onelineskip}
+
+% ─── CHAPTER STYLE ────────────────────────────────────────────────────────────
+\makeatletter
+\makechapterstyle{gallimard}{%
+  \renewcommand{\chapnamefont}{\normalfont\scshape\centering}
+  \renewcommand{\chapnumfont}{\normalfont\scshape\centering}
+  \renewcommand{\chaptitlefont}{\normalfont\scshape\centering}
+  \renewcommand{\printchaptername}{}
+  \renewcommand{\chapternamenum}{}
+  \renewcommand{\printchapternum}{%
+    \chapnumfont\Roman{chapter}} % numéro en chiffres romains
+  \renewcommand{\afterchapternum}{\par\vskip 0.4\onelineskip}
+  \renewcommand{\printchaptertitle}[1]{}
+}
+\makeatother
+\chapterstyle{gallimard}
+
+% ─── RUNNING HEADERS : folio seul, sans auteur ni titre ───────────────────────
+\makepagestyle{gallimard}
+\makeevenhead{gallimard}{}{}{}        % en-tête paire : vide
+\makeoddhead{gallimard}{}{}{}         % en-tête impaire : vide
+\makeevenfoot{gallimard}{}{\thepage}{}
+\makeoddfoot{gallimard}{}{\thepage}{}
+\makepsmarks{gallimard}{%
+  \nouppercaseheads
+  \createmark{chapter}{both}{nonumber}{}{}
+}
+\pagestyle{gallimard}
+
+% Pages de début de chapitre : sans en-tête ni folio
+\aliaspagestyle{chapter}{empty}
+
+% Pages blanches intercalées par \cleardoublepage : toujours vides
+\makeatletter
+\renewcommand{\cleardoublepage}{%
+  \clearpage
+  \if@twoside
+    \ifodd\c@page\else
+      \hbox{}\thispagestyle{empty}\newpage
+    \fi
+  \fi
+}
+\makeatother
+
+% ─── DOCUMENT ─────────────────────────────────────────────────────────────────
+\begin{document}
+\pagestyle{empty}
+
+% ═══ PAGE DE TITRE (p. 1, impaire) ═══════════════════════════════════════════
+\begin{center}
+\vspace*{6\onelineskip}
+{\scshape\large éric mugnier}
+
+\vspace{8\onelineskip}
+{\scshape\huge tête de veau ravigote}
+
+\vspace{2\onelineskip}
+
+\end{center}
+% ═══ PAGE DE COPYRIGHT (verso du titre, p. 2) ════════════════════════════════
+\newpage
+\thispagestyle{empty}
+\vspace*{\fill}
+{\footnotesize\noindent
+\textcopyright{} Éric Mugnier, 2026\\
+Tous droits réservés pour tous pays\\
+Reproduction interdite
+}
+% \cleardoublepage                        % → p. impaire : avertissement
+\newpage
+
+% ═══ AVERTISSEMENT (p. impaire, avant les épigraphes) ══════════════════════════════
+\thispagestyle{empty}
+\vspace*{4\onelineskip}
+{\centering\normalfont\scshape\large Spoiler de l'éditeur amateur\par}
+\vspace{2\onelineskip}
+
+\noindent Ce que vous allez lire n'est pas un roman. Pas non plus un polar, pas un essai, pas une autofiction, pas un recueil de nouvelles, pas un pamphlet, pas un manuel de savoir-vivre, pas un album pour enfants.
+
+\medskip
+\noindent C'est un \textsc{ovni} — objet vittéraire non identifié.
+
+\medskip
+\noindent Il est composé de trois types de séquences, qui s'alternent sans logique apparente~: 1. une pseudo-intrigue, dans le style polar, conduite par le héros-narrateur et agrémentée de nombreuses scènes dialoguées~; 2. des ratiocinations sans queue ni tête du même narrateur-héros sur les sujets les plus incongrus, le plus souvent des enjeux de société — faire des enfants, les riches et les pauvres, les réseaux sociaux, etc.~; et 3. un appareil conséquent de mentions, références et digressions, qui forment un véritable cabinet de curiosités historiques et culturelles. Le fil rouge de ces trois ensembles nous semble être l'Horreur.
+
+\medskip
+\noindent \textit{L'écrit est inachevé.}
+
+\vspace{2\onelineskip}
+
+\cleardoublepage                        % → p. impaire : épigraphes
+
+% ═══ ÉPIGRAPHES (p. impaire, avant le texte) ══════════════════════════
+\thispagestyle{empty}
+\vspace*{\fill}
+
+\begin{quote}
+\itshape « The horror! The horror! »
+\end{quote}
+\begin{flushright}
+\normalfont — Joseph Conrad, \textit{Au cœur des ténèbres}
+\end{flushright}
+
+\vspace{3\onelineskip}
+
+\begin{quote}
+\itshape « J'aimais ses idées sur l'horreur de la vie, sur la bêtise du monde, sur l'inclémence de la destinée ; »
+\end{quote}
+\begin{flushright}
+\normalfont — J.-K. Huysmans, \textit{À rebours}, Préface
+\end{flushright}
+
+\vspace*{\fill}
+
+\cleardoublepage                        % → p. impaire chapitre 1
+
+% ═══ MAIN TEXT ════════════════════════════════════════════════════════════════
+\pagestyle{gallimard}
+
+{\makeatletter\def\contentsline#1#2#3#4{}\@starttoc{toc}\makeatother}
+
+\input{tete_de_veau_ravigote_content_etendu.tex}
+
+% ═══ NOTES FINALES (incluses ssi \AVECNOTES défini et \SANSNOTESFINALES absent) ═
+\ifdefined\AVECNOTES
+  \ifdefined\SANSNOTESFINALES\else
+    \cleardoublepage                            % p. impaire : page-titre « Notes »
+    \thispagestyle{empty}
+    \vspace*{10\onelineskip}
+    {\centering\normalfont\scshape\large Notes\par}
+    \newpage                                    % p. paire : blanche
+    \hbox{}\thispagestyle{empty}
+    \newpage                                    % p. impaire : début des notes
+    \pagestyle{gallimard}
+    \theendnotes
+  \fi
+\fi
+
+% ═══ COLOPHON FINAL ══════════════════════════════════════════════════════════
+\input{colophon}
+
+\end{document}

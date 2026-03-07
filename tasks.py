@@ -83,6 +83,15 @@ def build(c):
     _ls_outputs()
 
 
+@task
+def sommaire(c):
+    """Build sommaire PDF only (no main PDF)."""
+    BUILD.mkdir(exist_ok=True)
+    print("=== sommaire PDF ===")
+    _lmk(c, f"{BASE}_sommaire")
+    _ls_outputs()
+
+
 @task(pre=[build])
 def diffs(c):
     """Build diff PDF against the original (requires latexdiff + make_diff.py)."""

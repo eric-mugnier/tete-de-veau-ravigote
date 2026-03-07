@@ -1,0 +1,76 @@
+%
+% tete_de_veau_ravigote_sommaire_etendu.tex
+% Sommaire étendu (headlines avec ratiocinations et digressions).
+% Lit tete_de_veau_ravigote_etendu.toc — généré par inv sommaire_etendu.
+%
+\documentclass[9pt]{article}
+
+\usepackage{fontspec}
+\setmainfont{EB Garamond}
+\usepackage[french]{babel}
+\usepackage{microtype}
+\usepackage{tabularx}
+\usepackage[paperwidth=155mm,paperheight=235mm,left=15mm,right=12mm,top=11mm,bottom=9mm,noheadfoot]{geometry}
+
+\renewcommand{\baselinestretch}{1.0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% ─── Macros du .toc ────────────────────────────────────────────────────────────
+
+\newcommand{\tocchapnum}[1]{#1}
+\newcommand{\tocchapsep}{}
+\def\chapternumberline#1{}
+
+\def\babel@toc#1#2{}
+
+% ─── Rendu en table 3 colonnes ────────────────────────────────────────────────
+
+\def\TOCNIL{}
+\def\TOCSTOP{}
+
+\renewcommand{\contentsline}[4]{%
+  \tocProcess{#2}{#3}%
+}
+
+\newcommand{\tocProcess}[2]{%
+  \tocPeek#1\TOCNIL{#2}%
+}
+
+\newif\iffirstchap \firstchaptrue
+
+\long\def\tocPeek#1#2\TOCNIL#3{%
+  \ifx#1\chapternumberline
+  \else\ifx#1\tocchapnum
+    \tocChapRow#2\TOCSTOP{#3}%
+  \else
+    \tocSectRow#2\TOCSTOP{#3}%
+  \fi\fi
+}
+
+\long\def\tocChapRow#1#2\TOCSTOP#3{%
+  \iffirstchap\global\firstchapfalse\else\rule{0pt}{13pt}\fi
+  #1 & #2 & #3 \\[2pt]%
+}
+
+\long\def\tocSectRow#1\TOCSTOP#2{%
+  & \ignorespaces#1 & #2 \\[1pt]%
+}
+
+% ─── Document ──────────────────────────────────────────────────────────────────
+\begin{document}
+\pagestyle{empty}
+
+\vspace*{3mm}
+{\centering\normalfont\scshape\large sommaire étendu\par}
+\vspace{5mm}
+
+{\small\scshape
+\def\setcounter#1#2{}%
+\setlength{\tabcolsep}{4pt}%
+\begin{tabularx}{\linewidth}{@{}lXr@{}}
+\input{tete_de_veau_ravigote_etendu.toc}
+\end{tabularx}
+}
+
+\end{document}
