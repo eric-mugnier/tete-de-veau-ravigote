@@ -3,7 +3,7 @@
 Index par ordre d'apparition. Les références historiques ou culturelles citées en notes de bas de page ne sont pas comptabilisées.
 
 | Acte | Personnage | Description |
-|---|---|---|
+|:-----|:----------------|:--------------------------------------------------|
 | I | **Djeferson Beauvais** | Narrateur et protagoniste. Commandant de police judiciaire, homme de couleur. Cynique, amateur de cigares, de bons vins et de vieux livres. Règle volontiers les problèmes de façon expéditive. Armé de « Manu », son 6.35 Manufrance de collection hérité de son grand-père Philibert, résistant. Père militaire absent, prénom hérité d'un Thomas Jefferson mal orthographié. |
 | I | **Gulav Behram** dit « le Kurde » | Criminel multirécidiviste : vol, viol, extorsion, cambriolage. Constamment libéré faute de place en prison. Trop violent même pour les codétenus. Tué par Djeferson lors d'un cambriolage. |
 | II | **Maria Ouvrard** (« mère Ouvrard ») | Voisine de palier de Djeferson au 6e étage. Maîtresse du chat Korax. |
@@ -17,6 +17,7 @@ Index par ordre d'apparition. Les références historiques ou culturelles citée
 | II | **Père Beaubois** | Prêtre confesseur. Victime du Brain Catcher : tué, décapité. Son corps est découvert par Solange Jacquard. |
 | II | **Solange Jacquard** | 90 ans. Dévote acharnée, homosexuelle réprimée. Découvre le corps du père Beaubois. |
 | II | **Valérie Renou** | Retraitée. Découvre l'un des colis suspects et meurt d'une crise cardiaque. |
+| II | **Dardariel** | Sbire et homme de main de Monseigneur Riqueti. |
 | III | **Monseigneur Mathéo Riqueti** | Cardinal, évêque. Beau et raffiné en apparence. Véritable identité du « Brain Catcher » : tue et décapite des prêtres pédophiles, emplit leurs crânes de croquettes de luxe — vengeance contre l'Église qui avait fait tuer son chien d'enfance. |
 | III | **Niccolo** | Garde du corps de Riqueti. Gigantesque, oreilles en chou-fleur, ancien boxeur. Exécutant violent et fidèle. Tué par Titus. |
 | III | **Titus Beaugendre** | Lieutenant de police, meilleur ami et partenaire de Djeferson depuis l'enfance. Grand, noir, d'origine sierra-léonaise. Loyal et expéditif. Mari de Bérénice, père de Paul et Virginie. Enlevé par Atiena à l'acte VI pour le protéger. |
