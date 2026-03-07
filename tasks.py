@@ -59,7 +59,7 @@ def build(c):
     """Build main PDF and sommaire (always run first; pre-task for diffs/epub/notes)."""
     print("=== git hash ===")
     result = c.run("git log -1 --format=%h", hide=True)
-    (ROOT / f"{BASE}.gitinfo").write_text(result.stdout.strip())
+    (BUILD / f"{BASE}.gitinfo").write_text(result.stdout.strip())
 
     print("=== svg → pdf ===")
     _svg_to_pdf(c)
@@ -117,6 +117,7 @@ def notes(c):
     tex_cmd = rf"\def\AVECNOTES{{}}\def\SANSNOTESFINALES{{}}\input{{{BASE}}}"
     lualatex = (
         f"lualatex -interaction=nonstopmode"
+        f" -output-directory=build"
         f" -jobname={BASE}"
         f' "{tex_cmd}"'
     )
@@ -127,7 +128,8 @@ def notes(c):
     c.run(lualatex)
 
     # 1. Roman annoté : inline note numbers, no endnotes appended at the end
-    shutil.copy(ROOT / f"{BASE}.pdf", BUILD / f"{BASE}_annote.pdf")
+    # Both the PDF and the .ent now live in build/, so latexmk finds .ent naturally
+    shutil.copy(BUILD / f"{BASE}.pdf", BUILD / f"{BASE}_annote.pdf")
     print(f"→ build/{BASE}_annote.pdf")
 
     # 2. Notes seules — compile BEFORE restoring the roman (.ent still populated)
@@ -145,14 +147,11 @@ def notes(c):
 @task
 def clean(c):
     """Remove root-level temp files and latexmk aux files from build/."""
-    # Root-level files not managed by latexmk:
-    #   .gitinfo  — written at build start, not needed after
-    #   .pdf      — annotated build artefact; canonical PDF lives in build/
-    #   .ent      — endnotes register, regenerated on every notes build
-    for name in [f"{BASE}.gitinfo", f"{BASE}.pdf", f"{BASE}.ent"]:
-        (ROOT / name).unlink(missing_ok=True)
-    # build/.ent — written by latexmk restore pass; not a standard aux file
-    #              so latexmk -c doesn't remove it
+    # Root-level stray PDF — would only appear if lualatex was called without -output-directory
+    (ROOT / f"{BASE}.pdf").unlink(missing_ok=True)
+    # build/.gitinfo — not a standard latexmk aux file, remove explicitly
+    (BUILD / f"{BASE}.gitinfo").unlink(missing_ok=True)
+    # build/.ent — not a standard latexmk aux file, remove explicitly
     (BUILD / f"{BASE}.ent").unlink(missing_ok=True)
 
     # latexmk aux files in root (produced by the two direct lualatex passes in notes)
