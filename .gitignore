@@ -32,6 +32,11 @@ __pycache__/
 *.pyc
 *.pyo
 
+# ─── fetch_images ─────────────────────────────────────────────────────────────
+config.py
+fetch_log.csv
+iconographie/
+
 # ─── macOS ────────────────────────────────────────────────────────────────────
 .DS_Store
 .AppleDouble
