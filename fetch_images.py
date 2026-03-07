@@ -95,9 +95,19 @@ def extract_notes(pdf_path: Path) -> list[dict]:
     # Chapter headers look like "ActeI", "ActeII", "ActeIII" etc.
     # We process line by line, tracking the current chapter.
 
+    def _roman_to_int(s):
+        vals = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100}
+        s, result = s.upper(), 0
+        for i, c in enumerate(s):
+            v = vals.get(c, 0)
+            result += v if i + 1 == len(s) or vals.get(s[i+1], 0) <= v else -v
+        return result
+
     notes = []
-    current_chapter = ""
-    sequential = 0
+    current_chapter    = ""
+    current_chapter_n  = 0   # arabic chapter number (1-based)
+    chapter_note_count = 0   # per-chapter note counter
+    sequential         = 0   # global unique ID
 
     # State machine: accumulate lines belonging to the current note
     in_note       = False
@@ -105,20 +115,22 @@ def extract_notes(pdf_path: Path) -> list[dict]:
     note_src_url  = ""
 
     def flush_note():
-        nonlocal in_note, note_lines, note_src_url, sequential
+        nonlocal in_note, note_lines, note_src_url, sequential, chapter_note_count
         if not in_note:
             return
-        sequential += 1
+        sequential        += 1
+        chapter_note_count += 1
         full_text = " ".join(note_lines).strip()
-        # Remove trailing source line if it ended up in the body
         full_text = re.sub(r"\s*Source\s*[:\s]+\S+\s*$", "", full_text).strip()
         subject = _subject(full_text, note_src_url)
         notes.append({
-            "note_number": sequential,
-            "chapter":     current_chapter,
-            "full_text":   full_text,
-            "source_url":  note_src_url,
-            "subject":     subject,
+            "note_number":       sequential,
+            "chapter":           current_chapter,
+            "chapter_n":         current_chapter_n,
+            "chapter_note_n":    chapter_note_count,
+            "full_text":         full_text,
+            "source_url":        note_src_url,
+            "subject":           subject,
         })
         in_note      = False
         note_lines   = []
@@ -138,7 +150,9 @@ def extract_notes(pdf_path: Path) -> list[dict]:
         m_ch = re_chapter.match(line)
         if m_ch:
             flush_note()
-            current_chapter = f"Acte {m_ch.group(1).upper()}"
+            current_chapter    = f"Acte {m_ch.group(1).upper()}"
+            current_chapter_n  = _roman_to_int(m_ch.group(1))
+            chapter_note_count = 0
             continue
 
         # Source URL?
@@ -415,8 +429,10 @@ def main():
             break
 
         # Destination path
-        slug = slugify(subject, max_length=60)
-        dest = IMAGES_DIR / f"note_{num:03d}_{slug}.jpg"
+        slug      = slugify(subject, max_length=60)
+        ch_n      = note["chapter_n"]
+        ch_note_n = note["chapter_note_n"]
+        dest = IMAGES_DIR / f"acte_{ch_n:02d}_note_{ch_note_n:03d}_{slug}.jpg"
 
         # File already on disk?
         if dest.exists():
