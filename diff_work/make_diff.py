@@ -19,8 +19,12 @@ WORK   = os.path.join(BASE, 'diff_work')
 TMPDIR = os.path.join(WORK, 'tmp')
 os.makedirs(TMPDIR, exist_ok=True)
 
+print('=' * 60)
+print('  make_diff.py — building diff PDF')
+print('=' * 60)
+
 # ── Step 0: clean all intermediate files ────────────────────────────────────
-print('Cleaning intermediate files...')
+print('Cleaning diff_work intermediate files...')
 for f in glob.glob(os.path.join(TMPDIR, '*.tex')):
     os.remove(f)
 for ext in ('aux', 'toc', 'log', 'out', 'fls', 'fdb_latexmk'):
