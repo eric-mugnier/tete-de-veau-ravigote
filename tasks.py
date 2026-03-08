@@ -66,7 +66,7 @@ _OUTPUT_PDFS = [
 def _ls_outputs():
     """Print sizes of expected output files, silently skip missing ones."""
     candidates = [BUILD / name for name in _OUTPUT_PDFS] + [
-        ROOT / f"{BASE}.epub",
+        BUILD / f"{BASE}.epub",
         ROOT / f"{BASE}_COMPLET.pdf",
     ]
     for p in candidates:
@@ -120,7 +120,7 @@ def epub(c):
     print("=== epub ===")
     c.run(
         f"pandoc {BASE}.tex"
-        f" -o {BASE}.epub"
+        f" -o {BUILD}/{BASE}.epub"
         f' --metadata title="Tête de veau ravigote"'
         f' --metadata author="Éric Mugnier"'
         f' --metadata lang="fr"'
@@ -257,7 +257,7 @@ def all(c):
     # epub
     c.run(
         f"pandoc {BASE}.tex"
-        f" -o {BASE}.epub"
+        f" -o {BUILD}/{BASE}.epub"
         f' --metadata title="Tête de veau ravigote"'
         f' --metadata author="Éric Mugnier"'
         f' --metadata lang="fr"'
@@ -282,7 +282,7 @@ def clean(c):
     c.run(f"latexmk -c -outdir=. {BASE}.tex", warn=True)
 
     # build/ : keep only expected PDFs and the body.tex files needed for IDE compilation
-    _keep_names = set(_OUTPUT_PDFS) | {"personnages_body.tex", "postface_chatgpt_body.tex", "postface_claude_body.tex"}
+    _keep_names = set(_OUTPUT_PDFS) | {f"{BASE}.epub", "personnages_body.tex", "postface_chatgpt_body.tex", "postface_claude_body.tex"}
     if BUILD.exists():
         for f in BUILD.iterdir():
             if f.is_file() and f.name not in _keep_names:
