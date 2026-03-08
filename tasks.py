@@ -7,10 +7,25 @@ Usage : inv build | inv notes | inv diffs | inv epub | inv pers | inv clean
 
 import os
 import re
+import time
+from functools import wraps
 from pathlib import Path
 import shutil
 
 from invoke import task
+
+
+def _timed(fn):
+    """Decorator: print elapsed time after a task body completes."""
+    @wraps(fn)
+    def wrapper(c, *args, **kwargs):
+        t0 = time.perf_counter()
+        result = fn(c, *args, **kwargs)
+        elapsed = time.perf_counter() - t0
+        mins, secs = divmod(int(elapsed), 60)
+        print(f"  → {fn.__name__} : {f'{mins}m ' if mins else ''}{secs}s")
+        return result
+    return wrapper
 
 # Always run from the project root (mirrors `cd "$(dirname "$0")"` in the shell script)
 ROOT = Path(__file__).parent
@@ -87,6 +102,7 @@ def gitinfo(c):
 
 
 @task(pre=[gitinfo])
+@_timed
 def build(c):
     """Build main PDF and sommaire (always run first; pre-task for diffs/epub/notes)."""
 
@@ -98,6 +114,7 @@ def build(c):
 
 
 @task(pre=[build])
+@_timed
 def sommaire(c):
     """Build sommaire PDF (uses .toc from build)."""
     _lmk(c, f"{BASE}_sommaire")
@@ -105,6 +122,7 @@ def sommaire(c):
 
 
 @task(pre=[build])
+@_timed
 def diffs(c):
     """Build diff PDF against the original (requires latexdiff + make_diff.py)."""
     print("=== 3/4  diff PDF ===")
@@ -117,6 +135,7 @@ def diffs(c):
 
 
 @task(pre=[build])
+@_timed
 def epub(c):
     """Build EPUB via pandoc."""
     print("=== epub ===")
@@ -130,6 +149,7 @@ def epub(c):
 
 
 @task(pre=[build])
+@_timed
 def notes(c):
     """
     Build annotated PDF (inline note numbers) + standalone notes PDF.
@@ -180,6 +200,7 @@ def notes(c):
 
 
 @task
+@_timed
 def pers(c):
     """Build personnages.pdf from personnages.md via pandoc + lualatex."""
     BUILD.mkdir(exist_ok=True)
@@ -196,6 +217,7 @@ def pers(c):
 
 
 @task(name="postface")
+@_timed
 def postfaces(c):
     """Build postface_claude.pdf and postface_chatgpt.pdf via pandoc + lualatex."""
     BUILD.mkdir(exist_ok=True)
@@ -219,6 +241,7 @@ def postfaces(c):
 
 
 @task(pre=[gitinfo])
+@_timed
 def total(c):
     """Build LA TOTALE : document unifié annoté + postface + notes + sommaire étendu + personnages."""
     print("=== svg → pdf ===")
@@ -254,6 +277,7 @@ def total(c):
 
 
 @task(pre=[build])
+@_timed
 def all(c):
     """Build everything: main, sommaires, notes, epub, pers, postface, diffs, then clean."""
     _lmk(c, f"{BASE}_sommaire")
