@@ -306,20 +306,16 @@ def all(c):
 
 @task
 def clean(c):
-    """Remove root-level temp files and latexmk aux files from build/."""
+    """Remove aux files from build/ and root; keep PDFs and IDE body files."""
     # Root-level stray PDF — would only appear if lualatex was called without -output-directory
     (ROOT / f"{BASE}.pdf").unlink(missing_ok=True)
-    if BUILD.exists():
-        # build/*.gitinfo — not standard latexmk aux files, remove explicitly
-        for f in BUILD.glob("*.gitinfo"):
-            f.unlink()
-        # postface_chatgpt_body.tex, postface_claude_body.tex and personnages_body.tex are kept (needed for IDE compilation)
-        # build/.ent — not a standard latexmk aux file, remove explicitly
-        (BUILD / f"{BASE}.ent").unlink(missing_ok=True)
 
     # latexmk aux files in root (produced by the two direct lualatex passes in notes)
     c.run(f"latexmk -c -outdir=. {BASE}.tex", warn=True)
 
-    # latexmk aux files in build/ (produced by all latexmk-managed compilations)
-    for stem in [BASE, f"{BASE}_sommaire", f"{BASE}_sommaire_etendu", f"{BASE}_notes", f"{BASE}_illustrations", f"{BASE}_LA_TOTALE"]:
-        c.run(f"latexmk -c -outdir=build {stem}.tex", warn=True)
+    # build/ : keep only PDFs and the three body.tex files needed for IDE compilation
+    _keep_names = {"personnages_body.tex", "postface_chatgpt_body.tex", "postface_claude_body.tex"}
+    if BUILD.exists():
+        for f in BUILD.iterdir():
+            if f.is_file() and f.suffix != ".pdf" and f.name not in _keep_names:
+                f.unlink()
