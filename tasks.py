@@ -43,19 +43,22 @@ def _lmk(c, *stems):
         c.run(f"latexmk -g -lualatex -interaction=nonstopmode {stem}.tex")
 
 
+_OUTPUT_PDFS = [
+    f"{BASE}.pdf",
+    f"{BASE}_sommaire.pdf",
+    f"{BASE}_annote.pdf",
+    f"{BASE}_notes.pdf",
+    f"{BASE}_illustrations.pdf",
+    f"{BASE}_LA_TOTALE.pdf",
+    f"{BASE}_diff.pdf",
+]
+
+
 def _ls_outputs():
     """Print sizes of expected output files, silently skip missing ones."""
-    candidates = [
-        BUILD / f"{BASE}.pdf",
-        BUILD / f"{BASE}_sommaire.pdf",
-        BUILD / f"{BASE}_annote.pdf",
-        BUILD / f"{BASE}_notes.pdf",
-        BUILD / f"{BASE}_illustrations.pdf",
-        BUILD / f"{BASE}_LA_TOTALE.pdf",
-        BUILD / f"{BASE}_sommaire_etendu.pdf",
-        BUILD / f"{BASE}_diff.pdf",
-        ROOT  / f"{BASE}.epub",
-        ROOT  / f"{BASE}_COMPLET.pdf",
+    candidates = [BUILD / name for name in _OUTPUT_PDFS] + [
+        ROOT / f"{BASE}.epub",
+        ROOT / f"{BASE}_COMPLET.pdf",
     ]
     for p in candidates:
         if p.exists():
@@ -301,9 +304,9 @@ def clean(c):
     # latexmk aux files in root (produced by the two direct lualatex passes in notes)
     c.run(f"latexmk -c -outdir=. {BASE}.tex", warn=True)
 
-    # build/ : keep only PDFs and the three body.tex files needed for IDE compilation
-    _keep_names = {"personnages_body.tex", "postface_chatgpt_body.tex", "postface_claude_body.tex"}
+    # build/ : keep only expected PDFs and the body.tex files needed for IDE compilation
+    _keep_names = set(_OUTPUT_PDFS) | {"personnages_body.tex", "postface_chatgpt_body.tex", "postface_claude_body.tex"}
     if BUILD.exists():
         for f in BUILD.iterdir():
-            if f.is_file() and f.suffix != ".pdf" and f.name not in _keep_names:
+            if f.is_file() and f.name not in _keep_names:
                 f.unlink()
