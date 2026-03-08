@@ -6,6 +6,7 @@ Usage : inv build | inv notes | inv diffs | inv epub | inv pers | inv clean
 """
 
 import os
+import re
 from pathlib import Path
 import shutil
 
@@ -35,6 +36,14 @@ def _trim_pdf(path: Path) -> None:
     eof = data.rfind(b'%%EOF')
     if eof != -1 and eof + 5 < len(data):
         path.write_bytes(data[:eof + 5])
+
+
+def _pandoc_body(c, src, dest):
+    """Run pandoc src → build/dest (latex), then strip any \\section{}\\label{} header."""
+    c.run(f"pandoc {src} -t latex -o {BUILD}/{dest}")
+    body = (BUILD / dest).read_text()
+    body = re.sub(r"\\section\{.*?\}\\label\{[^}]*\}", "", body, flags=re.DOTALL)
+    (BUILD / dest).write_text(body)
 
 
 def _lmk(c, *stems):
@@ -210,26 +219,17 @@ def total(c):
     print("=== svg → pdf ===")
     _svg_to_pdf(c)
 
-    import re as _re
-
-    def _pandoc_body(src, dest):
-        c.run(f"pandoc {src} -t latex -o {BUILD}/{dest}")
-        _body = (BUILD / dest).read_text()
-        _body = _re.sub(r"\\section\{.*?\}\\label\{[^}]*\}", "", _body, flags=_re.DOTALL)
-        (BUILD / dest).write_text(_body)
-
     print("=== pandoc : postface ChatGPT body ===")
-    _pandoc_body("postface-chatGPT.md", "postface_chatgpt_body.tex")
+    _pandoc_body(c, "postface-chatGPT.md", "postface_chatgpt_body.tex")
 
     print("=== pandoc : postface Claude body ===")
-    _pandoc_body("postface_claude.md", "postface_claude_body.tex")
+    _pandoc_body(c, "postface_claude.md", "postface_claude_body.tex")
 
     print("=== pandoc : personnages body ===")
     c.run(f"pandoc personnages.md -t latex -o {BUILD}/personnages_body.tex")
     # Post-process:
     # 1. Remove pandoc's \section{} heading (we add our own title in LA_TOTALE.tex)
     # 2. Fix longtable column widths (pandoc uses A4-based proportions)
-    import re
     body = (BUILD / "personnages_body.tex").read_text()
     body = re.sub(r"\\section\{.*?\}\\label\{[^}]*\}", "", body, flags=re.DOTALL)
     body = re.sub(
