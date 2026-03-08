@@ -86,25 +86,9 @@ def build(c):
     _ls_outputs()
 
 
-@task(pre=[gitinfo])
+@task(pre=[build])
 def sommaire(c):
-    """Build sommaire étendu PDF (draftmode pass on main + etendu, then compile)."""
-    _svg_to_pdf(c)
-
-    print("=== 1/2  main .toc (draftmode) ===")
-    c.run(
-        f"lualatex -interaction=nonstopmode -draftmode"
-        f" -output-directory=build"
-        f" {BASE}.tex"
-    )
-
-    print("=== 2/2  etendu .toc + sommaire étendu PDF ===")
-    c.run(
-        f"lualatex -interaction=nonstopmode -draftmode"
-        f" -output-directory=build"
-        f" -jobname={BASE}_etendu"
-        f" {BASE}_etendu.tex"
-    )
+    """Build sommaire PDF (uses .toc from build)."""
     _lmk(c, f"{BASE}_sommaire")
     _ls_outputs()
 
@@ -267,13 +251,6 @@ def total(c):
 @task(pre=[build])
 def all(c):
     """Build everything: main, sommaires, notes, epub, pers, postface, diffs, then clean."""
-    # sommaire étendu (le .toc principal existe déjà après build)
-    c.run(
-        f"lualatex -interaction=nonstopmode -draftmode"
-        f" -output-directory=build"
-        f" -jobname={BASE}_etendu"
-        f" {BASE}_etendu.tex"
-    )
     _lmk(c, f"{BASE}_sommaire")
     # notes (bypasse le pre=[build] déjà fait)
     notes(c)
