@@ -272,11 +272,9 @@ def total(c):
     _ls_outputs()
 
 
-@task
+@task(pre=[build])
 def all(c):
     """Build everything: main, sommaires, notes, epub, pers, postface, diffs, then clean."""
-    gitinfo(c)
-    build(c)
     # sommaire étendu (le .toc principal existe déjà après build)
     c.run(
         f"lualatex -interaction=nonstopmode -draftmode"
