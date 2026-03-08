@@ -182,7 +182,7 @@ preamble = re.sub(
     preamble
 )
 preamble = re.sub(
-    r'\\CatchFileDef\{\\gitcommit\}\{\\jobname\.gitinfo\}\{[^}]*\}',
+    r'\\CatchFileDef\{\\gitcommit\}\{[^}]*\.gitinfo\}\{[^}]*\}',
     r'\\newcommand{\\gitcommit}{unknown}',
     preamble
 )
