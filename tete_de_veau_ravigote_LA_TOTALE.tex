@@ -138,6 +138,20 @@
 }
 \makeatother
 
+% ─── EDITORIAL NOTE (Avertissement, Postfaces) ────────────────────────────────
+\newenvironment{editorialnote}[1]{%
+  \begingroup
+  \renewcommand{\baselinestretch}{1.1}%
+  \small
+  \setlength{\parindent}{0pt}%
+  \setlength{\parskip}{\onelineskip}%
+  {\centering\normalfont\scshape\large #1\par}%
+  \vspace{\onelineskip}%
+  \noindent\ignorespaces
+}{%
+  \par\endgroup
+}
+
 % ─── DOCUMENT ─────────────────────────────────────────────────────────────────
 \begin{document}
 \pagestyle{empty}
@@ -165,55 +179,7 @@ Reproduction interdite
 }
 \newpage
 
-% ═══ AVERTISSEMENT ════════════════════════════════════════════════════════════
-\thispagestyle{empty}
-\vspace*{4\onelineskip}
-{\centering\normalfont\scshape\large Spoiler de l'éditeur amateur\par}
-\vspace{2\onelineskip}
-
-\noindent Ce que vous allez lire n'est pas un roman. Ni un polar, ni un essai,
-ni une autofiction, ni un recueil de nouvelles, ni un pamphlet, ni un manuel
-de savoir-vivre, ni même — précision sans doute superflue — un album pour enfants.
-
-\medskip
-\noindent C'est un \textsc{ovni} — objet vittéraire non identifié.
-
-\medskip
-\noindent Le texte s'articule en trois types de séquences~:
-
-\noindent 1. une pseudo-intrigue policière, menée par le narrateur-héros et jalonnée
-de nombreuses scènes dialoguées~;
-
-\noindent 2. des ratiocinations — souvent longues, parfois brusquement interrompues —
-du même narrateur, sur les sujets les plus divers~: faire des enfants, les
-riches et les pauvres, les réseaux sociaux, et ainsi de suite~;
-
-\noindent 3. un appareil dense de mentions, références et digressions, qui finit par
-former un vrai cabinet de curiosités historiques et culturelles.
-
-\noindent Le fil rouge de ces trois ensembles — s'il en existe un — semble être l'Horreur.
-
-\medskip
-\noindent Le texte est inachevé.
-
-\vspace{2\onelineskip}
-
-\cleardoublepage
-
-% ═══ ÉPIGRAPHES ═══════════════════════════════════════════════════════════════
-\thispagestyle{empty}
-\vspace*{\fill}
-
-\begin{quote}
-\itshape « \dots\ einer Fremde, in der selbst die Luft keinen Bestandteil der Heimatluft habe, in der man vor Fremdheit ersticken müsse und in deren unsinnigen Verlockungen man doch nichts tun könne als weiter gehen, weiter sich verirren. »
-\end{quote}
-\begin{flushright}
-\normalfont — Franz Kafka, \textit{Das Schloss}
-\end{flushright}
-
-\vspace*{\fill}
-
-\cleardoublepage
+\input{avertissement-epigraphe.tex}
 
 % ═══ TEXTE PRINCIPAL (avec numéros de notes en exposant) ══════════════════════
 \pagestyle{gallimard}
@@ -226,20 +192,18 @@ former un vrai cabinet de curiosités historiques et culturelles.
 \thispagestyle{empty}
 \pagestyle{gallimard}
 \vspace*{4\onelineskip}
-{\centering\normalfont\scshape\large Première postface de l'éditeur amateur\par}
-\vspace{2\onelineskip}
-{\setlength{\parindent}{0pt}\setlength{\parskip}{\onelineskip}%
-\IfFileExists{build/postface_chatgpt_body.tex}{\input{build/postface_chatgpt_body.tex}}{}}
+\begin{editorialnote}{Première postface de l'éditeur amateur}
+\IfFileExists{build/postface_chatgpt_body.tex}{\input{build/postface_chatgpt_body.tex}}{}
+\end{editorialnote}
 
 % ═══ DEUXIÈME POSTFACE ════════════════════════════════════════════════════════
 \cleardoublepage
 \thispagestyle{empty}
 \pagestyle{gallimard}
 \vspace*{4\onelineskip}
-{\centering\normalfont\scshape\large Deuxième postface de l'éditeur amateur\par}
-\vspace{2\onelineskip}
-{\setlength{\parindent}{0pt}\setlength{\parskip}{\onelineskip}%
-\IfFileExists{build/postface_claude_body.tex}{\input{build/postface_claude_body.tex}}{}}
+\begin{editorialnote}{Deuxième postface de l'éditeur amateur}
+\IfFileExists{build/postface_claude_body.tex}{\input{build/postface_claude_body.tex}}{}
+\end{editorialnote}
 
 % ═══ NOTES ════════════════════════════════════════════════════════════════════
 \cleardoublepage
