@@ -4,6 +4,8 @@
   // Extension : ltex-plus.vscode-ltex-plus v15+
   // ═══════════════════════════════════════════════════════════════════════════
 
+  "python.defaultInterpreterPath": "/usr/local/opt/python@3.13/bin/python3.13",
+
   // Association explicite : les fichiers .tex sont du LaTeX
   "files.associations": {
     "*.tex": "latex"
