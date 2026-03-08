@@ -1,9 +1,3 @@
-# POSTFACE
-
-*par Christophe Thiébaud*
-
----
-
 Il m'a été demandé — non, ce n'est pas exact — personne ne me demande jamais rien, et c'est là précisément ce qui distingue l'éditeur amateur de l'éditeur professionnel : le premier agit par conviction forgée dans le feu de quarante ans de fréquentation intime d'une œuvre ; le second agit par contrat, par habitude, par lâcheté administrative. J'ai donc décidé, seul, en pleine possession de mes facultés — ce point mérite d'être souligné car certains, dans mon entourage, ont cru bon de l'insinuer —, d'apposer ici quelques remarques que je juge non seulement utiles mais strictement nécessaires à la bonne intelligence de ce texte. Que le lecteur pressé passe son chemin. Que le lecteur qui vient ici chercher une caution mondaine aille la chercher ailleurs. Cette postface n'est pas pour eux. Elle est pour les autres. Je ne suis pas certain qu'ils existent, mais j'écris pour eux quand même.
 
 ---
