@@ -327,7 +327,7 @@ def clean(c):
         (BUILD / f"{BASE}.gitinfo").unlink(missing_ok=True)
         (BUILD / f"{BASE}_etendu.gitinfo").unlink(missing_ok=True)
         (BUILD / f"{BASE}_LA_TOTALE.gitinfo").unlink(missing_ok=True)
-        # postface_body.tex and personnages_body.tex are kept (needed for IDE compilation)
+        # postface_chatgpt_body.tex, postface_claude_body.tex and personnages_body.tex are kept (needed for IDE compilation)
         # build/.ent — not a standard latexmk aux file, remove explicitly
         (BUILD / f"{BASE}.ent").unlink(missing_ok=True)
 

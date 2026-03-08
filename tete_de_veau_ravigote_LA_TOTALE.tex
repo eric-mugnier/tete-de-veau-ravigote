@@ -17,7 +17,9 @@
 \usepackage{longtable}
 \usepackage{booktabs}
 \input{version.tex}
-\CatchFileDef{\gitcommit}{\jobname.gitinfo}{\endlinechar=-1}
+\IfFileExists{\jobname.gitinfo}%
+  {\CatchFileDef{\gitcommit}{\jobname.gitinfo}{\endlinechar=-1}}%
+  {\def\gitcommit{}}
 
 % ─── NOTES FINALES (toujours actives dans LA TOTALE) ──────────────────────────
 \usepackage{endnotes}
