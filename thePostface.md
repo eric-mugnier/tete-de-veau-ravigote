@@ -34,8 +34,12 @@ Quant à moi, je continuerai très probablement — dans cinq ans, dix ans, ou d
 
 Et si ce jour devait arriver, je me permettrai peut-être d’ajouter à cette postface une note supplémentaire.
 
+San Lazzaro di Savena, le 8 mars 2026
+
 Christophe Thiebaud
+
 ---
+
 Notes
 
 1. Hypothèse personnelle que l’auteur, interrogé à ce sujet en 2023 lors d’un déjeuner parfaitement banal, a qualifiée de « délire sympathique ».
