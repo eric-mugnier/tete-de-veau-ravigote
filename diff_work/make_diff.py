@@ -11,6 +11,7 @@ Directories:
 """
 
 import os, subprocess, sys, re, glob
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 BASE   = '/Users/christophe.thiebaud/_Mugnier'
 ACTES  = os.path.join(BASE, 'actes')
@@ -117,10 +118,10 @@ def normalize(text):
     text = re.sub(r'\\textsc\{([^}]*)\}', r'\1', text)
     return text
 
-# ── Step 3: write orig and new fragments, run latexdiff ────────────────────
+# ── Step 3: write orig and new fragments, run latexdiff (parallel) ──────────
 diff_bodies = {}
 
-for chap_num, file_pairs in groups:
+def _run_latexdiff(chap_num, file_pairs):
     orig_text = normalize(strip_document_tags(chapters[chap_num]).rstrip('\n') + '\n')
 
     new_parts = []
@@ -142,7 +143,6 @@ for chap_num, file_pairs in groups:
     with open(new_path, 'w', encoding='utf-8') as f:
         f.write(new_text)
 
-    print(f'Running latexdiff for Acte {chap_num}...')
     env = os.environ.copy()
     env['PERL_REGEXP_RECURSION_LIMIT'] = '200000'
     result = subprocess.run(
@@ -150,15 +150,23 @@ for chap_num, file_pairs in groups:
         capture_output=True, env=env
     )
     if result.returncode != 0:
-        print(f'  WARNING: latexdiff returned {result.returncode}')
+        print(f'  WARNING: latexdiff Acte {chap_num} returned {result.returncode}')
         print(f'  stderr: {result.stderr.decode("utf-8", errors="replace")[:500]}')
 
     diff_text = result.stdout.decode('utf-8', errors='replace')
     with open(diff_path, 'w', encoding='utf-8') as f:
         f.write(diff_text)
 
-    diff_bodies[chap_num] = diff_path
-    print(f'  Done. Diff size: {len(diff_text)} chars')
+    return chap_num, diff_path, len(diff_text)
+
+print(f'Running latexdiff for {len(groups)} actes in parallel...')
+with ThreadPoolExecutor(max_workers=len(groups)) as pool:
+    futures = {pool.submit(_run_latexdiff, n, fp): n for n, fp in groups}
+    for future in as_completed(futures):
+        chap_num, diff_path, size = future.result()
+        diff_bodies[chap_num] = diff_path
+        print(f'  Acte {chap_num} done. Diff size: {size} chars')
+print()
 
 # ── Step 4: extract preamble from main .tex ────────────────────────────────
 with open(os.path.join(BASE, 'tete_de_veau_ravigote.tex'), encoding='utf-8') as f:
