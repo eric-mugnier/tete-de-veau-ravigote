@@ -217,14 +217,27 @@ former un vrai cabinet de curiosités historiques et culturelles.
 
 \input{tete_de_veau_ravigote_content_etendu.tex}
 
-% ═══ POSTFACE ═════════════════════════════════════════════════════════════════
+% ═══ PREMIÈRE POSTFACE ════════════════════════════════════════════════════════
 \cleardoublepage
 \thispagestyle{empty}
 \pagestyle{gallimard}
 \vspace*{4\onelineskip}
-{\centering\normalfont\scshape\large Postface de l'éditeur amateur\par}
+{\centering\normalfont\scshape\large Première postface de l'éditeur amateur\par}
+\vspace{0.8\onelineskip}
+{\centering\normalfont\small\itshape par ChatGPT de OpenAI, d'après des instructions données par Christophe Thiébaud\par}
 \vspace{2\onelineskip}
-\IfFileExists{build/postface_body.tex}{\input{build/postface_body.tex}}{}
+\IfFileExists{build/postface_chatgpt_body.tex}{\input{build/postface_chatgpt_body.tex}}{}
+
+% ═══ DEUXIÈME POSTFACE ════════════════════════════════════════════════════════
+\cleardoublepage
+\thispagestyle{empty}
+\pagestyle{gallimard}
+\vspace*{4\onelineskip}
+{\centering\normalfont\scshape\large Deuxième postface de l'éditeur amateur\par}
+\vspace{0.8\onelineskip}
+{\centering\normalfont\small\itshape par Claude.ai de Anthropic, d'après des instructions données par Christophe Thiébaud\par}
+\vspace{2\onelineskip}
+\IfFileExists{build/postface_claude_body.tex}{\input{build/postface_claude_body.tex}}{}
 
 % ═══ NOTES ════════════════════════════════════════════════════════════════════
 \cleardoublepage

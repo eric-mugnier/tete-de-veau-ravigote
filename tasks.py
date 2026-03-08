@@ -246,12 +246,19 @@ def total(c):
     print("=== svg → pdf ===")
     _svg_to_pdf(c)
 
-    print("=== pandoc : postface body ===")
-    c.run(f"pandoc postface_claude.md -t latex -o {BUILD}/postface_body.tex")
     import re as _re
-    _body = (BUILD / "postface_body.tex").read_text()
-    _body = _re.sub(r"\\section\{.*?\}\\label\{[^}]*\}", "", _body, flags=_re.DOTALL)
-    (BUILD / "postface_body.tex").write_text(_body)
+
+    def _pandoc_body(src, dest):
+        c.run(f"pandoc {src} -t latex -o {BUILD}/{dest}")
+        _body = (BUILD / dest).read_text()
+        _body = _re.sub(r"\\section\{.*?\}\\label\{[^}]*\}", "", _body, flags=_re.DOTALL)
+        (BUILD / dest).write_text(_body)
+
+    print("=== pandoc : postface ChatGPT body ===")
+    _pandoc_body("postface-chatGPT.md", "postface_chatgpt_body.tex")
+
+    print("=== pandoc : postface Claude body ===")
+    _pandoc_body("postface_claude.md", "postface_claude_body.tex")
 
     print("=== pandoc : personnages body ===")
     c.run(f"pandoc personnages.md -t latex -o {BUILD}/personnages_body.tex")
