@@ -4,7 +4,7 @@ Index par ordre d'apparition. Les références historiques ou culturelles citée
 
 | Acte | Personnage | Description |
 |:-----|:----------------|:--------------------------------------------------|
-| I | **Djeferson Beauvais** | Narrateur et protagoniste. Commandant de police judiciaire, homme de couleur. Cynique, amateur de cigares, de bons vins et de vieux livres. Règle volontiers les problèmes de façon expéditive. Armé de « Manu », son 6.35 Manufrance de collection hérité de son grand-père Philibert, résistant. Père militaire absent, prénom hérité d'un Thomas Jefferson mal orthographié. |
+| I | **Djeferson Beauvais** | Narrateur et protagoniste. Commandant de police judiciaire. Cynique, amateur de cigares, de bons vins et de vieux livres. Règle volontiers les problèmes de façon expéditive. Armé de « Manu », son 6.35 Manufrance de collection hérité de son grand-père Philibert, résistant. Père militaire absent, prénom hérité d'un Thomas Jefferson mal orthographié. |
 | I | **Gulav Behram** dit « le Kurde » | Criminel multirécidiviste : vol, viol, extorsion, cambriolage. Constamment libéré faute de place en prison. Trop violent même pour les codétenus. Tué par Djeferson lors d'un cambriolage. |
 | II | **Maria Ouvrard** (« mère Ouvrard ») | Voisine de palier de Djeferson au 6e étage. Maîtresse du chat Korax. |
 | II | **Marc-Antoine Jacquinot** | Autre voisin au 6e étage, « l'ermite du sixième ». Professeur de philosophie, solitaire, collectionneur de livres anciens rares (certains lui seront volés à l'acte VIII). Refuse toutes les corvées de voisinage. |
