@@ -77,6 +77,7 @@ _OUTPUT_PDFS = [
     f"{BASE}_diff.pdf",
     "postface_claude.pdf",
     "postface_chatgpt.pdf",
+    "ratiocinations.pdf",
 ]
 
 
@@ -201,6 +202,23 @@ def notes(c):
 
 @task
 @_timed
+def ratiocinations(c):
+    """Build ratiocinations.pdf from actes/ratiocinations.md via pandoc + lualatex."""
+    BUILD.mkdir(exist_ok=True)
+    c.run(
+        "pandoc actes/ratiocinations.md"
+        f" -o {BUILD}/ratiocinations.pdf"
+        " --pdf-engine=lualatex"
+        " -V geometry:margin=2cm"
+        " -V lang=fr"
+        ' -V mainfont="EB Garamond"'
+        " -V fontsize=11pt"
+    )
+    print(f"  → {BUILD}/ratiocinations.pdf")
+
+
+@task
+@_timed
 def pers(c):
     """Build personnages.pdf from personnages.md via pandoc + lualatex."""
     BUILD.mkdir(exist_ok=True)
@@ -252,6 +270,9 @@ def total(c):
 
     print("=== pandoc : postface Claude body ===")
     _pandoc_body(c, "postface_claude.md", "postface_claude_body.tex")
+
+    print("=== pandoc : ratiocinations body ===")
+    _pandoc_body(c, "actes/ratiocinations.md", "ratiocinations_body.tex")
 
     print("=== pandoc : personnages body ===")
     c.run(f"pandoc personnages.md -t latex -o {BUILD}/personnages_body.tex")
