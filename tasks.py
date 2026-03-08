@@ -275,6 +275,7 @@ def total(c):
 @task
 def all(c):
     """Build everything: main, sommaires, notes, epub, pers, postface, diffs, then clean."""
+    gitinfo(c)
     build(c)
     # sommaire étendu (le .toc principal existe déjà après build)
     c.run(
