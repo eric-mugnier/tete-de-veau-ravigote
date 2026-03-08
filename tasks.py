@@ -260,13 +260,7 @@ def all(c):
     # notes (bypasse le pre=[build] déjà fait)
     notes(c)
     # epub
-    c.run(
-        f"pandoc {BASE}.tex"
-        f" -o {BUILD}/{BASE}.epub"
-        f' --metadata title="Tête de veau ravigote"'
-        f' --metadata author="Éric Mugnier"'
-        f' --metadata lang="fr"'
-    )
+    epub(c)
     # pers + postfaces
     pers(c)
     postfaces(c)
@@ -286,8 +280,8 @@ def clean(c):
     # latexmk aux files in root (produced by the two direct lualatex passes in notes)
     c.run(f"latexmk -c -outdir=. {BASE}.tex", warn=True)
 
-    # build/ : keep only expected PDFs and the body.tex files needed for IDE compilation
-    _keep_names = set(_OUTPUT_PDFS) | {f"{BASE}.epub", "personnages_body.tex", "postface_chatgpt_body.tex", "postface_claude_body.tex"}
+    # build/ : keep only expected output files
+    _keep_names = set(_OUTPUT_PDFS) | {f"{BASE}.epub"}
     if BUILD.exists():
         for f in BUILD.iterdir():
             if f.is_file() and f.name not in _keep_names:
