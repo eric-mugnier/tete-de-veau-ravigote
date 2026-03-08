@@ -278,14 +278,24 @@ def total(c):
 
 @task(pre=[build])
 @_timed
+def all_but_diffs(c):
+    """Build everything except diffs (main, sommaire, notes, epub, pers, postfaces), then clean."""
+    _lmk(c, f"{BASE}_sommaire")
+    notes(c)
+    epub(c)
+    pers(c)
+    postfaces(c)
+    _ls_outputs()
+    clean(c)
+
+
+@task(pre=[build])
+@_timed
 def all(c):
     """Build everything: main, sommaires, notes, epub, pers, postface, diffs, then clean."""
     _lmk(c, f"{BASE}_sommaire")
-    # notes (bypasse le pre=[build] déjà fait)
     notes(c)
-    # epub
     epub(c)
-    # pers + postfaces
     pers(c)
     postfaces(c)
     # diffs
