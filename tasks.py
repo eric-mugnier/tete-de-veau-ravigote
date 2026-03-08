@@ -79,41 +79,30 @@ def build(c):
     print("=== svg → pdf ===")
     _svg_to_pdf(c)
 
-    print("=== 1/4  main PDF ===")
     _lmk(c, BASE)
-
-    print("=== 2/4  sommaire PDF ===")
-    _lmk(c, f"{BASE}_sommaire")
-
     _ls_outputs()
 
 
 @task(pre=[gitinfo])
 def sommaire(c):
-    """Build sommaire + sommaire étendu PDFs (no main PDF)."""
-    print("=== svg → pdf ===")
+    """Build sommaire étendu PDF (draftmode pass on main + etendu, then compile)."""
     _svg_to_pdf(c)
 
-    print("=== 1/4  main .toc (draftmode) ===")
+    print("=== 1/2  main .toc (draftmode) ===")
     c.run(
         f"lualatex -interaction=nonstopmode -draftmode"
         f" -output-directory=build"
         f" {BASE}.tex"
     )
 
-    print("=== 2/4  sommaire PDF ===")
-    _lmk(c, f"{BASE}_sommaire")
-
-    print("=== 3/4  etendu .toc (draftmode) ===")
+    print("=== 2/2  etendu .toc + sommaire étendu PDF ===")
     c.run(
         f"lualatex -interaction=nonstopmode -draftmode"
         f" -output-directory=build"
         f" -jobname={BASE}_etendu"
         f" {BASE}_etendu.tex"
     )
-
-    print("=== 4/4  sommaire étendu PDF ===")
-    _lmk(c, f"{BASE}_sommaire_etendu")
+    _lmk(c, f"{BASE}_sommaire")
     _ls_outputs()
 
 
@@ -282,7 +271,7 @@ def all(c):
         f" -jobname={BASE}_etendu"
         f" {BASE}_etendu.tex"
     )
-    _lmk(c, f"{BASE}_sommaire_etendu")
+    _lmk(c, f"{BASE}_sommaire")
     # notes (bypasse le pre=[build] déjà fait)
     notes(c)
     # epub
