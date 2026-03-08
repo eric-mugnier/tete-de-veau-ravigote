@@ -60,6 +60,8 @@ _OUTPUT_PDFS = [
     f"{BASE}_illustrations.pdf",
     f"{BASE}_LA_TOTALE.pdf",
     f"{BASE}_diff.pdf",
+    "postface_claude.pdf",
+    "postface_chatgpt.pdf",
 ]
 
 
@@ -193,13 +195,11 @@ def pers(c):
     print(f"  → {BUILD}/personnages.pdf")
 
 
-@task
-def postface(c):
-    """Build postface.pdf from postface_claude.md via pandoc + lualatex."""
+@task(name="postface")
+def postfaces(c):
+    """Build postface_claude.pdf and postface_chatgpt.pdf via pandoc + lualatex."""
     BUILD.mkdir(exist_ok=True)
-    c.run(
-        "pandoc postface_claude.md"
-        f" -o {BUILD}/postface.pdf"
+    _pandoc_opts = (
         " --pdf-engine=lualatex"
         " -V geometry:left=35mm"
         " -V geometry:right=35mm"
@@ -210,7 +210,12 @@ def postface(c):
         ' -V mainfontoptions="Numbers=OldStyle,SmallCapsFeatures={Letters=SmallCaps}"'
         " -V fontsize=11pt"
     )
-    print(f"  → {BUILD}/postface.pdf")
+    for src, dest in [
+        ("postface_claude.md",   "postface_claude.pdf"),
+        ("postface-chatgpt.md",  "postface_chatgpt.pdf"),
+    ]:
+        c.run(f"pandoc {src} -o {BUILD}/{dest}{_pandoc_opts}")
+        print(f"  → {BUILD}/{dest}")
 
 
 @task(pre=[gitinfo])
@@ -220,7 +225,7 @@ def total(c):
     _svg_to_pdf(c)
 
     print("=== pandoc : postface ChatGPT body ===")
-    _pandoc_body(c, "postface-chatGPT.md", "postface_chatgpt_body.tex")
+    _pandoc_body(c, "postface-chatgpt.md", "postface_chatgpt_body.tex")
 
     print("=== pandoc : postface Claude body ===")
     _pandoc_body(c, "postface_claude.md", "postface_claude_body.tex")
@@ -262,9 +267,9 @@ def all(c):
         f' --metadata author="Éric Mugnier"'
         f' --metadata lang="fr"'
     )
-    # pers + postface
+    # pers + postfaces
     pers(c)
-    postface(c)
+    postfaces(c)
     # diffs
     c.run("python3 diff_work/make_diff.py")
     shutil.copy(ROOT / "diff_work" / f"{BASE}_diff.pdf", BUILD / f"{BASE}_diff.pdf")
