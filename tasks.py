@@ -51,6 +51,8 @@ def _ls_outputs():
         BUILD / f"{BASE}_annote.pdf",
         BUILD / f"{BASE}_notes.pdf",
         BUILD / f"{BASE}_illustrations.pdf",
+        BUILD / f"{BASE}_LA_TOTALE.pdf",
+        BUILD / f"{BASE}_sommaire_etendu.pdf",
         BUILD / f"{BASE}_diff.pdf",
         ROOT  / f"{BASE}.epub",
         ROOT  / f"{BASE}_COMPLET.pdf",
@@ -85,10 +87,38 @@ def build(c):
 
 @task
 def sommaire(c):
-    """Build sommaire PDF only (no main PDF)."""
+    """Build sommaire + sommaire étendu PDFs (no main PDF)."""
     BUILD.mkdir(exist_ok=True)
-    print("=== sommaire PDF ===")
+
+    print("=== git hash ===")
+    result = c.run("git log -1 --format=%h", hide=True)
+    gitinfo = result.stdout.strip()
+    (BUILD / f"{BASE}.gitinfo").write_text(gitinfo)
+    (BUILD / f"{BASE}_etendu.gitinfo").write_text(gitinfo)
+
+    print("=== svg → pdf ===")
+    _svg_to_pdf(c)
+
+    print("=== 1/4  main .toc (draftmode) ===")
+    c.run(
+        f"lualatex -interaction=nonstopmode -draftmode"
+        f" -output-directory=build"
+        f" {BASE}.tex"
+    )
+
+    print("=== 2/4  sommaire PDF ===")
     _lmk(c, f"{BASE}_sommaire")
+
+    print("=== 3/4  etendu .toc (draftmode) ===")
+    c.run(
+        f"lualatex -interaction=nonstopmode -draftmode"
+        f" -output-directory=build"
+        f" -jobname={BASE}_etendu"
+        f" {BASE}_etendu.tex"
+    )
+
+    print("=== 4/4  sommaire étendu PDF ===")
+    _lmk(c, f"{BASE}_sommaire_etendu")
     _ls_outputs()
 
 
@@ -184,6 +214,103 @@ def pers(c):
 
 
 @task
+def postface(c):
+    """Build postface.pdf from postface_claude.md via pandoc + lualatex."""
+    BUILD.mkdir(exist_ok=True)
+    c.run(
+        "pandoc postface_claude.md"
+        f" -o {BUILD}/postface.pdf"
+        " --pdf-engine=lualatex"
+        " -V geometry:left=35mm"
+        " -V geometry:right=35mm"
+        " -V geometry:top=4cm"
+        " -V geometry:bottom=4cm"
+        " -V lang=fr"
+        ' -V mainfont="EB Garamond"'
+        ' -V mainfontoptions="Numbers=OldStyle,SmallCapsFeatures={Letters=SmallCaps}"'
+        " -V fontsize=11pt"
+    )
+    print(f"  → {BUILD}/postface.pdf")
+
+
+@task
+def total(c):
+    """Build LA TOTALE : document unifié annoté + postface + notes + sommaire étendu + personnages."""
+    BUILD.mkdir(exist_ok=True)
+
+    print("=== git hash ===")
+    result = c.run("git log -1 --format=%h", hide=True)
+    gitinfo = result.stdout.strip()
+    (BUILD / f"{BASE}_LA_TOTALE.gitinfo").write_text(gitinfo)
+
+    print("=== svg → pdf ===")
+    _svg_to_pdf(c)
+
+    print("=== pandoc : postface body ===")
+    c.run(f"pandoc postface_claude.md -t latex -o {BUILD}/postface_body.tex")
+    import re as _re
+    _body = (BUILD / "postface_body.tex").read_text()
+    _body = _re.sub(r"\\section\{.*?\}\\label\{[^}]*\}", "", _body, flags=_re.DOTALL)
+    (BUILD / "postface_body.tex").write_text(_body)
+
+    print("=== pandoc : personnages body ===")
+    c.run(f"pandoc personnages.md -t latex -o {BUILD}/personnages_body.tex")
+    # Post-process:
+    # 1. Remove pandoc's \section{} heading (we add our own title in LA_TOTALE.tex)
+    # 2. Fix longtable column widths (pandoc uses A4-based proportions)
+    import re
+    body = (BUILD / "personnages_body.tex").read_text()
+    body = re.sub(r"\\section\{.*?\}\\label\{[^}]*\}", "", body, flags=re.DOTALL)
+    body = re.sub(
+        r"\\begin\{longtable\}\[.*?\]\{@\{\}.*?@\{\}\}",
+        (r"\\begin{longtable}[]{@{}"
+         r">{\\raggedright\\arraybackslash}p{8mm}"
+         r">{\\raggedright\\arraybackslash}p{30mm}"
+         r">{\\raggedright\\arraybackslash}"
+         r"p{\\dimexpr\\linewidth-8mm-30mm-4\\tabcolsep\\relax}@{}}"),
+        body, flags=re.DOTALL,
+    )
+    (BUILD / "personnages_body.tex").write_text(body)
+
+    print("=== LA TOTALE ===")
+    _lmk(c, f"{BASE}_LA_TOTALE")
+    _ls_outputs()
+
+
+@task
+def all(c):
+    """Build everything: main, sommaires, notes, epub, pers, postface, diffs, then clean."""
+    build(c)
+    # sommaire étendu (le .toc principal existe déjà après build)
+    (BUILD / f"{BASE}_etendu.gitinfo").write_text((BUILD / f"{BASE}.gitinfo").read_text())
+    c.run(
+        f"lualatex -interaction=nonstopmode -draftmode"
+        f" -output-directory=build"
+        f" -jobname={BASE}_etendu"
+        f" {BASE}_etendu.tex"
+    )
+    _lmk(c, f"{BASE}_sommaire_etendu")
+    # notes (bypasse le pre=[build] déjà fait)
+    notes(c)
+    # epub
+    c.run(
+        f"pandoc {BASE}.tex"
+        f" -o {BASE}.epub"
+        f' --metadata title="Tête de veau ravigote"'
+        f' --metadata author="Éric Mugnier"'
+        f' --metadata lang="fr"'
+    )
+    # pers + postface
+    pers(c)
+    postface(c)
+    # diffs
+    c.run("python3 diff_work/make_diff.py")
+    shutil.copy(ROOT / "diff_work" / f"{BASE}_diff.pdf", BUILD / f"{BASE}_diff.pdf")
+    _ls_outputs()
+    clean(c)
+
+
+@task
 def clean(c):
     """Remove root-level temp files and latexmk aux files from build/."""
     # Root-level stray PDF — would only appear if lualatex was called without -output-directory
@@ -191,6 +318,9 @@ def clean(c):
     if BUILD.exists():
         # build/.gitinfo — not a standard latexmk aux file, remove explicitly
         (BUILD / f"{BASE}.gitinfo").unlink(missing_ok=True)
+        (BUILD / f"{BASE}_etendu.gitinfo").unlink(missing_ok=True)
+        (BUILD / f"{BASE}_LA_TOTALE.gitinfo").unlink(missing_ok=True)
+        # postface_body.tex and personnages_body.tex are kept (needed for IDE compilation)
         # build/.ent — not a standard latexmk aux file, remove explicitly
         (BUILD / f"{BASE}.ent").unlink(missing_ok=True)
 
@@ -198,5 +328,5 @@ def clean(c):
     c.run(f"latexmk -c -outdir=. {BASE}.tex", warn=True)
 
     # latexmk aux files in build/ (produced by all latexmk-managed compilations)
-    for stem in [BASE, f"{BASE}_sommaire", f"{BASE}_notes", f"{BASE}_illustrations"]:
+    for stem in [BASE, f"{BASE}_sommaire", f"{BASE}_sommaire_etendu", f"{BASE}_notes", f"{BASE}_illustrations", f"{BASE}_LA_TOTALE"]:
         c.run(f"latexmk -c -outdir=build {stem}.tex", warn=True)

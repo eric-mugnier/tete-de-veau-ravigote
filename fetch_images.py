@@ -37,8 +37,9 @@ IMAGES_DIR      = Path("iconographie")
 LOG_PATH        = Path("fetch_log.csv")
 
 GOOGLE_QUOTA    = 100     # max Google API calls per run
+_GOOGLE_DISABLED = False  # set True at runtime if credentials rejected
 GOOGLE_DELAY    = 1.0     # seconds between Google requests
-WIKIMEDIA_DELAY = 0.5     # seconds between Wikimedia requests
+WIKIMEDIA_DELAY = 2.0     # seconds between Wikimedia requests
 MIN_WIDTH       = 800     # minimum acceptable image width (px)
 MIN_RATIO       = 0.4     # min width/height (exclude extreme panoramas)
 MAX_RATIO       = 2.5     # max width/height (exclude extreme banners)
@@ -221,15 +222,26 @@ def _subject(text: str, source_url: str) -> str:
 # ── Image fetching ─────────────────────────────────────────────────────────────
 
 def _get(url: str, **kwargs):
-    """GET with timeout and one retry on network error."""
-    for attempt in range(2):
+    """GET with timeout. Retries on network errors and 429; immediate fail on other HTTP errors."""
+    wait = 30  # initial backoff for 429
+    for attempt in range(4):
         try:
             r = SESSION.get(url, timeout=TIMEOUT, **kwargs)
+            if r.status_code == 429:
+                print(f"      ~ 429 rate-limit — waiting {wait}s …")
+                time.sleep(wait)
+                wait *= 2
+                continue
             r.raise_for_status()
             return r
+        except requests.exceptions.HTTPError as exc:
+            # Other HTTP errors (4xx/5xx) are definitive — no retry
+            print(f"      ✗ {exc}")
+            return None
         except requests.RequestException as exc:
+            # Network errors — retry once
             if attempt == 0:
-                time.sleep(1)
+                time.sleep(2)
             else:
                 print(f"      ✗ {exc}")
                 return None
@@ -250,7 +262,8 @@ def fetch_google(subject: str) -> tuple:
     Pass 2 : no imgType restriction (any image, fallback)
     Returns (url, width, height, calls_used) or (None, 0, 0, calls_used).
     """
-    if not GOOGLE_API_KEY or not GOOGLE_CX:
+    global _GOOGLE_DISABLED
+    if not GOOGLE_API_KEY or not GOOGLE_CX or _GOOGLE_DISABLED:
         return None, 0, 0, 0
 
     passes = [
@@ -275,8 +288,10 @@ def fetch_google(subject: str) -> tuple:
         )
         calls += 1
         if r is None:
-            time.sleep(GOOGLE_DELAY)
-            continue
+            # HTTP error (403/401) or network error — disable Google for this run
+            _GOOGLE_DISABLED = True
+            print("      ! Google API disabled for this run")
+            return None, 0, 0, calls
         for item in r.json().get("items", []):
             info = item.get("image", {})
             w    = info.get("width", 0)
@@ -297,7 +312,8 @@ def fetch_google(subject: str) -> tuple:
 
 def fetch_wikimedia(subject: str) -> tuple:
     """
-    Search Wikimedia Commons for one image.
+    Search Wikimedia Commons for a grayscale image.
+    Tries up to 5 results; skips color images.
     Returns (url, width, height) or (None, 0, 0).
     """
     r = _get(
@@ -318,32 +334,57 @@ def fetch_wikimedia(subject: str) -> tuple:
     if not results:
         return None, 0, 0
 
-    title = results[0]["title"]
-    time.sleep(WIKIMEDIA_DELAY)
+    for result in results:
+        time.sleep(WIKIMEDIA_DELAY)
+        r2 = _get(
+            "https://commons.wikimedia.org/w/api.php",
+            params={
+                "action":     "query",
+                "titles":     result["title"],
+                "prop":       "imageinfo",
+                "iiprop":     "url|size",
+                "iiurlwidth": 1200,
+                "format":     "json",
+            },
+        )
+        if r2 is None:
+            continue
 
-    r2 = _get(
-        "https://commons.wikimedia.org/w/api.php",
-        params={
-            "action":     "query",
-            "titles":     title,
-            "prop":       "imageinfo",
-            "iiprop":     "url|size",
-            "iiurlwidth": 1200,
-            "format":     "json",
-        },
-    )
-    if r2 is None:
-        return None, 0, 0
-
-    for page in r2.json().get("query", {}).get("pages", {}).values():
-        info = (page.get("imageinfo") or [{}])[0]
-        url  = info.get("thumburl") or info.get("url")
-        w    = info.get("thumbwidth") or info.get("width", 0)
-        h    = info.get("thumbheight") or info.get("height", 0)
-        if url:
+        for page in r2.json().get("query", {}).get("pages", {}).values():
+            info = (page.get("imageinfo") or [{}])[0]
+            url  = info.get("thumburl") or info.get("url")
+            w    = info.get("thumbwidth") or info.get("width", 0)
+            h    = info.get("thumbheight") or info.get("height", 0)
+            if not url:
+                continue
+            # Check format
+            ext = "." + url.split("?")[0].rsplit(".", 1)[-1].lower()
+            if ext in BAD_FORMATS:
+                continue
+            # Download and verify grayscale
+            img_r = _get(url)
+            if img_r is None:
+                continue
+            if not _is_grayscale(img_r.content):
+                print(f"      ~ skipping color image: {url.split('/')[-1][:40]}")
+                continue
             return url, int(w), int(h)
 
     return None, 0, 0
+
+
+def _is_grayscale(data: bytes, threshold: float = 0.02) -> bool:
+    """Return True if image is grayscale (max channel saturation below threshold)."""
+    try:
+        img = Image.open(BytesIO(data)).convert("RGB")
+        import numpy as np
+        arr = np.array(img).astype(float)
+        # Mean absolute deviation between channels
+        sat = (np.abs(arr[:,:,0] - arr[:,:,1]).mean()
+             + np.abs(arr[:,:,1] - arr[:,:,2]).mean()) / 2
+        return sat < (threshold * 255)
+    except Exception:
+        return False
 
 
 def download_image(url: str, dest: Path) -> tuple:

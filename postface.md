@@ -1,4 +1,4 @@
-# Post face de l'éditeur amateur
+`\Large`{=latex}[Postface de l'éditeur amateur]{.smallcaps}`\normalsize`{=latex}
 
 Il appartient aux éditeurs consciencieux — catégorie à laquelle je ne puis prétendre appartenir qu’avec une modestie toute rhétorique — de conclure un volume par quelques remarques concernant l’établissement du texte et les circonstances de sa transmission. Dans le cas présent, ces circonstances ne sont pas seulement biographiques : elles constituent presque un second récit, parallèle et légèrement oblique, dont le lecteur percevra peut-être certaines ombres entre les lignes de Tête de veau ravigote. J’oserai même dire que la compréhension complète du livre exige la connaissance de quelques détails que la prudence éditoriale recommanderait pourtant de taire.
 
@@ -8,7 +8,10 @@ Je mentionne cet épisode non par nostalgie mais parce qu’il contient, me semb
 
 Les paroles, que je reproduis partiellement ici, présentent une simplicité presque liturgique :
 
-Matsubaba ! <br>C’est le nom de leur idole<br>Matsubaba !<br>C’est pour lui qu’ils vous immolent
+Matsubaba ! \
+C’est le nom de leur idole \
+Matsubaba !\
+C’est pour lui qu’ils vous immolent
 
 Ce refrain possède une propriété hypnotique que j’ai rarement observée ailleurs. Le nom lui-même — Matsubaba — mérite d’être examiné avec attention. Certains y verront une invention phonétique naïve ; j’ai pour ma part longtemps soupçonné une étymologie composite, peut-être involontaire : matsu, racine japonaise associée au pin et à la persistance, et baba, terme populaire désignant dans plusieurs langues une figure archaïque ou sacrée¹. Une analyse plus attentive révèle cependant un dispositif narratif remarquable : la progression du récit est constamment interrompue par le retour du refrain, dont la fonction est moins musicale que rituelle.²
 

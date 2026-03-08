@@ -23,7 +23,7 @@ Toute forme de morale est étrangère aux protagonistes — au héros-narrateur 
 
 Je me fais ici le porte-parole d'un groupe d'amis d'Éric Mugnier, convaincus du potentiel de ses écrits. Nous sommes convenus de l'aider en toute amitié et absolu désintéressement dans les démarches fastidieuses inhérentes à la recherche d'un [éditeur | agent littéraire]. [Éditeur | Agent] qui saura, au travers des défauts du texte, déceler ce potentiel, partager notre conviction et entreprendre avec Éric Mugnier le travail éditorial qui lui fera trouver son public.
 
-Respectueusement,  
+Respectueusement, \
 Christophe Thiebaud
 
 Pièces jointes :
