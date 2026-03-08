@@ -40,5 +40,6 @@ La prose d'Éric Mugnier est une prose de l'excès calculé. Elle déborde, accu
 
 Je termine comme j'ai commencé : seul, sans mandat, sans contrat, sans autre légitimité que celle que je me suis librement attribuée en connaissance de cause — ce qui est, j'en suis désormais convaincu, la seule légitimité qui vaille quelque chose dans un monde où les légitimités officielles se sont discréditées les unes après les autres avec une efficacité remarquable. Luc est mort. Le groupe *Les Fils à Papa* est dissous depuis quarante ans. *Matsubaba* n'a jamais été enregistrée dans sa version définitive. *Tête de veau ravigote* cherche encore un éditeur. Schopenhauer avait raison. Huysmans avait raison. Éric Mugnier a raison. Je continuerai d'arranger *Matsubaba*. C'est tout ce que je peux faire. C'est suffisant. C'est peut-être même, à bien y réfléchir, beaucoup.
 
-*C. T.*
-*San Lazzaro di Savena, printemps 2025*
+San Lazzaro di Savena, le 8 mars 2026
+
+Christophe Thiebaud
