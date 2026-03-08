@@ -126,7 +126,7 @@ def sommaire(c):
 def diffs(c):
     """Build diff PDF against the original (requires latexdiff + make_diff.py)."""
     print("=== 3/4  diff PDF ===")
-    c.run("python3 diff_work/make_diff.py")
+    c.run("python3 -u diff_work/make_diff.py")
     # Copy diff PDF from diff_work/ to build/ alongside the other PDFs
     shutil.copy(
         ROOT / "diff_work" / f"{BASE}_diff.pdf",
@@ -289,7 +289,7 @@ def all(c):
     pers(c)
     postfaces(c)
     # diffs
-    c.run("python3 diff_work/make_diff.py")
+    c.run("python3 -u diff_work/make_diff.py")
     shutil.copy(ROOT / "diff_work" / f"{BASE}_diff.pdf", BUILD / f"{BASE}_diff.pdf")
     _ls_outputs()
     clean(c)
