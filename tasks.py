@@ -65,13 +65,16 @@ def _ls_outputs():
 # ─── tasks ────────────────────────────────────────────────────────────────────
 
 @task
-def build(c):
-    """Build main PDF and sommaire (always run first; pre-task for diffs/epub/notes)."""
+def gitinfo(c):
+    """Write build/tete_de_veau_ravigote.gitinfo (shared by all documents)."""
     BUILD.mkdir(exist_ok=True)
-
-    print("=== git hash ===")
     result = c.run("git log -1 --format=%h", hide=True)
     (BUILD / f"{BASE}.gitinfo").write_text(result.stdout.strip())
+
+
+@task(pre=[gitinfo])
+def build(c):
+    """Build main PDF and sommaire (always run first; pre-task for diffs/epub/notes)."""
 
     print("=== svg → pdf ===")
     _svg_to_pdf(c)
@@ -85,17 +88,9 @@ def build(c):
     _ls_outputs()
 
 
-@task
+@task(pre=[gitinfo])
 def sommaire(c):
     """Build sommaire + sommaire étendu PDFs (no main PDF)."""
-    BUILD.mkdir(exist_ok=True)
-
-    print("=== git hash ===")
-    result = c.run("git log -1 --format=%h", hide=True)
-    gitinfo = result.stdout.strip()
-    (BUILD / f"{BASE}.gitinfo").write_text(gitinfo)
-    (BUILD / f"{BASE}_etendu.gitinfo").write_text(gitinfo)
-
     print("=== svg → pdf ===")
     _svg_to_pdf(c)
 
@@ -233,16 +228,9 @@ def postface(c):
     print(f"  → {BUILD}/postface.pdf")
 
 
-@task
+@task(pre=[gitinfo])
 def total(c):
     """Build LA TOTALE : document unifié annoté + postface + notes + sommaire étendu + personnages."""
-    BUILD.mkdir(exist_ok=True)
-
-    print("=== git hash ===")
-    result = c.run("git log -1 --format=%h", hide=True)
-    gitinfo = result.stdout.strip()
-    (BUILD / f"{BASE}_LA_TOTALE.gitinfo").write_text(gitinfo)
-
     print("=== svg → pdf ===")
     _svg_to_pdf(c)
 
@@ -289,7 +277,6 @@ def all(c):
     """Build everything: main, sommaires, notes, epub, pers, postface, diffs, then clean."""
     build(c)
     # sommaire étendu (le .toc principal existe déjà après build)
-    (BUILD / f"{BASE}_etendu.gitinfo").write_text((BUILD / f"{BASE}.gitinfo").read_text())
     c.run(
         f"lualatex -interaction=nonstopmode -draftmode"
         f" -output-directory=build"
@@ -323,10 +310,9 @@ def clean(c):
     # Root-level stray PDF — would only appear if lualatex was called without -output-directory
     (ROOT / f"{BASE}.pdf").unlink(missing_ok=True)
     if BUILD.exists():
-        # build/.gitinfo — not a standard latexmk aux file, remove explicitly
-        (BUILD / f"{BASE}.gitinfo").unlink(missing_ok=True)
-        (BUILD / f"{BASE}_etendu.gitinfo").unlink(missing_ok=True)
-        (BUILD / f"{BASE}_LA_TOTALE.gitinfo").unlink(missing_ok=True)
+        # build/*.gitinfo — not standard latexmk aux files, remove explicitly
+        for f in BUILD.glob("*.gitinfo"):
+            f.unlink()
         # postface_chatgpt_body.tex, postface_claude_body.tex and personnages_body.tex are kept (needed for IDE compilation)
         # build/.ent — not a standard latexmk aux file, remove explicitly
         (BUILD / f"{BASE}.ent").unlink(missing_ok=True)
