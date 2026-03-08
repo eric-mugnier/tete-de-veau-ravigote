@@ -279,12 +279,13 @@ def total(c):
 @task(pre=[build])
 @_timed
 def all_but_diffs(c):
-    """Build everything except diffs: main, sommaire, notes, epub, pers, postfaces."""
+    """Build everything except diffs: main, sommaire, notes, epub, pers, postfaces, total."""
     _lmk(c, f"{BASE}_sommaire")
     notes(c)
     epub(c)
     pers(c)
     postfaces(c)
+    total(c)
     _ls_outputs()
 
 
