@@ -92,7 +92,7 @@ Personnages par ordre d'apparition. Les références historiques ou culturelles 
 
 **Brigadier-chef Darian Lisnic**, policier en uniforme, d'origine roumaine. Borné, raciste, soupçonneux. Chef du duo qui intercepte le groupe de Djeferson.
 
-**Le réceptionniste du Caribbean Hôtel**, métis du Cap (mère française, père khoïkhoï). Polyglotte, hypnotisant. Gardien d'un établissement rattaché à l'ambassade de Namibie, interdit aux Blancs. Protecteur d'Atiena.
+**Le réceptionniste du Caribbean Hôtel** (Dumo), métis du Cap (mère française, père khoïkhoï). Polyglotte, hypnotisant. Gardien d'un établissement rattaché à l'ambassade de Namibie, interdit aux Blancs. Protecteur d'Atiena.
 
 **Lou De La Croix** (Louise, « Loulou »), nouvelle compagne de Greg. Issue d'une vieille famille d'aristocrates désargentés ; père escroc notoire en fuite. Nymphomane, épuise Greg sexuellement. Absente des scènes d'action.
 
