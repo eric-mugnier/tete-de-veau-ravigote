@@ -1,6 +1,5 @@
 # Personnages — *Tête de veau ravigote*
 
-Personnages par ordre d'apparition. Les références historiques ou culturelles citées en notes de bas de page ne sont pas comptabilisées.
 
 **Gulav Behram** dit « le Kurde », criminel multirécidiviste : vol, viol, extorsion, cambriolage. Constamment libéré faute de place en prison. Trop violent même pour les codétenus. Tué par Djeferson lors d'un cambriolage.
 

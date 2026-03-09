@@ -226,10 +226,6 @@ def suffix_to_tex(suffix):
 # ─── génération ───────────────────────────────────────────────────────────────
 
 HEADER = r"""
-Personnages par ordre d'apparition. Les références historiques ou culturelles
-citées en notes de bas de page ne sont pas comptabilisées.
-
-\bigskip
 {\setlength{\parindent}{0pt}\setlength{\parskip}{0.4\onelineskip}
 """
 
