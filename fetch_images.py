@@ -56,7 +56,8 @@ SESSION.headers.update({
     "User-Agent": (
         "TeteDeVeauRavigote-ImageFetcher/1.0 "
         "(academic; github.com/eric-mugnier/tete-de-veau-ravigote)"
-    )
+    ),
+    "Referer": "https://commons.wikimedia.org/",
 })
 
 
@@ -310,81 +311,72 @@ def fetch_google(subject: str) -> tuple:
     return None, 0, 0, calls
 
 
-def fetch_wikimedia(subject: str) -> tuple:
-    """
-    Search Wikimedia Commons for a grayscale image.
-    Tries up to 5 results; skips color images.
-    Returns (url, width, height) or (None, 0, 0).
-    """
+def _wikimedia_search_one(query: str) -> str | None:
+    """Run a Wikimedia file search and return the title of the first result, or None."""
     r = _get(
         "https://commons.wikimedia.org/w/api.php",
         params={
             "action":      "query",
             "list":        "search",
             "srnamespace": "6",
-            "srsearch":    subject,
-            "srlimit":     5,
+            "srsearch":    query,
+            "srlimit":     1,
             "format":      "json",
         },
     )
     if r is None:
-        return None, 0, 0
-
+        return None
     results = r.json().get("query", {}).get("search", [])
-    if not results:
-        return None, 0, 0
+    return results[0]["title"] if results else None
 
-    for result in results:
+
+def fetch_wikimedia(subject: str) -> tuple:
+    """
+    Search Wikimedia Commons for an image of the given subject.
+    Pass 1 : subject + deepcat B&W filter (prefer genuine B&W images).
+    Pass 2 : subject only, no color filter (fallback if nothing found).
+    Downloads the result once and returns bytes directly (no re-fetch in caller).
+    Returns (url, width, height, img_bytes) or (None, 0, 0, None).
+    """
+    bw_filter = '(deepcat:"Black and white" OR deepcat:"Monochrome photographs")'
+    title = _wikimedia_search_one(f"{subject} {bw_filter}")
+    if title is None:
         time.sleep(WIKIMEDIA_DELAY)
-        r2 = _get(
-            "https://commons.wikimedia.org/w/api.php",
-            params={
-                "action":     "query",
-                "titles":     result["title"],
-                "prop":       "imageinfo",
-                "iiprop":     "url|size",
-                "iiurlwidth": 1200,
-                "format":     "json",
-            },
-        )
-        if r2 is None:
-            continue
+        title = _wikimedia_search_one(subject)   # fallback: no color filter
+    if title is None:
+        return None, 0, 0, None
 
-        for page in r2.json().get("query", {}).get("pages", {}).values():
-            info = (page.get("imageinfo") or [{}])[0]
-            url  = info.get("thumburl") or info.get("url")
-            w    = info.get("thumbwidth") or info.get("width", 0)
-            h    = info.get("thumbheight") or info.get("height", 0)
-            if not url:
-                continue
-            # Check format
-            ext = "." + url.split("?")[0].rsplit(".", 1)[-1].lower()
-            if ext in BAD_FORMATS:
-                continue
-            # Download and verify grayscale
-            img_r = _get(url)
-            if img_r is None:
-                continue
-            if not _is_grayscale(img_r.content):
-                print(f"      ~ skipping color image: {url.split('/')[-1][:40]}")
-                continue
-            return url, int(w), int(h)
+    time.sleep(WIKIMEDIA_DELAY)
+    r2 = _get(
+        "https://commons.wikimedia.org/w/api.php",
+        params={
+            "action":     "query",
+            "titles":     title,
+            "prop":       "imageinfo",
+            "iiprop":     "url|size",
+            "iiurlwidth": 1200,
+            "format":     "json",
+        },
+    )
+    if r2 is None:
+        return None, 0, 0, None
 
-    return None, 0, 0
+    for page in r2.json().get("query", {}).get("pages", {}).values():
+        info = (page.get("imageinfo") or [{}])[0]
+        url  = info.get("thumburl") or info.get("url")
+        w    = info.get("thumbwidth") or info.get("width", 0)
+        h    = info.get("thumbheight") or info.get("height", 0)
+        if not url:
+            return None, 0, 0, None
+        ext = "." + url.split("?")[0].rsplit(".", 1)[-1].lower()
+        if ext in BAD_FORMATS:
+            return None, 0, 0, None
+        img_r = _get(url)
+        if img_r is None:
+            return None, 0, 0, None
+        return url, int(w), int(h), img_r.content
 
-
-def _is_grayscale(data: bytes, threshold: float = 0.02) -> bool:
-    """Return True if image is grayscale (max channel saturation below threshold)."""
-    try:
-        img = Image.open(BytesIO(data)).convert("RGB")
-        import numpy as np
-        arr = np.array(img).astype(float)
-        # Mean absolute deviation between channels
-        sat = (np.abs(arr[:,:,0] - arr[:,:,1]).mean()
-             + np.abs(arr[:,:,1] - arr[:,:,2]).mean()) / 2
-        return sat < (threshold * 255)
-    except Exception:
-        return False
+    return None, 0, 0, None
 
 
 def download_image(url: str, dest: Path) -> tuple:
@@ -508,10 +500,11 @@ def main():
         url, w, h, calls_used = fetch_google(subject)
         google_calls += calls_used
         source = "google" if url else None
+        img_bytes = None  # Google: bytes fetched later by download_image
 
         # ── Try Wikimedia fallback ─────────────────────────────────────────────
         if url is None:
-            url, w, h = fetch_wikimedia(subject)
+            url, w, h, img_bytes = fetch_wikimedia(subject)
             source = "wikimedia" if url else None
             time.sleep(WIKIMEDIA_DELAY)
 
@@ -527,8 +520,13 @@ def main():
             done.add(num)
             continue
 
-        # ── Download ──────────────────────────────────────────────────────────
-        rw, rh = download_image(url, dest)
+        # ── Download (or write already-fetched bytes) ─────────────────────────
+        if img_bytes is not None:
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            dest.write_bytes(img_bytes)
+            rw, rh = _image_dims(img_bytes)
+        else:
+            rw, rh = download_image(url, dest)
         if rw == 0:
             print(f"  {label}  → FAILED (download error)")
             append_log(LOG_PATH, {
