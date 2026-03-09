@@ -31,24 +31,28 @@
 }
 
 % ─── ICONOGRAPHIE PLEINE PAGE ─────────────────────────────────────────────────
-% Image unique, centrée verticalement, légende en italique
-\newcommand{\iconographieimg}[2]{%
-  \afterpage{%
-    \clearpage
-    \thispagestyle{empty}%
-    \vspace*{\fill}%
-    \begin{center}%
-      \bwimage[height=0.75\textheight,width=\textwidth,keepaspectratio]{#1}\\[0.6em]%
-      {\small\itshape #2}%
-    \end{center}%
-    \vspace*{\fill}%
-    \clearpage
-  }%
-}
-% Planche composite : inclut le PDF compilé (une page)
-\newcommand{\iconographietex}[1]{%
-  \afterpage{\includepdf[pages=1,pagecommand={\thispagestyle{empty}}]{#1}}%
-}
+% Compiler avec : lualatex "\def\AVECILLUSTRATIONS{}\input{tete_de_veau_ravigote}"
+\ifdefined\AVECILLUSTRATIONS
+  \newcommand{\iconographieimg}[2]{%
+    \afterpage{%
+      \clearpage
+      \thispagestyle{empty}%
+      \vspace*{\fill}%
+      \begin{center}%
+        \bwimage[height=0.75\textheight,width=\textwidth,keepaspectratio]{#1}\\[0.6em]%
+        {\small\itshape #2}%
+      \end{center}%
+      \vspace*{\fill}%
+      \clearpage
+    }%
+  }
+  \newcommand{\iconographietex}[1]{%
+    \afterpage{\includepdf[pages=1,pagecommand={\thispagestyle{empty}}]{#1}}%
+  }
+\else
+  \newcommand{\iconographieimg}[2]{}
+  \newcommand{\iconographietex}[1]{}
+\fi
 
 \input{version.tex}
 \CatchFileDef{\gitcommit}{tete_de_veau_ravigote.gitinfo}{\endlinechar=-1}

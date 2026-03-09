@@ -72,7 +72,6 @@ _OUTPUT_PDFS = [
     f"{BASE}_sommaire.pdf",
     f"{BASE}_annote.pdf",
     f"{BASE}_notes.pdf",
-    f"{BASE}_illustrations.pdf",
     f"{BASE}_LA_TOTALE.pdf",
     f"{BASE}_diff.pdf",
     "postface_claude.pdf",
@@ -160,8 +159,7 @@ def notes(c):
            → populates tete_de_veau_ravigote.ent (endnotes register)
       3.   Copy the annotated PDF to build/
       4.   Compile notes-only PDF  ← BEFORE restoring the roman (.ent still populated)
-      5.   Compile illustrations PDF
-      6.   Restore clean main PDF (no inline note numbers)
+      5.   Restore clean main PDF (no inline note numbers)
     """
     print("=== NOTES : génération du .ent ===")
 
@@ -191,10 +189,6 @@ def notes(c):
     # 2. Notes seules — compile BEFORE restoring the roman (.ent still populated)
     _lmk(c, f"{BASE}_notes")
     print(f"→ build/{BASE}_notes.pdf")
-
-    # 3. Illustrations
-    _lmk(c, f"{BASE}_illustrations")
-    print(f"→ build/{BASE}_illustrations.pdf")
 
     # Restore the clean main PDF (without inline note numbers)
     _lmk(c, BASE)

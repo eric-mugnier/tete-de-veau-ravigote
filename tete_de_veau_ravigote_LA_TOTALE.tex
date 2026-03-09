@@ -15,6 +15,8 @@
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{tikz}
+\usepackage{afterpage}
+\usepackage{pdfpages}
 \usepackage{tabularx}
 \usepackage{longtable}
 \usepackage{booktabs}
@@ -45,6 +47,32 @@
 \newcommand{\beginchapternotes}[1]{%
   \setcounter{endnote}{0}%
   \addtoendnotes{\protect\par\protect\medskip\protect\noindent\protect\chapnoteheader{#1}\protect\par}%
+}
+
+% ─── ICONOGRAPHIE PLEINE PAGE (toujours active dans LA TOTALE) ───────────────
+\newcommand{\bwimage}[2][]{%
+  \begin{tikzpicture}
+    \node[inner sep=0] (img) {\includegraphics[#1]{#2}};
+    \begin{scope}[blend mode=saturation]
+      \fill[black] (img.south west) rectangle (img.north east);
+    \end{scope}
+  \end{tikzpicture}%
+}
+\newcommand{\iconographieimg}[2]{%
+  \afterpage{%
+    \clearpage
+    \thispagestyle{empty}%
+    \vspace*{\fill}%
+    \begin{center}%
+      \bwimage[height=0.75\textheight,width=\textwidth,keepaspectratio]{#1}\\[0.6em]%
+      {\small\itshape #2}%
+    \end{center}%
+    \vspace*{\fill}%
+    \clearpage
+  }%
+}
+\newcommand{\iconographietex}[1]{%
+  \afterpage{\includepdf[pages=1,pagecommand={\thispagestyle{empty}}]{#1}}%
 }
 
 % ─── PAGE GEOMETRY (155×235 mm – Medium 1) ───────────────────────────────────
