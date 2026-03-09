@@ -278,9 +278,6 @@ def total(c):
     print("=== pandoc : postface Claude body ===")
     _pandoc_body(c, "postface_claude.md", "postface_claude_body.tex")
 
-    print("=== personnages body ===")
-    c.run("python3 make_personnages.py")
-
     print("=== LA TOTALE ===")
     _lmk(c, f"{BASE}_LA_TOTALE")
     _ls_outputs()

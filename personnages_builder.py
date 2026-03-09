@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""make_personnages.py — Génère build/personnages_body.tex depuis personnages.md.
+"""personnages_builder.py — Génère personnages_body.tex depuis personnages.md.
 
 Règles de recherche :
   - terme de recherche = nom de famille (dernier mot significatif du nom en gras)
@@ -7,16 +7,14 @@ Règles de recherche :
   - recherche case-sensitive + word-boundary
   - override manuel pour les cas irréductiblement ambigus
 
-Usage : python3 make_personnages.py
-        (appelé automatiquement par inv total)
+Usage : python3 personnages_builder.py
 """
 
 import re
 from collections import Counter
 from pathlib import Path
 
-ROOT  = Path(__file__).parent
-BUILD = ROOT / "build"
+ROOT = Path(__file__).parent
 
 # Ordre narratif des fichiers actes (headlines exclus)
 ACTE_FILES = [
@@ -238,7 +236,6 @@ FOOTER = "\n}\n"
 
 
 def generate():
-    BUILD.mkdir(exist_ok=True)
     entries    = load_entries()
     term_list  = build_search_terms(entries)
 
@@ -261,7 +258,7 @@ def generate():
         lines.append(rf"\noindent{name_tex}{suffix_tex}, {desc_tex}" + "\n")
     lines.append(FOOTER)
 
-    out = BUILD / "personnages_body.tex"
+    out = ROOT / "personnages_body.tex"
     out.write_text("\n".join(lines), encoding="utf-8")
     print(f"  → {out}  ({len(ranked)} personnages)")
 
