@@ -54,6 +54,7 @@ OVERRIDE = {
     "Samuel Girard":      ( 5, 0, "VI"),  # "Girard" matche un autre Girard en acte II
     "Lou De La Croix":    ( 9, 0, "IX"),  # "Croix" matche une référence en acte II
     "Virginie Beaugendre":( 2, 0, "III"), # "Virginie" matche l'état de Virginie (Jefferson) en acte I
+    "Docteur Sébastien Charrier": (12, 0, "IX"), # "Charrier" matche un autre Charrier en acte III
 }
 
 
