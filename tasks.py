@@ -77,6 +77,7 @@ _OUTPUT_PDFS = [
     "postface_claude.pdf",
     "postface_chatgpt.pdf",
     "ratiocinations.pdf",
+    "personnages.pdf",
 ]
 
 
@@ -227,18 +228,8 @@ def ratiocinations(c):
 @task
 @_timed
 def pers(c):
-    """Build personnages.pdf from personnages.md via pandoc + lualatex."""
-    BUILD.mkdir(exist_ok=True)
-    c.run(
-        "pandoc personnages.md"
-        f" -o {BUILD}/personnages.pdf"
-        " --pdf-engine=lualatex"
-        " -V geometry:margin=2cm"
-        " -V lang=fr"
-        ' -V mainfont="EB Garamond"'
-        " -V fontsize=11pt"
-    )
-    print(f"  → {BUILD}/personnages.pdf")
+    """Build personnages.pdf from personnages.tex + personnages_body.tex via lualatex."""
+    _lmk(c, "personnages")
 
 
 @task(name="postface")
