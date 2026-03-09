@@ -247,9 +247,11 @@ Reproduction interdite
 
 % ═══ SOMMAIRE ═════════════════════════════════════════════════════════════════
 \cleardoublepage
-\pagestyle{gallimard}
+\thispagestyle{empty}
+\enlargethispage{50mm}
 {%
-  \small\scshape
+  \renewcommand{\baselinestretch}{1.0}%
+  \fontsize{9}{10.5}\selectfont\scshape
   % Macros de rendu du .toc
   \def\tocchapnum#1{#1}%
   \def\tocchapsep{}%
@@ -273,15 +275,14 @@ Reproduction interdite
   \long\def\tocSectRow#1\TOCSTOP#2{%
     & \ignorespaces#1 & #2 \\[1pt]}%
   \setlength{\tabcolsep}{4pt}%
-  \begin{longtable}{@{}l
-      p{\dimexpr\linewidth-2.5em-3em-4\tabcolsep\relax}
-      r@{}}
-  % Titre sur la première page seulement, garanti même page que le tableau
-  \multicolumn{3}{c}{\normalfont\scshape\large sommaire}\\[5mm]
-  \endfirsthead
-  \endhead
+  \begin{adjustwidth}{-8mm}{-6mm}%
+  \vspace*{-11mm}%
+  {\centering\fontsize{14}{17}\selectfont\scshape sommaire\par}%
+  \vspace{5mm}%
+  \begin{tabularx}{\linewidth}{@{}lXr@{}}
   \IfFileExists{\jobname.toc}{\input{\jobname.toc}}{}%
-  \end{longtable}%
+  \end{tabularx}%
+  \end{adjustwidth}%
 }
 
 
