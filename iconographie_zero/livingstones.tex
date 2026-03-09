@@ -1,0 +1,42 @@
+\documentclass[a4paper]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{fontspec}
+\usepackage[french]{babel}
+\usepackage{tikz}
+
+% Render any image in grayscale via PDF saturation blend mode
+\newcommand{\bwimage}[2][]{%
+  \begin{tikzpicture}
+    \node[inner sep=0] (img) {\includegraphics[#1]{#2}};
+    \begin{scope}[blend mode=saturation]
+      \fill[black] (img.south west) rectangle (img.north east);
+    \end{scope}
+  \end{tikzpicture}%
+}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{figure}[p]
+  \centering
+
+  \begin{subfigure}[b]{0.8\textwidth}
+    \centering
+    \bwimage[width=\linewidth]{acte_01_note_006_david-livingstone.jpg}
+    \caption*{\textit{David Livingstone} \\ {\small 1813–1873 — missionnaire et explorateur}}
+  \end{subfigure}
+
+  \vspace{1.5em}
+
+  \begin{subfigure}[b]{0.8\textwidth}
+    \centering
+    \bwimage[width=\linewidth]{acte_01_note_007_Jonathan-Livingston-le-goeland.jpg}
+    \caption*{\textit{Jonathan Livingston le goéland} \\ {\small Richard Bach, 1970}}
+  \end{subfigure}
+
+\end{figure}
+
+\end{document}

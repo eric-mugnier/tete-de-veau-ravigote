@@ -1,0 +1,77 @@
+\documentclass[a4paper]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{fontspec}
+\usepackage[french]{babel}
+\usepackage{tikz}
+
+% Render any image in grayscale via PDF saturation blend mode
+\newcommand{\bwimage}[2][]{%
+  \begin{tikzpicture}
+    \node[inner sep=0] (img) {\includegraphics[#1]{#2}};
+    \begin{scope}[blend mode=saturation]
+      \fill[black] (img.south west) rectangle (img.north east);
+    \end{scope}
+  \end{tikzpicture}%
+}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{figure}[p]
+  \centering
+
+  % --- row 1 ---
+  \begin{subfigure}[b]{0.31\textwidth}
+    \centering
+    \bwimage[height=7cm]{acte_01_note_009_thomas-jefferson.jpg}
+    \caption*{\textit{Thomas Jefferson} \\ {\small 1743–1826 \\ 3\textsuperscript{e} président des États-Unis}}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.31\textwidth}
+    \centering
+    \bwimage[height=7cm]{acte_01_note_010_alexander-von-humboldt.jpg}
+    \caption*{\textit{Alexander von Humboldt} \\ {\small 1769–1859 \\ naturaliste et explorateur}}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.31\textwidth}
+    \centering
+    \bwimage[height=7cm]{acte_01_note_011_george-washington.jpg}
+    \caption*{\textit{George Washington} \\ {\small 1732–1799 \\ 1\textsuperscript{er} président des États-Unis}}
+  \end{subfigure}
+
+  \vspace{1em}
+
+  % --- row 2 ---
+  \begin{subfigure}[b]{0.31\textwidth}
+    \centering
+    \bwimage[height=7cm]{acte_01_note_012_john-adams.jpg}
+    \caption*{\textit{John Adams} \\ {\small 1735–1826 \\ 2\textsuperscript{e} président des États-Unis}}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.31\textwidth}
+    \centering
+    \bwimage[height=7cm]{acte_01_note_013_condorcet.jpg}
+    \caption*{\textit{Nicolas de Condorcet} \\ {\small 1743–1794 \\ mathématicien et philosophe}}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.31\textwidth}
+    \centering
+    \bwimage[height=7cm]{acte_01_note_014_Jean-Le-Rond-dAlembert.jpg}
+    \caption*{\textit{Jean Le Rond d'Alembert} \\ {\small 1717–1783 \\ mathématicien, encyclopédiste}}
+  \end{subfigure}
+
+  \vspace{1em}
+
+  % --- row 3 : Sally Hemings, seule ---
+  \begin{subfigure}[b]{0.31\textwidth}
+    \centering
+    \bwimage[height=7.5cm]{acte_01_note_015_sally-hemings.jpg}
+    \caption*{\textit{Sally Hemings} \\ {\small 1773–1835 \\ esclave de Thomas Jefferson}}
+  \end{subfigure}
+
+\end{figure}
+
+\end{document}

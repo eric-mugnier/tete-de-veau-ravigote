@@ -1,0 +1,112 @@
+\documentclass[tikz, border=0pt]{standalone}
+
+% ─── PACKAGES ─────────────────────────────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ebgaramond}
+\usepackage[french]{babel}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{microtype}
+\usepackage{graphicx}
+
+% ─── COULEUR ──────────────────────────────────────────────────────────────────
+\definecolor{encre}{RGB}{18,18,18}
+\definecolor{gristexte}{RGB}{90,90,90}
+\definecolor{bleutnuit}{RGB}{28,40,64}
+
+% ─── DOCUMENT ─────────────────────────────────────────────────────────────────
+\begin{document}
+
+% ─── CANVAS TIKZ (unité = 1mm, origine bas-gauche) ───────────────────────────
+%
+% Gabarit 24Bookprint — format 155×235 mm — ~465 pages
+%
+%   Fond perdu          : 3 mm de chaque côté
+%   Marge de sécurité   : ~14 mm en retrait des traits de coupe (texte/image)
+%
+%   Zones (x) :
+%     Fond perdu gauche   :   0 –   3 mm
+%     4e de couverture    :   3 – 158 mm  (155 mm)
+%     Dos                 : 158 – 199 mm  ( 41 mm)
+%     1ère de couverture  : 199 – 354 mm  (155 mm)
+%     Fond perdu droit    : 354 – 357 mm
+%
+%   Zones (y) :
+%     Fond perdu bas      :   0 –   3 mm
+%     Contenu             :   3 – 238 mm  (235 mm)
+%     Fond perdu haut     : 238 – 241 mm
+%
+%   Centres :
+%     4e de couverture    :  80,5 mm
+%     Dos                 : 178,5 mm
+%     1ère de couverture  : 276,5 mm
+
+\begin{tikzpicture}[x=1mm, y=1mm, font=\normalfont]
+
+  % ── FOND BLANC ABSOLU ───────────────────────────────────────────────────────
+  \fill[white] (0,0) rectangle (357,241);
+
+  % ═══════════════════════════════════════════════════════════════════════════
+  % ══ 1ÈRE DE COUVERTURE (199 – 354 mm) — centre : 276,5 mm ════════════════
+  % ═══════════════════════════════════════════════════════════════════════════
+
+  % ── Auteur : petites caps, très espacées, centré entre haut et filet ────────
+  \node[anchor=center, text=bleutnuit] at (276.5, 203)
+    {\fontsize{20}{24}\selectfont\textls[250]{\textsc{éric mugnier}}};
+
+  % ── Filet unique : l'unique élément graphique ─────────────────────────────
+  \draw[bleutnuit, line width=0.25pt] (211, 175) -- (342, 175);
+
+  % ── Titre : garamond regular, grand, aéré, une seule ligne ────────────────
+  \node[
+    anchor=north,
+    align=center,
+    text=bleutnuit
+  ] at (276.5, 171)
+  {\fontsize{30}{36}\selectfont
+    Tête de veau ravigote};
+
+  % ── Logo CT (1ère, bas droite, discret) ──────────────────────────────────
+  \node[anchor=south, opacity=1] at (276.5, 10)
+    {\includegraphics[width=6mm]{images/ct_watermark.png}};
+
+  % ═══════════════════════════════════════════════════════════════════════════
+  % ══ DOS (158 – 199 mm) — centre : 178,5 mm ══════════════════════════════
+  % ═══════════════════════════════════════════════════════════════════════════
+
+  % Filets de séparation, très effacés
+  \draw[encre!12, line width=0.2pt] (158,0) -- (158,241);
+  \draw[encre!12, line width=0.2pt] (199,0) -- (199,241);
+
+  % Auteur horizontal en haut du dos
+  \node[anchor=north, text=encre] at (178.5, 227)
+    {\fontsize{11}{13}\selectfont\textls[120]{\textsc{éric mugnier}}};
+
+  % Titre vertical (de bas en haut)
+  \node[rotate=90, anchor=center, text=encre] at (178.5, 121)
+    {\fontsize{20}{24}\selectfont\textls[80]{\textsc{tête de veau ravigote}}};
+
+  % ── Logo CT (dos, bas, discret) ───────────────────────────────────────────
+  \node[anchor=south, opacity=1] at (178.5, 10)
+    {\includegraphics[width=6mm]{images/ct_watermark.png}};
+
+  % ═══════════════════════════════════════════════════════════════════════════
+  % ══ 4ÈME DE COUVERTURE (3 – 158 mm) — centre : 80,5 mm ═════════════════
+  % ═══════════════════════════════════════════════════════════════════════════
+
+  % ── Résumé ─────────────────────────────────────────────────────────────────
+  \node[
+    anchor=north west,
+    text width=120mm,
+    align=justify,
+    inner sep=0pt,
+    text=encre
+  ] at (17, 218)
+  {%
+  };
+
+\end{tikzpicture}
+
+\end{document}
