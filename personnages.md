@@ -2,15 +2,15 @@
 
 Personnages par ordre d'apparition. Les références historiques ou culturelles citées en notes de bas de page ne sont pas comptabilisées.
 
+**Gulav Behram** dit « le Kurde », criminel multirécidiviste : vol, viol, extorsion, cambriolage. Constamment libéré faute de place en prison. Trop violent même pour les codétenus. Tué par Djeferson lors d'un cambriolage.
+
 **Djeferson Beauvais**, narrateur et protagoniste. Commandant de police judiciaire. Cynique, amateur de cigares, de bons vins et de vieux livres. Règle volontiers les problèmes de façon expéditive. Armé de « Manu », son 6.35 Manufrance de collection hérité de son grand-père Philibert, résistant. Père militaire absent, prénom hérité d'un Thomas Jefferson mal orthographié.
 
-**Gulav Behram** dit « le Kurde », criminel multirécidiviste : vol, viol, extorsion, cambriolage. Constamment libéré faute de place en prison. Trop violent même pour les codétenus. Tué par Djeferson lors d'un cambriolage.
+**Korax**, chat roux tigré de la mère Ouvrard. Sournois et territorial, sait utiliser l'ascenseur. Déteste Djeferson.
 
 **Maria Ouvrard** (« mère Ouvrard »), voisine de palier de Djeferson au 6e étage. Maîtresse du chat Korax.
 
 **Marc-Antoine Jacquinot**, autre voisin au 6e étage, « l'ermite du sixième ». Professeur de philosophie, solitaire, collectionneur de livres anciens rares (certains lui seront volés à l'acte VIII). Refuse toutes les corvées de voisinage.
-
-**Korax**, chat roux tigré de la mère Ouvrard. Sournois et territorial, sait utiliser l'ascenseur. Déteste Djeferson.
 
 **Rose Barbet** (née Lortie), 75 ans. Épouse soumise et épuisée. Découvre un colis contenant une tête humaine.
 

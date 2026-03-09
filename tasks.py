@@ -278,23 +278,8 @@ def total(c):
     print("=== pandoc : postface Claude body ===")
     _pandoc_body(c, "postface_claude.md", "postface_claude_body.tex")
 
-    print("=== pandoc : personnages body ===")
-    c.run(f"pandoc personnages.md -t latex -o {BUILD}/personnages_body.tex")
-    # Post-process:
-    # 1. Remove pandoc's \section{} heading (we add our own title in LA_TOTALE.tex)
-    # 2. Fix longtable column widths (pandoc uses A4-based proportions)
-    body = (BUILD / "personnages_body.tex").read_text()
-    body = re.sub(r"\\section\{.*?\}\\label\{[^}]*\}", "", body, flags=re.DOTALL)
-    body = re.sub(
-        r"\\begin\{longtable\}\[.*?\]\{@\{\}.*?@\{\}\}",
-        (r"\\begin{longtable}[]{@{}"
-         r">{\\raggedright\\arraybackslash}p{8mm}"
-         r">{\\raggedright\\arraybackslash}p{30mm}"
-         r">{\\raggedright\\arraybackslash}"
-         r"p{\\dimexpr\\linewidth-8mm-30mm-4\\tabcolsep\\relax}@{}}"),
-        body, flags=re.DOTALL,
-    )
-    (BUILD / "personnages_body.tex").write_text(body)
+    print("=== personnages body ===")
+    c.run("python3 make_personnages.py")
 
     print("=== LA TOTALE ===")
     _lmk(c, f"{BASE}_LA_TOTALE")
