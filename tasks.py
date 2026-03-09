@@ -271,9 +271,6 @@ def total(c):
     print("=== pandoc : postface Claude body ===")
     _pandoc_body(c, "postface_claude.md", "postface_claude_body.tex")
 
-    print("=== pandoc : ratiocinations body ===")
-    _pandoc_body(c, "actes/ratiocinations.md", "ratiocinations_body.tex")
-
     print("=== pandoc : personnages body ===")
     c.run(f"pandoc personnages.md -t latex -o {BUILD}/personnages_body.tex")
     # Post-process:
@@ -295,7 +292,6 @@ def total(c):
     print("=== LA TOTALE ===")
     _lmk(c, f"{BASE}_LA_TOTALE")
     _ls_outputs()
-
 
 @task(pre=[build])
 @_timed
