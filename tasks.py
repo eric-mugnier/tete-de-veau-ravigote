@@ -200,6 +200,19 @@ def notes(c):
     _lmk(c, BASE)
 
 
+@task(name="couv")
+@_timed
+def couverture(c):
+    """Build tete_de_veau_ravigote_couverture_24bookprint.pdf via lualatex."""
+    BUILD.mkdir(exist_ok=True)
+    c.run(
+        f"lualatex -interaction=nonstopmode"
+        f" -output-directory={BUILD}"
+        f" tete_de_veau_ravigote_couverture_24bookprint.tex"
+    )
+    print(f"  → {BUILD}/tete_de_veau_ravigote_couverture_24bookprint.pdf")
+
+
 @task
 @_timed
 def ratiocinations(c):
