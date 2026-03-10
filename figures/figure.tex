@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage[paperwidth=155mm,paperheight=235mm,
+            left=23mm,right=18mm,top=25mm,bottom=28mm]{geometry}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\usepackage[french]{babel}
+\usepackage{tikz}
+
+% Render any image in grayscale via PDF saturation blend mode
+\newcommand{\bwimage}[2][]{%
+  \begin{tikzpicture}
+    \node[inner sep=0] (img) {\includegraphics[#1]{#2}};
+    \begin{scope}[blend mode=saturation]
+      \fill[black] (img.south west) rectangle (img.north east);
+    \end{scope}
+  \end{tikzpicture}%
+}
+
+\newcommand{\figcaptionname}{\footnotesize}
+\newcommand{\figcaptiondetail}{\scriptsize}
+
+\graphicspath{{../iconography/}}
+\pagestyle{empty}
+\topskip=0pt
+
+\begin{document}
+\input{\figname_fig.tex}
+\end{document}

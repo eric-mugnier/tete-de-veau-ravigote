@@ -19,8 +19,11 @@
 \usepackage{tikz}
 \usepackage{afterpage}
 \usepackage{pdfpages}
+\usepackage{wrapfig}
 
 % ─── GRAYSCALE IMAGE FILTER ───────────────────────────────────────────────────
+\newcommand{\figcaptionname}{\footnotesize}
+\newcommand{\figcaptiondetail}{\scriptsize}
 \newcommand{\bwimage}[2][]{%
   \begin{tikzpicture}
     \node[inner sep=0] (img) {\includegraphics[#1]{#2}};
@@ -47,7 +50,12 @@
     }%
   }
   \newcommand{\iconographietex}[1]{%
-    \afterpage{\includepdf[pages=1,pagecommand={\thispagestyle{empty}}]{#1}}%
+    \afterpage{%
+      \clearpage
+      \thispagestyle{empty}%
+      \input{#1}%
+      \clearpage
+    }%
   }
 \else
   \newcommand{\iconographieimg}[2]{}

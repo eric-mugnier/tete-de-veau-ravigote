@@ -21,6 +21,7 @@
 \usepackage{longtable}
 \usepackage{booktabs}
 \usepackage{calc}
+\usepackage{wrapfig}
 \input{version.tex}
 \IfFileExists{tete_de_veau_ravigote.gitinfo}%
   {\CatchFileDef{\gitcommit}{tete_de_veau_ravigote.gitinfo}{\endlinechar=-1}}%
@@ -50,6 +51,9 @@
 }
 
 % ─── ICONOGRAPHIE PLEINE PAGE (toujours active dans LA TOTALE) ───────────────
+\graphicspath{{iconography/}}
+\newcommand{\figcaptionname}{\footnotesize}
+\newcommand{\figcaptiondetail}{\scriptsize}
 \newcommand{\bwimage}[2][]{%
   \begin{tikzpicture}
     \node[inner sep=0] (img) {\includegraphics[#1]{#2}};
@@ -72,7 +76,12 @@
   }%
 }
 \newcommand{\iconographietex}[1]{%
-  \afterpage{\includepdf[pages=1,pagecommand={\thispagestyle{empty}}]{#1}}%
+  \afterpage{%
+    \clearpage
+    \thispagestyle{empty}%
+    \input{#1}%
+    \clearpage
+  }%
 }
 
 % ─── PAGE GEOMETRY (155×235 mm – Medium 1) ───────────────────────────────────
