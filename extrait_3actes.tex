@@ -26,7 +26,7 @@
 \graphicspath{{iconography/}}
 \newcommand{\bwimage}[2][]{%
   \begin{tikzpicture}
-    \node[inner sep=0] (img) {\includegraphics[#1]{#2}};
+    \node[inner sep=0, outer sep=0pt] (img) {\includegraphics[#1]{#2}};
     \begin{scope}[blend mode=saturation]
       \fill[black] (img.south west) rectangle (img.north east);
     \end{scope}
