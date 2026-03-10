@@ -1,6 +1,6 @@
 %
-% acte_01_standalone.tex  —  compilation isolée de l'acte I
-% lualatex acte_01_standalone.tex
+% acte_02_standalone.tex  —  compilation isolée de l'acte II
+% lualatex acte_02_standalone.tex
 %
 \documentclass[12pt,twoside,openright]{memoir}
 \ifdefined\pdfvariable\pdfvariable minorversion 7\fi
@@ -140,13 +140,14 @@
 \begin{document}
 \pagestyle{gallimard}
 
+\setcounter{chapter}{1}
 \chapter{}
-\input{actes/acte_01_headline.tex}
-\input{actes/acte_01.tex}
+\input{actes/acte_02_headline.tex}
+\input{actes/acte_02.tex}
 
 \ifdefined\AVECNOTES
   \clearpage
-  {\centering\normalfont\scshape\large Notes du chapitre \textsc{i}\par}
+  {\centering\normalfont\scshape\large Notes du chapitre \textsc{ii}\par}
   \vspace{\onelineskip}
   \begingroup\parindent=0pt
   \theendnotes
