@@ -2,13 +2,12 @@
 %%% Compiler : latexmk -pdf extrait_3actes
 %%% Avec notes : pdflatex "\def\AVECNOTES{}\input{extrait_3actes}"
 
-\pdfminorversion=7
 \documentclass[12pt,twoside,openright]{memoir}
+\ifdefined\pdfvariable\pdfvariable minorversion 7\fi
 
 % ─── PACKAGES ─────────────────────────────────────────────────────────────────
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{ebgaramond}
+\usepackage{fontspec}
+\setmainfont{EB Garamond}
 \usepackage[french]{babel}
 \usepackage{microtype}
 \usepackage{fmtcount}
@@ -16,11 +15,23 @@
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{tikz}
+\usepackage{afterpage}
 \usepackage{wrapfig}
+\graphicspath{{iconography/}}
+\newcommand{\bwimage}[2][]{%
+  \begin{tikzpicture}
+    \node[inner sep=0] (img) {\includegraphics[#1]{#2}};
+    \begin{scope}[blend mode=saturation]
+      \fill[black] (img.south west) rectangle (img.north east);
+    \end{scope}
+  \end{tikzpicture}%
+}
 \newcommand{\figcaptionname}{\footnotesize}
 \newcommand{\figcaptiondetail}{\scriptsize}
 \input{version.tex}
-\CatchFileDef{\gitcommit}{tete_de_veau_ravigote.gitinfo}{\endlinechar=-1}
+\IfFileExists{tete_de_veau_ravigote.gitinfo}%
+  {\CatchFileDef{\gitcommit}{tete_de_veau_ravigote.gitinfo}{\endlinechar=-1}}%
+  {\def\gitcommit{}}
 
 % ─── NOTES FINALES ─────────────────────────────────────────────────────────────
 \usepackage{endnotes}
@@ -49,6 +60,16 @@
     \setcounter{endnote}{0}%
     \addtoendnotes{\protect\par\protect\medskip\protect\noindent\protect\chapnoteheader{#1}\protect\par}%
   \fi
+}
+
+% ─── ICONOGRAPHIE ─────────────────────────────────────────────────────────────
+\newcommand{\iconographieimg}[2]{}
+\newcommand{\iconographietex}[1]{%
+  \afterpage{%
+    \thispagestyle{empty}%
+    \input{#1}%
+    \clearpage
+  }%
 }
 
 % ─── PAGE GEOMETRY (155×235 mm – Medium 1) ───────────────────────────────────
