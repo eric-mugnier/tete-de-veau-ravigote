@@ -8,6 +8,10 @@
 % ─── PACKAGES ─────────────────────────────────────────────────────────────────
 \usepackage{fontspec}
 \setmainfont{EB Garamond}
+\newfontfamily{\arabicfont}{Geeza Pro}
+\newcommand{\arab}[1]{{\arabicfont\textdir TRT #1}}
+\newfontfamily{\cjkfont}{Hiragino Mincho ProN}
+\newcommand{\cjk}[1]{{\cjkfont #1}}
 \usepackage[french]{babel}
 \usepackage{microtype}
 \usepackage{fmtcount}
@@ -43,7 +47,7 @@
   \newcommand{\nf}[1]{}
 \fi
 \renewcommand{\notesname}{}
-\renewcommand{\enotesize}{\small}
+\renewcommand{\enotesize}{\fontsize{11}{13.2}\selectfont}
 \makeatletter
 \renewcommand\enoteformat{%
   \rightskip\z@ \leftskip\z@ \parindent=0pt
@@ -60,7 +64,6 @@
 \newcommand{\beginchapternotes}[1]{%
   \ifdefined\AVECNOTES
     \setcounter{endnote}{0}%
-    \addtoendnotes{\protect\par\protect\medskip\protect\noindent\protect\chapnoteheader{#1}\protect\par}%
   \fi
 }
 
@@ -199,20 +202,6 @@ Reproduction interdite
 
 \input{extrait_3actes_content.tex}
 
-% ═══ NOTES FINALES ════════════════════════════════════════════════════════════
-\ifdefined\AVECNOTES
-  \ifdefined\SANSNOTESFINALES\else
-    \cleardoublepage
-    \thispagestyle{empty}
-    \vspace*{10\onelineskip}
-    {\centering\normalfont\scshape\large Notes\par}
-    \newpage
-    \hbox{}\thispagestyle{empty}
-    \newpage
-    \pagestyle{gallimard}
-    \theendnotes
-  \fi
-\fi
 
 % ═══ COLOPHON FINAL ══════════════════════════════════════════════════════════
 \input{colophon}
