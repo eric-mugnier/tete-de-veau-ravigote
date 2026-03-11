@@ -36,3 +36,16 @@
   \theendnotes
   \endgroup
 \fi
+
+\chapter{Acte 4}
+\beginchapternotes{Acte IV}
+\input{actes/acte_04_headline.tex}
+\input{actes/acte_04.tex}
+\ifdefined\AVECNOTES
+  \cleardoublepage
+  {\centering\normalfont\scshape\large Notes du chapitre \textsc{iv}\par}
+  \vspace{\onelineskip}
+  \begingroup\parindent=0pt
+  \theendnotes
+  \endgroup
+\fi
