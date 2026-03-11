@@ -36,7 +36,7 @@
   \end{tikzpicture}%
 }
 
-% ─── ICONOGRAPHIE PLEINE PAGE ─────────────────────────────────────────────────
+% ─── ICONOGRAPHIE (pleine page + inline) ──────────────────────────────────────
 % Compiler avec : lualatex "\def\AVECILLUSTRATIONS{}\input{tete_de_veau_ravigote}"
 \ifdefined\AVECILLUSTRATIONS
   \newcommand{\iconographieimg}[2]{%
@@ -59,9 +59,40 @@
       \clearpage
     }%
   }
+  % Image en wrapfigure : #1=pos  #2=largeur  #3=code-image  #4=légende
+  \newcommand{\iconographiewrapfig}[4]{%
+    \begin{wrapfigure}{#1}{#2}%
+      \vspace{0.5ex}%
+      \centering
+      #3\\[0.2em]%
+      {\scriptsize\itshape #4}%
+    \end{wrapfigure}%
+  }
+  % Bloc centré : #1=code-image  #2=légende (vide = pas de ligne de légende)
+  \newcommand{\iconographieinlineblock}[2]{%
+    {\centering#1\par}%
+    \ifx&#2&\else{\centering\scriptsize\itshape#2\par}\fi%
+    \vspace{0.5\onelineskip}%
+  }
+  % Double minipage en fin de chapitre : #1=img1  #2=img2
+  \newcommand{\iconographiedouble}[2]{%
+    \vfill
+    \noindent
+    \begin{minipage}[t]{0.48\textwidth}%
+      \bwimage[width=\linewidth]{#1}%
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[t]{0.48\textwidth}%
+      \raggedleft
+      \bwimage[width=\linewidth]{#2}%
+    \end{minipage}%
+  }
 \else
   \newcommand{\iconographieimg}[2]{}
   \newcommand{\iconographietex}[1]{}
+  \newcommand{\iconographiewrapfig}[4]{}
+  \newcommand{\iconographieinlineblock}[2]{}
+  \newcommand{\iconographiedouble}[2]{}
 \fi
 
 \input{version.tex}
