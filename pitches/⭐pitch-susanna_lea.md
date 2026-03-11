@@ -27,7 +27,7 @@ Christophe Thiebaud
 Pièces jointes :
 - `susanna_lea_cover.pdf` — Lettre de présentation
 - `susanna_lea_synopsis.pdf` — Synopsis
-- `extrait_3actes.pdf` — Extrait (chapitres I à III)
+- `extrait_3actes.pdf` — Extrait (chapitres I à IV)
 
 | Biographie |
 |------|
