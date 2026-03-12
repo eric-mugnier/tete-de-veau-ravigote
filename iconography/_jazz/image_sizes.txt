@@ -1,0 +1,10 @@
+acte_03_note_008_charlie-parker.jpg 505 443
+acte_03_note_009_john-coltrane.jpg 960 1279
+acte_03_note_010_shadow-wilson.jpg 400 400
+acte_03_note_011_cecil-taylor.jpg 566 659
+acte_03_note_012_johnny-griffin.jpg 600 600
+acte_03_note_013_roy-haines.jpg 447 427
+acte_03_note_014_ahmed-abdul-malik.jpg 1536 1920
+acte_03_note_015_don-cherry.jpg 439 612
+acte_03_note_016_ornette-coleman.jpg 2000 2986
+acte_03_note_017_miles-davis.jpg 1600 1257
