@@ -84,12 +84,13 @@
     \begin{wrapfigure}{#1}{#2}%
       \vspace{0.5ex}%
       \centering
-      #3\\[0.2em]%
-      {\scriptsize\itshape #4}%
+      #3%
+      \ifx&#4&\else\\[0.2em]{\scriptsize\itshape #4}\fi%
     \end{wrapfigure}%
   }
   % Bloc centré : #1=code-image  #2=légende (vide = pas de ligne de légende)
   \newcommand{\iconographieinlineblock}[2]{%
+    \vspace{0.5\onelineskip}%
     {\centering#1\par}%
     \ifx&#2&\else{\centering\scriptsize\itshape#2\par}\fi%
     \vspace{0.5\onelineskip}%
