@@ -3,8 +3,8 @@
 | Acte | Fichier | Mots | % du total | Corrigé | Diffs | Diffs % |
 |------|---------|-----:|----------:|:-------:|------:|-------:|
 | Acte 1 | acte_01.tex | 4 046 | 2,0 % | ☑ | 12 | 0,30 % |
-| Acte 2 | acte_02.tex | 17 790 | 9,0 % | ☑ | 70 | 0,39 % |
-| Acte 3 | acte_03.tex | 20 799 | 10,5 % | ☑ | 70 | 0,34 % |
+| Acte 2 | acte_02.tex | 17 790 | 9,0 % | ☑ | 71 | 0,40 % |
+| Acte 3 | acte_03.tex | 20 799 | 10,5 % | ☑ | 71 | 0,34 % |
 | Acte 4 | acte_04.tex | 20 454 | 10,3 % | ☑ | 54 | 0,26 % |
 | Acte 5 | acte_05.tex | 20 814 | 10,5 % | ☑ | 58 | 0,28 % |
 | Acte 6/1 | acte_06_1.tex | 22 360 | 11,3 % | ☑ | 88 * | 0,27 % * |
@@ -17,7 +17,7 @@
 | Acte 9/3 | acte_09_3.tex | 15 134 | 7,7 % | ☑ |  |  |
 | Acte 9/3b | acte_09_3b.tex | 4 724 | 2,4 % | ☑ |  |  |
 | Acte 9/4 | acte_09_4.tex | 6 067 | 3,1 % | ☑ |  |  |
-| **Total** | | **197 598** | **100 %** | | **536** | **0,27 %** |
+| **Total** | | **197 598** | **100 %** | | **538** | **0,27 %** |
 
 > Décompte hors commandes LaTeX et commentaires.
 > **Diffs** = nombre de blocs supprimés/remplacés (via `latexdiff`), hors bruit typographique (apostrophes, guillemets, tirets, etc.).
