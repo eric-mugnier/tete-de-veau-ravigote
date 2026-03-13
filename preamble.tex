@@ -82,7 +82,7 @@
   % Image en wrapfigure : #1=pos  #2=largeur  #3=code-image  #4=légende
   \newcommand{\iconographiewrapfig}[4]{%
     \begin{wrapfigure}{#1}{#2}%
-      \vspace{0.5ex}%
+      % \vspace{0.5ex}%
       \centering
       #3%
       \ifx&#4&\else\\[0.2em]{\scriptsize\itshape #4}\fi%
@@ -93,7 +93,7 @@
     \vspace{0.5\onelineskip}%
     {\centering#1\par}%
     \ifx&#2&\else{\centering\scriptsize\itshape#2\par}\fi%
-    \vspace{0.5\onelineskip}%
+    % \vspace{0.5\onelineskip}%
   }
   % Double minipage en fin de chapitre : #1=img1  #2=img2
   \newcommand{\iconographiedouble}[2]{%
