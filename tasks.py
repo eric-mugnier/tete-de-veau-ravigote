@@ -167,7 +167,7 @@ def notes(c):
     # Double-braces {{ }} in the f-string produce literal { } for LaTeX
     tex_cmd = rf"\def\AVECNOTES{{}}\def\SANSNOTESFINALES{{}}\input{{{BASE}}}"
     lualatex = (
-        f"lualatex -interaction=nonstopmode"
+        f"lualatex -shell-escape -interaction=nonstopmode"
         f" -output-directory=build"
         f" -jobname={BASE}"
         f' "{tex_cmd}"'
