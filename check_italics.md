@@ -5,7 +5,6 @@ Remplir la colonne **todo** : `ok` = ajouter `\textit`, `skip` = laisser tel que
 | fichier | ligne | title | text | todo |
 |---|---|---|---|---|
 | acte_01.tex | 37 | Alien | .org/wiki/Hydre\_de\_Lerne}}, AlienCréature extraterrestre fi | |
-| acte_01.tex | 27 | Nature | priant de se tenir à carreau. Naturellement il n’en faisait rien, | |
 | acte_01.tex | 40 | Nature | à payer le prix fort~». Si la Nature avait ne serait-ce qu’un semb | |
 | acte_02.tex | 658 | Archicebus achilles | ki/Nyanzapithecus}} au Kenya, Archicebus achillesArchicebus achille | |
 | acte_02.tex | 658 | Asteriornis maastrichtensis | On se demande aussi pourquoi Asteriornis maastrichtensisAsteriornis maastr | |
@@ -18,7 +17,6 @@ Remplir la colonne **todo** : `ok` = ajouter `\textit`, `skip` = laisser tel que
 | acte_02.tex | 670 | Ovis shantungensis | ler en douceur la boucle avec Ovis shantungensis, le mouflon chinois dont je p | |
 | acte_02.tex | 514 | Paul et Virginie | deux, un garçon et une fille, Paul et Virginie) dans un pavillon de banlieue | |
 | acte_02.tex | 543 | Paul et Virginie | ir des mérites insoupçonnés), Paul et Virginie (respectivement 14 et 16 ans | |
-| acte_02.tex | 555 | Super Mario Bros. | /_0400_super-mario-bros.jpg}}{Super Mario Bros.} dont elle venait de nous rég | |
 | acte_02.tex | 613 | The Walking Dead | non-stop les onze saisons de The Walking DeadThe Walking Dead}, | |
 | acte_02.tex | 658 | Triceratops | fr.wikipedia.org/wiki/Triceratops}} ou un T.~rexLe  | |
 | acte_02.tex | 658 | Vegavis iaai | s-cours du Crétacé, ou encore Vegavis iaaiVegavis iaai}, ois | |

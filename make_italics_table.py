@@ -17,7 +17,7 @@ NOTE_RE  = re.compile(r'\\nf\{[^}]*?\\textit\{([^}~,(]+)')
 def plain_positions(text, title):
     """Return list of (lineno, excerpt) where title appears without \\textit."""
     results = []
-    pattern = re.compile(r'(?<!\\textit\{)' + re.escape(title))
+    pattern = re.compile(r'(?<!\\textit\{)' + re.escape(title) + r'\b')
     for m in pattern.finditer(text):
         # exclude occurrences inside \nf{...}
         before = text[:m.start()]
