@@ -1,11 +1,3 @@
--- LOCAL PATCH — copied from TeXLive 2024 texmf-dist/tex/lualatex/luaoptions/luaoptions-lib.lua
--- and placed here so kpse (which searches '.' first) picks it up before the system version.
---
--- Fix (line ~236): tex_engine:__index was calling rawget(self(), k) without nil-checking
--- self(). When latexmk uses -output-directory=build, the log file is in build/ and
--- io.open(tex.jobname..'.log') fails → self() returns nil → rawget(nil,k) crashes.
--- The fix makes __index return nil gracefully, which is correct (we are never MiKTeX).
---
 -- luacheck: ignore ly log self luatexbase internalversion font fonts tex token kpse status
 local err, warn, info, log = luatexbase.provides_module({
     name               = "luaoptions-lib",

@@ -1,0 +1,11 @@
+--- /usr/local/texlive/2024/texmf-dist/tex/lualatex/luaoptions/luaoptions-lib.lua	2022-10-30 21:46:45
++++ /dev/fd/11	2026-03-14 17:13:02
+@@ -233,7 +233,7 @@
+     return self
+ end
+ 
+-function tex_engine:__index(k) return rawget(self(), k) end
++function tex_engine:__index(k) local t = self(); if t then return rawget(t, k) end end
+ 
+ 
+ lib.tex_engine = tex_engine

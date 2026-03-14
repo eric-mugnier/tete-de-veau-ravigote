@@ -97,6 +97,21 @@ def _ls_outputs():
 # ─── tasks ────────────────────────────────────────────────────────────────────
 
 @task
+def setup(c):
+    """Apply luaoptions-lib.patch to generate the local luaoptions-lib.lua override."""
+    sys_file = c.run("kpsewhich luaoptions-lib.lua", hide=True, warn=True).stdout.strip()
+    if not sys_file:
+        print("  ✗ luaoptions-lib.lua not found via kpsewhich — is TeXLive installed?")
+        return
+    c.run(f'cp "{sys_file}" luaoptions-lib.lua')
+    result = c.run("patch luaoptions-lib.lua luaoptions-lib.patch", warn=True)
+    if result.ok:
+        print("  ✓ luaoptions-lib.lua patched successfully")
+    else:
+        print("  ✗ patch failed — upstream luaoptions-lib.lua may have changed, review manually")
+
+
+@task
 def gitinfo(c):
     """Write build/tete_de_veau_ravigote.gitinfo (shared by all documents)."""
     BUILD.mkdir(exist_ok=True)
