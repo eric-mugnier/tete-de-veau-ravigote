@@ -2,9 +2,14 @@
 
 ## Prérequis
 
-- TeXLive (2024 ou ultérieur) avec LuaLaTeX
-- LilyPond (`/usr/local/bin/lilypond`)
-- Python 3 + [Invoke](https://www.pyinvoke.org/) (`pip install invoke`)
+| Outil | Rôle |
+|---|---|
+| TeXLive + LuaLaTeX + latexmk | compilation LaTeX |
+| LilyPond (`/usr/local/bin/lilypond`) | partition musicale (lyluatex) |
+| `rsvg-convert` | conversion SVG → PDF (librsvg) |
+| `pandoc` | EPUB et postfaces |
+| `latexdiff` + `diff_work/make_diff.py` | PDF de diff (cible `diffs` uniquement) |
+| Python 3 + [Invoke](https://www.pyinvoke.org/) (`pip install invoke`) | orchestration |
 
 ## Installation (nouvelle machine)
 
@@ -26,6 +31,7 @@ inv build          # PDF principal
 inv sommaire       # sommaire seul
 inv notes          # PDF annoté + notes finales
 inv epub           # EPUB
+inv extrait        # extrait (actes publiés)
 inv pers           # liste des personnages
 inv couv           # couverture
 inv postface       # postfaces (Claude + ChatGPT)
@@ -33,3 +39,8 @@ inv total          # LA TOTALE (tout en un)
 inv all            # tout compiler + clean
 inv clean          # supprimer les fichiers auxiliaires
 ```
+
+Les tâches `notes`, `diffs` et `epub` déclenchent `build` automatiquement.
+On peut combiner des cibles : `inv diffs notes` (build exécuté une seule fois).
+
+Tous les PDF générés atterrissent dans `build/`.
