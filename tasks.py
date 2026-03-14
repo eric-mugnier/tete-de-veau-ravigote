@@ -339,6 +339,13 @@ def clean(c):
     # latexmk aux files in root
     c.run(f"latexmk -c -outdir=. {BASE}.tex", warn=True)
 
+    # figures/ : aux files only, keep PDFs
+    _fig_aux_exts = {".aux", ".log", ".fdb_latexmk", ".fls"}
+    for f in (ROOT / "figures").iterdir():
+        if f.is_file() and f.suffix in _fig_aux_exts:
+            f.unlink()
+    (ROOT / "figures" / "texput.log").unlink(missing_ok=True)
+
     # Python cache
     shutil.rmtree(ROOT / "__pycache__", ignore_errors=True)
 
