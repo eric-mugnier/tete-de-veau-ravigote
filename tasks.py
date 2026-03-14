@@ -66,7 +66,7 @@ def _lmk(c, *stems):
     for stem in stems:
         # Touch .toc so latexmk doesn't treat its absence as a fatal missing-input error
         (BUILD / f"{stem}.toc").touch(exist_ok=True)
-        c.run(f"latexmk -g -lualatex -interaction=nonstopmode {stem}.tex")
+        c.run(f"latexmk -g -lualatex -interaction=nonstopmode {stem}.tex", warn=True)
 
 
 _OUTPUT_PDFS = [
