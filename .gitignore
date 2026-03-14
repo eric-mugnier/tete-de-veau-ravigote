@@ -23,6 +23,8 @@
 
 # ─── Fichiers temporaires ──────────────────────────────────────────────────────
 build/
+tmp-ly/
+*.midi
 temp.tex
 diff_work/tmp
 diff_work/tete_de_veau_ravigote_diff.tex
