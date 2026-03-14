@@ -99,9 +99,10 @@ def _ls_outputs():
 @task
 def setup(c):
     """Apply luaoptions-lib.patch to generate the local luaoptions-lib.lua override."""
-    sys_file = c.run("kpsewhich luaoptions-lib.lua", hide=True, warn=True).stdout.strip()
+    all_files = c.run("kpsewhich --all luaoptions-lib.lua", hide=True, warn=True).stdout.splitlines()
+    sys_file = next((f for f in all_files if not f.startswith("./")), None)
     if not sys_file:
-        print("  ✗ luaoptions-lib.lua not found via kpsewhich — is TeXLive installed?")
+        print("  ✗ luaoptions-lib.lua not found in TeXLive — is TeXLive installed?")
         return
     c.run(f'cp "{sys_file}" luaoptions-lib.lua')
     result = c.run("patch luaoptions-lib.lua luaoptions-lib.patch", warn=True)
