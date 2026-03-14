@@ -324,14 +324,23 @@ def all(c):
     clean(c)
 
 
+_AUX_EXTS = {".aux", ".log", ".out", ".toc", ".ent", ".fls", ".fdb_latexmk", ".pdf"}
+
 @task
 def clean(c):
     """Remove aux files from build/ and root; keep PDFs and IDE body files."""
-    # Root-level stray PDF — would only appear if lualatex was called without -output-directory
-    (ROOT / f"{BASE}.pdf").unlink(missing_ok=True)
+    # Root-level stray aux/pdf files for all known tex stems
+    for stem in [BASE, "extrait_actes", "extrait_4actes"] + [
+        p.stem for p in ROOT.glob("acte_*_standalone.tex")
+    ]:
+        for ext in _AUX_EXTS:
+            (ROOT / f"{stem}{ext}").unlink(missing_ok=True)
 
-    # latexmk aux files in root (produced by the two direct lualatex passes in notes)
+    # latexmk aux files in root
     c.run(f"latexmk -c -outdir=. {BASE}.tex", warn=True)
+
+    # Python cache
+    shutil.rmtree(ROOT / "__pycache__", ignore_errors=True)
 
     # build/ : keep only expected output files
     _keep_names = set(_OUTPUT_PDFS) | {f"{BASE}.epub"}
