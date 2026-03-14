@@ -4,137 +4,91 @@ Remplir la colonne **todo** : `ok` = ajouter `\textit`, `skip` = laisser tel que
 
 | fichier | ligne | title | text | todo |
 |---|---|---|---|---|
-| acte_01.tex | 37 | Alien | .org/wiki/Hydre\_de\_Lerne}}, AlienCréature extraterrestre fi | |
-| acte_01.tex | 40 | Nature | à payer le prix fort~». Si la Nature avait ne serait-ce qu’un semb | |
-| acte_02.tex | 658 | Archicebus achilles | ki/Nyanzapithecus}} au Kenya, Archicebus achillesArchicebus achille | |
-| acte_02.tex | 658 | Asteriornis maastrichtensis | On se demande aussi pourquoi Asteriornis maastrichtensisAsteriornis maastr | |
-| acte_02.tex | 613 | Avatar | ki/Univers\_de\_fiction\_d\%27Avatar\#Espèces}}, et le blanc par l | |
-| acte_02.tex | 670 | La Comtesse de Hong-Kong | org/wiki/Sophia\_Loren}} dans La Comtesse de Hong-KongLa Comtesse de Hon | |
-| acte_02.tex | 539 | La Reine des fées | notamment à son chef-d’œuvre La Reine des féesLa Reine des fées} | |
-| acte_02.tex | 658 | Morotopithecus bishopi | ux dernières nouvelles, après Morotopithecus bishopiMorotopithecus bis | |
-| acte_02.tex | 658 | Nyanzapithecus alesi | orotopithecus}} en Ouganda et Nyanzapithecus alesiNyanzapithecus ale | |
-| acte_02.tex | 660 | Ovis shantungensis | 0540_ovis-shantungensis.jpg}}{Ovis shantungensis} Ce qui pose la question suiv | |
-| acte_02.tex | 670 | Ovis shantungensis | ler en douceur la boucle avec Ovis shantungensis, le mouflon chinois dont je p | |
-| acte_02.tex | 514 | Paul et Virginie | deux, un garçon et une fille, Paul et Virginie) dans un pavillon de banlieue | |
-| acte_02.tex | 543 | Paul et Virginie | ir des mérites insoupçonnés), Paul et Virginie (respectivement 14 et 16 ans | |
-| acte_02.tex | 613 | The Walking Dead | non-stop les onze saisons de The Walking DeadThe Walking Dead}, | |
-| acte_02.tex | 658 | Triceratops | fr.wikipedia.org/wiki/Triceratops}} ou un T.~rexLe  | |
-| acte_02.tex | 658 | Vegavis iaai | s-cours du Crétacé, ou encore Vegavis iaaiVegavis iaai}, ois | |
-| acte_03.tex | 64 | Desert Eagle | e_03/_0380_desert-eagle.jpg}}{Desert Eagle 44 magnum}  restée à la maiso | |
-| acte_03.tex | 65 | Desert Eagle | maison, au même titre que mon Desert Eagle 44 magnumLe Deser | |
-| acte_03.tex | 684 | F-22 Raptor | furtive qu’un Lockheed Martin F-22 RaptorLe F-22 Raptor} es | |
-| acte_03.tex | 686 | F-22 Raptor | heed-martin-f-22-raptor.jpg}}{F-22 Raptor Front View} Il a commencé à s | |
-| acte_03.tex | 26 | Five Spot Café | stion, dans le plus pur style Five Spot CaféLe Five Spot Café} | |
-| acte_03.tex | 30 | Helicon Home Colony | ki/Upton\_Sinclair}} fonde sa Helicon Home ColonyL'Helicon Home Col | |
-| acte_03.tex | 32 | Helicon Home Colony | 0340_helicon-home-colony.jpg}[Helicon Home Colony]{acte_03/_0330_upton-sinclair | |
-| acte_03.tex | 650 | John Rambo | ses rôles de Rocky Balboa et John Rambo, deux franchises qu'il a co-é | |
-| acte_03.tex | 650 | Lucia di Lammermoor | ano\_Donizetti}}, il écoutait Lucia di LammermoorLucia di Lammermoo | |
-| acte_03.tex | 969 | Tesem | erait un descendant direct de TesemLe Tesem} est un t | |
-| acte_03.tex | 54 | dark web | Il avait épluché l’Oignon (le dark webLe dark web} désig | |
-| acte_04.tex | 826 | Alfa | (comme le missile balistique AlfaL'Alfa} est un mis | |
-| acte_04.tex | 446 | Beverly Hills Vamp | Bingo !  Moi} : Ni de Beverly Hills VampBeverly Hills Vamp | |
-| acte_04.tex | 412 | Das Reich | dia.org/wiki/Schutzstaffel}}, Das ReichLa 2e}~di | |
-| acte_04.tex | 36 | Le Retour | de l’anus, Les Deux Trous et Le Retour du doigt). Mais l’animal (à p | |
-| acte_04.tex | 792 | Mission | pan dans la pampa, comme dans Mission de JofféRoland Joffé (né | |
-| acte_04.tex | 170 | Revue Française de Psychanalyse | que/}} publié en 1986 dans la Revue Française de PsychanalyseLa Revue française | |
-| acte_04.tex | 412 | Schutzstaffel | talgique du IIIe Reich, de la SchutzstaffelLa Schutzstaffel} | |
-| acte_04.tex | 442 | Un vampire à Brooklyn | ne surtout pas confondre avec Un vampire à BrooklynUn vampire à Brook | |
-| acte_04.tex | 344 | Vieux fusil | lding} : Il voulait parler du Vieux fusil, un film de Robert Enrico | |
-| acte_04.tex | 484 | Vieux fusil | t sa parfaite connaissance du Vieux fusil de Robert Enrico. Je lui ai f | |
-| acte_05.tex | 200 | Annales | antique. Tu devrais lire les AnnalesLes Annales} de Ta | |
-| acte_05.tex | 346 | Django Unchained | a.org/wiki/Jamie\_Foxx}} dans Django UnchainedDjango Unchained} | |
-| acte_05.tex | 310 | Les Hommes de l’ombre | moyens d’aller à Los Angeles. Les Hommes de l’ombreLes Hommes de l’om | |
-| acte_05.tex | 80 | Mein Kampf | s de suicide, et puis j’ai lu Mein KampfMein Kampf} (litt. | |
-| acte_05.tex | 90 | Mein Kampf | er, parce que si t’as bien lu Mein Kampf, la bible du national sociali | |
-| acte_05.tex | 306 | Mulholland Falls | Tamahori}} ? Titre original : Mulholland FallsMulholland Falls} | |
-| acte_05.tex | 712 | Peter Pan | visiter. Mais cette fois, tel Peter PanPeter Pan, personnage créé | |
-| acte_05.tex | 180 | Rocky | lui soufflant la fumée de mon Rocky Patel Disciple dans les nasea | |
-| acte_05.tex | 342 | Rocky | fumer quelques taffes de mon Rocky Patel Disciple (pas de la col | |
-| acte_05.tex | 856 | Rocky | s c’est d’abord et avant tout Rocky BalboaRocky Balboa est le | |
-| acte_05.tex | 528 | Règlements de comptes à O.K. Corral | ive qui risquait de tourner à Règlements de comptes à O.K. CorralRèglements de c | |
-| acte_05.tex | 896 | Stechschritt | e défiler au pas de l’oie. Le StechschrittLe Stechschritt} ( | |
-| acte_05.tex | 8 | Traité sur les races | ions de l'auteur.} dans son «~Traité sur les races~», ouvrage controversé aujour | |
-| acte_06_1.tex | 184 | Don Pasquale | ia\_Borgia\_(op\%C3\%A9ra)}}, Don PasqualeDon Pasquale} est | |
-| acte_06_1.tex | 542 | Désir de femme | ui l’ont rendu célèbre, comme Désir de femmeDésir de femme} (\ | |
-| acte_06_1.tex | 176 | Fat Man | de l’US Air Force, de larguer Fat ManFat Man} est le no | |
-| acte_06_1.tex | 766 | First Blood | e de basset que Stallone dans First Blood, cette même tête ayant, avec | |
-| acte_06_1.tex | 176 | Furtwängler | u) du très germanique Wilhelm FurtwänglerWilhelm Furtwängler (1886- | |
-| acte_06_1.tex | 178 | Furtwängler | it faite sur les activités de Furtwängler pendant la période nazie, au- | |
-| acte_06_1.tex | 180 | Furtwängler | e la mécanique (à l’égal d’un Furtwängler pour la direction d’orchestre | |
-| acte_06_1.tex | 188 | Gracula | _manioc}}), sturnidé du genre GraculaGracula} est un ge | |
-| acte_06_1.tex | 798 | Hobbit | miers rayons du soleil (CF Le HobbitLe Hobbit} est un | |
-| acte_06_1.tex | 692 | Jurassic Park | pielberg}} tournerait un jour Jurassic ParkJurassic Park} (19 | |
-| acte_06_1.tex | 90 | King Kong | a.org/wiki/Ann\_Darrow}} dans King KongKing Kong} (1933), | |
-| acte_06_1.tex | 184 | La Fiancée de Lammermoor | etano\_Donizetti}} inspiré de La Fiancée de Lammermoor de Walter ScottSir Walter | |
-| acte_06_1.tex | 184 | La Fille du régiment | a.org/wiki/Don\_Pasquale}} et La Fille du régimentLa Fille du régime | |
-| acte_06_1.tex | 748 | La Prisonnière du désert | une jouissance manifeste dans La Prisonnière du désertLa Prisonnière du | |
-| acte_06_1.tex | 798 | Le Hobbit | premiers rayons du soleil (CF Le HobbitLe Hobbit} est un | |
-| acte_06_1.tex | 542 | Le Secret magnifique | \_de\_femme\_(film,\_1953)}}, Le Secret magnifiqueLe Secret magnifiq | |
-| acte_06_1.tex | 176 | Little Boy | ipedia.org/wiki/Fat\_Man}} et Little BoyLittle Boy} est le | |
-| acte_06_1.tex | 184 | Lucrèce Borgia | n’ai rien contre l’auteur de Lucrèce BorgiaLucrèce Borgia} es | |
-| acte_06_1.tex | 708 | L’Astrée | m du berger forézien héros de L’Astrée d’Honoré d’UrféHonoré d’U | |
-| acte_06_1.tex | 90 | L’Empire des sens | _Plaisirs\_de\_la\_chair}} et L’Empire des sensL’Empire des sens} | |
-| acte_06_1.tex | 90 | Max mon amour | ki/Charlotte\_Rampling}} dans Max mon amourMax mon amour} (19 | |
-| acte_06_1.tex | 748 | Rambo | -chou entre les mains de John Rambo (interprété par Stallone aprè | |
-| acte_06_1.tex | 750 | Rambo | lique exacte du Randall 18 de Rambo que Sam trimballait dans un é | |
-| acte_06_1.tex | 90 | Secret Warriors | oirs et intégrer l’équipe des Secret WarriorsSecret Warriors} e | |
-| acte_06_1.tex | 692 | Theropoda | fr.wikipedia.org/wiki/Theropoda}} carnivores, comme l’Allosau | |
-| acte_06_1.tex | 542 | Tout ce que le ciel permet | _magnifique\_(film,\_1954)}}, Tout ce que le ciel permetTout ce que le cie | |
-| acte_06_1.tex | 186 | Tullio Serafin | de Milan sous la direction de Tullio SerafinTullio Serafin (1878--1968 | |
-| acte_06_1.tex | 176 | You and the Atom Bomb | rg/wiki/George\_Orwell}} dans You and the Atom BombYou and the Atom B | |
-| acte_06_1.tex | 542 | Écrit sur du vent | le\_ciel\_permet}}, ou encore Écrit sur du ventÉcrit sur du vent} | |
-| acte_08.tex | 238 | Dialogues des courtisanes | : Si, regardez, là, entre les Dialogues des courtisanes de Lucien de SamosateLuc | |
-| acte_08.tex | 2 | Ghost Dog | /wiki/Forest\_Whitaker}} dans Ghost DogGhost Dog, la voie | |
-| acte_08.tex | 2 | La 36\up{e | ntant le général Sien Ta dans La 36e} Chambre de Shaolin | |
-| acte_08.tex | 218 | La Métaphysique du strip-tease | -ses : Mais là, voyons, entre La Métaphysique du strip-tease de Denys ChevalierD | |
-| acte_08.tex | 192 | Le Cri du cormoran le soir au-dessus des jonques | Moi} : Et aussi dans Le Cri du cormoran le soir au-dessus des jonquesLe Cri du c | |
-| acte_08.tex | 88 | Le Lac | mme aurait dit Lamartine dans Le LacLe Lac} (1820), po | |
-| acte_08.tex | 320 | Les Pleins Pouvoirs | e sa possession. Vous avez vu Les Pleins PouvoirsLes Pleins Pouvoir | |
-| acte_08.tex | 242 | Lettre à la Présidente | rare édition originale de la Lettre à la PrésidentePoème érotique clandestin | |
-| acte_08.tex | 242 | L’Origine du monde | elle aurait servi de modèle à L’Origine du mondeL’Origine du monde | |
-| acte_08.tex | 238 | Margot la ravaudeuse | iki/Lucien\_de\_Samosate}} et Margot la ravaudeuse de Fougeret de MonbronLou | |
-| acte_08.tex | 218 | Satyricon | wiki/Denys\_Chevalier}} et le SatyriconLe Satyricon} est | |
-| acte_08.tex | 140 | The Human Centipede | au trou de balle, comme dans The Human CentipedeThe Human Centiped | |
-| acte_08.tex | 392 | The Lost City of Z | t ainsi, sortie tout droit de The Lost City of ZThe Lost City of Z | |
-| acte_09_1.tex | 14 | Bounty | ourna Les Révoltés du Bounty} (1962) en Polynésie français | |
-| acte_09_1.tex | 242 | Confessions | que Saint-Pierre de Rome, ses Confessions compteraient bon nombre de pa | |
-| acte_09_1.tex | 446 | Dixie | dans les poches en sifflotant DixieDixie} (1859), cha | |
-| acte_09_1.tex | 14 | Missouri Breaks | s\_un\_\%C5\%93il\_d\%27or}}, Missouri BreaksMissouri Breaks} ( | |
-| acte_09_1.tex | 14 | Mulholland Drive | e, dans la villa familiale de Mulholland Drive. Condamné à dix ans de prison | |
-| acte_09_1.tex | 360 | Petit Chaperon rouge | loup en train de reluquer le Petit Chaperon rougeLe Petit Chaperon | |
-| acte_09_1.tex | 14 | Reflets dans un œil d’or | wiki/Le\_Bal\_des\_maudits}}, Reflets dans un œil d’orReflets dans un œi | |
-| acte_09_2.tex | 68 | Dead in Tombstone | ia.org/wiki/Terre\_maudite}}, Dead in TombstoneDead in Tombstone} | |
-| acte_09_2.tex | 68 | Dracula | stein et Billy the Kid contre DraculaBilly le Kid contr | |
-| acte_09_2.tex | 98 | Grey’s Anatomy | } : La fille du Dr Sloan dans Grey’s AnatomyGrey’s Anatomy}, s | |
-| acte_09_2.tex | 68 | Jesse James contre Frankenstein | plus classique, l’intemporel Jesse James contre FrankensteinJesse James contre | |
-| acte_09_2.tex | 68 | La Parade du rire | la réputation de films comme La Parade du rireLa Parade du rire} | |
-| acte_09_2.tex | 68 | Le Retour de Philo Vance | du\_rire\_(film\%2C\_1934)}}, Le Retour de Philo VanceLe Retour de Philo | |
-| acte_09_2.tex | 92 | L’Exorciste | oit tourner dans un remake de L’ExorcisteL’Exorciste} (1973 | |
-| acte_09_2.tex | 18 | L’Or du Rhin | i/Valhalla}}, scène finale de L’Or du RhinL’Or du Rhin} ( | |
-| acte_09_2.tex | 62 | Maniac | er le très glauque et méconnu Maniac de William LustigWilliam | |
-| acte_09_2.tex | 68 | Maniac | ’on est en train de parler de Maniac, le film de Lustig) n’avait p | |
-| acte_09_2.tex | 114 | Maniac | ey Man~» ou encore «~the Moon Maniac~». Il fut reconnu coupable du | |
-| acte_09_2.tex | 100 | Mank | l’ai trouvée très bonne dans MankMank} (2020), film | |
-| acte_09_2.tex | 58 | Massacre à la tronçonneuse | et pétaradant, le cultissime Massacre à la tronçonneuseMassacre à la tron | |
-| acte_09_2.tex | 58 | Mother I’d Like to Fuck | ais english}{Mother I’d Like to Fuck}MILF (Mother I’d | |
-| acte_09_2.tex | 62 | Playboy | 1953. Vivant dans le célèbre Playboy Mansion à Beverly Hills, il i | |
-| acte_09_2.tex | 48 | Psychose | c{Greg} : On se croirait dans PsychosePsychose} ( | |
-| acte_09_2.tex | 116 | Psychose | c{Greg} : On se croirait dans Psychose.  Moi} : En plus exot | |
-| acte_09_2.tex | 34 | Scipion | La\_Valette}}, le naufrage du Scipion dans la baie de Samana en 178 | |
-| acte_09_2.tex | 36 | Sin City | a.org/wiki/Roark\_Junior}} de Sin CitySin City} est une | |
-| acte_09_2.tex | 68 | The Burrowers | wiki/Dead\_in\_Tombstone}} ou The BurrowersThe Burrowers} (20 | |
-| acte_09_2.tex | 68 | The Wind | n western horrifique du genre The WindThe Wind} (2018), | |
-| acte_09_2.tex | 66 | Tschüss | n}}, german}{Tschüss}Tschüss}~: interj | |
-| acte_09_3.tex | 133 | Alice ça glisse | ource{youtu.be/TG9EY7BsJFs}}, Alice ça glisseAlice ça glisse} ( | |
-| acte_09_3.tex | 95 | Bates Motel | a réplique dans ladite série (Bates Motel, très réussie au demeurant), | |
-| acte_09_3.tex | 95 | Good Doctor | ick} (Netflix) et The Good Doctor} (ABC, 2017--2021) dans le rô | |
-| acte_09_3.tex | 133 | La Braguette d’or | cent}}, inoubliable auteur de La Braguette d’orLa Braguette d’or} | |
-| acte_09_3.tex | 133 | La Chatte de la voisine | rce{youtu.be/OPwTSln0y-w}} et La Chatte de la voisineLa Chatte de la vo | |
-| acte_09_3.tex | 131 | La Fiancée du monstre | te d’Halifax, pas l’auteur de La Fiancée du monstreLa Fiancée du mons | |
-| acte_09_3.tex | 95 | Lovesick | fr.wikipedia.org/wiki/Lovesick\_(s\%C3\%A9rie\_t\%C3\%A9l\%C | |
-| acte_09_3.tex | 87 | Mad Max | Special\_V8\_Interceptor}} de Mad MaxMad Max}, franchis | |
-| acte_09_3.tex | 203 | Magnum Force | L\%27Inspecteur\_Harry}} dans Magnum ForceMagnum Force} (197 | |
-| acte_09_3.tex | 95 | Misfits | fr.wikipedia.org/wiki/Misfits\_(s\%C3\%A9rie\_t\%C3\%A9l\%C | |
-| acte_09_3.tex | 131 | Necromania | nc\%C3\%A9e\_du\_monstre}} et NecromaniaNecromania} (1971) | |
-| acte_09_3b.tex | 136 | Hemingway | nt.  Moi}, sortant un Hemingway Short Story de ma poche : Vou | |
-| acte_09_3b.tex | 240 | Hemingway | e, le Short Story de la série HemingwayErnest Hemingway (1899--19 | |
+| acte_01.tex | 37 | Alien | …deuxième des douze travaux d’Héraclès., **Alien**\nf{… | |
+| acte_02.tex | 658 | Archicebus achilles | …et de l’Homme. au Kenya, **Archicebus achilles**\nf{… | |
+| acte_02.tex | 658 | Asteriornis maastrichtensis | …On se demande aussi pourquoi **Asteriornis maastrichtensis**\nf{… | |
+| acte_02.tex | 670 | La Comtesse de Hong-Kong | …meilleure actrice (, 1961). dans **La Comtesse de Hong-Kong**\nf{… | |
+| acte_02.tex | 539 | La Reine des fées | …pense notamment à son chef-d’œuvre **La Reine des fées**\nf{… | |
+| acte_02.tex | 658 | Morotopithecus bishopi | …? Aux dernières nouvelles, après **Morotopithecus bishopi**\nf{… | |
+| acte_02.tex | 658 | Nyanzapithecus alesi | …arboricole évoluée. en Ouganda et **Nyanzapithecus alesi**\nf{… | |
+| acte_02.tex | 660 | Ovis shantungensis | …lui-même descendant du Mouflon chinois **Ovis shantungensis**\nf{… | |
+| acte_02.tex | 613 | The Walking Dead | …non-stop les onze saisons de **The Walking Dead**\nf{… | |
+| acte_02.tex | 658 | Vegavis iaai | …basses-cours du Crétacé, ou encore **Vegavis iaai**\nf{… | |
+| acte_03.tex | 684 | F-22 Raptor | …aussi furtive qu’un Lockheed Martin **F-22 Raptor**\nf{… | |
+| acte_03.tex | 26 | Five Spot Café | …dans le plus pur style **Five Spot Café**\nf{… | |
+| acte_03.tex | 30 | Helicon Home Colony | …en mars 1907. fonde sa **Helicon Home Colony**\nf{… | |
+| acte_03.tex | 650 | John Rambo | …interprétées sur plusieurs décennies. dans **John Rambo**\nf{… | |
+| acte_03.tex | 650 | Lucia di Lammermoor | …canto romantique. , il écoutait **Lucia di Lammermoor**\nf{… | |
+| acte_03.tex | 969 | Tesem | …serait un descendant direct de **Tesem**\nf{… | |
+| acte_03.tex | 54 | dark web | …Il avait épluché l’Oignon (le **dark web**\nf{… | |
+| acte_04.tex | 826 | Alfa | …Italy (comme le missile balistique **Alfa**\nf{… | |
+| acte_04.tex | 446 | Beverly Hills Vamp | …Bingo ! : Ni de **Beverly Hills Vamp**\nf{… | |
+| acte_04.tex | 412 | Das Reich | …d'un million de membres. , **Das Reich**\nf{… | |
+| acte_04.tex | 170 | Revue Française de Psychanalyse | …publié en 1986 dans la **Revue Française de Psychanalyse**\nf{… | |
+| acte_04.tex | 412 | Schutzstaffel | …du IIIe Reich, de la **Schutzstaffel**\nf{… | |
+| acte_04.tex | 442 | Un vampire à Brooklyn | …ne surtout pas confondre avec **Un vampire à Brooklyn**\nf{… | |
+| acte_05.tex | 200 | Annales | …antique. Tu devrais lire les **Annales**\nf{… | |
+| acte_05.tex | 346 | Django Unchained | …américain, oscarisé pour (2004). dans **Django Unchained**\nf{… | |
+| acte_05.tex | 310 | Les Hommes de l’ombre | …moyens d’aller à Los Angeles. **Les Hommes de l’ombre**\nf{… | |
+| acte_05.tex | 80 | Mein Kampf | …suicide, et puis j’ai lu **Mein Kampf**\nf{… | |
+| acte_05.tex | 306 | Mulholland Falls | …(2002). ? Titre original : **Mulholland Falls**\nf{… | |
+| acte_05.tex | 712 | Peter Pan | …visiter. Mais cette fois, tel **Peter Pan**\nf{… | |
+| acte_05.tex | 528 | Règlements de comptes à O.K. Corral | …qui risquait de tourner à **Règlements de comptes à O.K. Corral**\nf{… | |
+| acte_05.tex | 896 | Stechschritt | …au pas de l’oie. Le **Stechschritt**\nf{… | |
+| acte_06_1.tex | 184 | Don Pasquale | …de Victor Hugo (1833). , **Don Pasquale**\nf{… | |
+| acte_06_1.tex | 542 | Désir de femme | …qui l’ont rendu célèbre, comme **Désir de femme**\nf{… | |
+| acte_06_1.tex | 176 | Fat Man | …l’US Air Force, de larguer **Fat Man**\nf{… | |
+| acte_06_1.tex | 176 | Furtwängler | …peu) du très germanique Wilhelm **Furtwängler**\nf{… | |
+| acte_06_1.tex | 188 | Gracula | …Caraïbes. ), sturnidé du genre **Gracula**\nf{… | |
+| acte_06_1.tex | 798 | Hobbit | …rayons du soleil (CF Le **Hobbit**\nf{… | |
+| acte_06_1.tex | 692 | Jurassic Park | …et (1993). tournerait un jour **Jurassic Park**\nf{… | |
+| acte_06_1.tex | 90 | King Kong | …du gigantesque gorille Kong. dans **King Kong**\nf{… | |
+| acte_06_1.tex | 184 | La Fille du régiment | …représentés du répertoire italien. et **La Fille du régiment**\nf{… | |
+| acte_06_1.tex | 748 | La Prisonnière du désert | …avec une jouissance manifeste dans **La Prisonnière du désert**\nf{… | |
+| acte_06_1.tex | 798 | Le Hobbit | …premiers rayons du soleil (CF **Le Hobbit**\nf{… | |
+| acte_06_1.tex | 542 | Le Secret magnifique | …Sirk avec Barbara Stanwyck. , **Le Secret magnifique**\nf{… | |
+| acte_06_1.tex | 176 | Little Boy | …et 80\,000 morts immédiats. et **Little Boy**\nf{… | |
+| acte_06_1.tex | 184 | Lucrèce Borgia | …n’ai rien contre l’auteur de **Lucrèce Borgia**\nf{… | |
+| acte_06_1.tex | 90 | L’Empire des sens | …en commettant un meurtre. et **L’Empire des sens**\nf{… | |
+| acte_06_1.tex | 90 | Max mon amour | …transgressives et psychologiquement complexes. dans **Max mon amour**\nf{… | |
+| acte_06_1.tex | 90 | Secret Warriors | …super-pouvoirs et intégrer l’équipe des **Secret Warriors**\nf{… | |
+| acte_06_1.tex | 542 | Tout ce que le ciel permet | …Hudson et Jane Wyman. , **Tout ce que le ciel permet**\nf{… | |
+| acte_06_1.tex | 186 | Tullio Serafin | …Milan sous la direction de **Tullio Serafin**\nf{… | |
+| acte_06_1.tex | 176 | You and the Atom Bomb | …puissances à l’ère nucléaire. dans **You and the Atom Bomb**\nf{… | |
+| acte_06_1.tex | 542 | Écrit sur du vent | …années 1950. , ou encore **Écrit sur du vent**\nf{… | |
+| acte_08.tex | 2 | Ghost Dog | …et oscarisé pour (2006). dans **Ghost Dog**\nf{… | |
+| acte_08.tex | 192 | Le Cri du cormoran le soir au-dessus des jonques | …bien. : Et aussi dans **Le Cri du cormoran le soir au-dessus des jonques**\nf{… | |
+| acte_08.tex | 88 | Le Lac | …comme aurait dit Lamartine dans **Le Lac**\nf{… | |
+| acte_08.tex | 320 | Les Pleins Pouvoirs | …sa possession. Vous avez vu **Les Pleins Pouvoirs**\nf{… | |
+| acte_08.tex | 242 | Lettre à la Présidente | …rare édition originale de la **Lettre à la Présidente**\nf{… | |
+| acte_08.tex | 242 | L’Origine du monde | …aurait servi de modèle à **L’Origine du monde**\nf{… | |
+| acte_08.tex | 218 | Satyricon | …et phénomène philosophique. et le **Satyricon**\nf{… | |
+| acte_08.tex | 140 | The Human Centipede | …trou de balle, comme dans **The Human Centipede**\nf{… | |
+| acte_08.tex | 392 | The Lost City of Z | …ainsi, sortie tout droit de **The Lost City of Z**\nf{… | |
+| acte_09_1.tex | 446 | Dixie | …dans les poches en sifflotant **Dixie**\nf{… | |
+| acte_09_1.tex | 14 | Missouri Breaks | …officier de l’armée américaine. , **Missouri Breaks**\nf{… | |
+| acte_09_1.tex | 14 | Mulholland Drive | …mieux dans l’existence, même à **Mulholland Drive**\nf{… | |
+| acte_09_1.tex | 360 | Petit Chaperon rouge | …en train de reluquer le **Petit Chaperon rouge**\nf{… | |
+| acte_09_1.tex | 14 | Reflets dans un œil d’or | …la Seconde Guerre mondiale. , **Reflets dans un œil d’or**\nf{… | |
+| acte_09_2.tex | 68 | Dead in Tombstone | …à des forces surnaturelles. , **Dead in Tombstone**\nf{… | |
+| acte_09_2.tex | 68 | Dracula | …et Billy the Kid contre **Dracula**\nf{… | |
+| acte_09_2.tex | 98 | Grey’s Anatomy | …fille du Dr Sloan dans **Grey’s Anatomy**\nf{… | |
+| acte_09_2.tex | 68 | Jesse James contre Frankenstein | …un style plus classique, l’intemporel **Jesse James contre Frankenstein**\nf{… | |
+| acte_09_2.tex | 68 | La Parade du rire | …la réputation de films comme **La Parade du rire**\nf{… | |
+| acte_09_2.tex | 68 | Le Retour de Philo Vance | …la redistribution des richesses. , **Le Retour de Philo Vance**\nf{… | |
+| acte_09_2.tex | 92 | L’Exorciste | …tourner dans un remake de **L’Exorciste**\nf{… | |
+| acte_09_2.tex | 18 | L’Or du Rhin | …. , scène finale de **L’Or du Rhin**\nf{… | |
+| acte_09_2.tex | 100 | Mank | …l’ai trouvée très bonne dans **Mank**\nf{… | |
+| acte_09_2.tex | 58 | Massacre à la tronçonneuse | …gore et pétaradant, le cultissime **Massacre à la tronçonneuse**\nf{… | |
+| acte_09_2.tex | 48 | Psychose | …: On se croirait dans **Psychose**\nf{… | |
+| acte_09_2.tex | 36 | Sin City | …odieux de la série. de **Sin City**\nf{… | |
+| acte_09_2.tex | 68 | The Burrowers | …venger de ses meurtriers. ou **The Burrowers**\nf{… | |
+| acte_09_2.tex | 68 | The Wind | …un western horrifique du genre **The Wind**\nf{… | |
+| acte_09_3.tex | 133 | Alice ça glisse | …phare de Francky Vincent. , **Alice ça glisse**\nf{… | |
+| acte_09_3.tex | 133 | La Braguette d’or | …gaillardes. , inoubliable auteur de **La Braguette d’or**\nf{… | |
+| acte_09_3.tex | 133 | La Chatte de la voisine | …glisse (1987), Francky Vincent. et **La Chatte de la voisine**\nf{… | |
+| acte_09_3.tex | 131 | La Fiancée du monstre | …comte d’Halifax, pas l’auteur de **La Fiancée du monstre**\nf{… | |
+| acte_09_3.tex | 87 | Mad Max | …plus célèbres du monde. de **Mad Max**\nf{… | |
+| acte_09_3.tex | 203 | Magnum Force | …opus de la série. dans **Magnum Force**\nf{… | |
+| acte_09_3.tex | 131 | Necromania | …race de mutants atomiques. et **Necromania**\nf{… | |
+| acte_09_3b.tex | 240 | Hemingway | …Short Story de la série **Hemingway**\nf{… | |

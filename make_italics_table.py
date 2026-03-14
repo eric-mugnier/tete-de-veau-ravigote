@@ -15,22 +15,19 @@ OUT_FILE   = Path(__file__).parent / "check_italics.md"
 NOTE_RE  = re.compile(r'\\nf\{[^}]*?\\textit\{([^}~,(]+)')
 # Match title NOT preceded by \textit{
 def plain_positions(text, title):
-    """Return list of (lineno, excerpt) where title appears without \\textit."""
+    """Return list of (lineno, excerpt) where title appears without \\textit, just before \\nf{."""
     results = []
-    pattern = re.compile(r'(?<!\\textit\{)' + re.escape(title) + r'\b')
+    # Match: title (not preceded by \textit{) immediately followed by \nf{
+    pattern = re.compile(r'(?<!\\textit\{)' + re.escape(title) + r'\b(?=\\nf\{)')
     for m in pattern.finditer(text):
-        # exclude occurrences inside \nf{...}
-        before = text[:m.start()]
-        # count unclosed \nf{ before this position
-        in_note = before.count(r'\nf{') > before.count(r'\nf{') - before.count('}')
         lineno = text[:m.start()].count('\n') + 1
-        # short excerpt: up to 60 chars centred on match
-        start = max(0, m.start() - 30)
-        end   = min(len(text), m.end() + 30)
-        excerpt = text[start:end].replace('\n', ' ').strip()
-        # strip latex commands from excerpt for readability
-        excerpt = re.sub(r'\\[a-zA-Z]+\{?', '', excerpt)
-        excerpt = excerpt[:80]
+        # Take up to 5 plain-text words before the title
+        before_raw = text[max(0, m.start() - 120):m.start()]
+        # Strip LaTeX commands and braces for readability
+        before_clean = re.sub(r'\\[a-zA-Z]+(\{[^}]*\})*', '', before_raw)
+        before_clean = re.sub(r'[{}]', '', before_clean).replace('\n', ' ').strip()
+        words_before = ' '.join(before_clean.split()[-5:])
+        excerpt = f"…{words_before} **{title}**\\nf{{…"
         results.append((lineno, excerpt))
     return results
 
