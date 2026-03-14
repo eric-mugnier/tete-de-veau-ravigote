@@ -1,6 +1,5 @@
-%%% Extrait : trois premiers actes
-%%% Compiler : latexmk -pdf extrait_4actes
-%%% Avec notes : pdflatex "\def\AVECNOTES{}\input{extrait_4actes}"
+%%% Extrait : actes publiés à ce jour
+%%% Compiler : inv extrait
 
 \documentclass[12pt,twoside,openright]{memoir}
 \def\AVECNOTES{}\def\AVECILLUSTRATIONS{}\def\NOTESPARTCHAPITRE{}
@@ -36,7 +35,7 @@ Reproduction interdite
 \pagestyle{gallimard}
 {\makeatletter\def\contentsline#1#2#3#4{}\@starttoc{toc}\makeatother}
 
-\input{extrait_4actes_content.tex}
+\input{extrait_actes_content.tex}
 
 
 % ═══ COLOPHON FINAL ══════════════════════════════════════════════════════════

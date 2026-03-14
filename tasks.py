@@ -71,6 +71,7 @@ def _lmk(c, *stems):
 
 _OUTPUT_PDFS = [
     f"{BASE}.pdf",
+    "extrait_actes.pdf",
     f"{BASE}_sommaire.pdf",
     f"{BASE}_annote.pdf",
     f"{BASE}_notes.pdf",
@@ -118,6 +119,15 @@ def gitinfo(c):
     BUILD.mkdir(exist_ok=True)
     result = c.run("git log -1 --format=%h", hide=True)
     (BUILD / f"{BASE}.gitinfo").write_text(result.stdout.strip())
+
+
+@task(pre=[gitinfo])
+@_timed
+def extrait(c):
+    """Build extrait_actes.pdf (actes publiés, avec notes et illustrations)."""
+    _svg_to_pdf(c)
+    _lmk(c, "extrait_actes")
+    _ls_outputs()
 
 
 @task(pre=[gitinfo])
