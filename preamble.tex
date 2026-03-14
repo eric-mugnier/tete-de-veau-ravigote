@@ -19,12 +19,13 @@
 \newcommand{\arab}[1]{{\arabicfont\textdir TRT #1}}
 \newfontfamily{\cjkfont}{Hiragino Mincho ProN}
 \newcommand{\cjk}[1]{{\cjkfont #1}}
-\usepackage[french]{babel}
+\usepackage[russian,french]{babel}
 \usepackage{microtype}
 \usepackage{fmtcount}
 \usepackage{catchfile}
 \usepackage{graphicx}
 \usepackage{xcolor}
+\usepackage{xparse}
 \usepackage{tikz}
 \usepackage{afterpage}
 \usepackage{needspace}
@@ -58,6 +59,9 @@
   \end{tikzpicture}%
 }
 
+% ─── ESPACEMENT FLOTTANTS ─────────────────────────────────────────────────────
+\setlength{\textfloatsep}{8pt}   % espace entre flottant top/bottom et le texte (défaut ~20pt)
+
 % ─── ICONOGRAPHIE ─────────────────────────────────────────────────────────────
 % Compiler avec : lualatex "\def\AVECILLUSTRATIONS{}\input{...}"
 \ifdefined\AVECILLUSTRATIONS
@@ -90,25 +94,36 @@
       \ifx&#4&\else\\[0.2em]{\scriptsize\itshape #4}\fi%
     \end{wrapfigure}%
   }
-  % Bloc centré : #1=code-image  #2=légende (vide = pas de ligne de légende)
-  \newcommand{\iconographieinlineblock}[2]{%
-    \vspace{0.5\onelineskip}%
-    {\centering#1\par}%
-    \ifx&#2&\else{\centering\scriptsize\itshape#2\par}\fi%
-    % \vspace{0.5\onelineskip}%
+  % Bloc centré : [#1]=placement float optionnel (t/b), #2=code-image, #3=légende
+  \newcommand{\iconographieinlineblock}[3][]{%
+    \ifx&#1&%
+      % Pas de placement → inline
+      \vspace{0.5\onelineskip}%
+      {\centering#2\par}%
+      \ifx&#3&\else{\centering\scriptsize\itshape#3}\fi%
+      \vspace{-0.5\onelineskip}%
+    \else
+      % Placement fourni → figure flottante
+      \begin{figure}[#1]
+        \centering#2%
+        \ifx&#3&\else\par{\scriptsize\itshape#3}\fi%
+      \end{figure}%
+    \fi
   }
-  % Double minipage en fin de chapitre : #1=img1  #2=img2
-  \newcommand{\iconographiedouble}[2]{%
-    \vfill
-    \noindent
-    \begin{minipage}[t]{0.48\textwidth}%
-      \bwimage[width=\linewidth]{#1}%
-    \end{minipage}%
-    \hfill
-    \begin{minipage}[t]{0.48\textwidth}%
-      \raggedleft
-      \bwimage[width=\linewidth]{#2}%
-    \end{minipage}%
+  % Double image côte à côte :
+  %   #1 = placement (bottom/top, défaut: bottom)
+  %   #2 = hauteur commune (ex: 5cm)
+  %   #3 = image gauche   #4 = didascalie gauche (optionnelle)
+  %   #5 = image droite   #6 = didascalie droite (optionnelle)
+  \NewDocumentCommand{\iconographiedouble}{O{bottom} O{5cm} m O{} m O{}}{%
+    \ifthenelse{\equal{#1}{bottom}}{\vspace*{\fill}}{\vspace*{0pt}}%
+    \vspace{0.5\onelineskip}%
+    \noindent\resizebox{\textwidth}{!}{%
+      \vtop{\sbox0{\bwimage[height=#2]{#3}}\copy0\ifx&#4&\else\hbox to \wd0{\hss\scriptsize\itshape#4\hss}\fi}%
+      \hspace{1em}%
+      \vtop{\sbox0{\bwimage[height=#2]{#5}}\copy0\ifx&#6&\else\hbox to \wd0{\hss\scriptsize\itshape#6\hss}\fi}%
+    }\vspace{0.5\onelineskip}\par
+    \ifthenelse{\equal{#1}{top}}{\vspace*{\fill}}{}%
   }
 \else
   \newcommand{\iconographieimg}[2]{}
@@ -152,7 +167,9 @@
 \newcommand{\beginchapternotes}[1]{%
   \ifdefined\AVECNOTES
     \setcounter{endnote}{0}%
-    \addtoendnotes{\protect\par\protect\medskip\protect\noindent\protect\chapnoteheader{#1}\protect\par}%
+    \ifdefined\NOTESPARTCHAPITRE\else
+      \addtoendnotes{\protect\par\protect\medskip\protect\noindent\protect\chapnoteheader{#1}\protect\par}%
+    \fi
   \fi
 }
 
