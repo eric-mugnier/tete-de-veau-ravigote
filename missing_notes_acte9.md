@@ -1,0 +1,90 @@
+# Mentions sans note — Acte 9
+
+Lecture des fichiers : `acte_09_1.tex`, `acte_09_2.tex` / `acte_09_2b.tex` (doublon), `acte_09_3b.tex`, `acte_09_3.tex`, `acte_09_4.tex` (doublon de `acte_09_3b`).
+
+> Les notes déjà existantes (`\nf{…}`) sont exclues. Sont listées ici les mentions **sans note** qui pourraient mériter une annotation pour un lecteur français curieux.
+
+---
+
+| fichier | ligne | mention | ce que c'est | type | note? |
+|---|---|---|---|---|---|
+| acte_09_1.tex | 4 | **vallée de San Fernando** | Vallée de Los Angeles (Californie), célébrée dans le film *Valley Girl* (1983) et associée à l'industrie du cinéma pornographique ; mais aussi terrain de jeu de westerns de série B. Ici dans un rêve, contexte mexicain/alamo. | lieu | |
+| acte_09_1.tex | 4 | **Colt 1860 Army calibre 44 PN** | Revolver à percussion de la guerre de Sécession américaine, modèle le plus répandu de l'époque ; le « PN » désigne poudre noire. Arme emblématique du Far West. | autre | |
+| acte_09_1.tex | 4 | **Héros Immortel de Cempoala** | Surnom de Santa Anna après la bataille de Cempoala (1836) contre les Espagnols ; Cempoala est aussi le site aztèque où Cortés s'allia aux Totonèques. Titre peu connu hors du Mexique. | événement / lieu | |
+| acte_09_1.tex | 8 | **Sylvilagus auduboni** (lapin Cottontail du désert) | Lagomorphe d'Amérique du Nord, décrit scientifiquement par John James Audubon ; le nom rend hommage au naturaliste franco-américain. Mention de la désignation latine officielle. | personne / animal | |
+| acte_09_1.tex | 8 | **désert de Sonora** | Grand désert couvrant le sud de l'Arizona, le sud-ouest du Nouveau-Mexique et le nord-ouest du Mexique ; un des déserts les plus chauds d'Amérique du Nord. | lieu | |
+| acte_09_1.tex | 10 | **6.35 Manufrance** (« Manu ») | Pistolet semi-automatique de calibre 6,35 mm Browning fabriqué à Saint-Étienne par la Manufacture Française d'Armes et Cycles ; arme de poche très répandue en France dans la première moitié du XXe siècle. | autre | |
+| acte_09_1.tex | 12 | **frères Verreaux** | Jules et Jean-Baptiste Verreaux, naturalistes-collecteurs français du XIXe s., tristement célèbres pour la mise en vente de la dépouille de Saartjie Baartman et d'autres personnes africaines. Acteurs centraux dans l'affaire Molawa. | personne | |
+| acte_09_1.tex | 12 | **Francesc d'Asis Darder i Llimona** | Vétérinaire et naturaliste catalan (1851–1918), directeur du zoo de Barcelone, fondateur du Musée Darder de Banyoles ; personnage clef de l'affaire El Negro de Banyoles. | personne | |
+| acte_09_1.tex | 12 | **El Negro de Banyoles** | Dépouille taxidermisée d'un homme khoïkhoï (identifié comme Molawa VIII) exposée au Musée Darder de Banyoles (Catalogne) jusqu'en 2000, symbole du colonialisme muséal et objet d'une longue polémique internationale. | événement / concept | |
+| acte_09_1.tex | 12 | **Alphonse Arcelin** | Médecin haïtien militant installé en Catalogne, instigateur de la campagne internationale pour le retrait de la dépouille du Musée de Banyoles dans les années 1990. | personne | |
+| acte_09_1.tex | 12 | **Cambrils / Baix Camp / Tarragone** | Localités catalanes citées dans le contexte de la polémique Molawa-Banyoles ; peuvent mériter un repère géographique pour lecteurs non hispanophones. | lieu | |
+| acte_09_1.tex | 18 | **ADAM & EVE 2, l'éternel retour** | Allusion au concept nietzschéen de l'éternel retour (Nietzsche, *Also sprach Zarathustra*, 1883–85) couplé au mythe biblique de la Genèse — l'auteur joue sur les deux références. | concept | |
+| acte_09_1.tex | 18 | **juments de Thessalie** | Les cavales de Thessalie (région grecque réputée pour l'élevage) apparaissent dans *L'Odyssée* et dans des récits mythologiques liés aux Centaures. Référence à l'Antiquité grecque. | lieu / mythologie | |
+| acte_09_1.tex | 20 | **Roberto Cabrera** | Homme mexicain (né v. 1982) entré au Guinness des records pour la longueur de son pénis (48,2 cm) ; mentionné en parallèle avec Jonah Falcon déjà noté. | personne | |
+| acte_09_1.tex | 20 | **Dolce & Gabbana** (modèle Brando) | Marque de mode italienne fondée en 1985 par Domenico Dolce et Stefano Gabbana, connue pour ses sous-vêtements masculins ; le modèle « Brando » est réel. | autre / marque | |
+| acte_09_1.tex | 24 | **Guevara Vintage double jet anti-tempête** | Briquet de luxe de la marque Guevara (espagnole), réputé pour résister au vent ; allusion probable aussi au nom « Che Guevara » sans que la référence soit explicitée. | autre / marque | |
+| acte_09_1.tex | 24 | **Fuente Short Story** | Cigare de la série *Hemingway* d'Arturo Fuente (République dominicaine) — note sur Arturo Fuente présente dans acte_09_3b, mais pas ici à la première occurrence dans acte_09_1. | autre | |
+| acte_09_1.tex | 32 | **Chevauchée des Walkyries** (sonnerie de téléphone) | Note déjà présente (`\nf`) — **exclue**. | — | — |
+| acte_09_1.tex | 202 | **Bochimans / San** | Peuples chasseurs-cueilleurs du Kalahari (Afrique australe), parmi les plus anciens groupes humains, pratiquant une culture de l'arc, du poison et du bushcraft. Le terme « Bochiman » est aujourd'hui considéré péjoratif ; « San » ou « Bushmen » sont préférés. | peuple | |
+| acte_09_1.tex | 202 | **Bruichladdich de 30 ans d'âge** | Single malt de l'île d'Islay (Écosse), distillerie réputée pour ses whiskies tourbés et ses séries rares. Marque culturellement emblématique dans l'univers du whisky de luxe. | autre / marque | |
+| acte_09_1.tex | 202 | **Fort William** | Ville des Highlands écossais, point de départ de l'ascension du Ben Nevis ; capitale non-officielle des Highlands. | lieu | |
+| acte_09_1.tex | 208 | **Reckless & Knot** | Nom fictif d'une société financière (jeu de mots : « reckless » = imprudent, « knot » = nœud). Pas de note nécessaire, référence interne. | — | — |
+| acte_09_1.tex | 208 | **fingertrap de la famille Addams** | Piège chinois en bambou (Chinese finger trap) ; le détail d'Oncle Fester restant coincé deux ans est une invention comique. La Famille Addams fait l'objet d'une note (`\nf`). | — | — |
+| acte_09_1.tex | 338 | **en voiture Simone** | Expression populaire française, souvent attribuée à la navigatrice Simone des Genettes ou à une publicité des années 1960, dont l'origine exacte est disputée. Pourrait mériter un bref rappel. | expression | |
+| acte_09_1.tex | 346 | **Lilith** | Figure démonologique judéo-chrétienne, première femme d'Adam selon certains midrashim, incarnation de la séduction et de la révolte ; absente de la Bible hébraïque canonique mais présente dans le Talmud babylonien. | mythologie / religion | |
+| acte_09_2.tex / 2b | 53 | **Gustav Nachtigal** | Explorateur et médecin allemand (1834–1885), envoyé en Afrique centrale puis commissaire impérial pour les colonies allemandes d'Afrique, dont le Togoland et le Cameroun (1884) ; en lien avec l'histoire namibienne et le colonialisme allemand. | personne | |
+| acte_09_2.tex / 2b | 53 | **Bismarck** (en lien avec la Namibie) | Otto von Bismarck (1815–1898), chancelier du Reich allemand, initiateur de la conférence de Berlin (1884–85) et de la politique coloniale allemande en Afrique australe, y compris le Sud-Ouest africain (Namibie). | personne | |
+| acte_09_2.tex / 2b | 53 | **Göring** (en lien avec la Namibie) | Heinrich Ernst Göring (1839–1913), père de Hermann Göring, premier commissaire impérial allemand pour le Sud-Ouest africain (Namibie) en 1885 ; distinct de son fils nazi. Référence historique namibienne peu connue en France. | personne | |
+| acte_09_2.tex / 2b | 61 | **Francisco de Almeida** | Note déjà présente via `\nf` dans la mention de Salt River. | — | — |
+| acte_09_2.tex / 2b | 69 | **King's American Dragoons** | Régiment de cavalerie loyaliste américain créé en 1781 pendant la guerre d'Indépendance américaine, formé de colons fidèles à la Couronne britannique ; lien avec Benjamin Thompson (note présente). | événement | |
+| acte_09_3b.tex | 106 | **Porsche Cayman GT4 RS** | Version extrême de la Porsche Cayman à moteur central arrière ; le « pack Clubsport » désigne un ensemble de pièces orientées piste. Mention détaillée à visée humoristique, mais les noms techniques pourraient surprendre un lecteur non-motorisé. | autre | |
+| acte_09_3b.tex | 136 | **Hemingway Short Story** (première mention, acte_09_1 l.24) | Cigare de la série Hemingway d'Arturo Fuente. Note présente sur Fuente et Hemingway dans acte_09_3b l.240–241 — vérifier si une note dès la première occurrence (acte_09_1 l.24) serait utile. | autre | |
+| acte_09_3b.tex | 173 | **EHPAD** | Établissement d'Hébergement pour Personnes Âgées Dépendantes — sigle institutionnel français contemporain ; évident pour un lecteur français, moins pour un lecteur étranger en traduction. | institution | |
+| acte_09_3b.tex | 173 | **mystique plotinienne** | Allusion à Plotin (v. 205–270), philosophe néo-platonicien alexandrin ; sa mystique de l'Un et de l'extase contemplative (*Ennéades*) est peu connue du grand public. | personne / concept | |
+| acte_09_3.tex | 5 | **Rafale** (Dassault) | Note déjà présente (`\nf`). | — | — |
+| acte_09_3.tex | 17 | **Funki Porcini** | Note déjà présente (`\nf`). | — | — |
+| acte_09_3.tex | 17 | **Ninja Tune** | Label discographique britannique indépendant fondé en 1990 par Coldcut (Matt Black et Jonathan More), pionnier de la musique électronique alternative (trip-hop, downtempo, glitch) ; maison de Funki Porcini, DJ Shadow, Amon Tobin, etc. | institution / label | |
+| acte_09_3.tex | 87 | **Whaanga Coast** et **Panzerplatte** | Notes déjà présentes (`\nf`). | — | — |
+| acte_09_3.tex | 87 | **Pursuit Special / *Mad Max*** | Notes déjà présentes (`\nf`). | — | — |
+| acte_09_3.tex | 89 | **Jay Garrick, Wally West, Barry Allen, Pietro Maximoff, Danica Williams, Hunter Zolomon** | Notes déjà présentes (`\nf`). | — | — |
+| acte_09_3.tex | 95 | **Bristol Old Vic Theatre School** | École de théâtre de Bristol (Angleterre), l'une des plus prestigieuses du Royaume-Uni, fondée en 1946 ; forme des acteurs comme Daniel Day-Lewis, Jeremy Irons, Naomi Watts. Mentionnée à propos d'Antonia Thomas (note présente). | institution | |
+| acte_09_3.tex | 95 | **Freddie Highmore** | Note déjà présente (`\nf`). | — | — |
+| acte_09_3.tex | 95 | **Vera Farmiga** | Note déjà présente (`\nf`). | — | — |
+| acte_09_3.tex | 95 | **Olivia Cooke** | Note déjà présente (`\nf`). | — | — |
+| acte_09_3.tex | 95 | **Nestor Carbonell** | Note déjà présente (`\nf`). | — | — |
+| acte_09_3.tex | 95 | ***Charlie et la chocolaterie* (2005)** | Film de Tim Burton adapté de Roald Dahl, avec Freddie Highmore dans le rôle de Charlie Bucket ; note sur Highmore déjà présente. | — | — |
+| acte_09_3.tex | 95 | ***House of the Dragon*** (HBO) | Série préquelle de *Game of Thrones* diffusée depuis 2022 (HBO), adaptée du roman *Feu et Sang* de George R.R. Martin. Olivia Cooke y joue Alicent Hightower. Note sur Cooke présente. | — | — |
+| acte_09_3.tex | 201 | **ESSEC** | Grande école de commerce française (École Supérieure des Sciences Économiques et Commerciales), fondée en 1907 à Cergy ; symbole de l'élite des affaires françaises. | institution | |
+| acte_09_3.tex | 207 | **Royal Caribbean Cruises Ltd.** | Compagnie de croisières américano-libérienne fondée en 1969, deuxième groupe mondial du secteur ; actionnaires principaux étant des familles norvégiennes et d'affaires américains. Ici utilisé comme symbole de richesse et de pouvoir. | institution / marque | |
+| acte_09_3.tex | 241 | **Roger Borniche** | Note déjà présente (`\nf`). | — | — |
+| acte_09_3.tex | 241 | **Émile Buisson** | Note déjà présente (`\nf`). | — | — |
+| acte_09_3.tex | 241 | ***Flic Story*** (1975) | Film policier de Jacques Deray avec Alain Delon et Jean-Louis Trintignant, adapté du livre de Roger Borniche. Mentionné dans la note sur Borniche (`\nf`) — note présente. | — | — |
+| acte_09_4.tex | 121 | **Stupeur et tremblements** | Roman d'Amélie Nothomb (1999, Prix Grand Prix du roman de l'Académie française), récit autobiographique d'une Belge travaillant au Japon ; la formule est ici utilisée comme clin d'œil littéraire. | livre | |
+| acte_09_4.tex | 121 | **"One day I was at home, et non pas reincarnated as the 7th Prince"** | Référence au drama sud-coréen *Hua Biao* (ou *I Am Not the Seventh Prince* / *7th Prince* 2023) ou plus probablement au titre *My Love from the Star* (2013), ou encore jeu libre sur le cliché des dramas. Formule mystérieuse qui joue sur les codes des séries asiatiques. | série TV / concept | |
+| acte_09_4.tex | 119 | **Danilo Pinto** | Marque de chaussures de tango argentines haut de gamme (Buenos Aires), référence pour les danseurs professionnels et amateurs éclairés. | autre / marque | |
+| acte_09_4.tex | 135 | **Palazzo Cristal Club** | Semble être un lieu de tango fictif ou local dans la fiction (rue Féret) — à vérifier si référence réelle à un club existant. | lieu | |
+| acte_09_4.tex | 173 | **Léon Bloy, *Le Désespéré*** | Note déjà présente (`\nf`). | — | — |
+| acte_09_4.tex | 173 | **abbaye de Solesmes / Notre-Dame de Fontgombault** | Notes déjà présentes (`\nf`). | — | — |
+| acte_09_4.tex | 173 | **Jean-Claude Romand** | Note déjà présente (`\nf`). | — | — |
+| acte_09_4.tex | 191 | **Jeffrey Epstein / Little Saint James** | Notes déjà présentes (`\nf`). | — | — |
+| acte_09_4.tex | 211 | **JNIM** (Jama'at Nusrat al-Islam wal-Muslimin) | Groupe armé djihadiste sahélien affilié à Al-Qaïda, né de la fusion en 2017 d'Ansar Dine, du GSIM, de la Katiba Macina et d'al-Mourabitoun. Acronyme technique pouvant mériter un développement. | organisation | |
+| acte_09_4.tex | 211 | **opération Barkhane** | Note déjà présente (`\nf`). | — | — |
+| acte_09_4.tex | 213 | **la Légion** | La Légion étrangère française : corps militaire d'élite fondé en 1831, recrute des soldats étrangers ; ici lié à Sam Girard, cuisinier et ancien des forces spéciales. | institution | |
+
+---
+
+## Candidats prioritaires (sans note existante dans tout l'acte 9)
+
+Ces mentions semblent le plus susceptibles de mériter une vraie note :
+
+1. **El Negro de Banyoles / Molawa VIII** (acte_09_1 l.12) — l'histoire est racontée en prose *in extenso* mais sans note formelle `\nf{}` ; or c'est une référence complexe et méconnue. Une note de bas de page synthétique serait utile si le texte en prose est condensé.
+2. **Gustav Nachtigal** (acte_09_2 l.53) — figure du colonialisme allemand en Afrique, peu connue en France.
+3. **Heinrich Ernst Göring** (acte_09_2 l.53) — le père de Hermann, figure namibienne, distinction cruciale.
+4. **Lilith** (acte_09_1 l.346) — figure démonologique complexe, souvent confondue avec d'autres.
+5. **Mystique plotinienne** (acte_09_3b l.173) — Plotin est peu connu du grand public.
+6. **Stupeur et tremblements** (acte_09_4 l.121) — roman d'Amélie Nothomb cité via son titre seulement.
+7. **Roberto Cabrera** (acte_09_1 l.20) — pendant méconnu de Jonah Falcon (déjà noté), la symétrie mérite peut-être une note.
+8. **Danilo Pinto** (acte_09_4 l.119) — référence insider du monde du tango, opaque pour les non-danseurs.
+9. **Ninja Tune** (acte_09_3 l.17) — label central dans l'univers de Funki Porcini, déjà noté, mais le label lui-même n'est pas expliqué.
+10. **Frères Verreaux** (acte_09_1 l.12) — acteurs clefs de l'affaire Molawa, personnages en soi remarquables (aussi liés à Saartjie Baartman).
