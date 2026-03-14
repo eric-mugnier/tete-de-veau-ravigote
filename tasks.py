@@ -64,6 +64,8 @@ def _pandoc_body(c, src, dest):
 def _lmk(c, *stems):
     """Run latexmk -g -lualatex on one or more .tex stems (output → build/ via .latexmkrc)."""
     for stem in stems:
+        # Touch .toc so latexmk doesn't treat its absence as a fatal missing-input error
+        (BUILD / f"{stem}.toc").touch(exist_ok=True)
         c.run(f"latexmk -g -lualatex -interaction=nonstopmode {stem}.tex")
 
 
