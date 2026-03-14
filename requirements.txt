@@ -1,4 +1,0 @@
-pdfplumber
-requests
-pillow
-python-slugify
