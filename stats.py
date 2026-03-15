@@ -11,7 +11,13 @@ from pathlib import Path
 
 ROOT      = Path(__file__).parent
 ACTES_DIR = ROOT / "actes"
+BUILD     = ROOT / "build"
 OUT_FILE  = ROOT / "stats.md"
+
+TOC_MAIN   = BUILD / "tete_de_veau_ravigote.toc"
+TOC_TOTALE = BUILD / "tete_de_veau_ravigote_LA_TOTALE.toc"
+LOG_MAIN   = BUILD / "tete_de_veau_ravigote.log"
+LOG_TOTALE = BUILD / "tete_de_veau_ravigote_LA_TOTALE.log"
 
 # Acte number → list of source files (relative to ACTES_DIR)
 ACTES = {
@@ -95,11 +101,50 @@ def count_notes(text: str) -> int:
     return len(re.findall(r"\\nf\{", text))
 
 
+def count_dialogue_words(text: str) -> int:
+    """Count words inside all \\begin{dialogue}...\\end{dialogue} blocks."""
+    blocks = re.findall(r'\\begin\{dialogue\}(.*?)\\end\{dialogue\}', text, re.DOTALL)
+    return count_words("".join(blocks))
+
+
 def count_illus(text: str) -> int:
     return sum(
         len(re.findall(re.escape(cmd) + r"\b", text))
         for cmd in ILLUS_CMDS
     )
+
+
+def _parse_toc_pages(toc_path: Path) -> list[int]:
+    """Return start pages for each \\chapternumberline entry, in document order."""
+    if not toc_path.exists():
+        return []
+    pattern = re.compile(
+        r'\\contentsline\s*\{chapter\}\{\\chapternumberline\s*\{\d+\}[^}]*\}\{(\d+)\}'
+    )
+    return [int(m.group(1)) for m in pattern.finditer(toc_path.read_text(encoding="utf-8"))]
+
+
+def _pdf_total_pages(log_path: Path) -> int | None:
+    """Extract total page count from a LaTeX .log file."""
+    if not log_path.exists():
+        return None
+    m = re.search(r'Output written on .+\((\d+) pages?',
+                  log_path.read_text(encoding="utf-8", errors="ignore"))
+    return int(m.group(1)) if m else None
+
+
+def _page_ranges(start_pages: list[int], total_pages: int | None) -> list[tuple[int, int | None]]:
+    """Convert a list of chapter start pages to (start_page, num_pages) pairs."""
+    result = []
+    for i, start in enumerate(start_pages):
+        if i + 1 < len(start_pages):
+            count = start_pages[i + 1] - start
+        elif total_pages is not None:
+            count = total_pages - start + 1
+        else:
+            count = None
+        result.append((start, count))
+    return result
 
 
 def _pct(n: int, total: int) -> str:
@@ -126,7 +171,7 @@ def compute():
     rows = []
     for acte_num in ACTES:
         text  = _load_acte(acte_num)
-        rows.append((acte_num, count_words(text), count_notes(text), count_illus(text)))
+        rows.append((acte_num, count_words(text), count_notes(text), count_illus(text), count_dialogue_words(text)))
     return rows
 
 
@@ -149,89 +194,132 @@ def compute_split():
         for i, seg in enumerate(segments):
             chap_label = acte_label if len(segments) == 1 else acte_label + chr(ord('a') + i)
             rows.append((chap_label, acte_label,
-                         count_words(seg), count_notes(seg), count_illus(seg)))
+                         count_words(seg), count_notes(seg), count_illus(seg),
+                         count_dialogue_words(seg)))
     return rows
 
 
-def _md_table(rows: list) -> str:
+def _md_table(rows: list, page_ranges: list | None = None) -> str:
     total_words = sum(r[1] for r in rows)
     total_notes = sum(r[2] for r in rows)
     total_illus = sum(r[3] for r in rows)
+    has_pages = bool(page_ranges)
 
+    page_cols = " p. | pp. |" if has_pages else ""
+    page_sep  = "---:|----:|" if has_pages else ""
     lines = [
         "# Statistiques par acte\n",
         "Mots = texte original uniquement (hors contenu des notes `\\nf{}`).",
         "% notes et % illustrations = rapport au nombre de mots.\n",
-        "| Acte | Mots | % livre | Notes | % mots | Illustrations | % mots |",
-        "|-----:|-----:|--------:|------:|-------:|--------------:|-------:|",
+        f"| Acte |{page_cols} Mots | % livre | Notes | % mots | Illustrations | % mots | % dial. |",
+        f"|-----:|{page_sep}-----:|--------:|------:|-------:|--------------:|-------:|--------:|",
     ]
-    for acte_num, words, notes, illus in rows:
-        illus_str = _fmt(illus)  if illus else "—"
+    for i, (acte_num, words, notes, illus, dial) in enumerate(rows):
+        illus_str = _fmt(illus) if illus else "—"
         illus_pct = _pct(illus, words) if illus else "—"
+        if has_pages:
+            start_p, num_p = page_ranges[i]
+            p_str  = str(start_p) if start_p is not None else "—"
+            pp_str = str(num_p)   if num_p  is not None else "—"
+            page_part = f" {p_str:>3} | {pp_str:>3} |"
+        else:
+            page_part = ""
         lines.append(
-            f"| {ROMAN[acte_num]:<5}| {_fmt(words):>7} | {_pct(words, total_words):>7} "
+            f"| {ROMAN[acte_num]:<5}|{page_part} {_fmt(words):>7} | {_pct(words, total_words):>7} "
             f"| {notes:>5} | {_pct(notes, words):>6} "
-            f"| {illus_str:>13} | {illus_pct:>6} |"
+            f"| {illus_str:>13} | {illus_pct:>6} | {_pct(dial, words):>7} |"
         )
+    total_dial = sum(r[4] for r in rows)
     lines.append(
-        f"| **Total** | **{_fmt(total_words)}** | **100%** | **{total_notes}** "
+        f"| **Total** |{'  |  |' if has_pages else ''} **{_fmt(total_words)}** | **100%** | **{total_notes}** "
         f"| **{_pct(total_notes, total_words)}** "
-        f"| **{_fmt(total_illus)}** | **{_pct(total_illus, total_words)}** |"
+        f"| **{_fmt(total_illus)}** | **{_pct(total_illus, total_words)}** "
+        f"| **{_pct(total_dial, total_words)}** |"
     )
     return "\n".join(lines) + "\n"
 
 
-def _md_table_split(rows: list) -> str:
+def _md_table_split(rows: list, page_ranges: list | None = None) -> str:
     total_words = sum(r[2] for r in rows)
     total_notes = sum(r[3] for r in rows)
     total_illus = sum(r[4] for r in rows)
+    has_pages = bool(page_ranges)
 
+    page_cols = " p. | pp. |" if has_pages else ""
+    page_sep  = "---:|----:|" if has_pages else ""
     lines = [
         "# Statistiques par chapitre (après découpage)\n",
         "Mots = texte original uniquement (hors contenu des notes `\\nf{}`).",
         "% notes et % illustrations = rapport au nombre de mots.\n",
-        "| Chap. | Acte | Mots | % livre | Notes | % mots | Illustrations | % mots |",
-        "|------:|-----:|-----:|--------:|------:|-------:|--------------:|-------:|",
+        f"| Chap. | Acte |{page_cols} Mots | % livre | Notes | % mots | Illustrations | % mots | % dial. |",
+        f"|------:|-----:|{page_sep}-----:|--------:|------:|-------:|--------------:|-------:|--------:|",
     ]
-    for chap_label, acte_label, words, notes, illus in rows:
-        illus_str = _fmt(illus)  if illus else "—"
+    for i, (chap_label, acte_label, words, notes, illus, dial) in enumerate(rows):
+        illus_str = _fmt(illus) if illus else "—"
         illus_pct = _pct(illus, words) if illus else "—"
+        if has_pages:
+            start_p, num_p = page_ranges[i]
+            p_str  = str(start_p) if start_p is not None else "—"
+            pp_str = str(num_p)   if num_p  is not None else "—"
+            page_part = f" {p_str:>3} | {pp_str:>3} |"
+        else:
+            page_part = ""
         lines.append(
-            f"| {chap_label:<6}| {acte_label:<5}| {_fmt(words):>7} | {_pct(words, total_words):>7} "
-            f"| {notes:>5} | {_pct(notes, words):>6} | {illus_str:>13} | {illus_pct:>6} |"
+            f"| {chap_label:<6}| {acte_label:<5}|{page_part} {_fmt(words):>7} | {_pct(words, total_words):>7} "
+            f"| {notes:>5} | {_pct(notes, words):>6} | {illus_str:>13} | {illus_pct:>6} | {_pct(dial, words):>7} |"
         )
+    total_dial = sum(r[5] for r in rows)
     lines.append(
-        f"| **Total** | | **{_fmt(total_words)}** | **100%** | **{total_notes}** "
+        f"| **Total** | |{'  |  |' if has_pages else ''} **{_fmt(total_words)}** | **100%** | **{total_notes}** "
         f"| **{_pct(total_notes, total_words)}** "
-        f"| **{_fmt(total_illus)}** | **{_pct(total_illus, total_words)}** |"
+        f"| **{_fmt(total_illus)}** | **{_pct(total_illus, total_words)}** "
+        f"| **{_pct(total_dial, total_words)}** |"
     )
     return "\n".join(lines) + "\n"
 
 
 def _print_rows(rows_orig, rows_split):
-    for acte_num, words, notes, illus in rows_orig:
+    for acte_num, words, notes, illus, dial in rows_orig:
         print(f"     Acte {ROMAN[acte_num]:<4} {_fmt(words):>8} mots  "
               f"{notes:>4} notes ({_pct(notes, words)})  "
-              f"{illus:>3} illus ({_pct(illus, words)})")
+              f"{illus:>3} illus ({_pct(illus, words)})  "
+              f"dial. {_pct(dial, words)}")
     total_words = sum(r[1] for r in rows_orig)
     total_notes = sum(r[2] for r in rows_orig)
     total_illus = sum(r[3] for r in rows_orig)
+    total_dial  = sum(r[4] for r in rows_orig)
     print(f"     {'Total':<9} {_fmt(total_words):>8} mots  "
           f"{total_notes:>4} notes ({_pct(total_notes, total_words)})  "
-          f"{total_illus:>3} illus ({_pct(total_illus, total_words)})")
+          f"{total_illus:>3} illus ({_pct(total_illus, total_words)})  "
+          f"dial. {_pct(total_dial, total_words)}")
 
     if len(rows_split) != len(rows_orig):
         print()
-        for chap_label, acte_label, words, notes, illus in rows_split:
+        for chap_label, acte_label, words, notes, illus, dial in rows_split:
             print(f"     Chap. {chap_label:<5}(acte {acte_label}) {_fmt(words):>8} mots  "
                   f"{notes:>4} notes ({_pct(notes, words)})  "
-                  f"{illus:>3} illus ({_pct(illus, words)})")
+                  f"{illus:>3} illus ({_pct(illus, words)})  "
+                  f"dial. {_pct(dial, words)}")
 
 
 def main():
     rows_orig  = compute()
     rows_split = compute_split()
-    md = _md_table(rows_orig) + "\n" + _md_table_split(rows_split)
+
+    pages_main   = _parse_toc_pages(TOC_MAIN)
+    pages_totale = _parse_toc_pages(TOC_TOTALE)
+    pr_orig  = _page_ranges(pages_main,   _pdf_total_pages(LOG_MAIN))   if pages_main   else None
+    pr_split = _page_ranges(pages_totale, _pdf_total_pages(LOG_TOTALE)) if pages_totale else None
+
+    # Sanity check: warn if TOC chapter count doesn't match row count
+    if pr_orig  and len(pr_orig)  != len(rows_orig):
+        print(f"  ! pages_main mismatch: {len(pr_orig)} toc entries vs {len(rows_orig)} rows")
+        pr_orig = None
+    if pr_split and len(pr_split) != len(rows_split):
+        print(f"  ! pages_totale mismatch: {len(pr_split)} toc entries vs {len(rows_split)} rows")
+        pr_split = None
+
+    md = _md_table(rows_orig, pr_orig) + "\n" + _md_table_split(rows_split, pr_split)
     OUT_FILE.write_text(md, encoding="utf-8")
     print(f"  → {OUT_FILE.relative_to(ROOT)}")
     _print_rows(rows_orig, rows_split)
