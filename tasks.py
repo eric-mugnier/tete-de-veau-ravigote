@@ -301,6 +301,13 @@ def total(c):
     _lmk(c, f"{BASE}_LA_TOTALE")
     _ls_outputs()
 
+@task
+@_timed
+def stats(c):
+    """Recompute word / note / illustration counts per acte and write stats.md."""
+    c.run("python3 -u stats.py")
+
+
 @task(pre=[build])
 @_timed
 def all_but_diffs(c):
@@ -321,6 +328,7 @@ def all(c):
     c.run("python3 -u diff_work/make_diff.py")
     shutil.copy(ROOT / "diff_work" / f"{BASE}_diff.pdf", BUILD / f"{BASE}_diff.pdf")
     _ls_outputs()
+    stats(c)
     clean(c)
 
 

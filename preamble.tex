@@ -239,7 +239,8 @@
   \renewcommand{\printchaptername}{}
   \renewcommand{\chapternamenum}{}
   \renewcommand{\printchapternum}{%
-    \chapnumfont\Roman{chapter}}
+    \chapnumfont\Roman{chapter}%
+    \markboth{\Roman{chapter}}{\Roman{chapter}}}
   \renewcommand{\afterchapternum}{\par\vskip 0.4\onelineskip}
   \renewcommand{\printchaptertitle}[1]{}
 }
@@ -248,13 +249,12 @@
 
 % ─── RUNNING HEADERS : folio seul, sans auteur ni titre ───────────────────────
 \makepagestyle{gallimard}
-\makeevenhead{gallimard}{}{}{}
-\makeoddhead{gallimard}{}{}{}
+\makeevenhead{gallimard}{}{\footnotesize\scshape\leftmark}{}
+\makeoddhead{gallimard}{}{\footnotesize\scshape\rightmark}{}
 \makeevenfoot{gallimard}{}{\thepage}{}
 \makeoddfoot{gallimard}{}{\thepage}{}
 \makepsmarks{gallimard}{%
   \nouppercaseheads
-  \createmark{chapter}{both}{nonumber}{}{}
 }
 \pagestyle{gallimard}
 \aliaspagestyle{chapter}{empty}

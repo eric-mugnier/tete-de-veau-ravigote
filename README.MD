@@ -36,6 +36,7 @@ inv pers           # liste des personnages
 inv couv           # couverture
 inv postface       # postfaces (Claude + ChatGPT)
 inv total          # LA TOTALE (tout en un)
+inv stats          # compter mots / notes / illustrations par acte → stats.md
 inv all            # tout compiler + clean
 inv clean          # supprimer les fichiers auxiliaires
 ```
