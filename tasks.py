@@ -133,7 +133,7 @@ def extrait(c):
 @task(pre=[gitinfo])
 @_timed
 def build(c):
-    """Build main PDF and sommaire (always run first; pre-task for diffs/epub/notes)."""
+    """Build main PDF (always run first; pre-task for diffs/epub/notes)."""
 
     print("=== svg → pdf ===")
     _svg_to_pdf(c)
@@ -311,12 +311,13 @@ def stats(c):
 @task(pre=[build])
 @_timed
 def all_but_diffs(c):
-    """Build everything except diffs: main, sommaire, notes, epub, pers, postfaces, total."""
-    _lmk(c, f"{BASE}_sommaire")
+    """Build everything except diffs: main, sommaire, notes, epub, pers, postfaces, extrait, total."""
+    sommaire(c)
     notes(c)
     epub(c)
     pers(c)
     postfaces(c)
+    extrait(c)
     total(c)
     _ls_outputs()
 

@@ -113,15 +113,12 @@
   % Double image côte à côte :
   %   #1 = placement (bottom/top, défaut: bottom)
   %   #2 = hauteur commune (ex: 5cm)
-  %   #3 = image gauche   #4 = didascalie gauche (optionnelle)
-  %   #5 = image droite   #6 = didascalie droite (optionnelle)
+  %   #3 = image gauche   #5 = image droite
   \NewDocumentCommand{\iconographiedouble}{O{bottom} O{5cm} m O{} m O{}}{%
     \ifthenelse{\equal{#1}{bottom}}{\vspace*{\fill}}{\vspace*{0pt}}%
     \vspace{0.5\onelineskip}%
     \noindent\resizebox{\textwidth}{!}{%
-      \vtop{\sbox0{\bwimage[height=#2]{#3}}\copy0\ifx&#4&\else\hbox to \wd0{\hss\scriptsize\itshape#4\hss}\fi}%
-      \hspace{1em}%
-      \vtop{\sbox0{\bwimage[height=#2]{#5}}\copy0\ifx&#6&\else\hbox to \wd0{\hss\scriptsize\itshape#6\hss}\fi}%
+      \bwimage[height=#2]{#3}\hspace{1em}\bwimage[height=#2]{#5}%
     }\vspace{0.5\onelineskip}\par
     \ifthenelse{\equal{#1}{top}}{\vspace*{\fill}}{}%
   }
