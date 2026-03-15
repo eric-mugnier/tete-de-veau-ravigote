@@ -161,8 +161,36 @@
   \hfill%
   \begin{minipage}[t]{#2\linewidth}\includegraphics[width=\linewidth]{#3}\end{minipage}%
   \source{#4}}
+% Filet ornemental (séparateur de scène intra-chapitre)
+\newcommand{\scenbreak}{%
+  \vspace{\onelineskip}%
+  {\centering\rule{0.4\textwidth}{0.4pt}\par}%
+  \vspace{\onelineskip}%
+}
 % Titre de chapitre dans le bloc de notes
 \newcommand{\chapnoteheader}[1]{{\normalfont\scshape #1}}
+% Sous-chapitre intermédiaire : vide les notes courantes, ouvre un nouveau chapitre, repart à 1
+% Usage : \startnewchapter        (titre auto = numéro romain du chapitre suivant)
+%         \startnewchapter[Titre] (titre explicite)
+% Actif uniquement si \CHAPITRESSEPARES est défini dans le document racine.
+\ifdefined\CHAPITRESSEPARES
+  \newcommand{\startnewchapter}[1][]{%
+    \ifdefined\AVECNOTES
+      \cleardoublepage
+      \def\@snc@title{#1}%
+      {\centering\normalfont\scshape\large
+        Notes\ifx\@snc@title\empty\else~\textemdash~#1\fi\par}%
+      \vspace{\onelineskip}%
+      \begingroup\parindent=0pt
+      \theendnotes
+      \endgroup
+    \fi
+    \chapter{#1}%
+    \beginchapternotes{#1}%
+  }
+\else
+  \newcommand{\startnewchapter}[1][]{}%
+\fi
 % Notes par chapitre : remet le compteur à 0 pour que chaque acte reparte de 1
 \newcommand{\beginchapternotes}[1]{%
   \ifdefined\AVECNOTES

@@ -30,6 +30,19 @@ ACTES = {
 ROMAN = {1:"I", 2:"II", 3:"III", 4:"IV", 5:"V",
          6:"VI", 7:"VII", 8:"VIII", 9:"IX"}
 
+_ROMAN_VALS = [
+    (1000,"M"),(900,"CM"),(500,"D"),(400,"CD"),(100,"C"),(90,"XC"),
+    (50,"L"),(40,"XL"),(10,"X"),(9,"IX"),(5,"V"),(4,"IV"),(1,"I"),
+]
+
+def to_roman(n: int) -> str:
+    result = ""
+    for value, numeral in _ROMAN_VALS:
+        while n >= value:
+            result += numeral
+            n -= value
+    return result
+
 ILLUS_CMDS = [
     r"\iconographiewrapfig",
     r"\iconographieinlineblock",
@@ -97,22 +110,46 @@ def _fmt(n: int) -> str:
     return f"{n:,}".replace(",", "\u202f")  # narrow no-break space
 
 
-def compute():
-    rows = []
-    for acte_num, files in ACTES.items():
-        text = "\n".join(
-            (ACTES_DIR / f).read_text(encoding="utf-8") for f in files
-        )
-        # Drop commented-out lines (%%%)
-        text = "\n".join(
-            ln for ln in text.splitlines()
-            if not ln.lstrip().startswith("%%%")
-        )
-        words = count_words(text)
-        notes = count_notes(text)
-        illus = count_illus(text)
-        rows.append((acte_num, words, notes, illus))
+def _load_acte(acte_num: int) -> str:
+    """Read and pre-process all source files for an acte."""
+    text = "\n".join(
+        (ACTES_DIR / f).read_text(encoding="utf-8") for f in ACTES[acte_num]
+    )
+    return "\n".join(
+        ln for ln in text.splitlines()
+        if not ln.lstrip().startswith("%%%")
+    )
 
+
+def compute():
+    """One row per acte (original chapter structure)."""
+    rows = []
+    for acte_num in ACTES:
+        text  = _load_acte(acte_num)
+        rows.append((acte_num, count_words(text), count_notes(text), count_illus(text)))
+    return rows
+
+
+def compute_split():
+    """One row per segment delimited by \\startnewchapter (split chapter structure)."""
+    rows = []
+    for acte_num in ACTES:
+        text = _load_acte(acte_num)
+        # Split line-by-line: only trigger on \startnewchapter not preceded by % on same line
+        segments = []
+        current: list[str] = []
+        for line in text.splitlines(keepends=True):
+            if re.match(r"\s*\\startnewchapter\b", line):
+                segments.append("".join(current))
+                current = []
+            else:
+                current.append(line)
+        segments.append("".join(current))
+        acte_label = ROMAN[acte_num]
+        for i, seg in enumerate(segments):
+            chap_label = acte_label if len(segments) == 1 else acte_label + chr(ord('a') + i)
+            rows.append((chap_label, acte_label,
+                         count_words(seg), count_notes(seg), count_illus(seg)))
     return rows
 
 
@@ -125,39 +162,79 @@ def _md_table(rows: list) -> str:
         "# Statistiques par acte\n",
         "Mots = texte original uniquement (hors contenu des notes `\\nf{}`).",
         "% notes et % illustrations = rapport au nombre de mots.\n",
-        "| Acte | Mots | Notes | % mots | Illustrations | % mots |",
-        "|-----:|-----:|------:|-------:|--------------:|-------:|",
+        "| Acte | Mots | % livre | Notes | % mots | Illustrations | % mots |",
+        "|-----:|-----:|--------:|------:|-------:|--------------:|-------:|",
     ]
     for acte_num, words, notes, illus in rows:
         illus_str = _fmt(illus)  if illus else "—"
         illus_pct = _pct(illus, words) if illus else "—"
         lines.append(
-            f"| {ROMAN[acte_num]:<5}| {_fmt(words):>7} | {notes:>5} | {_pct(notes, words):>6} "
+            f"| {ROMAN[acte_num]:<5}| {_fmt(words):>7} | {_pct(words, total_words):>7} "
+            f"| {notes:>5} | {_pct(notes, words):>6} "
             f"| {illus_str:>13} | {illus_pct:>6} |"
         )
     lines.append(
-        f"| **Total** | **{_fmt(total_words)}** | **{total_notes}** "
+        f"| **Total** | **{_fmt(total_words)}** | **100%** | **{total_notes}** "
         f"| **{_pct(total_notes, total_words)}** "
         f"| **{_fmt(total_illus)}** | **{_pct(total_illus, total_words)}** |"
     )
     return "\n".join(lines) + "\n"
 
 
-def main():
-    rows = compute()
-    md = _md_table(rows)
-    OUT_FILE.write_text(md, encoding="utf-8")
-    print(f"  → {OUT_FILE.relative_to(ROOT)}")
-    for acte_num, words, notes, illus in rows:
+def _md_table_split(rows: list) -> str:
+    total_words = sum(r[2] for r in rows)
+    total_notes = sum(r[3] for r in rows)
+    total_illus = sum(r[4] for r in rows)
+
+    lines = [
+        "# Statistiques par chapitre (après découpage)\n",
+        "Mots = texte original uniquement (hors contenu des notes `\\nf{}`).",
+        "% notes et % illustrations = rapport au nombre de mots.\n",
+        "| Chap. | Acte | Mots | % livre | Notes | % mots | Illustrations | % mots |",
+        "|------:|-----:|-----:|--------:|------:|-------:|--------------:|-------:|",
+    ]
+    for chap_label, acte_label, words, notes, illus in rows:
+        illus_str = _fmt(illus)  if illus else "—"
+        illus_pct = _pct(illus, words) if illus else "—"
+        lines.append(
+            f"| {chap_label:<6}| {acte_label:<5}| {_fmt(words):>7} | {_pct(words, total_words):>7} "
+            f"| {notes:>5} | {_pct(notes, words):>6} | {illus_str:>13} | {illus_pct:>6} |"
+        )
+    lines.append(
+        f"| **Total** | | **{_fmt(total_words)}** | **100%** | **{total_notes}** "
+        f"| **{_pct(total_notes, total_words)}** "
+        f"| **{_fmt(total_illus)}** | **{_pct(total_illus, total_words)}** |"
+    )
+    return "\n".join(lines) + "\n"
+
+
+def _print_rows(rows_orig, rows_split):
+    for acte_num, words, notes, illus in rows_orig:
         print(f"     Acte {ROMAN[acte_num]:<4} {_fmt(words):>8} mots  "
               f"{notes:>4} notes ({_pct(notes, words)})  "
               f"{illus:>3} illus ({_pct(illus, words)})")
-    total_words = sum(r[1] for r in rows)
-    total_notes = sum(r[2] for r in rows)
-    total_illus = sum(r[3] for r in rows)
+    total_words = sum(r[1] for r in rows_orig)
+    total_notes = sum(r[2] for r in rows_orig)
+    total_illus = sum(r[3] for r in rows_orig)
     print(f"     {'Total':<9} {_fmt(total_words):>8} mots  "
           f"{total_notes:>4} notes ({_pct(total_notes, total_words)})  "
           f"{total_illus:>3} illus ({_pct(total_illus, total_words)})")
+
+    if len(rows_split) != len(rows_orig):
+        print()
+        for chap_label, acte_label, words, notes, illus in rows_split:
+            print(f"     Chap. {chap_label:<5}(acte {acte_label}) {_fmt(words):>8} mots  "
+                  f"{notes:>4} notes ({_pct(notes, words)})  "
+                  f"{illus:>3} illus ({_pct(illus, words)})")
+
+
+def main():
+    rows_orig  = compute()
+    rows_split = compute_split()
+    md = _md_table(rows_orig) + "\n" + _md_table_split(rows_split)
+    OUT_FILE.write_text(md, encoding="utf-8")
+    print(f"  → {OUT_FILE.relative_to(ROOT)}")
+    _print_rows(rows_orig, rows_split)
 
 
 if __name__ == "__main__":
