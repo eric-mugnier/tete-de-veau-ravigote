@@ -220,40 +220,6 @@
   {\par\vspace{0.5\baselineskip}\setlength{\parindent}{0pt}}
   {\par\vspace{0.5\baselineskip}}
 
-% ─── HEADLINES DE CHAPITRES ───────────────────────────────────────────────────
-\newcommand{\chaptersummary}[1]{%
-  \edef\chapnum{\ifcase\value{chapter}\or I\or II\or III\or IV\or V\or VI\or VII\or VIII\or IX\fi}%
-  \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}%
-  \addcontentsline{toc}{chapter}{\protect\tocchapnum{\chapnum}#1}%
-  \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}%
-}
-\newcommand{\partsummary}[1]{%
-  \addtocontents{toc}{\protect\setcounter{tocdepth}{1}}%
-  \addcontentsline{toc}{section}{\protect\tocchapsep#1}%
-  \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}%
-}
-
-% ─── TABLE DES MATIÈRES ───────────────────────────────────────────────────────
-\setcounter{tocdepth}{-1}
-\AtBeginDocument{\addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}}
-\addto\captionsfrench{\renewcommand{\contentsname}{Sommaire}}
-\renewcommand{\printtoctitle}[1]{%
-  \null\vskip 2\onelineskip%
-  {\centering\normalfont\scshape\large #1\par}%
-}
-\renewcommand{\aftertoctitle}{\vskip 2\onelineskip}
-\newcommand{\tocchapnum}[1]{\hbox to 2.5em{#1\hfil}}
-\newcommand{\tocchapsep}{\hbox to 2.5em{\hfil}}
-\renewcommand{\cftchapterfont}{\small\scshape}
-\renewcommand{\cftchapterpagefont}{\small\scshape}
-\setlength{\cftchapterindent}{0pt}
-\setlength{\cftchapternumwidth}{2.5em}
-\setlength{\cftbeforechapterskip}{0.5\onelineskip}
-\renewcommand{\cftsectionfont}{\small\scshape}
-\renewcommand{\cftsectionpagefont}{\small\scshape}
-\setlength{\cftsectionindent}{0pt}
-\setlength{\cftsectionnumwidth}{2.5em}
-\setlength{\cftbeforesectionskip}{0.2\onelineskip}
 
 % ─── CHAPTER STYLE ────────────────────────────────────────────────────────────
 \makeatletter

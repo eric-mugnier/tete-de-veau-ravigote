@@ -72,7 +72,6 @@ def _lmk(c, *stems):
 _OUTPUT_PDFS = [
     f"{BASE}.pdf",
     "extrait_actes.pdf",
-    f"{BASE}_sommaire.pdf",
     f"{BASE}_annote.pdf",
     f"{BASE}_notes.pdf",
     f"{BASE}_LA_TOTALE.pdf",
@@ -139,14 +138,6 @@ def build(c):
     _svg_to_pdf(c)
 
     _lmk(c, BASE)
-    _ls_outputs()
-
-
-@task(pre=[build])
-@_timed
-def sommaire(c):
-    """Build sommaire PDF (uses .toc from build)."""
-    _lmk(c, f"{BASE}_sommaire")
     _ls_outputs()
 
 
@@ -287,7 +278,7 @@ def postfaces(c):
 @task(pre=[gitinfo])
 @_timed
 def total(c):
-    """Build LA TOTALE : document unifié annoté + postface + notes + sommaire étendu + personnages."""
+    """Build LA TOTALE : document unifié annoté + postface + notes + personnages."""
     print("=== svg → pdf ===")
     _svg_to_pdf(c)
 
@@ -311,8 +302,7 @@ def stats(c):
 @task(pre=[build])
 @_timed
 def all_but_diffs(c):
-    """Build everything except diffs: main, sommaire, notes, epub, pers, postfaces, extrait, total."""
-    sommaire(c)
+    """Build everything except diffs: main, notes, epub, pers, postfaces, extrait, total."""
     notes(c)
     epub(c)
     pers(c)

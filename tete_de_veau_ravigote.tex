@@ -25,13 +25,6 @@
 % ═══ MAIN TEXT ════════════════════════════════════════════════════════════════
 \pagestyle{gallimard}
 
-% Ouvre le .toc en écriture pour le sommaire séparé.
-% Le document principal n'affiche pas de table des matières, mais \@starttoc
-% doit être appelé pour que \addcontentsline écrive dans le fichier .toc.
-% \contentsline est temporairement neutralisé pour ne rien imprimer lors de
-% la lecture de l'ancien .toc.
-{\makeatletter\def\contentsline#1#2#3#4{}\@starttoc{toc}\makeatother}
-
 \input{tete_de_veau_ravigote_content.tex}
 
 % ═══ NOTES FINALES (incluses ssi \AVECNOTES défini et \SANSNOTESFINALES absent) ═

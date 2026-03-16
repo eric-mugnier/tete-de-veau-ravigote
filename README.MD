@@ -28,7 +28,6 @@ si le fichier système a changé.
 
 ```bash
 inv build          # PDF principal
-inv sommaire       # sommaire seul
 inv notes          # PDF annoté + notes finales
 inv epub           # EPUB
 inv extrait        # extrait (actes publiés)

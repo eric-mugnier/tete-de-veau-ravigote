@@ -24,7 +24,22 @@
 
 % ═══ MAIN TEXT ════════════════════════════════════════════════════════════════
 \pagestyle{gallimard}
-{\makeatletter\def\contentsline#1#2#3#4{}\@starttoc{toc}\makeatother}
+
+\newcommand{\acte}[3]{%
+  \chapter{Acte #1}%
+  \beginchapternotes{Acte #2}%
+  \foreach \actefn in {#3}{%
+    \input{actes/acte_\actefn.tex}%
+  }%
+  \ifdefined\AVECNOTES
+    \cleardoublepage
+    {\centering\normalfont\scshape\large Notes du chapitre \textsc{#2}\par}%
+    \vspace{\onelineskip}%
+    \begingroup\parindent=0pt
+    \theendnotes
+    \endgroup
+  \fi
+}
 
 \input{extrait_actes_content.tex}
 

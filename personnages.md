@@ -104,3 +104,23 @@
 **Alena Benesch**, infirmière, blonde aux yeux noisette. Victime du réseau de Charrier. A porté plainte puis s'est rétractée. Dans le coma à l'hôpital.
 
 **Professeur Wilfrid Chauveau**, neurochirurgien à la Pitié-Salpêtrière. A opéré Sam Girard après sa blessure par balle à la tête.
+
+**Reckless & Knot**, société financière fictive. Ancien employeur de Greg Lussier (analyste M&A).
+
+**Le Narcisse Rose**, bar/club fictif du roman.
+
+**Monster Gang**, organisation fictive du roman.
+
+**Ordre de la Lune Noire**, organisation fictive du roman.
+
+**Jean-Charles Pichard** (domaine Meursault Chevalières), vigneron fictif.
+
+**Ernst Brestrich**, personnage fictif, auteur du « Traité sur les races ».
+
+**Simon Keskula**, personnage fictif, lié à l'Alliance de la Révélation.
+
+**L'Alliance de la Révélation**, communauté fictive.
+
+**Matthias Schuster**, curé de Montaulogne, personnage fictif (référence à un acte antérieur).
+
+**Maître Yoshimura Masayoshi**, personnage fictif, à Kobe.

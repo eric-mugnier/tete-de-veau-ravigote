@@ -61,17 +61,15 @@ for h in ALL_HEADERS:
 # ── Step 2: define chapter groups ──────────────────────────────────────────
 # Set to a subset for testing; expand to all 9 when ready.
 groups = [
-    (1, [('acte_01_headline', 'acte_01')]),
-    (2, [('acte_02_headline', 'acte_02')]),
-    (3, [('acte_03_headline', 'acte_03')]),
-    (4, [('acte_04_headline', 'acte_04')]),
-    (5, [('acte_05_headline', 'acte_05')]),
-    (6, [('acte_06_1_headline', 'acte_06_1'), ('acte_06_2_headline', 'acte_06_2')]),
-    (7, [('acte_07_headline', 'acte_07')]),
-    (8, [('acte_08_headline', 'acte_08')]),
-    (9, [('acte_09_1_headline', 'acte_09_1'), ('acte_09_2_headline', 'acte_09_2'),
-         ('acte_09_2b_headline', 'acte_09_2b'), ('acte_09_3_headline', 'acte_09_3'),
-         ('acte_09_3b_headline', 'acte_09_3b'), ('acte_09_4_headline', 'acte_09_4')]),
+    (1, ['acte_01']),
+    (2, ['acte_02']),
+    (3, ['acte_03']),
+    (4, ['acte_04']),
+    (5, ['acte_05']),
+    (6, ['acte_06_1', 'acte_06_2']),
+    (7, ['acte_07']),
+    (8, ['acte_08']),
+    (9, ['acte_09_1', 'acte_09_2', 'acte_09_2b', 'acte_09_3', 'acte_09_3b', 'acte_09_4']),
 ]
 
 def strip_document_tags(text):
@@ -129,11 +127,8 @@ def _run_latexdiff(chap_num, file_pairs):
     orig_text = normalize(strip_document_tags(chapters[chap_num]).rstrip('\n') + '\n')
 
     new_parts = []
-    for headline_name, content_name in file_pairs:
-        hl_path = os.path.join(ACTES, headline_name + '.tex')
-        ct_path = os.path.join(ACTES, content_name  + '.tex')
-        with open(hl_path, encoding='utf-8') as f:
-            new_parts.append(strip_document_tags(f.read()))
+    for content_name in file_pairs:
+        ct_path = os.path.join(ACTES, content_name + '.tex')
         with open(ct_path, encoding='utf-8') as f:
             new_parts.append(strip_document_tags(f.read()))
     new_text = normalize('\n'.join(new_parts))
@@ -318,11 +313,11 @@ def update_word_count_md():
     for chap_num, file_pairs in groups:
         diff_path = os.path.join(TMPDIR, f'diff_{chap_num:02d}.tex')
         diffs = count_difdel_lines(diff_path)
-        group_words = sum(file_words.get(ct + '.tex', 0) for _, ct in file_pairs)
-        first_ct = file_pairs[0][1] + '.tex'
+        group_words = sum(file_words.get(ct + '.tex', 0) for ct in file_pairs)
+        first_ct = file_pairs[0] + '.tex'
         starred = len(file_pairs) > 1
         first_file_info[first_ct] = (diffs, group_words, starred)
-        for i, (_, ct) in enumerate(file_pairs):
+        for i, ct in enumerate(file_pairs):
             if i > 0:
                 non_first_files.add(ct + '.tex')
 
