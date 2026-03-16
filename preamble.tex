@@ -233,9 +233,12 @@
 % \mytableofcontents : cleardoublepage + suppress self-reference entry
 \newcommand{\mytableofcontents}{%
   \cleardoublepage
+  \begingroup
+  \small\renewcommand{\baselinestretch}{1.0}\selectfont
   \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}%
   \tableofcontents
   \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}%
+  \endgroup
 }
 
 % ─── CHAPTER STYLE ────────────────────────────────────────────────────────────
