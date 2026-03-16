@@ -247,7 +247,8 @@ def ratiocinations(c):
 @task
 @_timed
 def pers(c):
-    """Build personnages.pdf from personnages.tex + personnages_body.tex via lualatex."""
+    """Build personnages.pdf: pandoc personnages.md → personnages_body.tex, then lualatex."""
+    c.run("pandoc personnages.md -f markdown -t latex --wrap=none -o personnages_body.tex")
     _lmk(c, "personnages")
 
 
