@@ -17,6 +17,7 @@
 \ifdefined\AVECNOTES
   \ifdefined\SANSNOTESFINALES\else
     \cleardoublepage                            % p. impaire : page-titre « Notes »
+    \phantomsection\addcontentsline{toc}{chapter}{Notes}
     \thispagestyle{empty}
     \vspace*{10\onelineskip}
     {\centering\normalfont\scshape\large Notes\par}
@@ -28,6 +29,9 @@
     \theendnotes
   \fi
 \fi
+
+% ═══ TABLE DES MATIÈRES ══════════════════════════════════════════════════════
+\mytableofcontents
 
 % ═══ COLOPHON FINAL ══════════════════════════════════════════════════════════
 \input{colophon}

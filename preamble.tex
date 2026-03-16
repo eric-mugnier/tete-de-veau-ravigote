@@ -38,7 +38,7 @@
 \usepackage{calc}
 \usepackage{wrapfig}
 \usepackage{hyperref}
-\hypersetup{pdfpagelayout=TwoPageRight}
+\hypersetup{pdfpagelayout=TwoPageRight, hidelinks}
 
 % ─── VERSION / GIT ────────────────────────────────────────────────────────────
 \input{version.tex}
@@ -182,8 +182,8 @@
       \theendnotes
       \endgroup
     \fi
-    \chapter{#1}%
-    \beginchapternotes{#1}%
+    \chapter{\ifx&#1&\Roman{chapter}\else#1\fi}%
+    \beginchapternotes{\ifx&#1&\Roman{chapter}\else#1\fi}%
   }
 \else
   \newcommand{\startnewchapter}[1][]{}%
@@ -220,6 +220,23 @@
   {\par\vspace{0.5\baselineskip}\setlength{\parindent}{0pt}}
   {\par\vspace{0.5\baselineskip}}
 
+
+% ─── TABLE DES MATIÈRES ───────────────────────────────────────────────────────
+\setcounter{tocdepth}{0}
+\renewcommand{\chapternumberline}[1]{}           % suppress arabic number, keep Roman title only
+\renewcommand{\cftchapterdotsep}{\cftdotsep}     % dot leaders
+\renewcommand{\cftchapterfont}{\normalfont\scshape}     % chapter entry: small caps, not bold
+\renewcommand{\cftchapterpagefont}{\normalfont\scshape} % page number: small caps, not bold
+% TOC title — gallimard chapter style suppresses \printchaptertitle, so we override here
+\renewcommand{\printtoctitle}[1]{{\centering\normalfont\scshape\large #1\par}}
+\renewcommand{\aftertoctitle}{\par\vspace{\onelineskip}}
+% \mytableofcontents : cleardoublepage + suppress self-reference entry
+\newcommand{\mytableofcontents}{%
+  \cleardoublepage
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}%
+  \tableofcontents
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}%
+}
 
 % ─── CHAPTER STYLE ────────────────────────────────────────────────────────────
 \makeatletter

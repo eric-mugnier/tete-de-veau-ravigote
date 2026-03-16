@@ -14,7 +14,7 @@
 \pagestyle{gallimard}
 
 \newcommand{\acte}[3]{%
-  \chapter{Acte #1}%
+  \chapter{\Roman{chapter}}%
   \beginchapternotes{Acte #2}%
   \foreach \actefn in {#3}{%
     \input{actes/acte_\actefn.tex}%
@@ -31,6 +31,9 @@
 
 \input{extrait_actes_content.tex}
 
+
+% ═══ TABLE DES MATIÈRES ══════════════════════════════════════════════════════
+\mytableofcontents
 
 % ═══ COLOPHON FINAL ══════════════════════════════════════════════════════════
 \input{colophon}

@@ -14,6 +14,7 @@
 
 % ═══ (PREMIÈRE) POSTFACE ════════════════════════════════════════════════════════
 \cleardoublepage
+\phantomsection\addcontentsline{toc}{chapter}{Postface}
 \thispagestyle{empty}
 \pagestyle{gallimard}
 \vspace*{4\onelineskip}
@@ -32,6 +33,7 @@
 
 % ═══ NOTES ════════════════════════════════════════════════════════════════════
 \cleardoublepage
+\phantomsection\addcontentsline{toc}{chapter}{Notes}
 \thispagestyle{empty}
 \vspace*{10\onelineskip}
 {\centering\normalfont\scshape\large Notes\par}
@@ -44,12 +46,16 @@
 
 % ═══ PERSONNAGES ══════════════════════════════════════════════════════════════
 \cleardoublepage
+\phantomsection\addcontentsline{toc}{chapter}{Personnages}
 \thispagestyle{empty}
 \pagestyle{gallimard}
 \vspace*{4\onelineskip}
-{\centering\normalfont\scshape\large Personnages par ordre d'apparition\par}
+{\centering\normalfont\scshape\large Personnages par ordre alphabétique\par}
 \vspace{2\onelineskip}
 \IfFileExists{personnages_body.tex}{\input{personnages_body.tex}}{}
+
+% ═══ TABLE DES MATIÈRES ══════════════════════════════════════════════════════
+\mytableofcontents
 
 % ═══ COLOPHON ═════════════════════════════════════════════════════════════════
 \input{colophon}
