@@ -117,9 +117,8 @@
   \NewDocumentCommand{\iconographiedouble}{O{bottom} O{5cm} m O{} m O{}}{%
     \ifthenelse{\equal{#1}{bottom}}{\vspace*{\fill}}{\vspace*{0pt}}%
     \vspace{0.5\onelineskip}%
-    \noindent\resizebox{\textwidth}{!}{%
-      \bwimage[height=#2]{#3}\hspace{1em}\bwimage[height=#2]{#5}%
-    }\vspace{0.5\onelineskip}\par
+    {\centering\bwimage[height=#2]{#3}\hspace{1em}\bwimage[height=#2]{#5}\par}%
+    \vspace{0.5\onelineskip}%
     \ifthenelse{\equal{#1}{top}}{\vspace*{\fill}}{}%
   }
 \else
