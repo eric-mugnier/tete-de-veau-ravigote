@@ -249,13 +249,13 @@ def ratiocinations(c):
 def pers(c):
     """Build personnages.pdf: pandoc personnages.md → personnages_body.tex, then lualatex."""
     c.run("pandoc personnages.md -f markdown -t latex --wrap=none -o personnages_body.tex")
-    # Replace Unicode non-breaking spaces (U+00A0, U+202F) with LaTeX tie (~)
-    # Covers: «~…~», and ~: ~; ~! ~? (French typographic spacing)
+    # Replace spaces (plain or Unicode NBSP) around guillemets and before
+    # French double punctuation with LaTeX tie (~)
     tex = Path("personnages_body.tex").read_text(encoding="utf-8")
-    for nbsp in ("\u00a0", "\u202f"):
-        tex = tex.replace(f"«{nbsp}", "«~").replace(f"{nbsp}»", "~»")
+    for sp in (" ", "\u00a0", "\u202f"):
+        tex = tex.replace(f"«{sp}", "«~").replace(f"{sp}»", "~»")
         for punct in (":", ";", "!", "?"):
-            tex = tex.replace(f"{nbsp}{punct}", f"~{punct}")
+            tex = tex.replace(f"{sp}{punct}", f"~{punct}")
     Path("personnages_body.tex").write_text(tex, encoding="utf-8")
     _lmk(c, "personnages")
 
