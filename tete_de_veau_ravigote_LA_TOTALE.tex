@@ -57,45 +57,45 @@
 \markboth{}{}
 \theendnotes
 
-% ═══ SOMMAIRE ═════════════════════════════════════════════════════════════════
-\cleardoublepage
-\thispagestyle{empty}
-\enlargethispage{50mm}
-{%
-  \renewcommand{\baselinestretch}{1.0}%
-  \fontsize{9}{10.5}\selectfont\scshape
-  % Macros de rendu du .toc
-  \def\tocchapnum#1{#1}%
-  \def\tocchapsep{}%
-  \def\chapternumberline#1{}%
-  \def\babel@toc#1#2{}%
-  \def\setcounter#1#2{}%
-  \def\TOCNIL{}%
-  \def\TOCSTOP{}%
-  \renewcommand{\contentsline}[4]{\tocProcess{#2}{#3}}%
-  \newcommand{\tocProcess}[2]{\tocPeek#1\TOCNIL{#2}}%
-  \newif\iffirstchap\firstchaptrue
-  \long\def\tocPeek#1#2\TOCNIL#3{%
-    \ifx#1\chapternumberline\else\ifx#1\tocchapnum
-      \tocChapRow#2\TOCSTOP{#3}%
-    \else
-      \tocSectRow#2\TOCSTOP{#3}%
-    \fi\fi}%
-  \long\def\tocChapRow#1#2\TOCSTOP#3{%
-    \iffirstchap\global\firstchapfalse\else\rule{0pt}{13pt}\fi
-    #1 & #2 & #3 \\[2pt]}%
-  \long\def\tocSectRow#1\TOCSTOP#2{%
-    & \ignorespaces#1 & #2 \\[1pt]}%
-  \setlength{\tabcolsep}{4pt}%
-  \begin{adjustwidth}{-8mm}{-6mm}%
-  \vspace*{-11mm}%
-  {\centering\fontsize{14}{17}\selectfont\scshape sommaire\par}%
-  \vspace{5mm}%
-  \begin{tabularx}{\linewidth}{@{}lXr@{}}
-  \IfFileExists{\jobname.toc}{\input{\jobname.toc}}{}%
-  \end{tabularx}%
-  \end{adjustwidth}%
-}
+%%% % ═══ SOMMAIRE ═════════════════════════════════════════════════════════════════
+%%% \cleardoublepage
+%%% \thispagestyle{empty}
+%%% \enlargethispage{50mm}
+%%% {%
+%%%   \renewcommand{\baselinestretch}{1.0}%
+%%%   \fontsize{9}{10.5}\selectfont\scshape
+%%%   % Macros de rendu du .toc
+%%%   \def\tocchapnum#1{#1}%
+%%%   \def\tocchapsep{}%
+%%%   \def\chapternumberline#1{}%
+%%%   \def\babel@toc#1#2{}%
+%%%   \def\setcounter#1#2{}%
+%%%   \def\TOCNIL{}%
+%%%   \def\TOCSTOP{}%
+%%%   \renewcommand{\contentsline}[4]{\tocProcess{#2}{#3}}%
+%%%   \newcommand{\tocProcess}[2]{\tocPeek#1\TOCNIL{#2}}%
+%%%   \newif\iffirstchap\firstchaptrue
+%%%   \long\def\tocPeek#1#2\TOCNIL#3{%
+%%%     \ifx#1\chapternumberline\else\ifx#1\tocchapnum
+%%%       \tocChapRow#2\TOCSTOP{#3}%
+%%%     \else
+%%%       \tocSectRow#2\TOCSTOP{#3}%
+%%%     \fi\fi}%
+%%%   \long\def\tocChapRow#1#2\TOCSTOP#3{%
+%%%     \iffirstchap\global\firstchapfalse\else\rule{0pt}{13pt}\fi
+%%%     #1 & #2 & #3 \\[2pt]}%
+%%%   \long\def\tocSectRow#1\TOCSTOP#2{%
+%%%     & \ignorespaces#1 & #2 \\[1pt]}%
+%%%   \setlength{\tabcolsep}{4pt}%
+%%%   \begin{adjustwidth}{-8mm}{-6mm}%
+%%%   \vspace*{-11mm}%
+%%%   {\centering\fontsize{14}{17}\selectfont\scshape sommaire\par}%
+%%%   \vspace{5mm}%
+%%%   \begin{tabularx}{\linewidth}{@{}lXr@{}}
+%%%   \IfFileExists{\jobname.toc}{\input{\jobname.toc}}{}%
+%%%   \end{tabularx}%
+%%%   \end{adjustwidth}%
+%%% }
 
 
 % ═══ PERSONNAGES ══════════════════════════════════════════════════════════════
