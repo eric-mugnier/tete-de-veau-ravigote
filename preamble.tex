@@ -26,6 +26,7 @@
 \usepackage{catchfile}
 \usepackage{graphicx}
 \usepackage{xcolor}
+\usepackage{amsmath}
 \usepackage{xparse}
 \usepackage{tikz}
 \usepackage{afterpage}
@@ -87,11 +88,13 @@
   }
   % Image en wrapfigure : #1=pos  #2=largeur  #3=code-image  #4=légende
   \newcommand{\iconographiewrapfig}[4]{%
+    \setlength{\intextsep}{0pt}      % espace vertical au-dessus/dessous                                                                                                                                 
+    \setlength{\columnsep}{8pt}%
     \begin{wrapfigure}{#1}{#2}%
       % \vspace{0.5ex}%
       \centering
       #3%
-      \ifx&#4&\else\\[0.2em]{\scriptsize\itshape #4}\fi%
+      \ifx&#4&\else\\[0.2em]{\scriptsize\itshape #4}\\[0.5\baselineskip]\fi%
     \end{wrapfigure}%
   }
   % Bloc centré : [#1]=placement float optionnel (t/b), #2=code-image, #3=légende
@@ -100,7 +103,7 @@
       % Pas de placement → inline
       \vspace{0.5\onelineskip}%
       {\centering#2\par}%
-      \ifx&#3&\else{\centering\scriptsize\itshape#3}\fi%
+      \ifx&#3&\else{\centering\scriptsize\itshape#3\par\vspace{0.5\baselineskip}}\fi%
       \vspace{-0.5\onelineskip}%
     \else
       % Placement fourni → figure flottante
@@ -114,11 +117,17 @@
   %   #1 = placement (bottom/top, défaut: bottom)
   %   #2 = hauteur commune (ex: 5cm)
   %   #3 = image gauche   #5 = image droite
-  \NewDocumentCommand{\iconographiedouble}{O{bottom} O{5cm} m O{} m O{}}{%
+  \NewDocumentCommand{\iconographiedouble}{O{bottom} O{5cm} m O{} m O{} O{}}{%
     \ifthenelse{\equal{#1}{bottom}}{\vspace*{\fill}}{\vspace*{0pt}}%
     \vspace{0.5\onelineskip}%
     \noindent\bwimage[height=#2]{#3}\hfill\bwimage[height=#2]{#5}\par%
-    \vspace{0.5\onelineskip}%
+    \ifx&#7&%
+      \vspace{0.5\onelineskip}%
+    \else%
+      \vspace{0.2\onelineskip}%
+      {\centering\scriptsize\itshape#7\par}%
+      \vspace{0.3\onelineskip}%
+    \fi%
     \ifthenelse{\equal{#1}{top}}{\vspace*{\fill}}{}%
   }
 \else
@@ -126,7 +135,7 @@
   \newcommand{\iconographietex}[1]{}
   \newcommand{\iconographiewrapfig}[4]{}
   \NewDocumentCommand{\iconographieinlineblock}{O{} m m}{}
-  \NewDocumentCommand{\iconographiedouble}{O{bottom} O{5cm} m O{} m O{}}{}
+  \NewDocumentCommand{\iconographiedouble}{O{bottom} O{5cm} m O{} m O{} O{}}{}
 \fi
 
 % ─── NOTES FINALES ────────────────────────────────────────────────────────────
