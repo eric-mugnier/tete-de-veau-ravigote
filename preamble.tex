@@ -66,14 +66,14 @@
 % ─── ICONOGRAPHIE ─────────────────────────────────────────────────────────────
 % Compiler avec : lualatex "\def\AVECILLUSTRATIONS{}\input{...}"
 \ifdefined\AVECILLUSTRATIONS
-  \newcommand{\iconographieimg}[2]{%
+  \newcommand{\iconographieimg}[3][0.75]{%
     \afterpage{%
       \clearpage
       \thispagestyle{empty}%
       \vspace*{\fill}%
       \begin{center}%
-        \bwimage[height=0.75\textheight,width=\textwidth,keepaspectratio]{#1}\\[0.6em]%
-        {\small\itshape #2}%
+        \bwimage[height=#1\textheight,width=\textwidth,keepaspectratio]{#2}\\[0.6em]%
+        {\small\itshape #3}%
       \end{center}%
       \vspace*{\fill}%
       \clearpage
