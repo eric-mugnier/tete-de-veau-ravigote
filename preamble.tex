@@ -127,8 +127,8 @@
   %   #1 = placement (bottom/top, défaut: bottom)
   %   #2 = hauteur commune (ex: 5cm)
   %   #3 = image gauche   #5 = image droite
-  \NewDocumentCommand{\iconographiedouble}{O{bottom} O{5cm} m O{} m O{} O{}}{%
-    \ifthenelse{\equal{#1}{bottom}}{\vspace*{\fill}}{\vspace*{0pt}}%
+  \NewDocumentCommand{\iconographiedouble}{O{b} O{5cm} m O{} m O{} O{}}{%
+    \ifthenelse{\equal{#1}{b}}{\vspace*{\fill}}{\vspace*{0pt}}%
     \vspace{0.5\onelineskip}%
     \noindent\bwimage[height=#2]{#3}\hfill\bwimage[height=#2]{#5}\par%
     \ifx&#7&%
@@ -138,7 +138,7 @@
       {\centering\scriptsize\itshape#7\par}%
       \vspace{0.3\onelineskip}%
     \fi%
-    \ifthenelse{\equal{#1}{top}}{\vspace*{\fill}}{}%
+    \ifthenelse{\equal{#1}{t}}{\vspace*{\fill}}{}%
   }
 \else
   \newcommand{\iconographieimg}[3][0.75]{}

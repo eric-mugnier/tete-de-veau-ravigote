@@ -108,13 +108,15 @@ def count_illus(text: str) -> int:
     # \iconographiedouble contains 2 images
     total += 2 * len(re.findall(r"\\iconographiedouble\b", text))
 
-    # \iconographietex{file}: count \bwimage occurrences inside the referenced file
-    for m in re.finditer(r"\\iconographietex\{([^}]+)\}", text):
-        fig_path = ROOT / m.group(1)
-        if fig_path.exists():
-            total += len(re.findall(r"\\bwimage\b", fig_path.read_text(encoding="utf-8")))
-        else:
-            total += 1  # fallback if file not found
+    # \iconographietex{file} and \iconographietexpair{file1}{file2}:
+    # count \bwimage occurrences inside each referenced file
+    for m in re.finditer(r"\\iconographietex(?:pair)?\{([^}]+)\}(?:\{([^}]+)\})?", text):
+        for path_str in filter(None, [m.group(1), m.group(2)]):
+            fig_path = ROOT / path_str
+            if fig_path.exists():
+                total += len(re.findall(r"\\bwimage\b", fig_path.read_text(encoding="utf-8")))
+            else:
+                total += 1  # fallback if file not found
 
     # single-image commands count as 1 each
     for cmd in [r"\iconographiewrapfig", r"\iconographieinlineblock", r"\iconographieimg"]:
@@ -169,10 +171,8 @@ def _load_acte(acte_num: int) -> str:
     text = "\n".join(
         (ACTES_DIR / f).read_text(encoding="utf-8") for f in ACTES[acte_num]
     )
-    return "\n".join(
-        ln for ln in text.splitlines()
-        if not ln.lstrip().startswith("%%%")
-    )
+    # Strip TeX comments: anything from an unescaped % to end of line
+    return re.sub(r'(?<!\\)%.*', '', text)
 
 
 def compute():
