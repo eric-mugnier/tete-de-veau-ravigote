@@ -36,6 +36,9 @@ ACTES = {
 ROMAN = {1:"I", 2:"II", 3:"III", 4:"IV", 5:"V",
          6:"VI", 7:"VII", 8:"VIII", 9:"IX"}
 
+# Actes excluded from all totals and forecasts (rows still displayed)
+UNILLUSTRATED = {9}
+
 _ROMAN_VALS = [
     (1000,"M"),(900,"CM"),(500,"D"),(400,"CD"),(100,"C"),(90,"XC"),
     (50,"L"),(40,"XL"),(10,"X"),(9,"IX"),(5,"V"),(4,"IV"),(1,"I"),
@@ -206,9 +209,10 @@ def compute_split():
 
 
 def _md_table(rows: list, page_ranges: list | None = None) -> str:
-    total_words = sum(r[1] for r in rows)
-    total_notes = sum(r[2] for r in rows)
-    total_illus = sum(r[3] for r in rows)
+    counted = [r for r in rows if r[0] not in UNILLUSTRATED]
+    total_words = sum(r[1] for r in counted)
+    total_notes = sum(r[2] for r in counted)
+    total_illus = sum(r[3] for r in counted)
     has_pages = bool(page_ranges)
 
     page_cols = " p. | pp. |" if has_pages else ""
@@ -235,7 +239,7 @@ def _md_table(rows: list, page_ranges: list | None = None) -> str:
             f"| {notes:>5} | {_pct(notes, words):>6} "
             f"| {illus_str:>13} | {illus_pct:>6} | {_pct(dial, words):>7} |"
         )
-    total_dial = sum(r[4] for r in rows)
+    total_dial = sum(r[4] for r in counted)
     lines.append(
         f"| **Total** |{'  |  |' if has_pages else ''} **{_fmt(total_words)}** | **100%** | **{total_notes}** "
         f"| **{_pct(total_notes, total_words)}** "
@@ -246,9 +250,11 @@ def _md_table(rows: list, page_ranges: list | None = None) -> str:
 
 
 def _md_table_split(rows: list, page_ranges: list | None = None) -> str:
-    total_words = sum(r[2] for r in rows)
-    total_notes = sum(r[3] for r in rows)
-    total_illus = sum(r[4] for r in rows)
+    excl = {ROMAN[n] for n in UNILLUSTRATED}
+    counted = [r for r in rows if r[1] not in excl]
+    total_words = sum(r[2] for r in counted)
+    total_notes = sum(r[3] for r in counted)
+    total_illus = sum(r[4] for r in counted)
     has_pages = bool(page_ranges)
 
     page_cols = " p. | pp. |" if has_pages else ""
@@ -274,7 +280,7 @@ def _md_table_split(rows: list, page_ranges: list | None = None) -> str:
             f"| {chap_label:<6}| {acte_label:<5}|{page_part} {_fmt(words):>7} | {_pct(words, total_words):>7} "
             f"| {notes:>5} | {_pct(notes, words):>6} | {illus_str:>13} | {illus_pct:>6} | {_pct(dial, words):>7} |"
         )
-    total_dial = sum(r[5] for r in rows)
+    total_dial = sum(r[5] for r in counted)
     lines.append(
         f"| **Total** | |{'  |  |' if has_pages else ''} **{_fmt(total_words)}** | **100%** | **{total_notes}** "
         f"| **{_pct(total_notes, total_words)}** "
@@ -286,20 +292,21 @@ def _md_table_split(rows: list, page_ranges: list | None = None) -> str:
 
 def _illus_forecast(rows_orig) -> str:
     """Estimate remaining illustration work based on completed actes."""
-    with_illus = [(words, illus) for _, words, _, illus, _ in rows_orig if illus > 0]
+    counted = [r for r in rows_orig if r[0] not in UNILLUSTRATED]
+    with_illus = [(words, illus) for _, words, _, illus, _ in counted if illus > 0]
     if not with_illus:
         return ""
 
     ratio = sum(i for _, i in with_illus) / sum(w for w, _ in with_illus)
 
-    total_words = sum(r[1] for r in rows_orig)
-    total_illus = sum(r[3] for r in rows_orig)
+    total_words = sum(r[1] for r in counted)
+    total_illus = sum(r[3] for r in counted)
     estimated   = round(ratio * total_words)
     remaining   = max(0, estimated - total_illus)
     pct_done    = total_illus / estimated * 100 if estimated else 0
 
     n_done  = len(with_illus)
-    n_total = len(rows_orig)
+    n_total = len(counted)
 
     return (
         f"\n## Estimation illustrations restantes\n\n"
