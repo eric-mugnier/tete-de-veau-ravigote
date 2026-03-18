@@ -49,14 +49,6 @@ def to_roman(n: int) -> str:
             n -= value
     return result
 
-ILLUS_CMDS = [
-    r"\iconographiewrapfig",
-    r"\iconographieinlineblock",
-    r"\iconographietex",
-    r"\iconographiedouble",
-    r"\iconographieimg",
-]
-
 
 def _remove_balanced(text: str, cmd: str) -> str:
     """Remove all occurrences of cmd{...} handling nested braces."""
@@ -108,10 +100,24 @@ def count_dialogue_words(text: str) -> int:
 
 
 def count_illus(text: str) -> int:
-    return sum(
-        len(re.findall(re.escape(cmd) + r"\b", text))
-        for cmd in ILLUS_CMDS
-    )
+    total = 0
+
+    # \iconographiedouble contains 2 images
+    total += 2 * len(re.findall(r"\\iconographiedouble\b", text))
+
+    # \iconographietex{file}: count \bwimage occurrences inside the referenced file
+    for m in re.finditer(r"\\iconographietex\{([^}]+)\}", text):
+        fig_path = ROOT / m.group(1)
+        if fig_path.exists():
+            total += len(re.findall(r"\\bwimage\b", fig_path.read_text(encoding="utf-8")))
+        else:
+            total += 1  # fallback if file not found
+
+    # single-image commands count as 1 each
+    for cmd in [r"\iconographiewrapfig", r"\iconographieinlineblock", r"\iconographieimg"]:
+        total += len(re.findall(re.escape(cmd) + r"\b", text))
+
+    return total
 
 
 def _parse_toc_pages(toc_path: Path) -> list[int]:
