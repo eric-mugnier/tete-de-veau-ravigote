@@ -278,6 +278,35 @@ def _md_table_split(rows: list, page_ranges: list | None = None) -> str:
     return "\n".join(lines) + "\n"
 
 
+def _illus_forecast(rows_orig) -> str:
+    """Estimate remaining illustration work based on completed actes."""
+    with_illus = [(words, illus) for _, words, _, illus, _ in rows_orig if illus > 0]
+    if not with_illus:
+        return ""
+
+    ratio = sum(i for _, i in with_illus) / sum(w for w, _ in with_illus)
+
+    total_words = sum(r[1] for r in rows_orig)
+    total_illus = sum(r[3] for r in rows_orig)
+    estimated   = round(ratio * total_words)
+    remaining   = max(0, estimated - total_illus)
+    pct_done    = total_illus / estimated * 100 if estimated else 0
+
+    n_done  = len(with_illus)
+    n_total = len(rows_orig)
+
+    return (
+        f"\n## Estimation illustrations restantes\n\n"
+        f"Ratio sur les **{n_done}/{n_total}** actes illustrés : "
+        f"**1 illustration tous les {round(1/ratio):.0f} mots**.  \n"
+        f"Extrapolé à l'ensemble ({_fmt(total_words)} mots) : "
+        f"**{estimated}** illustrations estimées.  \n"
+        f"Actuellement **{total_illus}** — "
+        f"il en manque **{remaining}** — "
+        f"**{pct_done:.1f} %** réalisé.\n"
+    )
+
+
 def _print_rows(rows_orig, rows_split):
     for acte_num, words, notes, illus, dial in rows_orig:
         print(f"     Acte {ROMAN[acte_num]:<4} {_fmt(words):>8} mots  "
@@ -319,10 +348,15 @@ def main():
         print(f"  ! pages_totale mismatch: {len(pr_split)} toc entries vs {len(rows_split)} rows")
         pr_split = None
 
-    md = _md_table(rows_orig, pr_orig) + "\n" + _md_table_split(rows_split, pr_split)
+    md = (_md_table(rows_orig, pr_orig) + "\n"
+          + _md_table_split(rows_split, pr_split)
+          + _illus_forecast(rows_orig))
     OUT_FILE.write_text(md, encoding="utf-8")
     print(f"  → {OUT_FILE.relative_to(ROOT)}")
     _print_rows(rows_orig, rows_split)
+    forecast = _illus_forecast(rows_orig)
+    if forecast:
+        print(forecast)
 
 
 if __name__ == "__main__":
