@@ -260,11 +260,11 @@ def _md_table_split(rows: list, page_ranges: list | None = None) -> str:
     page_cols = " p. | pp. |" if has_pages else ""
     page_sep  = "---:|----:|" if has_pages else ""
     lines = [
-        "# Statistiques par chapitre (après découpage)\n",
+        "# Statistiques par scène (après découpage)\n",
         "Mots = texte original uniquement (hors contenu des notes `\\nf{}`).",
         "% notes et % illustrations = rapport au nombre de mots.\n",
-        f"| Chap. | Acte |{page_cols} Mots | % livre | Notes | % mots | Illustrations | % mots | % dial. |",
-        f"|------:|-----:|{page_sep}-----:|--------:|------:|-------:|--------------:|-------:|--------:|",
+        f"| Acte | Scène |{page_cols} Mots | % livre | Notes | % mots | Illustrations | % mots | % dial. |",
+        f"|-----:|------:|{page_sep}-----:|--------:|------:|-------:|--------------:|-------:|--------:|",
     ]
     for i, (chap_label, acte_label, words, notes, illus, dial) in enumerate(rows):
         illus_str = _fmt(illus) if illus else "—"
@@ -277,7 +277,7 @@ def _md_table_split(rows: list, page_ranges: list | None = None) -> str:
         else:
             page_part = ""
         lines.append(
-            f"| {chap_label:<6}| {acte_label:<5}|{page_part} {_fmt(words):>7} | {_pct(words, total_words):>7} "
+            f"| {chap_label:<6}| {i + 1:<6}|{page_part} {_fmt(words):>7} | {_pct(words, total_words):>7} "
             f"| {notes:>5} | {_pct(notes, words):>6} | {illus_str:>13} | {illus_pct:>6} | {_pct(dial, words):>7} |"
         )
     total_dial = sum(r[5] for r in counted)
