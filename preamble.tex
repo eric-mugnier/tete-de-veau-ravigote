@@ -185,28 +185,20 @@
 }
 % Titre de chapitre dans le bloc de notes
 \newcommand{\chapnoteheader}[1]{{\normalfont\scshape #1}}
-% Sous-chapitre intermédiaire : vide les notes courantes, ouvre un nouveau chapitre, repart à 1
-% Usage : \startnewchapter        (titre auto = numéro romain du chapitre suivant)
-%         \startnewchapter[Titre] (titre explicite)
-% Actif uniquement si \CHAPITRESSEPARES est défini dans le document racine.
-\ifdefined\CHAPITRESSEPARES
-  \newcommand{\startnewchapter}[1][]{%
-    \ifdefined\AVECNOTES
-      \cleardoublepage
-      \def\@snc@title{#1}%
-      {\centering\normalfont\scshape\large
-        Notes\ifx\@snc@title\empty\else~\textemdash~#1\fi\par}%
-      \vspace{\onelineskip}%
-      \begingroup\parindent=0pt
-      \theendnotes
-      \endgroup
-    \fi
-    \chapter{\ifx&#1&\Roman{chapter}\else#1\fi}%
-    \beginchapternotes{\ifx&#1&\Roman{chapter}\else#1\fi}%
-  }
-\else
-  \newcommand{\startnewchapter}[1][]{}%
-\fi
+% Séparateur de scène : vide les notes courantes, ouvre une nouvelle scène.
+% Usage : \startnewchapter   (l'argument optionnel historique est accepté mais ignoré)
+\newcommand{\startnewchapter}[1][]{%
+  \ifdefined\AVECNOTES
+    \cleardoublepage
+    {\centering\normalfont\scshape\large
+      Notes~\textemdash~\Roman{actenum}~·~\arabic{scenenum}\par}%
+    \vspace{\onelineskip}%
+    \begingroup\parindent=0pt
+    \theendnotes
+    \endgroup
+  \fi
+  \startscene%
+}
 % Notes par chapitre : remet le compteur à 0 pour que chaque acte reparte de 1
 \newcommand{\beginchapternotes}[1]{%
   \ifdefined\AVECNOTES
@@ -260,6 +252,10 @@
   \endgroup
 }
 
+% ─── ACTE / SCENE COUNTERS ────────────────────────────────────────────────────
+\newcounter{actenum}   % incremented by \startacte
+\newcounter{scenenum}  % global, incremented by \startscene
+
 % ─── CHAPTER STYLE ────────────────────────────────────────────────────────────
 \makeatletter
 \makechapterstyle{gallimard}{%
@@ -269,13 +265,30 @@
   \renewcommand{\printchaptername}{}
   \renewcommand{\chapternamenum}{}
   \renewcommand{\printchapternum}{%
-    \chapnumfont\Roman{chapter}%
-    \markboth{\Roman{chapter}}{\Roman{chapter}}}
+    \chapnumfont\Roman{actenum}~·~\arabic{scenenum}%
+    \markboth{\Roman{actenum}~·~\arabic{scenenum}}{\Roman{actenum}~·~\arabic{scenenum}}}
   \renewcommand{\afterchapternum}{\par\vskip 0.4\onelineskip}
   \renewcommand{\printchaptertitle}[1]{}
 }
 \makeatother
 \chapterstyle{gallimard}
+
+% ─── STARTSCENE / STARTACTE ───────────────────────────────────────────────────
+\newcommand{\startscene}{%
+  \stepcounter{scenenum}%
+  \chapter{\Roman{actenum}~·~\arabic{scenenum}}%
+  \beginchapternotes{\Roman{actenum}~·~\arabic{scenenum}}%
+}
+\newcommand{\startacte}{%
+  \stepcounter{actenum}%
+  \cleartorecto%
+  \thispagestyle{empty}%
+  \vspace*{\fill}%
+  {\centering\normalfont\scshape\large Acte~\Roman{actenum}\par}%
+  \vspace*{\fill}%
+  \clearpage%
+  \startscene%
+}
 
 % ─── RUNNING HEADERS : folio seul, sans auteur ni titre ───────────────────────
 \makepagestyle{gallimard}
