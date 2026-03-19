@@ -14,14 +14,14 @@
 \pagestyle{gallimard}
 
 \newcommand{\acte}[3]{%
-  \chapter{\Roman{chapter}}%
-  \beginchapternotes{Acte #2}%
+  \setcounter{actenum}{\numexpr#1-1\relax}%
+  \startacte
   \foreach \actefn in {#3}{%
     \input{actes/acte_\actefn.tex}%
   }%
   \ifdefined\AVECNOTES
     \cleardoublepage
-    {\centering\normalfont\scshape\large Notes du chapitre \textsc{#2}\par}%
+    {\centering\normalfont\scshape\large Notes~\textemdash~Acte~\Roman{actenum}\par}%
     \vspace{\onelineskip}%
     \begingroup\parindent=0pt
     \theendnotes
