@@ -190,8 +190,7 @@
 \newcommand{\startnewchapter}[1][]{%
   \ifdefined\AVECNOTES
     \cleardoublepage
-    {\centering\normalfont\large
-      Notes~\textemdash~\arabic{scenenum}\par}%
+    {\centering\scenotitlefont Notes\par}%
     \vspace{\onelineskip}%
     \begingroup\parindent=0pt
     \theendnotes
@@ -262,12 +261,14 @@
 % ─── ACTE / SCENE COUNTERS ────────────────────────────────────────────────────
 \newcounter{actenum}   % incremented by \startacte
 \newcounter{scenenum}  % global, incremented by \startscene
+% shared font for scene-opener number and notes title
+\newcommand{\scenotitlefont}{\normalfont\normalsize}
 
 % ─── CHAPTER STYLE ────────────────────────────────────────────────────────────
 \makeatletter
 \makechapterstyle{gallimard}{%
   \renewcommand{\chapnamefont}{\normalfont\scshape\centering}
-  \renewcommand{\chapnumfont}{\normalfont\scshape\centering}
+  \renewcommand{\chapnumfont}{\scenotitlefont\centering}
   \renewcommand{\chaptitlefont}{\normalfont\scshape\centering}
   \renewcommand{\printchaptername}{}
   \renewcommand{\chapternamenum}{}
