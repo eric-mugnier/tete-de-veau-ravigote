@@ -189,12 +189,14 @@
 % Usage : \startnewchapter   (l'argument optionnel historique est accepté mais ignoré)
 \newcommand{\startnewchapter}[1][]{%
   \ifdefined\AVECNOTES
-    \cleardoublepage
-    {\centering\scenotitlefont Notes\par}%
-    \vspace{\onelineskip}%
-    \begingroup\parindent=0pt
-    \theendnotes
-    \endgroup
+    \ifdefined\NOTESENFIN\else
+      \cleardoublepage
+      {\centering\scenotitlefont Notes\par}%
+      \vspace{\onelineskip}%
+      \begingroup\parindent=0pt
+      \theendnotes
+      \endgroup
+    \fi
   \fi
   \startscene%
 }
