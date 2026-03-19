@@ -96,10 +96,17 @@ def _ls_outputs():
 
 # ─── tasks ────────────────────────────────────────────────────────────────────
 
-@task(positional=["acte"], help={"acte": "Acte stem(s) to test, comma-separated, e.g. 02 or 06_1,06_2"})
+_ACTE_SPLITS = {
+    "06": ["06_1", "06_2"],
+    "09": ["09_1", "09_2", "09_2b", "09_3", "09_3b", "09_4"],
+}
+
+@task(positional=["acte"], help={"acte": "Acte stem(s) to test, comma-separated, e.g. 02 or 06"})
 def test(c, acte):
     """Single lualatex pass on test_illus.tex for quick illustration testing."""
-    stems = [s if s.startswith("acte_") else f"acte_{s}" for s in acte.split(",")]
+    raw = [s if s.startswith("acte_") else f"acte_{s}" for s in acte.split(",")]
+    stems = [f"acte_{s}" for token in raw
+             for s in _ACTE_SPLITS.get(token.removeprefix("acte_"), [token.removeprefix("acte_")])]
     inputs = "\n".join(r"\input{actes/" + s + r".tex}" for s in stems)
     tex = Path("test_illus.tex").read_text(encoding="utf-8")
     tex = re.sub(r"(\\input\{actes/[^}]+\}\s*)+", lambda _: inputs + "\n", tex)
