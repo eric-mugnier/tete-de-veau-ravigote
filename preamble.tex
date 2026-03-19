@@ -233,11 +233,17 @@
 
 
 % ─── TABLE DES MATIÈRES ───────────────────────────────────────────────────────
-\setcounter{tocdepth}{0}
+\setcounter{tocdepth}{1}
 \renewcommand{\chapternumberline}[1]{}           % suppress arabic number, keep Roman title only
 \renewcommand{\cftchapterdotsep}{\cftdotsep}     % dot leaders
 \renewcommand{\cftchapterfont}{\normalfont\scshape}     % chapter entry: small caps, not bold
 \renewcommand{\cftchapterpagefont}{\normalfont\scshape} % page number: small caps, not bold
+% Section entries = scenes (indented, normal font)
+\setlength{\cftsectionindent}{2em}
+\setlength{\cftsectionnumwidth}{0em}
+\renewcommand{\cftsectionfont}{\normalfont}
+\renewcommand{\cftsectionpagefont}{\normalfont}
+\renewcommand{\cftsectiondotsep}{\cftdotsep}
 % TOC title — gallimard chapter style suppresses \printchaptertitle, so we override here
 \renewcommand{\printtoctitle}[1]{{\centering\normalfont\scshape\large #1\par}}
 \renewcommand{\aftertoctitle}{\par\vspace{\onelineskip}}
@@ -248,7 +254,7 @@
   \small\renewcommand{\baselinestretch}{1.0}\selectfont
   \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}%
   \tableofcontents
-  \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}%
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{1}}%
   \endgroup
 }
 
@@ -276,7 +282,10 @@
 % ─── STARTSCENE / STARTACTE ───────────────────────────────────────────────────
 \newcommand{\startscene}{%
   \stepcounter{scenenum}%
-  \chapter{\Roman{actenum}~·~\arabic{scenenum}}%
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}%
+  \chapter{}%
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{1}}%
+  \addcontentsline{toc}{section}{Scène~\arabic{scenenum}}%
   \beginchapternotes{\Roman{actenum}~·~\arabic{scenenum}}%
 }
 \newcommand{\startacte}{%
