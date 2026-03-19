@@ -266,7 +266,7 @@
   \renewcommand{\chapternamenum}{}
   \renewcommand{\printchapternum}{%
     \chapnumfont\arabic{scenenum}%
-    \markboth{\Roman{actenum}~·~\arabic{scenenum}}{\Roman{actenum}~·~\arabic{scenenum}}}
+    \markboth{\Roman{actenum}}{\arabic{scenenum}}}
   \renewcommand{\afterchapternum}{\par\vskip 0.4\onelineskip}
   \renewcommand{\printchaptertitle}[1]{}
 }
@@ -291,10 +291,10 @@
   \startscene%
 }
 
-% ─── RUNNING HEADERS : folio seul, sans auteur ni titre ───────────────────────
+% ─── RUNNING HEADERS : verso = acte centré pc, recto = scène alignée à droite ──
 \makepagestyle{gallimard}
 \makeevenhead{gallimard}{}{\footnotesize\scshape\leftmark}{}
-\makeoddhead{gallimard}{}{\footnotesize\scshape\rightmark}{}
+\makeoddhead{gallimard}{}{}{\footnotesize\rightmark}
 \makeevenfoot{gallimard}{}{\thepage}{}
 \makeoddfoot{gallimard}{}{\thepage}{}
 \makepsmarks{gallimard}{%
