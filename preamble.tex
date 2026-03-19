@@ -251,6 +251,7 @@
 \newcommand{\mytableofcontents}{%
   \cleardoublepage
   \begingroup
+  \setlength{\beforechapskip}{0pt}%
   \small\renewcommand{\baselinestretch}{1.0}\selectfont
   \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}%
   \tableofcontents
@@ -262,7 +263,7 @@
 \newcounter{actenum}   % incremented by \startacte
 \newcounter{scenenum}  % global, incremented by \startscene
 % shared font for scene-opener number and notes title
-\newcommand{\scenotitlefont}{\normalfont\normalsize}
+\newcommand{\scenotitlefont}{\normalfont\large}
 
 % ─── CHAPTER STYLE ────────────────────────────────────────────────────────────
 \makeatletter
