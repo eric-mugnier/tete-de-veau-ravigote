@@ -1,43 +1,53 @@
-\noindent\begin{minipage}[t][\textheight][s]{\textwidth}
 \begin{center}
 
-  \begin{minipage}[t][0.33\textheight][t]{0.7\textwidth}
-    \centering
-    \bwimage[height=0.4\textheight]{acte_02/chapter_3/_0410_triceratops.jpg}
-    {\figcaptionname\itshape Triceratops}
-    \vfill
-  \end{minipage}
-  \hfill
-  \begin{minipage}[t][0.33\textheight][t]{0.2\textwidth}
-    \centering
-    \bwimage[height=0.15\textheight]{acte_02/chapter_3/_0440_vegavis.jpg}
-    {\figcaptionname\itshape Vegavis iaai}
-    \vfill
-  \end{minipage}
+\begin{tikzpicture}[remember picture,overlay]
+
+  % --- T. rex ---
+  \node (trex) at (current page.center) {
+    \includegraphics[width=\textwidth]{acte_02/chapter_3/_0420_tyrannosaurus-rex.png}
+  };
+
+  % --- ground reference ---
+  \coordinate (ground) at ($(current page.center)+(0,-0.2\textheight)$);
+
+  % --- human ---
+  \node (human) at (ground) {
+    \includegraphics[height=0.06\textheight]{acte_02/chapter_3/_human.png}
+  };
+
+  % --- bird ---
+  \node (bird) at ($(ground)+(-0.08\textwidth,0)$) {
+    \includegraphics[height=0.02\textheight]{acte_02/chapter_3/_0430_asteriornis.png}
+  };
+
+  % =========================
+  % LABELS + ARROWS
+  % =========================
+
+  % --- T. rex label (top right, pointing to head) ---
+  \node[anchor=west,align=left] (label-trex)
+    at ($(current page.center)+(0.25\textwidth,0.25\textheight)$)
+    {\figcaptionname\itshape Tyrannosaurus rex};
+
+  \draw[->,thin]
+    (label-trex.west) -- ($(trex)+(0.15\textwidth,0.15\textheight)$);
+
+  % --- human label (above, slightly right) ---
+  \node[anchor=west,align=left] (label-human)
+    at ($(human)+(0.05\textwidth,0.08\textheight)$)
+    {\figcaptionname\itshape Homo sapiens};
+
+  \draw[->,thin]
+    (label-human.west) -- (human);
+
+  % --- bird label (above, slightly left) ---
+  \node[anchor=east,align=right] (label-bird)
+    at ($(bird)+(-0.02\textwidth,0.06\textheight)$)
+    {\figcaptionname\itshape Asteriornis maastrichtensis};
+
+  \draw[->,thin]
+    (label-bird.east) -- (bird);
+
+\end{tikzpicture}
 
 \end{center}
-
-\begin{center}
-  
-  % --- bottom row: H=0.22\textheight, AR smaug=1.413 godzilla=1.294 ---
-  \begin{minipage}[t]{0.2\textwidth}
-    \begin{flushleft}
-      \centering
-      {\figcaptionname\itshape Asteriornis maastrichtensis}\\[0.3em]
-      \bwimage[height=0.15\textheight]{acte_02/chapter_3/_0430_asteriornis.png}
-    \end{flushleft}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[t]{0.7\textwidth}
-    \begin{flushright}
-      \centering
-      {\figcaptionname\itshape Tyrannosaurus rex}\\[0.3em]
-      \bwimage[height=0.4\textheight]{acte_02/chapter_3/_0420_tyrannosaurus-rex.png}
-    \end{flushright}
-  \end{minipage}
-
-\end{center}
-
-\vfill
-
-\end{minipage}
