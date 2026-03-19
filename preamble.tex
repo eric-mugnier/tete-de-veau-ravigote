@@ -40,6 +40,8 @@
 \usepackage{wrapfig}
 \usepackage{hyperref}
 \hypersetup{pdfpagelayout=TwoPageRight, hidelinks}
+\usetikzlibrary{calc,positioning}
+
 
 % ─── VERSION / GIT ────────────────────────────────────────────────────────────
 \input{version.tex}
@@ -184,7 +186,11 @@
   \vspace{\onelineskip}%
 }
 % Titre de chapitre dans le bloc de notes
-\newcommand{\chapnoteheader}[1]{{\normalfont\scshape #1}}
+\ifdefined\NOTESENFIN
+  \newcommand{\chapnoteheader}[1]{{\normalfont\large #1}}
+\else
+  \newcommand{\chapnoteheader}[1]{{\normalfont\scshape #1}}
+\fi
 % Séparateur de scène : vide les notes courantes, ouvre une nouvelle scène.
 % Usage : \startnewchapter   (l'argument optionnel historique est accepté mais ignoré)
 \newcommand{\startnewchapter}[1][]{%
@@ -291,7 +297,11 @@
   \chapter{}%
   \addtocontents{toc}{\protect\setcounter{tocdepth}{1}}%
   \addcontentsline{toc}{section}{Scène~\arabic{scenenum}}%
-  \beginchapternotes{\Roman{actenum}~·~\arabic{scenenum}}%
+  \ifdefined\NOTESENFIN
+    \beginchapternotes{Acte~\Roman{actenum}~·~Scène~\arabic{scenenum}}%
+  \else
+    \beginchapternotes{\Roman{actenum}~·~\arabic{scenenum}}%
+  \fi
 }
 \newcommand{\startacte}{%
   \stepcounter{actenum}%
