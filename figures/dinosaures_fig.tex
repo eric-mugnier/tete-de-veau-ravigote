@@ -1,23 +1,21 @@
-\begin{center}
+\noindent\begin{tikzpicture}
 
-\begin{tikzpicture}[remember picture,overlay]
-
-  % --- T. rex ---
-  \node (trex) at (current page.center) {
+  % --- T. rex (defines the coordinate origin) ---
+  \node[inner sep=0, outer sep=0] (trex) at (0,0) {
     \includegraphics[width=\textwidth]{acte_02/chapter_3/_0420_tyrannosaurus-rex.png}
   };
 
-  % --- ground reference ---
-  \coordinate (ground) at ($(current page.center)+(0,-0.2\textheight)$);
+  % --- ground reference: bottom of T. rex image ---
+  \coordinate (ground) at (trex.south);
 
-  % --- human ---
-  \node (human) at (ground) {
+  % --- human: bottom aligned to ground ---
+  \node (human) at ($(ground)+(-0.05\textwidth,0.03\textheight)$) {
     \includegraphics[height=0.06\textheight]{acte_02/chapter_3/_human.png}
   };
 
-  % --- bird ---
-  \node (bird) at ($(ground)+(-0.08\textwidth,0)$) {
-    \includegraphics[height=0.02\textheight]{acte_02/chapter_3/_0430_asteriornis.png}
+  % --- bird: bottom aligned to ground ---
+  \node (bird) at ($(ground)+(-0.1\textwidth,0.005\textheight)$) {
+    \includegraphics[height=0.01\textheight]{acte_02/chapter_3/_0430_asteriornis.png}
   };
 
   % =========================
@@ -26,28 +24,26 @@
 
   % --- T. rex label (top right, pointing to head) ---
   \node[anchor=west,align=left] (label-trex)
-    at ($(current page.center)+(0.25\textwidth,0.25\textheight)$)
+    at ($(trex)+(0.25\textwidth,0.25\textheight)$)
     {\figcaptionname\itshape Tyrannosaurus rex};
 
   \draw[->,thin]
     (label-trex.west) -- ($(trex)+(0.15\textwidth,0.15\textheight)$);
 
-  % --- human label (above, slightly right) ---
-  \node[anchor=west,align=left] (label-human)
-    at ($(human)+(0.05\textwidth,0.08\textheight)$)
+  % --- human label (below feet, shifted right) ---
+  \node[anchor=north,align=center] (label-human)
+    at ($(ground)+(0.12\textwidth,-0.11\textheight)$)
     {\figcaptionname\itshape Homo sapiens};
 
   \draw[->,thin]
-    (label-human.west) -- (human);
+    (label-human.north) -- (human.south);
 
-  % --- bird label (above, slightly left) ---
-  \node[anchor=east,align=right] (label-bird)
-    at ($(bird)+(-0.02\textwidth,0.06\textheight)$)
+  % --- bird label (below feet, shifted left) ---
+  \node[anchor=north,align=center] (label-bird)
+    at ($(ground)+(-0.18\textwidth,-0.11\textheight)$)
     {\figcaptionname\itshape Asteriornis maastrichtensis};
 
   \draw[->,thin]
-    (label-bird.east) -- (bird);
+    (label-bird.north) -- (bird.south);
 
 \end{tikzpicture}
-
-\end{center}
