@@ -36,8 +36,6 @@ ACTES = {
 ROMAN = {1:"I", 2:"II", 3:"III", 4:"IV", 5:"V",
          6:"VI", 7:"VII", 8:"VIII", 9:"IX"}
 
-# Actes excluded from all totals and forecasts (rows still displayed)
-UNILLUSTRATED = {9}
 
 _ROMAN_VALS = [
     (1000,"M"),(900,"CM"),(500,"D"),(400,"CD"),(100,"C"),(90,"XC"),
@@ -90,6 +88,34 @@ def count_words(text: str) -> int:
     text = re.sub(r"%.*", "", text)                          # TeX comments
     text = re.sub(r"[{}~]", " ", text)
     return len(re.findall(r"[a-zA-ZÀ-ÿ'\u2019\-]{2,}", text))
+
+
+def first_words(text: str, n: int = 7) -> str:
+    """Return the first n prose words of a segment, stripped of LaTeX."""
+    text = _remove_balanced(text, r"\nf")
+    text = _remove_balanced(text, r"\source")
+    # Strip optional [...] args immediately before { so cmd[...]{...} becomes cmd{...}
+    text = re.sub(r"\[[^\]]*\](?=\s*\{)", "", text)
+    for cmd in [r"\iconographiewrapfig", r"\iconographieinlineblock",
+                r"\iconographietex",    r"\iconographiedouble",
+                r"\iconographieimg",    r"\bwimage",
+                r"\nfimg",             r"\nfimgblock"]:
+        text = _remove_balanced(text, cmd)
+    # Strip all remaining brace groups iteratively (handles orphaned multi-arg command args)
+    prev = None
+    while prev != text:
+        prev = text
+        text = re.sub(r"\{[^{}]*\}", " ", text)
+    text = re.sub(r"\\[a-zA-Z]+\*?", " ", text)
+    text = re.sub(r"%.*", "", text)
+    text = re.sub(r"[{}~«»]", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    matches = list(re.finditer(r"[a-zA-ZÀ-ÿ'\u2019\-]+", text))
+    if not matches:
+        return ""
+    if len(matches) <= n:
+        return text[:matches[-1].end()].strip()
+    return text[:matches[n - 1].end()].strip() + "…"
 
 
 def count_notes(text: str) -> int:
@@ -204,12 +230,12 @@ def compute_split():
             chap_label = acte_label if len(segments) == 1 else acte_label + chr(ord('a') + i)
             rows.append((chap_label, acte_label,
                          count_words(seg), count_notes(seg), count_illus(seg),
-                         count_dialogue_words(seg)))
+                         count_dialogue_words(seg), first_words(seg)))
     return rows
 
 
 def _md_table(rows: list, page_ranges: list | None = None) -> str:
-    counted = [r for r in rows if r[0] not in UNILLUSTRATED]
+    counted = rows
     total_words = sum(r[1] for r in counted)
     total_notes = sum(r[2] for r in counted)
     total_illus = sum(r[3] for r in counted)
@@ -218,7 +244,7 @@ def _md_table(rows: list, page_ranges: list | None = None) -> str:
     page_cols = " p. | pp. |" if has_pages else ""
     page_sep  = "---:|----:|" if has_pages else ""
     lines = [
-        "# Statistiques par acte\n",
+        "# Statistiques par acte (avant découpage)\n",
         "Mots = texte original uniquement (hors contenu des notes `\\nf{}`).",
         "% notes et % illustrations = rapport au nombre de mots.\n",
         f"| Acte |{page_cols} Mots | % livre | Notes | % mots | Illustrations | % mots | % dial. |",
@@ -250,8 +276,7 @@ def _md_table(rows: list, page_ranges: list | None = None) -> str:
 
 
 def _md_table_split(rows: list, page_ranges: list | None = None) -> str:
-    excl = {ROMAN[n] for n in UNILLUSTRATED}
-    counted = [r for r in rows if r[1] not in excl]
+    counted = rows
     total_words = sum(r[2] for r in counted)
     total_notes = sum(r[3] for r in counted)
     total_illus = sum(r[4] for r in counted)
@@ -260,13 +285,13 @@ def _md_table_split(rows: list, page_ranges: list | None = None) -> str:
     page_cols = " p. | pp. |" if has_pages else ""
     page_sep  = "---:|----:|" if has_pages else ""
     lines = [
-        "# Statistiques par scène (après découpage)\n",
+        "# Statistiques par scène\n",
         "Mots = texte original uniquement (hors contenu des notes `\\nf{}`).",
         "% notes et % illustrations = rapport au nombre de mots.\n",
-        f"| Acte | Scène |{page_cols} Mots | % livre | Notes | % mots | Illustrations | % mots | % dial. |",
-        f"|-----:|------:|{page_sep}-----:|--------:|------:|-------:|--------------:|-------:|--------:|",
+        f"| Acte | Scène | Début |{page_cols} Mots | % dial. | % livre | Notes | % mots | Illustrations | % mots | % notes |",
+        f"|-----:|------:|:------|{page_sep}-----:|--------:|--------:|------:|-------:|--------------:|-------:|--------:|",
     ]
-    for i, (chap_label, acte_label, words, notes, illus, dial) in enumerate(rows):
+    for i, (chap_label, acte_label, words, notes, illus, dial, debut) in enumerate(rows):
         illus_str = _fmt(illus) if illus else "—"
         illus_pct = _pct(illus, words) if illus else "—"
         if has_pages:
@@ -277,22 +302,22 @@ def _md_table_split(rows: list, page_ranges: list | None = None) -> str:
         else:
             page_part = ""
         lines.append(
-            f"| {chap_label:<6}| {i + 1:<6}|{page_part} {_fmt(words):>7} | {_pct(words, total_words):>7} "
-            f"| {notes:>5} | {_pct(notes, words):>6} | {illus_str:>13} | {illus_pct:>6} | {_pct(dial, words):>7} |"
+            f"| {chap_label:<6}| {i + 1:<6}| {debut} |{page_part} {_fmt(words):>7} | {_pct(dial, words):>7} | {_pct(words, total_words):>7} "
+            f"| {notes:>5} | {_pct(notes, words):>6} | {illus_str:>13} | {illus_pct:>6} | {_pct(illus, notes):>7} |"
         )
     total_dial = sum(r[5] for r in counted)
     lines.append(
-        f"| **Total** | |{'  |  |' if has_pages else ''} **{_fmt(total_words)}** | **100%** | **{total_notes}** "
+        f"| **Total** | |{'  |  |' if has_pages else ''} **{_fmt(total_words)}** | **{_pct(total_dial, total_words)}** | **100%** | **{total_notes}** "
         f"| **{_pct(total_notes, total_words)}** "
         f"| **{_fmt(total_illus)}** | **{_pct(total_illus, total_words)}** "
-        f"| **{_pct(total_dial, total_words)}** |"
+        f"| **{_pct(total_illus, total_notes)}** |"
     )
     return "\n".join(lines) + "\n"
 
 
 def _illus_forecast(rows_orig) -> str:
     """Estimate remaining illustration work based on completed actes."""
-    counted = [r for r in rows_orig if r[0] not in UNILLUSTRATED]
+    counted = rows_orig
     with_illus = [(words, illus) for _, words, _, illus, _ in counted if illus > 0]
     if not with_illus:
         return ""
@@ -337,7 +362,7 @@ def _print_rows(rows_orig, rows_split):
 
     if len(rows_split) != len(rows_orig):
         print()
-        for chap_label, acte_label, words, notes, illus, dial in rows_split:
+        for chap_label, acte_label, words, notes, illus, dial, _debut in rows_split:
             print(f"     Chap. {chap_label:<5}(acte {acte_label}) {_fmt(words):>8} mots  "
                   f"{notes:>4} notes ({_pct(notes, words)})  "
                   f"{illus:>3} illus ({_pct(illus, words)})  "
@@ -361,8 +386,8 @@ def main():
         print(f"  ! pages_totale mismatch: {len(pr_split)} toc entries vs {len(rows_split)} rows")
         pr_split = None
 
-    md = (_md_table(rows_orig, pr_orig) + "\n"
-          + _md_table_split(rows_split, pr_split)
+    md = (_md_table_split(rows_split, pr_split) + "\n"
+          + _md_table(rows_orig, pr_orig)
           + _illus_forecast(rows_orig))
     OUT_FILE.write_text(md, encoding="utf-8")
     print(f"  → {OUT_FILE.relative_to(ROOT)}")
