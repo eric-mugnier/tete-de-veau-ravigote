@@ -4,20 +4,20 @@
 |------|---------|-----:|----------:|:-------:|------:|-------:|
 | Acte 1 | acte_01.tex | 4 046 | 2,0 % | ☑ | 13 | 0,32 % |
 | Acte 2 | acte_02.tex | 17 790 | 9,0 % | ☑ | 73 | 0,41 % |
-| Acte 3 | acte_03.tex | 20 799 | 10,5 % | ☑ | 73 | 0,35 % |
-| Acte 4 | acte_04.tex | 20 454 | 10,3 % | ☑ | 63 | 0,31 % |
-| Acte 5 | acte_05.tex | 20 814 | 10,5 % | ☑ | 62 | 0,30 % |
-| Acte 6/1 | acte_06_1.tex | 22 360 | 11,3 % | ☑ | 94 * | 0,29 % * |
+| Acte 3 | acte_03.tex | 20 799 | 10,5 % | ☑ | 74 | 0,36 % |
+| Acte 4 | acte_04.tex | 20 454 | 10,3 % | ☑ | 64 | 0,31 % |
+| Acte 5 | acte_05.tex | 20 814 | 10,5 % | ☑ | 63 | 0,30 % |
+| Acte 6/1 | acte_06_1.tex | 22 360 | 11,3 % | ☑ | 102 * | 0,31 % * |
 | Acte 6/2 | acte_06_2.tex | 10 520 | 5,3 % | ☑ |  |  |
 | Acte 7 | acte_07.tex | 2 948 | 1,5 % | ☑ | 11 | 0,37 % |
-| Acte 8 | acte_08.tex | 17 228 | 8,7 % | ☑ | 48 | 0,28 % |
-| Acte 9/1 | acte_09_1.tex | 11 253 | 5,7 % | ☑ | 133 * | 0,22 % * |
+| Acte 8 | acte_08.tex | 17 228 | 8,7 % | ☑ | 52 | 0,30 % |
+| Acte 9/1 | acte_09_1.tex | 11 253 | 5,7 % | ☑ | 140 * | 0,23 % * |
 | Acte 9/2 | acte_09_2.tex | 21 851 | 11,1 % | ☑ |  |  |
 | Acte 9/2b | acte_09_2b.tex | 1 610 | 0,8 % | ☑ |  |  |
 | Acte 9/3 | acte_09_3.tex | 15 134 | 7,7 % | ☑ |  |  |
 | Acte 9/3b | acte_09_3b.tex | 4 724 | 2,4 % | ☑ |  |  |
 | Acte 9/4 | acte_09_4.tex | 6 067 | 3,1 % | ☑ |  |  |
-| **Total** | | **197 598** | **100 %** | | **570** | **0,29 %** |
+| **Total** | | **197 598** | **100 %** | | **592** | **0,30 %** |
 
 > Décompte hors commandes LaTeX et commentaires.
 > **Diffs** = nombre de blocs supprimés/remplacés (via `latexdiff`), hors bruit typographique (apostrophes, guillemets, tirets, etc.).
