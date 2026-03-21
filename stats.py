@@ -307,7 +307,7 @@ def _md_table_split(rows: list, page_ranges: list | None = None) -> str:
         )
     total_dial = sum(r[5] for r in counted)
     lines.append(
-        f"| **Total** | |{'  |  |' if has_pages else ''} **{_fmt(total_words)}** | **{_pct(total_dial, total_words)}** | **100%** | **{total_notes}** "
+        f"| **Total** | | |{'  |  |' if has_pages else ''} **{_fmt(total_words)}** | **{_pct(total_dial, total_words)}** | **100%** | **{total_notes}** "
         f"| **{_pct(total_notes, total_words)}** "
         f"| **{_fmt(total_illus)}** | **{_pct(total_illus, total_words)}** "
         f"| **{_pct(total_illus, total_notes)}** |"
