@@ -26,7 +26,7 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 | IXb   | 19    | Greg, que je n’avais pas entendu arriver… |  10 467 |   3.09% |   5.64% |    53 |  0.51% |             — |      — |   0.00% |
 | IXc   | 20    | Comme beaucoup d’urgentistes souffrant de handicap visuel… |   7 370 |  48.13% |   3.97% |    10 |  0.14% |             — |      — |   0.00% |
 | IXd   | 21    | Provisoire, bien entendu. Il est toujours extrêmement… |   6 076 |  24.87% |   3.27% |    23 |  0.38% |             — |      — |   0.00% |
-| **Total** | | **185 593** | **29.46%** | **100%** | **1056** | **0.57%** | **214** | **0.12%** | **20.27%** |
+| **Total** | | | **185 593** | **29.46%** | **100%** | **1056** | **0.57%** | **214** | **0.12%** | **20.27%** |
 
 # Statistiques par acte (avant découpage)
 
