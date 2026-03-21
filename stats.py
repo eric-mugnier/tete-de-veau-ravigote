@@ -257,7 +257,7 @@ def _md_table(rows: list, page_ranges: list | None = None) -> str:
         "# Statistiques par acte (avant découpage)\n",
         "Mots = texte original uniquement (hors contenu des notes `\\nf{}`).",
         "% notes et % illustrations = rapport au nombre de mots.\n",
-        f"| Acte |{page_cols} Mots | % livre | Notes | % mots | Illustrations | % mots | % dial. |",
+        f"| Acte |{page_cols} Mots | %\u00a0livre | Notes | %\u00a0mots | Illustrations | %\u00a0mots | %\u00a0dial. |",
         f"|-----:|{page_sep}-----:|--------:|------:|-------:|--------------:|-------:|--------:|",
     ]
     for i, (acte_num, words, notes, illus, dial) in enumerate(rows):
@@ -298,7 +298,7 @@ def _md_table_split(rows: list, page_ranges: list | None = None) -> str:
         "# Statistiques par scène\n",
         "Mots = texte original uniquement (hors contenu des notes `\\nf{}`).",
         "% notes et % illustrations = rapport au nombre de mots.\n",
-        f"| Acte | Scène | Début |{page_cols} Mots | % livre | % dial. | Notes | % mots | Illustrations | % mots | % notes |",
+        f"| Acte | Scène | Début |{page_cols} Mots | %\u00a0livre | %\u00a0dial. | Notes | %\u00a0mots | Illustrations | %\u00a0mots | %\u00a0notes |",
         f"|-----:|------:|:------|{page_sep}-----:|--------:|--------:|------:|-------:|--------------:|-------:|--------:|",
     ]
     for i, (chap_label, acte_label, words, notes, illus, dial, debut) in enumerate(rows):

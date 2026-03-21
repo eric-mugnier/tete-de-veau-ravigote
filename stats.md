@@ -3,7 +3,7 @@
 Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 % notes et % illustrations = rapport au nombre de mots.
 
-| Acte | Scène | Début | Mots | % livre | % dial. | Notes | % mots | Illustrations | % mots | % notes |
+| Acte | Scène | Début | Mots | % livre | % dial. | Notes | % mots | Illustrations | % mots | % notes |
 |-----:|------:|:------|-----:|--------:|--------:|------:|-------:|--------------:|-------:|--------:|
 | I     | 1     | Une décharge d’un milliard de volts a… |   3 927 |   2.12% |   4.53% |    22 |  0.56% |            14 |  0.36% |  63.64% |
 | IIa   | 2     | Ça a officiellement commencé le jour où… |   8 530 |   4.60% |  20.22% |    32 |  0.38% |            14 |  0.16% |  43.75% |
@@ -33,7 +33,7 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 % notes et % illustrations = rapport au nombre de mots.
 
-| Acte | Mots | % livre | Notes | % mots | Illustrations | % mots | % dial. |
+| Acte | Mots | % livre | Notes | % mots | Illustrations | % mots | % dial. |
 |-----:|-----:|--------:|------:|-------:|--------------:|-------:|--------:|
 | I    |   3 927 |   2.12% |    22 |  0.56% |            14 |  0.36% |   4.53% |
 | II   |  17 205 |   9.27% |    85 |  0.49% |            38 |  0.22% |  12.88% |
