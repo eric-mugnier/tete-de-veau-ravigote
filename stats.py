@@ -152,11 +152,21 @@ def count_illus(text: str) -> int:
 
 
 def _parse_toc_pages(toc_path: Path) -> list[int]:
-    """Return start pages for each \\chapternumberline entry, in document order."""
+    """Return start pages for each \\chapternumberline entry (scenes), in document order."""
     if not toc_path.exists():
         return []
     pattern = re.compile(
         r'\\contentsline\s*\{chapter\}\{\\chapternumberline\s*\{\d+\}[^}]*\}\{(\d+)\}'
+    )
+    return [int(m.group(1)) for m in pattern.finditer(toc_path.read_text(encoding="utf-8"))]
+
+
+def _parse_toc_acte_pages(toc_path: Path) -> list[int]:
+    """Return start pages for each Acte~ chapter entry (actes), in document order."""
+    if not toc_path.exists():
+        return []
+    pattern = re.compile(
+        r'\\contentsline\s*\{chapter\}\{Acte~[^}]*\}\{(\d+)\}'
     )
     return [int(m.group(1)) for m in pattern.finditer(toc_path.read_text(encoding="utf-8"))]
 
@@ -373,17 +383,18 @@ def main():
     rows_orig  = compute()
     rows_split = compute_split()
 
-    pages_main   = _parse_toc_pages(TOC_MAIN)
-    pages_totale = _parse_toc_pages(TOC_TOTALE)
-    pr_orig  = _page_ranges(pages_main,   _pdf_total_pages(LOG_MAIN))   if pages_main   else None
-    pr_split = _page_ranges(pages_totale, _pdf_total_pages(LOG_TOTALE)) if pages_totale else None
+    total_pages  = _pdf_total_pages(LOG_MAIN)
+    pages_actes  = _parse_toc_acte_pages(TOC_MAIN)
+    pages_scenes = _parse_toc_pages(TOC_MAIN)
+    pr_orig  = _page_ranges(pages_actes,  total_pages) if pages_actes  else None
+    pr_split = _page_ranges(pages_scenes, total_pages) if pages_scenes else None
 
-    # Sanity check: warn if TOC chapter count doesn't match row count
+    # Sanity check: warn if TOC entry count doesn't match row count
     if pr_orig  and len(pr_orig)  != len(rows_orig):
-        print(f"  ! pages_main mismatch: {len(pr_orig)} toc entries vs {len(rows_orig)} rows")
+        print(f"  ! pages_actes mismatch: {len(pr_orig)} toc entries vs {len(rows_orig)} rows")
         pr_orig = None
     if pr_split and len(pr_split) != len(rows_split):
-        print(f"  ! pages_totale mismatch: {len(pr_split)} toc entries vs {len(rows_split)} rows")
+        print(f"  ! pages_scenes mismatch: {len(pr_split)} toc entries vs {len(rows_split)} rows")
         pr_split = None
 
     md = (_md_table_split(rows_split, pr_split) + "\n"
