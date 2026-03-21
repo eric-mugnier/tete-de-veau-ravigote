@@ -3,7 +3,7 @@
 Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 % notes = rapport au nombre de mots. % illustrations = rapport au nombre de mots hors dialogues.
 
-| Acte | Scène | Début | p. | pp. | Mots | % livre | % dial. | Notes | % mots | Illustrations | % mots h.d. | % notes |
+| Acte | Scène | Début | p. | pp. | Mots | % livre | % dial. | Notes | % mots | Illustrations | % mots h.d. | % notes |
 |-----:|------:|:------|---:|----:|-----:|--------:|--------:|------:|-------:|--------------:|-------:|--------:|
 | I     | 1     | Une décharge d’un milliard de volts a… |   7 |  14 |   3 927 |   2.12% |   4.53% |    22 |  0.56% |            14 |  0.37% |  63.64% |
 | IIa   | 2     | Ça a officiellement commencé le jour où… |  21 |  28 |   8 530 |   4.60% |  20.22% |    32 |  0.38% |            14 |  0.21% |  43.75% |

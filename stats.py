@@ -298,7 +298,7 @@ def _md_table_split(rows: list, page_ranges: list | None = None) -> str:
         "# Statistiques par scène\n",
         "Mots = texte original uniquement (hors contenu des notes `\\nf{}`).",
         "% notes = rapport au nombre de mots. % illustrations = rapport au nombre de mots hors dialogues.\n",
-        f"| Acte | Scène | Début |{page_cols} Mots | %\u00a0livre | %\u00a0dial. | Notes | %\u00a0mots | Illustrations | %\u00a0mots h.d. | %\u00a0notes |",
+        f"| Acte | Scène | Début |{page_cols} Mots | %\u00a0livre | %\u00a0dial. | Notes | %\u00a0mots | Illustrations | %\u00a0mots\u00a0h.d. | %\u00a0notes |",
         f"|-----:|------:|:------|{page_sep}-----:|--------:|--------:|------:|-------:|--------------:|-------:|--------:|",
     ]
     for i, (chap_label, acte_label, words, notes, illus, dial, debut) in enumerate(rows):
