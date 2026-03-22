@@ -102,13 +102,14 @@ def load_names(path: Path) -> set[str]:
 
 def build_pattern(max_words: int) -> re.Pattern:
     # First word must start uppercase; subsequent words: any case.
-    title = rf'{FIRST_WORD}(?:[ \t]+{WORD}){{1,{max_words - 1}}}'
+    title = rf'{FIRST_WORD}(?:[ \t]+{WORD}){{0,{max_words - 1}}}'
     return re.compile(rf'(?P<title>{title})\s*\\nf\{{', re.UNICODE)
 
 
 # ── scan ──────────────────────────────────────────────────────────────────────
 
-def scan(path: Path, pat: re.Pattern, names: set[str]) -> list[tuple[int, str, str]]:
+def scan(path: Path, pat: re.Pattern, names: set[str],
+         names_lower: set[str]) -> list[tuple[int, str, str]]:
     text = path.read_text(encoding='utf-8')
     spans = nf_ranges(text)
     source_lines = text.splitlines()
@@ -120,7 +121,8 @@ def scan(path: Path, pat: re.Pattern, names: set[str]) -> list[tuple[int, str, s
             continue
         if is_person_name(text, m.end() - len('\\nf{')):
             continue
-        if m.group('title') in names:
+        title_lower = m.group('title').lower()
+        if any(name in title_lower or title_lower in name for name in names_lower):
             continue
         lineno = text[:m.start()].count('\n') + 1
         hits.append((lineno, m.group('title'), source_lines[lineno - 1].strip()))
@@ -148,7 +150,10 @@ def main() -> None:
     )
     args = ap.parse_args()
 
+    if args.words < 1:
+        ap.error('--words must be at least 1')
     names: set[str] = load_names(args.names) if args.names else set()
+    names_lower: set[str] = {n.lower() for n in names}
     pat = build_pattern(args.words)
 
     paths: list[Path] = []
@@ -157,7 +162,7 @@ def main() -> None:
 
     total = 0
     for path in paths:
-        hits = scan(path, pat, names)
+        hits = scan(path, pat, names, names_lower)
         if hits:
             print(f'\n── {path}')
             for lineno, title, line in hits:
