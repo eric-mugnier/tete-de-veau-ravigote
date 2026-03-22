@@ -36,7 +36,7 @@ if os.path.exists(diff_tex):
 print('  Done.\n')
 
 # ── Step 1: parse original ──────────────────────────────────────────────────
-with open(os.path.join(BASE, 'tete_de_veau_ravigote_original.tex'), encoding='utf-8') as f:
+with open(os.path.join(BASE, 'original/tete_de_veau_ravigote_original.tex'), encoding='utf-8') as f:
     orig_lines = f.readlines()
 
 # ALL chapter header lines (1-based) — used for boundary detection only.
