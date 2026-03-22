@@ -3,12 +3,12 @@
 \def\AVECILLUSTRATIONS{}
 \def\CHAPITRESSEPARES{}
 %%% \def\NOTESENFIN{}
-\input{preamble}
+\input{_preamble}
 
 \begin{document}
 \pagestyle{empty}
 
-\input{titre-avertissement-epigraphe.tex}
+\input{_titre-copyright.tex}
 
 % ═══ TEXTE PRINCIPAL (avec numéros de notes en exposant) ══════════════════════
 \pagestyle{gallimard}
@@ -56,12 +56,12 @@
 \vspace*{4\onelineskip}
 {\centering\normalfont\scshape\large Personnages par ordre alphabétique\par}
 \vspace{2\onelineskip}
-{\small\setlength{\parindent}{0pt}\IfFileExists{personnages_body.tex}{\input{personnages_body.tex}}{}}
+{\small\setlength{\parindent}{0pt}\IfFileExists{_personnages.tex}{\input{_personnages.tex}}{}}
 
 % ═══ TABLE DES MATIÈRES ══════════════════════════════════════════════════════
 \mytableofcontents
 
 % ═══ COLOPHON ═════════════════════════════════════════════════════════════════
-\input{colophon}
+\input{_colophon}
 
 \end{document}

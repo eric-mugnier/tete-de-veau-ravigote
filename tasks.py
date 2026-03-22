@@ -270,16 +270,16 @@ def ratiocinations(c):
 @task
 @_timed
 def pers(c):
-    """Build personnages.pdf: pandoc personnages.md → personnages_body.tex, then lualatex."""
-    c.run("pandoc personnages.md -f markdown -t latex --wrap=none -o personnages_body.tex")
+    """Build personnages.pdf: pandoc personnages.md → _personnages.tex, then lualatex."""
+    c.run("pandoc personnages.md -f markdown -t latex --wrap=none -o _personnages.tex")
     # Replace spaces (plain or Unicode NBSP) around guillemets and before
     # French double punctuation with LaTeX tie (~)
-    tex = Path("personnages_body.tex").read_text(encoding="utf-8")
+    tex = Path("_personnages.tex").read_text(encoding="utf-8")
     for sp in (" ", "\u00a0", "\u202f"):
         tex = tex.replace(f"«{sp}", "«~").replace(f"{sp}»", "~»")
         for punct in (":", ";", "!", "?"):
             tex = tex.replace(f"{sp}{punct}", f"~{punct}")
-    Path("personnages_body.tex").write_text(tex, encoding="utf-8")
+    Path("_personnages.tex").write_text(tex, encoding="utf-8")
     _lmk(c, "personnages")
 
 
