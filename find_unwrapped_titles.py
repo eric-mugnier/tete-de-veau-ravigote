@@ -8,7 +8,7 @@ and are not inside a \\nf{} block.
 Usage:
     python3 find_unwrapped_titles.py [--words N] [--names FILE] [file_or_dir ...]
     python3 find_unwrapped_titles.py --words 5 actes/*.tex
-    python3 find_unwrapped_titles.py --names person_names.txt actes/
+    python3 find_unwrapped_titles.py --names persons_or_not_titles.txt actes/
 
 Defaults: --words 4, scans current directory recursively for *.tex
 
