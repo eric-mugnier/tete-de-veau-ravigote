@@ -186,15 +186,16 @@
   {\centering\rule{0.4\textwidth}{0.4pt}\par}%
   \vspace{\onelineskip}%
 }
-% Titre de chapitre dans le bloc de notes
+% Font for scene header in notes block
+\makeatletter
 \ifdefined\NOTESENFIN
-  \newcommand{\chapnoteheader}[1]{{\normalfont\large #1}}
+  \newcommand{\scene@noteheader}[1]{{\normalfont\large #1}}
 \else
-  \newcommand{\chapnoteheader}[1]{{\normalfont\scshape #1}}
+  \newcommand{\scene@noteheader}[1]{{\normalfont\scshape #1}}
 \fi
-% Séparateur de scène : vide les notes courantes, ouvre une nouvelle scène.
-% Usage : \startnewchapter   (l'argument optionnel historique est accepté mais ignoré)
-\newcommand{\startnewchapter}[1][]{%
+% \scene : public — flush inline notes (if any) then open next scene within an act.
+%          Optional argument accepted but ignored (historical).
+\newcommand{\scene}[1][]{%
   \ifdefined\SANSSCENES\else  % no-op when actes only
   \ifdefined\AVECNOTES
     \ifdefined\NOTESENFIN\else
@@ -206,18 +207,19 @@
       \endgroup
     \fi
   \fi
-  \startscene%
+  \scene@init%
   \fi
 }
-% Notes par chapitre : remet le compteur à 0 pour que chaque acte reparte de 1
-\newcommand{\beginchapternotes}[1]{%
+% \scene@notes : reset endnote counter and add scene header to notes stream.
+\newcommand{\scene@notes}[1]{%
   \ifdefined\AVECNOTES
     \setcounter{endnote}{0}%
     \ifdefined\NOTESPARTCHAPITRE\else
-      \addtoendnotes{\protect\par\protect\medskip\protect\noindent\protect\chapnoteheader{#1}\protect\par}%
+      \addtoendnotes{\protect\par\protect\medskip\protect\noindent\protect\scene@noteheader{#1}\protect\par}%
     \fi
   \fi
 }
+\makeatother
 
 % ─── PAGE GEOMETRY (155×235 mm – Medium 1) ───────────────────────────────────
 \setstocksize{235mm}{155mm}
@@ -271,8 +273,8 @@
 }
 
 % ─── ACTE / SCENE COUNTERS ────────────────────────────────────────────────────
-\newcounter{actenum}   % incremented by \startacte
-\newcounter{scenenum}  % global, incremented by \startscene
+\newcounter{actenum}   % incremented by \acte@init
+\newcounter{scenenum}  % global, incremented by \scene@init
 % shared font for scene-opener number and notes title
 \newcommand{\scenotitlefont}{\normalfont\large}
 
@@ -298,36 +300,38 @@
 \makeatother
 \chapterstyle{gallimard}
 
-% ─── STARTSCENE / STARTACTE ───────────────────────────────────────────────────
-% Internal: open a chapter hidden from TOC, then begin chapter notes with label #1.
-\newcommand{\openchapter}[1]{%
+% ─── SCENE@INIT / ACTE@INIT / ACTE@TERM ──────────────────────────────────────
+\makeatletter
+% \scene@openLaTeXchapter : open a LaTeX chapter hidden from TOC, then init scene notes.
+\newcommand{\scene@openLaTeXchapter}[1]{%
   \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}%
   \chapter{}%
   \addtocontents{toc}{\protect\setcounter{tocdepth}{1}}%
-  \beginchapternotes{#1}%
+  \scene@notes{#1}%
 }
-\newcommand{\startscene}{%
+% \scene@init : increment scene counter, compute notes label, open LaTeX chapter.
+\newcommand{\scene@init}{%
   \ifdefined\SANSSCENES
     \ifdefined\NOTESENFIN
-      \def\chapnoteslabel{Acte~\Roman{actenum}}%
+      \def\scene@noteslabel{Acte~\Roman{actenum}}%
     \else
-      \def\chapnoteslabel{\Roman{actenum}}%
+      \def\scene@noteslabel{\Roman{actenum}}%
     \fi
   \else
     \stepcounter{scenenum}%
     \ifdefined\NOTESENFIN
-      \def\chapnoteslabel{Acte~\Roman{actenum}~·~Scène~\arabic{scenenum}}%
+      \def\scene@noteslabel{Acte~\Roman{actenum}~·~Scène~\arabic{scenenum}}%
     \else
-      \def\chapnoteslabel{\Roman{actenum}~·~\arabic{scenenum}}%
+      \def\scene@noteslabel{\Roman{actenum}~·~\arabic{scenenum}}%
     \fi
   \fi
-  \openchapter{\chapnoteslabel}%
+  \scene@openLaTeXchapter{\scene@noteslabel}%
   \ifdefined\SANSSCENES\else
     \addcontentsline{toc}{section}{Scène~\arabic{scenenum}}%
   \fi
 }
-\newcommand{\finacte}{%
-  % flush notes from last scene of this act (no-op when \NOTESENFIN or \SANSSCENES)
+% \acte@term : flush notes from last scene of this act (no-op when \NOTESENFIN or \SANSSCENES).
+\newcommand{\acte@term}{%
   \ifdefined\AVECNOTES
     \ifdefined\NOTESENFIN\else
       \ifdefined\SANSSCENES\else
@@ -341,7 +345,8 @@
     \fi
   \fi
 }
-\newcommand{\startacte}{%
+% \acte@init : print act heading page and open first scene.
+\newcommand{\acte@init}{%
   \stepcounter{actenum}%
   \cleartorecto%
   \thispagestyle{gallimard}%
@@ -350,9 +355,11 @@
   \vspace*{\fill}%
   \phantomsection\addcontentsline{toc}{chapter}{Acte~\Roman{actenum}}%
   \clearpage%
-  \startscene%
+  \scene@init%
 }
-\newcommand{\act}[1]{\startacte#1\finacte}
+% \acte : public — full act: heading page + content + flush notes.
+\newcommand{\acte}[1]{\acte@init#1\acte@term}
+\makeatother
 
 % ─── RUNNING HEADERS : verso = acte centré pc, recto = scène alignée à droite ──
 \makepagestyle{gallimard}
