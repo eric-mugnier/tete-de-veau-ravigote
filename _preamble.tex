@@ -195,10 +195,10 @@
 % Séparateur de scène : vide les notes courantes, ouvre une nouvelle scène.
 % Usage : \startnewchapter   (l'argument optionnel historique est accepté mais ignoré)
 \newcommand{\startnewchapter}[1][]{%
+  \ifdefined\SANSSCENES\else  % no-op when actes only
   \ifdefined\AVECNOTES
     \ifdefined\NOTESENFIN\else
       \cleardoublepage
-      \bookmark[page=\thepage,level=2]{Notes}%
       {\centering\scenotitlefont Notes\par}%
       \vspace{\onelineskip}%
       \begingroup\parindent=0pt
@@ -207,6 +207,7 @@
     \fi
   \fi
   \startscene%
+  \fi
 }
 % Notes par chapitre : remet le compteur à 0 pour que chaque acte reparte de 1
 \newcommand{\beginchapternotes}[1]{%
@@ -284,25 +285,60 @@
   \renewcommand{\printchaptername}{}
   \renewcommand{\chapternamenum}{}
   \renewcommand{\printchapternum}{%
-    \chapnumfont\arabic{scenenum}%
-    \markboth{\Roman{actenum}}{\arabic{scenenum}}}
-  \renewcommand{\afterchapternum}{\par\vskip 0.4\onelineskip}
+    \ifdefined\SANSSCENES
+      \markboth{\Roman{actenum}}{}%
+    \else
+      \chapnumfont\arabic{scenenum}%
+      \markboth{\Roman{actenum}}{\arabic{scenenum}}%
+    \fi}
+  \renewcommand{\afterchapternum}{%
+    \ifdefined\SANSSCENES\else\par\vskip 0.4\onelineskip\fi}
   \renewcommand{\printchaptertitle}[1]{}
 }
 \makeatother
 \chapterstyle{gallimard}
 
 % ─── STARTSCENE / STARTACTE ───────────────────────────────────────────────────
-\newcommand{\startscene}{%
-  \stepcounter{scenenum}%
+% Internal: open a chapter hidden from TOC, then begin chapter notes with label #1.
+\newcommand{\openchapter}[1]{%
   \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}%
   \chapter{}%
   \addtocontents{toc}{\protect\setcounter{tocdepth}{1}}%
-  \addcontentsline{toc}{section}{Scène~\arabic{scenenum}}%
-  \ifdefined\NOTESENFIN
-    \beginchapternotes{Acte~\Roman{actenum}~·~Scène~\arabic{scenenum}}%
+  \beginchapternotes{#1}%
+}
+\newcommand{\startscene}{%
+  \ifdefined\SANSSCENES
+    \ifdefined\NOTESENFIN
+      \def\chapnoteslabel{Acte~\Roman{actenum}}%
+    \else
+      \def\chapnoteslabel{\Roman{actenum}}%
+    \fi
   \else
-    \beginchapternotes{\Roman{actenum}~·~\arabic{scenenum}}%
+    \stepcounter{scenenum}%
+    \ifdefined\NOTESENFIN
+      \def\chapnoteslabel{Acte~\Roman{actenum}~·~Scène~\arabic{scenenum}}%
+    \else
+      \def\chapnoteslabel{\Roman{actenum}~·~\arabic{scenenum}}%
+    \fi
+  \fi
+  \openchapter{\chapnoteslabel}%
+  \ifdefined\SANSSCENES\else
+    \addcontentsline{toc}{section}{Scène~\arabic{scenenum}}%
+  \fi
+}
+\newcommand{\finacte}{%
+  % flush notes from last scene of this act (no-op when \NOTESENFIN or \SANSSCENES)
+  \ifdefined\AVECNOTES
+    \ifdefined\NOTESENFIN\else
+      \ifdefined\SANSSCENES\else
+        \cleardoublepage
+        {\centering\scenotitlefont Notes\par}%
+        \vspace{\onelineskip}%
+        \begingroup\parindent=0pt
+        \theendnotes
+        \endgroup
+      \fi
+    \fi
   \fi
 }
 \newcommand{\startacte}{%
@@ -316,6 +352,7 @@
   \clearpage%
   \startscene%
 }
+\newcommand{\act}[1]{\startacte#1\finacte}
 
 % ─── RUNNING HEADERS : verso = acte centré pc, recto = scène alignée à droite ──
 \makepagestyle{gallimard}

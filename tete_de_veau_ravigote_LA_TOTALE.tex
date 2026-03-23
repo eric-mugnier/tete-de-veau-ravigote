@@ -36,17 +36,19 @@
 %%% \end{editorialnote}
 
 % ═══ NOTES ════════════════════════════════════════════════════════════════════
-\cleardoublepage
-\phantomsection\addcontentsline{toc}{chapter}{Notes}
-\thispagestyle{empty}
-\vspace*{10\onelineskip}
-{\centering\normalfont\scshape\large Notes\par}
-\newpage
-\hbox{}\thispagestyle{empty}
-\newpage
-\pagestyle{gallimard}
-\markboth{}{}
-\theendnotes
+\ifdefined\NOTESENFIN
+  \cleardoublepage
+  \phantomsection\addcontentsline{toc}{chapter}{Notes}
+  \thispagestyle{empty}
+  \vspace*{10\onelineskip}
+  {\centering\normalfont\scshape\large Notes\par}
+  \newpage
+  \hbox{}\thispagestyle{empty}
+  \newpage
+  \pagestyle{gallimard}
+  \markboth{}{}
+  \theendnotes
+\fi
 
 % ═══ PERSONNAGES ══════════════════════════════════════════════════════════════
 \cleardoublepage
