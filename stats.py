@@ -225,11 +225,11 @@ def compute_split():
     rows = []
     for acte_num in ACTES:
         text = _load_acte(acte_num)
-        # Split line-by-line: only trigger on \startnewchapter not preceded by % on same line
+        # Split line-by-line: only trigger on \scene not preceded by % on same line
         segments = []
         current: list[str] = []
         for line in text.splitlines(keepends=True):
-            if re.match(r"\s*\\startnewchapter\b", line):
+            if re.match(r"\s*\\scene\b", line):
                 segments.append("".join(current))
                 current = []
             else:
