@@ -1,4 +1,5 @@
 \version "2.24.4"
+
 % ============================================================
 % Pierrot Lunaire – Schoenberg
 % Rezitation (Sprechstimme), opening bars
@@ -44,32 +45,28 @@ vocal = \relative c'' {
   \clef treble
   \key c \major
   \time 2/4
-  \tempo \markup { \bold "Bewegt" " (♩ ca 66–76)" }
+  \tempo \markup { \bold "Bewegt" " (♩ ca 66)" }
 
+  \dynamicUp
   \autoBeamOff
   \stemUp
   \sprechUp
 
-  % Bar 1
-  R2
-
-  % Bar 2 – voice entry, p
-  r4 r8 a!|
-  b ais! gis! a!
-
-  % Bar 3 – metric change 3/4
+  R2 |
+  r4 r8 a!\p |
+  b ais! gis! \tweak shorten-pair #'( 0 . -6 ) \< a! |
   \time 3/4
-  c! b! gis! r r a! |
-
-  % Bar 4 – back to 2/4
+  c! \! \tweak shorten-pair #'( 1 . 2 ) \> b! gis!\! r r a! \tweak shorten-pair #'( 0 . -12 ) \< |
   \time 2/4
   g! ees! d!8. cis!16 |
   \time 3/4
-  f!4. des!8 c! a! 
-  
+  f!4. \! des!8 \tweak shorten-pair #'( -3 . 1 ) \> c! a! \! |
+  \time 2/4
+  r4
   \bar ""
+
   \stopStaff
-  \once \override TextScript.extra-offset = #'(2 . -3)
+  \once \override TextScript.extra-offset = #'(0 . -3)
   s2^\markup { \italic "etc." }
 }
 
@@ -90,6 +87,10 @@ vocalLyrics = \lyricmode {
   >>
   \layout { 
     indent = 0
+    \context {
+      \Score
+      \omit BarNumber
+    }    
   }
   \midi { \tempo 4 = 70 }
 }
