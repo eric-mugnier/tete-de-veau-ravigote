@@ -14,7 +14,7 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 | IV.7 | Depuis que mon ami Grégoire Lussier, ancien… |   8 348 |   4.50% |  31.46% |    43 |  0.52% |            17 |  0.30% |  39.53% |
 | V.8 | Croyez-le ou non, mais Aymeric Jégou et… |   8 916 |   4.80% |  56.67% |    44 |  0.49% |            26 |  0.67% |  59.09% |
 | V.9 | Ce soir-là, alors même que les combats… |  10 761 |   5.80% |  31.44% |    56 |  0.52% |            15 |  0.20% |  26.79% |
-| VI.10 | J’ai tout juste eu le temps de… |  10 080 |   5.43% |  35.38% |    92 |  0.91% |            31 |  0.48% |  33.70% |
+| VI.10 | J’ai tout juste eu le temps de… |  10 082 |   5.43% |  35.37% |    92 |  0.91% |            31 |  0.48% |  33.70% |
 | VI.11 | On en était là de nos aventures… |  10 541 |   5.68% |  19.50% |    85 |  0.81% |             2 |  0.02% |   2.35% |
 | VI.12 | La voiture s’est approchée, au ralenti, et… |   8 989 |   4.84% |  91.24% |    16 |  0.18% |             4 |  0.51% |  25.00% |
 | VII.13 | Et on y est allé, figurez-vous, car… |   2 840 |   1.53% |  56.20% |    13 |  0.46% |             9 |  0.72% |  69.23% |
@@ -24,28 +24,28 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 | IX.17 | Greg, que je n’avais pas entendu arriver… |  10 467 |   5.64% |   3.09% |    53 |  0.51% |             — |      — |   0.00% |
 | IX.18 | Comme beaucoup d’urgentistes souffrant de handicap visuel… |   7 373 |   3.97% |  48.11% |    10 |  0.14% |             — |      — |   0.00% |
 | IX.19 | Il est toujours extrêmement douloureux de mettre… |   6 073 |   3.27% |  24.88% |    23 |  0.38% |             — |      — |   0.00% |
-| **Total** | | **185 590** | **100%** | **29.48%** | **1057** | **0.57%** | **228** | **0.17%** | **21.57%** |
+| **Total** | | **185 592** | **100%** | **29.48%** | **1057** | **0.57%** | **228** | **0.17%** | **21.57%** |
 
 # Statistiques par acte (avant découpage)
 
 Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 % notes et % illustrations = rapport au nombre de mots.
 
-| Acte | p. | pp. | Mots | % livre | Notes | % mots | Illustrations | % mots | % dial. |
-|-----:|---:|----:|-----:|--------:|------:|-------:|--------------:|-------:|--------:|
-| I    |   3 |  14 |   3 927 |   2.12% |    22 |  0.56% |            14 |  0.36% |   4.53% |
-| II   |  17 |  56 |  17 206 |   9.27% |    85 |  0.49% |            38 |  0.22% |  12.88% |
-| III  |  73 |  68 |  19 474 |  10.49% |   110 |  0.56% |            37 |  0.19% |  34.97% |
-| IV   | 141 |  64 |  19 607 |  10.56% |    88 |  0.45% |            39 |  0.20% |  29.76% |
-| V    | 205 |  66 |  19 677 |  10.60% |   100 |  0.51% |            41 |  0.21% |  42.87% |
-| VI   | 271 | 106 |  29 610 |  15.95% |   193 |  0.65% |            37 |  0.12% |  46.68% |
-| VII  | 377 |  14 |   2 840 |   1.53% |    13 |  0.46% |             9 |  0.32% |  56.20% |
-| VIII | 391 |  54 |  16 323 |   8.80% |   109 |  0.67% |            13 |  0.08% |  21.72% |
-| IX   | 445 | 182 |  56 926 |  30.67% |   337 |  0.59% |             — |      — |  21.54% |
-| **Total** |  |  | **185 590** | **100%** | **1057** | **0.57%** | **228** | **0.12%** | **29.48%** |
+| Acte | Mots | % livre | Notes | % mots | Illustrations | % mots | % dial. |
+|-----:|-----:|--------:|------:|-------:|--------------:|-------:|--------:|
+| I    |   3 927 |   2.12% |    22 |  0.56% |            14 |  0.36% |   4.53% |
+| II   |  17 206 |   9.27% |    85 |  0.49% |            38 |  0.22% |  12.88% |
+| III  |  19 474 |  10.49% |   110 |  0.56% |            37 |  0.19% |  34.97% |
+| IV   |  19 607 |  10.56% |    88 |  0.45% |            39 |  0.20% |  29.76% |
+| V    |  19 677 |  10.60% |   100 |  0.51% |            41 |  0.21% |  42.87% |
+| VI   |  29 612 |  15.96% |   193 |  0.65% |            37 |  0.12% |  46.68% |
+| VII  |   2 840 |   1.53% |    13 |  0.46% |             9 |  0.32% |  56.20% |
+| VIII |  16 323 |   8.80% |   109 |  0.67% |            13 |  0.08% |  21.72% |
+| IX   |  56 926 |  30.67% |   337 |  0.59% |             — |      — |  21.54% |
+| **Total** | **185 592** | **100%** | **1057** | **0.57%** | **228** | **0.12%** | **29.48%** |
 
 ## Estimation illustrations restantes
 
 Ratio sur les **8/9** actes illustrés : **1 illustration tous les 564 mots**.  
-Extrapolé à l'ensemble (185 590 mots) : **329** illustrations estimées.  
+Extrapolé à l'ensemble (185 592 mots) : **329** illustrations estimées.  
 Actuellement **228** — il en manque **101** — **69.3 %** réalisé.
