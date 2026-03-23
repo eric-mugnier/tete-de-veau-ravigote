@@ -221,7 +221,7 @@ def compute():
 
 
 def compute_split():
-    """One row per segment delimited by \\startnewchapter (split chapter structure)."""
+    """One row per segment delimited by \\scene (split scene structure)."""
     rows = []
     for acte_num in ACTES:
         text = _load_acte(acte_num)
