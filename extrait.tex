@@ -1,5 +1,5 @@
 %%% Extrait : actes publiés à ce jour
-%%% Compiler : inv extrait
+%%% Compiler : inv extrait [actes]   ex: inv extrait 06   ou   inv extrait 05,06
 
 \documentclass[12pt,twoside,openright]{memoir}
 \def\AVECNOTES{}\def\AVECILLUSTRATIONS{}\def\NOTESPARTCHAPITRE{}\def\CHAPITRESSEPARES{}
@@ -13,8 +13,11 @@
 % ═══ MAIN TEXT ════════════════════════════════════════════════════════════════
 \pagestyle{gallimard}
 
-\input{tete_de_veau_ravigote_content.tex}
-
+\acte{
+  \input{actes/acte_06_1.tex}
+  \input{actes/acte_06_2.tex}
+}
+% ← extrait content
 
 % ═══ TABLE DES MATIÈRES ══════════════════════════════════════════════════════
 \mytableofcontents

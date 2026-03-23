@@ -24,7 +24,7 @@ import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 from matplotlib.patches import Patch
 
-PDF_PATH = sys.argv[1] if len(sys.argv) > 1 else 'build/extrait_actes.pdf'
+PDF_PATH = sys.argv[1] if len(sys.argv) > 1 else 'build/extrait.pdf'
 
 # ── 1. Read bookmarks from PDF ────────────────────────────────────────────────
 

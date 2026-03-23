@@ -71,7 +71,7 @@ def _lmk(c, *stems):
 
 _OUTPUT_PDFS = [
     f"{BASE}.pdf",
-    "extrait_actes.pdf",
+    "extrait.pdf",
     f"{BASE}_annote.pdf",
     f"{BASE}_notes.pdf",
     f"{BASE}_LA_TOTALE.pdf",
@@ -107,9 +107,10 @@ def test(c, acte):
     raw = [s if s.startswith("acte_") else f"acte_{s}" for s in acte.split(",")]
     stems = [f"acte_{s}" for token in raw
              for s in _ACTE_SPLITS.get(token.removeprefix("acte_"), [token.removeprefix("acte_")])]
-    inputs = "\n".join(r"\input{actes/" + s + r".tex}" for s in stems)
+    indented = "\n".join("  " + r"\input{actes/" + s + r".tex}" for s in stems)
+    new_block = r"\acte{" + "\n" + indented + "\n}"
     tex = Path("test_illus.tex").read_text(encoding="utf-8")
-    tex = re.sub(r"(\\input\{actes/[^}]+\}\s*)+", lambda _: inputs + "\n", tex)
+    tex = re.sub(r"\\acte\{.*?\n\}", lambda _: new_block, tex, flags=re.DOTALL)
     Path("test_illus.tex").write_text(tex, encoding="utf-8")
     BUILD.mkdir(exist_ok=True)
     c.run(
@@ -143,12 +144,31 @@ def gitinfo(c):
     (BUILD / f"{BASE}.gitinfo").write_text(result.stdout.strip())
 
 
-@task(pre=[gitinfo])
+@task(pre=[gitinfo], positional=["acte"], optional=["acte"],
+      help={"acte": "Acte(s) to build, e.g. 06 or 05,06. Default: all."})
 @_timed
-def extrait(c):
-    """Build extrait_actes.pdf (actes publiés, avec notes et illustrations)."""
+def extrait(c, acte=None):
+    """Build extrait.pdf (with notes and illustrations, full or subset of acts)."""
     _svg_to_pdf(c)
-    _lmk(c, "extrait_actes")
+    tex_path = Path("extrait.tex")
+    tex = tex_path.read_text(encoding="utf-8")
+    if acte:
+        nums = [s.strip().zfill(2) for s in acte.split(",")]
+        blocks = []
+        for num in nums:
+            stems = _ACTE_SPLITS.get(num, [num])
+            indented = "\n  ".join(r"\input{actes/acte_" + s + r".tex}" for s in stems)
+            blocks.append(r"\acte{" + "\n  " + indented + "\n}")
+        new_content = "\n".join(blocks)
+    else:
+        new_content = r"\input{tete_de_veau_ravigote_content.tex}"
+    tex = re.sub(
+        r"(\\pagestyle\{gallimard\}\n\n).*?\n(% ← extrait content)",
+        lambda m: m.group(1) + new_content + "\n" + m.group(2),
+        tex, flags=re.DOTALL,
+    )
+    tex_path.write_text(tex, encoding="utf-8")
+    _lmk(c, "extrait")
     _ls_outputs()
 
 
@@ -361,7 +381,7 @@ _AUX_EXTS = {".aux", ".log", ".out", ".toc", ".ent", ".fls", ".fdb_latexmk", ".p
 def clean(c):
     """Remove aux files from build/ and root; keep PDFs and IDE body files."""
     # Root-level stray aux/pdf files for all known tex stems
-    for stem in [BASE, "extrait_actes", "extrait_4actes"] + [
+    for stem in [BASE, "extrait", "extrait_actes", "extrait_4actes"] + [
         p.stem for p in ROOT.glob("acte_*_standalone.tex")
     ]:
         for ext in _AUX_EXTS:
