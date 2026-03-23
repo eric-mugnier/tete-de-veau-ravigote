@@ -1,0 +1,95 @@
+\version "2.24.4"
+% ============================================================
+% Pierrot Lunaire – Schoenberg
+% Rezitation (Sprechstimme), opening bars
+% ============================================================
+%%% \header {
+%%%   title = "Pierrot Lunaire"
+%%%   subtitle = "I. Teil."
+%%%   subsubtitle = "1. Mondestrunken."
+%%%   composer = "Arnold Schoenberg"
+%%%   opus = "Op. 21"
+%%% }
+
+sprechUp = {
+  \override Voice.Stem.stencil = #(lambda (grob)
+    (let ((stem (ly:stem::print grob)))
+      (if (ly:stencil? stem)
+          (ly:stencil-combine-at-edge
+            stem Y UP
+            (ly:text-interface::print grob) -2.4)
+          stem)))
+  \override Voice.Stem.text = \markup {
+    \hspace #-0.44 \teeny \musicglyph #"noteheads.s2cross" }
+}
+
+sprechDown = {
+  \override Voice.Stem.stencil = #(lambda (grob)
+    (let ((stem (ly:stem::print grob)))
+      (if (ly:stencil? stem)
+          (ly:stencil-combine-at-edge
+            stem Y DOWN
+            (ly:text-interface::print grob) -3)
+          stem)))
+  \override Voice.Stem.text = \markup {
+    \hspace #-1.075 \teeny \musicglyph #"noteheads.s2cross" }
+}
+
+sprechOff = {
+  \revert Voice.Stem.stencil
+  \revert Voice.Stem.text
+}
+
+vocal = \relative c'' {
+  \clef treble
+  \key c \major
+  \time 2/4
+  \tempo \markup { \bold "Bewegt" " (♩ ca 66–76)" }
+
+  \autoBeamOff
+  \stemUp
+  \sprechUp
+
+  % Bar 1
+  R2
+
+  % Bar 2 – voice entry, p
+  r4 r8 a!|
+  b ais! gis! a!
+
+  % Bar 3 – metric change 3/4
+  \time 3/4
+  c! b! gis! r r a! |
+
+  % Bar 4 – back to 2/4
+  \time 2/4
+  g! ees! d!8. cis!16 |
+  \time 3/4
+  f!4. des!8 c! a! 
+  
+  \bar ""
+  \stopStaff
+  \once \override TextScript.extra-offset = #'(2 . -3)
+  s2^\markup { \italic "etc." }
+}
+
+vocalLyrics = \lyricmode {
+  Den Wein, den man mit Au -- gen trinkt, gießt nachts der Mond in Wog -- gen nie -- der
+}
+
+\score {
+  <<
+    \new Staff 
+%%%     \with {
+%%%       instrumentName = \markup { \italic "Rezitation." }
+%%%     }
+    {
+      \new Voice = "voc" \vocal
+    }
+    \new Lyrics \lyricsto "voc" \vocalLyrics
+  >>
+  \layout { 
+    indent = 0
+  }
+  \midi { \tempo 4 = 70 }
+}
