@@ -2,86 +2,18 @@
 % tete_de_veau_ravigote_notes.tex
 % Notes seules (notes finales), sans le contenu du roman.
 %
-% Généré par : build_all.sh notes
-%   1. pdflatex "\def\AVECNOTES{}\input{tete_de_veau_ravigote}"  (×2 → .ent)
-%   2. latexmk -pdf tete_de_veau_ravigote-notes.tex  → tete_de_veau_ravigote-notes.pdf
-%
-\documentclass[12pt]{article}
+\documentclass[12pt,twoside,openright]{memoir}
 
-\usepackage{fontspec}
-\setmainfont{EB Garamond}
-\usepackage[french]{babel}
-\usepackage{microtype}
-\usepackage{endnotes}
-\usepackage{graphicx}
-\usepackage{xcolor}
-\usepackage{tikz}
-\usepackage{catchfile}
-\usepackage[paperwidth=155mm,paperheight=235mm,left=23mm,right=18mm,top=25mm,bottom=28mm]{geometry}
-\input{version.tex}
-\CatchFileDef{\gitcommit}{tete_de_veau_ravigote.gitinfo}{\endlinechar=-1}
+\input{_preamble}
 
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{4pt}
-
-% ─── Polices spéciales ────────────────────────────────────────────────────────
-\newfontfamily{\arabicfont}{Geeza Pro}[Script=Arabic]
-\newcommand{\arab}[1]{{\arabicfont\textdir TRT #1}}
-\newfontfamily{\cjkfont}{Hiragino Mincho ProN}
-\newcommand{\cjk}[1]{{\cjkfont #1}}
-
-% ─── Macros présentes dans le .ent ────────────────────────────────────────────
-
-% Titre de section de notes (acte N)
-\newcommand{\chapnoteheader}[1]{{\normalfont\scshape #1}}
-
-% Source Wikipedia en fin de note
-\newcommand{\source}[1]{\newline\textit{Source~:}~{\upshape\def\_{\textunderscore\allowbreak}\def\%{\char"25\relax\allowbreak}#1}}
-% Image seule dans une note
-\newcommand{\nfimg}[2]{\newline\includegraphics[width=#1\linewidth]{#2}}
-% Image côte à côte avec le texte
-\newcommand{\nfimgblock}[4]{%
-  \begin{minipage}[t]{0.45\linewidth}\small#1\end{minipage}%
-  \hfill%
-  \begin{minipage}[t]{#2\linewidth}\includegraphics[width=\linewidth]{#3}\end{minipage}%
-  \source{#4}}
-
-% ─── Format des notes : identique au roman ────────────────────────────────────
-\renewcommand{\notesname}{}
-\renewcommand{\enotesize}{\small}
-\makeatletter
-\renewcommand\enoteformat{%
-  \rightskip\z@ \leftskip\z@ \parindent=0pt
-  \leavevmode\theenmark.\enspace}
-\makeatother
-
-% ─── Document ─────────────────────────────────────────────────────────────────
 \begin{document}
-\pagestyle{plain}
+\pagestyle{empty}
 
-% ═══ PAGE DE TITRE ════════════════════════════════════════════════════════════
-\thispagestyle{empty}
-\begin{center}
-\vspace*{48pt}
-{\scshape\large éric mugnier}
-
-\vspace{64pt}
-{\scshape\huge tête de veau ravigote}
-
-\vspace{96pt}
-{\itshape notes}
-\end{center}
-
-% Avancer à la première page impaire après le titre
-\newpage
-\makeatletter
-\ifodd\c@page\else
-  \hbox{}\thispagestyle{empty}\newpage
-\fi
-\makeatother
+\input{_titre-copyright.tex}
 
 % ═══ NOTES ════════════════════════════════════════════════════════════════════
-% \theendnotes lit \jobname.ent — on masque \jobname pour pointer vers le .ent du roman
+\cleardoublepage
+\pagestyle{gallimard}
 \markboth{}{}
 \begingroup
   \def\jobname{tete_de_veau_ravigote}%
@@ -89,6 +21,6 @@
 \endgroup
 
 % ═══ COLOPHON ═════════════════════════════════════════════════════════════════
-\input{_}
+\input{_colophon}
 
 \end{document}
