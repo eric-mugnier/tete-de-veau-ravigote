@@ -58,9 +58,9 @@
 \newcommand{\bwimage}[2][]{%
   \begin{tikzpicture}
     \node[inner sep=0, outer sep=0pt, fill=white] (img) {\includegraphics[#1]{#2}};
-    \begin{scope}[blend mode=saturation]
-      \fill[black] (img.south west) rectangle (img.north east);
-    \end{scope}
+    %%% begin{scope}[blend mode=saturation]
+    %%%  \fill[black] (img.south west) rectangle (img.north east);
+    %%% end{scope}
   \end{tikzpicture}%
 }
 
