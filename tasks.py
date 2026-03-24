@@ -144,8 +144,7 @@ def gitinfo(c):
     (BUILD / f"{BASE}.gitinfo").write_text(result.stdout.strip())
 
 
-@task(pre=[gitinfo], positional=["acte"], optional=["acte"],
-      help={"acte": "Acte(s) to build, e.g. 06 or 05,06. Default: all."})
+@task(pre=[gitinfo], help={"acte": "Acte(s) to build, e.g. 06 or 05,06. Default: all."})
 @_timed
 def extrait(c, acte=None):
     """Build extrait.pdf (with notes and illustrations, full or subset of acts)."""
