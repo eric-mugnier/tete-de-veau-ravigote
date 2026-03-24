@@ -334,9 +334,11 @@ def _illus_forecast(rows_orig) -> str:
 
     ratio = sum(i for _, i in with_illus) / sum(w for w, _ in with_illus)
 
+    words_per_illus = -(-round(1/ratio) // 20) * 20   # ceil to nearest 20
+
     total_words = sum(r[1] for r in counted)
     total_illus = sum(r[3] for r in counted)
-    estimated   = round(ratio * total_words)
+    estimated   = round(total_words / words_per_illus)
     remaining   = max(0, estimated - total_illus)
     pct_done    = total_illus / estimated * 100 if estimated else 0
 
@@ -346,7 +348,7 @@ def _illus_forecast(rows_orig) -> str:
     return (
         f"\n## Estimation illustrations restantes\n\n"
         f"Ratio sur les **{n_done}/{n_total}** actes illustrés : "
-        f"**1 illustration tous les {round(1/ratio):.0f} mots**.  \n"
+        f"**1 illustration tous les {words_per_illus} mots**.  \n"
         f"Extrapolé à l'ensemble ({_fmt(total_words)} mots) : "
         f"**{estimated}** illustrations estimées.  \n"
         f"Actuellement **{total_illus}** — "
