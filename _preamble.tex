@@ -72,7 +72,6 @@
 \ifdefined\AVECILLUSTRATIONS
   \newcommand{\iconographieimg}[3][0.75]{%
     \afterpage{%
-      \clearpage
       \thispagestyle{gallimard}%
       \vspace*{\fill}%
       \begin{center}%
@@ -80,7 +79,7 @@
         {\small\itshape #3}%
       \end{center}%
       \vspace*{\fill}%
-      \clearpage
+      \newpage
     }%
   }
   \newcommand{\iconographietex}[1]{%

@@ -40,7 +40,8 @@
     "fr": [
       "FRENCH_WHITESPACE",
       "UPPERCASE_SENTENCE_START",
-      "MULTIPLICATION_SIGN"
+      "MULTIPLICATION_SIGN",
+      "MORFOLOGIK_RULE_FR_FR"
     ]
   },
 
@@ -217,5 +218,8 @@
     }
   ],
   "latex-workshop.latex.autoBuild.run": "never",
-  "latex-workshop.formatting.latex": "latexindent"
+  "latex-workshop.formatting.latex": "latexindent",
+
+  // ─── Code Spell Checker — désactivé pour LaTeX et texte brut ─────────────
+  "cSpell.enableFiletypes": ["!latex", "!plaintext"]
 }
