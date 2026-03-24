@@ -20,11 +20,11 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 | VII.13 | Et on y est allé, figurez-vous, car… |   2 849 |   1.53% |  56.20% |    13 |  0.46% |             9 |  0.72% |  69.23% |
 | VIII.14 | Trois quarts d’heure plus tard, après avoir… |   9 641 |   5.19% |   0.00% |    55 |  0.57% |            13 |  0.13% |  23.64% |
 | VIII.15 | Les chaussures à semelle de cuir sont… |   6 682 |   3.60% |  53.05% |    54 |  0.81% |             — |      — |   0.00% |
-| IX.16 | Cette nuit-là, j’ai fait des rêves étranges… |  33 013 |  17.78% |  20.85% |   251 |  0.76% |             — |      — |   0.00% |
+| IX.16 | Cette nuit-là, j’ai fait des rêves étranges… |  33 031 |  17.78% |  20.84% |   251 |  0.76% |             1 |  0.00% |   0.40% |
 | IX.17 | Greg, que je n’avais pas entendu arriver… |  10 467 |   5.64% |   3.09% |    53 |  0.51% |             — |      — |   0.00% |
 | IX.18 | Comme beaucoup d’urgentistes souffrant de handicap visuel… |   7 373 |   3.97% |  48.11% |    10 |  0.14% |             — |      — |   0.00% |
 | IX.19 | Il est toujours extrêmement douloureux de mettre… |   6 073 |   3.27% |  24.88% |    23 |  0.38% |             — |      — |   0.00% |
-| **Total** | | **185 712** | **100%** | **29.46%** | **1062** | **0.57%** | **250** | **0.19%** | **23.54%** |
+| **Total** | | **185 730** | **100%** | **29.46%** | **1062** | **0.57%** | **251** | **0.19%** | **23.63%** |
 
 # Statistiques par acte (avant découpage)
 
@@ -41,11 +41,12 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 | VI   |  29 689 |  15.99% |   198 |  0.67% |            58 |  0.20% |  46.58% |
 | VII  |   2 849 |   1.53% |    13 |  0.46% |             9 |  0.32% |  56.20% |
 | VIII |  16 323 |   8.79% |   109 |  0.67% |            13 |  0.08% |  21.72% |
-| IX   |  56 926 |  30.65% |   337 |  0.59% |             — |      — |  21.54% |
-| **Total** | **185 712** | **100%** | **1062** | **0.57%** | **250** | **0.13%** | **29.46%** |
+| IX   |  56 944 |  30.66% |   337 |  0.59% |             1 |  0.00% |  21.54% |
+| **Total** | **185 730** | **100%** | **1062** | **0.57%** | **251** | **0.14%** | **29.46%** |
 
 ## Estimation illustrations restantes
 
-Ratio sur les **8/9** actes illustrés : **1 illustration tous les 520 mots**.  
-Extrapolé à l'ensemble (185 712 mots) : **357** illustrations estimées.  
-Actuellement **250** — il en manque **107** — **70.0 %** réalisé.
+Cible : **1 illustration tous les 550 mots** (185 730 mots → **338** illustrations).  
+Actuellement **251** — il en manque **87** — **74.3 %** réalisé.
+
+Sous-illustrées (< 0.5× la cible) : III.5 (6/15.3), VI.12 (5/16.4), VIII.15 (0/12.1), IX.16 (1/60.1), IX.17 (0/19.0), IX.18 (0/13.4), IX.19 (0/11.0)

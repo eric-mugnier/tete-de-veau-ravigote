@@ -6,6 +6,7 @@ Run standalone:  python3 stats.py
 Or via invoke:   inv stats
 """
 
+import argparse
 import re
 from pathlib import Path
 
@@ -13,6 +14,8 @@ ROOT      = Path(__file__).parent
 ACTES_DIR = ROOT / "actes"
 BUILD     = ROOT / "build"
 OUT_FILE  = ROOT / "stats.md"
+
+ILLUS_TARGET = 600   # target: 1 illustration every N words (overridable via --target)
 
 TOC_MAIN   = BUILD / "tete_de_veau_ravigote.toc"
 TOC_TOTALE = BUILD / "tete_de_veau_ravigote_LA_TOTALE.toc"
@@ -223,6 +226,7 @@ def compute():
 def compute_split():
     """One row per segment delimited by \\scene (split scene structure)."""
     rows = []
+    scene_counter = 0  # global, never resets between acts
     for acte_num in ACTES:
         text = _load_acte(acte_num)
         # Split line-by-line: only trigger on \scene not preceded by % on same line
@@ -237,7 +241,8 @@ def compute_split():
         segments.append("".join(current))
         acte_label = ROMAN[acte_num]
         for i, seg in enumerate(segments):
-            chap_label = acte_label if len(segments) == 1 else acte_label + chr(ord('a') + i)
+            scene_counter += 1
+            chap_label = f"{acte_label}.{scene_counter}"
             rows.append((chap_label, acte_label,
                          count_words(seg), count_notes(seg), count_illus(seg),
                          count_dialogue_words(seg), first_words(seg)))
@@ -312,7 +317,7 @@ def _md_table_split(rows: list, page_ranges: list | None = None) -> str:
         else:
             page_part = ""
         lines.append(
-            f"| {acte_label}.{i + 1} | {debut} |{page_part} {_fmt(words):>7} | {_pct(words, total_words):>7} | {_pct(dial, words):>7} "
+            f"| {chap_label} | {debut} |{page_part} {_fmt(words):>7} | {_pct(words, total_words):>7} | {_pct(dial, words):>7} "
             f"| {notes:>5} | {_pct(notes, words):>6} | {illus_str:>13} | {illus_pct:>6} | {_pct(illus, notes):>7} |"
         )
     total_dial = sum(r[5] for r in counted)
@@ -325,36 +330,42 @@ def _md_table_split(rows: list, page_ranges: list | None = None) -> str:
     return "\n".join(lines) + "\n"
 
 
-def _illus_forecast(rows_orig) -> str:
-    """Estimate remaining illustration work based on completed actes."""
-    counted = rows_orig
-    with_illus = [(words, illus) for _, words, _, illus, _ in counted if illus > 0]
-    if not with_illus:
+def _illus_forecast(rows_split) -> str:
+    """Estimate remaining illustration work against a fixed target density."""
+    counted = rows_split
+    if not counted:
         return ""
 
-    ratio = sum(i for _, i in with_illus) / sum(w for w, _ in with_illus)
-
-    words_per_illus = -(-round(1/ratio) // 20) * 20   # ceil to nearest 20
-
-    total_words = sum(r[1] for r in counted)
-    total_illus = sum(r[3] for r in counted)
-    estimated   = round(total_words / words_per_illus)
+    total_words = sum(r[2] for r in counted)
+    total_illus = sum(r[4] for r in counted)
+    estimated   = round(total_words / ILLUS_TARGET)
     remaining   = max(0, estimated - total_illus)
     pct_done    = total_illus / estimated * 100 if estimated else 0
 
-    n_done  = len(with_illus)
-    n_total = len(counted)
+    # Outlier scenes: actual vs expected illustrations at target density
+    over, under = [], []
+    for chap, _, words, _, illus, _, _ in counted:
+        if words < ILLUS_TARGET / 2:   # too short to reliably flag
+            continue
+        expected = words / ILLUS_TARGET
+        ratio    = illus / expected
+        if ratio > 2.0:
+            over.append(f"{chap} ({illus}/{expected:.1f})")
+        elif ratio < 0.5:
+            under.append(f"{chap} ({illus}/{expected:.1f})")
 
-    return (
-        f"\n## Estimation illustrations restantes\n\n"
-        f"Ratio sur les **{n_done}/{n_total}** actes illustrés : "
-        f"**1 illustration tous les {words_per_illus} mots**.  \n"
-        f"Extrapolé à l'ensemble ({_fmt(total_words)} mots) : "
-        f"**{estimated}** illustrations estimées.  \n"
-        f"Actuellement **{total_illus}** — "
-        f"il en manque **{remaining}** — "
-        f"**{pct_done:.1f} %** réalisé.\n"
-    )
+    lines = [
+        f"\n## Estimation illustrations restantes\n",
+        f"Cible : **1 illustration tous les {ILLUS_TARGET} mots** "
+        f"({_fmt(total_words)} mots → **{estimated}** illustrations).  \n"
+        f"Actuellement **{total_illus}** — il en manque **{remaining}** "
+        f"— **{pct_done:.1f} %** réalisé.\n",
+    ]
+    if over:
+        lines.append(f"Sur-illustrées (> 2× la cible) : {', '.join(over)}")
+    if under:
+        lines.append(f"Sous-illustrées (< 0.5× la cible) : {', '.join(under)}")
+    return "\n".join(lines) + "\n"
 
 
 def _print_rows(rows_orig, rows_split):
@@ -375,13 +386,19 @@ def _print_rows(rows_orig, rows_split):
     if len(rows_split) != len(rows_orig):
         print()
         for chap_label, acte_label, words, notes, illus, dial, _debut in rows_split:
-            print(f"     Chap. {chap_label:<5}(acte {acte_label}) {_fmt(words):>8} mots  "
+            print(f"     Scene {chap_label:<7} {_fmt(words):>8} mots  "
                   f"{notes:>4} notes ({_pct(notes, words)})  "
                   f"{illus:>3} illus ({_pct(illus, words)})  "
                   f"dial. {_pct(dial, words)}")
 
 
 def main():
+    global ILLUS_TARGET
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--target", type=int, default=ILLUS_TARGET,
+                        help="1 illustration every N words (default: %(default)s)")
+    ILLUS_TARGET = parser.parse_args().target
+
     rows_orig  = compute()
     rows_split = compute_split()
 
@@ -401,11 +418,11 @@ def main():
 
     md = (_md_table_split(rows_split, pr_split) + "\n"
           + _md_table(rows_orig, pr_orig)
-          + _illus_forecast(rows_orig))
+          + _illus_forecast(rows_split))
     OUT_FILE.write_text(md, encoding="utf-8")
     print(f"  → {OUT_FILE.relative_to(ROOT)}")
     _print_rows(rows_orig, rows_split)
-    forecast = _illus_forecast(rows_orig)
+    forecast = _illus_forecast(rows_split)
     if forecast:
         print(forecast)
 

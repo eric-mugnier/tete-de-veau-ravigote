@@ -343,11 +343,14 @@ def total(c):
     _lmk(c, f"{BASE}_LA_TOTALE")
     _ls_outputs()
 
-@task
+@task(help={"target": "Illustration target: 1 illustration every N words (default: 600)."})
 @_timed
-def stats(c):
+def stats(c, target=None):
     """Recompute word / note / illustration counts per acte and write stats.md."""
-    c.run("python3 -u stats.py")
+    cmd = "python3 -u stats.py"
+    if target is not None:
+        cmd += f" --target {target}"
+    c.run(cmd)
 
 
 @task(pre=[build])
