@@ -30,21 +30,18 @@
 }
 
 % Ligne 2 — bandeau gris avec justification gauche/droite
-\noindent
-\colorbox{gray!5}{
-  \makebox[\dimexpr\linewidth-2\fboxsep][c]{
-    \hbox to \dimexpr\linewidth-2\fboxsep\relax{%
-      \color{gray!80}%
-      {\large \LaTeX}
-      \hfill
-      \texttt{v\,\docversion}
-      \hfill
-      \texttt{\gitcommit}
-      \raisebox{-0.8ex}{
-        \includegraphics[height=3ex]{images/github-repo-git-octocat-svgrepo-com.svg.pdf}
-      }
-    }
-  }
+\noindent\colorbox{gray!5}{%
+  \hbox to \dimexpr\textwidth-2\fboxsep\relax{%
+    \color{gray!80}%
+    {\large \LaTeX}%
+    \hfill
+    \texttt{v\,\docversion}%
+    \hfill
+    \texttt{\gitcommit}%
+    \raisebox{-0.8ex}{%
+      \includegraphics[height=3ex]{images/github-repo-git-octocat-svgrepo-com.svg.pdf}%
+    }%
+  }%
 }
 
 }
