@@ -127,19 +127,39 @@
   % Double image côte à côte :
   %   #1 = placement (bottom/top, défaut: bottom)
   %   #2 = hauteur commune (ex: 5cm)
-  %   #3 = image gauche   #5 = image droite
-  %   #4 = retrait symétrique gauche/droite (ex: 2cm, défaut: 0pt)
+  %   #3 = retrait symétrique gauche/droite (ex: 2cm, défaut: 0pt)
+  %   #4 = image gauche   #5 = image droite
   %   #6 = légende commune (optionnelle)
-  \NewDocumentCommand{\iconographiedouble}{O{b} O{5cm} m O{0pt} m O{}}{%
+  \NewDocumentCommand{\iconographiedouble}{O{b} O{5cm} O{0pt} m m O{}}{%
     \ifthenelse{\equal{#1}{b}}{\vspace*{\fill}}{\vspace*{0pt}}%
     \vspace{0.5\onelineskip}%
-    {\setlength{\leftskip}{#4}\setlength{\rightskip}{#4}%
-    \noindent\bwimage[height=#2]{#3}\hfill\bwimage[height=#2]{#5}\par}%
+    {\setlength{\leftskip}{#3}\setlength{\rightskip}{#3}%
+    \noindent\bwimage[height=#2]{#4}\hfill\bwimage[height=#2]{#5}\par}%
     \ifx&#6&%
       \vspace{0.5\onelineskip}%
     \else%
       \vspace{0.2\onelineskip}%
       {\centering\scriptsize\itshape#6\par}%
+      \vspace{0.3\onelineskip}%
+    \fi%
+    \ifthenelse{\equal{#1}{t}}{\vspace*{\fill}}{}%
+  }
+  % Triple image côte à côte :
+  %   #1 = placement (bottom/top, défaut: bottom)
+  %   #2 = hauteur commune (ex: 5cm)
+  %   #3 = retrait symétrique gauche/droite (ex: 2cm, défaut: 0pt)
+  %   #4 = image gauche   #5 = image centre   #6 = image droite
+  %   #7 = légende commune (optionnelle)
+  \NewDocumentCommand{\iconographietriple}{O{b} O{5cm} O{0pt} m m m O{}}{%
+    \ifthenelse{\equal{#1}{b}}{\vspace*{\fill}}{\vspace*{0pt}}%
+    \vspace{0.5\onelineskip}%
+    {\setlength{\leftskip}{#3}\setlength{\rightskip}{#3}%
+    \noindent\bwimage[height=#2]{#4}\hfill\bwimage[height=#2]{#5}\hfill\bwimage[height=#2]{#6}\par}%
+    \ifx&#7&%
+      \vspace{0.5\onelineskip}%
+    \else%
+      \vspace{0.2\onelineskip}%
+      {\centering\scriptsize\itshape#7\par}%
       \vspace{0.3\onelineskip}%
     \fi%
     \ifthenelse{\equal{#1}{t}}{\vspace*{\fill}}{}%
@@ -150,7 +170,8 @@
   \newcommand{\iconographietexpair}[2]{}
   \newcommand{\iconographiewrapfig}[4]{}
   \NewDocumentCommand{\iconographieinlineblock}{O{} m m}{}
-  \NewDocumentCommand{\iconographiedouble}{O{bottom} O{5cm} m O{0pt} m O{}}{}
+  \NewDocumentCommand{\iconographiedouble}{O{b} O{5cm} O{0pt} m m O{}}{}
+  \NewDocumentCommand{\iconographietriple}{O{b} O{5cm} O{0pt} m m m O{}}{}
 \fi
 
 % ─── NOTES FINALES ────────────────────────────────────────────────────────────
