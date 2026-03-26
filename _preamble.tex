@@ -14,13 +14,25 @@
 
 % ─── PACKAGES ─────────────────────────────────────────────────────────────────
 \usepackage{fontspec}
+% ────── EB Garamond
 %%% \setmainfont{EB Garamond}
-\setmainfont[
-  UprightFont    = *-Regular,
-  ItalicFont     = *-Italic,
-  BoldFont       = *-SemiBold,
-  BoldItalicFont = *-SemiBoldItalic
-]{Cormorant Garamond}
+% ────── Cormorant Garamond
+%%% \setmainfont[
+%%%   UprightFont    = *-Regular,
+%%%   ItalicFont     = *-Italic,
+%%%   BoldFont       = *-SemiBold,
+%%%   BoldItalicFont = *-SemiBoldItalic
+%%% ]{Cormorant Garamond}
+% ────── Adobe Garamond Pro
+\setmainfont{Adobe Garamond Pro}[
+  BoldFont       = AGaramondPro-Semibold,
+  ItalicFont     = AGaramondPro-Italic,
+  BoldItalicFont = AGaramondPro-SemiboldItalic,
+]
+% ────── 
+%%% \setmainfont{Papyrus}
+% ──────
+
 \newfontfamily{\arabicfont}{Geeza Pro}
 \newcommand{\arab}[1]{{\arabicfont\textdir TRT #1}}
 \newfontfamily{\cjkfont}{Hiragino Mincho ProN}

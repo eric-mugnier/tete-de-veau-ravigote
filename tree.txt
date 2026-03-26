@@ -1,0 +1,358 @@
+iconography
+├── acte_01
+│   └── scene_1
+│       ├── _0040_marquis-de-sade.jpg
+│       ├── _0050_hydre-de-lerne.jpg
+│       ├── _0060_alien.jpg
+│       ├── _0070_smaug.jpg
+│       ├── _0080_godzilla.jpg
+│       ├── _0110_manu-6.35.png
+│       ├── _0130_thomas-jefferson.jpg
+│       ├── _0140_alexander-von-humboldt.jpg
+│       ├── _0160_george-washington.jpg
+│       ├── _0170_john-adams.jpg
+│       ├── _0180_condorcet.jpg
+│       ├── _0190_d-alembert.jpg
+│       ├── _0210_sally-hemings.jpg
+│       └── _0220_don-carlos.png
+├── acte_02
+│   ├── scene_2
+│   │   ├── _0010_ordre-du-merite.png
+│   │   ├── _0020_bengale.jpg
+│   │   ├── _0025_hemingway-short-story.png
+│   │   ├── _0060_marthe-richard.jpg
+│   │   ├── _0070_l-exorciste.jpg
+│   │   ├── _0080_pazuzu_4_no_back.png
+│   │   ├── _0130_gérard-filoche.png
+│   │   ├── _0170_gange.jpg
+│   │   ├── _0180_renault-kangoo.png
+│   │   ├── _0200_abbe_pierre_1955.jpg
+│   │   ├── _0220_légion-d-honneur.jpg
+│   │   ├── _0230_croix-de-guerre.jpg
+│   │   ├── _0260_jack-l-eventreur.jpg
+│   │   └── _0320_musk-trump-poutine-bolsonaro-meloni_2.jpg
+│   └── scene_3
+│       ├── _0010_alfa-romeo-giulietta.png
+│       ├── _0030_glock-17.jpg
+│       ├── _0060_renouveau-charismatique.jpg
+│       ├── _0070_baden-powell.jpg
+│       ├── _0080_guerre-des-boers.jpg
+│       ├── _0090_ordre-de-victoria.jpg
+│       ├── _0100_louveteaux.jpg
+│       ├── _0120_yamnaha.jpg
+│       ├── _0150_jean-jacques-rousseau.jpg
+│       ├── _0160_montesquieu.jpg
+│       ├── _0170_voltaire.jpg
+│       ├── _0180_sainte-beuve.jpg
+│       ├── _0190_bernardin-de-saint-pierre.jpg
+│       ├── _0200_nicolas-louis-de-la-caille.jpg
+│       ├── _0220_sherlock-holmes.jpg
+│       ├── _0230_edmund-spenser.jpg
+│       ├── _0240_la-reine-des-fees.jpg
+│       ├── _0250_wile-e-coyote.png
+│       ├── _0260_bip-bip.png
+│       ├── _0280_super-mario-bros.jpg
+│       ├── _0320_hiram-solomon.jpg
+│       ├── _0410_triceratops.jpg
+│       ├── _0420_tyrannosaurus-rex.png
+│       ├── _0430_asteriornis.png
+│       ├── _0440_vegavis.jpg
+│       ├── _0490_ovis-shantungensis.jpg
+│       ├── _0510_la-proie-des-vautours.jpg
+│       ├── _0530_la-comtesse-de-hong-kong.jpg
+│       └── _human.png
+├── acte_03
+│   ├── scene_4
+│   │   ├── _0000_bmw-serie-7.png
+│   │   ├── _0020_five-spot-cafe.jpg
+│   │   ├── _0030_glenn-miller.jpg
+│   │   ├── _0040_benny-goodman.jpg
+│   │   ├── _0050_duke-ellington.jpg
+│   │   ├── _0190_pannonica-de-koenigswarter.jpg
+│   │   ├── _0240-jean-henri-fabre.png
+│   │   ├── _0265_jules-de-koenigswater.jpg
+│   │   ├── _0330_upton-sinclair.jpg
+│   │   ├── _0340_helicon-home-colony.jpg
+│   │   ├── _0360_gorille-bwindi.jpg
+│   │   ├── _0375_gurkha-ghost-shadow.jpg
+│   │   ├── _0420_plumes-de-marabout.jpg
+│   │   ├── _0425_tailles-chaussures.jpg
+│   │   ├── _0450_zanzibar.jpg
+│   │   ├── _0453_tomate.jpg
+│   │   ├── _0455_oeuf.jpg
+│   │   ├── _0540_aston-marting-db5.png
+│   │   ├── _jazz
+│   │   │   ├── _0080_charlie-parker.jpg
+│   │   │   ├── _0090_john-coltrane.jpg
+│   │   │   ├── _0100_shadow-wilson.jpg
+│   │   │   ├── _0110_cecil-taylor.jpg
+│   │   │   ├── _0120_johnny-griffin.jpg
+│   │   │   ├── _0130_roy-haines.jpg
+│   │   │   ├── _0140_ahmed-abdul-malik.jpg
+│   │   │   ├── _0150_don-cherry.jpg
+│   │   │   ├── _0160_ornette-coleman.jpg
+│   │   │   └── _0170_miles-davis.jpg
+│   │   └── _naziporn
+│   │       ├── _0470_train-spécial-pour-hitler.jpg
+│   │       ├── _0480_ilsa-la-louve-des-ss.jpg
+│   │       ├── _0490_camp-n°7.jpg
+│   │       └── _0500_le-lac-des-morts-vivants.jpg
+│   └── scene_5
+│       ├── _0000_francis-bacon-study-after-velázquez-s-portrait-of-pope-innocent-x.jpg
+│       ├── _0090_édit-de-nantes.png
+│       ├── _0540_smith-wesson-bodyguard.jpg
+│       ├── _0685_scènes-de-chasse.jpg
+│       ├── _0740_albert-fish-1903.jpg
+│       ├── _0790_george-stinney.jpg
+│       ├── _0790_george-stinney_tomb.png
+│       ├── _0870_colt-pocket-hammerless.jpg
+│       ├── _0880_rudolf-noureev.jpg
+│       ├── _0900_anubis.jpg
+│       ├── _0910_pyramides-de-gizeh.jpg
+│       ├── _0920_tesem.jpg
+│       ├── _0930_chien-de-garenne-des-canaries.jpg
+│       └── _1060_chaise_électrique.jpg
+├── acte_04
+│   ├── scene_6
+│   │   ├── _0000_braque-allemand-a-poil-dur.jpg
+│   │   ├── _0030_shiva.png
+│   │   ├── _0040_cohiba.png
+│   │   ├── _0060_chapuis-progress_2.jpg
+│   │   ├── _0120_land-cruiser.jpg
+│   │   ├── _0130_noahs-ark-edward-hicks.png
+│   │   ├── _0200_beverly-hills.jpg
+│   │   ├── _0210_columbo.jpg
+│   │   ├── _0220_racamier.jpg
+│   │   ├── _0245_ouakari.png
+│   │   ├── _0270_le-vieux-fusil.jpg
+│   │   ├── _0290_romy-schneider.jpg
+│   │   ├── _0310_oradour_das_reich.png
+│   │   ├── _0340_totenkopf.png
+│   │   ├── _0370_the-boring-company.png
+│   │   ├── _0380_friedrichstrasse-1945.jpg
+│   │   ├── _0400_un-vampire-à-brooklyn.jpg
+│   │   ├── _0430_beverly-hills-vamp.jpg
+│   │   └── couples
+│   │       ├── _0150_l-arme-fatale.jpg
+│   │       ├── _0160_seven.jpg
+│   │       ├── _0170_rizzoli_et_isles.jpg
+│   │       └── _0180_turner_et_hooch.jpg
+│   └── scene_7
+│       ├── _0000_malinois.jpg
+│       ├── _0000_meursault_chevalières.png
+│       ├── _0010_ottis-toole.jpg
+│       ├── _0020_henry-lucas.jpg
+│       ├── _0030_nambikwara.jpg
+│       ├── _0030_nambikwara_2.jpg
+│       ├── _0070_code-hays.jpg
+│       ├── _0100_vito-mickey-anderson.jpg
+│       ├── _0120_kitten_natividad.jpg
+│       ├── _0130_galibier.jpg
+│       ├── _0140_jack-daniel_s.jpg
+│       ├── _0150_dgse.png
+│       ├── _0210_ouroboros.png
+│       ├── _0260_tramonto-firenze.jpg
+│       ├── _0280_moine-cistercien.png
+│       └── women
+│           ├── _0010_rhonda-fleming.jpg
+│           ├── _0020_lana-turner.jpg
+│           ├── _0030_gene-tierney.jpg
+│           ├── _0040_lauren-bacall.jpg
+│           └── _0050_sharon-stone_2.jpg
+├── acte_05
+│   ├── scene_8
+│   │   ├── _0000_nager-en-plein-brouillard.jpg
+│   │   ├── _0000_sierra-leone.png
+│   │   ├── _0010_jean-françois-millet.jpg
+│   │   ├── _0050_rudolf-hess.jpg
+│   │   ├── _0051_karl-donitz.jpg
+│   │   ├── _0052_erich-raeder.jpg
+│   │   ├── _0053_konstantin-von-neurath.jpg
+│   │   ├── _0054_walther-funk.jpg
+│   │   ├── _0055_albert-speer.jpg
+│   │   ├── _0056_baldur-von-schirach.jpg
+│   │   ├── _0057_wolf-rudiger-hess.jpg
+│   │   ├── _0058_gudrun-burwitz.jpg
+│   │   ├── _0059_edda-goring.jpg
+│   │   ├── _0090_prison-de-spandau.jpg
+│   │   ├── _0110_django-unchained.jpg
+│   │   ├── _0120_aberfeldy-12.png
+│   │   ├── _0130_luger-p08.jpg
+│   │   ├── _0200_abolition-esclavage.jpg
+│   │   ├── _0260_rocky-patel-disciple.png
+│   │   ├── _0310_annales.jpg
+│   │   ├── _0430_mercedes-sprinter.png
+│   │   └── millet
+│   │       ├── _0001_l_angélus-de-millet.jpg
+│   │       ├── _0002_les-glaneuses-de-millet.jpg
+│   │       ├── _0003_la-sieste-de-millet.jpg
+│   │       ├── _0004_le-bouquet-de-marguerites-de-millet.jpg
+│   │       ├── _0005_l_homme-à-la-houe--de-millet.jpg
+│   │       └── _0006_retour-du-troupeau-de-millet.jpg
+│   └── scene_9
+│       ├── _0000_FGC-9.png
+│       ├── _0100_beaune-1er-cru-rousseau-deslandes.png
+│       ├── _0140_bollito-misto.png
+│       ├── _0150_volnay-hospices.png
+│       ├── _0160_welcome-to-the-jungle.jpg
+│       ├── _0180_fromages.jpg
+│       ├── _0200_ferrari-250-gt.png
+│       ├── _0200_josephine-cochrane.jpg
+│       ├── _0270_guerre-de-trente-ans.jpg
+│       ├── _0310_komodo.png
+│       ├── _0330_poudre-de-riz.png
+│       ├── _0350_expendables.jpg
+│       ├── _0420_salami.png
+│       ├── _0440_buren.jpg
+│       ├── _0450_rubens.jpg
+│       ├── _0470_hemingway.jpg
+│       ├── _0540_fra-angelico-original.png
+│       └── _0540_fra-angelico.png
+├── acte_06
+│   ├── scene_10
+│   │   ├── _0000_fallen-angel.jpg
+│   │   ├── _0000_peugeot-break-307.png
+│   │   ├── _0010_kebehsenouf.png
+│   │   ├── _0040_kim-jong-un.png
+│   │   ├── _0100_charlotte-rampling.png
+│   │   ├── _0150_donatella-versace.png
+│   │   ├── _0160_élisabeth-badinter.png
+│   │   ├── _0170_van-chevy-g30.png
+│   │   ├── _0180_richard-wagner.png
+│   │   ├── _0360_cecilienhof.jpg
+│   │   ├── _0420_george-orwell.png
+│   │   ├── _0490_harmony-korine.png
+│   │   ├── _0610_jean-marie-dru.png
+│   │   ├── _0810_leda.jpg
+│   │   ├── divas
+│   │   │   ├── _0560_maria-callas.jpg
+│   │   │   ├── _0670_elisabeth-schwarzkopf.jpg
+│   │   │   ├── _0680_victoria-de-los-angeles.jpg
+│   │   │   └── _0690_christa-ludwig.jpg
+│   │   └── musicians
+│   │       ├── _0190_wilhelm_furtwangler.png
+│   │       ├── _0210_josef_krips.png
+│   │       ├── _0220_otto_klemperer.png
+│   │       ├── _0230_bruno_walter.png
+│   │       ├── _0240_hans_knappertsbusch.png
+│   │       ├── _0250_arnold_schonberg.png
+│   │       ├── _0260_alban_berg.png
+│   │       ├── _0270_anton_webern.png
+│   │       ├── _0280_joseph_haydn.jpg
+│   │       ├── _0290_wolfgang_amadeus_mozart.jpg
+│   │       └── _0300_ludwig_van_beethoven.jpg
+│   ├── scene_11
+│   │   ├── _0000_atiena.jpg
+│   │   ├── _0000_femme-khoïsan.jpg
+│   │   ├── _0000_lucifer.jpg
+│   │   ├── _0010_zarah-leander.jpg
+│   │   ├── _0320_honoré-d-urfé.jpg
+│   │   ├── _0350_cuvier.jpg
+│   │   ├── _0370_table-des-peuples-original.jpg
+│   │   ├── _0370_table-des-peuples.jpg
+│   │   ├── _0450_antonio-lopez-de-santa-anna-y-perez-de-lebron.jpg
+│   │   ├── _0460_davy-crockett.png
+│   │   ├── _0470_bobby-beausoleil.png
+│   │   ├── _0470_bobby-beausoleil_old.png
+│   │   ├── _0480_mammon-original.jpg
+│   │   ├── _0480_mammon.jpg
+│   │   ├── manson-women
+│   │   │   ├── _0010_mary-brunner.jpg
+│   │   │   ├── _0020_sandra-good.jpg
+│   │   │   ├── _0030_patricia-krenwinkel.jpg
+│   │   │   ├── _0040_squeaky-fromme.jpg
+│   │   │   ├── _0050_susan-atkins.jpg
+│   │   │   ├── _0060_leslie-van-houten.jpg
+│   │   │   └── _0070_sherry-cooper.jpg
+│   │   ├── rambo
+│   │   │   ├── _0010_clint-eastwood.jpg
+│   │   │   ├── _0020_steve-mcqueen.jpg
+│   │   │   ├── _0030_dustin-hoffman.jpg
+│   │   │   ├── _0040_al-pacino.jpg
+│   │   │   ├── _0050_robert-de-niro.jpg
+│   │   │   └── _0060_sylvester-stallone.jpg
+│   │   └── sirck
+│   │       ├── _0030_désir-de-femme.jpg
+│   │       ├── _0040_le-secret-magnifique.jpg
+│   │       ├── _0050_tout-ce-que-le-ciel-permet.jpg
+│   │       └── _0060_écrit-sur-du-vent.jpg
+│   └── scene_12
+│       ├── _0000_gilet-multipoche.png
+│       ├── _0000_origines-de-l-homme-moderne.jpg
+│       ├── _0000_origines-de-l-homme-moderne_2.jpg
+│       ├── _0010_dodge.charger.png
+│       ├── _0120_aurore-original.jpeg
+│       ├── _0120_aurore.jpeg
+│       ├── _0140_simone-de-bavoir-et-jean-paul-tartre.jpg
+│       └── _0160_jeffrey-dahmer.png
+├── acte_07
+│   └── scene_13
+│       ├── _0000_caméra-de-surveillance.jpg
+│       ├── _0010_couvent-des-ursulines.jpg
+│       ├── _0030_ludwig-mies-van-der-rohe.jpg
+│       ├── _0040_pélican.jpg
+│       ├── _0050_cap-eden-roc.jpg
+│       ├── _0060_gustav-nachtigal.jpg
+│       ├── _0070_otto-von-bismarck.jpg
+│       ├── _0100_black-dragoon.png
+│       ├── _0100_king-s-dragoon-guards.png
+│       ├── _0110_métis-du-cap.jpg
+│       ├── _0120_hottentot.jpg
+│       └── _0130_bataille-de-salt-river.jpg
+├── acte_08
+│   ├── scene_14
+│   │   ├── _0000_rza-36th-chamber.jpg
+│   │   ├── _0000_san-te.jpg
+│   │   ├── _0000_valentino-studshield-fisherman.png
+│   │   ├── _0010_forest-whitaker.jpg
+│   │   ├── _0020_ghost-dog.jpg
+│   │   ├── _0060_corey-raekwon-woods.jpg
+│   │   ├── _0160_gbu-5716.jpg
+│   │   ├── _0220_civilisation-de-jiroft.jpg
+│   │   ├── _0270_lovecraft.jpg
+│   │   ├── _0280_sheridan-le-fanu.jpg
+│   │   ├── _0290_montague-rhodes-james.jpg
+│   │   ├── _0300_la-voisin.jpg
+│   │   ├── _0320_hélène-jégado.jpg
+│   │   ├── _0340_chisako-kakehi.jpg
+│   │   ├── _0380_cent-vingt-journées-de-sodome.png
+│   │   ├── _0390_sigmund-freud.jpg
+│   │   ├── _0400_wilhelm-fliess.jpg
+│   │   ├── _0410_josef-breuer.jpg
+│   │   ├── _0450_le-diable-au-corps.jpg
+│   │   ├── _0530_mozart.jpg
+│   │   ├── leaders
+│   │   │   ├── _0050_alexandre-le-grand.jpg
+│   │   │   ├── _0060_simon-bolivar.jpg
+│   │   │   ├── _0070_churchill.jpg
+│   │   │   ├── _0080_gengis-khan.jpg
+│   │   │   ├── _0090_clemenceau.jpg
+│   │   │   ├── _0100_hannibal.jpg
+│   │   │   └── _0110_charles-quint.jpg
+│   │   └── philos
+│   │       ├── _0120_david-hume.jpg
+│   │       ├── _0130_john-locke.jpg
+│   │       ├── _0140_karl-popper.jpg
+│   │       └── _0150_aristote.jpg
+│   └── scene_15
+│       ├── _0010_sittelle-de-krüper.jpg
+│       ├── _0050_william-gull.jpg
+│       ├── _0080_the-human-centipede.jpg
+│       ├── _0100_paul-meurisse.jpg
+│       ├── _0110_le-monocle-rit-jaune.jpg
+│       ├── _0120_l-armée-des-ombres.jpg
+│       ├── _0140_le-cri-du-cormoran-le-soir-au-dessus-des-jonques.jpg
+│       ├── _0200_la-métaphysique-du-strip-tease.jpg
+│       ├── _0210_glicere-ou-la-philosophie-de-l-amour.jpg
+│       ├── _0220_satyricon.jpg
+│       ├── _0240_dialogues-des-courtisanes.jpg
+│       ├── _0250_margot-la-ravaudeuse.jpg
+│       ├── _0320_descartes.jpg
+│       ├── _0330_ocbc.png
+│       ├── _0510_melanie-nunes-fronckowiak.png
+│       └── _0520_kristina-dimitrova.png
+└── acte_09
+    └── scene_16
+        └── _0000_en-équilibre-instable-sur-le-dos-d’une-mule-pas-très-accommodante.jpg
+
+38 directories, 318 files
