@@ -23,15 +23,11 @@
 %%%   BoldFont       = *-SemiBold,
 %%%   BoldItalicFont = *-SemiBoldItalic
 %%% ]{Cormorant Garamond}
-% ────── Adobe Garamond Pro
-\setmainfont{Adobe Garamond Pro}[
+% ────── EB Garamond (main) + Adobe Garamond Pro (bold only)
+\setmainfont{EB Garamond}[
   BoldFont       = AGaramondPro-Semibold,
-  ItalicFont     = AGaramondPro-Italic,
   BoldItalicFont = AGaramondPro-SemiboldItalic,
 ]
-% ────── 
-%%% \setmainfont{Papyrus}
-% ──────
 
 \newfontfamily{\arabicfont}{Geeza Pro}
 \newcommand{\arab}[1]{{\arabicfont\textdir TRT #1}}
@@ -422,6 +418,7 @@
   \renewcommand{\baselinestretch}{1.1}%
   \small
   \setlength{\parindent}{0pt}%
+  \setlength{\leftmargini}{0pt}%
   \setlength{\parskip}{\onelineskip}%
   {\centering\normalfont\scshape\large #1\par}%
   \vspace{\onelineskip}%
