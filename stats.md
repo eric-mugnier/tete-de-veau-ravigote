@@ -16,15 +16,15 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 | V.9 | Ce soir-là, alors même que les combats… |  10 766 |   5.79% |  31.47% |    56 |  0.52% |            15 |  0.20% |  26.79% |
 | VI.10 | J’ai tout juste eu le temps de… |  10 083 |   5.42% |  35.34% |    92 |  0.91% |            31 |  0.48% |  33.70% |
 | VI.11 | On en était là de nos aventures… |  10 614 |   5.71% |  19.36% |    85 |  0.80% |            22 |  0.26% |  25.88% |
-| VI.12 | La voiture s’est approchée, au ralenti, et… |   8 997 |   4.84% |  91.25% |    21 |  0.23% |             5 |  0.64% |  23.81% |
+| VI.12 | La voiture s’est approchée, au ralenti, et… |   8 991 |   4.83% |  91.31% |    23 |  0.26% |             5 |  0.64% |  21.74% |
 | VII.13 | Et on y est allé, figurez-vous, car… |   2 852 |   1.53% |  56.21% |    13 |  0.46% |             9 |  0.72% |  69.23% |
-| VIII.14 | Trois quarts d’heure plus tard, après avoir… |   9 747 |   5.24% |   0.00% |    56 |  0.57% |            17 |  0.17% |  30.36% |
-| VIII.15 | Les chaussures à semelle de cuir sont… |   6 820 |   3.67% |  52.51% |    55 |  0.81% |            11 |  0.34% |  20.00% |
+| VIII.14 | Trois quarts d’heure plus tard, après avoir… |   9 748 |   5.24% |   0.00% |    56 |  0.57% |            17 |  0.17% |  30.36% |
+| VIII.15 | Les chaussures à semelle de cuir sont… |   6 821 |   3.67% |  52.50% |    55 |  0.81% |            11 |  0.34% |  20.00% |
 | IX.16 | Cette nuit-là, j’ai fait des rêves étranges… |  33 031 |  17.76% |  20.84% |   251 |  0.76% |             1 |  0.00% |   0.40% |
 | IX.17 | Greg, que je n’avais pas entendu arriver… |  10 467 |   5.63% |   3.09% |    53 |  0.51% |             — |      — |   0.00% |
 | IX.18 | Comme beaucoup d’urgentistes souffrant de handicap visuel… |   7 373 |   3.96% |  48.11% |    10 |  0.14% |             — |      — |   0.00% |
 | IX.19 | Il est toujours extrêmement douloureux de mettre… |   6 073 |   3.26% |  24.88% |    23 |  0.38% |             — |      — |   0.00% |
-| **Total** | | **186 032** | **100%** | **29.42%** | **1064** | **0.57%** | **270** | **0.21%** | **25.38%** |
+| **Total** | | **186 028** | **100%** | **29.42%** | **1066** | **0.57%** | **270** | **0.21%** | **25.33%** |
 
 # Statistiques par acte (avant découpage)
 
@@ -38,15 +38,15 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 | III  |  73 |  68 |  19 520 |  10.49% |   110 |  0.56% |            40 |  0.20% |  34.98% |
 | IV   | 141 |  64 |  19 627 |  10.55% |    88 |  0.45% |            40 |  0.20% |  29.46% |
 | V    | 205 |  66 |  19 687 |  10.58% |   100 |  0.51% |            42 |  0.21% |  42.88% |
-| VI   | 271 | 106 |  29 694 |  15.96% |   198 |  0.67% |            58 |  0.20% |  46.57% |
+| VI   | 271 | 106 |  29 688 |  15.96% |   200 |  0.67% |            58 |  0.20% |  46.58% |
 | VII  | 377 |  14 |   2 852 |   1.53% |    13 |  0.46% |             9 |  0.32% |  56.21% |
-| VIII | 391 |  54 |  16 567 |   8.91% |   111 |  0.67% |            28 |  0.17% |  21.62% |
+| VIII | 391 |  54 |  16 569 |   8.91% |   111 |  0.67% |            28 |  0.17% |  21.61% |
 | IX   | 445 | 182 |  56 944 |  30.61% |   337 |  0.59% |             1 |  0.00% |  21.54% |
-| **Total** |  |  | **186 032** | **100%** | **1064** | **0.57%** | **270** | **0.15%** | **29.42%** |
+| **Total** |  |  | **186 028** | **100%** | **1066** | **0.57%** | **270** | **0.15%** | **29.42%** |
 
 ## Estimation illustrations restantes
 
-Cible : **1 illustration tous les 600 mots** (186 032 mots → **310** illustrations).  
+Cible : **1 illustration tous les 600 mots** (186 028 mots → **310** illustrations).  
 Actuellement **270** — il en manque **40** — **87.1 %** réalisé.
 
 Sur-illustrées (> 2× la cible) : I.1 (14/6.6)
