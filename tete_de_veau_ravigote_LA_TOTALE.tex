@@ -58,7 +58,7 @@
 \vspace*{4\onelineskip}
 {\centering\normalfont\scshape\large Personnages par ordre alphabétique\par}
 \vspace{2\onelineskip}
-{\small\setlength{\parindent}{0pt}\IfFileExists{_personnages.tex}{\input{_personnages.tex}}{}}
+{\small\setlength{\parindent}{0pt}\IfFileExists{_personnages.tex}{\renewcommand{\textbf}[1]{{\addfontfeatures{FakeBold=2}#1}}\input{_personnages.tex}}{}}
 
 % ═══ TABLE DES MATIÈRES ══════════════════════════════════════════════════════
 \mytableofcontents
