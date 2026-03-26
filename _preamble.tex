@@ -14,7 +14,13 @@
 
 % ─── PACKAGES ─────────────────────────────────────────────────────────────────
 \usepackage{fontspec}
-\setmainfont{EB Garamond}
+%%% \setmainfont{EB Garamond}
+\setmainfont[
+  UprightFont    = *-Regular,
+  ItalicFont     = *-Italic,
+  BoldFont       = *-SemiBold,
+  BoldItalicFont = *-SemiBoldItalic
+]{Cormorant Garamond}
 \newfontfamily{\arabicfont}{Geeza Pro}
 \newcommand{\arab}[1]{{\arabicfont\textdir TRT #1}}
 \newfontfamily{\cjkfont}{Hiragino Mincho ProN}
@@ -399,6 +405,7 @@
 % 10.95pt (~small), interligne ×1.1, sans alinéa, titre en petites capitales.
 \newenvironment{editorialnote}[1]{%
   \begingroup
+  \leftskip=0pt\relax\rightskip=0pt\relax
   \renewcommand{\baselinestretch}{1.1}%
   \small
   \setlength{\parindent}{0pt}%

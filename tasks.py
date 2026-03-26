@@ -58,6 +58,14 @@ def _pandoc_body(c, src, dest):
     c.run(f"pandoc {src} -t latex -o {BUILD}/{dest}")
     body = (BUILD / dest).read_text()
     body = re.sub(r"\\section\{.*?\}\\label\{[^}]*\}", "", body, flags=re.DOTALL)
+    # Reset paragraph skips before enumerate: \begin{center} (used by pandoc for hr)
+    # leaks \leftskip=\@flushglue via \centering; \endtrivlist does not restore it,
+    # so the following enumerate inherits broken skip values → narrow right column.
+    body = re.sub(
+        r"(\\begin\{enumerate\})",
+        r"\\makeatletter\\@totalleftmargin\\z@\\makeatother\n\\leftskip=0pt\\relax\\rightskip=0pt\\relax\n\1",
+        body,
+    )
     (BUILD / dest).write_text(body)
 
 
