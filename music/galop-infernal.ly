@@ -33,11 +33,21 @@
       g8 f e d |
 
       % Measure 9
-      c4^\markup { \italic "etc." }
+      c4
+  \stopStaff
+  \once \override TextScript.extra-offset = #'(0 . -3)
+  s2^\markup { \italic "etc." }
+
       
 |
     }
   }
-  \layout { }
+  \layout { 
+    indent = 0
+    \context {
+      \Score
+      \omit BarNumber
+    }    
+  }
   \midi { }
 }

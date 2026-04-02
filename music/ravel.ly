@@ -54,5 +54,11 @@ lower = {
       \lower
     >>
   >>
-  \layout { }
+  \layout { 
+    indent = 0
+    \context {
+      \Score
+      \omit BarNumber
+    }    
+  }
 }

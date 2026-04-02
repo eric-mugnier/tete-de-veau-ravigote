@@ -179,6 +179,17 @@
     \fi%
     \ifthenelse{\equal{#1}{t}}{\vspace*{\fill}}{}%
   }
+  % Extrait musical inline : [#1]=espacement (défaut 0.8), #2=fichier dans music/, #3=légende
+  \newcommand{\score}[3][0.66]{%
+    \noindent\begin{minipage}{\linewidth}%
+    \vspace{#1\onelineskip}%
+    \lilypondfile[line-width=\linewidth,staffsize=12]{music/#2}%
+    \begin{center}%
+      \vspace{-#1\onelineskip}%
+      {\centering\scriptsize{\textit{#3}}}%
+      \vspace{#1\onelineskip}%
+    \end{center}%
+    \end{minipage}}
 \else
   \newcommand{\iconographieimg}[3][0.75]{}
   \newcommand{\iconographietex}[1]{}
@@ -187,6 +198,7 @@
   \NewDocumentCommand{\iconographieinlineblock}{O{} m m}{}
   \NewDocumentCommand{\iconographiedouble}{O{b} O{5cm} O{0pt} m m O{}}{}
   \NewDocumentCommand{\iconographietriple}{O{b} O{5cm} O{0pt} m m m O{}}{}
+  \newcommand{\score}[3][1]{}
 \fi
 
 % ─── NOTES FINALES ────────────────────────────────────────────────────────────
