@@ -52,7 +52,14 @@
 \usepackage{booktabs}
 \usepackage{calc}
 \usepackage{wrapfig}
-% Prevent wrapfig state (reduced \linewidth) from leaking across chapter boundaries
+% Fix: \WF@finale removes the \everypar hook but never restores \linewidth.
+% Patch it to reset \linewidth=\textwidth after every wrapfig ends (naturally
+% or via \WFclear), so the corruption doesn't persist beyond the wrap zone.
+\makeatletter
+\let\WF@@orig@finale\WF@finale
+\def\WF@finale{\WF@@orig@finale\global\linewidth\textwidth}
+\makeatother
+% Safety net: clear any residual wrapfig state at chapter boundaries.
 \pretocmd{\chapter}{\WFclear}{}{}
 \usepackage{hyperref}
 \usepackage{bookmark}
