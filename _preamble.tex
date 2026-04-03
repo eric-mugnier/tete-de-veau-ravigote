@@ -52,6 +52,8 @@
 \usepackage{booktabs}
 \usepackage{calc}
 \usepackage{wrapfig}
+% Prevent wrapfig state (reduced \linewidth) from leaking across chapter boundaries
+\pretocmd{\chapter}{\WFclear}{}{}
 \usepackage{hyperref}
 \usepackage{bookmark}
 \hypersetup{pdfpagelayout=TwoPageRight, hidelinks}
@@ -114,10 +116,18 @@
   }
   % Image en wrapfigure : #1=pos  #2=largeur  #3=code-image  #4=légende
   \newcommand{\iconographiewrapfig}[4]{%
-    \setlength{\intextsep}{0pt}      % espace vertical au-dessus/dessous                                                                                                                                 
+    \setlength{\intextsep}{0pt}%
     \setlength{\columnsep}{8pt}%
-    \begin{wrapfigure}{#1}{#2}%
-      % \vspace{0.5ex}%
+    % Mesure la hauteur exacte de la figure (image + légende éventuelle) afin
+    % de passer [n] à wrapfigure — wrapfig restaure alors \linewidth proprement
+    % après la dernière ligne enroulée, sans laisser de fuite de \linewidth.
+    \sbox\@tempboxa{\parbox{#2}{\centering#3%
+      \ifx&#4&\else\\[0.2em]{\scriptsize\itshape #4}\\[0.5\baselineskip]\fi}}%
+    \begin{wrapfigure}[%
+      \numexpr(\number\dimexpr\ht\@tempboxa+\dp\@tempboxa\relax
+               +\number\dimexpr\baselineskip\relax-1)%
+              /\number\dimexpr\baselineskip\relax\relax
+    ]{#1}{#2}%
       \centering
       #3%
       \ifx&#4&\else\\[0.2em]{\scriptsize\itshape #4}\\[0.5\baselineskip]\fi%
