@@ -1,4 +1,4 @@
-\version "2.24.3"
+\include "_common.ly"
 
 \header {
 }
@@ -28,6 +28,6 @@ parole = \lyricmode {
     \new Voice = "lucia" { \soprano }
     \new Lyrics \lyricsto "lucia" { \parole }
   >>
-  \layout { }
+  \commonLayout
   \midi { }
 }

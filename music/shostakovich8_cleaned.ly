@@ -1,4 +1,4 @@
-\version "2.24.3"
+\include "_common.ly"
 
 \pointAndClickOff
 
@@ -6,10 +6,6 @@
 }
 
 \paper {
-}
-\layout {
-    \context { \Score
-    }
 }
 
 PartPOneVoiceOne =  \relative d'' {
@@ -49,15 +45,7 @@ PartPTwoVoiceOne =  \relative c {
             >>
         
         >>
-    \layout { 
-        indent = 0
-        \context {
-        \Score
-        \omit BarNumber
-        }    
-    }
-    % To create MIDI output, uncomment the following line:
-    %  \midi {\tempo 4 = 100 }
-      \midi { }
-    }
+    \commonLayout
+    \midi { }
+}
 

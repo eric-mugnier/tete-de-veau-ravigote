@@ -1,5 +1,4 @@
-\version "2.24.4"
-
+\include "_common.ly"
 
 \header {
 }
@@ -35,12 +34,6 @@ parole = \lyricmode {
     \new Voice = "melody" { \upper }
     \new Lyrics \lyricsto "melody" { \parole }
   >>
-  \layout { 
-    indent = 0
-    \context {
-      \Score
-      \omit BarNumber
-    }    
-  }
+  \commonLayout
   \midi { }
 }

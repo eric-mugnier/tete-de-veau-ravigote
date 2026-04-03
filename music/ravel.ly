@@ -1,4 +1,4 @@
-\version "2.24.4"
+\include "_common.ly"
 
 \header {
 %  title = "Piano Concerto in G major"
@@ -44,9 +44,8 @@ lower = {
 }
 
 \score {
-  \new PianoStaff  \with {
-  instrumentName = "Piano"
-} <<
+  \new PianoStaff  \with {} 
+  <<
     \new Staff = "RH" <<
       \upper
     >>
@@ -54,11 +53,6 @@ lower = {
       \lower
     >>
   >>
-  \layout { 
-    indent = 0
-    \context {
-      \Score
-      \omit BarNumber
-    }    
-  }
+  \commonLayout
+  \midi { }
 }

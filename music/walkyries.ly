@@ -1,4 +1,4 @@
-\version "2.24.0"
+\include "_common.ly"
 
 \score {
   \new Staff \relative c' {
@@ -12,14 +12,6 @@
     e8.-> b16 e8 gis2.
   }
   \header { }
-  \layout { 
-    ragged-right = ##f
-    indent = 0
-    \context {
-      \Score
-      \omit BarNumber
-      \override SpacingSpanner.uniform-stretching = ##t
-    }    
-  }
+  \commonLayout
   \midi { }
 }

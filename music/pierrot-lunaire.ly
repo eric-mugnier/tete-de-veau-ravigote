@@ -1,4 +1,4 @@
-\version "2.24.4"
+\include "_common.ly"
 
 % ============================================================
 % Pierrot Lunaire – Schoenberg
@@ -87,13 +87,6 @@ vocalLyrics = \lyricmode {
     }
     \new Lyrics \lyricsto "voc" \vocalLyrics
   >>
-  \layout { 
-    indent = 0
-    ragged-right = ##f
-    \context {
-      \Score
-      \omit BarNumber
-    }    
-  }
+  \commonLayout
   \midi { \tempo 4 = 70 }
 }

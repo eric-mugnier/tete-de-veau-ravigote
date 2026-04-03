@@ -1,4 +1,4 @@
-\version "2.24.0"
+\include "_common.ly"
 
 \score {
   \new Staff {
@@ -42,12 +42,6 @@
 |
     }
   }
-  \layout { 
-    indent = 0
-    \context {
-      \Score
-      \omit BarNumber
-    }    
-  }
+  \commonLayout
   \midi { }
 }

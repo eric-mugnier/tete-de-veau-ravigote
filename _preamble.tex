@@ -3,7 +3,7 @@
 %
 % Usage dans chaque fichier maître :
 %   \documentclass[12pt,twoside,openright]{memoir}
-%   % optionnel : \def\AVECNOTES{} et/ou \def\AVECILLUSTRATIONS{}
+%   % optionnel : \def\AVECNOTES{} et/ou \def\AVECILLUSTRATIONS{} et/ou \def\AVECMUSIQUE{}
 %   \input{_preamble}
 %   \begin{document}
 %   ...
@@ -35,7 +35,7 @@
 \newcommand{\cjk}[1]{{\cjkfont #1}}
 \newcommand{\shouting}[1]{\textbf{\textsc{#1}}}
 \usepackage[russian,french]{babel}
-\usepackage[program=/usr/local/bin/lilypond]{lyluatex}
+\usepackage[program=/usr/local/bin/lilypond,includepaths={music}]{lyluatex}
 \usepackage{microtype}
 \usepackage{fmtcount}
 \usepackage{catchfile}
@@ -179,17 +179,6 @@
     \fi%
     \ifthenelse{\equal{#1}{t}}{\vspace*{\fill}}{}%
   }
-  % Extrait musical inline : [#1]=espacement (défaut 0.8), #2=fichier dans music/, #3=légende
-  \newcommand{\score}[3][0.66]{%
-    \noindent\begin{minipage}{\linewidth}%
-    \vspace{#1\onelineskip}%
-    \lilypondfile[line-width=\linewidth,staffsize=12]{music/#2}%
-    \begin{center}%
-      \vspace{-#1\onelineskip}%
-      {\centering\scriptsize{\textit{#3}}}%
-      \vspace{#1\onelineskip}%
-    \end{center}%
-    \end{minipage}}
 \else
   \newcommand{\iconographieimg}[3][0.75]{}
   \newcommand{\iconographietex}[1]{}
@@ -198,6 +187,24 @@
   \NewDocumentCommand{\iconographieinlineblock}{O{} m m}{}
   \NewDocumentCommand{\iconographiedouble}{O{b} O{5cm} O{0pt} m m O{}}{}
   \NewDocumentCommand{\iconographietriple}{O{b} O{5cm} O{0pt} m m m O{}}{}
+\fi
+
+% ─── EXTRAITS MUSICAUX ────────────────────────────────────────────────────────
+% Compiler avec : lualatex "\def\AVECMUSIQUE{}\input{...}"
+\ifdefined\AVECMUSIQUE
+  % Extrait musical inline : [#1]=espacement (défaut 0.66), #2=fichier dans music/, #3=légende
+  \newcommand{\score}[3][0.66]{%
+    \addcontentsline{mus}{score}{#3}%
+    \noindent\begin{minipage}{\textwidth}%
+    \vspace{#1\onelineskip}%
+    \lilypondfile[line-width=\textwidth]{music/#2}%
+    \begin{center}%
+      \vspace{-#1\onelineskip}%
+      {\centering\tiny{\textit{#3}}}%
+      \vspace{#1\onelineskip}%
+    \end{center}%
+    \end{minipage}}
+\else
   \newcommand{\score}[3][1]{}
 \fi
 
@@ -309,6 +316,22 @@
 % TOC title — gallimard chapter style suppresses \printchaptertitle, so we override here
 \renewcommand{\printtoctitle}[1]{{\centering\normalfont\scshape\large #1\par}}
 \renewcommand{\aftertoctitle}{\par\vspace{\onelineskip}}
+% Table des extraits musicaux
+\newlistof{listofscores}{mus}{Table des extraits musicaux}
+\newlistentry{score}{mus}{0}
+\setlength{\cftscoreindent}{0pt}
+\newcommand{\mylistofscores}{%
+  \cleardoublepage
+  \phantomsection\addcontentsline{toc}{chapter}{Table des extraits musicaux}%
+  \thispagestyle{empty}%
+  \vspace*{4\onelineskip}%
+  {\centering\normalfont\scshape\large Table des extraits musicaux\par}%
+  \vspace{2\onelineskip}%
+  \begingroup
+  \small\renewcommand{\baselinestretch}{1.0}\selectfont
+  \listofscores*%
+  \endgroup}
+
 % \mytableofcontents : cleardoublepage + suppress self-reference entry
 \newcommand{\mytableofcontents}{%
   \cleardoublepage
