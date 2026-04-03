@@ -50,24 +50,26 @@ vocal = \relative c'' {
   \dynamicUp
   \autoBeamOff
   \stemUp
-  \sprechUp
 
-  R2 |
-  r4 r8 a!\p |
-  b ais! gis! \tweak shorten-pair #'( 0 . -6 ) \< a! |
+  %% R2 |
+  %% r4 r8 
+  \partial 8
+  \sprechUp
+  a8\p |
+  b ais! gis! \tweak shorten-pair #'( 0 . -8 ) \< a! |
   \time 3/4
-  c! \! \tweak shorten-pair #'( 1 . 2 ) \> b! gis!\! r r a! \tweak shorten-pair #'( 0 . -12 ) \< |
+  c! \! \tweak shorten-pair #'( 3 . 2 ) \> b! gis!\! r r a! \tweak shorten-pair #'( 0 . -9 ) \< |
   \time 2/4
   g! ees! d!8. cis!16 |
   \time 3/4
-  f!4. \! des!8 \tweak shorten-pair #'( -3 . 1 ) \> c! a! \! |
-  \time 2/4
-  r4
+  f!4. \! des!8 \tweak shorten-pair #'( -2 . 2 ) \> c! a! \! |
+  %% \time 2/4
+  %% r4
   \bar ""
 
   \stopStaff
-  \once \override TextScript.extra-offset = #'(0 . -3)
-  s2^\markup { \italic "etc." }
+  %% \once \override TextScript.extra-offset = #'(0 . -3)
+  %% s2^\markup { \italic "etc." }
 }
 
 vocalLyrics = \lyricmode {
@@ -87,6 +89,7 @@ vocalLyrics = \lyricmode {
   >>
   \layout { 
     indent = 0
+    ragged-right = ##f
     \context {
       \Score
       \omit BarNumber
