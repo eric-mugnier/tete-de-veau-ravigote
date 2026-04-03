@@ -221,5 +221,9 @@
   "latex-workshop.formatting.latex": "latexindent",
 
   // ─── Code Spell Checker — désactivé pour LaTeX et texte brut ─────────────
-  "cSpell.enableFiletypes": ["!latex", "!plaintext"]
+  "cSpell.enableFiletypes": [
+    "!latex",
+    "!plaintext"
+  ],
+  "cSpell.enabled": false
 }
