@@ -100,7 +100,7 @@
       \vspace*{\fill}%
       \begin{center}%
         \bwimage[height=#1\textheight,width=\textwidth,keepaspectratio]{#2}\\[0.6em]%
-        {\small\itshape #3}%
+        {\figcaptionname\itshape #3}%
       \end{center}%
       \vspace*{\fill}%
       \newpage
@@ -128,7 +128,7 @@
     \begin{wrapfigure}{#1}{#2}%
       \centering
       #3%
-      \ifx&#4&\else\\[0.2em]{\scriptsize\itshape #4}\\[0.4\baselineskip]\fi%
+      \ifx&#4&\else\\[0.2em]{\figcaptionname\itshape #4}\\[0.4\baselineskip]\fi%
     \end{wrapfigure}%
   }
   % Bloc centré : [#1]=placement float optionnel (t/b), #2=code-image, #3=légende
@@ -137,13 +137,13 @@
       % Pas de placement → inline
       \vspace{0.5\onelineskip}%
       {\centering#2\par}%
-      \ifx&#3&\else{\centering\scriptsize\itshape#3\par\vspace{0.5\baselineskip}}\fi%
+      \ifx&#3&\else{\centering\figcaptionname\itshape#3\par\vspace{0.5\baselineskip}}\fi%
       \vspace{-0.5\onelineskip}%
     \else
       % Placement fourni → figure flottante
       \begin{figure}[#1]
         \centering#2%
-        \ifx&#3&\else\par{\scriptsize\itshape#3}\fi%
+        \ifx&#3&\else\par{\figcaptionname\itshape#3}\fi%
       \end{figure}%
     \fi
   }
@@ -162,7 +162,7 @@
       \vspace{0.5\onelineskip}%
     \else%
       \vspace{0.2\onelineskip}%
-      {\centering\scriptsize\itshape#6\par}%
+      {\centering\figcaptionname\itshape#6\par}%
       \vspace{0.3\onelineskip}%
     \fi%
     \ifthenelse{\equal{#1}{t}}{\vspace*{\fill}}{}%
@@ -182,7 +182,7 @@
       \vspace{0.5\onelineskip}%
     \else%
       \vspace{0.2\onelineskip}%
-      {\centering\scriptsize\itshape#7\par}%
+      {\centering\figcaptionname\itshape#7\par}%
       \vspace{0.3\onelineskip}%
     \fi%
     \ifthenelse{\equal{#1}{t}}{\vspace*{\fill}}{}%
@@ -208,7 +208,7 @@
     \lilypondfile[line-width=\textwidth]{music/#2}%
     \begin{center}%
       \vspace{-#1\onelineskip}%
-      {\centering\tiny{\textit{#3}}}%
+      {\centering\figcaptionname\itshape#3}%
       \vspace{#1\onelineskip}%
     \end{center}%
     \end{minipage}}
