@@ -1,4 +1,4 @@
-# Source URLs outside fr.wikipedia (67)
+# Source URLs outside fr.wikipedia (66)
 
 - biblegateway.com/passage/?search=Gen\%C3\%A8se+9:18-29\&version=LSG
 - biblegateway.com/passage/?search=Genèse~1:26-28\&version=LSG
@@ -35,7 +35,6 @@
 - en.wikipedia.org/wiki/The\_Immoral\_Mr.\_Teas
 - en.wikipedia.org/wiki/Victoria\_Hall\_disaster
 - es.wikipedia.org/wiki/Francesc\_Darder
-- fr.%%% wikipedia.org/wiki/Boris\_Vian
 - fr.wikiquote.org/wiki/Les\_Bronz\%C3\%A9s\_font\_du\_ski
 - fr.wiktionary.org/wiki/tsch\%C3\%BCss
 - gurkhacigars.com/product/ghost/
