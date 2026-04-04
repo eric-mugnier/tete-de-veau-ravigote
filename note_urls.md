@@ -1,4 +1,4 @@
-# Source URLs outside fr.wikipedia (66)
+# Source URLs outside fr.wikipedia (65)
 
 - [biblegateway.com/passage/?search=Apocalypse~6:8&version=LSG](https://biblegateway.com/passage/?search=Apocalypse~6:8&version=LSG)
 - [biblegateway.com/passage/?search=Gen%C3%A8se+9:18-29&version=LSG](https://biblegateway.com/passage/?search=Gen%C3%A8se+9:18-29&version=LSG)
@@ -36,7 +36,6 @@
 - [en.wikipedia.org/wiki/Straight_Satans_Motorcycle_Club](https://en.wikipedia.org/wiki/Straight_Satans_Motorcycle_Club)
 - [en.wikipedia.org/wiki/The_Immoral_Mr._Teas](https://en.wikipedia.org/wiki/The_Immoral_Mr._Teas)
 - [en.wikipedia.org/wiki/Victoria_Hall_disaster](https://en.wikipedia.org/wiki/Victoria_Hall_disaster)
-- [es.wikipedia.org/wiki/Francesc_Darder](https://es.wikipedia.org/wiki/Francesc_Darder)
 - [fr.wikiquote.org/wiki/Les_Bronz%C3%A9s_font_du_ski](https://fr.wikiquote.org/wiki/Les_Bronz%C3%A9s_font_du_ski)
 - [fr.wiktionary.org/wiki/tsch%C3%BCss](https://fr.wiktionary.org/wiki/tsch%C3%BCss)
 - [gurkhacigars.com/product/ghost/](https://gurkhacigars.com/product/ghost/)
