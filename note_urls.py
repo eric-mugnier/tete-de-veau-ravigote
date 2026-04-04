@@ -29,11 +29,18 @@ def to_real_url(latex_url):
         u = "https://" + u
     return u
 
+def display(latex_url):
+    """Human-readable form: strip LaTeX escaping and www. prefix."""
+    u = latex_url.replace(r'\_', '_').replace(r'\%', '%').replace(r'\&', '&')
+    if u.startswith("www."):
+        u = u[4:]
+    return u
+
 sorted_urls = sorted(urls, key=str.casefold)
 
 with open(OUT_MD, "w", encoding="utf-8") as f:
     f.write(f"# Source URLs outside fr.wikipedia ({len(sorted_urls)})\n\n")
     for url in sorted_urls:
-        f.write(f"- [{url}]({to_real_url(url)})\n")
+        f.write(f"- [{display(url)}]({to_real_url(url)})\n")
 
 print(f"Written {len(sorted_urls)} URLs to note_urls.md")
