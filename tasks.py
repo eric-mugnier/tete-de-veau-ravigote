@@ -364,9 +364,8 @@ def stats(c, target=None):
 @task(pre=[build])
 @_timed
 def all_but_diffs(c):
-    """Build everything except diffs: main, notes, epub, pers, postfaces, extrait, total."""
+    """Build everything except diffs: main, notes, pers, postfaces, extrait, total."""
     notes(c)
-    epub(c)
     pers(c)
     postfaces(c)
     extrait(c)
@@ -411,7 +410,7 @@ def clean(c):
     shutil.rmtree(ROOT / "__pycache__", ignore_errors=True)
 
     # build/ : keep only expected output files
-    _keep_names = set(_OUTPUT_PDFS) | {f"{BASE}.epub"}
+    _keep_names = set(_OUTPUT_PDFS)
     if BUILD.exists():
         for f in BUILD.iterdir():
             if f.is_file() and f.name not in _keep_names:
