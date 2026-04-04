@@ -22,11 +22,18 @@ for filepath in sorted(glob.glob(os.path.join(ROOT, "actes", "*.tex"))):
         if not is_fr_wikipedia(url):
             urls.add(url)
 
+def to_real_url(latex_url):
+    """Strip LaTeX escaping and prepend https:// to produce a clickable URL."""
+    u = latex_url.replace(r'\_', '_').replace(r'\%', '%').replace(r'\&', '&')
+    if not u.startswith("http"):
+        u = "https://" + u
+    return u
+
 sorted_urls = sorted(urls, key=str.casefold)
 
 with open(OUT_MD, "w", encoding="utf-8") as f:
     f.write(f"# Source URLs outside fr.wikipedia ({len(sorted_urls)})\n\n")
     for url in sorted_urls:
-        f.write(f"- {url}\n")
+        f.write(f"- [{url}]({to_real_url(url)})\n")
 
 print(f"Written {len(sorted_urls)} URLs to note_urls.md")
