@@ -46,7 +46,7 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 
 ## Estimation illustrations restantes
 
-Cible : **1 illustration tous les 555 mots** (186 367 mots → **336** illustrations).  
-Actuellement **315** — il en manque **21** — **93.8 %** réalisé.
+Cible : **1 illustration tous les 540 mots** (186 367 mots → **345** illustrations).  
+Actuellement **315** — il en manque **30** — **91.3 %** réalisé.
 
-Sous-illustrées (< 0.5× la cible) : VI.12 (5/16.2), IX.17 (0/18.7), IX.18 (0/13.3), IX.19 (0/10.9)
+Sous-illustrées (< 0.5× la cible) : VI.12 (5/16.6), IX.17 (0/19.2), IX.18 (0/13.7), IX.19 (0/11.2)
