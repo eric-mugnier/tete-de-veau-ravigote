@@ -1,0 +1,74 @@
+% actresses_fig.tex — absolute positioning via TikZ page overlay
+% Page: 155×235 mm · margins l=23 r=18 t=25 b=28
+% Group spans 33.5mm–201.5mm (height=168mm), centred on page (117.5mm)
+
+\null
+
+\begin{tikzpicture}[remember picture, overlay]
+
+  %------------------------------------------------------------------
+  % 1. Scarlett Johansson · 1280×720 · AR 1.778
+  %    width=90mm → height=50.6mm
+  %    left-aligned · top at 33.5mm from page top
+  %------------------------------------------------------------------
+  \node[anchor=north west, inner sep=0pt]
+    at ([xshift=15mm, yshift=-33.5mm]current page.north west)
+    {%
+      \begin{minipage}[t]{92mm}
+        \raggedright
+        \bwimage[width=90mm]{acte_09/scene_16/actresses/_1960_scarlett-johansson_lb.jpg}\\[0.3em]
+        {\figcaptionname\itshape Scarlett Johansson}\\
+        {\figcaptiondetail 1984--}
+      \end{minipage}%
+    };
+
+  %------------------------------------------------------------------
+  % 2. Leven Rambin · 1024×1536 crop 1/7 top → 1024×1316 · AR 0.778
+  %    height=60mm → width≈46.7mm
+  %    right-aligned · top at 56.5mm from page top
+  %------------------------------------------------------------------
+  \node[anchor=north east, inner sep=0pt]
+    at ([xshift=-15mm, yshift=-56.5mm]current page.north east)
+    {%
+      \begin{minipage}[t]{50mm}
+        \raggedleft
+        \bwimage[height=60mm, viewport=0 0 1024 1316, clip]%
+          {acte_09/scene_16/actresses/_2020_leven-rambin_lb.jpg}\\[0.3em]
+        {\figcaptionname\itshape Leven Rambin}\\
+        {\figcaptiondetail 1990--}
+      \end{minipage}%
+    };
+
+  %------------------------------------------------------------------
+  % 3. Amanda Seyfried · 780×438 · AR 1.781
+  %    width=80mm → height=44.9mm
+  %    left-aligned · top at 106.5mm from page top
+  %------------------------------------------------------------------
+  \node[anchor=north west, inner sep=0pt]
+    at ([xshift=15mm, yshift=-106.5mm]current page.north west)
+    {%
+      \begin{minipage}[t]{82mm}
+        \raggedright
+        \bwimage[width=80mm]{acte_09/scene_16/actresses/_2060_amanda-seyfried_lb.jpg}\\[0.3em]
+        {\figcaptionname\itshape Amanda Seyfried}\\
+        {\figcaptiondetail 1985--}
+      \end{minipage}%
+    };
+
+  %------------------------------------------------------------------
+  % 4. Sydney Sweeney · 1280×853 · AR 1.501
+  %    width=75mm → height=50mm
+  %    right-aligned · bottom-aligned · bottom margin 33.5mm
+  %------------------------------------------------------------------
+  \node[anchor=south east, inner sep=0pt]
+    at ([xshift=-15mm, yshift=33.5mm]current page.south east)
+    {%
+      \begin{minipage}[t]{77mm}
+        \raggedleft
+        \bwimage[width=75mm]{acte_09/scene_16/actresses/_2070_sydney-sweeney_lb.jpg}\\[0.3em]
+        {\figcaptionname\itshape Sydney Sweeney}\\
+        {\figcaptiondetail 1997--}
+      \end{minipage}%
+    };
+
+\end{tikzpicture}
