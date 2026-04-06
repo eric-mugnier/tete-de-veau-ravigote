@@ -4,7 +4,7 @@
 |------|---------|-----:|----------:|:-------:|------:|-------:|
 | Acte 1 | acte_01.tex | 4 046 | 2,0 % | ☑ | 13 | 0,32 % |
 | Acte 2 | acte_02.tex | 17 790 | 9,0 % | ☑ | 73 | 0,41 % |
-| Acte 3 | acte_03.tex | 20 799 | 10,5 % | ☑ | 76 | 0,37 % |
+| Acte 3 | acte_03.tex | 20 799 | 10,5 % | ☑ | 77 | 0,37 % |
 | Acte 4 | acte_04.tex | 20 454 | 10,3 % | ☑ | 64 | 0,31 % |
 | Acte 5 | acte_05.tex | 20 814 | 10,5 % | ☑ | 64 | 0,31 % |
 | Acte 6/1 | acte_06_1.tex | 22 360 | 11,3 % | ☑ | 104 * | 0,32 % * |
@@ -17,7 +17,7 @@
 | Acte 9/3 | acte_09_3.tex | 15 134 | 7,7 % | ☑ |  |  |
 | Acte 9/3b | acte_09_3b.tex | 4 724 | 2,4 % | ☑ |  |  |
 | Acte 9/4 | acte_09_4.tex | 6 067 | 3,1 % | ☑ |  |  |
-| **Total** | | **197 598** | **100 %** | | **599** | **0,30 %** |
+| **Total** | | **197 598** | **100 %** | | **600** | **0,30 %** |
 
 > Décompte hors commandes LaTeX et commentaires.
 > **Diffs** = nombre de blocs supprimés/remplacés (via `latexdiff`), hors bruit typographique (apostrophes, guillemets, tirets, etc.).
