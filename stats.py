@@ -351,7 +351,7 @@ def _illus_forecast(rows_split) -> str:
         ratio    = illus / expected
         if ratio > 2.0:
             over.append(f"{chap} ({illus}/{expected:.1f})")
-        elif ratio < 0.5:
+        elif ratio < 0.6:
             under.append(f"{chap} ({illus}/{expected:.1f})")
 
     lines = [
@@ -364,7 +364,7 @@ def _illus_forecast(rows_split) -> str:
     if over:
         lines.append(f"Sur-illustrées (> 2× la cible) : {', '.join(over)}")
     if under:
-        lines.append(f"Sous-illustrées (< 0.5× la cible) : {', '.join(under)}")
+        lines.append(f"Sous-illustrées (< 0.6× la cible) : {', '.join(under)}")
     return "\n".join(lines) + "\n"
 
 
