@@ -235,8 +235,12 @@
   \rightskip\z@ \leftskip\z@ \parindent=0pt
   \leavevmode\theenmark.\enspace}
 \makeatother
+% Fix PDF ActualText for œ (oe-ligature) copy-paste in \source URLs
+\usepackage{accsupp}
+\newcommand{\oechar}{\char"153\relax}
+{\catcode"153=\active\gdefœ{\BeginAccSupp{method=hex,unicode,ActualText=0153}\oechar\EndAccSupp{}}}
 % Source dans les notes : saut de ligne avant le lien Wikipedia
-\newcommand{\source}[1]{\newline\textit{Source~:}~{\upshape\def\_{\textunderscore\allowbreak}\def\%{\char"25\relax\allowbreak}#1}}
+\newcommand{\source}[1]{\newline\textit{Source~:}~{\upshape\addfontfeatures{RawFeature=-tlig;-calt}\def\_{\textunderscore\allowbreak}\def\%{\char"25\relax\allowbreak}\catcode"153=\active\scantokens{#1\empty}}}
 % Image seule dans une note (centrée sous le texte)
 \newcommand{\nfimg}[2]{\newline\includegraphics[width=#1\linewidth]{#2}}
 % Image côte à côte avec le texte : #1=texte, #2=frac image, #3=path, #4=url source
