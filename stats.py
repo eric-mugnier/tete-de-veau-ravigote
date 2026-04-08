@@ -15,7 +15,7 @@ ACTES_DIR = ROOT / "actes"
 BUILD     = ROOT / "build"
 OUT_FILE  = ROOT / "stats.md"
 
-ILLUS_TARGET = 520   # target: 1 illustration every N words (overridable via --target)
+ILLUS_TARGET = 500   # target: 1 illustration every N words (overridable via --target)
 
 TOC_MAIN   = BUILD / "tete_de_veau_ravigote.toc"
 TOC_TOTALE = BUILD / "tete_de_veau_ravigote_LA_TOTALE.toc"
@@ -351,7 +351,7 @@ def _illus_forecast(rows_split) -> str:
         ratio    = illus / expected
         if ratio > 2.0:
             over.append(f"{chap} ({illus}/{expected:.1f})")
-        elif ratio < 0.6:
+        elif ratio < 0.7:
             under.append(f"{chap} ({illus}/{expected:.1f})")
 
     lines = [
@@ -364,7 +364,7 @@ def _illus_forecast(rows_split) -> str:
     if over:
         lines.append(f"Sur-illustrées (> 2× la cible) : {', '.join(over)}")
     if under:
-        lines.append(f"Sous-illustrées (< 0.6× la cible) : {', '.join(under)}")
+        lines.append(f"Sous-illustrées (< 0.7× la cible) : {', '.join(under)}")
     return "\n".join(lines) + "\n"
 
 
