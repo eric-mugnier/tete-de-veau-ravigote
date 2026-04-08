@@ -137,8 +137,8 @@
     \ifx&#1&%
       % Pas de placement → inline
       \vspace{0.5\onelineskip}%
-      {\centering#2\par}%
-      \ifx&#3&\else{\centering\figcaptionname\itshape#3\par\vspace{0.5\baselineskip}}\fi%
+      \centerline{#2}%
+      \ifx&#3&\else\par\centerline{\figcaptionname\itshape#3}\vspace{0.5\baselineskip}\fi%
       \vspace{-0.5\onelineskip}%
     \else
       % Placement fourni → figure flottante
