@@ -302,13 +302,13 @@ def _md_table_split(rows: list, page_ranges: list | None = None) -> str:
     lines = [
         "# Statistiques par scène\n",
         "Mots = texte original uniquement (hors contenu des notes `\\nf{}`).",
-        "% notes = rapport au nombre de mots. % illustrations = rapport au nombre de mots hors dialogues.\n",
-        f"| Acte.Scène | Début |{page_cols} Mots | %\u00a0livre | %\u00a0dial. | Notes | %\u00a0mots | Illustrations | %\u00a0mots\u00a0h.d. | %\u00a0notes |",
+        "% notes et % illustrations = rapport au nombre de mots.\n",
+        f"| Acte.Scène | Début |{page_cols} Mots | %\u00a0livre | %\u00a0dial. | Notes | %\u00a0mots | Illustrations | %\u00a0mots | %\u00a0notes |",
         f"|----------:|:------|{page_sep}-----:|--------:|--------:|------:|-------:|--------------:|-------:|--------:|",
     ]
     for i, (chap_label, acte_label, words, notes, illus, dial, debut) in enumerate(rows):
         illus_str = _fmt(illus) if illus else "—"
-        illus_pct = _pct(illus, words - dial) if illus else "—"
+        illus_pct = _pct(illus, words) if illus else "—"
         if has_pages:
             start_p, num_p = page_ranges[i]
             p_str  = str(start_p) if start_p is not None else "—"
@@ -324,7 +324,7 @@ def _md_table_split(rows: list, page_ranges: list | None = None) -> str:
     lines.append(
         f"| **Total** | |{'  |  |' if has_pages else ''} **{_fmt(total_words)}** | **100%** | **{_pct(total_dial, total_words)}** | **{total_notes}** "
         f"| **{_pct(total_notes, total_words)}** "
-        f"| **{_fmt(total_illus)}** | **{_pct(total_illus, total_words - total_dial)}** "
+        f"| **{_fmt(total_illus)}** | **{_pct(total_illus, total_words)}** "
         f"| **{_pct(total_illus, total_notes)}** |"
     )
     return "\n".join(lines) + "\n"
