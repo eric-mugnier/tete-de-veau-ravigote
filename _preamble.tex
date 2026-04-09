@@ -229,6 +229,8 @@
 
 % ─── NOTES FINALES ────────────────────────────────────────────────────────────
 % Compiler avec : lualatex "\def\AVECNOTES{}\input{...}"
+% \ENDOFBOOKNOTES : notes regroupées en fin de livre (avec en-tête de scène) ;
+%                   absent = notes à la fin de chaque scène (sans en-tête).
 \usepackage{endnotes}
 \ifdefined\AVECNOTES
   \newcommand{\nf}[1]{\endnote{#1}}
@@ -267,7 +269,7 @@
 }
 % Font for scene header in notes block
 \makeatletter
-\ifdefined\NOTESENFIN
+\ifdefined\ENDOFBOOKNOTES
   \newcommand{\scene@noteheader}[1]{{\normalfont\large #1}}
 \else
   \newcommand{\scene@noteheader}[1]{{\normalfont\scshape #1}}
@@ -275,9 +277,9 @@
 % \scene : public — flush inline notes (if any) then open next scene within an act.
 %          Optional argument accepted but ignored (historical).
 \newcommand{\scene}[1][]{%
-  \ifdefined\SANSSCENES\else  % no-op when actes only
+  \ifdefined\AVECSCENES  % no-op when actes only
   \ifdefined\AVECNOTES
-    \ifdefined\NOTESENFIN\else
+    \ifdefined\ENDOFBOOKNOTES\else
       \WFclear% flush pending wrapfigs before page breaks
       \cleardoublepage
       % Reset after cleardoublepage: output routine may re-corrupt these via afterpage/floats
@@ -297,7 +299,7 @@
 \newcommand{\scene@notes}[1]{%
   \ifdefined\AVECNOTES
     \setcounter{endnote}{0}%
-    \ifdefined\NOTESPARTCHAPITRE\else
+    \ifdefined\ENDOFBOOKNOTES
       \addtoendnotes{\protect\par\protect\medskip\protect\noindent\protect\scene@noteheader{#1}\protect\par}%
     \fi
   \fi
@@ -386,14 +388,14 @@
   \renewcommand{\printchaptername}{}
   \renewcommand{\chapternamenum}{}
   \renewcommand{\printchapternum}{%
-    \ifdefined\SANSSCENES
-      \markboth{\Roman{actenum}}{}%
-    \else
+    \ifdefined\AVECSCENES
       \chapnumfont\arabic{scenenum}%
       \markboth{\Roman{actenum}}{\arabic{scenenum}}%
+    \else
+      \markboth{\Roman{actenum}}{}%
     \fi}
   \renewcommand{\afterchapternum}{%
-    \ifdefined\SANSSCENES\else\par\vskip 0.4\onelineskip\fi}
+    \ifdefined\AVECSCENES\par\vskip 0.4\onelineskip\fi}
   \renewcommand{\printchaptertitle}[1]{}
 }
 \makeatother
@@ -410,30 +412,30 @@
 }
 % \scene@init : increment scene counter, compute notes label, open LaTeX chapter.
 \newcommand{\scene@init}{%
-  \ifdefined\SANSSCENES
-    \ifdefined\NOTESENFIN
-      \def\scene@noteslabel{Acte~\Roman{actenum}}%
-    \else
-      \def\scene@noteslabel{\Roman{actenum}}%
-    \fi
-  \else
+  \ifdefined\AVECSCENES
     \stepcounter{scenenum}%
-    \ifdefined\NOTESENFIN
+    \ifdefined\ENDOFBOOKNOTES
       \def\scene@noteslabel{Acte~\Roman{actenum}~·~Scène~\arabic{scenenum}}%
     \else
       \def\scene@noteslabel{\Roman{actenum}~·~\arabic{scenenum}}%
     \fi
+  \else
+    \ifdefined\ENDOFBOOKNOTES
+      \def\scene@noteslabel{Acte~\Roman{actenum}}%
+    \else
+      \def\scene@noteslabel{\Roman{actenum}}%
+    \fi
   \fi
   \scene@openLaTeXchapter{\scene@noteslabel}%
-  \ifdefined\SANSSCENES\else
+  \ifdefined\AVECSCENES
     \addcontentsline{toc}{section}{Scène~\arabic{scenenum}}%
   \fi
 }
-% \acte@term : flush notes from last scene of this act (no-op when \NOTESENFIN or \SANSSCENES).
+% \acte@term : flush notes from last scene of this act (no-op when \ENDOFBOOKNOTES or \AVECSCENES absent).
 \newcommand{\acte@term}{%
   \ifdefined\AVECNOTES
-    \ifdefined\NOTESENFIN\else
-      \ifdefined\SANSSCENES\else
+    \ifdefined\ENDOFBOOKNOTES\else
+      \ifdefined\AVECSCENES
         \WFclear% flush pending wrapfigs before page breaks
         \cleardoublepage
         % Reset after cleardoublepage: output routine may re-corrupt these via afterpage/floats

@@ -2,8 +2,8 @@
 \def\AVECNOTES{}
 \def\AVECILLUSTRATIONS{}
 \def\AVECMUSIQUE{}
-\def\CHAPITRESSEPARES{}
-%%% \def\NOTESENFIN{}
+\def\AVECSCENES{}
+%%% \def\ENDOFBOOKNOTES{}
 \input{_preamble}
 
 \begin{document}
@@ -37,7 +37,7 @@
 %%% \end{editorialnote}
 
 % ═══ NOTES ════════════════════════════════════════════════════════════════════
-\ifdefined\NOTESENFIN
+\ifdefined\ENDOFBOOKNOTES
   \cleardoublepage
   \phantomsection\addcontentsline{toc}{chapter}{Notes}
   \thispagestyle{empty}
