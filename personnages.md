@@ -1,5 +1,7 @@
 **Barkad Achaari**, agent de police, subordonné de Lisnic. D'origine marocaine. Zélé, susceptible quand on parle de sa famille. Cousin de Moustapha Nedali.
 
+**L'Alliance de la Révélation**, communauté fictive.
+
 **Tiago Alvarez**, travesti brésilien. Brûlé vif par les « Disciples de la Colère ». Sa mort déclenche l'enquête.
 
 **Atiena** (Repentance Whittingham), « Gardienne de la Nuit ». Femme d'une beauté saisissante, d'origine khoïsan (Afrique australe). Officiellement femme de chambre au Caribbean Hôtel. Enlève Titus pour le protéger. Arrêtée avec 10 kg de cocaïne dans le coffre de sa Mini.
@@ -34,9 +36,9 @@
 
 **Ernst Brestrich**, personnage fictif, auteur du « Traité sur les races ».
 
-**Zarina Brizzi** (Fragale Di Brizzi), aristocrate italienne, pianiste de talent, excellente cuisinière. Brune, dort comme une masse et occupe tout le lit. Sœur jumelle de Tosca. Compagne de Djeferson.
-
 **Tosca Brizzi**, sœur jumelle de Zarina (italienne). Blonde — contrairement à Zarina, brune. Compagne de Zaahid Shirani. Présente dans l'intimité de l'appartement de Djeferson.
+
+**Zarina Brizzi** (Fragale Di Brizzi), aristocrate italienne, pianiste de talent, excellente cuisinière. Brune, dort comme une masse et occupe tout le lit. Sœur jumelle de Tosca. Compagne de Djeferson.
 
 **Tacito Cerqueira**, associé de Jégou à l'entreprise de déménagement. Portugais corpulent, très poilu. Double vie : facho le jour, travesti prostitué la nuit. Parents tous deux transgenres. Force physique exceptionnelle. Lit *Mein Kampf*. Devient informateur.
 
@@ -50,6 +52,8 @@
 
 **Noé Desmarais**, membre des Disciples de la Colère. Sa mort est annoncée à Sally par Greg.
 
+**Dumo** (le réceptionniste du Caribbean Hôtel), métis du Cap (mère française, père khoïkhoï). Polyglotte, hypnotisant. Gardien d'un établissement rattaché à l'ambassade de Namibie, interdit aux Blancs. Protecteur d'Atiena.
+
 **Rémi Durand**, gynécologue. Retrouvé pendu dans son garage (mort suspecte). Ami et complice de Charrier.
 
 **Monster Gang**, organisation fictive du roman.
@@ -58,8 +62,6 @@
 
 **Père Marian Granet**, prêtre aux penchants BDSM. Capturé et torturé à la chaise électrique par Riqueti. Survit et est relâché sur intervention de Djeferson.
 
-**Le réceptionniste du Caribbean Hôtel** (Dumo), métis du Cap (mère française, père khoïkhoï). Polyglotte, hypnotisant. Gardien d'un établissement rattaché à l'ambassade de Namibie, interdit aux Blancs. Protecteur d'Atiena.
-
 **Solange Jacquard**, 90 ans. Dévote acharnée, homosexuelle réprimée. Découvre le corps du père Beaubois.
 
 **Marc-Antoine Jacquinot**, autre voisin au 6e étage, « l'ermite du sixième ». Professeur de philosophie, solitaire, collectionneur de livres anciens rares (certains lui seront volés). Refuse toutes les corvées de voisinage.
@@ -67,8 +69,6 @@
 **Aymeric Jégou**, chef du groupe néonazi « Les Disciples de la Colère ». Entrepreneur en déménagement. Blond aux yeux bleus, sec, nerveux et vicieux. Responsable du meurtre de Tiago Alvarez.
 
 **Simon Keskula**, personnage fictif, lié à l'Alliance de la Révélation.
-
-**Reckless & Knot**, société financière fictive. Ancien employeur de Greg Lussier (analyste M&A).
 
 **Korax**, chat roux tigré de la mère Ouvrard. Sournois et territorial, sait utiliser l'ascenseur. Déteste Djeferson.
 
@@ -86,6 +86,8 @@
 
 **Milo Monteil**, membre des Disciples de la Colère.
 
+**Le Narcisse Rose**, bar/club fictif du roman.
+
 **Niccolo**, garde du corps de Riqueti. Gigantesque, oreilles en chou-fleur, ancien boxeur. Exécutant violent et fidèle. Tué par Titus.
 
 **Ordre de la Lune Noire**, organisation fictive du roman.
@@ -102,6 +104,8 @@
 
 **Romuald Pueyrredon**, associé de Greg au cabinet de détectives privés.
 
+**Reckless & Knot**, société financière fictive. Ancien employeur de Greg Lussier (analyste M&A).
+
 **Valérie Renou**, retraitée. Découvre l'un des colis suspects et meurt d'une crise cardiaque.
 
 **Monseigneur Mathéo Riqueti**, cardinal, évêque. Beau et raffiné en apparence. Véritable identité du « Brain Catcher » : tue et décapite des prêtres pédophiles, emplit leurs crânes de croquettes de luxe — vengeance contre l'Église qui avait fait tuer son chien d'enfance.
@@ -109,10 +113,6 @@
 **Sally Robinson**, meneuse de revue au cabaret Sugar & Spice. Femme trans. Cliente de Greg, participe aux expéditions nocturnes.
 
 **Roman**, médecin (prénom seulement). Viole ses patientes sous couvert d'examens gynécologiques. Mentionné par Charrier.
-
-**Le Narcisse Rose**, bar/club fictif du roman.
-
-**L'Alliance de la Révélation**, communauté fictive.
 
 **Matthias Schuster**, curé de Montaulogne, personnage fictif.
 
