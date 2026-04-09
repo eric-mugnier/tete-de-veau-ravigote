@@ -164,6 +164,17 @@ def _parse_toc_pages(toc_path: Path) -> list[int]:
     return [int(m.group(1)) for m in pattern.finditer(toc_path.read_text(encoding="utf-8"))]
 
 
+def _parse_toc_scene_pages(toc_path: Path) -> list[int]:
+    """Return start pages for each Scène~ section entry (scenes) in document order.
+    Scenes are recorded as {section} entries only in the LA_TOTALE build (no SANSSCENES)."""
+    if not toc_path.exists():
+        return []
+    pattern = re.compile(
+        r'\\contentsline\s*\{section\}\{Scène~[^}]*\}\{(\d+)\}'
+    )
+    return [int(m.group(1)) for m in pattern.finditer(toc_path.read_text(encoding="utf-8"))]
+
+
 def _parse_toc_acte_pages(toc_path: Path) -> list[int]:
     """Return start pages for each Acte~ chapter entry (actes), in document order."""
     if not toc_path.exists():
@@ -402,11 +413,12 @@ def main():
     rows_orig  = compute()
     rows_split = compute_split()
 
-    total_pages  = _pdf_total_pages(LOG_MAIN)
+    total_pages        = _pdf_total_pages(LOG_MAIN)
+    total_pages_totale = _pdf_total_pages(LOG_TOTALE)
     pages_actes  = _parse_toc_acte_pages(TOC_MAIN)
-    pages_scenes = _parse_toc_pages(TOC_MAIN)
-    pr_orig  = _page_ranges(pages_actes,  total_pages) if pages_actes  else None
-    pr_split = _page_ranges(pages_scenes, total_pages) if pages_scenes else None
+    pages_scenes = _parse_toc_scene_pages(TOC_TOTALE)  # section entries, LA_TOTALE build only
+    pr_orig  = _page_ranges(pages_actes,  total_pages)        if pages_actes  else None
+    pr_split = _page_ranges(pages_scenes, total_pages_totale) if pages_scenes else None
 
     # Sanity check: warn if TOC entry count doesn't match row count
     if pr_orig  and len(pr_orig)  != len(rows_orig):
