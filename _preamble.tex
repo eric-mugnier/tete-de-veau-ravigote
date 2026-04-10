@@ -96,6 +96,7 @@
 % All commands below are no-ops unless \AVECILLUSTRATIONS is defined.
 % Image paths are relative to the graphicspath (iconography/).
 \ifdefined\AVECILLUSTRATIONS
+  \newlength{\iconofillheight}% scratch register for [p] page-fill placement
   % \iconographieimg[scale]{image}{caption}
   % Single image centred on its own dedicated page (via \afterpage).
   % [scale] height as fraction of \textheight (default 0.75); {caption} may be empty.
@@ -161,10 +162,10 @@
         % p → scale image to fill remaining page height
         \par
         \begingroup
-          \setlength{\@tempdima}{\dimexpr\pagegoal-\pagetotal\relax}%
-          \ifx&#3&\else\addtolength{\@tempdima}{-1.5\baselineskip}\fi%
-          \ifdim\@tempdima>0pt
-            \centerline{\resizebox*{!}{\@tempdima}{#2}}%
+          \setlength{\iconofillheight}{\dimexpr\pagegoal-\pagetotal\relax}%
+          \ifx&#3&\else\addtolength{\iconofillheight}{-1.5\baselineskip}\fi%
+          \ifdim\iconofillheight>0pt
+            \centerline{\resizebox*{!}{\iconofillheight}{#2}}%
             \ifx&#3&\else\par\centerline{\figcaptionname\itshape#3}\fi%
           \fi
         \endgroup
