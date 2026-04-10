@@ -300,7 +300,7 @@
   \ifdefined\AVECNOTES
     \setcounter{endnote}{0}%
     \ifdefined\ENDOFBOOKNOTES
-      \addtoendnotes{\protect\par\protect\medskip\protect\noindent\protect\scene@noteheader{#1}\protect\par}%
+      \addtoendnotes{\protect\par\protect\medskip\protect\noindent\protect\scene@noteheader{#1}\protect\par\protect\smallskip}%
     \fi
   \fi
 }
@@ -417,7 +417,7 @@
     \ifdefined\ENDOFBOOKNOTES
       \def\scene@noteslabel{Acte~\Roman{actenum}~·~Scène~\arabic{scenenum}}%
     \else
-      \def\scene@noteslabel{\Roman{actenum}~·~\arabic{scenenum}}%
+      \def\scene@noteslabel{Acte~\Roman{actenum}~·~Scène~\arabic{scenenum}}%
     \fi
   \else
     \ifdefined\ENDOFBOOKNOTES
