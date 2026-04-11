@@ -144,19 +144,20 @@
       \ifx&#4&\else\\[0.2em]{\figcaptionname\itshape #4}\\[0.4\baselineskip]\fi%
     \end{wrapfigure}%
   }
-  % \iconographieinlineblock[placement]{\bwimage[width=W]{path}}{caption}[lines]
+  % \iconographieinlineblock[placement][lines]{\bwimage[width=W]{path}}{caption}
   % Centred image block in the text flow. {caption} may be empty {}.
   % [placement] empty or omitted → inline: caller must put \par before and \noindent after.
   % [placement] = t or b → LaTeX float (top/bottom of page); no \par/\noindent needed.
   % [placement] = p → fill remaining page height inline (image scaled to fit, no float).
   % [lines] number of caption lines (default 1); used by [p] to reserve the right height.
   % Multiple inline calls in the same paragraph are supported.
-  \NewDocumentCommand{\iconographieinlineblock}{O{} m m O{1}}{%
+  \NewDocumentCommand{\iconographieinlineblock}{O{} O{1} m m}{%
+    % #1=placement  #2=caption lines (for [p])  #3=image  #4=caption
     \ifx&#1&%
       % no placement → inline
       \vspace{0.5\onelineskip}%
-      \centerline{#2}%
-      \ifx&#3&\else\par\centerline{\figcaptionname\itshape#3}\vspace{0.5\baselineskip}\fi%
+      \centerline{#3}%
+      \ifx&#4&\else\par\centerline{\figcaptionname\itshape#4}\vspace{0.5\baselineskip}\fi%
       \vspace{-0.5\onelineskip}%
     \else
       \ifthenelse{\equal{#1}{p}}{%
@@ -165,18 +166,18 @@
         \begingroup
           \setlength{\iconofillheight}{\dimexpr\pagegoal-\pagetotal\relax}%
           \addtolength{\iconofillheight}{-2\baselineskip}%
-          \ifx&#3&\else\addtolength{\iconofillheight}{-#4\baselineskip-0.5\baselineskip}\fi%
+          \ifx&#4&\else\addtolength{\iconofillheight}{-#2\baselineskip-0.5\baselineskip}\fi%
           \ifdim\iconofillheight>0pt
             \vspace{2\baselineskip}%
-            \centerline{\resizebox*{!}{\iconofillheight}{#2}}%
-            \ifx&#3&\else\par{\centering\figcaptionname\itshape#3\par}\fi%
+            \centerline{\resizebox*{!}{\iconofillheight}{#3}}%
+            \ifx&#4&\else\par{\centering\figcaptionname\itshape#4\par}\fi%
           \fi
         \endgroup
       }{%
         % placement given → float
         \begin{figure}[#1]
-          \centering#2%
-          \ifx&#3&\else\par{\figcaptionname\itshape#3}\fi%
+          \centering#3%
+          \ifx&#4&\else\par{\figcaptionname\itshape#4}\fi%
         \end{figure}%
       }%
     \fi
@@ -221,7 +222,7 @@
   \newcommand{\iconographietex}[1]{}
   \newcommand{\iconographietexpair}[2]{}
   \newcommand{\iconographiewrapfig}[4]{}
-  \NewDocumentCommand{\iconographieinlineblock}{O{} m m O{1}}{}
+  \NewDocumentCommand{\iconographieinlineblock}{O{} O{1} m m}{}
   \NewDocumentCommand{\iconographiedouble}{O{b} O{5cm} O{0pt} m m O{}}{}
   \NewDocumentCommand{\iconographietriple}{O{b} O{5cm} O{0pt} m m m O{}}{}
 \fi
