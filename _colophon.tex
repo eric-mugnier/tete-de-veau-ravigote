@@ -30,6 +30,7 @@
     \end{tcolorbox}
   \end{minipage}
 \end{center}
+\hbox to 0pt{\tikz[remember picture, overlay] \coordinate (colophon-tbox-bottom) at (0,0);\hss}%
 
 \vspace{\stretch{2}}
 
@@ -39,6 +40,7 @@
 };
 
 % Ligne 2 — bandeau gris avec justification gauche/droite
+\hbox to 0pt{\tikz[remember picture, overlay] \coordinate (colophon-banner-top) at (0,0);\hss}%
 \noindent\colorbox{gray!5}{%
   \hbox to \dimexpr\textwidth-2\fboxsep\relax{%
     \color{gray!80}%
@@ -51,7 +53,10 @@
       \includegraphics[height=3ex]{images/github-repo-git-octocat-svgrepo-com.svg.pdf}%
     }%
   }%
-}
+}%
+\tikz[remember picture, overlay] \draw[color=gray!30, line width=0.4pt]
+  ([yshift=12pt] current page.center |- colophon-tbox-bottom) --
+  (current page.center |- colophon-banner-top);
 
 }
 
