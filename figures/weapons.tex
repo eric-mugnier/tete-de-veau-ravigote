@@ -1,1 +1,12 @@
-\def\figname{weapons}\input{figure.tex}
+\documentclass[12pt,oneside]{memoir}
+\usepackage[paperwidth=155mm,paperheight=235mm,
+            left=23mm,right=18mm,top=25mm,bottom=28mm]{geometry}
+\makeatletter\def\input@path{{../}}\makeatother
+\input{../_preamble}
+\graphicspath{{../iconography/}}
+\pagestyle{empty}
+\topskip=0pt
+
+\begin{document}
+\input{weapons_fig.tex}
+\end{document}
