@@ -10,7 +10,7 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 | II.3 | Ce même jour, en fin d’après-midi, on… |  55 |  36 |   8 684 |   4.65% |   5.65% |    53 |  0.61% |            24 |  0.28% |  45.28% |
 | III.4 | Quelques jours plus tard, les journaux ont… |  91 |  44 |  11 097 |   5.94% |  28.71% |    78 |  0.70% |            33 |  0.30% |  42.31% |
 | III.5 | Dans le fond de la pièce, il… | 135 |  36 |   8 467 |   4.54% |  43.11% |    32 |  0.38% |            12 |  0.14% |  37.50% |
-| IV.6 | Il y a ce qu’on appelle la… | 171 |  44 |  11 294 |   6.05% |  28.41% |    45 |  0.40% |            24 |  0.21% |  53.33% |
+| IV.6 | Il y a ce qu’on appelle la… | 171 |  44 |  11 311 |   6.06% |  28.51% |    45 |  0.40% |            27 |  0.24% |  60.00% |
 | IV.7 | Depuis que mon ami Grégoire Lussier, ancien… | 215 |  34 |   8 365 |   4.48% |  30.70% |    43 |  0.51% |            18 |  0.22% |  41.86% |
 | V.8 | Croyez-le ou non, mais Aymeric Jégou et… | 249 |  36 |   8 904 |   4.77% |  56.56% |    44 |  0.49% |            27 |  0.30% |  61.36% |
 | V.9 | Ce soir-là, alors même que les combats… | 285 |  44 |  10 812 |   5.79% |  31.34% |    56 |  0.52% |            17 |  0.16% |  30.36% |
@@ -24,7 +24,7 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 | IX.17 | Une porte d’ascenseur venait de s’ouvrir, non… | 655 |  34 |  10 408 |   5.58% |   3.06% |    67 |  0.64% |            16 |  0.15% |  23.88% |
 | IX.18 | Comme beaucoup d’urgentistes souffrant de handicap visuel… | 689 |  26 |   7 373 |   3.95% |  48.11% |    10 |  0.14% |             — |      — |   0.00% |
 | IX.19 | Il est toujours extrêmement douloureux de mettre… | 715 | 204 |   6 138 |   3.29% |  25.25% |    23 |  0.37% |            13 |  0.21% |  56.52% |
-| **Total** | |  |  | **186 662** | **100%** | **29.41%** | **1078** | **0.58%** | **372** | **0.20%** | **34.51%** |
+| **Total** | |  |  | **186 679** | **100%** | **29.41%** | **1078** | **0.58%** | **375** | **0.20%** | **34.79%** |
 
 # Statistiques par acte (avant découpage)
 
@@ -36,17 +36,17 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 | I    |   3 |  14 |   3 929 |   2.10% |    22 |  0.56% |            14 |  0.36% |   4.53% |
 | II   |  17 |  56 |  17 212 |   9.22% |    85 |  0.49% |            38 |  0.22% |  12.87% |
 | III  |  73 |  68 |  19 564 |  10.48% |   110 |  0.56% |            45 |  0.23% |  34.94% |
-| IV   | 141 |  64 |  19 659 |  10.53% |    88 |  0.45% |            42 |  0.21% |  29.39% |
+| IV   | 141 |  64 |  19 676 |  10.54% |    88 |  0.45% |            45 |  0.23% |  29.44% |
 | V    | 205 |  66 |  19 716 |  10.56% |   100 |  0.51% |            44 |  0.22% |  42.73% |
 | VI   | 271 | 106 |  29 761 |  15.94% |   201 |  0.68% |            66 |  0.22% |  46.68% |
 | VII  | 377 |  12 |   2 852 |   1.53% |    13 |  0.46% |             9 |  0.32% |  56.21% |
 | VIII | 389 |  54 |  16 614 |   8.90% |   111 |  0.67% |            35 |  0.21% |  21.55% |
-| IX   | 443 | 184 |  57 355 |  30.73% |   348 |  0.61% |            79 |  0.14% |  21.59% |
-| **Total** |  |  | **186 662** | **100%** | **1078** | **0.58%** | **372** | **0.20%** | **29.41%** |
+| IX   | 443 | 184 |  57 355 |  30.72% |   348 |  0.61% |            79 |  0.14% |  21.59% |
+| **Total** |  |  | **186 679** | **100%** | **1078** | **0.58%** | **375** | **0.20%** | **29.41%** |
 
 ## Estimation illustrations restantes
 
-Cible : **1 illustration tous les 500 mots** (186 662 mots → **373** illustrations).  
-Actuellement **372** — il en manque **1** — **99.7 %** réalisé.
+Cible : **1 illustration tous les 500 mots** (186 679 mots → **373** illustrations).  
+Actuellement **375** — il en manque **0** — **100.5 %** réalisé.
 
 Sous-illustrées (< 0.7× la cible) : IX.18 (0/14.7)
