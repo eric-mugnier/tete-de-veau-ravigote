@@ -509,8 +509,10 @@
   \setlength{\parindent}{0pt}%
   \setlength{\leftmargini}{0pt}%
   \setlength{\parskip}{\onelineskip}%
-  {\centering\normalfont\scshape\large #1\par}%
-  \vspace{\onelineskip}%
+  \ifx&#1&\else
+    {\centering\normalfont\scshape\large #1\par}%
+    \vspace{\onelineskip}%
+  \fi
   \noindent\ignorespaces
 }{%
   \par\endgroup
