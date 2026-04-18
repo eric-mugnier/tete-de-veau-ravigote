@@ -15,7 +15,7 @@ ACTES_DIR = ROOT / "actes"
 BUILD     = ROOT / "build"
 OUT_FILE  = ROOT / "stats.md"
 
-ILLUS_TARGET =448  # target: 1 illustration every N words (overridable via --target)
+ILLUS_TARGET =439  # target: 1 illustration every N words (overridable via --target)
 
 TOC_MAIN   = BUILD / "tete_de_veau_ravigote.toc"
 TOC_TOTALE = BUILD / "tete_de_veau_ravigote_LA_TOTALE.toc"
@@ -144,13 +144,20 @@ def count_illus(text: str) -> int:
         for path_str in filter(None, [m.group(1), m.group(2)]):
             fig_path = ROOT / path_str
             if fig_path.exists():
-                total += len(re.findall(r"\\bwimage\b", fig_path.read_text(encoding="utf-8")))
+                fig_text = fig_path.read_text(encoding="utf-8")
+                total += len(re.findall(r"\\bwimage\b", fig_text))
+                total += len(re.findall(r"\\includegraphics\b", fig_text))
             else:
                 total += 1  # fallback if file not found
 
     # single-image commands count as 1 each
     for cmd in [r"\iconographiewrapfig", r"\iconographieinlineblock", r"\iconographieimg"]:
         total += len(re.findall(re.escape(cmd) + r"\b", text))
+
+    # bare \bwimage not inside an \iconographie* command
+    for line in text.splitlines():
+        if re.search(r"\\bwimage\b", line) and not re.search(r"\\iconographi\w+", line):
+            total += len(re.findall(r"\\bwimage\b", line))
 
     return total
 
