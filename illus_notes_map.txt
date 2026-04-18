@@ -2,5 +2,9 @@ Extracting text from extrait.pdf …
   19 scenes with notes found.
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────
-  14 images checked  |  14 OK  |  0 CHECK  |  0 NOT FOUND
+  11 images checked  |  10 OK  |  1 CHECK  |  0 NOT FOUND
 ────────────────────────────────────────────────────────────────────────────────────────────────────
+
+[CHECK] ◀
+  scene 19  note   7  _0070_osvaldo-fresedo.jpg
+  note : Juan Carlos Cobián (1896–1953), dit « El Pibe » (le gamin), pianiste et compositeur argentin de tango. Auteur de classiques tels que Los Mareados et Shusheta, il fut l’un des novateurs du genre et inf
