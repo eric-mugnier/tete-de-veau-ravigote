@@ -356,7 +356,9 @@ def _png_illus_chart(rows_split: list) -> str:
     scene_labels = [r[0] for r in rows_split]
     values = [round(r[4] / r[2] * 100, 2) if r[2] else 0.0 for r in rows_split]
 
-    mean_val = sum(values) / len(values) if values else 0.0
+    total_words = sum(r[2] for r in rows_split)
+    total_illus = sum(r[4] for r in rows_split)
+    mean_val = total_illus / total_words * 100 if total_words else 0.0
 
     fig, ax = plt.subplots(figsize=(22, 5))
     ax.bar(range(len(values)), values, color="#4a90d9", alpha=0.85, width=0.7, zorder=2)
@@ -373,10 +375,12 @@ def _png_illus_chart(rows_split: list) -> str:
     ax.spines["right"].set_visible(False)
     plt.tight_layout()
 
+    import hashlib
     out = ROOT / "stats_illus_chart.png"
     fig.savefig(out, dpi=100)
     plt.close(fig)
-    return "![Illustrations par scène](stats_illus_chart.png)\n"
+    digest = hashlib.md5(out.read_bytes()).hexdigest()[:8]
+    return f"![Illustrations par scène](stats_illus_chart.png?v={digest})\n"
 
 
 def _illus_forecast(rows_split) -> str:
