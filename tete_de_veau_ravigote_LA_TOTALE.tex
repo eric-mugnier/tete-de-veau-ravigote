@@ -9,6 +9,17 @@
 \begin{document}
 \pagestyle{empty}
 
+% ═══ FAUX-TITRE (p. 1, impaire) ═══════════════════════════════════════════════
+\null\vspace*{\stretch{2}}
+{\centering\normalfont\scshape\large tête de veau ravigote\par}
+\vspace*{\stretch{3}}
+\newpage
+
+% ═══ PAGE BLANCHE (p. 2, paire) ═══════════════════════════════════════════════
+\hbox{}\thispagestyle{empty}
+\newpage
+
+% ═══ PAGE DE TITRE + COPYRIGHT (p. 3–4) ═══════════════════════════════════════
 \input{_titre-copyright.tex}
 
 % ═══ TEXTE PRINCIPAL (avec numéros de notes en exposant) ══════════════════════
