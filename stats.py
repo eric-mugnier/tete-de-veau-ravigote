@@ -342,28 +342,63 @@ def _md_table_split(rows: list, page_ranges: list | None = None) -> str:
     return "\n".join(lines) + "\n"
 
 
-def _mermaid_illus_chart(rows_split: list) -> str:
-    """Mermaid xychart-beta: % illustrations/mots per scene."""
+def _svg_illus_chart(rows_split: list) -> str:
+    """SVG bar chart: % illustrations/mots per scene."""
     if not rows_split:
         return ""
-    labels = [f'"{r[0]}"' for r in rows_split]
+
+    scene_labels = [r[0] for r in rows_split]
     values = []
     for _, _, words, _, illus, _, _ in rows_split:
-        pct = round(illus / words * 100, 2) if words else 0.0
-        values.append(str(pct))
-    max_val = max(float(v) for v in values)
-    y_max = max(1.0, round(max_val * 1.2, 1))
+        values.append(round(illus / words * 100, 2) if words else 0.0)
 
-    lines = [
-        "```mermaid",
-        "xychart-beta",
-        '    title "Illustrations par scène (% des mots)"',
-        f"    x-axis [{', '.join(labels)}]",
-        f'    y-axis "% illus / mots" 0 --> {y_max}',
-        f"    bar [{', '.join(values)}]",
-        "```",
-    ]
-    return "\n".join(lines) + "\n"
+    y_max = max(1.0, round(max(values) * 1.2, 1))
+
+    W, H = 1600, 380
+    ml, mr, mt, mb = 50, 20, 30, 100
+    cw, ch = W - ml - mr, H - mt - mb
+    n = len(values)
+    slot = cw / n
+    bar_w = max(2.0, slot * 0.7)
+
+    parts: list[str] = []
+
+    # title
+    parts.append(f'<text x="{W//2}" y="18" font-size="13" font-weight="bold" '
+                 f'text-anchor="middle">Illustrations par scène (% des mots)</text>')
+
+    # y gridlines + labels
+    for t in range(6):
+        v = y_max * t / 5
+        y = mt + ch - v / y_max * ch
+        parts.append(f'<line x1="{ml}" y1="{y:.1f}" x2="{ml+cw}" y2="{y:.1f}" '
+                     f'stroke="#ddd" stroke-width="0.5"/>')
+        parts.append(f'<text x="{ml-5}" y="{y+3:.1f}" font-size="9" '
+                     f'text-anchor="end">{v:.1f}%</text>')
+
+    # axes
+    parts.append(f'<line x1="{ml}" y1="{mt}" x2="{ml}" y2="{mt+ch}" '
+                 f'stroke="#999" stroke-width="1"/>')
+    parts.append(f'<line x1="{ml}" y1="{mt+ch}" x2="{ml+cw}" y2="{mt+ch}" '
+                 f'stroke="#999" stroke-width="1"/>')
+
+    # bars + x labels
+    for i, (label, val) in enumerate(zip(scene_labels, values)):
+        bh = val / y_max * ch
+        bx = ml + i * slot + (slot - bar_w) / 2
+        by = mt + ch - bh
+        parts.append(f'<rect x="{bx:.1f}" y="{by:.1f}" width="{bar_w:.1f}" '
+                     f'height="{bh:.1f}" fill="#4a90d9" opacity="0.8"/>')
+        lx = bx + bar_w / 2
+        ly = mt + ch + 6
+        parts.append(f'<text x="{lx:.1f}" y="{ly:.1f}" font-size="9" '
+                     f'text-anchor="end" '
+                     f'transform="rotate(-60,{lx:.1f},{ly:.1f})">{label}</text>')
+
+    inner = "\n  ".join(parts)
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
+            f'font-family="sans-serif" style="max-width:100%;height:auto">\n'
+            f'  {inner}\n</svg>\n')
 
 
 def _illus_forecast(rows_split) -> str:
@@ -454,7 +489,7 @@ def main():
         pr_split = None
 
     md = (_md_table_split(rows_split, pr_split) + "\n"
-          + _mermaid_illus_chart(rows_split) + "\n"
+          + _svg_illus_chart(rows_split) + "\n"
           + _md_table(rows_orig, pr_orig)
           + _illus_forecast(rows_split))
     OUT_FILE.write_text(md, encoding="utf-8")
