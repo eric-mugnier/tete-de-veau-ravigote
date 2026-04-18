@@ -2,13 +2,17 @@ Extracting text from extrait.pdf …
   19 scenes with notes found.
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────
-  18 images checked  |  16 OK  |  2 CHECK  |  0 NOT FOUND
+  10 images checked  |  7 OK  |  3 CHECK  |  0 NOT FOUND
 ────────────────────────────────────────────────────────────────────────────────────────────────────
 
 [CHECK] ◀
-  scene  7  note  15  _0150_dgse.png
-  note : Direction générale de la Sécurité extérieure, le service de renseignement extérieur français, placé sous l’autorité du Premier ministre. Source : fr.wikipedia.org/wiki/Direction_générale_de_la_Sécurit
+  scene  8  note   1  _0010_jean-françois-millet.jpg
+  note : enfiler mon peignoir Aescwig Paige collection printemps-hiver 2017 en laine de soie peignée et microfibre de bambou 100% bio du Suriname 9 (cadeau de Zaahid qui possédait exactement le même),
 
 [CHECK] ◀
-  scene  7  note  41  _0410_tramonto-firenze.jpg
-  note : L’Arno (240 km) est le fleuve traversant Florence de part en part, passant sous le Ponte Vecchio et se jetant dans la mer Tyrrhénienne à Pise. Il détermine la géographie et l’histoire de la ville depu
+  scene  8  note   5  _0050_rudolf-hess.jpg
+  note : fouiller un peu et écarquiller des yeux d’enfant émerveillé devant les casiers en fer forgé sur lesquels j’avais empilé les innombrables bouteilles volées à Riqueti (paix à son âme, il n’aurait plus j
+
+[CHECK] ◀
+  scene  8  note   9  _0090_prison-de-spandau.jpg
+  note : ré-échanger quelques paroles insipides avec cette vieille harpie de mère Ouvrard qui était toujours sur le pied de guerre dans le couloir, la bave aux lèvres, avec son crâne déplumé et son épiderme fr
