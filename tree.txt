@@ -108,11 +108,8 @@ iconography
 │       ├── _0790_george-stinney.jpg
 │       ├── _0870_colt-pocket-hammerless.jpg
 │       ├── _0880_rudolf-noureev.jpg
-│       ├── _0900_anubis.jpg
 │       ├── _0900_anubis.png
-│       ├── _0910_pyramides-de-gizeh.jpg
-│       ├── _0920_tesem.jpg
-│       └── _0930_chien-de-garenne-des-canaries.jpg
+│       └── _0920_tesem.jpg
 ├── acte_04
 │   ├── scene_6
 │   │   ├── _0000_braque-allemand-a-poil-dur.jpg
@@ -405,7 +402,6 @@ iconography
     │   ├── _1310_psychose-(film).jpg
     │   ├── _1390_massacre-à-la-tronçonneuse-(film,-1974).jpg
     │   ├── _1430_maniac-(film,-1980).jpg
-    │   ├── _2030_grey-s-anatomy.svg
     │   ├── _2110_hérodote_lb.jpg
     │   ├── _2120_scythes.jpg
     │   ├── _2130_le-silence-des-agneaux-(film)_2.jpg
@@ -433,12 +429,8 @@ iconography
     │   │   └── _0250_la-poursuite-impitoyable-(film).jpg
     │   ├── flics
     │   │   ├── _1010_charles-pellegrini_2_b_w.jpg
-    │   │   ├── _1010_charles-pellegrini.jpg
     │   │   ├── _1020_roger-marion_2_b_w.jpg
-    │   │   ├── _1020_roger-marion.jpg
-    │   │   ├── _1030_robert-broussard_2_b_w.jpg
-    │   │   ├── _1030_robert-broussard.jpg
-    │   │   └── _1040_marcel-guillaume.jpg
+    │   │   └── _1030_robert-broussard_2_b_w.jpg
     │   ├── indiens
     │   │   ├── _indigenous_col1.jpg
     │   │   ├── _indigenous_col2.jpg
@@ -483,4 +475,4 @@ iconography
             ├── _0130_osvaldo-fresedo.jpg
             └── _0140_anibal-troilo.jpg
 
-51 directories, 433 files
+51 directories, 425 files
