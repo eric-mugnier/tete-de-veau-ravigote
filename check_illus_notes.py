@@ -17,9 +17,10 @@ import re
 import subprocess
 from pathlib import Path
 
-ROOT        = Path(__file__).parent
-DEFAULT_PDF = ROOT / "build" / "extrait.pdf"
-ICONOGRAPHY = ROOT / "iconography"
+ROOT          = Path(__file__).parent
+DEFAULT_PDF   = ROOT / "build" / "extrait.pdf"
+ICONOGRAPHY   = ROOT / "iconography"
+ACCEPTED_FILE = ROOT / "illus_notes_accepted.txt"
 
 STOPWORDS = {
     "de", "du", "la", "le", "les", "et", "en", "un", "une", "des",
@@ -91,6 +92,20 @@ def find_matching_notes(name: str, notes: dict[int, str]) -> list[int]:
     return sorted(matches)
 
 
+# ── Accepted list ─────────────────────────────────────────────────────────────
+
+def load_accepted() -> set[str]:
+    """Return set of basenames that have been manually verified."""
+    if not ACCEPTED_FILE.exists():
+        return set()
+    accepted = set()
+    for line in ACCEPTED_FILE.read_text(encoding="utf-8").splitlines():
+        line = line.split("#")[0].strip()
+        if line:
+            accepted.add(line)
+    return accepted
+
+
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main() -> None:
@@ -100,9 +115,13 @@ def main() -> None:
                         help="restrict to a single scene number")
     parser.add_argument("--no-ok",           action="store_true",
                         help="hide OK results")
+    parser.add_argument("--show-accepted",   action="store_true",
+                        help="show ACCEPTED entries (manually-verified CHECKs)")
     parser.add_argument("--suggest-renames", action="store_true",
                         help="for CHECK entries search all notes and suggest mv commands")
     args = parser.parse_args()
+
+    accepted = load_accepted()
 
     print(f"Extracting text from {args.pdf.name} …")
     text        = extract_text(args.pdf)
@@ -143,17 +162,23 @@ def main() -> None:
         note_text = notes[note_num]
         kws       = keywords_from_name(img.name)
         matched   = [kw for kw in kws if kw in note_text.lower()]
-        status    = "OK" if matched else "CHECK"
+        if matched:
+            status = "OK"
+        elif img.name in accepted:
+            status = "ACCEPTED"
+        else:
+            status = "CHECK"
         results.append((scene_num, note_num, img, note_text, status, []))
 
     # ── Report ────────────────────────────────────────────────────────────────
     ok        = sum(1 for r in results if r[4] == "OK")
+    accepted_n= sum(1 for r in results if r[4] == "ACCEPTED")
     check     = sum(1 for r in results if r[4] == "CHECK")
-    not_found = sum(1 for r in results if r[4] not in {"OK", "CHECK"})
+    not_found = sum(1 for r in results if r[4] not in {"OK", "CHECK", "ACCEPTED"})
 
     W = 100
     print("─" * W)
-    print(f"  {len(results)} images checked  |  {ok} OK  |  {check} CHECK  |  {not_found} NOT FOUND")
+    print(f"  {len(results)} images checked  |  {ok} OK  |  {accepted_n} ACCEPTED  |  {check} CHECK  |  {not_found} NOT FOUND")
     print("─" * W)
 
     rename_cmds = []
@@ -161,14 +186,16 @@ def main() -> None:
     for scene_num, note_num, img, note_text, status, _ in results:
         if args.no_ok and status == "OK":
             continue
+        if not args.show_accepted and status == "ACCEPTED":
+            continue
 
-        marker = "" if status == "OK" else " ◀"
+        marker = "" if status in {"OK", "ACCEPTED"} else " ◀"
         print(f"\n[{status}]{marker}")
         print(f"  scene {scene_num:2d}  note {note_num:3d}  {img.name}")
         if status != "OK":
             print(f"  note : {note_text[:200]}")
 
-        if args.suggest_renames and status == "CHECK":
+        if args.suggest_renames and status == "CHECK" and status != "ACCEPTED":
             notes      = scene_notes.get(scene_num, {})
             candidates = find_matching_notes(img.name, notes)
             if len(candidates) == 1:
