@@ -2,13 +2,13 @@ Extracting text from extrait.pdf …
   19 scenes with notes found.
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────
-  23 images checked  |  21 OK  |  2 CHECK  |  0 NOT FOUND
+  18 images checked  |  16 OK  |  2 CHECK  |  0 NOT FOUND
 ────────────────────────────────────────────────────────────────────────────────────────────────────
 
 [CHECK] ◀
-  scene  6  note  20  _0200_beverly-hills.jpg
-  note : Communes et quartiers résidentiels aisés de l’agglomération de Los Angeles, régulièrement ravagés par des incendies de forêt catastrophiques alimentés par les vents de Santa Ana. Malibu, en bordure de
+  scene  7  note  15  _0150_dgse.png
+  note : Direction générale de la Sécurité extérieure, le service de renseignement extérieur français, placé sous l’autorité du Premier ministre. Source : fr.wikipedia.org/wiki/Direction_générale_de_la_Sécurit
 
 [CHECK] ◀
-  scene  6  note  38  _0380_friedrichstrasse-1945.jpg
-  note : Artère nord-sud du centre de Berlin (quartier de Mitte), connue pour son boulevard commercial et sa gare (Bahnhof Friedrichstraße). Pendant la Guerre froide, le poste-frontière « Checkpoint Charlie » 
+  scene  7  note  41  _0410_tramonto-firenze.jpg
+  note : L’Arno (240 km) est le fleuve traversant Florence de part en part, passant sous le Ponte Vecchio et se jetant dans la mer Tyrrhénienne à Pise. Il détermine la géographie et l’histoire de la ville depu
