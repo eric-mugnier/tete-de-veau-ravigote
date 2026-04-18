@@ -362,7 +362,7 @@ def _illus_forecast(rows_split) -> str:
         ratio    = illus / expected
         if ratio > 2.0:
             over.append(f"{chap} ({illus}/{expected:.1f})")
-        elif ratio < 0.7:
+        elif ratio < 0.5:
             under.append(f"{chap} ({illus}/{expected:.1f})")
 
     lines = [
