@@ -2,5 +2,13 @@ Extracting text from extrait.pdf …
   19 scenes with notes found.
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────
-  22 images checked  |  22 OK  |  0 CHECK  |  0 NOT FOUND
+  8 images checked  |  6 OK  |  2 CHECK  |  0 NOT FOUND
 ────────────────────────────────────────────────────────────────────────────────────────────────────
+
+[CHECK] ◀
+  scene 12  note   1  _0010_dodge.charger.png
+  note : Muscle car emblématique du groupe Chrysler (États-Unis), associé aux forces de l’ordre et à la culture du Sud depuis les années 1960. Source : fr.wikipedia.org/wiki/Dodge_Charger
+
+[CHECK] ◀
+  scene 12  note  20  _0200_molière.png
+  note : Expression désignant la langue française, par référence à Jean-Baptiste Poquelin dit Molière (1622–1673), dramaturge et comédien considéré comme le maître de la comédie classique française. Source : f
