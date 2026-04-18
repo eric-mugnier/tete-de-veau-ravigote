@@ -26,61 +26,7 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 | IX.19 | Il est toujours extrêmement douloureux de mettre… | 721 | 204 |   6 138 |   3.29% |  25.25% |    23 |  0.37% |            13 |  0.21% |  56.52% |
 | **Total** | |  |  | **186 743** | **100%** | **29.41%** | **1078** | **0.58%** | **417** | **0.22%** | **38.68%** |
 
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="380" font-family="sans-serif" style="max-width:100%;height:auto">
-  <text x="800" y="18" font-size="13" font-weight="bold" text-anchor="middle">Illustrations par scène (% des mots)</text>
-  <line x1="50" y1="280.0" x2="1580" y2="280.0" stroke="#ddd" stroke-width="0.5"/>
-  <text x="45" y="283.0" font-size="9" text-anchor="end">0.0%</text>
-  <line x1="50" y1="230.0" x2="1580" y2="230.0" stroke="#ddd" stroke-width="0.5"/>
-  <text x="45" y="233.0" font-size="9" text-anchor="end">0.2%</text>
-  <line x1="50" y1="180.0" x2="1580" y2="180.0" stroke="#ddd" stroke-width="0.5"/>
-  <text x="45" y="183.0" font-size="9" text-anchor="end">0.4%</text>
-  <line x1="50" y1="130.0" x2="1580" y2="130.0" stroke="#ddd" stroke-width="0.5"/>
-  <text x="45" y="133.0" font-size="9" text-anchor="end">0.6%</text>
-  <line x1="50" y1="80.0" x2="1580" y2="80.0" stroke="#ddd" stroke-width="0.5"/>
-  <text x="45" y="83.0" font-size="9" text-anchor="end">0.8%</text>
-  <line x1="50" y1="30.0" x2="1580" y2="30.0" stroke="#ddd" stroke-width="0.5"/>
-  <text x="45" y="33.0" font-size="9" text-anchor="end">1.0%</text>
-  <line x1="50" y1="30" x2="50" y2="280" stroke="#999" stroke-width="1"/>
-  <line x1="50" y1="280" x2="1580" y2="280" stroke="#999" stroke-width="1"/>
-  <rect x="62.1" y="190.0" width="56.4" height="90.0" fill="#4a90d9" opacity="0.8"/>
-  <text x="90.3" y="286.0" font-size="9" text-anchor="end" transform="rotate(-60,90.3,286.0)">I.1</text>
-  <rect x="142.6" y="240.0" width="56.4" height="40.0" fill="#4a90d9" opacity="0.8"/>
-  <text x="170.8" y="286.0" font-size="9" text-anchor="end" transform="rotate(-60,170.8,286.0)">II.2</text>
-  <rect x="223.1" y="210.0" width="56.4" height="70.0" fill="#4a90d9" opacity="0.8"/>
-  <text x="251.3" y="286.0" font-size="9" text-anchor="end" transform="rotate(-60,251.3,286.0)">II.3</text>
-  <rect x="303.7" y="205.0" width="56.4" height="75.0" fill="#4a90d9" opacity="0.8"/>
-  <text x="331.8" y="286.0" font-size="9" text-anchor="end" transform="rotate(-60,331.8,286.0)">III.4</text>
-  <rect x="384.2" y="245.0" width="56.4" height="35.0" fill="#4a90d9" opacity="0.8"/>
-  <text x="412.4" y="286.0" font-size="9" text-anchor="end" transform="rotate(-60,412.4,286.0)">III.5</text>
-  <rect x="464.7" y="220.0" width="56.4" height="60.0" fill="#4a90d9" opacity="0.8"/>
-  <text x="492.9" y="286.0" font-size="9" text-anchor="end" transform="rotate(-60,492.9,286.0)">IV.6</text>
-  <rect x="545.2" y="225.0" width="56.4" height="55.0" fill="#4a90d9" opacity="0.8"/>
-  <text x="573.4" y="286.0" font-size="9" text-anchor="end" transform="rotate(-60,573.4,286.0)">IV.7</text>
-  <rect x="625.8" y="205.0" width="56.4" height="75.0" fill="#4a90d9" opacity="0.8"/>
-  <text x="653.9" y="286.0" font-size="9" text-anchor="end" transform="rotate(-60,653.9,286.0)">V.8</text>
-  <rect x="706.3" y="227.5" width="56.4" height="52.5" fill="#4a90d9" opacity="0.8"/>
-  <text x="734.5" y="286.0" font-size="9" text-anchor="end" transform="rotate(-60,734.5,286.0)">V.9</text>
-  <rect x="786.8" y="202.5" width="56.4" height="77.5" fill="#4a90d9" opacity="0.8"/>
-  <text x="815.0" y="286.0" font-size="9" text-anchor="end" transform="rotate(-60,815.0,286.0)">VI.10</text>
-  <rect x="867.3" y="187.5" width="56.4" height="92.5" fill="#4a90d9" opacity="0.8"/>
-  <text x="895.5" y="286.0" font-size="9" text-anchor="end" transform="rotate(-60,895.5,286.0)">VI.11</text>
-  <rect x="947.9" y="245.0" width="56.4" height="35.0" fill="#4a90d9" opacity="0.8"/>
-  <text x="976.1" y="286.0" font-size="9" text-anchor="end" transform="rotate(-60,976.1,286.0)">VI.12</text>
-  <rect x="1028.4" y="200.0" width="56.4" height="80.0" fill="#4a90d9" opacity="0.8"/>
-  <text x="1056.6" y="286.0" font-size="9" text-anchor="end" transform="rotate(-60,1056.6,286.0)">VII.13</text>
-  <rect x="1108.9" y="195.0" width="56.4" height="85.0" fill="#4a90d9" opacity="0.8"/>
-  <text x="1137.1" y="286.0" font-size="9" text-anchor="end" transform="rotate(-60,1137.1,286.0)">VIII.14</text>
-  <rect x="1189.4" y="227.5" width="56.4" height="52.5" fill="#4a90d9" opacity="0.8"/>
-  <text x="1217.6" y="286.0" font-size="9" text-anchor="end" transform="rotate(-60,1217.6,286.0)">VIII.15</text>
-  <rect x="1270.0" y="237.5" width="56.4" height="42.5" fill="#4a90d9" opacity="0.8"/>
-  <text x="1298.2" y="286.0" font-size="9" text-anchor="end" transform="rotate(-60,1298.2,286.0)">IX.16</text>
-  <rect x="1350.5" y="242.5" width="56.4" height="37.5" fill="#4a90d9" opacity="0.8"/>
-  <text x="1378.7" y="286.0" font-size="9" text-anchor="end" transform="rotate(-60,1378.7,286.0)">IX.17</text>
-  <rect x="1431.0" y="280.0" width="56.4" height="0.0" fill="#4a90d9" opacity="0.8"/>
-  <text x="1459.2" y="286.0" font-size="9" text-anchor="end" transform="rotate(-60,1459.2,286.0)">IX.18</text>
-  <rect x="1511.6" y="227.5" width="56.4" height="52.5" fill="#4a90d9" opacity="0.8"/>
-  <text x="1539.7" y="286.0" font-size="9" text-anchor="end" transform="rotate(-60,1539.7,286.0)">IX.19</text>
-</svg>
+![Illustrations par scène](stats_illus_chart.png)
 
 # Statistiques par acte (avant découpage)
 
