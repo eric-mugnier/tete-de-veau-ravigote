@@ -360,16 +360,16 @@ def _png_illus_chart(rows_split: list) -> str:
     total_illus = sum(r[4] for r in rows_split)
     mean_val = total_illus / total_words * 100 if total_words else 0.0
 
-    fig, ax = plt.subplots(figsize=(22, 5))
+    fig, ax = plt.subplots(figsize=(22, 7))
     ax.bar(range(len(values)), values, color="#4a90d9", alpha=0.85, width=0.7, zorder=2)
-    ax.axhline(mean_val, color="red", linewidth=1.2, zorder=3,
+    ax.axhline(mean_val, color="red", linewidth=3.0, zorder=3,
                label=f"moyenne {mean_val:.2f}%")
     ax.set_xticks(range(len(values)))
-    ax.set_xticklabels(scene_labels, rotation=60, ha="right", fontsize=13)
-    ax.set_ylabel("% illus / mots", fontsize=15)
-    ax.set_title("Illustrations par scène (% des mots)", fontsize=17)
-    ax.tick_params(axis="y", labelsize=14)
-    ax.legend(fontsize=14)
+    ax.set_xticklabels(scene_labels, rotation=60, ha="right", fontsize=24)
+    ax.set_ylabel("% illus / mots", fontsize=28)
+    ax.set_title("Illustrations par scène (% des mots)", fontsize=32)
+    ax.tick_params(axis="y", labelsize=26)
+    ax.legend(fontsize=26)
     ax.grid(axis="y", linewidth=0.5, color="#ddd", zorder=0)
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
@@ -377,7 +377,7 @@ def _png_illus_chart(rows_split: list) -> str:
 
     import hashlib
     out = ROOT / "stats_illus_chart.png"
-    fig.savefig(out, dpi=100)
+    fig.savefig(out, dpi=150)
     plt.close(fig)
     digest = hashlib.md5(out.read_bytes()).hexdigest()[:8]
     return f"![Illustrations par scène](stats_illus_chart.png?v={digest})\n"
