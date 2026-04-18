@@ -356,7 +356,6 @@ def _mermaid_illus_chart(rows_split: list) -> str:
 
     lines = [
         "```mermaid",
-        '%%{init: {"xychart": {"width": 2400, "useMaxWidth": false}}}%%',
         "xychart-beta",
         '    title "Illustrations par scène (% des mots)"',
         f"    x-axis [{', '.join(labels)}]",
