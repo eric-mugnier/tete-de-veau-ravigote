@@ -342,6 +342,30 @@ def _md_table_split(rows: list, page_ranges: list | None = None) -> str:
     return "\n".join(lines) + "\n"
 
 
+def _mermaid_illus_chart(rows_split: list) -> str:
+    """Mermaid xychart-beta: % illustrations/mots per scene."""
+    if not rows_split:
+        return ""
+    labels = [f'"{r[0]}"' for r in rows_split]
+    values = []
+    for _, _, words, _, illus, _, _ in rows_split:
+        pct = round(illus / words * 100, 2) if words else 0.0
+        values.append(str(pct))
+    max_val = max(float(v) for v in values)
+    y_max = max(1.0, round(max_val * 1.2, 1))
+
+    lines = [
+        "```mermaid",
+        "xychart-beta",
+        '    title "Illustrations par scène (% des mots)"',
+        f"    x-axis [{', '.join(labels)}]",
+        f'    y-axis "% illus / mots" 0 --> {y_max}',
+        f"    bar [{', '.join(values)}]",
+        "```",
+    ]
+    return "\n".join(lines) + "\n"
+
+
 def _illus_forecast(rows_split) -> str:
     """Estimate remaining illustration work against a fixed target density."""
     counted = rows_split
@@ -430,6 +454,7 @@ def main():
         pr_split = None
 
     md = (_md_table_split(rows_split, pr_split) + "\n"
+          + _mermaid_illus_chart(rows_split) + "\n"
           + _md_table(rows_orig, pr_orig)
           + _illus_forecast(rows_split))
     OUT_FILE.write_text(md, encoding="utf-8")
