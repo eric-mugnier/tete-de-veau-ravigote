@@ -356,12 +356,18 @@ def _png_illus_chart(rows_split: list) -> str:
     scene_labels = [r[0] for r in rows_split]
     values = [round(r[4] / r[2] * 100, 2) if r[2] else 0.0 for r in rows_split]
 
-    fig, ax = plt.subplots(figsize=(22, 4))
-    ax.bar(range(len(values)), values, color="#4a90d9", alpha=0.85, width=0.7)
+    mean_val = sum(values) / len(values) if values else 0.0
+
+    fig, ax = plt.subplots(figsize=(22, 5))
+    ax.bar(range(len(values)), values, color="#4a90d9", alpha=0.85, width=0.7, zorder=2)
+    ax.axhline(mean_val, color="red", linewidth=1.2, zorder=3,
+               label=f"moyenne {mean_val:.2f}%")
     ax.set_xticks(range(len(values)))
-    ax.set_xticklabels(scene_labels, rotation=60, ha="right", fontsize=7)
-    ax.set_ylabel("% illus / mots")
-    ax.set_title("Illustrations par scène (% des mots)")
+    ax.set_xticklabels(scene_labels, rotation=60, ha="right", fontsize=10)
+    ax.set_ylabel("% illus / mots", fontsize=12)
+    ax.set_title("Illustrations par scène (% des mots)", fontsize=14)
+    ax.tick_params(axis="y", labelsize=11)
+    ax.legend(fontsize=11)
     ax.grid(axis="y", linewidth=0.5, color="#ddd", zorder=0)
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
