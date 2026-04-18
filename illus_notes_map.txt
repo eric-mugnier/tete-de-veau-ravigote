@@ -1,0 +1,422 @@
+Extracting text from extrait.pdf …
+  19 scenes with notes found.
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+  358 images checked  |  254 OK  |  96 CHECK  |  8 NOT FOUND
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+[NOTE NOT FOUND] ◀
+  scene  5  note  54  _0540_smith-wesson-bodyguard.jpg
+  note : 
+
+[NOTE NOT FOUND] ◀
+  scene  5  note  74  _0740_albert-fish-1903.jpg
+  note : 
+
+[NOTE NOT FOUND] ◀
+  scene  5  note  79  _0790_george-stinney.jpg
+  note : 
+
+[NOTE NOT FOUND] ◀
+  scene  5  note  87  _0870_colt-pocket-hammerless.jpg
+  note : 
+
+[NOTE NOT FOUND] ◀
+  scene  5  note  88  _0880_rudolf-noureev.jpg
+  note : 
+
+[NOTE NOT FOUND] ◀
+  scene  5  note  90  _0900_anubis.png
+  note : 
+
+[NOTE NOT FOUND] ◀
+  scene  5  note  92  _0920_tesem.jpg
+  note : 
+
+[CHECK] ◀
+  scene  6  note  13  _0130_noahs-ark-edward-hicks.png
+  note : Épisode biblique (Genèse 6–9) : Dieu ordonne à Noé de construire une arche pour préserver un couple de chaque espèce animale avant le Déluge universel. Récit présent dans les traditions juive, chrétie
+
+[CHECK] ◀
+  scene  6  note  20  _0200_beverly-hills.jpg
+  note : Communes et quartiers résidentiels aisés de l’agglomération de Los Angeles, régulièrement ravagés par des incendies de forêt catastrophiques alimentés par les vents de Santa Ana. Malibu, en bordure de
+
+[CHECK] ◀
+  scene  6  note  38  _0380_friedrichstrasse-1945.jpg
+  note : Artère nord-sud du centre de Berlin (quartier de Mitte), connue pour son boulevard commercial et sa gare (Bahnhof Friedrichstraße). Pendant la Guerre froide, le poste-frontière « Checkpoint Charlie » 
+
+[CHECK] ◀
+  scene  7  note   1  _0010_ottis-toole.jpg
+  note : Rhonda Fleming (1923–2020), actrice américaine surnommée « la Reine du Technicolor » pour sa chevelure rousse flamboyante. Figure du film noir et du western des années 1940–1950, notamment dans Spellb
+
+[CHECK] ◀
+  scene  7  note   2  _0020_henry-lucas.jpg
+  note : Lana Turner (1921–1995), actrice américaine, icône hollywoodienne des années 1940–1950. Elle tint le premier rôle féminin de The Postman Always Rings Twice (1946). Sa vie privée tumultueuse — sept mar
+
+[CHECK] ◀
+  scene  7  note   3  _0030_nambikwara.jpg
+  note : Gene Tierney (1920–1991), actrice américaine, célèbre pour son rôle-titre dans Laura (1944) de Otto Preminger et pour Leave Her to Heaven (1945). Considérée comme l’une des plus belles actrices de l’â
+
+[CHECK] ◀
+  scene  7  note   3  _0030_nambikwara_2.jpg
+  note : Gene Tierney (1920–1991), actrice américaine, célèbre pour son rôle-titre dans Laura (1944) de Otto Preminger et pour Leave Her to Heaven (1945). Considérée comme l’une des plus belles actrices de l’â
+
+[CHECK] ◀
+  scene  7  note   7  _0070_code-hays.jpg
+  note : Dashiell Hammett (1894–1961), romancier américain, créateur du détective Sam Spade (Le Faucon maltais, 1930) et de Nick Charles. Ancien détective de l’agence Pinkerton, il inventa le roman noir réalis
+
+[CHECK] ◀
+  scene  7  note  12  _0120_kitten_natividad.jpg
+  note : Queer Eye for the Straight Guy : télé-réalité américaine (2003) dans laquelle cinq gay lifestyle experts relookent des hommes hétérosexuels. Source : fr.wikipedia.org/wiki/Queer_Eye_for_the_Straight_G
+
+[CHECK] ◀
+  scene  7  note  15  _0150_dgse.png
+  note : Direction générale de la Sécurité extérieure, le service de renseignement extérieur français, placé sous l’autorité du Premier ministre. Source : fr.wikipedia.org/wiki/Direction_générale_de_la_Sécurit
+
+[CHECK] ◀
+  scene  7  note  21  _0210_ouroboros.png
+  note : Jess Franco (1930–2013), réalisateur espagnol prolifique, auteur de plus de deux cents films d’exploitation mêlant horreur et érotisme. Figure culte du cinéma de genre européen des années 1960–1980. I
+
+[CHECK] ◀
+  scene  7  note  26  _0260_tramonto-firenze.jpg
+  note : Trilogie érotique de Russ Meyer : Vixen! (1968), Supervixens (1975) et Beneath the Valley of the Ultra-Vixens (1979), célèbre pour ses personnages féminins exubérants et ses satires de la société amér
+
+[CHECK] ◀
+  scene  7  note  28  _0280_moine-cistercien.png
+  note : Roland Joffé (né en 1945), réalisateur britannique, auteur de Mission (1986), film sur les missions jésuites guaranis en Amérique du Sud au xviiie siècle, Palme d’or à Cannes. La bande originale, sign
+
+[CHECK] ◀
+  scene  8  note   1  _0010_jean-françois-millet.jpg
+  note : enfiler mon peignoir Aescwig Paige collection printemps-hiver 2017 en laine de soie peignée et microfibre de bambou 100% bio du Suriname 9 (cadeau de Zaahid qui possédait exactement le même),
+
+[CHECK] ◀
+  scene  8  note   5  _0050_rudolf-hess.jpg
+  note : fouiller un peu et écarquiller des yeux d’enfant émerveillé devant les casiers en fer forgé sur lesquels j’avais empilé les innombrables bouteilles volées à Riqueti (paix à son âme, il n’aurait plus j
+
+[CHECK] ◀
+  scene  8  note   9  _0090_prison-de-spandau.jpg
+  note : ré-échanger quelques paroles insipides avec cette vieille harpie de mère Ouvrard qui était toujours sur le pied de guerre dans le couloir, la bave aux lèvres, avec son crâne déplumé et son épiderme fr
+
+[CHECK] ◀
+  scene  8  note  11  _0110_django-unchained.jpg
+  note : Erich Raeder (1876–1960), grand amiral allemand, commandant en chef de la Kriegsmarine de 1928 à 1943. Condamné à la prison à vie à Nuremberg pour crimes de guerre, il est libéré en 1955 pour raisons 
+
+[CHECK] ◀
+  scene  8  note  12  _0120_aberfeldy-12.png
+  note : Konstantin von Neurath (1873–1956), diplomate et homme politique allemand, ministre des Affaires étrangères du Reich (1932–1938) puis Protecteur de Bohême-Moravie (1939–1941). Condamné à quinze ans de
+
+[CHECK] ◀
+  scene  8  note  13  _0130_luger-p08.jpg
+  note : Walther Funk (1890–1960), économiste et homme politique nazi, président de la Reichsbank (1939–1945) et ministre de l’Économie du Reich. Condamné à la prison à vie à Nuremberg pour crimes contre l’hum
+
+[CHECK] ◀
+  scene  9  note  14  _0140_bollito-misto.jpg
+  note : Rob Meltzer, réalisateur américain. Source : imdb.com/name/nm0578446/
+
+[CHECK] ◀
+  scene  9  note  15  _0150_volnay-hospices.png
+  note : Jean-Claude Van Damme (né en 1960), acteur, réalisateur et scénariste belge, surnommé « le Muscle de Bruxelles », célèbre pour ses films d’action (Bloodsport, 1988; Lionheart, 1990 ; Double Impact, 19
+
+[CHECK] ◀
+  scene  9  note  20  _0200_ferrari-250-gt.png
+  note : Josephine Cochrane (1839–1913), inventrice américaine, créatrice du premier lave-vaisselle à pression d’eau à usage commercial, dont elle dépose le brevet en 1886. Son entreprise deviendra plus tard l
+
+[CHECK] ◀
+  scene  9  note  12  _0120_welcome-to-the-jungle-jonathan-hensleigh.jpg
+  note : Peter Berg (né en 1964), acteur, réalisateur et producteur américain, connu notamment pour Friday Night Lights (2004), Hancock (2008) et Lone Survivor (2013). Source : fr.wikipedia.org/wiki/Peter_Berg
+
+[CHECK] ◀
+  scene  9  note  12  _0120_welcome-to-the-jungle-rob-meltzer.jpg
+  note : Peter Berg (né en 1964), acteur, réalisateur et producteur américain, connu notamment pour Friday Night Lights (2004), Hancock (2008) et Lone Survivor (2013). Source : fr.wikipedia.org/wiki/Peter_Berg
+
+[CHECK] ◀
+  scene 10  note   1  _0010_kebehsenouf.png
+  note : Kébehsénouf (ou Qebehsénouf), l’un des quatre Fils d’Horus de la mythologie égyptienne antique, représenté à tête de faucon. Il était chargé de veiller sur les intestins du défunt, conservés dans le v
+
+[CHECK] ◀
+  scene 10  note  81  _0810_leda.jpg
+  note : Léda est une reine de Sparte dans la mythologie grecque, épouse du roi Tyndare. Séduite par Zeus métamorphosé en cygne, elle enfanta notamment les Dioscures (Castor et Pollux) et Hélène de Troie. Sour
+
+[CHECK] ◀
+  scene 11  note   1  _0010_zarah-leander.jpg
+  note : Les Khoïsan sont un ensemble de peuples d’Afrique australe, dont les San et les Khoïkhoï, caractérisés par des langues à clics et une morphologie distinctive. Parmi les populations humaines les plus a
+
+[CHECK] ◀
+  scene 11  note  32  _0320_honoré-d-urfé.jpg
+  note : Honoré d’Urfé (1567–1625), écrivain français, comte de Châteauneuf. Son roman pastoral L’Astrée (publié de 1607 à 1627, inachevé), dont le berger héros se nomme Céladon, est considéré comme le premier
+
+[CHECK] ◀
+  scene 11  note  81  _0810_medjugorje.jpg
+  note : Međugorje est une localité de Bosnie-Herzégovine où, depuis le 24 juin 1981, six jeunes affirment avoir des apparitions régulières de la Vierge Marie. Le site est devenu l’un des principaux lieux de p
+
+[CHECK] ◀
+  scene 11  note   1  _0010_mary-brunner.jpg
+  note : Les Khoïsan sont un ensemble de peuples d’Afrique australe, dont les San et les Khoïkhoï, caractérisés par des langues à clics et une morphologie distinctive. Parmi les populations humaines les plus a
+
+[CHECK] ◀
+  scene 11  note   2  _0020_sandra-good.jpg
+  note : Les San (ou Bochimans) sont un peuple chasseur-cueilleur d’Afrique australe, l’un des plus anciens de l’humanité. Présents principalement en Namibie, au Botswana et en Afrique du Sud, ils ont longtemp
+
+[CHECK] ◀
+  scene 11  note   3  _0030_patricia-krenwinkel.jpg
+  note : Les Bantous désignent un vaste ensemble de peuples d’Afrique subsaharienne parlant des langues de la famille bantoue. Leur expansion progressive vers l’Afrique australe à partir de l’Afrique centrale 
+
+[CHECK] ◀
+  scene 11  note   4  _0040_squeaky-fromme.jpg
+  note : Les Afrikaners sont des Sud-Africains blancs d’origine principalement néerlandaise, française huguenote et allemande, parlant l’afrikaans. Concepteurs et défenseurs de l’apartheid (1948–1991), ils ont
+
+[CHECK] ◀
+  scene 11  note   5  _0050_susan-atkins.jpg
+  note : Le Brontosaure (Brontosaurus excelsus), sauropode herbivore du Jurassique supérieur (il y a environ 150 millions d’années), pouvait atteindre 22 mètres de long et peser jusqu’à 15 tonnes. Longtemps co
+
+[CHECK] ◀
+  scene 11  note   6  _0060_leslie-van-houten.jpg
+  note : L’université de Cambridge, fondée en 1209 en Angleterre, est l’une des plus VI anciennes et des plus prestigieuses universités du monde. Elle a formé de nombreux prix Nobel, philosophes, mathématicien
+
+[CHECK] ◀
+  scene 11  note   7  _0070_sherry-cooper.jpg
+  note : L’université d’Oxford, fondée au xie siècle en Angleterre, est la plus ancienne université anglophone du monde. Avec Cambridge, elle forme le duo « Oxbridge », symbole de l’élite académique britanniqu
+
+[CHECK] ◀
+  scene 11  note   1  _0010_clint-eastwood.jpg
+  note : Les Khoïsan sont un ensemble de peuples d’Afrique australe, dont les San et les Khoïkhoï, caractérisés par des langues à clics et une morphologie distinctive. Parmi les populations humaines les plus a
+
+[CHECK] ◀
+  scene 11  note   2  _0020_steve-mcqueen.jpg
+  note : Les San (ou Bochimans) sont un peuple chasseur-cueilleur d’Afrique australe, l’un des plus anciens de l’humanité. Présents principalement en Namibie, au Botswana et en Afrique du Sud, ils ont longtemp
+
+[CHECK] ◀
+  scene 11  note   3  _0030_dustin-hoffman.jpg
+  note : Les Bantous désignent un vaste ensemble de peuples d’Afrique subsaharienne parlant des langues de la famille bantoue. Leur expansion progressive vers l’Afrique australe à partir de l’Afrique centrale 
+
+[CHECK] ◀
+  scene 11  note   4  _0040_al-pacino.jpg
+  note : Les Afrikaners sont des Sud-Africains blancs d’origine principalement néerlandaise, française huguenote et allemande, parlant l’afrikaans. Concepteurs et défenseurs de l’apartheid (1948–1991), ils ont
+
+[CHECK] ◀
+  scene 11  note   5  _0050_robert-de-niro.jpg
+  note : Le Brontosaure (Brontosaurus excelsus), sauropode herbivore du Jurassique supérieur (il y a environ 150 millions d’années), pouvait atteindre 22 mètres de long et peser jusqu’à 15 tonnes. Longtemps co
+
+[CHECK] ◀
+  scene 11  note   6  _0060_sylvester-stallone.jpg
+  note : L’université de Cambridge, fondée en 1209 en Angleterre, est l’une des plus VI anciennes et des plus prestigieuses universités du monde. Elle a formé de nombreux prix Nobel, philosophes, mathématicien
+
+[CHECK] ◀
+  scene 11  note   3  _0030_désir-de-femme.jpg
+  note : Les Bantous désignent un vaste ensemble de peuples d’Afrique subsaharienne parlant des langues de la famille bantoue. Leur expansion progressive vers l’Afrique australe à partir de l’Afrique centrale 
+
+[CHECK] ◀
+  scene 11  note   4  _0040_le-secret-magnifique.jpg
+  note : Les Afrikaners sont des Sud-Africains blancs d’origine principalement néerlandaise, française huguenote et allemande, parlant l’afrikaans. Concepteurs et défenseurs de l’apartheid (1948–1991), ils ont
+
+[CHECK] ◀
+  scene 11  note   6  _0060_écrit-sur-du-vent.jpg
+  note : L’université de Cambridge, fondée en 1209 en Angleterre, est l’une des plus VI anciennes et des plus prestigieuses universités du monde. Elle a formé de nombreux prix Nobel, philosophes, mathématicien
+
+[CHECK] ◀
+  scene 11  note   1  _0010_randall-18.png
+  note : Les Khoïsan sont un ensemble de peuples d’Afrique australe, dont les San et les Khoïkhoï, caractérisés par des langues à clics et une morphologie distinctive. Parmi les populations humaines les plus a
+
+[CHECK] ◀
+  scene 11  note   2  _0020_hoyt-spectra.png
+  note : Les San (ou Bochimans) sont un peuple chasseur-cueilleur d’Afrique australe, l’un des plus anciens de l’humanité. Présents principalement en Namibie, au Botswana et en Afrique du Sud, ils ont longtemp
+
+[CHECK] ◀
+  scene 11  note   3  _0030_martin-cougar.png
+  note : Les Bantous désignent un vaste ensemble de peuples d’Afrique subsaharienne parlant des langues de la famille bantoue. Leur expansion progressive vers l’Afrique australe à partir de l’Afrique centrale 
+
+[CHECK] ◀
+  scene 11  note   4  _0040_m60.png
+  note : Les Afrikaners sont des Sud-Africains blancs d’origine principalement néerlandaise, française huguenote et allemande, parlant l’afrikaans. Concepteurs et défenseurs de l’apartheid (1948–1991), ils ont
+
+[CHECK] ◀
+  scene 11  note   5  _0050_hk-mp5a3.png
+  note : Le Brontosaure (Brontosaurus excelsus), sauropode herbivore du Jurassique supérieur (il y a environ 150 millions d’années), pouvait atteindre 22 mètres de long et peser jusqu’à 15 tonnes. Longtemps co
+
+[CHECK] ◀
+  scene 11  note   6  _0060_dragunov-svd.png
+  note : L’université de Cambridge, fondée en 1209 en Angleterre, est l’une des plus VI anciennes et des plus prestigieuses universités du monde. Elle a formé de nombreux prix Nobel, philosophes, mathématicien
+
+[CHECK] ◀
+  scene 11  note   7  _0070_hibben-iv.png
+  note : L’université d’Oxford, fondée au xie siècle en Angleterre, est la plus ancienne université anglophone du monde. Avec Cambridge, elle forme le duo « Oxbridge », symbole de l’élite académique britanniqu
+
+[CHECK] ◀
+  scene 11  note   8  _0080_browning-m2.png
+  note : L’université Harvard, fondée en 1636 à Cambridge (Massachusetts), est la plus ancienne université des États-Unis et l’une des plus réputées au monde. Source : fr.wikipedia.org/wiki/Université_Harvard
+
+[CHECK] ◀
+  scene 11  note   9  _0090_winchester-1892.png
+  note : Le Tithonien est le dernier étage du Jurassique supérieur, s’étendant d’environ 152 à 145 millions d’années avant notre ère. Il précède directement le Crétacé inférieur. Source : fr.wikipedia.org/wiki
+
+[CHECK] ◀
+  scene 12  note   1  _0010_dodge.charger.png
+  note : Muscle car emblématique du groupe Chrysler (États-Unis), associé aux forces de l’ordre et à la culture du Sud depuis les années 1960. Source : fr.wikipedia.org/wiki/Dodge_Charger
+
+[CHECK] ◀
+  scene 12  note  12  _0120_aurore.jpg
+  note : Chaîne de clubs nightlife fondée par Hugh Hefner en 1960, célèbre pour 12 ses hôtesses (Bunny Girls) en costume de lapin; icône de la culture populaire américaine des années 1960–1980. Source : fr.wik
+
+[CHECK] ◀
+  scene 12  note  12  _0120_molière.png
+  note : Chaîne de clubs nightlife fondée par Hugh Hefner en 1960, célèbre pour 12 ses hôtesses (Bunny Girls) en costume de lapin; icône de la culture populaire américaine des années 1960–1980. Source : fr.wik
+
+[CHECK] ◀
+  scene 12  note  14  _0140_simone-de-bavoir-et-jean-paul-tartre.jpg
+  note : Méphisto, personnage du diable dans Faust, opéra en cinq actes de Charles Gounod (1859). Source : fr.wikipedia.org/wiki/Faust_(Gounod)
+
+[CHECK] ◀
+  scene 12  note  16  _0160_jeffrey-dahmer.png
+  note : La statue du Commandeur (Il Commendatore), personnage de Don Giovanni, opéra en deux actes de Wolfgang Amadeus Mozart (1787). Source : fr.wikipedia.org/wiki/Don_Giovanni
+
+[CHECK] ◀
+  scene 13  note  12  _0120_hottentot.jpg
+  note : Terme historique (aujourd’hui péjoratif) désignant les Khoïkhoï, peuple pastoral d’Afrique australe, parmi les habitants les plus anciens de la région du Cap. Source : fr.wikipedia.org/wiki/Khoïkhoï
+
+[CHECK] ◀
+  scene 14  note  32  _0320_hélène-jégado.jpg
+  note : Hélène Jégado (1803–1852), servante bretonne considérée comme l’une des plus grandes empoisonneuses de l’histoire de France. On lui attribue entre vingt-trois et trente-six meurtres à l’arsenic sur pl
+
+[CHECK] ◀
+  scene 14  note   6  _0060_simon-bolivar.jpg
+  note : Simón Bolívar (1783–1830), général et homme d’État vénézuélien, surnommé « El Libertador ». Il mena les guerres d’indépendance qui libérèrent du joug espagnol le Venezuela, la Colombie, l’Équateur, le
+
+[CHECK] ◀
+  scene 15  note  51  _0510_melanie-nunes-fronckowiak.png
+  note : Surnom populaire de nébuleuses planétaires à fort dégagement de soufre; utilisé ici de façon burlesque. Source : fr.wikipedia.org/wiki/NGC_6072
+
+[CHECK] ◀
+  scene 16  note   8  _0080_désert-de-sonora2.jpg
+  note : Grand désert couvrant le sud de l’Arizona, le sud-ouest du Nouveau-Mexique et le nord-ouest du Mexique, l’un des plus chauds d’Amérique du Nord. Source : fr.wikipedia.org/wiki/Désert_de_Sonora
+
+[CHECK] ◀
+  scene 16  note  60  _0600_circe.jpg
+  note : Circé est une magicienne de la mythologie grecque, fille d’Hélios, qui appa- 16 raît dans l’Odyssée d’Homère. Elle transforma les compagnons d’Ulysse en porcs à l’aide d’une potion magique avant d’êtr
+
+[CHECK] ◀
+  scene 16  note  89  _0890_opération-eiche_2.jpg
+  note : Kylie Jenner (née en 1997), personnalité médiatique et femme d’affaires américaine, demi-sœur de Kim Kardashian. Fondatrice de Kylie Cosmetics, elle est l’une des personnalités les plus suivies sur le
+
+[CHECK] ◀
+  scene 16  note  93  _0930_clara-petacci_2.jpg
+  note : Le SS-Sonder Lehrgang Oranienburg était une unité d’élite des forces spéciales SS, créée en 1943, spécialisée dans les opérations de commando derrière les lignes ennemies. Elle participa notamment à l
+
+[CHECK] ◀
+  scene 16  note  94  _0940_nicola-bombacci.jpg
+  note : La République sociale italienne (1943–1945), communément appelée République de Salò du nom de la ville où siégeait le ministère des Affaires étrangères, IX fut l’État fantoche établi par Mussolini dan
+
+[CHECK] ◀
+  scene 16  note  95  _0950_alessandro-pavolini.jpg
+  note : Claretta Petacci (1912–1945), maîtresse de Benito Mussolini depuis 1936. Arrêtée avec lui alors qu’ils tentaient de fuir en Suisse, elle fut exécutée le 28 avril 1945 par des partisans communistes dan
+
+[CHECK] ◀
+  scene 16  note  96  _0960_achille-starace.jpg
+  note : Nicola Bombacci (1879–1945), homme politique italien, cofondateur du Parti communiste d’Italie avant de rallier le fascisme et de devenir un proche de Mussolini. Exécuté par des partisans le 28 avril 
+
+[CHECK] ◀
+  scene 16  note 131  _1310_psychose-(film).jpg
+  note : L’Ursus deningeri, ou ours de Deninger, est une espèce d’ours préhistorique qui vécut en Europe entre environ 1,2 million et 300 000 ans avant notre ère. Il est considéré comme un ancêtre direct de l’
+
+[CHECK] ◀
+  scene 16  note 139  _1390_massacre-à-la-tronçonneuse-(film,-1974).jpg
+  note : Norman Bates est le personnage central du roman Psychose de Robert Bloch (1959) et du film d’Alfred Hitchcock (1960). Gérant du Bates Motel, il vit sous l’emprise psychologique de sa mère défunte et d
+
+[CHECK] ◀
+  scene 16  note 143  _1430_maniac-(film,-1980).jpg
+  note : MILF (Mother I’d Like to Fuck), expression argotique anglophone désignant une femme d’âge mûr jugée sexuellement attirante, popularisée notamment par le film American Pie (1999) et la culture pornogra
+
+[CHECK] ◀
+  scene 16  note 211  _2110_hérodote_lb.jpg
+  note : Michael Mohan (né en 1980), réalisateur et scénariste américain, formé à la Chapman University (BFA Film Production, 2002) et au Sundance Institute. Il signe notamment The Voyeurs (2021, Amazon Studio
+
+[CHECK] ◀
+  scene 16  note 212  _2120_scythes.jpg
+  note : American Eagle Outfitters, enseigne américaine de prêt-à-porter fondée en 1977 à Pittsburgh, Pennsylvanie. La marque cible principalement les adolescents et jeunes adultes avec des collections de jean
+
+[CHECK] ◀
+  scene 16  note 213  _2130_le-silence-des-agneaux-(film)_2.jpg
+  note : Hérodote (v. 484 – v. 425 av. j.-c.), historien et géographe grec, considéré comme le « père de l’histoire ». Son œuvre principale, les Histoires (ou Enquêtes), en neuf livres, relate notamment les gu
+
+[CHECK] ◀
+  scene 16  note 224  _2240_françois-hollande.jpg
+  note : Lucien Greaves (pseudonyme de Douglas Mesner, né à Detroit), activiste américain, cofondateur et porte-parole du Temple satanique depuis 2013. Diplômé de Harvard en neurosciences avec une spécialité d
+
+[CHECK] ◀
+  scene 16  note 240  _2400_abimael-guzmán.jpg
+  note : WhatsApp, application de messagerie instantanée fondée en 2009 par Jan Koum et Brian Acton, rachetée par Facebook (Meta) en 2014 pour 19 milliards de dollars. Elle compte plus de deux milliards d’util
+
+[CHECK] ◀
+  scene 16  note 241  _2410_zog-ier.jpg
+  note : Instagram, réseau social de partage de photos et vidéos fondé en 2010 par Kevin Systrom et Mike Krieger, racheté par Facebook (Meta) en 2012 pour un milliard de dollars. Il compte plus de deux milliar
+
+[CHECK] ◀
+  scene 16  note 242  _2420_tania-visirova.jpg
+  note : Abimael Guzmán (1934–2021), dit « camarada Gonzalo », philosophe et professeur péruvien, fondateur du Sentier lumineux (Sendero Luminoso), groupe maoïste responsable de la mort d’environ 70 000 person
+
+[NOTE NOT FOUND] ◀
+  scene 16  note 251  _2510_dassault-rafale.png
+  note : 
+
+[CHECK] ◀
+  scene 16  note 196  _1960_scarlett-johansson_lb.jpg
+  note : Bruno Dumont (né en 1958), réalisateur français, Grand Prix du jury à Cannes pour L’Humanité (1999) et Flandres (2006). Connu pour un cinéma austère et dépouillé ancré dans le Nord de la France, il a 
+
+[CHECK] ◀
+  scene 16  note 202  _2020_leven-rambin_lb.jpg
+  note : Lamashtu, déesse démoniaque de la mythologie mésopotamienne, fille d’Anu, dieu du ciel. Elle était réputée s’attaquer aux femmes enceintes, aux nouveau-nés et aux enfants, leur causant maladies et mor
+
+[CHECK] ◀
+  scene 16  note 206  _2060_amanda-seyfried_lb.jpg
+  note : Mank (2020), film biographique américain réalisé par David Fincher, consacré au scénariste Herman J. Mankiewicz (Gary Oldman) et à l’écriture du scénario de Citizen Kane (Orson Welles, 1941). Tourné e
+
+[CHECK] ◀
+  scene 16  note 207  _2070_sydney-sweeney_lb.jpg
+  note : David Fincher (né en 1962), réalisateur américain. Il s’est imposé comme l’un des cinéastes les plus influents de sa génération avec des films tels que Seven (1995), Fight Club (1999), Zodiac (2007), 
+
+[CHECK] ◀
+  scene 16  note 107  _1070_louis-le-vau.jpg
+  note : Le commissaire Maigret est le personnage principal d’une série de romans policiers créé par Georges Simenon en 1931. Fonctionnaire de la Police judiciaire parisienne, il est célèbre pour sa pipe, son 
+
+[CHECK] ◀
+  scene 16  note 108  _1080_robert-de-cotte.jpg
+  note : Georges Simenon (1903–1989), écrivain belge de langue française, auteur prolifique de romans policiers et de romans durs. Créateur du commissaire Maigret, il est l’un des romanciers les plus traduits 
+
+[CHECK] ◀
+  scene 16  note 109  _1090_charles-le-brun.jpg
+  note : Louis Le Vau (1612–1670), architecte français, premier architecte du roi Louis XIV. Il est notamment l’auteur de l’hôtel Lambert à Paris, du château de Vaux-le-Vicomte et des premières constructions d
+
+[CHECK] ◀
+  scene 16  note 112  _1120_jacques-gondouin.jpg
+  note : François Mansart (1598–1666), architecte français considéré comme l’un des maîtres du classicisme français. Il donna son nom au toit mansardé et réalisa notamment le château de Maisons (aujourd’hui Ma
+
+[CHECK] ◀
+  scene 16  note 101  _1010_charles-pellegrini_2_b_w.jpg
+  note : Mélissos de Samos (v. ve siècle av. j.-c.), philosophe grec présocratique et général samien, disciple de Parménide. Il défendit la thèse de l’être unique, infini et immuable, prolongeant ainsi la doct
+
+[CHECK] ◀
+  scene 16  note 102  _1020_roger-marion_2_b_w.jpg
+  note : Pierre Ottavioli (1920–2002), commissaire divisionnaire de la Police judiciaire française, directeur de la Brigade criminelle de Paris de 1962 à 1980. Figure légendaire du « 36, quai des Orfèvres », i
+
+[CHECK] ◀
+  scene 16  note 103  _1030_robert-broussard_2_b_w.jpg
+  note : Charles Pellegrini (1921–2007), commissaire divisionnaire de la Police judiciaire, directeur de la PJ de Paris de 1980 à 1985. Il dirigea notamment l’enquête sur l’affaire du gang des Lyonnais. Source
+
+[CHECK] ◀
+  scene 19  note  10  _0100_carlos-gardel.jpg
+  note : Susana Rinaldi (née en 1935), chanteuse et actrice argentine surnommée « La Tana ». Considérée comme l’une des plus grandes interprètes de tango, elle se distingue par sa voix grave et son phrasé dram
+
+[CHECK] ◀
+  scene 19  note  11  _0110_rodolfo-biagi.jpg
+  note : Roman d’Amélie Nothomb (1999, Prix Grand Prix du roman de l’Académie française), récit autobiographique d’une Belge travaillant au Japon et confrontée à la hiérarchie d’entreprise nippone. Source : fr
+
+[CHECK] ◀
+  scene 19  note  12  _0120_francisco-canaro.jpg
+  note : Marque de chaussures de tango argentines haut de gamme (Buenos Aires), référence pour les danseurs professionnels du monde entier. 19
+
+[CHECK] ◀
+  scene 19  note  13  _0130_osvaldo-fresedo.jpg
+  note : Jean-Claude Romand (né en 1954), imposteur et assassin français. Pendant dix-huit ans, il fit croire à son entourage qu’il était médecin chercheur à l’OMS à Genève, tout en ne travaillant pas et en di
+
+[CHECK] ◀
+  scene 19  note  14  _0140_anibal-troilo.jpg
+  note : La congrégation de Solesmes, fédération de monastères bénédictins fondée en 1837 par dom Prosper Guéranger à l’abbaye Saint-Pierre de Solesmes (Sarthe). Elle joua un rôle majeur dans le renouveau du c
