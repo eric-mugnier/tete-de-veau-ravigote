@@ -27,7 +27,7 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 | **Total** | |  |  | **186 743** | **100%** | **29.41%** | **1078** | **0.58%** | **417** | **0.22%** | **38.68%** |
 
 ```mermaid
-%%{init: {"xychart": {"width": 1600, "height": 400}}}%%
+%%{init: {"xychart": {"width": 2400, "useMaxWidth": false}}}%%
 xychart-beta
     title "Illustrations par scène (% des mots)"
     x-axis ["I.1", "II.2", "II.3", "III.4", "III.5", "IV.6", "IV.7", "V.8", "V.9", "VI.10", "VI.11", "VI.12", "VII.13", "VIII.14", "VIII.15", "IX.16", "IX.17", "IX.18", "IX.19"]
