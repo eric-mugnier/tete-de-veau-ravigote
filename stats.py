@@ -281,8 +281,8 @@ def _md_table(rows: list, page_ranges: list | None = None) -> str:
         "# Statistiques par acte (avant découpage)\n",
         "Mots = texte original uniquement (hors contenu des notes `\\nf{}`).",
         "% notes et % illustrations = rapport au nombre de mots.\n",
-        f"| Acte |{page_cols} Mots | %\u00a0livre | Notes | %\u00a0mots | Illustrations | %\u00a0mots | %\u00a0dial. |",
-        f"|-----:|{page_sep}-----:|--------:|------:|-------:|--------------:|-------:|--------:|",
+        f"| Acte |{page_cols} Mots | %\u00a0livre | Notes | %\u00a0mots | Illustrations | %\u00a0mots |",
+        f"|-----:|{page_sep}-----:|--------:|------:|-------:|--------------:|-------:|",
     ]
     for i, (acte_num, words, notes, illus, dial) in enumerate(rows):
         illus_str = _fmt(illus) if illus else "—"
@@ -297,14 +297,13 @@ def _md_table(rows: list, page_ranges: list | None = None) -> str:
         lines.append(
             f"| {ROMAN[acte_num]:<5}|{page_part} {_fmt(words):>7} | {_pct(words, total_words):>7} "
             f"| {notes:>5} | {_pct(notes, words):>6} "
-            f"| {illus_str:>13} | {illus_pct:>6} | {_pct(dial, words):>7} |"
+            f"| {illus_str:>13} | {illus_pct:>6} |"
         )
     total_dial = sum(r[4] for r in counted)
     lines.append(
         f"| **Total** |{'  |  |' if has_pages else ''} **{_fmt(total_words)}** | **100%** | **{total_notes}** "
         f"| **{_pct(total_notes, total_words)}** "
-        f"| **{_fmt(total_illus)}** | **{_pct(total_illus, total_words)}** "
-        f"| **{_pct(total_dial, total_words)}** |"
+        f"| **{_fmt(total_illus)}** | **{_pct(total_illus, total_words)}** |"
     )
     return "\n".join(lines) + "\n"
 
@@ -322,8 +321,8 @@ def _md_table_split(rows: list, page_ranges: list | None = None) -> str:
         "# Statistiques par scène\n",
         "Mots = texte original uniquement (hors contenu des notes `\\nf{}`).",
         "% notes et % illustrations = rapport au nombre de mots.\n",
-        f"| Acte.Scène | Début |{page_cols} Mots | %\u00a0livre | %\u00a0dial. | Notes | %\u00a0mots | Illustrations | %\u00a0mots | %\u00a0notes |",
-        f"|----------:|:------|{page_sep}-----:|--------:|--------:|------:|-------:|--------------:|-------:|--------:|",
+        f"| Acte.Scène | Début |{page_cols} Mots | %\u00a0livre | %\u00a0dial. | Notes | %\u00a0mots | Illustrations | %\u00a0mots |",
+        f"|----------:|:------|{page_sep}-----:|--------:|--------:|------:|-------:|--------------:|-------:|",
     ]
     for i, (chap_label, acte_label, words, notes, illus, dial, debut) in enumerate(rows):
         illus_str = _fmt(illus) if illus else "—"
@@ -337,14 +336,13 @@ def _md_table_split(rows: list, page_ranges: list | None = None) -> str:
             page_part = ""
         lines.append(
             f"| {chap_label} | {debut} |{page_part} {_fmt(words):>7} | {_pct(words, total_words):>7} | {_pct(dial, words):>7} "
-            f"| {notes:>5} | {_pct(notes, words):>6} | {illus_str:>13} | {illus_pct:>6} | {_pct(illus, notes):>7} |"
+            f"| {notes:>5} | {_pct(notes, words):>6} | {illus_str:>13} | {illus_pct:>6} |"
         )
     total_dial = sum(r[5] for r in counted)
     lines.append(
         f"| **Total** | |{'  |  |' if has_pages else ''} **{_fmt(total_words)}** | **100%** | **{_pct(total_dial, total_words)}** | **{total_notes}** "
         f"| **{_pct(total_notes, total_words)}** "
-        f"| **{_fmt(total_illus)}** | **{_pct(total_illus, total_words)}** "
-        f"| **{_pct(total_illus, total_notes)}** |"
+        f"| **{_fmt(total_illus)}** | **{_pct(total_illus, total_words)}** |"
     )
     return "\n".join(lines) + "\n"
 
