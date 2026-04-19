@@ -10,7 +10,7 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 | II.3 | Ce même jour, en fin d’après-midi, on… |  57 |  36 |   8 684 |   4.65% |   5.65% |    53 |  0.61% |            27 |  0.31% |
 | III.4 | Quelques jours plus tard, les journaux ont… |  93 |  44 |  11 096 |   5.94% |  28.70% |    78 |  0.70% |            33 |  0.30% |
 | III.5 | Dans le fond de la pièce, il… | 137 |  36 |   8 467 |   4.53% |  43.11% |    32 |  0.38% |            12 |  0.14% |
-| IV.6 | Il y a ce qu’on appelle la… | 173 |  44 |  11 311 |   6.06% |  28.51% |    45 |  0.40% |            27 |  0.24% |
+| IV.6 | Il y a ce qu’on appelle la… | 173 |  44 |  11 311 |   6.05% |  28.51% |    45 |  0.40% |            27 |  0.24% |
 | IV.7 | Depuis que mon ami Grégoire Lussier, ancien… | 217 |  34 |   8 365 |   4.48% |  30.70% |    43 |  0.51% |            19 |  0.23% |
 | V.8 | Croyez-le ou non, mais Aymeric Jégou et… | 251 |  36 |   8 904 |   4.77% |  56.56% |    44 |  0.49% |            27 |  0.30% |
 | V.9 | Ce soir-là, alors même que les combats… | 287 |  44 |  10 812 |   5.79% |  31.34% |    56 |  0.52% |            23 |  0.21% |
@@ -23,10 +23,10 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 | IX.16 | Cette nuit-là, j’ai fait des rêves étranges… | 537 | 124 |  33 432 |  17.90% |  20.85% |   248 |  0.74% |            60 |  0.18% |
 | IX.17 | Une porte d’ascenseur venait de s’ouvrir, non… | 661 |  34 |  10 408 |   5.57% |   3.06% |    67 |  0.64% |            16 |  0.15% |
 | IX.18 | Comme beaucoup d’urgentistes souffrant de handicap visuel… | 695 |  26 |   7 373 |   3.95% |  48.11% |    10 |  0.14% |             — |      — |
-| IX.19 | Il est toujours extrêmement douloureux de mettre… | 721 | 206 |   6 168 |   3.30% |  25.34% |    23 |  0.37% |            16 |  0.26% |
-| **Total** | |  |  | **186 768** | **100%** | **29.41%** | **1078** | **0.58%** | **428** | **0.23%** |
+| IX.19 | Il est toujours extrêmement douloureux de mettre… | 721 | 208 |   6 212 |   3.33% |  25.43% |    23 |  0.37% |            19 |  0.31% |
+| **Total** | |  |  | **186 812** | **100%** | **29.41%** | **1078** | **0.58%** | **431** | **0.23%** |
 
-![Illustrations par scène](stats_illus_chart.png?v=8b736eaf)
+![Illustrations par scène](stats_illus_chart.png?v=0ca9561b)
 
 # Statistiques par acte (avant découpage)
 
@@ -36,19 +36,19 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 | Acte | p. | pp. | Mots | % livre | Notes | % mots | Illustrations | % mots |
 |-----:|---:|----:|-----:|--------:|------:|-------:|--------------:|-------:|
 | I    |   3 |  14 |   3 929 |   2.10% |    22 |  0.56% |            14 |  0.36% |
-| II   |  17 |  56 |  17 212 |   9.22% |    85 |  0.49% |            41 |  0.24% |
+| II   |  17 |  56 |  17 212 |   9.21% |    85 |  0.49% |            41 |  0.24% |
 | III  |  73 |  68 |  19 563 |  10.47% |   110 |  0.56% |            45 |  0.23% |
 | IV   | 141 |  64 |  19 676 |  10.53% |    88 |  0.45% |            46 |  0.23% |
-| V    | 205 |  66 |  19 716 |  10.56% |   100 |  0.51% |            50 |  0.25% |
-| VI   | 271 | 106 |  29 823 |  15.97% |   201 |  0.67% |            84 |  0.28% |
+| V    | 205 |  66 |  19 716 |  10.55% |   100 |  0.51% |            50 |  0.25% |
+| VI   | 271 | 106 |  29 823 |  15.96% |   201 |  0.67% |            84 |  0.28% |
 | VII  | 377 |  12 |   2 852 |   1.53% |    13 |  0.46% |             9 |  0.32% |
-| VIII | 389 |  54 |  16 616 |   8.90% |   111 |  0.67% |            47 |  0.28% |
-| IX   | 443 | 184 |  57 381 |  30.72% |   348 |  0.61% |            92 |  0.16% |
-| **Total** |  |  | **186 768** | **100%** | **1078** | **0.58%** | **428** | **0.23%** |
+| VIII | 389 |  54 |  16 616 |   8.89% |   111 |  0.67% |            47 |  0.28% |
+| IX   | 443 | 184 |  57 425 |  30.74% |   348 |  0.61% |            95 |  0.17% |
+| **Total** |  |  | **186 812** | **100%** | **1078** | **0.58%** | **431** | **0.23%** |
 
 ## Estimation illustrations restantes
 
-Cible : **1 illustration tous les 439 mots** (186 768 mots → **425** illustrations).  
-Actuellement **428** — il en manque **0** — **100.7 %** réalisé.
+Cible : **1 illustration tous les 439 mots** (186 812 mots → **426** illustrations).  
+Actuellement **431** — il en manque **0** — **101.2 %** réalisé.
 
 Sous-illustrées (< 0.7× la cible) : IX.18 (0/16.8)
