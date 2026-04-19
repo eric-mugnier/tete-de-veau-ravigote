@@ -296,15 +296,16 @@
   }
   \newcommand{\mylistoffigures}{%
     \cleardoublepage
+    \pagestyle{empty}%
     \phantomsection\addcontentsline{toc}{chapter}{Table des illustrations}%
-    \thispagestyle{empty}%
     \vspace*{4\onelineskip}%
     {\centering\normalfont\scshape\large Table des illustrations\par}%
     \vspace{2\onelineskip}%
     \begingroup
     \small\renewcommand{\baselinestretch}{1.0}\selectfont
     \makeatletter\@starttoc{lof}\makeatother
-    \endgroup}
+    \endgroup
+    \pagestyle{gallimard}}
 \else
   \newcommand{\iconographieimg}[3][0.75]{}
   \newcommand{\iconographietex}[1]{}
@@ -444,7 +445,7 @@
 \renewcommand{\cftchapterdotsep}{\cftdotsep}     % dot leaders
 \renewcommand{\cftdot}{{\color{black!35}.}}      % lighter dots throughout TOC
 \renewcommand{\cftchapterfont}{\normalfont\scshape}     % chapter entry: small caps, not bold
-\renewcommand{\cftchapterpagefont}{\normalfont\scshape} % page number: small caps, not bold
+\renewcommand{\cftchapterpagefont}{\normalfont}         % page number: lining figures, not bold
 % Section entries = scenes (indented, normal font)
 \setlength{\cftsectionindent}{2em}
 \setlength{\cftsectionnumwidth}{0em}
@@ -460,19 +461,21 @@
 \setlength{\cftscoreindent}{0pt}
 \newcommand{\mylistofscores}{%
   \cleardoublepage
+  \pagestyle{empty}%
   \phantomsection\addcontentsline{toc}{chapter}{Table des extraits musicaux}%
-  \thispagestyle{empty}%
   \vspace*{4\onelineskip}%
   {\centering\normalfont\scshape\large Table des extraits musicaux\par}%
   \vspace{2\onelineskip}%
   \begingroup
   \small\renewcommand{\baselinestretch}{1.0}\selectfont
   \listofscores*%
-  \endgroup}
+  \endgroup
+  \pagestyle{gallimard}}
 
 % \mytableofcontents : cleardoublepage + suppress self-reference entry
 \newcommand{\mytableofcontents}{%
   \cleardoublepage
+  \pagestyle{empty}%
   \begingroup
   \setlength{\beforechapskip}{0pt}%
   \small\renewcommand{\baselinestretch}{1.0}\selectfont
@@ -480,6 +483,7 @@
   \tableofcontents
   \addtocontents{toc}{\protect\setcounter{tocdepth}{1}}%
   \endgroup
+  \pagestyle{gallimard}%
 }
 
 % ─── ACTE / SCENE COUNTERS ────────────────────────────────────────────────────
