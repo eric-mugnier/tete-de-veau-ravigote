@@ -2,6 +2,8 @@
 % Page 155×235 mm · margins l=23 r=18 t=25 b=28
 % Overlaps: Hydre right (118mm) > Godzilla left (52mm) — horizontal
 %           Smaug top  (84mm)  < Alien bottom (148mm) — vertical
+% \illuslofentry calls MUST be outside the overlay tikzpicture (no \write inside TikZ overlay).
+\illusbwimageaddloffalse
 \null
 
 \begin{tikzpicture}[remember picture, overlay]
@@ -19,7 +21,6 @@
         \raggedright
         {\figcaptionname\itshape Hydre de Lerne}\\[-3pt]
         {\figcaptiondetail Kylix attique, \textsc{v}\textsuperscript{e}~s.~av.~\textsc{j.-c.} — Vulpi}\\[0.5em]
-        \illusloflabel{Hydre de Lerne}
         \bwimage[width=\linewidth]{acte_01/scene_1/_0050_hydre-de-lerne_2.png}
       \end{minipage}%
     };
@@ -37,7 +38,6 @@
         \raggedleft
         {\figcaptionname\itshape Alien}\\[-3pt]
         {\figcaptiondetail H.\,R. Giger, 1979}\\[0.5em]
-        \illusloflabel{Alien}
         \bwimage[height=75mm]{acte_01/scene_1/_0060_alien.jpg}
       \end{minipage}%
     };
@@ -53,7 +53,6 @@
     {%
       \begin{minipage}[t]{57mm}
         \raggedleft
-        \illusloflabel{Godzilla}
         \bwimage[width=\linewidth]{acte_01/scene_1/_0080_godzilla.jpg}\\
         {\figcaptionname\itshape Godzilla}\\[-3pt]
         {\figcaptiondetail Ishirō Honda, 1954}
@@ -71,7 +70,6 @@
     {%
       \begin{minipage}[t]{90mm}
         \raggedright
-        \illusloflabel{Smaug}
         \bwimage[height=70mm]{acte_01/scene_1/_0070_smaug_2.jpg}\\
         {\figcaptionname\itshape Conversation avec Smaug}\\[-3pt]
         {\figcaptiondetail J.\,R.\,R. Tolkien, \textit{The Hobbit}, 1937}
@@ -79,3 +77,8 @@
     };
 
 \end{tikzpicture}
+\illusbwimageaddloftrue
+\illuslofentry{Hydre de Lerne}{acte_01/scene_1/_0050_hydre-de-lerne_2.png}
+\illuslofentry{Alien}{acte_01/scene_1/_0060_alien.jpg}
+\illuslofentry{Godzilla}{acte_01/scene_1/_0080_godzilla.jpg}
+\illuslofentry{Smaug}{acte_01/scene_1/_0070_smaug_2.jpg}
