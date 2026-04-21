@@ -128,6 +128,11 @@ def test(c, acte):
         f" -output-directory=build test_illus.tex",
         warn=True,
     )
+    c.run(  # 2nd pass for TikZ remember picture + afterpage
+        "lualatex -shell-escape -interaction=nonstopmode"
+        f" -output-directory=build test_illus.tex",
+        warn=True,
+    )
 
 
 @task
@@ -178,6 +183,7 @@ def extrait(c, acte=None):
     )
     tex_path.write_text(tex, encoding="utf-8")
     _lmk(c, "extrait")
+    _lmk(c, "extrait")  # 2nd pass for TikZ remember picture + afterpage
     _ls_outputs()
 
 
@@ -351,6 +357,7 @@ def total(c):
 
     print("=== LA TOTALE ===")
     _lmk(c, f"{BASE}_LA_TOTALE")
+    _lmk(c, f"{BASE}_LA_TOTALE")  # 2nd pass for TikZ remember picture + afterpage
     _ls_outputs()
 
 @task(help={"target": "Illustration target: 1 illustration every N words (default: 600)."})
