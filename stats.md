@@ -23,7 +23,7 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 | IX.16 | Cette nuit-là, j’ai fait des rêves étranges… | 537 | 124 |  33 432 |  17.89% |  20.85% |   248 |  0.74% |            60 |  0.18% |
 | IX.17 | Une porte d’ascenseur venait de s’ouvrir, non… | 661 |  36 |  10 449 |   5.59% |   3.04% |    67 |  0.64% |            25 |  0.24% |
 | IX.18 | Comme beaucoup d’urgentistes souffrant de handicap visuel… | 697 |  26 |   7 373 |   3.95% |  48.11% |    10 |  0.14% |             — |      — |
-| IX.19 | Il est toujours extrêmement douloureux de mettre… | 723 | 222 |   6 212 |   3.32% |  25.43% |    23 |  0.37% |            19 |  0.31% |
+| IX.19 | Il est toujours extrêmement douloureux de mettre… | 723 | 214 |   6 212 |   3.32% |  25.43% |    23 |  0.37% |            19 |  0.31% |
 | **Total** | |  |  | **186 855** | **100%** | **29.41%** | **1078** | **0.58%** | **440** | **0.24%** |
 
 ![Illustrations par scène](stats_illus_chart.png?v=c9144620)
@@ -33,18 +33,18 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 % notes et % illustrations = rapport au nombre de mots.
 
-| Acte | Mots | % livre | Notes | % mots | Illustrations | % mots |
-|-----:|-----:|--------:|------:|-------:|--------------:|-------:|
-| I    |   3 929 |   2.10% |    22 |  0.56% |            14 |  0.36% |
-| II   |  17 211 |   9.21% |    85 |  0.49% |            41 |  0.24% |
-| III  |  19 563 |  10.47% |   110 |  0.56% |            45 |  0.23% |
-| IV   |  19 678 |  10.53% |    88 |  0.45% |            46 |  0.23% |
-| V    |  19 716 |  10.55% |   100 |  0.51% |            50 |  0.25% |
-| VI   |  29 824 |  15.96% |   201 |  0.67% |            84 |  0.28% |
-| VII  |   2 852 |   1.53% |    13 |  0.46% |             9 |  0.32% |
-| VIII |  16 616 |   8.89% |   111 |  0.67% |            47 |  0.28% |
-| IX   |  57 466 |  30.75% |   348 |  0.61% |           104 |  0.18% |
-| **Total** | **186 855** | **100%** | **1078** | **0.58%** | **440** | **0.24%** |
+| Acte | p. | pp. | Mots | % livre | Notes | % mots | Illustrations | % mots |
+|-----:|---:|----:|-----:|--------:|------:|-------:|--------------:|-------:|
+| I    |   3 |  14 |   3 929 |   2.10% |    22 |  0.56% |            14 |  0.36% |
+| II   |  17 |  56 |  17 211 |   9.21% |    85 |  0.49% |            41 |  0.24% |
+| III  |  73 |  68 |  19 563 |  10.47% |   110 |  0.56% |            45 |  0.23% |
+| IV   | 141 |  64 |  19 678 |  10.53% |    88 |  0.45% |            46 |  0.23% |
+| V    | 205 |  66 |  19 716 |  10.55% |   100 |  0.51% |            50 |  0.25% |
+| VI   | 271 | 106 |  29 824 |  15.96% |   201 |  0.67% |            84 |  0.28% |
+| VII  | 377 |  12 |   2 852 |   1.53% |    13 |  0.46% |             9 |  0.32% |
+| VIII | 389 |  54 |  16 616 |   8.89% |   111 |  0.67% |            47 |  0.28% |
+| IX   | 443 | 184 |  57 466 |  30.75% |   348 |  0.61% |           104 |  0.18% |
+| **Total** |  |  | **186 855** | **100%** | **1078** | **0.58%** | **440** | **0.24%** |
 
 ## Estimation illustrations restantes
 

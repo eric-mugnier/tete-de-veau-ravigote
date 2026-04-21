@@ -1,0 +1,133 @@
+% ─── Commande locale ─────────────────────────────────────────────────────────
+% \ratioentry{n}{exact_text}{sujet}
+%   #1 numéro  (aussi utilisé comme rat:#1 pour \pageref)
+%   #2 incipit exact (début verbatim du passage)
+%   #3 description du sujet
+\newcommand{\ratioentry}[3]{%
+  \par\noindent\hangindent=1.8em\hangafter=1
+  {\addfontfeatures{Numbers=OldStyle}\small #1.}\enspace
+  \textit{#2}\dotfill\pageref{rat:#1}\\[-2pt]
+  {\footnotesize\hspace{1.8em}#3\par}%
+  \vspace{3pt}%
+}
+
+% ─── TABLE DES RATIOCINATIONS ─────────────────────────────────────────────────
+
+\cleardoublepage
+\phantomsection\addcontentsline{toc}{chapter}{Table des ratiocinations}
+\thispagestyle{empty}
+\pagestyle{gallimard}
+\vspace*{4\onelineskip}
+{\centering\normalfont\scshape\large Table des ratiocinations\par}
+\vspace{\onelineskip}
+{\small\centering\itshape
+  Digressions à la première personne où le narrateur réfléchit, déraisonne ou philosophe. Exclu : dialogues, références culturelles pures, narration d'action.\par}
+\vspace{2\onelineskip}
+
+\ratioentry{1}{Il était, à lui seul, la preuve irréfutable de la non-existence de Dieu}{Réflexion athéiste sur la non-existence de Dieu}
+\ratioentry{2}{C'était un de ces petits pavillons de merde comme on en trouve un peu partout}{Satire de la médiocrité pavillonnaire et suburbaine}
+\ratioentry{3}{Flic est un boulot de merde}{Réflexion désabusée sur la profession policière}
+\ratioentry{4}{Si la Nature avait ne serait-ce qu’un semblant d’intelligence}{Digression sur la stupidité de la nature}
+\ratioentry{5}{peuplé de patriotes armés jusqu’aux dents}{Réflexion ironique sur les voisins paranoïaques}
+\ratioentry{6}{C’est un endroit à l’ancienne}{Digression sur la loi Marthe Richard et la prostitution}
+\ratioentry{7}{Je ne suis pas très porté sur la chose, mais il m'arrive, dans mes moments de déprime}{Réflexion sur solitude, prostitution et condition humaine}
+\ratioentry{8}{On sait aujourd’hui que les prêtres n’ont pas toujours le comportement irréprochable qu’on serait en droit d’attendre de leur sacerdoce}{Digression sur le célibat des prêtres et l'abbé Pierre}
+\ratioentry{9}{Contrairement au chien, animal grégaire au tempérament servile, le chat n’aime pas les gens}{Longue digression encyclopédique sur le chat Korax}
+\ratioentry{10}{C’est sans doute ce qui arrivera un jour}{Réflexion sur l'humanité et les armes de destruction massive}
+\ratioentry{11}{Titus Beaugendre avait deux caractéristiques dont je ne vous ai pas encore parlé}{Réflexion sur l'identité raciale et l'ascendance métisse de Titus}
+\ratioentry{12}{sa corpulence de gorille des montagne s’accompagnait d’une résistance hors du commun à l’alcool}{Réflexion sur l'inégalité sociale face à l'alcool}
+\ratioentry{13}{Suite à un certain nombre de malversations}{Diatribe contre la corruption de l'État}
+\ratioentry{14}{Je me suis demandé si les comportements irrationnels}{Très longue digression sur l'extinction des dinosaures par astéroïde}
+\ratioentry{15}{Évolution a-t-elle un plan de carrière}{Tangente évolutive sur l'Ovis shantungensis}
+\ratioentry{16}{Un certain nombre de choses nous avaient rapprochés}{Très longue réflexion sur l'IA, les sexbots et la misère sexuelle}
+\ratioentry{17}{Les chiens ont une méthode très efficace pour s’orienter}{Comparaison du Petit Poucet avec le sens de l'orientation du chien}
+\ratioentry{18}{Il y a des gens qui vont très souvent au cinéma}{Réflexion sur l'attitude de Zaahid envers le cinéma}
+\ratioentry{19}{[label à vérifier — voir \texttt{rat:19} dans le texte]}{Digression sur le droit des animaux et l'instinct de survie paranoïaque}
+\ratioentry{20}{[label à vérifier — voir \texttt{rat:20} dans le texte]}{Tangente psychanalytique sur le concept de Racamier}
+\ratioentry{21}{[label à vérifier — voir \texttt{rat:21} dans le texte]}{Réflexion méta-narrative sur l'amour du narrateur pour lui-même}
+\ratioentry{22}{[label à vérifier — voir \texttt{rat:22} dans le texte]}{Digression sur l'urne funéraire de la mère et le dieu Kébehsénouf}
+\ratioentry{23}{[label non positionné — voir \texttt{rat:23} dans le texte]}{Réflexion sur la règle de ne pas boire avant une mission}
+\ratioentry{24}{[label non positionné — voir \texttt{rat:24} dans le texte]}{Digression sur Maria Ouvrard et son chat démoniaque Korax}
+\ratioentry{25}{[label à vérifier — voir \texttt{rat:25} dans le texte]}{Satire de l'archétype du «~bon père de famille~»}
+\ratioentry{26}{[label à vérifier — voir \texttt{rat:26} dans le texte]}{Digression sur Furtwängler, les musiciens sous le nazisme et Potsdam}
+\ratioentry{27}{[label à vérifier — voir \texttt{rat:27} dans le texte]}{Digression sur Lucia di Lammermoor, Donizetti et Callas}
+\ratioentry{28}{[label non positionné — voir \texttt{rat:28} dans le texte]}{Étymologie de «~ça craint du boudin~» et digression sur les Pénates}
+\ratioentry{29}{[label à vérifier — voir \texttt{rat:29} dans le texte]}{Réflexion philosophique sur le coup de foudre}
+\ratioentry{30}{[label non positionné — voir \texttt{rat:30} dans le texte]}{Très longue digression sur l'instinct du brontosaure}
+\ratioentry{31}{[label non positionné — voir \texttt{rat:31} dans le texte]}{Réflexion sur la cruauté de la reproduction dans la nature}
+\ratioentry{32}{[label à vérifier — voir \texttt{rat:32} dans le texte]}{Digression sur le toxoplasme et les parasites contrôlant leurs hôtes}
+\ratioentry{33}{Je suppose que rares sont celles et ceux parmi vous qui ont entendu parler de ce bon vieux Jim Bowie}{Très longue digression : Jim Bowie → Bobby Beausoleil → Charles Manson}
+\ratioentry{34}{Bon, eh bien quelques années plus tard, on retrouve le même genre de coupe-chou entre les mains de John Rambo}{Longue digression sur le couteau de Rambo dans First Blood}
+\ratioentry{35}{[label à vérifier — voir \texttt{rat:35} dans le texte]}{Scepticisme sur les miracles, Lourdes et la résurrection du Christ}
+\ratioentry{36}{[label à vérifier — voir \texttt{rat:36} dans le texte]}{Réflexion ironique sur la noblesse du titre «~gardien de la paix~»}
+\ratioentry{37}{[label à vérifier — voir \texttt{rat:37} dans le texte]}{Réflexion sur l'homme non préparé à la liberté}
+\ratioentry{38}{[label à vérifier — voir \texttt{rat:38} dans le texte]}{Lyrique déclaration d'amour-passion du narrateur pour Zarina}
+\ratioentry{39}{[label à vérifier — voir \texttt{rat:39} dans le texte]}{Autoportrait méta-littéraire du narrateur en grand écrivain de l'amour}
+\ratioentry{40}{[label à vérifier — voir \texttt{rat:40} dans le texte]}{Très longue digression philosophique et scatologique}
+\ratioentry{41}{[label à vérifier — voir \texttt{rat:41} dans le texte]}{Fantasme ADAM \& EVE~2 déclenché par le sommeil de Zarina}
+\ratioentry{42}{[label à vérifier — voir \texttt{rat:42} dans le texte]}{Réflexion évolutive sur le sexe et l'alcool comme antidépresseurs}
+\ratioentry{43}{[label à vérifier — voir \texttt{rat:43} dans le texte]}{Digression sur le mensonge du Père Noël, Jésus et la confiance des enfants}
+\ratioentry{44}{[label à vérifier — voir \texttt{rat:44} dans le texte]}{Digression autobiographique : récit de la naissance du narrateur}
+\ratioentry{45}{[label à vérifier — voir \texttt{rat:45} dans le texte]}{Réflexion sur la morale humaine, la mauvaise conscience et la duplicité}
+\ratioentry{46}{Se déplacer a toujours fait partie des préoccupations majeures de l'espèce humaine}{Diatribe futuriste sur la mobilité humaine effrénée}
+\ratioentry{47}{[label à vérifier — voir \texttt{rat:47} dans le texte]}{Très longue digression : Hitchcock/Psychose, Bloch, Lovecraft, Texas Chainsaw}
+\ratioentry{48}{[label à vérifier — voir \texttt{rat:48} dans le texte]}{Digression sur les premiers touristes alpins et le «~crétin des Alpes~»}
+\ratioentry{49}{On le sait, les gens adorent les trucs scabreux}{Réflexion sur le voyeurisme d'hier vs. internet aujourd'hui}
+\ratioentry{50}{En fait, ça n'aurait pas été pire si j'avais été un huissier de justice ou un témoin de Jéhovah}{Digression sur le témoin de Jéhovah laid vs. beau}
+\ratioentry{51}{À l'époque j'étais comme toi, lecteur, jeune et fougueux inspecteur, épris de justice}{Réflexion sur l'idéalisme de jeunesse et la désillusion}
+\ratioentry{52}{Vous le savez comme moi, la réalité est une tambouille désespérément fade}{Réflexion méta-littéraire sur la réalité vs. fiction}
+\ratioentry{53}{Bref, les jeux sont faits à notre insu, et nous ne sommes que des billes}{Réflexion fataliste sur le destin et le libre arbitre}
+
+%%%% % ─── SUJETS RÉCURRENTS ────────────────────────────────────────────────────────
+%%%% 
+%%%% \vspace{2\onelineskip}
+%%%% {\centering\normalfont\scshape Sujets récurrents\par}
+%%%% \vspace{\onelineskip}
+%%%% 
+%%%% {\small
+%%%% \noindent\textit{Trois occurrences ou plus}\nopagebreak
+%%%% 
+%%%% \vspace{4pt}
+%%%% \begin{tabular}{@{}p{0.78\linewidth}r@{}}
+%%%%   Nature, biologie évolutive, comportement animal & 7 \\
+%%%%   Méta-littéraire (le narrateur se commente lui-même) & 5 \\
+%%%%   Cinéma (films, réalisateurs, acteurs) & 4 \\
+%%%%   Religion, croyance, scepticisme & 4 \\
+%%%%   Morale humaine, duplicité, bassesse & 3 \\
+%%%%   Police, justice, désillusion professionnelle & 3 \\
+%%%% \end{tabular}
+%%%% 
+%%%% \vspace{8pt}
+%%%% \noindent\textit{Deux occurrences}\nopagebreak
+%%%% 
+%%%% \vspace{4pt}
+%%%% \begin{tabular}{@{}p{0.78\linewidth}r@{}}
+%%%%   Sexualité, prostitution, misère sexuelle & 2 \\
+%%%%   Musique classique / opéra & 2 \\
+%%%%   Identité raciale / ascendance & 2 \\
+%%%%   Parasites / manipulation biologique & 2 \\
+%%%%   Satire sociale (types humains) & 2 \\
+%%%%   Chat Korax & 2 \\
+%%%%   Couteaux / armes iconiques & 2 \\
+%%%%   Amour / coup de foudre & 2 \\
+%%%%   Solitude / célibat & 2 \\
+%%%% \end{tabular}
+%%%% }
+%%%% 
+%%%% % ─── OBSERVATIONS STRUCTURELLES ───────────────────────────────────────────────
+%%%% 
+%%%% \vspace{2\onelineskip}
+%%%% {\centering\normalfont\scshape Observations structurelles\par}
+%%%% \vspace{\onelineskip}
+%%%% 
+%%%% {\small
+%%%% \begin{itemize}
+%%%%   \setlength{\itemsep}{2pt}\setlength{\parsep}{0pt}
+%%%%   \item L'acte~VI (06\_1 + 06\_2) est le plus dense (~12 passages) — cœur ratiocinatoire du roman.
+%%%%   \item Les actes~IV et~V sont très pauvres en ratiocinations (1 chacun).
+%%%%   \item Les actes~VIII–IX contiennent les ratiocinations les plus longues.
+%%%%   \item Sujet dominant : nature / biologie évolutive (7 occurrences) — fil rouge souterrain.
+%%%%   \item Registre méta : 5 passages où le narrateur commente son propre acte d'écriture.
+%%%% \end{itemize}
+%%%% }
+%%%% 
