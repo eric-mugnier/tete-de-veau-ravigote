@@ -4,20 +4,23 @@
 %   #2 incipit exact (début verbatim du passage)
 %   #3 description du sujet
 \newcommand{\ratioentry}[3]{%
-  \par\noindent\hangindent=1em\hangafter=1
-  {\small\textit{#2}}\dotfill\pageref{rat:#1}\\[-2pt]
-  {\footnotesize\hspace{1em}#3\par}%
-  \vspace{3pt}%
+  \par\vbox{%
+    \advance\baselineskip by -4pt%
+    \noindent\hangindent=1em\hangafter=1%
+    {\small\textit{#2}}\dotfill\pageref{rat:#1}\\
+    {\footnotesize\hspace{1em}#3}%
+  }%
+  \vspace{0.5\baselineskip}%
 }
 
 % ─── TABLE DES RATIOCINATIONS ─────────────────────────────────────────────────
 
 \cleardoublepage
-\phantomsection\addcontentsline{toc}{chapter}{Table des ratiocinations}
+\phantomsection\addcontentsline{toc}{chapter}{Florilège de ratiocinations}
 \thispagestyle{empty}
 \pagestyle{gallimard}
 \vspace*{4\onelineskip}
-{\centering\normalfont\scshape\large Table des ratiocinations\par}
+{\centering\normalfont\scshape\large Florilège de ratiocinations\par}
 \vspace{\onelineskip}
 {\small\centering\itshape
   Digressions à la première personne où le narrateur réfléchit, déraisonne ou philosophe. Exclu : dialogues, références culturelles pures, narration d'action.\par}
