@@ -5,6 +5,7 @@ Usage : inv build | inv notes | inv diffs | inv epub | inv pers | inv clean
         inv diffs notes   → combine targets (main PDF built once, both extras run)
 """
 
+import atexit
 import os
 import re
 import time
@@ -13,6 +14,15 @@ from pathlib import Path
 import shutil
 
 from invoke import task
+
+_T0 = time.perf_counter()
+
+def _print_total_elapsed():
+    elapsed = time.perf_counter() - _T0
+    mins, secs = divmod(int(elapsed), 60)
+    print(f"  → total : {f'{mins}m ' if mins else ''}{secs}s")
+
+atexit.register(_print_total_elapsed)
 
 
 def _timed(fn):
@@ -88,7 +98,6 @@ _OUTPUT_PDFS = [
     f"{BASE}_couverture_24bookprint.pdf",
     "postface_claude.pdf",
     "postface_chatgpt.pdf",
-    "ratiocinations.pdf",
     "personnages.pdf",
 ]
 
@@ -287,23 +296,6 @@ def couverture(c):
 
 @task
 @_timed
-def ratiocinations(c):
-    """Build ratiocinations.pdf from actes/ratiocinations.md via pandoc + lualatex."""
-    BUILD.mkdir(exist_ok=True)
-    c.run(
-        "pandoc actes/ratiocinations.md"
-        f" -o {BUILD}/ratiocinations.pdf"
-        " --pdf-engine=lualatex"
-        " -V geometry:margin=2cm"
-        " -V lang=fr"
-        ' -V mainfont="EB Garamond"'
-        " -V fontsize=11pt"
-    )
-    print(f"  → {BUILD}/ratiocinations.pdf")
-
-
-@task
-@_timed
 def pers(c):
     """Build personnages.pdf: pandoc personnages.md → _personnages.tex, then lualatex."""
     c.run("pandoc personnages.md -f markdown -t latex --wrap=none -o _personnages.tex")
@@ -397,6 +389,7 @@ def all(c):
 _AUX_EXTS = {".aux", ".log", ".out", ".toc", ".ent", ".fls", ".fdb_latexmk", ".pdf"}
 
 @task
+@_timed
 def clean(c):
     """Remove aux files from build/ and root; keep PDFs and IDE body files."""
     # Root-level stray aux/pdf files for all known tex stems

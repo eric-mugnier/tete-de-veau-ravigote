@@ -48,7 +48,7 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 
 ## Estimation illustrations restantes
 
-Cible : **1 illustration tous les 422 mots** (186 903 mots → **443** illustrations).  
-Actuellement **444** — il en manque **0** — **100.2 %** réalisé.
+Cible : **1 illustration tous les 421 mots** (186 903 mots → **444** illustrations).  
+Actuellement **444** — il en manque **0** — **100.0 %** réalisé.
 
 Sous-illustrées (< 0.7× la cible) : IX.18 (0/17.5)
