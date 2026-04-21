@@ -23,7 +23,7 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 | IX.16 | Cette nuit-là, j’ai fait des rêves étranges… | 537 | 124 |  33 432 |  17.89% |  20.85% |   248 |  0.74% |            60 |  0.18% |
 | IX.17 | Une porte d’ascenseur venait de s’ouvrir, non… | 661 |  36 |  10 449 |   5.59% |   3.04% |    67 |  0.64% |            25 |  0.24% |
 | IX.18 | Comme beaucoup d’urgentistes souffrant de handicap visuel… | 697 |  26 |   7 373 |   3.95% |  48.11% |    10 |  0.14% |             — |      — |
-| IX.19 | Il est toujours extrêmement douloureux de mettre… | 723 | 214 |   6 212 |   3.32% |  25.43% |    23 |  0.37% |            19 |  0.31% |
+| IX.19 | Il est toujours extrêmement douloureux de mettre… | 723 | 222 |   6 212 |   3.32% |  25.43% |    23 |  0.37% |            19 |  0.31% |
 | **Total** | |  |  | **186 855** | **100%** | **29.41%** | **1078** | **0.58%** | **440** | **0.24%** |
 
 ![Illustrations par scène](stats_illus_chart.png?v=c9144620)
