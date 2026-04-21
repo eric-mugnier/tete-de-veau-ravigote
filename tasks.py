@@ -85,6 +85,7 @@ _OUTPUT_PDFS = [
     f"{BASE}_notes.pdf",
     f"{BASE}_LA_TOTALE.pdf",
     f"{BASE}_diff.pdf",
+    f"{BASE}_couverture_24bookprint.pdf",
     "postface_claude.pdf",
     "postface_chatgpt.pdf",
     "ratiocinations.pdf",
@@ -265,7 +266,7 @@ def notes(c):
     _lmk(c, BASE)
 
 
-@task(name="couv")
+@task(name="cover")
 @_timed
 def couverture(c):
     """Build tete_de_veau_ravigote_couverture_24bookprint.pdf via lualatex."""
@@ -380,6 +381,7 @@ def all(c):
     """Build everything: all_but_diffs + diffs + clean."""
     c.run("python3 -u diff_work/make_diff.py")
     shutil.copy(ROOT / "diff_work" / f"{BASE}_diff.pdf", BUILD / f"{BASE}_diff.pdf")
+    couverture(c)
     _ls_outputs()
     stats(c)
     clean(c)
