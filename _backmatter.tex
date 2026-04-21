@@ -1,0 +1,58 @@
+% ═══ (PREMIÈRE) POSTFACE ════════════════════════════════════════════════════════
+\cleardoublepage
+\phantomsection\addcontentsline{toc}{chapter}{Postface}
+\thispagestyle{empty}
+\pagestyle{gallimard}
+\vspace*{4\onelineskip}
+\begin{editorialnote}{Postface de l'éditeur amateur}
+\IfFileExists{build/postface_chatgpt_body.tex}{\input{build/postface_chatgpt_body.tex}}{}
+\end{editorialnote}
+
+%%% % ═══ DEUXIÈME POSTFACE ════════════════════════════════════════════════════════
+%%% \cleardoublepage
+%%% \thispagestyle{empty}
+%%% \pagestyle{gallimard}
+%%% \vspace*{4\onelineskip}
+%%% \begin{editorialnote}{Deuxième postface de l'éditeur amateur}
+%%% \IfFileExists{build/postface_claude_body.tex}{\input{build/postface_claude_body.tex}}{}
+%%% \end{editorialnote}
+
+% ═══ NOTES ════════════════════════════════════════════════════════════════════
+\ifdefined\ENDOFBOOKNOTES
+  \cleardoublepage
+  \phantomsection\addcontentsline{toc}{chapter}{Notes}
+  \thispagestyle{empty}
+  \vspace*{10\onelineskip}
+  {\centering\normalfont\scshape\large Notes\par}
+  \newpage
+  \hbox{}\thispagestyle{empty}
+  \newpage
+  \pagestyle{gallimard}
+  \markboth{}{}
+  \theendnotes
+\fi
+
+% ═══ PERSONNAGES ══════════════════════════════════════════════════════════════
+\cleardoublepage
+\phantomsection\addcontentsline{toc}{chapter}{Personnages}
+\thispagestyle{empty}
+\pagestyle{gallimard}
+\vspace*{4\onelineskip}
+{\centering\normalfont\scshape\large Personnages par ordre alphabétique\par}
+\vspace{2\onelineskip}
+{\small\setlength{\parindent}{0pt}\IfFileExists{_personnages.tex}{
+%%%  \renewcommand{\textbf}[1]{{\addfontfeatures{FakeBold=2}#1}}
+  \input{_personnages.tex}}{}
+}
+
+% ═══ TABLE DES ILLUSTRATIONS ═════════════════════════════════════════════════
+\mylistoffigures
+
+% ═══ TABLE DES EXTRAITS MUSICAUX ══════════════════════════════════════════════
+\mylistofscores
+
+% ═══ TABLE DES MATIÈRES ══════════════════════════════════════════════════════
+\mytableofcontents
+
+% ═══ COLOPHON ═════════════════════════════════════════════════════════════════
+\input{_colophon}

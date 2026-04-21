@@ -1,26 +1,34 @@
 %
 % tete_de_veau_ravigote_notes.tex
-% Notes seules (notes finales), sans le contenu du roman.
+% Notes et annexes, sans le contenu du roman.
 %
 \documentclass[12pt,twoside,openright]{memoir}
-
+\def\AVECNOTES{}
+\def\AVECILLUSTRATIONS{}
+\def\AVECMUSIQUE{}
+\def\AVECSCENES{}
+\def\ENDOFBOOKNOTES{}
 \input{_preamble}
 
 \begin{document}
 \pagestyle{empty}
 
+% ═══ FAUX-TITRE (p. 1, impaire) ═══════════════════════════════════════════════
+\null\vspace*{14\onelineskip}
+{\centering\normalfont\scshape\Large tête de veau ravigote\par}
+\vspace*{\stretch{1}}
+\newpage
+
+% ═══ PAGE BLANCHE (p. 2, paire) ═══════════════════════════════════════════════
+\hbox{}\thispagestyle{empty}
+\newpage
+
+% ═══ PAGE DE TITRE + COPYRIGHT (p. 3–4) ═══════════════════════════════════════
 \input{_titre-copyright.tex}
 
-% ═══ NOTES ════════════════════════════════════════════════════════════════════
-\cleardoublepage
 \pagestyle{gallimard}
-\markboth{}{}
-\begingroup
-  \def\jobname{tete_de_veau_ravigote}%
-  \theendnotes
-\endgroup
+\def\jobname{tete_de_veau_ravigote}% redirect endnotes aux lookup
 
-% ═══ COLOPHON ═════════════════════════════════════════════════════════════════
-\input{_colophon}
+\input{_backmatter}
 
 \end{document}
