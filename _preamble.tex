@@ -406,11 +406,28 @@
   \fi
 }
 % \scene@notes : reset endnote counter and add scene header to notes stream.
+%               In ENDOFBOOKNOTES mode: also inserts a page break (skipped for first scene)
+%               and updates the running header to the abbreviated scene label (e.g. "I.3").
+\newif\if@firstscenenotes
+\@firstscenenotestrue
+\newcommand{\@notesscenebreak}{%
+  \if@firstscenenotes
+    \global\@firstscenenotesfalse
+  \else
+    \clearpage
+  \fi
+}
 \newcommand{\scene@notes}[1]{%
   \ifdefined\AVECNOTES
     \setcounter{endnote}{0}%
     \ifdefined\ENDOFBOOKNOTES
-      \addtoendnotes{\protect\par\protect\medskip\protect\noindent\protect\scene@noteheader{#1}\protect\par\protect\smallskip}%
+      \edef\scene@act{\Roman{actenum}}%
+      \edef\scene@sc{\arabic{scenenum}}%
+      \addtoendnotes{%
+        \protect\@notesscenebreak
+        \protect\markboth{\scene@act}{\scene@sc}%
+        \protect\par\protect\noindent\protect\scene@noteheader{#1}\protect\par\protect\smallskip%
+      }%
     \fi
   \fi
 }
