@@ -15,7 +15,7 @@ ACTES_DIR = ROOT / "actes"
 BUILD     = ROOT / "build"
 OUT_FILE  = ROOT / "stats.md"
 
-ILLUS_TARGET = 418  # target: 1 illustration every N words (overridable via --target)
+ILLUS_TARGET = 417  # target: 1 illustration every N words (overridable via --target)
 
 TOC_MAIN   = BUILD / "tete_de_veau_ravigote.toc"
 TOC_TOTALE = BUILD / "tete_de_veau_ravigote_LA_TOTALE.toc"
@@ -348,7 +348,7 @@ def _md_table_split(rows: list, page_ranges: list | None = None) -> str:
 
 
 def _png_illus_chart(rows_split: list) -> str:
-    """Generate a PNG bar chart and return a markdown image reference."""
+    """Generate a Marimekko bar chart where bar width ∝ scene word count."""
     if not rows_split:
         return ""
     try:
@@ -359,22 +359,36 @@ def _png_illus_chart(rows_split: list) -> str:
         return ""
 
     scene_labels = [r[0] for r in rows_split]
-    values = [round(r[4] / r[2] * 100, 2) if r[2] else 0.0 for r in rows_split]
+    values       = [round(r[4] / r[2] * 100, 2) if r[2] else 0.0 for r in rows_split]
+    words        = [r[2] for r in rows_split]
 
-    total_words = sum(r[2] for r in rows_split)
+    total_words = sum(words)
     total_illus = sum(r[4] for r in rows_split)
-    mean_val = total_illus / total_words * 100 if total_words else 0.0
+    mean_val    = total_illus / total_words * 100 if total_words else 0.0
+
+    # Bar widths proportional to word count, scaled so total width = number of scenes
+    scale      = len(rows_split)
+    rel_widths = [w / total_words * scale for w in words]
+    lefts      = [sum(rel_widths[:i]) for i in range(len(rel_widths))]
+    centers    = [l + w / 2 for l, w in zip(lefts, rel_widths)]
 
     fig, ax = plt.subplots(figsize=(22, 7))
-    ax.bar(range(len(values)), values, color="#4a90d9", alpha=0.85, width=0.7, zorder=2)
+    gap = 0.15  # fixed inter-bar gap in scale units
+    bar_widths = [max(w - gap, gap * 0.5) for w in rel_widths]
+    for l, v, w in zip(lefts, values, bar_widths):
+        ax.bar(l, v, width=w, align="edge", color="#4a90d9", alpha=0.85,
+               zorder=2, edgecolor="white", linewidth=0.5)
     ax.axhline(mean_val, color="red", linewidth=3.0, zorder=3,
                label=f"moyenne {mean_val:.2f}%")
-    ax.set_xticks(range(len(values)))
+
+    ax.set_xticks(centers)
     ax.set_xticklabels(scene_labels, rotation=60, ha="right", fontsize=24)
+    ax.set_xlim(0, scale)
     ax.set_ylabel("% illus / mots", fontsize=28)
-    ax.set_title("Illustrations par scène (% des mots)", fontsize=32)
+    ax.set_title("Illustrations par scène (% des mots) — largeur ∝ mots", fontsize=32)
     ax.tick_params(axis="y", labelsize=26)
     ax.legend(fontsize=26)
+
     ax.grid(axis="y", linewidth=0.5, color="#ddd", zorder=0)
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
