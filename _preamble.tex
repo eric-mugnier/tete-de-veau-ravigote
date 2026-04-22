@@ -485,7 +485,7 @@
   \vspace{2\onelineskip}%
   \begingroup
   \small\renewcommand{\baselinestretch}{1.0}\selectfont
-  \listofscores*%
+  \csname @starttoc\endcsname{mus}%
   \endgroup
   \pagestyle{gallimard}}
 
@@ -493,11 +493,14 @@
 \newcommand{\mytableofcontents}{%
   \cleardoublepage
   \pagestyle{empty}%
+  \vspace*{4\onelineskip}%
+  {\centering\normalfont\scshape\large\contentsname\par}%
+  \vspace{2\onelineskip}%
   \begingroup
   \setlength{\beforechapskip}{0pt}%
   \small\renewcommand{\baselinestretch}{1.0}\selectfont
   \addtocontents{toc}{\protect\setcounter{tocdepth}{-1}}%
-  \tableofcontents
+  \csname @starttoc\endcsname{toc}%
   \addtocontents{toc}{\protect\setcounter{tocdepth}{1}}%
   \endgroup
   \pagestyle{gallimard}%
