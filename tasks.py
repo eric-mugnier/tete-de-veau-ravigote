@@ -366,11 +366,13 @@ def stats(c, target=None):
 @_timed
 def all_but_diffs(c):
     """Build everything except diffs: main, notes, pers, postfaces, extrait, total."""
+    couverture(c)
     notes(c)
     pers(c)
     postfaces(c)
     extrait(c)
     total(c)
+    stats(c)
     _ls_outputs()
 
 
@@ -380,9 +382,7 @@ def all(c):
     """Build everything: all_but_diffs + diffs + clean."""
     c.run("python3 -u diff_work/make_diff.py")
     shutil.copy(ROOT / "diff_work" / f"{BASE}_diff.pdf", BUILD / f"{BASE}_diff.pdf")
-    couverture(c)
     _ls_outputs()
-    stats(c)
     clean(c)
 
 
