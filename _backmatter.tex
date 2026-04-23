@@ -51,6 +51,15 @@
 
 % ═══ TABLE DES ILLUSTRATIONS ═════════════════════════════════════════════════
 \mylistoffigures
+\ifdefined\AVECILLUSTRATIONS
+  \clearpage
+  \thispagestyle{empty}
+  \vspace*{\fill}
+  \begin{center}
+    \includegraphics[width=\textwidth]{stats_illus_chart_h.jpg}
+  \end{center}
+  \vspace*{\fill}
+\fi
 
 % ═══ TABLE DES EXTRAITS MUSICAUX ══════════════════════════════════════════════
 \mylistofscores
