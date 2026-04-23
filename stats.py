@@ -539,7 +539,7 @@ def _png_illus_chart_h(rows_split: list) -> str:
                   clip_on=False, zorder=5)
     ax.annotate("acte",   xy=(X_ACTE, hdr_y), xycoords=("axes fraction", "data"),
                 ha="right", annotation_clip=False, **hdr_kw)
-    ax.annotate("sc.",    xy=(X_SC, hdr_y),   xycoords=("axes fraction", "data"),
+    ax.annotate("scène",  xy=(X_SC, hdr_y),   xycoords=("axes fraction", "data"),
                 ha="center", annotation_clip=False, **hdr_kw)
     ax.annotate("‰",      xy=(X_PROM, hdr_y), xycoords=("axes fraction", "data"),
                 ha="right", annotation_clip=False, **hdr_kw)
@@ -563,7 +563,7 @@ def _png_illus_chart_h(rows_split: list) -> str:
     ax.spines["right"].set_visible(False)
 
     # Titles centered on full figure width; subtitle offset to avoid overlap with main title
-    fig.text(0.5, 0.988, "Illustrations par acte / scène (‰ des mots)",
+    fig.text(0.5, 0.988, "Illustrations par scène",
              ha="center", va="top", fontsize=26)
     fig.text(0.5, 0.965, "hauteur de chaque scène proportionnelle au nombre de mots",
              ha="center", va="top", fontsize=14, fontstyle="italic", color="#555")

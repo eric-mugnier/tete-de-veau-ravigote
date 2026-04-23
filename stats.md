@@ -26,7 +26,7 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 | IX.19 | Il est toujours extrêmement douloureux de mettre… | 723 | 234 |   6 214 |   3.32% |  25.43% |    23 |  0.37% |            20 |  0.32% |
 | **Total** | |  |  | **186 925** | **100%** | **29.40%** | **1081** | **0.58%** | **448** | **0.24%** |
 
-![Illustrations par scène (horizontal)](stats_illus_chart_h.jpg?v=5e355cff)
+![Illustrations par scène (horizontal)](stats_illus_chart_h.jpg?v=bc30626b)
 
 # Statistiques par acte (avant découpage)
 
