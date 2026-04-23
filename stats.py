@@ -359,12 +359,13 @@ def _png_illus_chart(rows_split: list) -> str:
         return ""
 
     scene_labels = [r[0] for r in rows_split]
-    values       = [round(r[4] / r[2] * 100, 2) if r[2] else 0.0 for r in rows_split]
+    acte_labels  = [r[1] for r in rows_split]
+    values       = [round(r[4] / r[2] * 1000, 2) if r[2] else 0.0 for r in rows_split]
     words        = [r[2] for r in rows_split]
 
     total_words = sum(words)
     total_illus = sum(r[4] for r in rows_split)
-    mean_val    = total_illus / total_words * 100 if total_words else 0.0
+    mean_val    = total_illus / total_words * 1000 if total_words else 0.0
 
     # Bar widths proportional to word count, scaled so total width = number of scenes
     scale      = len(rows_split)
@@ -372,27 +373,71 @@ def _png_illus_chart(rows_split: list) -> str:
     lefts      = [sum(rel_widths[:i]) for i in range(len(rel_widths))]
     centers    = [l + w / 2 for l, w in zip(lefts, rel_widths)]
 
-    fig, ax = plt.subplots(figsize=(22, 7))
-    gap = 0.15  # fixed inter-bar gap in scale units
+    fig, ax = plt.subplots(figsize=(22, 8))
+    gap    = 0.15          # fixed inter-bar gap in scale units
+    offset = gap / 2       # half-gap margin before first bar and after last bar
     bar_widths = [max(w - gap, gap * 0.5) for w in rel_widths]
-    for l, v, w in zip(lefts, values, bar_widths):
-        ax.bar(l, v, width=w, align="edge", color="#4a90d9", alpha=0.85,
+    # Shift all bars right by offset so first bar has gap/2 space from y-axis
+    for l, v, bw, wc in zip(lefts, values, bar_widths, words):
+        x_bar = l + offset
+        ax.bar(x_bar, v, width=bw, align="edge", color="#89b8e8", alpha=0.85,
                zorder=2, edgecolor="white", linewidth=0.5)
+        x_center = x_bar + bw / 2
+        # ‰ value at top of bar (skip zeros)
+        if v > 0:
+            ax.text(x_center, v, f"{v:.1f}", ha="center", va="bottom",
+                    fontsize=14, zorder=4)
+        # word count in K, vertical, centred between y=0 and y=1
+        ax.text(x_center, 0.5, f"{wc/1000:.1f}k", ha="center", va="center",
+                fontsize=13, color="black", zorder=4)
     ax.axhline(mean_val, color="red", linewidth=3.0, zorder=3,
-               label=f"moyenne {mean_val:.2f}%")
+               label=f"moyenne {mean_val:.1f}‰")
 
-    ax.set_xticks(centers)
-    ax.set_xticklabels(scene_labels, rotation=60, ha="right", fontsize=24)
-    ax.set_xlim(0, scale)
-    ax.set_ylabel("% illus / mots", fontsize=28)
-    ax.set_title("Illustrations par scène (% des mots) — largeur ∝ mots", fontsize=32)
+    # Scene labels: drop roman prefix (acte shown below), horizontal, shifted
+    short_labels = [lbl.split(".")[-1] for lbl in scene_labels]
+    ax.set_xticks([c + offset for c in centers])
+    ax.set_xticklabels(short_labels, rotation=0, ha="center", fontsize=20)
+
+    # Acte separators (including left and right sentinels) + labels
+    # Boundaries: 0, lefts[first-of-acte], …, scale+gap (right sentinel)
+    trans = ax.get_xaxis_transform()
+    y_line_top, y_line_bot, y_label = 1.0, -0.14, -0.15
+
+    boundaries = [0.0]
+    for i in range(1, len(acte_labels)):
+        if acte_labels[i] != acte_labels[i - 1]:
+            boundaries.append(lefts[i])   # = offset-shifted boundary midpoint
+    boundaries.append(float(scale))        # right sentinel (gap/2 past last bar)
+
+    actes_ordered = list(dict.fromkeys(acte_labels))  # unique, ordered
+
+    for x_sep in boundaries:
+        # Left sentinel overlaps y-axis: draw only the below-axes extension
+        y_top = 0.0 if x_sep == 0.0 else y_line_top
+        ax.plot([x_sep, x_sep], [y_top, y_line_bot], transform=trans,
+                clip_on=False, color="#999", linewidth=1.0, linestyle="--", zorder=0)
+
+    for k, acte in enumerate(actes_ordered):
+        x_mid = (boundaries[k] + boundaries[k + 1]) / 2
+        ax.annotate(acte, xy=(x_mid, y_label), xycoords=("data", "axes fraction"),
+                    ha="center", va="top", fontsize=26, fontweight="bold",
+                    annotation_clip=False)
+
+    ax.set_xlim(0, scale + offset)
+    ax.set_ylabel("‰ illus / mots", fontsize=28)
+    ax.set_title("Illustrations par acte / scène (‰ des mots)", fontsize=32, pad=50)
+    ax.annotate("largeur de chaque scène proportionnelle au nombre de mots",
+                xy=(0.5, 1.0), xycoords="axes fraction",
+                xytext=(0, 8), textcoords="offset points",
+                ha="center", va="bottom", fontsize=18, fontstyle="italic",
+                color="#555", annotation_clip=False)
     ax.tick_params(axis="y", labelsize=26)
     ax.legend(fontsize=26)
 
     ax.grid(axis="y", linewidth=0.5, color="#ddd", zorder=0)
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
-    plt.tight_layout()
+    plt.tight_layout(rect=[0, 0.08, 1, 1])
 
     import hashlib
     out = ROOT / "stats_illus_chart.png"
