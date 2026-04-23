@@ -45,3 +45,5 @@ config.py
 *.gitinfo
 
 deprecated/
+
+camera-multi/
