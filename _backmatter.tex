@@ -50,9 +50,8 @@
 \IfFileExists{_ratiocinations.tex}{\input{_ratiocinations.tex}}{}
 
 % ═══ TABLE DES ILLUSTRATIONS ═════════════════════════════════════════════════
-\mylistoffigures
 \ifdefined\AVECILLUSTRATIONS
-  \clearpage
+  \cleartoevenpage
   \thispagestyle{empty}
   \vspace*{\fill}
   \begin{center}
@@ -60,6 +59,7 @@
   \end{center}
   \vspace*{\fill}
 \fi
+\mylistoffigures
 
 % ═══ TABLE DES EXTRAITS MUSICAUX ══════════════════════════════════════════════
 \mylistofscores
