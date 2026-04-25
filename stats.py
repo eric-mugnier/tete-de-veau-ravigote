@@ -495,7 +495,7 @@ def _png_illus_chart_h(rows_split: list) -> str:
         ax.annotate(f"{wc/1000:.1f}k", xy=(X_PROM, y_ctr), xycoords=("axes fraction", "data"),
                     ha="right", va="center", fontsize=14, clip_on=False, zorder=4)
         # ‰ value pinned at x=0.75 graduation
-        ax.text(0.75, y_ctr, f"{v:.1f}", ha="center", va="center",
+        ax.text(0.75, y_ctr, f"{v:.1f}" if v > 0 else "", ha="center", va="center",
                 fontsize=15, color="black", zorder=4)
 
     ax.axvline(mean_val, color="#555555", linewidth=1.0, linestyle=(0, (5, 4)), zorder=3)
