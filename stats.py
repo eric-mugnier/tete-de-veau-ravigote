@@ -456,7 +456,7 @@ def _png_illus_chart_h(rows_split: list) -> str:
         matplotlib.use("Agg")
         import matplotlib.pyplot as plt
         from matplotlib.transforms import blended_transform_factory
-        from matplotlib.offsetbox import TextArea, HPacker, AnnotationBbox
+
     except ImportError:
         return ""
 
@@ -481,24 +481,24 @@ def _png_illus_chart_h(rows_split: list) -> str:
     trans_mixed = blended_transform_factory(ax.transAxes, ax.transData)
 
     # Column x positions (axes fraction, except # mots which is in data x)
-    X_ACTE = -0.17   # acte Roman numeral — right-aligned
-    X_SC   = -0.09   # scene number       — centre-aligned
-    X_PROM = -0.02   # ‰ value            — right-aligned
+    X_ACTE = -0.25   # acte Roman numeral — right-aligned
+    X_SC   = -0.17   # scene number       — centre-aligned
+    X_PROM = -0.03   # mots value         — right-aligned
     # # mots at data x = 0.5
 
     for b, v, bh, wc in zip(bottoms, values, bar_heights_actual, words):
         y_bot = b + offset
         y_ctr = y_bot + bh / 2
-        ax.barh(y_bot, v, height=bh, align="edge", color="#89b8e8", alpha=0.85,
+        ax.barh(y_bot, v, height=bh, align="edge", color="#cccccc", alpha=1.0,
                 zorder=2, edgecolor="white", linewidth=0.5)
-        # ‰ value — own column, right of scene number, left of bar
-        ax.annotate(f"{v:.1f}", xy=(X_PROM, y_ctr), xycoords=("axes fraction", "data"),
-                    ha="right", va="center", fontsize=11, clip_on=False, zorder=4)
-        # word count pinned at x=0.5 graduation
-        ax.text(0.5, y_ctr, f"{wc/1000:.1f}k", ha="center", va="center",
-                fontsize=10, color="black", zorder=4)
+        # word count — own column, right of scene number, left of bar
+        ax.annotate(f"{wc/1000:.1f}k", xy=(X_PROM, y_ctr), xycoords=("axes fraction", "data"),
+                    ha="right", va="center", fontsize=14, clip_on=False, zorder=4)
+        # ‰ value pinned at x=0.75 graduation
+        ax.text(0.75, y_ctr, f"{v:.1f}", ha="center", va="center",
+                fontsize=15, color="black", zorder=4)
 
-    ax.axvline(mean_val, color="red", linewidth=3.0, zorder=3)
+    ax.axvline(mean_val, color="#555555", linewidth=1.0, linestyle=(0, (5, 4)), zorder=3)
 
     # Scene labels: manual annotations for precise x control; no default tick labels
     short_labels  = [lbl.split(".")[-1] for lbl in scene_labels]
@@ -508,12 +508,12 @@ def _png_illus_chart_h(rows_split: list) -> str:
     ax.tick_params(axis="y", length=0)
     for sc_lbl, y_ctr in zip(short_labels, ytick_centers):
         ax.annotate(sc_lbl, xy=(X_SC, y_ctr), xycoords=("axes fraction", "data"),
-                    ha="center", va="center", fontsize=16, clip_on=False, zorder=4)
+                    ha="center", va="center", fontsize=20, clip_on=False, zorder=4)
     ax.set_ylim(0, scale + offset)
     ax.invert_yaxis()
 
     # Acte boundaries: horizontal separators + Roman numeral labels to the left
-    x_left = -0.16
+    x_left = -0.24
 
     boundaries = [0.0]
     for i in range(1, len(acte_labels)):
@@ -530,33 +530,27 @@ def _png_illus_chart_h(rows_split: list) -> str:
     for k, acte in enumerate(actes_ordered):
         y_mid = (boundaries[k] + boundaries[k + 1]) / 2
         ax.annotate(acte, xy=(X_ACTE, y_mid), xycoords=("axes fraction", "data"),
-                    ha="right", va="center", fontsize=22, fontweight="bold",
+                    ha="right", va="center", fontsize=22,
                     annotation_clip=False)
 
     # Column header row above the first separator
     hdr_y  = -0.25
-    hdr_kw = dict(va="center", fontsize=13, fontweight="bold", color="#333",
+    hdr_kw = dict(va="center", fontsize=17, fontweight="bold", color="#333",
                   clip_on=False, zorder=5)
     ax.annotate("acte",   xy=(X_ACTE, hdr_y), xycoords=("axes fraction", "data"),
                 ha="right", annotation_clip=False, **hdr_kw)
     ax.annotate("scène",  xy=(X_SC, hdr_y),   xycoords=("axes fraction", "data"),
                 ha="center", annotation_clip=False, **hdr_kw)
-    ax.annotate("‰",      xy=(X_PROM, hdr_y), xycoords=("axes fraction", "data"),
+    ax.annotate("mots",   xy=(X_PROM, hdr_y), xycoords=("axes fraction", "data"),
                 ha="right", annotation_clip=False, **hdr_kw)
-    ax.annotate("# mots", xy=(0.5, hdr_y),    xycoords=("data", "data"),
+    ax.annotate("‰",      xy=(0.75, hdr_y),   xycoords=("data", "data"),
                 ha="center", annotation_clip=False, **hdr_kw)
-    _dash = TextArea("— ", textprops=dict(color="red",   fontsize=13, fontweight="bold"))
-    _txt  = TextArea(f"moyenne {mean_val:.1f}‰",
-                     textprops=dict(color="black", fontsize=13, fontweight="bold"))
-    _box  = HPacker(children=[_dash, _txt], pad=0, sep=0)
-    ax.add_artist(AnnotationBbox(
-        _box, (mean_val, hdr_y), xycoords=("data", "data"),
-        box_alignment=(0.5, 0.5), clip_on=False, zorder=5,
-        bboxprops=dict(boxstyle="round,pad=0.4", facecolor="white",
-                       edgecolor="#aaaaaa", linewidth=1.0, alpha=0.9)))
+    ax.annotate(f"moyenne {mean_val:.1f}‰", xy=(mean_val, hdr_y), xycoords="data",
+                ha="center", va="center", fontsize=17, fontweight="bold",
+                annotation_clip=False, zorder=5)
 
-    ax.set_xlabel("‰ illustrations / mots", fontsize=22)
-    ax.tick_params(axis="x", labelsize=18)
+    ax.set_xlabel("‰ illustrations / mots", fontsize=18)
+    ax.tick_params(axis="x", labelsize=15)
 
     ax.grid(axis="x", linewidth=0.5, color="#ddd", zorder=0)
     ax.spines["top"].set_visible(False)
@@ -564,11 +558,11 @@ def _png_illus_chart_h(rows_split: list) -> str:
 
     # Titles centered on full figure width; subtitle offset to avoid overlap with main title
     fig.text(0.5, 0.988, "Illustrations par scène",
-             ha="center", va="top", fontsize=26)
-    fig.text(0.5, 0.965, "hauteur de chaque scène proportionnelle au nombre de mots",
-             ha="center", va="top", fontsize=14, fontstyle="italic", color="#555")
+             ha="center", va="top", fontsize=30)
+    fig.text(0.5, 0.957, "La hauteur de chaque scène est proportionnelle au nombre de mots",
+             ha="center", va="top", fontsize=18, fontstyle="italic", color="#555")
 
-    plt.tight_layout(rect=[0.10, 0, 0.90, 0.950])
+    plt.tight_layout(rect=[0.10, 0, 0.90, 0.930])
 
     import hashlib
     out = ROOT / "stats_illus_chart_h.jpg"
