@@ -248,18 +248,38 @@
       }%
     \fi
   }
-  % \iconographiedouble[placement][height][margin]{\bwimage{img1}}{\bwimage{img2}}[caption]
+  % \iconographiedouble[height][margin]{\bwimage{img1}}{\bwimage{img2}}[caption]
   % Two images side by side at equal height.
-  % [placement] = b (default, push to bottom) or t (push to top)
   % [height] common image height (default 5cm); [margin] symmetric indent (default 0pt)
   % [caption] shared caption, omit for none.
-  \NewDocumentCommand{\iconographiedouble}{O{b} O{5cm} O{0pt} m m O{}}{%
-    \ifthenelse{\equal{#1}{b}}{\vspace*{\fill}}{\vspace*{0pt}}%
+  \NewDocumentCommand{\iconographiedouble}{O{5cm} O{0pt} m m O{}}{%
     \vspace{0.5\onelineskip}%
     \illusbwimageaddloffalse%
-    {\setlength{\leftskip}{#3}\setlength{\rightskip}{#3}%
-    \noindent\bwimage[height=#2]{#4}\hfill\bwimage[height=#2]{#5}\par}%
+    {\setlength{\leftskip}{#2}\setlength{\rightskip}{#2}%
+    \noindent\bwimage[height=#1]{#3}\hfill\bwimage[height=#1]{#4}\par}%
     \illusbwimageaddloftrue%
+    \illuslofentry{#5}{#3}%
+    \illuslofentry{#5}{#4}%
+    \@illuslofflush%
+    \ifx&#5&%
+      \vspace{0.5\onelineskip}%
+    \else%
+      \vspace{0.2\onelineskip}%
+      {\centering\figcaptionname\itshape#5\par}%
+      \vspace{0.3\onelineskip}%
+    \fi%
+  }
+  % \iconographietriple[height][margin]{\bwimage{img1}}{\bwimage{img2}}{\bwimage{img3}}[caption]
+  % Three images side by side at equal height.
+  % [height] common image height (default 5cm); [margin] symmetric indent (default 0pt)
+  % [caption] shared caption, omit for none.
+  \NewDocumentCommand{\iconographietriple}{O{5cm} O{0pt} m m m O{}}{%
+    \vspace{0.5\onelineskip}%
+    \illusbwimageaddloffalse%
+    {\setlength{\leftskip}{#2}\setlength{\rightskip}{#2}%
+    \noindent\bwimage[height=#1]{#3}\hfill\bwimage[height=#1]{#4}\hfill\bwimage[height=#1]{#5}\par}%
+    \illusbwimageaddloftrue%
+    \illuslofentry{#6}{#3}%
     \illuslofentry{#6}{#4}%
     \illuslofentry{#6}{#5}%
     \@illuslofflush%
@@ -270,29 +290,6 @@
       {\centering\figcaptionname\itshape#6\par}%
       \vspace{0.3\onelineskip}%
     \fi%
-    \ifthenelse{\equal{#1}{t}}{\vspace*{\fill}}{}%
-  }
-  % \iconographietriple[placement][height][margin]{\bwimage{img1}}{\bwimage{img2}}{\bwimage{img3}}[caption]
-  % Three images side by side at equal height. Same options as \iconographiedouble.
-  \NewDocumentCommand{\iconographietriple}{O{b} O{5cm} O{0pt} m m m O{}}{%
-    \ifthenelse{\equal{#1}{b}}{\vspace*{\fill}}{\vspace*{0pt}}%
-    \vspace{0.5\onelineskip}%
-    \illusbwimageaddloffalse%
-    {\setlength{\leftskip}{#3}\setlength{\rightskip}{#3}%
-    \noindent\bwimage[height=#2]{#4}\hfill\bwimage[height=#2]{#5}\hfill\bwimage[height=#2]{#6}\par}%
-    \illusbwimageaddloftrue%
-    \illuslofentry{#7}{#4}%
-    \illuslofentry{#7}{#5}%
-    \illuslofentry{#7}{#6}%
-    \@illuslofflush%
-    \ifx&#7&%
-      \vspace{0.5\onelineskip}%
-    \else%
-      \vspace{0.2\onelineskip}%
-      {\centering\figcaptionname\itshape#7\par}%
-      \vspace{0.3\onelineskip}%
-    \fi%
-    \ifthenelse{\equal{#1}{t}}{\vspace*{\fill}}{}%
   }
   \newcommand{\mylistoffigures}{%
     \cleardoublepage
@@ -312,8 +309,8 @@
   \newcommand{\iconographietexpair}[2]{}
   \newcommand{\iconographiewrapfig}[4]{}
   \NewDocumentCommand{\iconographieinlineblock}{O{} O{1} m m}{}
-  \NewDocumentCommand{\iconographiedouble}{O{b} O{5cm} O{0pt} m m O{}}{}
-  \NewDocumentCommand{\iconographietriple}{O{b} O{5cm} O{0pt} m m m O{}}{}
+  \NewDocumentCommand{\iconographiedouble}{O{5cm} O{0pt} m m O{}}{}
+  \NewDocumentCommand{\iconographietriple}{O{5cm} O{0pt} m m m O{}}{}
   \newcommand{\mylistoffigures}{}
 \fi
 \makeatother
