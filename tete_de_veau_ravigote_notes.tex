@@ -29,6 +29,24 @@
 \pagestyle{gallimard}
 \def\jobname{tete_de_veau_ravigote}% redirect endnotes aux lookup
 
-\input{_backmatter}
+% ═══ NOTES ════════════════════════════════════════════════════════════════════
+\cleardoublepage
+\phantomsection\addcontentsline{toc}{chapter}{Notes}
+\thispagestyle{empty}
+\vspace*{10\onelineskip}
+{\centering\normalfont\scshape\large Notes\par}
+\newpage
+\hbox{}\thispagestyle{empty}
+\newpage
+\pagestyle{gallimard}
+\markboth{}{}
+\theendnotes
+\markboth{}{}%
+
+% ═══ TABLE DES MATIÈRES ══════════════════════════════════════════════════════
+\mytableofcontents
+
+% ═══ COLOPHON ═════════════════════════════════════════════════════════════════
+\input{_colophon}
 
 \end{document}

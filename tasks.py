@@ -251,7 +251,7 @@ def notes(c):
     print("=== NOTES : génération du .ent ===")
 
     # Double-braces {{ }} in the f-string produce literal { } for LaTeX
-    tex_cmd = rf"\def\AVECNOTES{{}}\def\SANSNOTESFINALES{{}}\input{{{BASE}}}"
+    tex_cmd = rf"\def\AVECNOTES{{}}\def\SANSNOTESFINALES{{}}\def\ENDOFBOOKNOTES{{}}\input{{{BASE}}}"
     lualatex = (
         f"lualatex -shell-escape -interaction=nonstopmode"
         f" -output-directory=build"
