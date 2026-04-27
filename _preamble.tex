@@ -613,10 +613,18 @@
 \pagestyle{gallimard}
 \aliaspagestyle{chapter}{gallimard}
 
+% \illuspagebreak : \newpage uniquement en présence d'illustrations.
+\ifdefined\AVECILLUSTRATIONS
+  \newcommand{\illuspagebreak}{\newpage}
+\else
+  \newcommand{\illuspagebreak}{}
+\fi
+
 % ─── EDITORIAL NOTE (Avertissement, Postfaces) ────────────────────────────────
 % 10.95pt (~small), interligne ×1.1, sans alinéa, titre en petites capitales.
 \newenvironment{editorialnote}[1]{%
   \begingroup
+  \pagestyle{empty}%
   \leftskip=0pt\relax\rightskip=0pt\relax
   \renewcommand{\baselinestretch}{1.1}%
   \small
@@ -630,4 +638,6 @@
   \noindent\ignorespaces
 }{%
   \par\endgroup
+  \clearpage
+  \pagestyle{gallimard}%
 }
