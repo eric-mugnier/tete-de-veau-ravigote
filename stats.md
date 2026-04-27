@@ -6,7 +6,7 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 | Acte.Scène | Début | p. | pp. | Mots | % livre | % dial. | Notes | % mots | Illustrations | % mots |
 |----------:|:------|---:|----:|-----:|--------:|--------:|------:|-------:|--------------:|-------:|
 | I.1 | Une décharge d’un milliard de volts a… |   7 |  18 |   3 971 |   2.12% |   4.48% |    22 |  0.55% |            18 |  0.45% |
-| II.2 | Ça a officiellement commencé le jour où… |  25 |  32 |   8 554 |   4.57% |  20.38% |    32 |  0.37% |            19 |  0.22% |
+| II.2 | Ça a officiellement commencé le jour où… |  25 |  32 |   8 554 |   4.57% |  20.24% |    32 |  0.37% |            19 |  0.22% |
 | II.3 | Ce même jour, en fin d’après-midi, on… |  57 |  36 |   8 689 |   4.65% |   5.65% |    53 |  0.61% |            28 |  0.32% |
 | III.4 | Quelques jours plus tard, les journaux ont… |  93 |  44 |  11 096 |   5.93% |  28.70% |    78 |  0.70% |            33 |  0.30% |
 | III.5 | Dans le fond de la pièce, il… | 137 |  36 |   8 467 |   4.53% |  43.11% |    32 |  0.38% |            12 |  0.14% |
