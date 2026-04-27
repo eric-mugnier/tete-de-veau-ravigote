@@ -597,9 +597,14 @@
 \makeatother
 
 % ─── RUNNING HEADERS : verso = acte centré pc, recto = scène alignée à droite ──
+% Sans \AVECSCENES (notes standalone) : recto = acte centré comme le verso.
 \makepagestyle{gallimard}
 \makeevenhead{gallimard}{}{\footnotesize\scshape\leftmark}{}
-\makeoddhead{gallimard}{}{}{\footnotesize\rightmark}
+\ifdefined\AVECSCENES
+  \makeoddhead{gallimard}{}{}{\footnotesize\rightmark}
+\else
+  \makeoddhead{gallimard}{}{\footnotesize\scshape\leftmark}{}
+\fi
 \makeevenfoot{gallimard}{}{\thepage}{}
 \makeoddfoot{gallimard}{}{\thepage}{}
 \makepsmarks{gallimard}{%

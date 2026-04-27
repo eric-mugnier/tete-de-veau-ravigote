@@ -6,7 +6,7 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 | Acte.Scène | Début | p. | pp. | Mots | % livre | % dial. | Notes | % mots | Illustrations | % mots |
 |----------:|:------|---:|----:|-----:|--------:|--------:|------:|-------:|--------------:|-------:|
 | I.1 | Une décharge d’un milliard de volts a… |   7 |  18 |   3 971 |   2.12% |   4.48% |    22 |  0.55% |            18 |  0.45% |
-| II.2 | Ça a officiellement commencé le jour où… |  25 |  32 |   8 527 |   4.56% |  20.23% |    32 |  0.38% |            14 |  0.16% |
+| II.2 | Ça a officiellement commencé le jour où… |  25 |  32 |   8 554 |   4.57% |  20.38% |    32 |  0.37% |            19 |  0.22% |
 | II.3 | Ce même jour, en fin d’après-midi, on… |  57 |  36 |   8 689 |   4.65% |   5.65% |    53 |  0.61% |            28 |  0.32% |
 | III.4 | Quelques jours plus tard, les journaux ont… |  93 |  44 |  11 096 |   5.93% |  28.70% |    78 |  0.70% |            33 |  0.30% |
 | III.5 | Dans le fond de la pièce, il… | 137 |  36 |   8 467 |   4.53% |  43.11% |    32 |  0.38% |            12 |  0.14% |
@@ -17,16 +17,16 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 | VI.10 | J’ai tout juste eu le temps de… | 331 |  42 |  10 085 |   5.39% |  35.33% |    92 |  0.91% |            31 |  0.31% |
 | VI.11 | On en était là de nos aventures… | 373 |  46 |  10 729 |   5.74% |  19.37% |    86 |  0.80% |            44 |  0.41% |
 | VI.12 | La voiture s’est approchée, au ralenti, et… | 419 |  40 |   9 072 |   4.85% |  91.28% |    24 |  0.26% |            15 |  0.17% |
-| VII.13 | Et on y est allé, figurez-vous, car… | 459 |  16 |   2 852 |   1.53% |  56.21% |    14 |  0.49% |             9 |  0.32% |
+| VII.13 | Et on y est allé, figurez-vous, car… | 459 |  16 |   2 852 |   1.52% |  56.21% |    14 |  0.49% |             9 |  0.32% |
 | VIII.14 | Trois quarts d’heure plus tard, après avoir… | 475 |  36 |   9 794 |   5.24% |   0.00% |    56 |  0.57% |            33 |  0.34% |
 | VIII.15 | Les chaussures à semelle de cuir sont… | 511 |  28 |   6 822 |   3.65% |  52.49% |    55 |  0.81% |            14 |  0.21% |
 | IX.16 | Cette nuit-là, j’ai fait des rêves étranges… | 539 | 124 |  33 443 |  17.88% |  20.84% |   248 |  0.74% |            61 |  0.18% |
 | IX.17 | Une porte d’ascenseur venait de s’ouvrir, non… | 663 |  36 |  10 467 |   5.60% |   3.04% |    68 |  0.65% |            35 |  0.33% |
 | IX.18 | Comme beaucoup d’urgentistes souffrant de handicap visuel… | 699 |  26 |   7 373 |   3.94% |  48.11% |    10 |  0.14% |             — |      — |
 | IX.19 | Il est toujours extrêmement douloureux de mettre… | 725 | 234 |   6 214 |   3.32% |  25.43% |    23 |  0.37% |            20 |  0.32% |
-| **Total** | |  |  | **186 997** | **100%** | **29.40%** | **1081** | **0.58%** | **463** | **0.25%** |
+| **Total** | |  |  | **187 024** | **100%** | **29.40%** | **1081** | **0.58%** | **468** | **0.25%** |
 
-![Illustrations par scène (horizontal)](stats_illus_chart_h.jpg?v=cff67ec1)
+![Illustrations par scène (horizontal)](stats_illus_chart_h.jpg?v=f4d4a48e)
 
 # Statistiques par acte (avant découpage)
 
@@ -36,19 +36,19 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 | Acte | p. | pp. | Mots | % livre | Notes | % mots | Illustrations | % mots |
 |-----:|---:|----:|-----:|--------:|------:|-------:|--------------:|-------:|
 | I    |   3 |  16 |   3 971 |   2.12% |    22 |  0.55% |            18 |  0.45% |
-| II   |  19 |  56 |  17 216 |   9.21% |    85 |  0.49% |            42 |  0.24% |
+| II   |  19 |  56 |  17 243 |   9.22% |    85 |  0.49% |            47 |  0.27% |
 | III  |  75 |  68 |  19 563 |  10.46% |   110 |  0.56% |            45 |  0.23% |
 | IV   | 143 |  66 |  19 681 |  10.52% |    88 |  0.45% |            46 |  0.23% |
 | V    | 209 |  66 |  19 715 |  10.54% |   100 |  0.51% |            50 |  0.25% |
 | VI   | 275 | 106 |  29 886 |  15.98% |   202 |  0.68% |            90 |  0.30% |
-| VII  | 381 |  12 |   2 852 |   1.53% |    14 |  0.49% |             9 |  0.32% |
-| VIII | 393 |  54 |  16 616 |   8.89% |   111 |  0.67% |            47 |  0.28% |
-| IX   | 447 | 184 |  57 497 |  30.75% |   349 |  0.61% |           116 |  0.20% |
-| **Total** |  |  | **186 997** | **100%** | **1081** | **0.58%** | **463** | **0.25%** |
+| VII  | 381 |  12 |   2 852 |   1.52% |    14 |  0.49% |             9 |  0.32% |
+| VIII | 393 |  54 |  16 616 |   8.88% |   111 |  0.67% |            47 |  0.28% |
+| IX   | 447 | 184 |  57 497 |  30.74% |   349 |  0.61% |           116 |  0.20% |
+| **Total** |  |  | **187 024** | **100%** | **1081** | **0.58%** | **468** | **0.25%** |
 
 ## Estimation illustrations restantes
 
-Cible : **1 illustration tous les 404 mots** (186 997 mots → **463** illustrations).  
-Actuellement **463** — il en manque **0** — **100.0 %** réalisé.
+Cible : **1 illustration tous les 400 mots** (187 024 mots → **468** illustrations).  
+Actuellement **468** — il en manque **0** — **100.0 %** réalisé.
 
-Sous-illustrées (< 0.7× la cible) : IX.18 (0/18.2)
+Sous-illustrées (< 0.7× la cible) : IX.18 (0/18.4)
