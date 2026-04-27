@@ -369,11 +369,15 @@
   \begin{minipage}[t]{#2\linewidth}\includegraphics[width=\linewidth]{#3}\end{minipage}%
   \source{#4}}
 % Filet ornemental (séparateur de scène intra-chapitre)
-\newcommand{\ornamentalrule}{%
-  \vspace{\onelineskip}%
-  {\centering\rule{0.4\textwidth}{0.4pt}\par}%
-  \vspace{\onelineskip}%
-}
+\ifdefined\AVECILLUSTRATIONS
+  \newcommand{\ornamentalrule}{%
+    \vspace{\onelineskip}%
+    {\centering\rule{0.4\textwidth}{0.4pt}\par}%
+    \vspace{\onelineskip}%
+  }
+\else
+  \newcommand{\ornamentalrule}{}
+\fi
 % Font for scene header in notes block
 \makeatletter
 \ifdefined\ENDOFBOOKNOTES
