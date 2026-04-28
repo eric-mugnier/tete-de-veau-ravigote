@@ -184,7 +184,7 @@ def extrait(c, acte=None):
             blocks.append(r"\acte{" + "\n  " + indented + "\n}")
         new_content = "\n".join(blocks)
     else:
-        new_content = r"\input{tete_de_veau_ravigote_content.tex}"
+        new_content = r"\input{_content.tex}"
     tex = re.sub(
         r"(\\pagestyle\{gallimard\}\n\n).*?\n(% ← extrait content)",
         lambda m: m.group(1) + new_content + "\n" + m.group(2),
