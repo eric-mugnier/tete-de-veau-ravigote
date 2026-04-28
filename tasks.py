@@ -307,7 +307,7 @@ def pers(c):
         for punct in (":", ";", "!", "?"):
             tex = tex.replace(f"{sp}{punct}", f"~{punct}")
     Path("_personnages.tex").write_text(tex, encoding="utf-8")
-    _lmk(c, "personnages")
+    _lmk(c, "tete_de_veau_ravigote_personnages")
 
 
 @task(name="postface")
