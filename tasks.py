@@ -173,7 +173,7 @@ def gitinfo(c):
 def extrait(c, acte=None):
     """Build extrait.pdf (with notes and illustrations, full or subset of acts)."""
     _svg_to_pdf(c)
-    tex_path = Path("extrait.tex")
+    tex_path = Path("test_extrait.tex")
     tex = tex_path.read_text(encoding="utf-8")
     if acte:
         nums = [s.strip().zfill(2) for s in acte.split(",")]
