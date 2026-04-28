@@ -5,25 +5,25 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 
 | Acte.Scène | Début | p. | pp. | Mots | % livre | % dial. | Notes | % mots | Illustrations | % mots |
 |----------:|:------|---:|----:|-----:|--------:|--------:|------:|-------:|--------------:|-------:|
-| I.1 | Une décharge d’un milliard de volts a… |   7 |  18 |   3 971 |   2.12% |   4.48% |    22 |  0.55% |            18 |  0.45% |
-| II.2 | Ça a officiellement commencé le jour où… |  25 |  32 |   8 554 |   4.57% |  20.24% |    32 |  0.37% |            19 |  0.22% |
-| II.3 | Ce même jour, en fin d’après-midi, on… |  57 |  36 |   8 689 |   4.65% |   5.65% |    53 |  0.61% |            28 |  0.32% |
-| III.4 | Quelques jours plus tard, les journaux ont… |  93 |  44 |  11 096 |   5.93% |  28.70% |    78 |  0.70% |            33 |  0.30% |
-| III.5 | Dans le fond de la pièce, il… | 137 |  36 |   8 467 |   4.53% |  43.11% |    32 |  0.38% |            12 |  0.14% |
-| IV.6 | Il y a ce qu’on appelle la… | 173 |  44 |  11 316 |   6.05% |  28.54% |    45 |  0.40% |            27 |  0.24% |
-| IV.7 | Depuis que mon ami Grégoire Lussier, ancien… | 217 |  34 |   8 365 |   4.47% |  30.70% |    43 |  0.51% |            19 |  0.23% |
-| V.8 | Croyez-le ou non, mais Aymeric Jégou et… | 251 |  36 |   8 904 |   4.76% |  56.56% |    44 |  0.49% |            27 |  0.30% |
-| V.9 | Ce soir-là, alors même que les combats… | 287 |  44 |  10 811 |   5.78% |  31.33% |    56 |  0.52% |            23 |  0.21% |
-| VI.10 | J’ai tout juste eu le temps de… | 331 |  42 |  10 085 |   5.39% |  35.33% |    92 |  0.91% |            31 |  0.31% |
-| VI.11 | On en était là de nos aventures… | 373 |  46 |  10 729 |   5.74% |  19.37% |    86 |  0.80% |            44 |  0.41% |
-| VI.12 | La voiture s’est approchée, au ralenti, et… | 419 |  40 |   9 098 |   4.86% |  91.02% |    24 |  0.26% |            15 |  0.16% |
-| VII.13 | Et on y est allé, figurez-vous, car… | 459 |  16 |   2 852 |   1.52% |  56.21% |    14 |  0.49% |             9 |  0.32% |
-| VIII.14 | Trois quarts d’heure plus tard, après avoir… | 475 |  36 |   9 794 |   5.24% |   0.00% |    56 |  0.57% |            33 |  0.34% |
-| VIII.15 | Les chaussures à semelle de cuir sont… | 511 |  28 |   6 822 |   3.65% |  52.49% |    55 |  0.81% |            14 |  0.21% |
-| IX.16 | Cette nuit-là, j’ai fait des rêves étranges… | 539 | 124 |  33 443 |  17.88% |  20.84% |   248 |  0.74% |            61 |  0.18% |
-| IX.17 | Une porte d’ascenseur venait de s’ouvrir, non… | 663 |  36 |  10 467 |   5.60% |   3.04% |    68 |  0.65% |            35 |  0.33% |
-| IX.18 | Comme beaucoup d’urgentistes souffrant de handicap visuel… | 699 |  26 |   7 373 |   3.94% |  48.11% |    10 |  0.14% |             — |      — |
-| IX.19 | Il est toujours extrêmement douloureux de mettre… | 725 | 234 |   6 214 |   3.32% |  25.43% |    23 |  0.37% |            20 |  0.32% |
+| I.1 | Une décharge d’un milliard de volts a… |   9 |  18 |   3 971 |   2.12% |   4.48% |    22 |  0.55% |            18 |  0.45% |
+| II.2 | Ça a officiellement commencé le jour où… |  27 |  32 |   8 554 |   4.57% |  20.24% |    32 |  0.37% |            19 |  0.22% |
+| II.3 | Ce même jour, en fin d’après-midi, on… |  59 |  36 |   8 689 |   4.65% |   5.65% |    53 |  0.61% |            28 |  0.32% |
+| III.4 | Quelques jours plus tard, les journaux ont… |  95 |  44 |  11 096 |   5.93% |  28.70% |    78 |  0.70% |            33 |  0.30% |
+| III.5 | Dans le fond de la pièce, il… | 139 |  36 |   8 467 |   4.53% |  43.11% |    32 |  0.38% |            12 |  0.14% |
+| IV.6 | Il y a ce qu’on appelle la… | 175 |  44 |  11 316 |   6.05% |  28.54% |    45 |  0.40% |            27 |  0.24% |
+| IV.7 | Depuis que mon ami Grégoire Lussier, ancien… | 219 |  34 |   8 365 |   4.47% |  30.70% |    43 |  0.51% |            19 |  0.23% |
+| V.8 | Croyez-le ou non, mais Aymeric Jégou et… | 253 |  36 |   8 904 |   4.76% |  56.56% |    44 |  0.49% |            27 |  0.30% |
+| V.9 | Ce soir-là, alors même que les combats… | 289 |  44 |  10 811 |   5.78% |  31.33% |    56 |  0.52% |            23 |  0.21% |
+| VI.10 | J’ai tout juste eu le temps de… | 333 |  42 |  10 085 |   5.39% |  35.33% |    92 |  0.91% |            31 |  0.31% |
+| VI.11 | On en était là de nos aventures… | 375 |  46 |  10 729 |   5.74% |  19.37% |    86 |  0.80% |            44 |  0.41% |
+| VI.12 | La voiture s’est approchée, au ralenti, et… | 421 |  40 |   9 098 |   4.86% |  91.02% |    24 |  0.26% |            15 |  0.16% |
+| VII.13 | Et on y est allé, figurez-vous, car… | 461 |  16 |   2 852 |   1.52% |  56.21% |    14 |  0.49% |             9 |  0.32% |
+| VIII.14 | Trois quarts d’heure plus tard, après avoir… | 477 |  36 |   9 794 |   5.24% |   0.00% |    56 |  0.57% |            33 |  0.34% |
+| VIII.15 | Les chaussures à semelle de cuir sont… | 513 |  28 |   6 822 |   3.65% |  52.49% |    55 |  0.81% |            14 |  0.21% |
+| IX.16 | Cette nuit-là, j’ai fait des rêves étranges… | 541 | 124 |  33 443 |  17.88% |  20.84% |   248 |  0.74% |            61 |  0.18% |
+| IX.17 | Une porte d’ascenseur venait de s’ouvrir, non… | 665 |  36 |  10 467 |   5.60% |   3.04% |    68 |  0.65% |            35 |  0.33% |
+| IX.18 | Comme beaucoup d’urgentistes souffrant de handicap visuel… | 701 |  26 |   7 373 |   3.94% |  48.11% |    10 |  0.14% |             — |      — |
+| IX.19 | Il est toujours extrêmement douloureux de mettre… | 727 | 234 |   6 214 |   3.32% |  25.43% |    23 |  0.37% |            20 |  0.32% |
 | **Total** | |  |  | **187 050** | **100%** | **29.39%** | **1081** | **0.58%** | **468** | **0.25%** |
 
 ![Illustrations par scène (horizontal)](stats_illus_chart_h.jpg?v=fec475e5)
@@ -35,15 +35,15 @@ Mots = texte original uniquement (hors contenu des notes `\nf{}`).
 
 | Acte | p. | pp. | Mots | % livre | Notes | % mots | Illustrations | % mots |
 |-----:|---:|----:|-----:|--------:|------:|-------:|--------------:|-------:|
-| I    |   3 |  14 |   3 971 |   2.12% |    22 |  0.55% |            18 |  0.45% |
-| II   |  17 |  56 |  17 243 |   9.22% |    85 |  0.49% |            47 |  0.27% |
-| III  |  73 |  68 |  19 563 |  10.46% |   110 |  0.56% |            45 |  0.23% |
-| IV   | 141 |  66 |  19 681 |  10.52% |    88 |  0.45% |            46 |  0.23% |
-| V    | 207 |  66 |  19 715 |  10.54% |   100 |  0.51% |            50 |  0.25% |
-| VI   | 273 | 106 |  29 912 |  15.99% |   202 |  0.68% |            90 |  0.30% |
-| VII  | 379 |  12 |   2 852 |   1.52% |    14 |  0.49% |             9 |  0.32% |
-| VIII | 391 |  54 |  16 616 |   8.88% |   111 |  0.67% |            47 |  0.28% |
-| IX   | 445 | 182 |  57 497 |  30.74% |   349 |  0.61% |           116 |  0.20% |
+| I    |   7 |  14 |   3 971 |   2.12% |    22 |  0.55% |            18 |  0.45% |
+| II   |  21 |  56 |  17 243 |   9.22% |    85 |  0.49% |            47 |  0.27% |
+| III  |  77 |  68 |  19 563 |  10.46% |   110 |  0.56% |            45 |  0.23% |
+| IV   | 145 |  66 |  19 681 |  10.52% |    88 |  0.45% |            46 |  0.23% |
+| V    | 211 |  66 |  19 715 |  10.54% |   100 |  0.51% |            50 |  0.25% |
+| VI   | 277 | 106 |  29 912 |  15.99% |   202 |  0.68% |            90 |  0.30% |
+| VII  | 383 |  12 |   2 852 |   1.52% |    14 |  0.49% |             9 |  0.32% |
+| VIII | 395 |  54 |  16 616 |   8.88% |   111 |  0.67% |            47 |  0.28% |
+| IX   | 449 | 182 |  57 497 |  30.74% |   349 |  0.61% |           116 |  0.20% |
 | **Total** |  |  | **187 050** | **100%** | **1081** | **0.58%** | **468** | **0.25%** |
 
 ## Estimation illustrations restantes
